@@ -115,7 +115,11 @@ def run(root=ROOT):
         if set(local)!=set(padsby):problems.append(ref+': library pad number mismatch')
         for pn,(name,net) in d.pins.items():
             pad=padsby[pn];p=sourcepads[pn]
-            if netname(pad,nets)!=(net or ''):problems.append(ref+'.'+pn+': PCB net mismatch')
+            actual_net=netname(pad,nets)
+            if net:
+                if actual_net!=net:problems.append(ref+'.'+pn+': PCB net mismatch')
+            elif actual_net and not str(actual_net).startswith('unconnected-'):
+                problems.append(ref+'.'+pn+': PCB net mismatch')
             if str(val(pad,'pinfunction',''))!=name or str(val(pad,'pintype',''))!=gen.pin_type(d,pn):problems.append(ref+'.'+pn+': PCB pin metadata mismatch')
             a=list(map(float,values(pad,'at')));a=a+[0.]*(3-len(a))
             if abs(a[0]-p.x)>1e-5 or abs(a[1]-p.y)>1e-5 or abs((a[2]-d.rotation-p.angle)%360)>1e-5:problems.append(ref+'.'+pn+': board pad position/orientation mismatch')
@@ -142,7 +146,7 @@ def run(root=ROOT):
         if len(pnets)==1 and any(x.net not in pnets for x in copper):labels.append([x.label for x in group])
         for p in pads:
             netgroups[p.net].add(gi)
-            if p.ref=='U2' and p.pin!='89' and p.net not in gen.DISPLAY_NETS:
+            if p.ref=='U2' and p.pin!='89' and p.net and p.net not in gen.DISPLAY_NETS and not str(p.net).startswith('unconnected-'):
                 escaped[p.pin]=any(x.kind=='via' and x.net==p.net for x in group)
     if conflicts:problems.append('Physical copper component joins distinct logical pad nets')
     if labels:problems.append('Copper label differs from its attached logical pad net')

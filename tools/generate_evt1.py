@@ -219,7 +219,7 @@ def axp_pins() -> dict[str, tuple[str, str | None]]:
     net = {
         1:"CHGLED_N",2:"VREF",3:"GND",4:"CORE_0V93",5:"LX_CORE",6:"VSYS",7:"VSYS",8:"LX_DRAM",
         9:"DRAM_1V5",13:"3V3",17:"3V3",18:"1V8",21:"3V3",22:"LX_3V3",23:"VSYS",24:"VSYS",
-        27:"PMIC_BACKUP",28:"RTC_3V3",29:"PMIC_PWROK",30:"PWRON_N",31:"BAT_NTC",33:"VBAT",34:"VSYS",
+        27:"PMIC_BACKUP",28:"RTC_3V3",30:"PWRON_N",31:"BAT_NTC",33:"VBAT",34:"VSYS",
         36:"VSYS",37:"VBUS",38:"PMIC_IRQ_N",39:"PMIC_SDA",40:"PMIC_SCL",41:"GND",
     }
     return {str(i):(names[i], net.get(i)) for i in range(1, 42)}
@@ -305,7 +305,7 @@ def devices() -> list[Device]:
     add(d,"C12","18p","0402","soc",17,53,passive("XIN","GND"))
     add(d,"C13","18p","0402","soc",17,59,passive("XOUT","GND"))
     # Internal regulators are outputs, not inputs from AXP2101 ALDO1.
-    add(d,"C34","2.2u","0603","soc",20.5,58,passive("SOC_LDO_1V8","GND"),note="V851SX internal LDOA output bypass")
+    add(d,"C34","2.2u","0603","soc",15.5,61,passive("SOC_LDO_1V8","GND"),note="V851SX internal LDOA output bypass")
     add(d,"C35","2.2u","0603","soc",40,56,passive("SOC_AVCC","GND"),note="V851SX internal analog LDO output bypass")
     add(d,"C36","470n","0402","soc",40,58,passive("VRA1","GND"),note="V851SX analog reference bypass")
     add(d,"C37","100n","0402","soc",20.5,60,passive("SOC_LDO_1V8","GND"))
@@ -381,7 +381,7 @@ def devices() -> list[Device]:
     add(d,"R26","100k","0402","interfaces",55,50,passive("KEY_BACK","ADC_KEYS"))
     add(d,"C31","10n","0402","interfaces",45,50,passive("ADC_KEYS","GND"))
     add(d,"D5","STATUS","LED0603","interfaces",45,55,passive("STATUS_LED_A","GND"),mpn="0603 Blue LED")
-    add(d,"R27","2.2k","0402","interfaces",42,55,passive("STATUS_LED","STATUS_LED_A"))
+    add(d,"R27","2.2k","0402","interfaces",42,52,passive("STATUS_LED","STATUS_LED_A"))
     return d
 
 

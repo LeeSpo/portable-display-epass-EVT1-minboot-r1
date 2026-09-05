@@ -1882,7 +1882,7 @@
 	(no_connect (at 320.040 153.670) (uuid "90f0afec-80bc-59d3-a93f-01cccd342e4a"))
 	(global_label "PMIC_BACKUP" (shape passive) (at 320.040 151.130 0) (effects (font (size .8 .8)) (justify left)) (uuid "ad1bd804-933a-5dcb-b0d1-e683f06c40f9"))
 	(global_label "RTC_3V3" (shape passive) (at 320.040 148.590 0) (effects (font (size .8 .8)) (justify left)) (uuid "f20ceaa0-ea7d-59cb-8e37-2d45797c4297"))
-	(global_label "PMIC_PWROK" (shape passive) (at 320.040 146.050 0) (effects (font (size .8 .8)) (justify left)) (uuid "0b77e08c-88b5-56ec-96e9-8b2eaf1a84d8"))
+	(no_connect (at 320.040 146.050) (uuid "0b77e08c-88b5-56ec-96e9-8b2eaf1a84d8"))
 	(global_label "PWRON_N" (shape passive) (at 320.040 143.510 0) (effects (font (size .8 .8)) (justify left)) (uuid "9fed8346-1532-59a2-993c-29dbcdcb89db"))
 	(global_label "BAT_NTC" (shape passive) (at 320.040 140.970 0) (effects (font (size .8 .8)) (justify left)) (uuid "954b5290-ea85-5a71-b302-e18bee1cdfd4"))
 	(no_connect (at 320.040 138.430) (uuid "3c2ec9ed-f58c-51b3-a57a-a5fbf388512a"))

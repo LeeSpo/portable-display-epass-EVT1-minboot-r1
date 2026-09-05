@@ -15,7 +15,7 @@ def write_json(path,data):
     path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n')
 
 def run_cmd(cmd,cwd,logs,name):
-    r=subprocess.run([str(x) for x in cmd],cwd=cwd,capture_output=True,text=True,timeout=180,env={**os.environ,'LC_ALL':'C','KIPRJMOD':str(cwd)})
+    r=subprocess.run([str(x) for x in cmd],cwd=cwd,capture_output=True,text=True,timeout=600,env={**os.environ,'LC_ALL':'C','KIPRJMOD':str(cwd)})
     (logs/(name+'.log')).write_text('$ '+' '.join(map(str,cmd))+'\n'+r.stdout+'\n'+r.stderr)
     if r.returncode!=0:raise RuntimeError(f'{name} failed with exit code {r.returncode}; see {name}.log')
     return r.stdout

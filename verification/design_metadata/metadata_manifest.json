@@ -1,5 +1,5 @@
 {
-  "source_pcb_sha256": "20b4eb56aeae3a11541eb77ac41b49698c447e7db2a9a178ac11021dbec0e29e",
+  "source_pcb_sha256": "5e039a6abe1821be5b702b78102a13c4e9cd500118c92f2173745cabd86e1975",
   "origin_board_xy_mm": [
     0.0,
     110.0
@@ -9,8 +9,8 @@
   "rotation_convention": "KiCad CCW; assembly vendor correction not applied",
   "fabrication_released": false,
   "files_sha256": {
-    "placement_PREVIEW_NOT_FOR_ASSEMBLY.csv": "2dbdbe32979bf5e1d8a1767a7c0cc3cdd932bc6d9e2a68546a5755923b621849",
-    "bom_PREVIEW_NOT_FOR_PURCHASE.csv": "231b2514dab14bf207e01a1dda4c1716f854eb88a0ba1ca0cac1c3e9a40e8483",
-    "net_pin_report.csv": "791ea927bc463f43e48bf1e0e690ef5aee1325b9527c3a25493995a40fdc11ad"
+    "net_pin_report.csv": "b1075cb39791e83fee0994f2e57dae29ef9a7c7ea9d2bb19793b45f7f9f74aa8",
+    "placement_PREVIEW_NOT_FOR_ASSEMBLY.csv": "eab5d48b114f5203a067989d1f87f4b812f56548c633eeda3484f5f52a379415",
+    "bom_PREVIEW_NOT_FOR_PURCHASE.csv": "2d124bc92477702aa563bd4325d96c993f2876ad6fdcf819cc41e665967c4bf9"
   }
 }

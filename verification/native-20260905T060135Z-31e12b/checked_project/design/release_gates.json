@@ -1,0 +1,61 @@
+{
+  "fabrication_released": false,
+  "gates": [
+    {
+      "id": "display",
+      "requirement": "Exact display/module datasheet, FPC pinout, voltage, DSI timing and backlight topology",
+      "status": "open",
+      "reviewer": "",
+      "evidence": ""
+    },
+    {
+      "id": "pmic_variant",
+      "requirement": "Exact AXP2101 variant/OTP/default rails, VMID/VSYS application and sequencing",
+      "status": "open",
+      "reviewer": "",
+      "evidence": ""
+    },
+    {
+      "id": "pinouts_footprints",
+      "requirement": "All IC/connector pinouts and manufacturer land patterns, paste/thermal pads",
+      "status": "open",
+      "reviewer": "",
+      "evidence": ""
+    },
+    {
+      "id": "power_thermal_battery",
+      "requirement": "Supply sizing, decoupling loops, battery polarity/protection/NTC, charge current and thermal review",
+      "status": "open",
+      "reviewer": "",
+      "evidence": ""
+    },
+    {
+      "id": "stackup_si",
+      "requirement": "Manufacturer stackup and USB/MIPI/SD impedance/return-path constraints",
+      "status": "open",
+      "reviewer": "",
+      "evidence": ""
+    },
+    {
+      "id": "full_routing",
+      "requirement": "All intended nets completely routed, including display when selected",
+      "status": "open",
+      "reviewer": "",
+      "evidence": ""
+    },
+    {
+      "id": "native_validation",
+      "requirement": "Fresh complete KiCad ERC/DRC/parity after zone fill, zero unresolved violations",
+      "status": "open",
+      "reviewer": "",
+      "evidence": ""
+    },
+    {
+      "id": "bringup_firmware",
+      "requirement": "Reviewed safe bring-up procedure, firmware/pinmux, and validation plan",
+      "status": "open",
+      "reviewer": "",
+      "evidence": ""
+    }
+  ]
+}

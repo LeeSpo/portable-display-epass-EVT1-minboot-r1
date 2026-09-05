@@ -238,7 +238,7 @@
         },
         "29": {
           "name": "PWROK",
-          "net": "PMIC_PWROK"
+          "net": null
         },
         "30": {
           "name": "PWRON",

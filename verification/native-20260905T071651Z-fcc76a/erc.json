@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-05T15:16:53",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/b7613259-1701-5a92-a5a3-2c5d87fd6070",
+            "violations": []
+        },
+        {
+            "path": "/POWER/",
+            "uuid_path": "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4",
+            "violations": []
+        },
+        {
+            "path": "/SOC/",
+            "uuid_path": "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686",
+            "violations": []
+        },
+        {
+            "path": "/SENSORS/",
+            "uuid_path": "/b7613259-1701-5a92-a5a3-2c5d87fd6070/51072dd9-1bb1-5c78-ad53-b3e9d0a07bc6",
+            "violations": []
+        },
+        {
+            "path": "/INTERFACES/",
+            "uuid_path": "/b7613259-1701-5a92-a5a3-2c5d87fd6070/7309f07d-a051-57ea-bb97-60dcbb9d92b6",
+            "violations": []
+        }
+    ],
+    "source": "portable_display_epass.kicad_sch"
+}

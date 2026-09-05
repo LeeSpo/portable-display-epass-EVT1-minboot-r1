@@ -18,7 +18,7 @@ U1 的第 36 脚名称恢复为 VMID，保留现有 VSYS 网络，没有擅自�
 
 ## 仍未完成
 
-USB / NAND / SD / PMIC 通信 / 电源等主干尚未完整布线。按忽略覆铜的保守几何统计，仍有多个独立焊盘组的网络见 `verification/routing_backlog.csv`。这不是 KiCad 飞线统计，尤其地和电源平面可能在原生重填后合并。
+非显示最小系统已开始在现有 PCB 上布线（电源缝合过孔、VSYS/VBUS 局部覆铜、部分 UART/NAND/时钟），但原生 DRC 仍报告 USB、VSYS、部分 NAND/SD/按键未连，以及大量只连一层的扇出过孔。忽略覆铜的焊盘组统计见 `verification/minboot_route_report.json`；原生未连项以最新 `verification/native-*` 为准。
 
 器件通用封装、阻焊与锡膏、安装孔和壳体、走线载流、USB/MIPI 回流与阻抗、PMIC 供电和充电、按键/唤醒时序、固件及启动方案，都尚不能视为审签完成。
 

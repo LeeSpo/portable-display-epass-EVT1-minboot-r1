@@ -2,6 +2,11 @@
 
 基于上传根目录工作区；不是回退到旧 main。所有改变均为工程候选，原生与实物验证未通过。
 
+- 本机 KiCad 10.0.6 首次跑通原生 ERC/DRC/覆铜重填。ERC 现为 0；庭院重叠、安装孔 extra footprint、NC 焊盘一致性已处理。
+- 增加 `tools/route_minboot.py`：在现有 PCB 上追加电源缝合过孔、局部电源覆铜和部分非显示走线，不重生成整板。
+- `PMIC_PWROK` 改为 no-connect；C34/R27 微移以消除庭院重叠。
+- 接上 A* 走线并补 3V3/CORE/DRAM/VSYS/VBUS 局部覆铜。USB_DP、VSYS、NAND、多数 SD、PWRON 已连；USB_DM、PMIC_SDA、部分按键仍未连。原生检查仍未通过。
+
 - 修复 PCB y-down 坐标系的旋转方向，以及旋转封装中的焊盘绝对角度。
 - 按独立焊盘的物理连通链修正 U9 的 12 段走线、6 个过孔网络归属。
 - U8 改为六脚 TPS22918，修正 CT/QOD/VOUT，原理图/PCB/库/引脚约定同步。

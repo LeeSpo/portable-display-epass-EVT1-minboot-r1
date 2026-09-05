@@ -53,7 +53,7 @@ class DesignIntegrationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as t:
             manifest=export(output=t)
             with (Path(t)/'placement_PREVIEW_NOT_FOR_ASSEMBLY.csv').open() as f:rows={r['Reference']:r for r in csv.DictReader(f)}
-            self.assertEqual(float(rows['C34']['Board_X_mm']),20.5);self.assertEqual(float(rows['C34']['Y_mm_up_from_origin']),52)
+            self.assertEqual(float(rows['C34']['Board_X_mm']),15.5);self.assertEqual(float(rows['C34']['Y_mm_up_from_origin']),49)
             self.assertEqual(float(rows['C39']['Board_X_mm']),18);self.assertEqual(float(rows['C39']['Y_mm_up_from_origin']),19)
             self.assertFalse(manifest['fabrication_released'])
 if __name__=='__main__':unittest.main()

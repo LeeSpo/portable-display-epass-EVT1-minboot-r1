@@ -18,8 +18,8 @@
 |---|---|
 | 结构/引脚/所覆盖的几何检查 | 已执行，报告在 verification/static_report.json |
 | 单元与集成测试 | 已执行，见 verification/unit_tests.log |
-| 原生 KiCad ERC / DRC / 覆铜重填 / 原理图一致性 | 当前环境缺少 KiCad 引擎，未执行 |
-| USB、NAND、SD、电源等主干完整布线 | 尚未完成 |
+| 原生 KiCad ERC / DRC / 覆铜重填 / 原理图一致性 | 已在本机 KiCad 10.0.6 执行；非显示最小系统尚未通过 |
+| USB、NAND、SD、电源等主干完整布线 | 进行中：USB_DP、VSYS、NAND、多数 SD、PWRON 已连；USB_DM、PMIC_SDA、部分按键未连 |
 | 屏幕型号与显示区域 | 未定版，保留占位电路 |
 | 投板与实物上电 | 未放行，未验证 |
 

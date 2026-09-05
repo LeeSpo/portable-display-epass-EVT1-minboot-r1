@@ -44,6 +44,6 @@ test_unsigned_release_blocks (test_revision.FormatAndTransformTests.test_unsigne
 test_whole_board_regeneration_disabled (test_revision.FormatAndTransformTests.test_whole_board_regeneration_disabled) ... ok
 
 ----------------------------------------------------------------------
-Ran 44 tests in 1.172s
+Ran 44 tests in 0.423s
 
 OK
