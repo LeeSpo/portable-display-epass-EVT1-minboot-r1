@@ -1,1 +1,5 @@
-file:///workspace/epass-gerber-export/u2_0p3_fanout_try.patch
+# This path is a stub until assembled.
+# Run: bash reference/decode_u2_patch.sh
+# That writes the real 44438-byte patch here (sha256 50d2f2af44ff520d3807213e340ef04e5292027335847879161e1e24488cc470).
+# Headers already fixed for: git apply (a/portable_display_epass.kicad_pcb)
+# NOTE: PCB copper connectivity is BROKEN until re-route; geometry-only (radius 26 PASS). Not fab-ready.
