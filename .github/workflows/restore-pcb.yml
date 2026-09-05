@@ -1,0 +1,27 @@
+name: restore-pcb
+on:
+  push:
+    branches: [feat/u2-via-0p3-fanout-verify]
+    paths:
+      - .github/workflows/restore-pcb.yml
+  workflow_dispatch:
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feat/u2-via-0p3-fanout-verify
+          fetch-depth: 0
+      - name: Restore PCB from commit before accidental overwrite
+        run: |
+          set -eux
+          git checkout f459afef7a74e835c3df2d79e009a4b2778365a3 -- portable_display_epass.kicad_pcb
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git status
+          git add portable_display_epass.kicad_pcb
+          git commit -m "pcb: restore prior file after accidental size-block overwrite" || exit 0
+          git push origin HEAD:feat/u2-via-0p3-fanout-verify
