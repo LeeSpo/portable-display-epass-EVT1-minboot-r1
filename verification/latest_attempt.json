@@ -1,0 +1,10 @@
+{
+  "run": "native-20260905T053502Z-50099d",
+  "mode": "NATIVE",
+  "native_kicad_executed": false,
+  "fabrication_released": false,
+  "verification_passed": false,
+  "problems": [
+    "RuntimeError: kicad-cli is unavailable; native ERC/DRC were NOT executed"
+  ]
+}

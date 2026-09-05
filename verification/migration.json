@@ -1,0 +1,267 @@
+{
+  "source_pcb_sha256": "cec984d99ffac168b9816b336b5504c7a0849c5a29c0e2fedf59ea9adfdf7800",
+  "u9_net_repairs": [
+    {
+      "pad": "U9.1",
+      "type": "track",
+      "old_net": "USB_DM",
+      "new_net": "USB_DP",
+      "old_uuid": "9b3002e9-7fbe-50fe-9fdf-28ac8e4ac4d2"
+    },
+    {
+      "pad": "U9.1",
+      "type": "track",
+      "old_net": "USB_DM",
+      "new_net": "USB_DP",
+      "old_uuid": "9b3002e9-7fbe-50fe-9fdf-28ac8e4ac4d2"
+    },
+    {
+      "pad": "U9.1",
+      "type": "via",
+      "old_net": "USB_DM",
+      "new_net": "USB_DP",
+      "old_uuid": "cca56470-a062-5392-a8ce-3e20c674dc21"
+    },
+    {
+      "pad": "U9.2",
+      "type": "track",
+      "old_net": "VBUS",
+      "new_net": "GND",
+      "old_uuid": "8929cb03-1f14-504b-ab55-884df7a3cd77"
+    },
+    {
+      "pad": "U9.2",
+      "type": "track",
+      "old_net": "VBUS",
+      "new_net": "GND",
+      "old_uuid": "8929cb03-1f14-504b-ab55-884df7a3cd77"
+    },
+    {
+      "pad": "U9.2",
+      "type": "via",
+      "old_net": "VBUS",
+      "new_net": "GND",
+      "old_uuid": "1b825243-3f9d-588d-a3a1-6d1b26506fd4"
+    },
+    {
+      "pad": "U9.3",
+      "type": "track",
+      "old_net": "USB_DP",
+      "new_net": "USB_DM",
+      "old_uuid": "f8cc4cf4-703c-5d27-9ab1-42e2de704687"
+    },
+    {
+      "pad": "U9.3",
+      "type": "track",
+      "old_net": "USB_DP",
+      "new_net": "USB_DM",
+      "old_uuid": "f8cc4cf4-703c-5d27-9ab1-42e2de704687"
+    },
+    {
+      "pad": "U9.3",
+      "type": "via",
+      "old_net": "USB_DP",
+      "new_net": "USB_DM",
+      "old_uuid": "a9efa296-c545-5c05-96d5-d91ac1933610"
+    },
+    {
+      "pad": "U9.4",
+      "type": "track",
+      "old_net": "USB_DP",
+      "new_net": "USB_DM",
+      "old_uuid": "fc4cf515-467b-55b5-9209-c8b7713a2eb0"
+    },
+    {
+      "pad": "U9.4",
+      "type": "track",
+      "old_net": "USB_DP",
+      "new_net": "USB_DM",
+      "old_uuid": "fc4cf515-467b-55b5-9209-c8b7713a2eb0"
+    },
+    {
+      "pad": "U9.4",
+      "type": "via",
+      "old_net": "USB_DP",
+      "new_net": "USB_DM",
+      "old_uuid": "875ce977-8a8f-5146-96bc-afec6177fcc6"
+    },
+    {
+      "pad": "U9.5",
+      "type": "track",
+      "old_net": "GND",
+      "new_net": "VBUS",
+      "old_uuid": "c55504c8-399c-50c6-8702-860dac36be21"
+    },
+    {
+      "pad": "U9.5",
+      "type": "track",
+      "old_net": "GND",
+      "new_net": "VBUS",
+      "old_uuid": "c55504c8-399c-50c6-8702-860dac36be21"
+    },
+    {
+      "pad": "U9.5",
+      "type": "via",
+      "old_net": "GND",
+      "new_net": "VBUS",
+      "old_uuid": "aa32cfc2-ca16-5061-8eb3-61fb94e1c9df"
+    },
+    {
+      "pad": "U9.6",
+      "type": "track",
+      "old_net": "USB_DM",
+      "new_net": "USB_DP",
+      "old_uuid": "9e6f23de-6c2c-52c2-b232-de6dc3f8ad18"
+    },
+    {
+      "pad": "U9.6",
+      "type": "track",
+      "old_net": "USB_DM",
+      "new_net": "USB_DP",
+      "old_uuid": "9e6f23de-6c2c-52c2-b232-de6dc3f8ad18"
+    },
+    {
+      "pad": "U9.6",
+      "type": "via",
+      "old_net": "USB_DM",
+      "new_net": "USB_DP",
+      "old_uuid": "6c4a5b61-47bf-5449-b466-896719195140"
+    }
+  ],
+  "moved_components": [
+    {
+      "ref": "C34",
+      "old": [
+        21.0,
+        58.0,
+        0.0
+      ],
+      "new": [
+        20.5,
+        58,
+        0.0
+      ]
+    },
+    {
+      "ref": "C37",
+      "old": [
+        21.0,
+        60.0,
+        0.0
+      ],
+      "new": [
+        20.5,
+        60,
+        0.0
+      ]
+    }
+  ],
+  "duplicate_uuid_repairs": [
+    {
+      "old": "3f6a8125-198c-5f50-a944-9478b5779ae4",
+      "new": "af83e8ea-db19-5b66-b5eb-1bd3614525ec"
+    },
+    {
+      "old": "8252c76b-dbf8-5805-a5c2-459e706af8ab",
+      "new": "2ec64c80-e154-5bf2-b567-b42b89b81f41"
+    },
+    {
+      "old": "9a8b49d1-dea9-54f1-a065-45311287722b",
+      "new": "6fa56614-c08d-5dc1-b093-6a0a06c55e42"
+    },
+    {
+      "old": "ae65fe9c-396f-5b41-8055-2aedeb3dd11a",
+      "new": "b63de48f-6cdf-5abf-960c-e4084ec807ab"
+    },
+    {
+      "old": "513e9019-a013-5d4d-8e3d-5865dd0c2139",
+      "new": "769afb5e-6775-5c63-9a5e-4ecd5b59bf3c"
+    },
+    {
+      "old": "aef1b06a-f559-5d03-9885-ae4c96b65cac",
+      "new": "ddb88eb0-947f-528e-86a2-bfddb6792b78"
+    },
+    {
+      "old": "99c006fb-06b5-5859-9003-9c50f7302327",
+      "new": "55a4faae-410e-5960-aebb-03a86b0e147b"
+    },
+    {
+      "old": "f1d7b17b-06be-54d9-93d7-0e24e3fdd118",
+      "new": "a08a8a2e-2b95-53d2-8d4f-7a16d61ec9e6"
+    },
+    {
+      "old": "1d58d895-e313-5bd5-8450-7f50d615762c",
+      "new": "6b2f273a-a0a9-5a76-8042-4523c936cbab"
+    },
+    {
+      "old": "e30881e1-9461-5862-bf70-80d7db2440b8",
+      "new": "eb11b0c2-48ac-5516-a7cf-5c5e221f20ec"
+    },
+    {
+      "old": "7ba25fae-8239-5c66-bb65-a52161e41f77",
+      "new": "93ea245e-794a-54b6-a472-6207cb25663f"
+    },
+    {
+      "old": "94bdf7ae-c11f-5de8-9537-037236a5566c",
+      "new": "2d2109f6-30d6-5dad-b2dd-0583ac0db2ed"
+    },
+    {
+      "old": "13e1f240-96ca-5a2d-8353-3eab8a230bb9",
+      "new": "b707fa5d-0278-5e17-9c09-72ffbde931e7"
+    },
+    {
+      "old": "e81c3239-b246-53c4-9983-30ccfcc6c5cb",
+      "new": "fd126590-d93b-52cf-8336-1d1a4017fe17"
+    },
+    {
+      "old": "fc4cf515-467b-55b5-9209-c8b7713a2eb0",
+      "new": "1a1d2501-2146-5a15-9d6c-84879d837c8a"
+    },
+    {
+      "old": "c55504c8-399c-50c6-8702-860dac36be21",
+      "new": "a08d44d6-a9e5-58b2-98b0-3022a38caf11"
+    },
+    {
+      "old": "9e6f23de-6c2c-52c2-b232-de6dc3f8ad18",
+      "new": "893a9722-1964-52a3-87a6-138943e6dd40"
+    },
+    {
+      "old": "9b3002e9-7fbe-50fe-9fdf-28ac8e4ac4d2",
+      "new": "fd7dea75-fa7b-5425-b46e-0daa69a4764c"
+    },
+    {
+      "old": "8929cb03-1f14-504b-ab55-884df7a3cd77",
+      "new": "92356a48-a6fd-5a5f-8f69-d533197bc752"
+    },
+    {
+      "old": "f8cc4cf4-703c-5d27-9ab1-42e2de704687",
+      "new": "d54304af-1363-54cf-bd2b-b9c722db906c"
+    },
+    {
+      "old": "6edc7145-73a3-57f9-aa4f-ee284c73340f",
+      "new": "e3b4bb73-fd60-5a26-9a43-2d57ed5b1dd1"
+    },
+    {
+      "old": "87a4eaf6-2744-58cc-90dc-c3406c2fe52d",
+      "new": "587eec00-6408-5bc2-bf7a-b32dafffe4e9"
+    },
+    {
+      "old": "53541f46-83e9-53ec-954d-33dba02d2d03",
+      "new": "9da08b27-432b-5ac9-baa7-32531975b903"
+    },
+    {
+      "old": "d198cd89-a3e2-584c-accf-35603d48fe72",
+      "new": "66c973b9-83ff-57ca-8eeb-f3b8091b4128"
+    }
+  ],
+  "fanout_scale": 1.65,
+  "native_kicad_executed": false,
+  "removed_u2_copper": {
+    "track": 88,
+    "via": 44
+  },
+  "u8_corrected_pin_count": 6,
+  "generated_non_display_u2_fanouts": 54,
+  "static_geometry_issues": [],
+  "result_pcb_sha256": "20b4eb56aeae3a11541eb77ac41b49698c447e7db2a9a178ac11021dbec0e29e"
+}

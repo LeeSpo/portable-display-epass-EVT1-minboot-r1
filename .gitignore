@@ -1,0 +1,77 @@
+# ==========================================
+# KiCad Files
+# ==========================================
+# KiCad 6+ project local settings (layer visibility, window state, user preferences)
+*.kicad_prl
+
+# KiCad backup & autosave files
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-save.kicad_pcb
+*-save.kicad_sch
+_autosave-*
+*.bak
+*-bak
+*.sch-bak
+*.000
+*~
+
+# KiCad temporary & cache files
+fp-info-cache
+*.net
+*.erc
+*.drc
+
+# ==========================================
+# Python / Script Artifacts
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==========================================
+# Editors & IDEs
+# ==========================================
+.history/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==========================================
+# OS Generated Files
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
