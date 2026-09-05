@@ -1,3 +1,5 @@
+> 2026-09-05 更新：以下为初始交付历史记录，包含过时的未布线/未执行原生检查描述。当前非显示布线已通过原生检查，以 `MINBOOT_ROUTING.md` 和 `verification/latest_attempt.json` 为准；制造仍未放行。
+
 # Portable Display ePass - EVT1-minboot-r1
 
 **工程修复候选版。不可直接投板、采购贴片或上电。**

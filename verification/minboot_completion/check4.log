@@ -1,0 +1,28 @@
+{
+  "mode": "NATIVE",
+  "native_kicad_executed": true,
+  "fabrication_released": false,
+  "verification_passed": false,
+  "problems": [
+    "DRC violations warning: Track has unconnected end",
+    "DRC violations warning: Track has unconnected end",
+    "DRC violations warning: Track has unconnected end",
+    "DRC violations warning: Track has unconnected end",
+    "DRC violations warning: Track has unconnected end",
+    "DRC violations warning: Track has unconnected end",
+    "DRC violations warning: Track has unconnected end",
+    "DRC violations warning: Track has unconnected end",
+    "DRC violations warning: Track has unconnected end",
+    "DRC violations warning: Track has unconnected end",
+    "DRC violations warning: Silkscreen clipped by solder mask"
+  ],
+  "kicad_version": "10.0.6",
+  "native_report_sha256": {
+    "netlist.xml": "09762268cdea34d95895e6919653b69fcf92107115ec6a19bd5349c26cd99194",
+    "erc.json": "2d61ffdccbcc95418c23e308964fe659864fd5617fd88bcb710ac4889171d41d",
+    "drc.json": "dbb6e1105954e88d31a2bb273f9421d4e24d0ef5ec245f7ebaf9e3931f44de14"
+  },
+  "checked_filled_board_sha256": "cdfcff1150dffcfeff862ebd2f44f04e02a437454041fa9dd6a2c0751978264e",
+  "scope": "non-display; explicit display unconnected exceptions only"
+}
+Report: /Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/verification/native-20260905T073740Z-0611ef/status.json

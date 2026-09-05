@@ -20,8 +20,9 @@ test_nonshort_errors_block (test_check_minboot.ReleaseGateTests.test_nonshort_er
 test_parity_warning_blocks (test_check_minboot.ReleaseGateTests.test_parity_warning_blocks) ... ok
 test_unknown_endpoint_blocks (test_check_minboot.ReleaseGateTests.test_unknown_endpoint_blocks) ... ok
 test_well_formed_clean_reports (test_check_minboot.ReleaseGateTests.test_well_formed_clean_reports) ... ok
-test_54_geometrically_connected_fanouts (test_revision.DesignIntegrationTests.test_54_geometrically_connected_fanouts) ... ok
+test_54_pins_reach_via_or_another_intended_pad (test_revision.DesignIntegrationTests.test_54_pins_reach_via_or_another_intended_pad) ... ok
 test_coordinates_come_from_board (test_revision.DesignIntegrationTests.test_coordinates_come_from_board) ... ok
+test_direct_route_rule_rejects_an_isolated_soc_pin (test_revision.DesignIntegrationTests.test_direct_route_rule_rejects_an_isolated_soc_pin) ... ok
 test_source_pcb_schematic_component_count (test_revision.DesignIntegrationTests.test_source_pcb_schematic_component_count) ... ok
 test_stale_zone_fill_removed (test_revision.DesignIntegrationTests.test_stale_zone_fill_removed) ... ok
 test_static_checks_pass (test_revision.DesignIntegrationTests.test_static_checks_pass) ... ok
@@ -44,6 +45,6 @@ test_unsigned_release_blocks (test_revision.FormatAndTransformTests.test_unsigne
 test_whole_board_regeneration_disabled (test_revision.FormatAndTransformTests.test_whole_board_regeneration_disabled) ... ok
 
 ----------------------------------------------------------------------
-Ran 44 tests in 0.423s
+Ran 45 tests in 1.028s
 
 OK

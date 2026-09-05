@@ -1,2 +1,5 @@
 # Static geometry audit only; native validation additionally requires KiCad 9/10.
 shapely>=2.0,<3
+
+# Vectorized candidate routing; native KiCad DRC is still required.
+numpy>=1.26,<3

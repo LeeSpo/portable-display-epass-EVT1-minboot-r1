@@ -1,0 +1,22 @@
+{
+  "nets": {
+    "PMIC_SDA": true,
+    "E907_RX": true,
+    "SD_PWR_EN": true,
+    "SD_D1": true,
+    "ADC_KEYS": true,
+    "KEY_DOWN": true,
+    "STATUS_LED": true,
+    "STATUS_LED_A": true,
+    "USB_DM": true,
+    "CORE_0V93": true,
+    "DRAM_1V5": true,
+    "1V8": true,
+    "RTC_3V3": true,
+    "3V3": true,
+    "GND": true
+  },
+  "tracks_added": 766,
+  "vias_added": 71,
+  "geometry_issues": []
+}

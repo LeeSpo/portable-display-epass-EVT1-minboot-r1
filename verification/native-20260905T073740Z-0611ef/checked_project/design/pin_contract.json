@@ -1,0 +1,2591 @@
+{
+  "schema_version": 1,
+  "status": "DESIGN_INTENT_NOT_DATASHEET_SIGNOFF",
+  "components": {
+    "J1": {
+      "value": "USB4105-GF-A-060",
+      "footprint": "Sameat:USB4105",
+      "sheet": "power",
+      "pins": {
+        "A1": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "A4": {
+          "name": "VBUS",
+          "net": "VBUS"
+        },
+        "A5": {
+          "name": "CC1",
+          "net": "USB_CC1"
+        },
+        "A6": {
+          "name": "DP1",
+          "net": "USB_DP"
+        },
+        "A7": {
+          "name": "DM1",
+          "net": "USB_DM"
+        },
+        "A8": {
+          "name": "SBU1",
+          "net": null
+        },
+        "A9": {
+          "name": "VBUS",
+          "net": "VBUS"
+        },
+        "A12": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "B1": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "B4": {
+          "name": "VBUS",
+          "net": "VBUS"
+        },
+        "B5": {
+          "name": "CC2",
+          "net": "USB_CC2"
+        },
+        "B6": {
+          "name": "DP2",
+          "net": "USB_DP"
+        },
+        "B7": {
+          "name": "DM2",
+          "net": "USB_DM"
+        },
+        "B8": {
+          "name": "SBU2",
+          "net": null
+        },
+        "B9": {
+          "name": "VBUS",
+          "net": "VBUS"
+        },
+        "B12": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "SH1": {
+          "name": "SHIELD",
+          "net": "GND"
+        },
+        "SH2": {
+          "name": "SHIELD",
+          "net": "GND"
+        },
+        "SH3": {
+          "name": "SHIELD",
+          "net": "GND"
+        },
+        "SH4": {
+          "name": "SHIELD",
+          "net": "GND"
+        }
+      }
+    },
+    "R1": {
+      "value": "5.1k",
+      "footprint": "Sameat:0402",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "USB_CC1"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "R2": {
+      "value": "5.1k",
+      "footprint": "Sameat:0402",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "USB_CC2"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "U1": {
+      "value": "AXP2101",
+      "footprint": "Sameat:QFN40",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "CHGLED",
+          "net": "CHGLED_N"
+        },
+        "2": {
+          "name": "VREF",
+          "net": "VREF"
+        },
+        "3": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "4": {
+          "name": "FB3",
+          "net": "CORE_0V93"
+        },
+        "5": {
+          "name": "LX3",
+          "net": "LX_CORE"
+        },
+        "6": {
+          "name": "VIN3",
+          "net": "VSYS"
+        },
+        "7": {
+          "name": "VIN4",
+          "net": "VSYS"
+        },
+        "8": {
+          "name": "LX4",
+          "net": "LX_DRAM"
+        },
+        "9": {
+          "name": "FB4",
+          "net": "DRAM_1V5"
+        },
+        "10": {
+          "name": "CPUSLDO",
+          "net": null
+        },
+        "11": {
+          "name": "DLDO2_DC4SW",
+          "net": null
+        },
+        "12": {
+          "name": "BLDO1",
+          "net": null
+        },
+        "13": {
+          "name": "BLDOIN",
+          "net": "3V3"
+        },
+        "14": {
+          "name": "BLDO2",
+          "net": null
+        },
+        "15": {
+          "name": "ALDO4",
+          "net": null
+        },
+        "16": {
+          "name": "ALDO3",
+          "net": null
+        },
+        "17": {
+          "name": "ALDOIN",
+          "net": "3V3"
+        },
+        "18": {
+          "name": "ALDO1",
+          "net": "1V8"
+        },
+        "19": {
+          "name": "ALDO2",
+          "net": null
+        },
+        "20": {
+          "name": "DLDO1_DC1SW",
+          "net": null
+        },
+        "21": {
+          "name": "FB1",
+          "net": "3V3"
+        },
+        "22": {
+          "name": "LX1",
+          "net": "LX_3V3"
+        },
+        "23": {
+          "name": "VIN1",
+          "net": "VSYS"
+        },
+        "24": {
+          "name": "VIN2",
+          "net": "VSYS"
+        },
+        "25": {
+          "name": "LX2",
+          "net": null
+        },
+        "26": {
+          "name": "FB2",
+          "net": null
+        },
+        "27": {
+          "name": "VBACKUP",
+          "net": "PMIC_BACKUP"
+        },
+        "28": {
+          "name": "VRTC",
+          "net": "RTC_3V3"
+        },
+        "29": {
+          "name": "PWROK",
+          "net": null
+        },
+        "30": {
+          "name": "PWRON",
+          "net": "PWRON_N"
+        },
+        "31": {
+          "name": "TS",
+          "net": "BAT_NTC"
+        },
+        "32": {
+          "name": "GPIO1_FB5_RTCLDO2",
+          "net": null
+        },
+        "33": {
+          "name": "BAT",
+          "net": "VBAT"
+        },
+        "34": {
+          "name": "VSYS",
+          "net": "VSYS"
+        },
+        "35": {
+          "name": "SW",
+          "net": null
+        },
+        "36": {
+          "name": "VMID",
+          "net": "VSYS"
+        },
+        "37": {
+          "name": "VBUS",
+          "net": "VBUS"
+        },
+        "38": {
+          "name": "IRQ",
+          "net": "PMIC_IRQ_N"
+        },
+        "39": {
+          "name": "SDA",
+          "net": "PMIC_SDA"
+        },
+        "40": {
+          "name": "SCK",
+          "net": "PMIC_SCL"
+        },
+        "41": {
+          "name": "EPAD",
+          "net": "GND"
+        }
+      }
+    },
+    "L1": {
+      "value": "1uH/2A",
+      "footprint": "Sameat:IND_2x2",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "LX_3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "3V3"
+        }
+      }
+    },
+    "L2": {
+      "value": "1uH/2A",
+      "footprint": "Sameat:IND_2x2",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "LX_CORE"
+        },
+        "2": {
+          "name": "2",
+          "net": "CORE_0V93"
+        }
+      }
+    },
+    "L3": {
+      "value": "1uH/2A",
+      "footprint": "Sameat:IND_2x2",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "LX_DRAM"
+        },
+        "2": {
+          "name": "2",
+          "net": "DRAM_1V5"
+        }
+      }
+    },
+    "C1": {
+      "value": "22u",
+      "footprint": "Sameat:0603",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "VSYS"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C2": {
+      "value": "22u",
+      "footprint": "Sameat:0603",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "VSYS"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C3": {
+      "value": "1u",
+      "footprint": "Sameat:0603",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "VBAT"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C4": {
+      "value": "22u",
+      "footprint": "Sameat:0603",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C5": {
+      "value": "22u",
+      "footprint": "Sameat:0603",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C6": {
+      "value": "22u",
+      "footprint": "Sameat:0603",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "CORE_0V93"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C7": {
+      "value": "22u",
+      "footprint": "Sameat:0603",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "CORE_0V93"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C8": {
+      "value": "22u",
+      "footprint": "Sameat:0603",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "DRAM_1V5"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C9": {
+      "value": "22u",
+      "footprint": "Sameat:0603",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "DRAM_1V5"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C10": {
+      "value": "2.2u",
+      "footprint": "Sameat:0603",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "1V8"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C11": {
+      "value": "1u",
+      "footprint": "Sameat:0603",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "VREF"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "J2": {
+      "value": "1S LiPo + NTC",
+      "footprint": "Sameat:BAT3",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "VBAT",
+          "net": "VBAT"
+        },
+        "2": {
+          "name": "NTC",
+          "net": "BAT_NTC"
+        },
+        "3": {
+          "name": "GND",
+          "net": "GND"
+        }
+      }
+    },
+    "SW5": {
+      "value": "POWER",
+      "footprint": "Sameat:SW_SIDE",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "PWRON",
+          "net": "PWRON_N"
+        },
+        "2": {
+          "name": "PWRON",
+          "net": "PWRON_N"
+        },
+        "3": {
+          "name": "GND",
+          "net": "GND"
+        }
+      }
+    },
+    "R3": {
+      "value": "4.7k",
+      "footprint": "Sameat:0402",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "PMIC_IRQ_N"
+        }
+      }
+    },
+    "R4": {
+      "value": "2.2k",
+      "footprint": "Sameat:0402",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "PMIC_SCL"
+        }
+      }
+    },
+    "R5": {
+      "value": "2.2k",
+      "footprint": "Sameat:0402",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "PMIC_SDA"
+        }
+      }
+    },
+    "D1": {
+      "value": "CHARGE",
+      "footprint": "Sameat:LED0603",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "CHGLED_A"
+        }
+      }
+    },
+    "R6": {
+      "value": "2.2k",
+      "footprint": "Sameat:0402",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "CHGLED_A"
+        },
+        "2": {
+          "name": "2",
+          "net": "CHGLED_N"
+        }
+      }
+    },
+    "U9": {
+      "value": "USBLC6-2SC6",
+      "footprint": "Sameat:SOT23-6",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "I/O1",
+          "net": "USB_DP"
+        },
+        "2": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "3": {
+          "name": "I/O2",
+          "net": "USB_DM"
+        },
+        "4": {
+          "name": "I/O2",
+          "net": "USB_DM"
+        },
+        "5": {
+          "name": "VBUS",
+          "net": "VBUS"
+        },
+        "6": {
+          "name": "I/O1",
+          "net": "USB_DP"
+        }
+      }
+    },
+    "D13": {
+      "value": "PESD4V0",
+      "footprint": "Sameat:0402",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "USB_CC1"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "D14": {
+      "value": "PESD4V0",
+      "footprint": "Sameat:0402",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "USB_CC2"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C32": {
+      "value": "10u",
+      "footprint": "Sameat:0603",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "VBUS"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C33": {
+      "value": "1u",
+      "footprint": "Sameat:0603",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "RTC_3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C38": {
+      "value": "2.2u",
+      "footprint": "Sameat:0603",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "VSYS"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C39": {
+      "value": "100n",
+      "footprint": "Sameat:0402",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "PMIC_BACKUP"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C40": {
+      "value": "1u",
+      "footprint": "Sameat:0603",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "VSYS"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C41": {
+      "value": "1u",
+      "footprint": "Sameat:0603",
+      "sheet": "power",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "VSYS"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "U2": {
+      "value": "V851s",
+      "footprint": "Sameat:QFN88",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "PD18",
+          "net": null
+        },
+        "2": {
+          "name": "PD19",
+          "net": "LCD_RST"
+        },
+        "3": {
+          "name": "PD20",
+          "net": "LCD_PWM"
+        },
+        "4": {
+          "name": "PD21",
+          "net": "LCD_EN"
+        },
+        "5": {
+          "name": "VCC33_PF_PD",
+          "net": "3V3"
+        },
+        "6": {
+          "name": "PF0_SDC0_D1",
+          "net": "SD_D1"
+        },
+        "7": {
+          "name": "PF1_SDC0_D0",
+          "net": "SD_D0"
+        },
+        "8": {
+          "name": "PF2_SDC0_CLK",
+          "net": "SD_CLK"
+        },
+        "9": {
+          "name": "PF3_SDC0_CMD",
+          "net": "SD_CMD"
+        },
+        "10": {
+          "name": "PF4_SDC0_D3",
+          "net": "SD_D3"
+        },
+        "11": {
+          "name": "PF5_SDC0_D2",
+          "net": "SD_D2"
+        },
+        "12": {
+          "name": "PF6_DBG_CLK",
+          "net": "SD_DET"
+        },
+        "13": {
+          "name": "VDD_SYS0",
+          "net": "CORE_0V93"
+        },
+        "14": {
+          "name": "VCC_LDOA_PLL",
+          "net": "SOC_LDO_1V8"
+        },
+        "15": {
+          "name": "DXOUT",
+          "net": "XOUT"
+        },
+        "16": {
+          "name": "DXIN",
+          "net": "XIN"
+        },
+        "17": {
+          "name": "VDD_SYS1",
+          "net": "CORE_0V93"
+        },
+        "18": {
+          "name": "PE13",
+          "net": null
+        },
+        "19": {
+          "name": "PE12",
+          "net": null
+        },
+        "20": {
+          "name": "PE11",
+          "net": null
+        },
+        "21": {
+          "name": "PE4",
+          "net": "I2C0_SCL"
+        },
+        "22": {
+          "name": "VCC_PE",
+          "net": "3V3"
+        },
+        "23": {
+          "name": "PE2",
+          "net": "PMIC_IRQ_N"
+        },
+        "24": {
+          "name": "PE7",
+          "net": "RTC_INT_N"
+        },
+        "25": {
+          "name": "PE0",
+          "net": "E907_TX"
+        },
+        "26": {
+          "name": "PE5",
+          "net": "I2C0_SDA"
+        },
+        "27": {
+          "name": "PE8",
+          "net": null
+        },
+        "28": {
+          "name": "PE9",
+          "net": null
+        },
+        "29": {
+          "name": "PE3",
+          "net": null
+        },
+        "30": {
+          "name": "PE6",
+          "net": "ACCEL_INT_N"
+        },
+        "31": {
+          "name": "PE1",
+          "net": "E907_RX"
+        },
+        "32": {
+          "name": "PE10",
+          "net": null
+        },
+        "33": {
+          "name": "VDD_SYS2",
+          "net": "CORE_0V93"
+        },
+        "34": {
+          "name": "VCC_DRAM0",
+          "net": "DRAM_1V5"
+        },
+        "35": {
+          "name": "VDD_SYS3",
+          "net": "CORE_0V93"
+        },
+        "36": {
+          "name": "VCC_DRAM1",
+          "net": "DRAM_1V5"
+        },
+        "37": {
+          "name": "VDD18_DRAM",
+          "net": "SOC_LDO_1V8"
+        },
+        "38": {
+          "name": "PH14",
+          "net": "PMIC_SDA"
+        },
+        "39": {
+          "name": "PH13",
+          "net": "PMIC_SCL"
+        },
+        "40": {
+          "name": "PH12",
+          "net": "SD_PWR_EN"
+        },
+        "41": {
+          "name": "PH11",
+          "net": "STATUS_LED"
+        },
+        "42": {
+          "name": "PH10",
+          "net": "UART0_RX"
+        },
+        "43": {
+          "name": "PH9",
+          "net": "UART0_TX"
+        },
+        "44": {
+          "name": "VCC_IO",
+          "net": "3V3"
+        },
+        "45": {
+          "name": "PH0",
+          "net": "WAKE_PULSE_N"
+        },
+        "46": {
+          "name": "GPADC0",
+          "net": "ADC_KEYS"
+        },
+        "47": {
+          "name": "VDD33",
+          "net": "3V3"
+        },
+        "48": {
+          "name": "AVCC",
+          "net": "SOC_AVCC"
+        },
+        "49": {
+          "name": "LINEOUTP",
+          "net": null
+        },
+        "50": {
+          "name": "VRA1",
+          "net": "VRA1"
+        },
+        "51": {
+          "name": "AGND",
+          "net": "GND"
+        },
+        "52": {
+          "name": "MICIN1N",
+          "net": null
+        },
+        "53": {
+          "name": "MICIN1P",
+          "net": null
+        },
+        "54": {
+          "name": "VDD_SYS4",
+          "net": "CORE_0V93"
+        },
+        "55": {
+          "name": "VCC_PC",
+          "net": "3V3"
+        },
+        "56": {
+          "name": "PC1_SPI0_CS",
+          "net": "NAND_CS"
+        },
+        "57": {
+          "name": "PC0_SPI0_CLK",
+          "net": "NAND_CLK"
+        },
+        "58": {
+          "name": "PC3_SPI0_MISO_BOOT1",
+          "net": "NAND_MISO"
+        },
+        "59": {
+          "name": "PC2_SPI0_MOSI_BOOT0",
+          "net": "NAND_MOSI"
+        },
+        "60": {
+          "name": "PC5_SPI0_HOLD",
+          "net": "NAND_HOLD"
+        },
+        "61": {
+          "name": "PC4_SPI0_WP",
+          "net": "NAND_WP"
+        },
+        "62": {
+          "name": "VCC_PA_MCSI",
+          "net": "SOC_LDO_1V8"
+        },
+        "63": {
+          "name": "PA11",
+          "net": null
+        },
+        "64": {
+          "name": "PA10",
+          "net": null
+        },
+        "65": {
+          "name": "PA9",
+          "net": null
+        },
+        "66": {
+          "name": "PA8",
+          "net": null
+        },
+        "67": {
+          "name": "PA7",
+          "net": null
+        },
+        "68": {
+          "name": "PA6",
+          "net": null
+        },
+        "69": {
+          "name": "PA5",
+          "net": null
+        },
+        "70": {
+          "name": "PA4",
+          "net": null
+        },
+        "71": {
+          "name": "PA3",
+          "net": null
+        },
+        "72": {
+          "name": "PA2",
+          "net": null
+        },
+        "73": {
+          "name": "PA1",
+          "net": null
+        },
+        "74": {
+          "name": "PA0",
+          "net": null
+        },
+        "75": {
+          "name": "VDD_SYS5",
+          "net": "CORE_0V93"
+        },
+        "76": {
+          "name": "USB0_DP",
+          "net": "USB_DP"
+        },
+        "77": {
+          "name": "USB0_DM",
+          "net": "USB_DM"
+        },
+        "78": {
+          "name": "VCC33_USB",
+          "net": "3V3"
+        },
+        "79": {
+          "name": "VCC18_MDSI",
+          "net": "SOC_LDO_1V8"
+        },
+        "80": {
+          "name": "PD1_DSI_D0N",
+          "net": "DSI_D0N"
+        },
+        "81": {
+          "name": "PD2_DSI_D0P",
+          "net": "DSI_D0P"
+        },
+        "82": {
+          "name": "PD3_DSI_D1N",
+          "net": "DSI_D1N"
+        },
+        "83": {
+          "name": "PD4_DSI_D1P",
+          "net": "DSI_D1P"
+        },
+        "84": {
+          "name": "PD5_DSI_CKN",
+          "net": "DSI_CKN"
+        },
+        "85": {
+          "name": "PD6_DSI_CKP",
+          "net": "DSI_CKP"
+        },
+        "86": {
+          "name": "PD7",
+          "net": null
+        },
+        "87": {
+          "name": "PD8",
+          "net": null
+        },
+        "88": {
+          "name": "VDD_SYS6",
+          "net": "CORE_0V93"
+        },
+        "89": {
+          "name": "EPAD",
+          "net": "GND"
+        }
+      }
+    },
+    "Y1": {
+      "value": "24MHz 10ppm",
+      "footprint": "Sameat:XTAL4",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "XIN",
+          "net": "XIN"
+        },
+        "2": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "3": {
+          "name": "XOUT",
+          "net": "XOUT"
+        },
+        "4": {
+          "name": "GND",
+          "net": "GND"
+        }
+      }
+    },
+    "C12": {
+      "value": "18p",
+      "footprint": "Sameat:0402",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "XIN"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C13": {
+      "value": "18p",
+      "footprint": "Sameat:0402",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "XOUT"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C34": {
+      "value": "2.2u",
+      "footprint": "Sameat:0603",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "SOC_LDO_1V8"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C35": {
+      "value": "2.2u",
+      "footprint": "Sameat:0603",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "SOC_AVCC"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C36": {
+      "value": "470n",
+      "footprint": "Sameat:0402",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "VRA1"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C37": {
+      "value": "100n",
+      "footprint": "Sameat:0402",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "SOC_LDO_1V8"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C14": {
+      "value": "100n",
+      "footprint": "Sameat:0402",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C15": {
+      "value": "100n",
+      "footprint": "Sameat:0402",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C16": {
+      "value": "100n",
+      "footprint": "Sameat:0402",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "1V8"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C17": {
+      "value": "100n",
+      "footprint": "Sameat:0402",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "1V8"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C18": {
+      "value": "100n",
+      "footprint": "Sameat:0402",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "CORE_0V93"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C19": {
+      "value": "100n",
+      "footprint": "Sameat:0402",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "CORE_0V93"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C20": {
+      "value": "100n",
+      "footprint": "Sameat:0402",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "CORE_0V93"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C21": {
+      "value": "100n",
+      "footprint": "Sameat:0402",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "DRAM_1V5"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "U3": {
+      "value": "W25N01GVZEIG",
+      "footprint": "Sameat:WSON-8",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "CS",
+          "net": "NAND_CS"
+        },
+        "2": {
+          "name": "MISO",
+          "net": "NAND_MISO"
+        },
+        "3": {
+          "name": "WP",
+          "net": "NAND_WP"
+        },
+        "4": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "5": {
+          "name": "MOSI",
+          "net": "NAND_MOSI"
+        },
+        "6": {
+          "name": "CLK",
+          "net": "NAND_CLK"
+        },
+        "7": {
+          "name": "HOLD",
+          "net": "NAND_HOLD"
+        },
+        "8": {
+          "name": "VCC",
+          "net": "3V3"
+        }
+      }
+    },
+    "C22": {
+      "value": "100n",
+      "footprint": "Sameat:0402",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "R7": {
+      "value": "10k",
+      "footprint": "Sameat:0402",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "NAND_CS"
+        }
+      }
+    },
+    "R8": {
+      "value": "10k",
+      "footprint": "Sameat:0402",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "NAND_WP"
+        }
+      }
+    },
+    "R9": {
+      "value": "10k",
+      "footprint": "Sameat:0402",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "NAND_HOLD"
+        }
+      }
+    },
+    "J3": {
+      "value": "DEBUG POGO",
+      "footprint": "Sameat:HDR8",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "2": {
+          "name": "3V3",
+          "net": "3V3"
+        },
+        "3": {
+          "name": "UART0_TX",
+          "net": "UART0_TX"
+        },
+        "4": {
+          "name": "UART0_RX",
+          "net": "UART0_RX"
+        },
+        "5": {
+          "name": "E907_TX",
+          "net": "E907_TX"
+        },
+        "6": {
+          "name": "E907_RX",
+          "net": "E907_RX"
+        },
+        "7": {
+          "name": "FEL_PC2",
+          "net": "NAND_MOSI"
+        },
+        "8": {
+          "name": "PWRON_N",
+          "net": "PWRON_N"
+        }
+      }
+    },
+    "SW6": {
+      "value": "FEL",
+      "footprint": "Sameat:SW_SIDE",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "FEL_PC2",
+          "net": "NAND_MOSI"
+        },
+        "2": {
+          "name": "FEL_PC2",
+          "net": "NAND_MOSI"
+        },
+        "3": {
+          "name": "GND",
+          "net": "GND"
+        }
+      }
+    },
+    "R10": {
+      "value": "10k",
+      "footprint": "Sameat:0402",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "NAND_MOSI"
+        }
+      }
+    },
+    "R28": {
+      "value": "10k",
+      "footprint": "Sameat:0402",
+      "sheet": "soc",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "NAND_MISO"
+        }
+      }
+    },
+    "U4": {
+      "value": "LIS2DW12TR",
+      "footprint": "Sameat:LGA-12",
+      "sheet": "sensors",
+      "pins": {
+        "1": {
+          "name": "SCL",
+          "net": "I2C0_SCL"
+        },
+        "2": {
+          "name": "CS",
+          "net": "RTC_3V3"
+        },
+        "3": {
+          "name": "SDO_SA0",
+          "net": null
+        },
+        "4": {
+          "name": "SDA",
+          "net": "I2C0_SDA"
+        },
+        "5": {
+          "name": "NC",
+          "net": null
+        },
+        "6": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "7": {
+          "name": "RES",
+          "net": "GND"
+        },
+        "8": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "9": {
+          "name": "VDD",
+          "net": "RTC_3V3"
+        },
+        "10": {
+          "name": "VDDIO",
+          "net": "RTC_3V3"
+        },
+        "11": {
+          "name": "INT2",
+          "net": null
+        },
+        "12": {
+          "name": "INT1",
+          "net": "ACCEL_INT_N"
+        }
+      }
+    },
+    "U5": {
+      "value": "RV-3028-C7",
+      "footprint": "Sameat:RTC-8",
+      "sheet": "sensors",
+      "pins": {
+        "1": {
+          "name": "CLKOUT",
+          "net": null
+        },
+        "2": {
+          "name": "INT",
+          "net": "RTC_INT_N"
+        },
+        "3": {
+          "name": "SCL",
+          "net": "I2C0_SCL"
+        },
+        "4": {
+          "name": "SDA",
+          "net": "I2C0_SDA"
+        },
+        "5": {
+          "name": "VSS",
+          "net": "GND"
+        },
+        "6": {
+          "name": "VBACKUP",
+          "net": "RTC_VBACKUP"
+        },
+        "7": {
+          "name": "VDD",
+          "net": "RTC_3V3"
+        },
+        "8": {
+          "name": "EVI",
+          "net": "RTC_EVI"
+        }
+      }
+    },
+    "U6": {
+      "value": "SN74LVC1G123DCTR",
+      "footprint": "Sameat:SSOP-8",
+      "sheet": "sensors",
+      "pins": {
+        "1": {
+          "name": "Q",
+          "net": "WAKE_PULSE"
+        },
+        "2": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "3": {
+          "name": "CEXT",
+          "net": "WAKE_CEXT"
+        },
+        "4": {
+          "name": "REXT_CEXT",
+          "net": "WAKE_REXT"
+        },
+        "5": {
+          "name": "A",
+          "net": "WAKE_REQ_N"
+        },
+        "6": {
+          "name": "B",
+          "net": "RTC_3V3"
+        },
+        "7": {
+          "name": "CLR",
+          "net": "RTC_3V3"
+        },
+        "8": {
+          "name": "VCC",
+          "net": "RTC_3V3"
+        }
+      }
+    },
+    "Q1": {
+      "value": "2N7002",
+      "footprint": "Sameat:SOT23-3",
+      "sheet": "sensors",
+      "pins": {
+        "1": {
+          "name": "G",
+          "net": "WAKE_PULSE"
+        },
+        "2": {
+          "name": "S",
+          "net": "GND"
+        },
+        "3": {
+          "name": "D",
+          "net": "PWRON_N"
+        }
+      }
+    },
+    "Q2": {
+      "value": "2N7002",
+      "footprint": "Sameat:SOT23-3",
+      "sheet": "sensors",
+      "pins": {
+        "1": {
+          "name": "G",
+          "net": "WAKE_PULSE"
+        },
+        "2": {
+          "name": "S",
+          "net": "GND"
+        },
+        "3": {
+          "name": "D",
+          "net": "WAKE_PULSE_N"
+        }
+      }
+    },
+    "R11": {
+      "value": "10k",
+      "footprint": "Sameat:0402",
+      "sheet": "sensors",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "RTC_3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "WAKE_REQ_N"
+        }
+      }
+    },
+    "R12": {
+      "value": "820k",
+      "footprint": "Sameat:0402",
+      "sheet": "sensors",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "RTC_3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "WAKE_REXT"
+        }
+      }
+    },
+    "C23": {
+      "value": "100n",
+      "footprint": "Sameat:0402",
+      "sheet": "sensors",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "WAKE_REXT"
+        },
+        "2": {
+          "name": "2",
+          "net": "WAKE_CEXT"
+        }
+      }
+    },
+    "R13": {
+      "value": "10k",
+      "footprint": "Sameat:0402",
+      "sheet": "sensors",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "RTC_VBACKUP"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "R14": {
+      "value": "10k",
+      "footprint": "Sameat:0402",
+      "sheet": "sensors",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "RTC_EVI"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "R15": {
+      "value": "4.7k",
+      "footprint": "Sameat:0402",
+      "sheet": "sensors",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "I2C0_SCL"
+        }
+      }
+    },
+    "R16": {
+      "value": "4.7k",
+      "footprint": "Sameat:0402",
+      "sheet": "sensors",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "I2C0_SDA"
+        }
+      }
+    },
+    "R17": {
+      "value": "10k",
+      "footprint": "Sameat:0402",
+      "sheet": "sensors",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "RTC_INT_N"
+        }
+      }
+    },
+    "R18": {
+      "value": "10k",
+      "footprint": "Sameat:0402",
+      "sheet": "sensors",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "ACCEL_INT_N"
+        }
+      }
+    },
+    "D2": {
+      "value": "BAT54",
+      "footprint": "Sameat:D_SOD123",
+      "sheet": "sensors",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "RTC_INT_N"
+        },
+        "2": {
+          "name": "2",
+          "net": "WAKE_REQ_N"
+        }
+      }
+    },
+    "D3": {
+      "value": "BAT54",
+      "footprint": "Sameat:D_SOD123",
+      "sheet": "sensors",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "ACCEL_INT_N"
+        },
+        "2": {
+          "name": "2",
+          "net": "WAKE_REQ_N"
+        }
+      }
+    },
+    "C24": {
+      "value": "100n",
+      "footprint": "Sameat:0402",
+      "sheet": "sensors",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "RTC_3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C25": {
+      "value": "100n",
+      "footprint": "Sameat:0402",
+      "sheet": "sensors",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "RTC_3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C26": {
+      "value": "100n",
+      "footprint": "Sameat:0402",
+      "sheet": "sensors",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "RTC_3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "J4": {
+      "value": "TFT-H035B22WVIST8N20_V3-0",
+      "footprint": "Sameat:FPC20",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "PIN1",
+          "net": null
+        },
+        "2": {
+          "name": "PIN2",
+          "net": null
+        },
+        "3": {
+          "name": "PIN3",
+          "net": null
+        },
+        "4": {
+          "name": "PIN4",
+          "net": null
+        },
+        "5": {
+          "name": "PIN5",
+          "net": null
+        },
+        "6": {
+          "name": "VCI",
+          "net": "LCD_3V3"
+        },
+        "7": {
+          "name": "IOVCC",
+          "net": "LCD_3V3"
+        },
+        "8": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "9": {
+          "name": "D1P",
+          "net": "DSI_D1P"
+        },
+        "10": {
+          "name": "D1N",
+          "net": "DSI_D1N"
+        },
+        "11": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "12": {
+          "name": "DCKP",
+          "net": "DSI_CKP"
+        },
+        "13": {
+          "name": "DCKN",
+          "net": "DSI_CKN"
+        },
+        "14": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "15": {
+          "name": "D0P",
+          "net": "DSI_D0P"
+        },
+        "16": {
+          "name": "D0N",
+          "net": "DSI_D0N"
+        },
+        "17": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "18": {
+          "name": "RESX",
+          "net": "LCD_RST"
+        },
+        "19": {
+          "name": "LEDK",
+          "net": "LEDK"
+        },
+        "20": {
+          "name": "LEDA",
+          "net": "LEDA"
+        }
+      }
+    },
+    "U7": {
+      "value": "TPS61169DCKR",
+      "footprint": "Sameat:SC70-5",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "SW",
+          "net": "BL_SW"
+        },
+        "2": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "3": {
+          "name": "FB",
+          "net": "LEDK"
+        },
+        "4": {
+          "name": "CTRL",
+          "net": "LCD_PWM"
+        },
+        "5": {
+          "name": "VIN",
+          "net": "VSYS"
+        }
+      }
+    },
+    "L4": {
+      "value": "10uH/1.5A",
+      "footprint": "Sameat:IND_2x2",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "VSYS"
+        },
+        "2": {
+          "name": "2",
+          "net": "BL_SW"
+        }
+      }
+    },
+    "D4": {
+      "value": "SS16",
+      "footprint": "Sameat:D_SOD123",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "BL_SW"
+        },
+        "2": {
+          "name": "2",
+          "net": "LEDA"
+        }
+      }
+    },
+    "R19": {
+      "value": "2.55R 1%",
+      "footprint": "Sameat:0603",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "LEDK"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C27": {
+      "value": "1u/25V",
+      "footprint": "Sameat:0603",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "LEDA"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "C28": {
+      "value": "100n",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "VSYS"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "U8": {
+      "value": "TPS22918DBVR",
+      "footprint": "Sameat:SOT23-6",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "VIN",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "3": {
+          "name": "ON",
+          "net": "LCD_EN"
+        },
+        "4": {
+          "name": "CT",
+          "net": null
+        },
+        "5": {
+          "name": "QOD",
+          "net": null
+        },
+        "6": {
+          "name": "VOUT",
+          "net": "LCD_3V3"
+        }
+      }
+    },
+    "C29": {
+      "value": "4.7u",
+      "footprint": "Sameat:0603",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "LCD_3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "J5": {
+      "value": "MicroSD",
+      "footprint": "Sameat:MICROSD",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "DAT2",
+          "net": "SD_D2"
+        },
+        "2": {
+          "name": "DAT3",
+          "net": "SD_D3"
+        },
+        "3": {
+          "name": "CMD",
+          "net": "SD_CMD"
+        },
+        "4": {
+          "name": "VDD",
+          "net": "SD_3V3"
+        },
+        "5": {
+          "name": "CLK",
+          "net": "SD_CLK"
+        },
+        "6": {
+          "name": "VSS",
+          "net": "GND"
+        },
+        "7": {
+          "name": "DAT0",
+          "net": "SD_D0"
+        },
+        "8": {
+          "name": "DAT1",
+          "net": "SD_D1"
+        },
+        "9": {
+          "name": "CD",
+          "net": "SD_DET"
+        },
+        "10": {
+          "name": "SH",
+          "net": "GND"
+        },
+        "11": {
+          "name": "SH",
+          "net": "GND"
+        },
+        "12": {
+          "name": "SH",
+          "net": "GND"
+        },
+        "13": {
+          "name": "SH",
+          "net": "GND"
+        }
+      }
+    },
+    "Q3": {
+      "value": "AO3401A",
+      "footprint": "Sameat:SOT23-3",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "G",
+          "net": "SD_PWR_GATE"
+        },
+        "2": {
+          "name": "S",
+          "net": "3V3"
+        },
+        "3": {
+          "name": "D",
+          "net": "SD_3V3"
+        }
+      }
+    },
+    "R20": {
+      "value": "100k",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "SD_PWR_GATE"
+        }
+      }
+    },
+    "R21": {
+      "value": "10k",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "SD_PWR_EN"
+        },
+        "2": {
+          "name": "2",
+          "net": "SD_PWR_GATE"
+        }
+      }
+    },
+    "C30": {
+      "value": "10u",
+      "footprint": "Sameat:0603",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "SD_3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "D6": {
+      "value": "PESD4V0",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "SD_D2"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "D7": {
+      "value": "PESD4V0",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "SD_D3"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "D8": {
+      "value": "PESD4V0",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "SD_CMD"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "D9": {
+      "value": "PESD4V0",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "SD_CLK"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "D10": {
+      "value": "PESD4V0",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "SD_D0"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "D11": {
+      "value": "PESD4V0",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "SD_D1"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "D12": {
+      "value": "PESD4V0",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "SD_DET"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "SW1": {
+      "value": "UP",
+      "footprint": "Sameat:SW_SIDE",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "KEY",
+          "net": "KEY_UP"
+        },
+        "2": {
+          "name": "KEY",
+          "net": "KEY_UP"
+        },
+        "3": {
+          "name": "GND",
+          "net": "GND"
+        }
+      }
+    },
+    "SW2": {
+      "value": "DOWN",
+      "footprint": "Sameat:SW_SIDE",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "KEY",
+          "net": "KEY_DOWN"
+        },
+        "2": {
+          "name": "KEY",
+          "net": "KEY_DOWN"
+        },
+        "3": {
+          "name": "GND",
+          "net": "GND"
+        }
+      }
+    },
+    "SW3": {
+      "value": "OK",
+      "footprint": "Sameat:SW_SIDE",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "KEY",
+          "net": "KEY_OK"
+        },
+        "2": {
+          "name": "KEY",
+          "net": "KEY_OK"
+        },
+        "3": {
+          "name": "GND",
+          "net": "GND"
+        }
+      }
+    },
+    "SW4": {
+      "value": "BACK",
+      "footprint": "Sameat:SW_SIDE",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "KEY",
+          "net": "KEY_BACK"
+        },
+        "2": {
+          "name": "KEY",
+          "net": "KEY_BACK"
+        },
+        "3": {
+          "name": "GND",
+          "net": "GND"
+        }
+      }
+    },
+    "R22": {
+      "value": "100k",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "1V8"
+        },
+        "2": {
+          "name": "2",
+          "net": "ADC_KEYS"
+        }
+      }
+    },
+    "R23": {
+      "value": "0R",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "KEY_UP"
+        },
+        "2": {
+          "name": "2",
+          "net": "ADC_KEYS"
+        }
+      }
+    },
+    "R24": {
+      "value": "22k",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "KEY_DOWN"
+        },
+        "2": {
+          "name": "2",
+          "net": "ADC_KEYS"
+        }
+      }
+    },
+    "R25": {
+      "value": "47k",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "KEY_OK"
+        },
+        "2": {
+          "name": "2",
+          "net": "ADC_KEYS"
+        }
+      }
+    },
+    "R26": {
+      "value": "100k",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "KEY_BACK"
+        },
+        "2": {
+          "name": "2",
+          "net": "ADC_KEYS"
+        }
+      }
+    },
+    "C31": {
+      "value": "10n",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "ADC_KEYS"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "D5": {
+      "value": "STATUS",
+      "footprint": "Sameat:LED0603",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "STATUS_LED_A"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      }
+    },
+    "R27": {
+      "value": "2.2k",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "STATUS_LED"
+        },
+        "2": {
+          "name": "2",
+          "net": "STATUS_LED_A"
+        }
+      }
+    }
+  }
+}

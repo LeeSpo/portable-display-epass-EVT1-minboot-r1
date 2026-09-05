@@ -40,7 +40,20 @@ class DesignIntegrationTests(unittest.TestCase):
     def setUpClass(cls):cls.report=run();cls.board=load(ROOT/'portable_display_epass.kicad_pcb')
     def test_static_checks_pass(self):self.assertEqual(self.report['problems'],[])
     def test_static_never_approves_fabrication(self):self.assertFalse(self.report['fabrication_released']);self.assertFalse(self.report['native_kicad_executed'])
-    def test_54_geometrically_connected_fanouts(self):self.assertEqual(self.report['counts']['u2_fanouts_connected_to_via'],54)
+    def test_54_pins_reach_via_or_another_intended_pad(self):self.assertEqual(self.report['counts']['u2_pins_with_via_or_peer_connection'],54)
+    def test_direct_route_rule_rejects_an_isolated_soc_pin(self):
+        # Removing XIN copper must fail even though other XIN pads still exist.
+        import copy
+        from unittest.mock import patch
+        board=copy.deepcopy(self.board)
+        remove={id(i.node) for i in board_items(board) if i.net=='XIN' and i.kind in {'track','via'}}
+        board[:]=[x for x in board if id(x) not in remove]
+        original_load=load
+        def altered(path):
+            return board if Path(path)==ROOT/'portable_display_epass.kicad_pcb' else original_load(path)
+        with patch('static_verify.load',side_effect=altered):report=run()
+        self.assertIn('Non-display U2 fanout incomplete',report['problems'])
+        self.assertLess(report['counts']['u2_pins_with_via_or_peer_connection'],54)
     def test_zero_checked_spacing_issues(self):self.assertEqual(self.report['counts']['geometric_issues'],0)
     def test_source_pcb_schematic_component_count(self):self.assertEqual(self.report['counts']['schematic_components'],111);self.assertEqual(self.report['counts']['footprints'],115)
     def test_u9_chains_match_their_logical_pads(self):

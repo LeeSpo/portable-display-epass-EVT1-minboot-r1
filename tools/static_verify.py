@@ -138,7 +138,7 @@ def run(root=ROOT):
     if children(b,'arc'):problems.append('Copper arcs are unsupported by static geometry checker')
     if any(str(x.node[3]) not in {'rect','roundrect','circle','oval'} for x in items if x.kind=='pad'):problems.append('Custom pad shapes unsupported')
     if any(tuple(values(x.node,'layers'))!=('F.Cu','B.Cu') for x in items if x.kind=='via'):problems.append('Blind/buried vias unsupported')
-    conflicts=[];labels=[];escaped={};netgroups=collections.defaultdict(set)
+    conflicts=[];labels=[];escaped={};via_escaped={};netgroups=collections.defaultdict(set)
     for gi,group in enumerate(groups):
         pads=[x for x in group if x.kind=='pad' and x.net]
         pnets={x.net for x in pads};copper=[x for x in group if x.kind!='pad']
@@ -147,13 +147,16 @@ def run(root=ROOT):
         for p in pads:
             netgroups[p.net].add(gi)
             if p.ref=='U2' and p.pin!='89' and p.net and p.net not in gen.DISPLAY_NETS and not str(p.net).startswith('unconnected-'):
-                escaped[p.pin]=any(x.kind=='via' and x.net==p.net for x in group)
+                via_escaped[p.pin]=any(x.kind=='via' and x.net==p.net for x in group)
+                # A finished same-layer route to another intended pad needs no
+                # otherwise dangling via. Still reject a pad ending in a stub.
+                escaped[p.pin]=via_escaped[p.pin] or any(x is not p and x.net==p.net for x in pads)
     if conflicts:problems.append('Physical copper component joins distinct logical pad nets')
     if labels:problems.append('Copper label differs from its attached logical pad net')
     expected_escape={p for p,(name,net) in devs['U2'].pins.items() if p!='89' and net and net not in gen.DISPLAY_NETS}
     if set(escaped)!=expected_escape or not all(escaped.values()):problems.append('Non-display U2 fanout incomplete')
     opens=[{'net':n,'separate_pad_groups':len(g),'minimum_joins_ignoring_zones':len(g)-1,'display':n in gen.DISPLAY_NETS} for n,g in sorted(netgroups.items()) if len(g)>1]
-    return {'schema_version':1,'mode':'STATIC_ONLY','static_checks_passed':not problems,'fabrication_released':False,'native_kicad_executed':False,'source_sha256':snapshot(root),'counts':{'footprints':len(fps),'schematic_components':len(devs),'pads':sum(x.kind=='pad' for x in items),'tracks':sum(x.kind=='track' for x in items),'vias':sum(x.kind=='via' for x in items),'u2_required_fanouts':len(expected_escape),'u2_fanouts_connected_to_via':sum(escaped.values()),'geometric_issues':len(geometry),'copper_net_label_conflicts':len(labels),'multi_net_physical_components':len(conflicts)},'problems':problems,'geometry_issues':geometry,'opens_excluding_zone_connectivity':opens,'limitations':LIMITATIONS}
+    return {'schema_version':1,'mode':'STATIC_ONLY','static_checks_passed':not problems,'fabrication_released':False,'native_kicad_executed':False,'source_sha256':snapshot(root),'counts':{'footprints':len(fps),'schematic_components':len(devs),'pads':sum(x.kind=='pad' for x in items),'tracks':sum(x.kind=='track' for x in items),'vias':sum(x.kind=='via' for x in items),'u2_required_fanouts':len(expected_escape),'u2_fanouts_connected_to_via':sum(via_escaped.values()),'u2_pins_with_via_or_peer_connection':sum(escaped.values()),'geometric_issues':len(geometry),'copper_net_label_conflicts':len(labels),'multi_net_physical_components':len(conflicts)},'problems':problems,'geometry_issues':geometry,'opens_excluding_zone_connectivity':opens,'limitations':LIMITATIONS}
 
 if __name__=='__main__':
     import argparse

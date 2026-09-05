@@ -1,0 +1,59 @@
+{
+  "native_run": "native-20260905T074324Z-5a4357",
+  "verification_passed": true,
+  "fabrication_released": false,
+  "source_pcb_sha256": "1eca7f94a7c70aa5c66dfdc38238a4c0b31c0df7696c494fffa77aeda35281f0",
+  "before": {
+    "copper_counts": {
+      "pad": 456,
+      "track": 835,
+      "via": 368
+    },
+    "non_display_missing_connections": 35,
+    "drc_errors": 1,
+    "drc_warnings": 104
+  },
+  "after": {
+    "copper_counts": {
+      "pad": 456,
+      "track": 1797,
+      "via": 349
+    },
+    "erc_violations": 0,
+    "drc_violations": 0,
+    "schematic_parity": 0,
+    "display_missing_connections": 16,
+    "non_display_missing_connections": 0,
+    "unit_tests_passed": 45,
+    "static_counts": {
+      "footprints": 115,
+      "schematic_components": 111,
+      "pads": 456,
+      "tracks": 1797,
+      "vias": 349,
+      "u2_required_fanouts": 54,
+      "u2_fanouts_connected_to_via": 47,
+      "u2_pins_with_via_or_peer_connection": 54,
+      "geometric_issues": 0,
+      "copper_net_label_conflicts": 0,
+      "multi_net_physical_components": 0
+    }
+  },
+  "usb": {
+    "parallel_trunk_centerline_length_mm": 81.41297210932652,
+    "nominal_track_width_mm": 0.09,
+    "nominal_trunk_center_spacing_mm": 0.27,
+    "impedance_and_electrical_length_signoff": false,
+    "total_copper_length_not_signal_path_mm": {
+      "USB_DP": 99.08788364232682,
+      "USB_DM": 100.40898700129115
+    }
+  },
+  "limitations": [
+    "Display not routed/finalized",
+    "PMIC electrical configuration and power/current review open",
+    "USB/SD impedance, return path and timing review open",
+    "No firmware or physical bring-up verification",
+    "No fabrication release"
+  ]
+}
