@@ -1,0 +1,61 @@
+[
+  {
+    "uuid": "2fd3aba3-f08a-584a-b9e3-36622ec4f403",
+    "action": "trim",
+    "from": [
+      [
+        24.2053,
+        57.4438
+      ],
+      [
+        24.45,
+        57.45
+      ]
+    ],
+    "to": [
+      [
+        24.2053,
+        57.4438
+      ],
+      [
+        24.45,
+        57.45
+      ]
+    ]
+  },
+  {
+    "uuid": "be710fbf-97fd-553c-b785-a30730d867f8",
+    "net": "SD_CLK",
+    "action": "remove"
+  },
+  {
+    "uuid": "f75b99c8-c54c-5b47-84d2-40f9173d76c0",
+    "net": "SD_CLK",
+    "action": "remove"
+  },
+  {
+    "uuid": "0ece7c1c-757a-5737-b228-fe4b48760528",
+    "net": "ELVDD",
+    "action": "remove"
+  },
+  {
+    "uuid": "d14bad5f-63fb-5660-b9c1-fefe099cad68",
+    "net": "KEY_UP",
+    "action": "remove"
+  },
+  {
+    "uuid": "92ef646e-3ec1-5f4f-8645-7ef741751fef",
+    "net": "SD_D1",
+    "action": "remove"
+  },
+  {
+    "uuid": "0806cd22-22c3-56e7-b8e2-6c043c6e9e4b",
+    "net": "SD_D1",
+    "action": "remove"
+  },
+  {
+    "uuid": "ea2d8cb5-8018-5c4e-bb06-20d3c1ed1520",
+    "net": "KEY_DOWN",
+    "action": "remove"
+  }
+]

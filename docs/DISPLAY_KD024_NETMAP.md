@@ -1,43 +1,33 @@
-# KD024EGOIN152-01 host netmap (EVT1)
+# KD024EGOIN152-01 host netmap — current candidate
 
-Module locked for wiring on `feat/display-2p4-aod-rm690b0`.  
-Connector: Molex **502598-4591** (45-pin, footprint `Sameat:FPC45` as J4).  
-Driver: **RM690B0**. Interface: **MIPI 1-lane** (`IM1=0`, `IM0=0` strapped to GND).
+RM690B0, MIPI DSI one lane; IM1/IM0 strapped to ground. J4 is the revised
+`Sameat:FPC45` for candidate Molex 502598-4593; module reference -4591 compatibility
+remains to be checked. `fabrication_released` remains false.
 
-`fabrication_released` remains **false**. EL± PMIC is **not** chosen — nets only.
+| J4 pins | Host net / destination |
+|---|---|
+| 3, 4 | ELVSS, U10 OUTN |
+| 6, 7 | ELVDD, U10 OUTP / FBS |
+| 9 | LCD_3V3, U8 VOUT |
+| 11 | LCD_1V8, R29 from 1V8 |
+| 13 TE1 | Explicit NC |
+| 14 SWIRE | LCD_SWIRE to R31 pad 1; R31 DNP |
+| 15 TE | LCD_TE, U2 pin 3 (PD20) |
+| 16 RESX | LCD_RST, U2 pin 2 (PD19) |
+| 35 / 36 | DSI_D0P / DSI_D0N, U2 pins 81 / 80 |
+| 39 / 40 | DSI_CKP / DSI_CKN, U2 pins 85 / 84 |
+| MP1 / MP2 | GND |
 
-## Power
+LCD_EN comes from U2 pin 4 and controls both U8 and U10. Unused U2 DSI lane-1
+pins 82/83 and J4 TE1 are explicit NC, rather than orphan global labels.
+J4 parallel-interface pins 18–29 are NC. Exact remaining pin assignments are in
+`design/pin_contract.json`; that file records intent, not manufacturer signoff.
 
-| Module | Host net | Source |
-|---|---|---|
-| VCI | `LCD_3V3` | `3V3` via U8 (`LCD_EN`) |
-| VDDIO | `LCD_1V8` | `1V8` via R29 0Ω |
-| ELVDD | `ELVDD` | U10 TPS65631 `OUTP` (default 4.6 V) |
-| ELVSS | `ELVSS` | U10 TPS65631 `OUTN` (default −4.0 V) |
-| SWIRE | `LCD_SWIRE` | Open default; optional `R31`→`LCD_EN`/CTRL |
+The TFT backlight components U7/L4/D4/R19/C27/C28 are removed from this AMOLED
+variant in the schematic, board, library and generator. AMOLED brightness is
+controlled in firmware; no LEDA/LEDK backlight is fitted.
 
-## Control / MIPI
-
-| Module | Host net | SoC |
-|---|---|---|
-| RESX | `LCD_RST` | U2 PD19 |
-| TE | `LCD_TE` | U2 PD20 (was `LCD_PWM`) |
-| TE1 | `LCD_TE1` | unrouted GPIO TBD / NC OK for first bring-up |
-| D0P/D0N | `DSI_D0P`/`DSI_D0N` | U2 PD2/PD1 |
-| CLKP/CLKN | `DSI_CKP`/`DSI_CKN` | U2 PD6/PD5 |
-
-Host `DSI_D1P`/`DSI_D1N` stay on SoC but **do not** land on J4 (1-lane module).
-
-## Explicit NC
-
-Pins 18–29 (MCU/RGB bus), brightness via register `0x51` (no LEDA/LEDK).  
-U7 TPS61169 backlight chain is **DNP**.
-
-## Open gates
-
-1. PCB: place U10 + inductors, replace FPC20 island with FPC45, route MIPI 1-lane + EL±.
-2. Confirm VSYS never exceeds TPS65631 VIN max 4.5 V under charge.
-3. AOD command sequence / power policy (firmware).
-4. KiCad ERC/DRC after PCB edit.
-
-See also `docs/DISPLAY_EL_TPS65631.md`.
+See [current PCB validation](DISPLAY_PCB_STATUS.md),
+[power/control restrictions](DISPLAY_EL_TPS65631.md), and
+[connector/package review](DISPLAY_FOOTPRINT_REVIEW.md). AOD and physical display
+operation have not been demonstrated.

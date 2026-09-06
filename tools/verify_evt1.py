@@ -28,12 +28,12 @@ def validate_signoffs(root):
     return [g['id']+': unsigned or missing evidence' for g in gates if g.get('status')!='approved' or not g.get('reviewer') or not g.get('evidence')]
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--static',action='store_true');p.add_argument('--release',action='store_true');p.add_argument('--kicad-cli');p.add_argument('--kicad-python',help='Python executable with pcbnew (needed for zone refill on KiCad 9)');a=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--static',action='store_true');p.add_argument('--full-board',action='store_true',help='Require zero unresolved display items as well, without asserting release signoffs');p.add_argument('--release',action='store_true');p.add_argument('--kicad-cli');p.add_argument('--kicad-python',help='Python executable with pcbnew (needed for zone refill on KiCad 9)');a=p.parse_args()
     stamp=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'-'+uuid.uuid4().hex[:6]
     out=ROOT/'verification'/('static-'+stamp if a.static else 'native-'+stamp);out.mkdir(parents=True)
     status={'mode':'STATIC_ONLY' if a.static else 'NATIVE','native_kicad_executed':False,'fabrication_released':False,'verification_passed':False,'problems':[]}
     try:
-        if a.static and a.release:raise ValueError('Static-only mode can never perform a release check')
+        if a.static and (a.release or a.full_board):raise ValueError('Static-only mode cannot perform a full-board or release check')
         from static_verify import snapshot,run as static_run
         before=snapshot(ROOT);status['source_sha256']=before
         structural=static_run(ROOT);write_json(out/'static_report.json',structural)
@@ -65,10 +65,10 @@ def main():
             from check_minboot import check_netlist,check_reports
             pin_csv(ROOT,out/'net_pin_report.csv')
             erc=json.loads((out/'erc.json').read_text());drc=json.loads((out/'drc.json').read_text())
-            problems=check_netlist(out/'netlist.xml',out/'net_pin_report.csv')+check_reports(erc,drc,allow_display=not a.release)
+            problems=check_netlist(out/'netlist.xml',out/'net_pin_report.csv')+check_reports(erc,drc,allow_display=not (a.release or a.full_board))
             status['native_report_sha256']={f.name:hashlib.sha256(f.read_bytes()).hexdigest() for f in (out/'netlist.xml',out/'erc.json',out/'drc.json')}
             status['checked_filled_board_sha256']=hashlib.sha256(board.read_bytes()).hexdigest()
-            status['scope']='full board and release gates' if a.release else 'non-display; explicit display unconnected exceptions only'
+            status['scope']='full board and release gates' if a.release else ('full board; no display exceptions; release gates not approved' if a.full_board else 'non-display; explicit display unconnected exceptions only')
             if a.release:problems+=validate_signoffs(ROOT)
             status['problems']=problems;status['verification_passed']=not problems
         if snapshot(ROOT)!=before:raise RuntimeError('Source files changed during verification; results invalidated')

@@ -98,6 +98,7 @@ def clear_box(b, xmin, ymin, xmax, ymax):
     return len(to_delete)
 
 def main():
+    raise SystemExit("Historical placement reset disabled: it deletes repaired copper and restores obsolete display pin assignments. Edit the current reviewed board; see docs/DISPLAY_PCB_STATUS.md.")
     os.chdir(PROJ)
     b = pcbnew.LoadBoard(str(PCB))
     for n in [

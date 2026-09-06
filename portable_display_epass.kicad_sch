@@ -69,7 +69,7 @@
 		(property "Sheetfile" "04_interfaces.kicad_sch" (at 100 131 0) (effects (font (size 1.27 1.27)) (justify left top)))
 		(instances (project "portable_display_epass" (path "/b7613259-1701-5a92-a5a3-2c5d87fd6070" (page "5"))))
 	)
-	(text "EVT1-minboot-r1 - engineering candidate; NOT FOR FABRICATION\nNo radio / no audio / no touch / no AOD\nSee docs/ for pin map, power tree and bring-up checklist." (exclude_from_sim no) (at 25 150 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "a8eb6925-4225-5561-976b-bf9dfdeb8dbf"))
+	(text "EVT1-minboot-r1 - engineering candidate; NOT FOR FABRICATION\nNo radio / no audio / no touch; KD024 AOD firmware pending\nSee docs/ for pin map, power tree and bring-up checklist." (exclude_from_sim no) (at 25 150 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "a8eb6925-4225-5561-976b-bf9dfdeb8dbf"))
 	(sheet_instances (path "/" (page "1")))
 	(embedded_fonts no)
 )

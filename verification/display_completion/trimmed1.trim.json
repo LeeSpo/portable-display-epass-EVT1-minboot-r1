@@ -1,0 +1,291 @@
+[
+  {
+    "uuid": "a2b1d41e-59b6-5174-ae38-190018800a1a",
+    "action": "trim",
+    "from": [
+      [
+        26.05,
+        59.55
+      ],
+      [
+        33.05,
+        59.55
+      ]
+    ],
+    "to": [
+      [
+        27.8,
+        59.55
+      ],
+      [
+        33.05,
+        59.55
+      ]
+    ]
+  },
+  {
+    "uuid": "ebf6f720-eb25-542b-94ae-08c8dfeb8726",
+    "action": "trim",
+    "from": [
+      [
+        34.1312,
+        43.3006
+      ],
+      [
+        46.1,
+        15.2
+      ]
+    ],
+    "to": [
+      [
+        38.320281618751224,
+        33.46538619946188
+      ],
+      [
+        46.1,
+        15.2
+      ]
+    ]
+  },
+  {
+    "uuid": "000b95b1-7106-5979-9250-2ec82a071080",
+    "action": "trim",
+    "from": [
+      [
+        22.8,
+        49.95
+      ],
+      [
+        22.8,
+        40.95
+      ]
+    ],
+    "to": [
+      [
+        22.8,
+        49.95
+      ],
+      [
+        22.8,
+        46.95
+      ]
+    ]
+  },
+  {
+    "uuid": "ac0f58e3-1757-50af-97db-275f7a8350bf",
+    "action": "trim",
+    "from": [
+      [
+        22.1625,
+        57.4438
+      ],
+      [
+        26.2481,
+        57.4438
+      ]
+    ],
+    "to": [
+      [
+        22.1625,
+        57.4438
+      ],
+      [
+        26.1,
+        57.4438
+      ]
+    ]
+  },
+  {
+    "uuid": "cc4588b9-6da8-5ae6-81e6-efc0d5dee36c",
+    "action": "trim",
+    "from": [
+      [
+        36.6,
+        36.6
+      ],
+      [
+        39.6,
+        33.6
+      ]
+    ],
+    "to": [
+      [
+        38.1,
+        35.1
+      ],
+      [
+        39.6,
+        33.6
+      ]
+    ]
+  },
+  {
+    "uuid": "2fd3aba3-f08a-584a-b9e3-36622ec4f403",
+    "action": "trim",
+    "from": [
+      [
+        24.2053,
+        57.4438
+      ],
+      [
+        24.45,
+        57.45
+      ]
+    ],
+    "to": [
+      [
+        24.2053,
+        57.4438
+      ],
+      [
+        24.45,
+        57.45
+      ]
+    ]
+  },
+  {
+    "uuid": "3505ccff-3957-589f-b9f2-9af4b850152c",
+    "net": "KEY_DOWN",
+    "action": "remove"
+  },
+  {
+    "uuid": "43ff7e31-94ab-5e32-9f02-1fa252055286",
+    "net": "PWRON_N",
+    "action": "remove"
+  },
+  {
+    "uuid": "b894d8fb-873e-54e8-95e1-5cd215101ea1",
+    "net": "PWRON_N",
+    "action": "remove"
+  },
+  {
+    "uuid": "d637b049-c41a-56ac-9dd6-03a3a8ac521e",
+    "net": "PWRON_N",
+    "action": "remove"
+  },
+  {
+    "uuid": "6f340100-82b0-5262-8fa8-2cce8d0e3a8d",
+    "net": "SD_CLK",
+    "action": "remove"
+  },
+  {
+    "uuid": "1b285ac7-7565-5de3-91f2-399306059625",
+    "net": "SD_D2",
+    "action": "remove"
+  },
+  {
+    "uuid": "1f5ea401-1c73-5ad3-8ecb-ff556b086ffc",
+    "net": "SD_PWR_EN",
+    "action": "remove"
+  },
+  {
+    "uuid": "49231fc8-4d42-5995-a185-1bc466931ea8",
+    "net": "SD_PWR_EN",
+    "action": "remove"
+  },
+  {
+    "uuid": "638a9fc9-fb00-5b59-82da-80a11dde9adc",
+    "net": "SD_CLK",
+    "action": "remove"
+  },
+  {
+    "uuid": "49d83358-2032-5f12-a123-c35aa6e00369",
+    "net": "ELVDD",
+    "action": "remove"
+  },
+  {
+    "uuid": "e1a6a2f0-8e08-5ec4-93c9-991bceb41488",
+    "net": "KEY_UP",
+    "action": "remove"
+  },
+  {
+    "uuid": "affbc64d-bde2-5091-b5c4-b339d02deef5",
+    "net": "KEY_DOWN",
+    "action": "remove"
+  },
+  {
+    "uuid": "46dfaca8-b03b-5a6e-ae10-a90efcb89f78",
+    "net": "KEY_DOWN",
+    "action": "remove"
+  },
+  {
+    "uuid": "6aa91d9e-2edc-5e78-abce-a9fd57631f94",
+    "net": "PWRON_N",
+    "action": "remove"
+  },
+  {
+    "uuid": "db384f45-6856-5f4d-8ec0-80ddb83a27b1",
+    "net": "PWRON_N",
+    "action": "remove"
+  },
+  {
+    "uuid": "8fdaa776-13b7-51a7-853d-bd84a1170e4e",
+    "net": "PWRON_N",
+    "action": "remove"
+  },
+  {
+    "uuid": "8105f28d-ac9f-5f12-a0e4-d6f8deaabec2",
+    "net": "SD_D1",
+    "action": "remove"
+  },
+  {
+    "uuid": "99d716cb-1dc0-5b60-8452-4624a2aa3f9d",
+    "net": "SD_D1",
+    "action": "remove"
+  },
+  {
+    "uuid": "05f6e4ea-9e84-5dba-8eb0-e8552d473077",
+    "net": "SD_D1",
+    "action": "remove"
+  },
+  {
+    "uuid": "aaaf6c4d-90e7-5edf-b002-7ac0e58f1a17",
+    "net": "KEY_UP",
+    "action": "remove"
+  },
+  {
+    "uuid": "ca4db028-a474-5dfa-bb9c-5052923824dd",
+    "net": "SD_D2",
+    "action": "remove"
+  },
+  {
+    "uuid": "562dbeb9-27cf-5291-a2f9-0fd7dfe4eb95",
+    "net": "SD_PWR_EN",
+    "action": "remove"
+  },
+  {
+    "uuid": "63e4e936-c353-5a1a-a135-85842887f8c2",
+    "net": "SD_PWR_EN",
+    "action": "remove"
+  },
+  {
+    "uuid": "56eb647a-22f1-5d61-9b3d-e6396b752b13",
+    "net": "GND",
+    "action": "remove"
+  },
+  {
+    "uuid": "80df3798-6edf-55ff-a313-f1cc3ae5d980",
+    "net": "GND",
+    "action": "remove"
+  },
+  {
+    "uuid": "c5ecf44d-ef5e-5567-a0bd-ef31e5c321ae",
+    "net": "GND",
+    "action": "remove"
+  },
+  {
+    "uuid": "4ea4458d-5206-56e2-a5fa-0103f90e60d7",
+    "net": "GND",
+    "action": "remove"
+  },
+  {
+    "uuid": "52a78047-cb43-5f61-a991-0e1a2a100b0b",
+    "net": "SD_D1",
+    "action": "remove"
+  },
+  {
+    "uuid": "11891f62-7ce8-562c-bda4-f0eaf75c6949",
+    "net": "LCD_TE",
+    "action": "remove"
+  }
+]

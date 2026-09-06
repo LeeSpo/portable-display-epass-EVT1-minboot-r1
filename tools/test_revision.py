@@ -25,6 +25,27 @@ class FormatAndTransformTests(unittest.TestCase):
         b=loads(gen._seg(0,1,0,2,.09,'F.Cu','GND',{'GND':1},'same'))
         self.assertNotEqual(val(a,'uuid'),val(b,'uuid'))
     def test_duplicate_uuid_detected(self):self.assertTrue(unique_uuids(loads('(root (a (uuid "x")) (b (uuid "x")))')))
+    def test_via_uuid_includes_net_and_position(self):
+        vias=[loads(gen._via(x,2,net,{'A':1,'B':2},'reused-tag')) for x,net in [(1,'A'),(2,'A'),(1,'B')]]
+        self.assertEqual(len({val(v,'uuid') for v in vias}),3)
+    def test_molex_staggered_land_pattern(self):
+        pads={p[1]:p for p in children(load(ROOT/'sameat.pretty/FPC45.kicad_mod'),'pad')}
+        self.assertEqual(len(pads),47)
+        self.assertAlmostEqual(float(val(pads['3'],'at'))-float(val(pads['1'],'at')),.6)
+        self.assertAlmostEqual(float(values(pads['2'],'at')[1])-float(values(pads['1'],'at')[1]),-3.065)
+        self.assertEqual([float(x) for x in values(pads['1'],'size')],[.3,.67])
+        self.assertEqual([float(x) for x in values(pads['2'],'size')],[.3,.5])
+    def test_ti_dpd_package_dimensions(self):
+        pads={p[1]:p for p in children(load(ROOT/'sameat.pretty/WSON-12.kicad_mod'),'pad')}
+        self.assertAlmostEqual(abs(float(values(pads['2'],'at')[1])-float(values(pads['1'],'at')[1])),.45)
+        self.assertEqual([float(x) for x in values(pads['13'],'size')],[1.21,2.02])
+        self.assertEqual(float(val(pads['13'],'solder_paste_margin_ratio')),-.15)
+    def test_single_lane_and_legacy_backlight_removed(self):
+        devs={d.ref:d for d in gen.devices()}
+        for pin in ['82','83']:self.assertIsNone(devs['U2'].pins[pin][1])
+        self.assertIsNone(devs['J4'].pins['13'][1])
+        self.assertTrue(devs['R31'].dnp)
+        self.assertFalse({'U7','L4','D4','R19','C27','C28'}&devs.keys())
     def test_whole_board_regeneration_disabled(self):
         with self.assertRaises(RuntimeError):gen.board(gen.devices())
     def test_old_bom_export_disabled(self):
@@ -55,7 +76,7 @@ class DesignIntegrationTests(unittest.TestCase):
         self.assertIn('Non-display U2 fanout incomplete',report['problems'])
         self.assertLess(report['counts']['u2_pins_with_via_or_peer_connection'],54)
     def test_zero_checked_spacing_issues(self):self.assertEqual(self.report['counts']['geometric_issues'],0)
-    def test_source_pcb_schematic_component_count(self):self.assertEqual(self.report['counts']['schematic_components'],111);self.assertEqual(self.report['counts']['footprints'],115)
+    def test_source_pcb_schematic_component_count(self):self.assertEqual(self.report['counts']['schematic_components'],120);self.assertEqual(self.report['counts']['footprints'],124)
     def test_u9_chains_match_their_logical_pads(self):
         for group in connected_groups(board_items(self.board)):
             p=[x for x in group if x.ref=='U9']

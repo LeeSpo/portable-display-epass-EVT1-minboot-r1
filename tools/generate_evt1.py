@@ -205,7 +205,7 @@ def v851_pins() -> dict[str, tuple[str, str | None]]:
         42:"UART0_RX",43:"UART0_TX",44:"3V3",45:"WAKE_PULSE_N",46:"ADC_KEYS",47:"3V3",48:"SOC_AVCC",
         50:"VRA1",51:"GND",54:"CORE_0V93",55:"3V3",56:"NAND_CS",57:"NAND_CLK",58:"NAND_MISO",
         59:"NAND_MOSI",60:"NAND_HOLD",61:"NAND_WP",62:"SOC_LDO_1V8",75:"CORE_0V93",76:"USB_DP",
-        77:"USB_DM",78:"3V3",79:"SOC_LDO_1V8",80:"DSI_D0N",81:"DSI_D0P",82:"DSI_D1N",83:"DSI_D1P",
+        77:"USB_DM",78:"3V3",79:"SOC_LDO_1V8",80:"DSI_D0N",81:"DSI_D0P",
         84:"DSI_CKN",85:"DSI_CKP",88:"CORE_0V93",89:"GND",
     }
     return {str(i):(names[i], net.get(i)) for i in range(1, 90)}
@@ -242,13 +242,18 @@ def add(devs: list[Device], ref: str, value: str, fp: str, sheet: str, x: float,
         elif fp == "SSOP-8": d.pads = dual_pads(8, 3.6, .65, (1.05,.35))
         elif fp == "WSON-8": d.pads = dual_pads(8, 6.4, 1.27, (1.4,.6))
         elif fp == "WSON-12":
-            d.pads = dual_pads(12, 3.0, 0.5, (0.95, 0.28)) + [Pad("13", 0, 0, 1.7, 1.7, "rect")]
+            d.pads = dual_pads(12, 2.9, 0.45, (0.70, 0.25)) + [Pad("13", 0, 0, 1.21, 2.02, "rect")]
         elif fp == "LGA-12": d.pads = lga12_pads()
         elif fp == "RTC-8": d.pads = dual_pads(8, 3.4, .5, (.65,.28))
         elif fp == "QFN40": d.pads = qfn_pads(40, 5.0, .4, "41", 3.1)
         elif fp == "QFN88": d.pads = qfn_pads(88, 9.0, .35, "89", 5.2)
         elif fp == "FPC20": d.pads = row_pads(20, .5, 1.2)
-        elif fp == "FPC45": d.pads = row_pads(45, .5, 1.2)
+        elif fp == "FPC45":
+            # Molex SD-502598-003: alternating tails; odd pins at insertion side.
+            d.pads = [Pad(str(i), (i-23)*.3, 0 if i%2 else -3.065,
+                          .3, .67 if i%2 else .5, "rect") for i in range(1,46)]
+            d.pads += [Pad("MP1", -7.4, -.365, .35, 1., "rect"),
+                       Pad("MP2", 7.4, -.365, .35, 1., "rect")]
         elif fp == "USB4105": d.pads = usb4105_pads()
         elif fp == "MICROSD": d.pads = microsd_pads()
         elif fp == "SW_SIDE": d.pads = side_switch_pads()
@@ -370,7 +375,7 @@ def devices() -> list[Device]:
         "10": ("GND", "GND"),
         "11": ("VDDIO", "LCD_1V8"),
         "12": ("GND", "GND"),
-        "13": ("TE1", "LCD_TE1"),
+        "13": ("TE1", None),  # Optional panel status output unused in first bring-up.
         "14": ("SWIRE", "LCD_SWIRE"),
         "15": ("TE", "LCD_TE"),
         "16": ("RESX", "LCD_RST"),
@@ -387,20 +392,12 @@ def devices() -> list[Device]:
         "43": ("MTP", "GND"),
         "44": ("GND", "GND"), "45": ("GND", "GND"),
     })
+    kd024.update({"MP1": ("MOUNT", "GND"), "MP2": ("MOUNT", "GND")})
     add(d, "J4", "KD024EGOIN152-01", "FPC45", "interfaces", 30, 39, kd024,
-        mpn="502598-4591", lcsc="",
+        mpn="502598-4593", lcsc="",
         datasheet="kd024_screen/KD024EGOIN152-01_engineering_spec.md",
-        note="Molex 502598-4591 mate; MIPI 1-lane; IM0/IM1 strap GND; EL± from U10 TPS65631")
-    # Legacy TFT LED backlight boost — DNP for AMOLED (brightness via 0x51).
-    tps = {"1": ("SW", "BL_SW"), "2": ("GND", "GND"), "3": ("FB", "LEDK"), "4": ("CTRL", "LCD_PWM"), "5": ("VIN", "VSYS")}
-    add(d, "U7", "TPS61169DCKR", "SC70-5", "interfaces", 45, 42, tps, mpn="TPS61169DCKR", lcsc="C71045",
-        datasheet="https://www.ti.com/lit/ds/symlink/tps61169.pdf", dnp=True,
-        note="DNP: TFT backlight unused with KD024 AMOLED")
-    add(d, "L4", "10uH/1.5A", "IND_2x2", "interfaces", 45, 36, passive("VSYS", "BL_SW"), dnp=True)
-    add(d, "D4", "SS16", "D_SOD123", "interfaces", 49, 36, passive("BL_SW", "LEDA"), dnp=True)
-    add(d, "R19", "2.55R 1%", "0603", "interfaces", 49, 42, passive("LEDK", "GND"), dnp=True)
-    add(d, "C27", "1u/25V", "0603", "interfaces", 46, 32, passive("LEDA", "GND"), dnp=True)
-    add(d, "C28", "100n", "0402", "interfaces", 42, 46, passive("VSYS", "GND"), dnp=True)
+        note="Molex 502598-4593; verify -4591 module FPC compatibility; MIPI 1-lane; EL± from U10")
+    # TFT-only U7/L4/D4/R19/C27/C28 removed from the AMOLED variant.
     # VCI (3.3) gated by LCD_EN; VDDIO (1.8) via 0R from ALDO1 1V8.
     add(d, "U8", "TPS22918DBVR", "SOT23-6", "interfaces", 20, 40,
         {"1": ("VIN", "3V3"), "2": ("GND", "GND"), "3": ("ON", "LCD_EN"), "4": ("CT", None), "5": ("QOD", None), "6": ("VOUT", "LCD_3V3")},
@@ -433,7 +430,7 @@ def devices() -> list[Device]:
     add(d, "U10", "TPS65631DPDR", "WSON-12", "interfaces", 38, 36, tps65631,
         mpn="TPS65631DPDR", lcsc="C165127",
         datasheet="https://www.ti.com/lit/ds/symlink/tps65631.pdf",
-        note="AMOLED EL± bias; CTRL=LCD_EN; default 4.6/-4.0; SWIRE optional via R31")
+        note="AMOLED EL± bias; CTRL shares VCI enable; default 4.6/-4.0 requires panel approval; no CTRL pulses")
     add(d, "L5", "4.7uH", "IND_2x2", "interfaces", 32, 32, passive("VSYS", "EL_SWP"), mpn="4.7uH 1.5A", note="ELVDD boost")
     add(d, "L6", "4.7uH", "IND_2x2", "interfaces", 44, 32, passive("EL_SWN", "GND"), mpn="4.7uH 1.5A", note="ELVSS IBB L to GND per TPS65631 app")
     add(d, "C46", "10u", "0603", "interfaces", 34, 28, passive("VSYS", "GND"), note="EL VIN")
@@ -443,7 +440,7 @@ def devices() -> list[Device]:
     add(d, "C50", "10u", "0603", "interfaces", 44, 36, passive("ELVSS", "GND"), note="ELVSS cout")
     add(d, "C51", "100n", "0402", "interfaces", 40, 40, passive("EL_CT", "GND"), note="VNEG transition CT")
     add(d, "R31", "0R", "0402", "interfaces", 40, 44, passive("LCD_SWIRE", "LCD_EN"), dnp=True,
-        note="DNP: populate to let panel SWIRE program VNEG; leave open per RM690B0 default")
+        note="DNP required: shared CTRL/VCI enable; do not bridge or pulse until control topology reviewed")
     sd={"1":("DAT2","SD_D2"),"2":("DAT3","SD_D3"),"3":("CMD","SD_CMD"),"4":("VDD","SD_3V3"),"5":("CLK","SD_CLK"),"6":("VSS","GND"),"7":("DAT0","SD_D0"),"8":("DAT1","SD_D1"),"9":("CD","SD_DET"),"10":("SH","GND"),"11":("SH","GND"),"12":("SH","GND"),"13":("SH","GND")}
     add(d,"J5","MicroSD","MICROSD","interfaces",29,7,sd,mpn="MUP-M617-2",lcsc="C5205359")
     add(d,"Q3","AO3401A","SOT23-3","interfaces",41,8,{"1":("G","SD_PWR_GATE"),"2":("S","3V3"),"3":("D","SD_3V3")},mpn="AO3401A",lcsc="C15127")
@@ -463,6 +460,19 @@ def devices() -> list[Device]:
     add(d,"C31","10n","0402","interfaces",45,50,passive("ADC_KEYS","GND"))
     add(d,"D5","STATUS","LED0603","interfaces",45,55,passive("STATUS_LED_A","GND"),mpn="0603 Blue LED")
     add(d,"R27","2.2k","0402","interfaces",42,52,passive("STATUS_LED","STATUS_LED_A"))
+    display_placement = {
+        "J4": (30, 39, 0), "U10": (46, 30, 0),
+        "L5": (41.5, 28, 0), "L6": (50.5, 28, 0),
+        "C46": (46, 25.5, 0), "C47": (49, 25.5, 0),
+        "C48": (42, 31.5, 90), "C49": (50, 31.5, 90),
+        "C50": (52, 34, 90), "C51": (48.5, 34.5, 0),
+        "C42": (25, 42, 90), "C43": (27, 42, 90),
+        "C44": (30, 42, 90), "C45": (32, 42, 90),
+        "R29": (30, 45, 0), "R31": (35, 42, 0),
+    }
+    for dev in d:
+        if dev.ref in display_placement:
+            dev.x, dev.y, dev.rotation = display_placement[dev.ref]
     return d
 
 
@@ -568,7 +578,7 @@ def root_schematic() -> tuple[str, dict[str,str]]:
         su=sheets[name]
         out += ['\t(sheet',f'\t\t(at {x} {y})','\t\t(size 55 35)','\t\t(exclude_from_sim no)','\t\t(in_bom yes)','\t\t(on_board yes)','\t\t(dnp no)', '\t\t(stroke (width .1524) (type solid))','\t\t(fill (color 0 0 0 0))',f'\t\t(uuid {q(su)})',f'\t\t(property "Sheetname" {q(name.upper())} (at {x} {y-1} 0) (effects (font (size 1.27 1.27)) (justify left bottom)))',f'\t\t(property "Sheetfile" {q(file)} (at {x} {y+36} 0) (effects (font (size 1.27 1.27)) (justify left top)))',f'\t\t(instances (project "portable_display_epass" (path "/{root_uuid}" (page "{page}"))))','\t)']
     pages=" ".join(f'(path {q("/"+sheets[name])} (page "{i+2}"))' for i,name in enumerate(("power","soc","sensors","interfaces")))
-    out += ['\t(text "EVT1-minboot-r1 - engineering candidate; NOT FOR FABRICATION\\nNo radio / no audio / no touch / no AOD\\nSee docs/ for pin map, power tree and bring-up checklist." (exclude_from_sim no) (at 25 150 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "'+uid('root-note')+'"))','\t(sheet_instances (path "/" (page "1")))','\t(embedded_fonts no)',')']
+    out += ['\t(text "EVT1-minboot-r1 - engineering candidate; NOT FOR FABRICATION\\nNo radio / no audio / no touch; KD024 AOD firmware pending\\nSee docs/ for pin map, power tree and bring-up checklist." (exclude_from_sim no) (at 25 150 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "'+uid('root-note')+'"))','\t(sheet_instances (path "/" (page "1")))','\t(embedded_fonts no)',')']
     return "\n".join(out)+"\n",sheets
 
 
@@ -576,6 +586,8 @@ def write_local_footprints(devs: list[Device]) -> None:
     LIB.mkdir(exist_ok=True)
     kinds={d.footprint:d.pads for d in devs}
     for name,pads in kinds.items():
+        if name in {"FPC45", "WSON-12"}:
+            continue  # Curated local footprints; see docs/DISPLAY_FOOTPRINT_REVIEW.md
         x0=min(p.x-p.sx/2 for p in pads)-.1; x1=max(p.x+p.sx/2 for p in pads)+.1
         y0=min(p.y-p.sy/2 for p in pads)-.1; y1=max(p.y+p.sy/2 for p in pads)+.1
         lines=[f'(footprint {q(name)}','\t(version 20240108)','\t(generator "sameat-evt1-generator")','\t(layer "F.Cu")',f'\t(property "Reference" "REF**" (at 0 {y0-1:.3f} 0) (layer "F.SilkS") (hide yes) (effects (font (size 1 1) (thickness .15))))',f'\t(property "Value" {q(name)} (at 0 {y1+1:.3f} 0) (layer "F.Fab") (effects (font (size .8 .8) (thickness .12))))','\t(attr smd)',f'\t(fp_rect (start {x0:.3f} {y0:.3f}) (end {x1:.3f} {y1:.3f}) (stroke (width .1) (type default)) (fill none) (layer "F.Fab"))',f'\t(fp_rect (start {x0:.3f} {y0:.3f}) (end {x1:.3f} {y1:.3f}) (stroke (width .05) (type default)) (fill none) (layer "F.CrtYd"))','\t(fp_text user "${REFERENCE}" (at 0 0 0) (layer "F.Fab") (effects (font (size .7 .7) (thickness .1))))']
@@ -955,6 +967,7 @@ def snap(value: float, grid: float = .1) -> float:
 
 
 def _via(x: float, y: float, net: str, net_ids: dict[str,int], tag: str) -> str:
+    tag = f"via-{tag}-{x:.5f}-{y:.5f}-{net}"
     return f'\t(via (at {x:.4f} {y:.4f}) (size {VIA_SIZE:.2f}) (drill {VIA_DRILL:.2f}) (layers "F.Cu" "B.Cu") (net {net_ids[net]}) (uuid {q(uid(tag))}))'
 
 
