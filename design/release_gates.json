@@ -6,7 +6,7 @@
       "requirement": "Exact display/module datasheet, FPC pinout, voltage, DSI timing and backlight topology",
       "status": "in_progress",
       "reviewer": "",
-      "evidence": "KD024 J4 Molex 45-pin MIPI1 wired; EL bias locked to TPS65631DPDR (C165127) CTRL=LCD_EN, defaults 4.6/-4.0; SWIRE optional R31 DNP; see docs/DISPLAY_EL_TPS65631.md and DISPLAY_KD024_NETMAP.md. Still open: PCB place/route, VIN\u22644.5 check, ERC/DRC, AOD FW."
+      "evidence": "KD024 J4 Molex 45-pin (Sameat:FPC45) placed; U10 TPS65631DPDR + L5/L6 + EL/VCI/VDDIO passives placed; U7 backlight chain DNP parked; local EL OUTP/OUTN/CT/VSYS island copper started; MIPI 1-lane + LCD_RST/TE and most cross-board EL/VCI runs still ratsnest (board too dense for blind manhattan). See docs/DISPLAY_PCB_STATUS.md and verification/display_island_drc*. fabrication_released remains false."
     },
     {
       "id": "pmic_variant",
