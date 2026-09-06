@@ -1,0 +1,19 @@
+{
+  "input_sha256": {
+    "layout_relax(1).zip": "367d59e0984600bf19a568b530e4bb3001ce298054b56625fc175fc97bd973ef",
+    "compact_placed.kicad_pcb": "bb70717611204486e97a69ac377accd8874085ff67d13bcb555456ab7915a4e0"
+  },
+  "actual_placement_source": "layout_relax/compact_placed.kicad_pcb",
+  "comparison_board_mm": [
+    50,
+    96
+  ],
+  "new_board_mm": [
+    38,
+    64
+  ],
+  "area_reduction_percent": 49.3333,
+  "source_schematic_supplied": false,
+  "electrical_net_changes": false,
+  "dimensions_status": "Proposed PCB dimensions; display/FPC assembly not verified"
+}

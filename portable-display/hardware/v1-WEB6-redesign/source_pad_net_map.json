@@ -1,0 +1,759 @@
+{
+  "C11": {
+    "1": "VREF",
+    "2": "GND"
+  },
+  "D3": {
+    "1": "ACCEL_INT_N",
+    "2": "WAKE_REQ_N"
+  },
+  "C9": {
+    "1": "DRAM_1V5",
+    "2": "GND"
+  },
+  "R27": {
+    "1": "STATUS_LED",
+    "2": "STATUS_LED_A"
+  },
+  "C7": {
+    "1": "CORE_0V93",
+    "2": "GND"
+  },
+  "C17": {
+    "1": "1V8",
+    "2": "GND"
+  },
+  "C41": {
+    "1": "VSYS",
+    "2": "GND"
+  },
+  "C35": {
+    "1": "SOC_AVCC",
+    "2": "GND"
+  },
+  "C16": {
+    "1": "1V8",
+    "2": "GND"
+  },
+  "D13": {
+    "1": "USB_CC1",
+    "2": "GND"
+  },
+  "C4": {
+    "1": "3V3",
+    "2": "GND"
+  },
+  "C2": {
+    "1": "VSYS",
+    "2": "GND"
+  },
+  "D7": {
+    "1": "SD_D3",
+    "2": "GND"
+  },
+  "R18": {
+    "1": "3V3",
+    "2": "ACCEL_INT_N"
+  },
+  "R1": {
+    "1": "USB_CC1",
+    "2": "GND"
+  },
+  "C24": {
+    "1": "RTC_3V3",
+    "2": "GND"
+  },
+  "C36": {
+    "1": "VRA1",
+    "2": "GND"
+  },
+  "U6": {
+    "1": "WAKE_PULSE",
+    "2": "GND",
+    "3": "WAKE_CEXT",
+    "4": "WAKE_REXT",
+    "5": "WAKE_REQ_N",
+    "6": "RTC_3V3",
+    "7": "RTC_3V3",
+    "8": "RTC_3V3"
+  },
+  "J2": {
+    "1": "VBAT",
+    "2": "BAT_NTC",
+    "3": "GND"
+  },
+  "D12": {
+    "1": "SD_DET",
+    "2": "GND"
+  },
+  "R24": {
+    "1": "KEY_DOWN",
+    "2": "ADC_KEYS"
+  },
+  "C13": {
+    "1": "XOUT",
+    "2": "GND"
+  },
+  "R2": {
+    "1": "USB_CC2",
+    "2": "GND"
+  },
+  "SW3": {
+    "1": "KEY_OK",
+    "2": "KEY_OK",
+    "3": "GND"
+  },
+  "C40": {
+    "1": "VSYS",
+    "2": "GND"
+  },
+  "R21": {
+    "1": "SD_PWR_EN",
+    "2": "SD_PWR_GATE"
+  },
+  "C8": {
+    "1": "DRAM_1V5",
+    "2": "GND"
+  },
+  "J1": {
+    "A1": "GND",
+    "A4": "VBUS",
+    "A5": "USB_CC1",
+    "A6": "USB_DP",
+    "A7": "USB_DM",
+    "A8": "unconnected-(J1-SBU1-PadA8)",
+    "A9": "VBUS",
+    "A12": "GND",
+    "B1": "GND",
+    "B4": "VBUS",
+    "B5": "USB_CC2",
+    "B6": "USB_DP",
+    "B7": "USB_DM",
+    "B8": "unconnected-(J1-SBU2-PadB8)",
+    "B9": "VBUS",
+    "B12": "GND",
+    "SH1": "GND",
+    "SH2": "GND",
+    "SH3": "GND",
+    "SH4": "GND"
+  },
+  "H2": {
+    "": ""
+  },
+  "C15": {
+    "1": "3V3",
+    "2": "GND"
+  },
+  "C6": {
+    "1": "CORE_0V93",
+    "2": "GND"
+  },
+  "SW1": {
+    "1": "KEY_UP",
+    "2": "KEY_UP",
+    "3": "GND"
+  },
+  "H1": {
+    "": ""
+  },
+  "R15": {
+    "1": "3V3",
+    "2": "I2C0_SCL"
+  },
+  "R26": {
+    "1": "KEY_BACK",
+    "2": "ADC_KEYS"
+  },
+  "D14": {
+    "1": "USB_CC2",
+    "2": "GND"
+  },
+  "C20": {
+    "1": "CORE_0V93",
+    "2": "GND"
+  },
+  "Q3": {
+    "1": "SD_PWR_GATE",
+    "2": "3V3",
+    "3": "SD_3V3"
+  },
+  "Q1": {
+    "1": "WAKE_PULSE",
+    "2": "GND",
+    "3": "PWRON_N"
+  },
+  "J3": {
+    "1": "GND",
+    "2": "3V3",
+    "3": "UART0_TX",
+    "4": "UART0_RX",
+    "5": "E907_TX",
+    "6": "E907_RX",
+    "7": "NAND_MOSI",
+    "8": "PWRON_N"
+  },
+  "D6": {
+    "1": "SD_D2",
+    "2": "GND"
+  },
+  "L1": {
+    "1": "LX_3V3",
+    "2": "3V3"
+  },
+  "R9": {
+    "1": "3V3",
+    "2": "NAND_HOLD"
+  },
+  "C3": {
+    "1": "VBAT",
+    "2": "GND"
+  },
+  "L2": {
+    "1": "LX_CORE",
+    "2": "CORE_0V93"
+  },
+  "C1": {
+    "1": "VSYS",
+    "2": "GND"
+  },
+  "C29": {
+    "1": "LCD_3V3",
+    "2": "GND"
+  },
+  "R3": {
+    "1": "3V3",
+    "2": "PMIC_IRQ_N"
+  },
+  "C25": {
+    "1": "RTC_3V3",
+    "2": "GND"
+  },
+  "Y1": {
+    "1": "XIN",
+    "2": "GND",
+    "3": "XOUT",
+    "4": "GND"
+  },
+  "C26": {
+    "1": "RTC_3V3",
+    "2": "GND"
+  },
+  "D5": {
+    "1": "STATUS_LED_A",
+    "2": "GND"
+  },
+  "R28": {
+    "1": "3V3",
+    "2": "NAND_MISO"
+  },
+  "SW5": {
+    "1": "PWRON_N",
+    "2": "PWRON_N",
+    "3": "GND"
+  },
+  "L3": {
+    "1": "LX_DRAM",
+    "2": "DRAM_1V5"
+  },
+  "R5": {
+    "1": "3V3",
+    "2": "PMIC_SDA"
+  },
+  "SW4": {
+    "1": "KEY_BACK",
+    "2": "KEY_BACK",
+    "3": "GND"
+  },
+  "D1": {
+    "1": "3V3",
+    "2": "CHGLED_A"
+  },
+  "C31": {
+    "1": "ADC_KEYS",
+    "2": "GND"
+  },
+  "R6": {
+    "1": "CHGLED_A",
+    "2": "CHGLED_N"
+  },
+  "R8": {
+    "1": "3V3",
+    "2": "NAND_WP"
+  },
+  "C33": {
+    "1": "RTC_3V3",
+    "2": "GND"
+  },
+  "C14": {
+    "1": "3V3",
+    "2": "GND"
+  },
+  "U4": {
+    "1": "I2C0_SCL",
+    "2": "RTC_3V3",
+    "3": "unconnected-(U4-SDO_SA0-Pad3)",
+    "4": "I2C0_SDA",
+    "5": "unconnected-(U4-NC-Pad5)",
+    "6": "GND",
+    "7": "GND",
+    "8": "GND",
+    "9": "RTC_3V3",
+    "10": "RTC_3V3",
+    "11": "unconnected-(U4-INT2-Pad11)",
+    "12": "ACCEL_INT_N"
+  },
+  "D2": {
+    "1": "RTC_INT_N",
+    "2": "WAKE_REQ_N"
+  },
+  "R11": {
+    "1": "RTC_3V3",
+    "2": "WAKE_REQ_N"
+  },
+  "C39": {
+    "1": "PMIC_BACKUP",
+    "2": "GND"
+  },
+  "U2": {
+    "1": "unconnected-(U2-PD18-Pad1)",
+    "2": "LCD_RST",
+    "3": "LCD_TE",
+    "4": "LCD_EN",
+    "5": "3V3",
+    "6": "SD_D1",
+    "7": "SD_D0",
+    "8": "SD_CLK",
+    "9": "SD_CMD",
+    "10": "SD_D3",
+    "11": "SD_D2",
+    "12": "SD_DET",
+    "13": "CORE_0V93",
+    "14": "SOC_LDO_1V8",
+    "15": "XOUT",
+    "16": "XIN",
+    "17": "CORE_0V93",
+    "18": "unconnected-(U2-PE13-Pad18)",
+    "19": "unconnected-(U2-PE12-Pad19)",
+    "20": "unconnected-(U2-PE11-Pad20)",
+    "21": "I2C0_SCL",
+    "22": "3V3",
+    "23": "PMIC_IRQ_N",
+    "24": "RTC_INT_N",
+    "25": "E907_TX",
+    "26": "I2C0_SDA",
+    "27": "unconnected-(U2-PE8-Pad27)",
+    "28": "unconnected-(U2-PE9-Pad28)",
+    "29": "unconnected-(U2-PE3-Pad29)",
+    "30": "ACCEL_INT_N",
+    "31": "E907_RX",
+    "32": "unconnected-(U2-PE10-Pad32)",
+    "33": "CORE_0V93",
+    "34": "DRAM_1V5",
+    "35": "CORE_0V93",
+    "36": "DRAM_1V5",
+    "37": "SOC_LDO_1V8",
+    "38": "PMIC_SDA",
+    "39": "PMIC_SCL",
+    "40": "SD_PWR_EN",
+    "41": "STATUS_LED",
+    "42": "UART0_RX",
+    "43": "UART0_TX",
+    "44": "3V3",
+    "45": "WAKE_PULSE_N",
+    "46": "ADC_KEYS",
+    "47": "3V3",
+    "48": "SOC_AVCC",
+    "49": "unconnected-(U2-LINEOUTP-Pad49)",
+    "50": "VRA1",
+    "51": "GND",
+    "52": "unconnected-(U2-MICIN1N-Pad52)",
+    "53": "unconnected-(U2-MICIN1P-Pad53)",
+    "54": "CORE_0V93",
+    "55": "3V3",
+    "56": "NAND_CS",
+    "57": "NAND_CLK",
+    "58": "NAND_MISO",
+    "59": "NAND_MOSI",
+    "60": "NAND_HOLD",
+    "61": "NAND_WP",
+    "62": "SOC_LDO_1V8",
+    "63": "unconnected-(U2-PA11-Pad63)",
+    "64": "unconnected-(U2-PA10-Pad64)",
+    "65": "unconnected-(U2-PA9-Pad65)",
+    "66": "unconnected-(U2-PA8-Pad66)",
+    "67": "unconnected-(U2-PA7-Pad67)",
+    "68": "unconnected-(U2-PA6-Pad68)",
+    "69": "unconnected-(U2-PA5-Pad69)",
+    "70": "unconnected-(U2-PA4-Pad70)",
+    "71": "unconnected-(U2-PA3-Pad71)",
+    "72": "unconnected-(U2-PA2-Pad72)",
+    "73": "unconnected-(U2-PA1-Pad73)",
+    "74": "unconnected-(U2-PA0-Pad74)",
+    "75": "CORE_0V93",
+    "76": "USB_DP",
+    "77": "USB_DM",
+    "78": "3V3",
+    "79": "SOC_LDO_1V8",
+    "80": "DSI_D0N",
+    "81": "DSI_D0P",
+    "82": "unconnected-(U2-PD3_DSI_D1N-Pad82)",
+    "83": "unconnected-(U2-PD4_DSI_D1P-Pad83)",
+    "84": "DSI_CKN",
+    "85": "DSI_CKP",
+    "86": "unconnected-(U2-PD7-Pad86)",
+    "87": "unconnected-(U2-PD8-Pad87)",
+    "88": "CORE_0V93",
+    "89": "GND"
+  },
+  "R4": {
+    "1": "3V3",
+    "2": "PMIC_SCL"
+  },
+  "SW6": {
+    "1": "NAND_MOSI",
+    "2": "NAND_MOSI",
+    "3": "GND"
+  },
+  "U8": {
+    "1": "3V3",
+    "2": "GND",
+    "3": "LCD_EN",
+    "4": "unconnected-(U8-CT-Pad4)",
+    "5": "unconnected-(U8-QOD-Pad5)",
+    "6": "LCD_3V3"
+  },
+  "SW2": {
+    "1": "KEY_DOWN",
+    "2": "KEY_DOWN",
+    "3": "GND"
+  },
+  "C18": {
+    "1": "CORE_0V93",
+    "2": "GND"
+  },
+  "C22": {
+    "1": "3V3",
+    "2": "GND"
+  },
+  "U1": {
+    "1": "CHGLED_N",
+    "2": "VREF",
+    "3": "GND",
+    "4": "CORE_0V93",
+    "5": "LX_CORE",
+    "6": "VSYS",
+    "7": "VSYS",
+    "8": "LX_DRAM",
+    "9": "DRAM_1V5",
+    "10": "unconnected-(U1-CPUSLDO-Pad10)",
+    "11": "unconnected-(U1-DLDO2_DC4SW-Pad11)",
+    "12": "unconnected-(U1-BLDO1-Pad12)",
+    "13": "3V3",
+    "14": "unconnected-(U1-BLDO2-Pad14)",
+    "15": "unconnected-(U1-ALDO4-Pad15)",
+    "16": "unconnected-(U1-ALDO3-Pad16)",
+    "17": "3V3",
+    "18": "1V8",
+    "19": "unconnected-(U1-ALDO2-Pad19)",
+    "20": "unconnected-(U1-DLDO1_DC1SW-Pad20)",
+    "21": "3V3",
+    "22": "LX_3V3",
+    "23": "VSYS",
+    "24": "VSYS",
+    "25": "unconnected-(U1-LX2-Pad25)",
+    "26": "unconnected-(U1-FB2-Pad26)",
+    "27": "PMIC_BACKUP",
+    "28": "RTC_3V3",
+    "29": "unconnected-(U1-PWROK-Pad29)",
+    "30": "PWRON_N",
+    "31": "BAT_NTC",
+    "32": "unconnected-(U1-GPIO1_FB5_RTCLDO2-Pad32)",
+    "33": "VBAT",
+    "34": "VSYS",
+    "35": "unconnected-(U1-SW-Pad35)",
+    "36": "VSYS",
+    "37": "VBUS",
+    "38": "PMIC_IRQ_N",
+    "39": "PMIC_SDA",
+    "40": "PMIC_SCL",
+    "41": "GND"
+  },
+  "R22": {
+    "1": "1V8",
+    "2": "ADC_KEYS"
+  },
+  "C30": {
+    "1": "SD_3V3",
+    "2": "GND"
+  },
+  "U5": {
+    "1": "unconnected-(U5-CLKOUT-Pad1)",
+    "2": "RTC_INT_N",
+    "3": "I2C0_SCL",
+    "4": "I2C0_SDA",
+    "5": "GND",
+    "6": "RTC_VBACKUP",
+    "7": "RTC_3V3",
+    "8": "RTC_EVI"
+  },
+  "R13": {
+    "1": "RTC_VBACKUP",
+    "2": "GND"
+  },
+  "U9": {
+    "1": "USB_DP",
+    "2": "GND",
+    "3": "USB_DM",
+    "4": "USB_DM",
+    "5": "VBUS",
+    "6": "USB_DP"
+  },
+  "C21": {
+    "1": "DRAM_1V5",
+    "2": "GND"
+  },
+  "D11": {
+    "1": "SD_D1",
+    "2": "GND"
+  },
+  "C12": {
+    "1": "XIN",
+    "2": "GND"
+  },
+  "R7": {
+    "1": "3V3",
+    "2": "NAND_CS"
+  },
+  "C37": {
+    "1": "SOC_LDO_1V8",
+    "2": "GND"
+  },
+  "D8": {
+    "1": "SD_CMD",
+    "2": "GND"
+  },
+  "J5": {
+    "1": "SD_D2",
+    "2": "SD_D3",
+    "3": "SD_CMD",
+    "4": "SD_3V3",
+    "5": "SD_CLK",
+    "6": "GND",
+    "7": "SD_D0",
+    "8": "SD_D1",
+    "9": "SD_DET",
+    "10": "GND",
+    "11": "GND",
+    "12": "GND",
+    "13": "GND"
+  },
+  "C10": {
+    "1": "1V8",
+    "2": "GND"
+  },
+  "H3": {
+    "": ""
+  },
+  "R14": {
+    "1": "RTC_EVI",
+    "2": "GND"
+  },
+  "C5": {
+    "1": "3V3",
+    "2": "GND"
+  },
+  "H4": {
+    "": ""
+  },
+  "R20": {
+    "1": "3V3",
+    "2": "SD_PWR_GATE"
+  },
+  "Q2": {
+    "1": "WAKE_PULSE",
+    "2": "GND",
+    "3": "WAKE_PULSE_N"
+  },
+  "C38": {
+    "1": "VSYS",
+    "2": "GND"
+  },
+  "C19": {
+    "1": "CORE_0V93",
+    "2": "GND"
+  },
+  "C32": {
+    "1": "VBUS",
+    "2": "GND"
+  },
+  "C23": {
+    "1": "WAKE_REXT",
+    "2": "WAKE_CEXT"
+  },
+  "R16": {
+    "1": "3V3",
+    "2": "I2C0_SDA"
+  },
+  "R23": {
+    "1": "KEY_UP",
+    "2": "ADC_KEYS"
+  },
+  "D10": {
+    "1": "SD_D0",
+    "2": "GND"
+  },
+  "R12": {
+    "1": "RTC_3V3",
+    "2": "WAKE_REXT"
+  },
+  "R25": {
+    "1": "KEY_OK",
+    "2": "ADC_KEYS"
+  },
+  "R17": {
+    "1": "3V3",
+    "2": "RTC_INT_N"
+  },
+  "R10": {
+    "1": "3V3",
+    "2": "NAND_MOSI"
+  },
+  "U3": {
+    "1": "NAND_CS",
+    "2": "NAND_MISO",
+    "3": "NAND_WP",
+    "4": "GND",
+    "5": "NAND_MOSI",
+    "6": "NAND_CLK",
+    "7": "NAND_HOLD",
+    "8": "3V3"
+  },
+  "D9": {
+    "1": "SD_CLK",
+    "2": "GND"
+  },
+  "C34": {
+    "1": "SOC_LDO_1V8",
+    "2": "GND"
+  },
+  "J4": {
+    "1": "GND",
+    "2": "GND",
+    "3": "ELVSS",
+    "4": "ELVSS",
+    "5": "GND",
+    "6": "ELVDD",
+    "7": "ELVDD",
+    "8": "GND",
+    "9": "LCD_3V3",
+    "10": "GND",
+    "11": "LCD_1V8",
+    "12": "GND",
+    "13": "unconnected-(J4-TE1-Pad13)",
+    "14": "LCD_SWIRE",
+    "15": "LCD_TE",
+    "16": "LCD_RST",
+    "17": "GND",
+    "18": "unconnected-(J4-PIN18-Pad18)",
+    "19": "unconnected-(J4-PIN19-Pad19)",
+    "20": "unconnected-(J4-PIN20-Pad20)",
+    "21": "unconnected-(J4-PIN21-Pad21)",
+    "22": "unconnected-(J4-PIN22-Pad22)",
+    "23": "unconnected-(J4-PIN23-Pad23)",
+    "24": "unconnected-(J4-PIN24-Pad24)",
+    "25": "unconnected-(J4-PIN25-Pad25)",
+    "26": "unconnected-(J4-PIN26-Pad26)",
+    "27": "unconnected-(J4-PIN27-Pad27)",
+    "28": "unconnected-(J4-PIN28-Pad28)",
+    "29": "unconnected-(J4-PIN29-Pad29)",
+    "30": "GND",
+    "31": "GND",
+    "32": "GND",
+    "33": "GND",
+    "34": "GND",
+    "35": "DSI_D0P",
+    "36": "DSI_D0N",
+    "37": "GND",
+    "38": "GND",
+    "39": "DSI_CKP",
+    "40": "DSI_CKN",
+    "41": "GND",
+    "42": "GND",
+    "43": "GND",
+    "44": "GND",
+    "45": "GND",
+    "MP1": "GND",
+    "MP2": "GND"
+  },
+  "C47": {
+    "1": "VSYS",
+    "2": "GND"
+  },
+  "C44": {
+    "1": "LCD_1V8",
+    "2": "GND"
+  },
+  "R29": {
+    "1": "1V8",
+    "2": "LCD_1V8"
+  },
+  "C43": {
+    "1": "LCD_3V3",
+    "2": "GND"
+  },
+  "L6": {
+    "1": "EL_SWN",
+    "2": "GND"
+  },
+  "C48": {
+    "1": "ELVDD",
+    "2": "GND"
+  },
+  "C50": {
+    "1": "ELVSS",
+    "2": "GND"
+  },
+  "C51": {
+    "1": "EL_CT",
+    "2": "GND"
+  },
+  "L5": {
+    "1": "VSYS",
+    "2": "EL_SWP"
+  },
+  "C45": {
+    "1": "LCD_1V8",
+    "2": "GND"
+  },
+  "C42": {
+    "1": "LCD_3V3",
+    "2": "GND"
+  },
+  "R31": {
+    "1": "LCD_SWIRE",
+    "2": "LCD_EN"
+  },
+  "U10": {
+    "1": "EL_SWP",
+    "2": "GND",
+    "3": "ELVDD",
+    "4": "ELVDD",
+    "5": "GND",
+    "6": "GND",
+    "7": "LCD_EN",
+    "8": "EL_CT",
+    "9": "ELVSS",
+    "10": "EL_SWN",
+    "11": "VSYS",
+    "12": "VSYS",
+    "13": "GND"
+  },
+  "C46": {
+    "1": "VSYS",
+    "2": "GND"
+  },
+  "C49": {
+    "1": "ELVSS",
+    "2": "GND"
+  }
+}
