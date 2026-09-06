@@ -9,7 +9,7 @@
 		(date "2026-09-05")
 		(rev "EVT1-minboot-r1")
 		(company "Sameat")
-		(comment 1 "V851s + AXP2101; display model NOT FROZEN")
+		(comment 1 "V851s + AXP2101; display=KD024EGOIN152-01 (RM690B0) wiring started; EL PMIC TBD")
 		(comment 2 "EVT design: not physically validated")
 	)
 	(lib_symbols)

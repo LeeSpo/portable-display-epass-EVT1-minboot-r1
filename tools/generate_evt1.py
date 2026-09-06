@@ -25,7 +25,10 @@ LIB = ROOT / "sameat.pretty"
 NS = uuid.UUID("2b818650-a5d9-4e5d-af21-2d46ab184ac6")
 DISPLAY_NETS = {
     "DSI_D0N", "DSI_D0P", "DSI_D1N", "DSI_D1P", "DSI_CKN", "DSI_CKP",
-    "LCD_RST", "LCD_PWM", "LCD_EN", "LCD_3V3", "LEDA", "LEDK", "BL_SW",
+    "LCD_RST", "LCD_TE", "LCD_EN", "LCD_3V3", "LCD_1V8",
+    "ELVDD", "ELVSS", "LCD_SWIRE", "LCD_TE1",
+    # Legacy TFT backlight nets kept only while U7 chain is DNP:
+    "LEDA", "LEDK", "BL_SW", "LCD_PWM",
 }
 PLANE_NETS = {"GND", "3V3", "CORE_0V93", "1V8", "DRAM_1V5", "RTC_3V3", "VSYS", "VBAT", "VBUS", "SD_3V3"}
 VIA_SIZE = 0.40
@@ -194,7 +197,7 @@ def v851_pins() -> dict[str, tuple[str, str | None]]:
         84:"PD5_DSI_CKN",85:"PD6_DSI_CKP",86:"PD7",87:"PD8",88:"VDD_SYS6",89:"EPAD",
     }
     net: dict[int, str] = {
-        2:"LCD_RST",3:"LCD_PWM",4:"LCD_EN",5:"3V3",6:"SD_D1",7:"SD_D0",8:"SD_CLK",9:"SD_CMD",
+        2:"LCD_RST",3:"LCD_TE",4:"LCD_EN",5:"3V3",6:"SD_D1",7:"SD_D0",8:"SD_CLK",9:"SD_CMD",
         10:"SD_D3",11:"SD_D2",12:"SD_DET",13:"CORE_0V93",14:"SOC_LDO_1V8",15:"XOUT",16:"XIN",
         17:"CORE_0V93",21:"I2C0_SCL",22:"3V3",23:"PMIC_IRQ_N",24:"RTC_INT_N",25:"E907_TX",
         26:"I2C0_SDA",30:"ACCEL_INT_N",31:"E907_RX",33:"CORE_0V93",34:"DRAM_1V5",35:"CORE_0V93",
@@ -243,6 +246,7 @@ def add(devs: list[Device], ref: str, value: str, fp: str, sheet: str, x: float,
         elif fp == "QFN40": d.pads = qfn_pads(40, 5.0, .4, "41", 3.1)
         elif fp == "QFN88": d.pads = qfn_pads(88, 9.0, .35, "89", 5.2)
         elif fp == "FPC20": d.pads = row_pads(20, .5, 1.2)
+        elif fp == "FPC45": d.pads = row_pads(45, .5, 1.2)
         elif fp == "USB4105": d.pads = usb4105_pads()
         elif fp == "MICROSD": d.pads = microsd_pads()
         elif fp == "SW_SIDE": d.pads = side_switch_pads()
@@ -351,18 +355,65 @@ def devices() -> list[Device]:
     add(d,"C25","100n","0402","sensors",15,31,passive("RTC_3V3","GND"),lcsc="C1525")
     add(d,"C26","100n","0402","sensors",24,31,passive("RTC_3V3","GND"),lcsc="C1525")
 
-    fpc={str(i):(f"PIN{i}",None) for i in range(1,21)}
-    fpc.update({"6":("VCI","LCD_3V3"),"7":("IOVCC","LCD_3V3"),"8":("GND","GND"),"9":("D1P","DSI_D1P"),"10":("D1N","DSI_D1N"),"11":("GND","GND"),"12":("DCKP","DSI_CKP"),"13":("DCKN","DSI_CKN"),"14":("GND","GND"),"15":("D0P","DSI_D0P"),"16":("D0N","DSI_D0N"),"17":("GND","GND"),"18":("RESX","LCD_RST"),"19":("LEDK","LEDK"),"20":("LEDA","LEDA")})
-    add(d,"J4","TFT-H035B22WVIST8N20_V3-0","FPC20","interfaces",30,39,fpc,mpn="FH12-20S-0.5SH(55)",lcsc="C596730",datasheet="https://www.hotlcd.com/productdetail/1973")
-    tps={"1":("SW","BL_SW"),"2":("GND","GND"),"3":("FB","LEDK"),"4":("CTRL","LCD_PWM"),"5":("VIN","VSYS")}
-    add(d,"U7","TPS61169DCKR","SC70-5","interfaces",45,42,tps,mpn="TPS61169DCKR",lcsc="C71045",datasheet="https://www.ti.com/lit/ds/symlink/tps61169.pdf")
-    add(d,"L4","10uH/1.5A","IND_2x2","interfaces",45,36,passive("VSYS","BL_SW"))
-    add(d,"D4","SS16","D_SOD123","interfaces",49,36,passive("BL_SW","LEDA"))
-    add(d,"R19","2.55R 1%","0603","interfaces",49,42,passive("LEDK","GND"))
-    add(d,"C27","1u/25V","0603","interfaces",46,32,passive("LEDA","GND"))
-    add(d,"C28","100n","0402","interfaces",42,46,passive("VSYS","GND"))
-    add(d,"U8","TPS22918DBVR","SOT23-6","interfaces",20,40,{"1":("VIN","3V3"),"2":("GND","GND"),"3":("ON","LCD_EN"),"4":("CT",None),"5":("QOD",None),"6":("VOUT","LCD_3V3")},mpn="TPS22918DBVR",datasheet="https://www.ti.com/lit/ds/symlink/tps22918.pdf",note="Rev C p3: 6-pin DBV. CT/QOD open permitted. Display enable bias and input bypass remain release gates.")
-    add(d,"C29","4.7u","0603","interfaces",16,40,passive("LCD_3V3","GND"))
+    # KD024EGOIN152-01 (RM690B0): Molex 502598-4591 45-pin, MIPI 1-lane, IM1/IM0=00.
+    # MCU RGB bus (18-29) left NC. Host DSI lane1 unused. EL±/SWIRE await OLED PMIC (not invented).
+    kd024 = {str(i): (f"PIN{i}", None) for i in range(1, 46)}
+    kd024.update({
+        "1": ("GND", "GND"), "2": ("GND", "GND"),
+        "3": ("ELVSS", "ELVSS"), "4": ("ELVSS", "ELVSS"),
+        "5": ("GND", "GND"),
+        "6": ("ELVDD", "ELVDD"), "7": ("ELVDD", "ELVDD"),
+        "8": ("GND", "GND"),
+        "9": ("VCI", "LCD_3V3"),
+        "10": ("GND", "GND"),
+        "11": ("VDDIO", "LCD_1V8"),
+        "12": ("GND", "GND"),
+        "13": ("TE1", "LCD_TE1"),
+        "14": ("SWIRE", "LCD_SWIRE"),
+        "15": ("TE", "LCD_TE"),
+        "16": ("RESX", "LCD_RST"),
+        "17": ("GND", "GND"),
+        # 18-29: MCU/RGB — NC in MIPI mode
+        "30": ("GND", "GND"),
+        "31": ("IM1", "GND"),
+        "32": ("IM0", "GND"),
+        "33": ("GND", "GND"), "34": ("GND", "GND"),
+        "35": ("D0P", "DSI_D0P"), "36": ("D0N", "DSI_D0N"),
+        "37": ("GND", "GND"), "38": ("GND", "GND"),
+        "39": ("CLKP", "DSI_CKP"), "40": ("CLKN", "DSI_CKN"),
+        "41": ("GND", "GND"), "42": ("GND", "GND"),
+        "43": ("MTP", "GND"),
+        "44": ("GND", "GND"), "45": ("GND", "GND"),
+    })
+    add(d, "J4", "KD024EGOIN152-01", "FPC45", "interfaces", 30, 39, kd024,
+        mpn="502598-4591", lcsc="",
+        datasheet="kd024_screen/KD024EGOIN152-01_engineering_spec.md",
+        note="Molex 502598-4591 mate; MIPI 1-lane; IM0/IM1 strap GND; EL rails TBD PMIC")
+    # Legacy TFT LED backlight boost — DNP for AMOLED (brightness via 0x51).
+    tps = {"1": ("SW", "BL_SW"), "2": ("GND", "GND"), "3": ("FB", "LEDK"), "4": ("CTRL", "LCD_PWM"), "5": ("VIN", "VSYS")}
+    add(d, "U7", "TPS61169DCKR", "SC70-5", "interfaces", 45, 42, tps, mpn="TPS61169DCKR", lcsc="C71045",
+        datasheet="https://www.ti.com/lit/ds/symlink/tps61169.pdf", dnp=True,
+        note="DNP: TFT backlight unused with KD024 AMOLED")
+    add(d, "L4", "10uH/1.5A", "IND_2x2", "interfaces", 45, 36, passive("VSYS", "BL_SW"), dnp=True)
+    add(d, "D4", "SS16", "D_SOD123", "interfaces", 49, 36, passive("BL_SW", "LEDA"), dnp=True)
+    add(d, "R19", "2.55R 1%", "0603", "interfaces", 49, 42, passive("LEDK", "GND"), dnp=True)
+    add(d, "C27", "1u/25V", "0603", "interfaces", 46, 32, passive("LEDA", "GND"), dnp=True)
+    add(d, "C28", "100n", "0402", "interfaces", 42, 46, passive("VSYS", "GND"), dnp=True)
+    # VCI (3.3) gated by LCD_EN; VDDIO (1.8) via 0R from ALDO1 1V8.
+    add(d, "U8", "TPS22918DBVR", "SOT23-6", "interfaces", 20, 40,
+        {"1": ("VIN", "3V3"), "2": ("GND", "GND"), "3": ("ON", "LCD_EN"), "4": ("CT", None), "5": ("QOD", None), "6": ("VOUT", "LCD_3V3")},
+        mpn="TPS22918DBVR", datasheet="https://www.ti.com/lit/ds/symlink/tps22918.pdf",
+        note="Gates KD024 VCI. CT/QOD open OK.")
+    add(d, "C29", "4.7u", "0603", "interfaces", 16, 40, passive("LCD_3V3", "GND"))
+    add(d, "C42", "1u", "0603", "interfaces", 14, 40, passive("LCD_3V3", "GND"), note="VCI local")
+    add(d, "C43", "100n", "0402", "interfaces", 12, 40, passive("LCD_3V3", "GND"), note="VCI HF")
+    add(d, "R29", "0R", "0402", "interfaces", 20, 46, passive("1V8", "LCD_1V8"), note="VDDIO feed; swap for load-switch later if needed")
+    add(d, "C44", "1u", "0603", "interfaces", 24, 46, passive("LCD_1V8", "GND"), note="VDDIO local")
+    add(d, "C45", "100n", "0402", "interfaces", 26, 46, passive("LCD_1V8", "GND"), note="VDDIO HF")
+    # EL placeholder pads — no undocumented PMIC invented; fab must leave open until EL IC locked.
+    add(d, "TP1", "ELVDD_TP", "0402", "interfaces", 36, 32, passive("ELVDD", None), dnp=True, note="ELVDD probe / future PMIC out")
+    add(d, "TP2", "ELVSS_TP", "0402", "interfaces", 38, 32, passive("ELVSS", None), dnp=True, note="ELVSS probe / future PMIC out")
+    add(d, "TP3", "SWIRE_TP", "0402", "interfaces", 40, 32, passive("LCD_SWIRE", None), dnp=True, note="SWIRE to future EL PMIC")
     sd={"1":("DAT2","SD_D2"),"2":("DAT3","SD_D3"),"3":("CMD","SD_CMD"),"4":("VDD","SD_3V3"),"5":("CLK","SD_CLK"),"6":("VSS","GND"),"7":("DAT0","SD_D0"),"8":("DAT1","SD_D1"),"9":("CD","SD_DET"),"10":("SH","GND"),"11":("SH","GND"),"12":("SH","GND"),"13":("SH","GND")}
     add(d,"J5","MicroSD","MICROSD","interfaces",29,7,sd,mpn="MUP-M617-2",lcsc="C5205359")
     add(d,"Q3","AO3401A","SOT23-3","interfaces",41,8,{"1":("G","SD_PWR_GATE"),"2":("S","3V3"),"3":("D","SD_3V3")},mpn="AO3401A",lcsc="C15127")
@@ -481,7 +532,7 @@ def schematic_for_sheet(sheet: str, devs: list[Device], root_uuid: str, sheet_uu
 def root_schematic() -> tuple[str, dict[str,str]]:
     root_uuid=uid("root-schematic")
     sheets={name:uid(f"root-sheet-{name}") for name in ("power","soc","sensors","interfaces")}
-    out=['(kicad_sch','\t(version 20250114)','\t(generator "sameat-evt1-r1")','\t(generator_version "r1")',f'\t(uuid {q(root_uuid)})','\t(paper "A4")','\t(title_block','\t\t(title "Portable Display ePass")','\t\t(date "2026-09-05")','\t\t(rev "EVT1-minboot-r1")','\t\t(company "Sameat")','\t\t(comment 1 "V851s + AXP2101; display model NOT FROZEN")','\t\t(comment 2 "EVT design: not physically validated")','\t)','\t(lib_symbols)']
+    out=['(kicad_sch','\t(version 20250114)','\t(generator "sameat-evt1-r1")','\t(generator_version "r1")',f'\t(uuid {q(root_uuid)})','\t(paper "A4")','\t(title_block','\t\t(title "Portable Display ePass")','\t\t(date "2026-09-05")','\t\t(rev "EVT1-minboot-r1")','\t\t(company "Sameat")','\t\t(comment 1 "V851s + AXP2101; display=KD024EGOIN152-01 (RM690B0) wiring started; EL PMIC TBD")','\t\t(comment 2 "EVT design: not physically validated")','\t)','\t(lib_symbols)']
     info=[("power","01_power.kicad_sch",25,35),("soc","02_soc_v851s.kicad_sch",100,35),("sensors","03_sensors.kicad_sch",25,95),("interfaces","04_interfaces.kicad_sch",100,95)]
     for page,(name,file,x,y) in enumerate(info,2):
         su=sheets[name]
@@ -911,7 +962,7 @@ def escape_fanout(devs: list[Device], net_ids: dict[str,int]) -> tuple[list[str]
             if pad.kind=="thru_hole":
                 terms.setdefault(net,[]).append(Terminal(net,snap(px),snap(py),max(pad.sx,pad.sy)))
                 continue
-            if dev.footprint in ("FPC20","USB4105"):
+            if dev.footprint in ("FPC20","FPC45","USB4105"):
                 continue
             lx,ly=pad.x,pad.y
             if dev.footprint in ("QFN40","QFN88") and pad.number in ("41","89"):
@@ -1059,7 +1110,7 @@ def autoroute(terminals: dict[str,list[Terminal]], net_ids: dict[str,int]) -> tu
     power_first={"1V8","CORE_0V93","DRAM_1V5","RTC_3V3","VSYS","VBAT","VBUS","SD_3V3"}
     sd_bus={"SD_D0","SD_D1","SD_D2","SD_D3","SD_CMD","SD_CLK","SD_DET"}
     nand_bus={"NAND_CS","NAND_CLK","NAND_MISO","NAND_MOSI","NAND_HOLD","NAND_WP"}
-    display_ctrl={"LCD_PWM","LCD_EN","LCD_RST"}
+    display_ctrl={"LCD_TE","LCD_EN","LCD_RST"}
     pmic_bus={"PMIC_SCL","PMIC_SDA","PMIC_IRQ_N"}
     priority=lambda net: 0 if net=="LCD_RST" else (1 if net.startswith("USB_D") else (2 if net=="VBUS" else (3 if net=="VBAT" else (4 if net=="SD_3V3" else (5 if net=="SD_PWR_EN" else (6 if net in sd_bus else (7 if net.startswith("DSI_") else (8 if net in nand_bus else (9 if net=="1V8" else (10 if net=="CORE_0V93" else (11 if net in pmic_bus else (12 if net in display_ctrl else (13 if net in power_first else 14)))))))))))))
     work.sort(key=lambda item:(priority(item[0]),-item[2],-len(item[1]),item[0]))

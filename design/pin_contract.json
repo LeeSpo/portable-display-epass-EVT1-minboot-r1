@@ -1,6 +1,15 @@
 {
   "schema_version": 1,
   "status": "DESIGN_INTENT_NOT_DATASHEET_SIGNOFF",
+  "display_module": {
+    "part": "KD024EGOIN152-01",
+    "driver": "RM690B0",
+    "connector": "Molex 502598-4591",
+    "interface": "MIPI DSI 1-lane",
+    "im_strap": "IM1=0 IM0=0",
+    "el_pmic": "TBD — do not invent IC",
+    "legacy_backlight": "U7 chain DNP"
+  },
   "components": {
     "J1": {
       "value": "USB4105-GF-A-060",
@@ -87,7 +96,8 @@
           "name": "SHIELD",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "USB4105-GF-A-060"
     },
     "R1": {
       "value": "5.1k",
@@ -102,7 +112,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0402 5.1k 1%"
     },
     "R2": {
       "value": "5.1k",
@@ -117,7 +128,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0402 5.1k 1%"
     },
     "U1": {
       "value": "AXP2101",
@@ -288,7 +300,8 @@
           "name": "EPAD",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "AXP2101"
     },
     "L1": {
       "value": "1uH/2A",
@@ -303,7 +316,8 @@
           "name": "2",
           "net": "3V3"
         }
-      }
+      },
+      "mpn": "1uH 2A shielded"
     },
     "L2": {
       "value": "1uH/2A",
@@ -318,7 +332,8 @@
           "name": "2",
           "net": "CORE_0V93"
         }
-      }
+      },
+      "mpn": "1uH 2A shielded"
     },
     "L3": {
       "value": "1uH/2A",
@@ -333,7 +348,8 @@
           "name": "2",
           "net": "DRAM_1V5"
         }
-      }
+      },
+      "mpn": "1uH 2A shielded"
     },
     "C1": {
       "value": "22u",
@@ -348,7 +364,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0603 22u X5R"
     },
     "C2": {
       "value": "22u",
@@ -363,7 +380,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0603 22u X5R"
     },
     "C3": {
       "value": "1u",
@@ -378,7 +396,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0603 1u X5R"
     },
     "C4": {
       "value": "22u",
@@ -393,7 +412,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0603 22u X5R"
     },
     "C5": {
       "value": "22u",
@@ -408,7 +428,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0603 22u X5R"
     },
     "C6": {
       "value": "22u",
@@ -423,7 +444,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0603 22u X5R"
     },
     "C7": {
       "value": "22u",
@@ -438,7 +460,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0603 22u X5R"
     },
     "C8": {
       "value": "22u",
@@ -453,7 +476,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0603 22u X5R"
     },
     "C9": {
       "value": "22u",
@@ -468,7 +492,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0603 22u X5R"
     },
     "C10": {
       "value": "2.2u",
@@ -483,7 +508,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0603 2.2u X5R"
     },
     "C11": {
       "value": "1u",
@@ -498,7 +524,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0603 1u X5R"
     },
     "J2": {
       "value": "1S LiPo + NTC",
@@ -517,7 +544,8 @@
           "name": "GND",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "S3B-PH-SM4-TB(LF)(SN)"
     },
     "SW5": {
       "value": "POWER",
@@ -536,7 +564,8 @@
           "name": "GND",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "GT-TC072B-H045-L1"
     },
     "R3": {
       "value": "4.7k",
@@ -596,7 +625,8 @@
           "name": "2",
           "net": "CHGLED_A"
         }
-      }
+      },
+      "mpn": "0603 Green LED"
     },
     "R6": {
       "value": "2.2k",
@@ -642,7 +672,8 @@
           "name": "I/O1",
           "net": "USB_DP"
         }
-      }
+      },
+      "mpn": "USBLC6-2SC6"
     },
     "D13": {
       "value": "PESD4V0",
@@ -657,7 +688,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "PESD4V0Y1BBSF"
     },
     "D14": {
       "value": "PESD4V0",
@@ -672,7 +704,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "PESD4V0Y1BBSF"
     },
     "C32": {
       "value": "10u",
@@ -687,7 +720,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0603 10u X5R"
     },
     "C33": {
       "value": "1u",
@@ -702,7 +736,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0603 1u X5R"
     },
     "C38": {
       "value": "2.2u",
@@ -717,7 +752,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "note": "VMID local bypass; VMID tied to VSYS"
     },
     "C39": {
       "value": "100n",
@@ -732,7 +768,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "note": "No backup cell; do not short backup charger output"
     },
     "C40": {
       "value": "1u",
@@ -747,7 +784,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "note": "VIN3/VIN4 local bypass"
     },
     "C41": {
       "value": "1u",
@@ -762,7 +800,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "note": "VIN1/VIN2 local bypass"
     },
     "U2": {
       "value": "V851s",
@@ -779,7 +818,7 @@
         },
         "3": {
           "name": "PD20",
-          "net": "LCD_PWM"
+          "net": "LCD_TE"
         },
         "4": {
           "name": "PD21",
@@ -1125,7 +1164,8 @@
           "name": "EPAD",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "V851s"
     },
     "Y1": {
       "value": "24MHz 10ppm",
@@ -1148,7 +1188,8 @@
           "name": "GND",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "24MHz 10ppm 3225"
     },
     "C12": {
       "value": "18p",
@@ -1193,7 +1234,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "note": "V851SX internal LDOA output bypass"
     },
     "C35": {
       "value": "2.2u",
@@ -1208,7 +1250,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "note": "V851SX internal analog LDO output bypass"
     },
     "C36": {
       "value": "470n",
@@ -1223,7 +1266,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "note": "V851SX analog reference bypass"
     },
     "C37": {
       "value": "100n",
@@ -1253,7 +1297,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0402 100n X7R"
     },
     "C15": {
       "value": "100n",
@@ -1268,7 +1313,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0402 100n X7R"
     },
     "C16": {
       "value": "100n",
@@ -1283,7 +1329,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0402 100n X7R"
     },
     "C17": {
       "value": "100n",
@@ -1298,7 +1345,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0402 100n X7R"
     },
     "C18": {
       "value": "100n",
@@ -1313,7 +1361,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0402 100n X7R"
     },
     "C19": {
       "value": "100n",
@@ -1328,7 +1377,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0402 100n X7R"
     },
     "C20": {
       "value": "100n",
@@ -1343,7 +1393,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0402 100n X7R"
     },
     "C21": {
       "value": "100n",
@@ -1358,7 +1409,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0402 100n X7R"
     },
     "U3": {
       "value": "W25N01GVZEIG",
@@ -1397,7 +1449,8 @@
           "name": "VCC",
           "net": "3V3"
         }
-      }
+      },
+      "mpn": "W25N01GVZEIG"
     },
     "C22": {
       "value": "100n",
@@ -1496,7 +1549,8 @@
           "name": "PWRON_N",
           "net": "PWRON_N"
         }
-      }
+      },
+      "note": "1.27mm production/debug pads"
     },
     "SW6": {
       "value": "FEL",
@@ -1515,7 +1569,9 @@
           "name": "GND",
           "net": "GND"
         }
-      }
+      },
+      "note": "Recessed recovery switch; straps PC2 low",
+      "mpn": "GT-TC072B-H045-L1"
     },
     "R10": {
       "value": "10k",
@@ -1545,7 +1601,8 @@
           "name": "2",
           "net": "NAND_MISO"
         }
-      }
+      },
+      "note": "PC3 BOOT1 pull-up; SPI NAND boot"
     },
     "U4": {
       "value": "LIS2DW12TR",
@@ -1600,7 +1657,8 @@
           "name": "INT1",
           "net": "ACCEL_INT_N"
         }
-      }
+      },
+      "mpn": "LIS2DW12TR"
     },
     "U5": {
       "value": "RV-3028-C7",
@@ -1639,7 +1697,8 @@
           "name": "EVI",
           "net": "RTC_EVI"
         }
-      }
+      },
+      "mpn": "RV-3028-C7-32.768kHz-1ppm-TA-QC"
     },
     "U6": {
       "value": "SN74LVC1G123DCTR",
@@ -1678,7 +1737,8 @@
           "name": "VCC",
           "net": "RTC_3V3"
         }
-      }
+      },
+      "mpn": "SN74LVC1G123DCTR"
     },
     "Q1": {
       "value": "2N7002",
@@ -1697,7 +1757,8 @@
           "name": "D",
           "net": "PWRON_N"
         }
-      }
+      },
+      "mpn": "2N7002"
     },
     "Q2": {
       "value": "2N7002",
@@ -1716,7 +1777,8 @@
           "name": "D",
           "net": "WAKE_PULSE_N"
         }
-      }
+      },
+      "mpn": "2N7002"
     },
     "R11": {
       "value": "10k",
@@ -1929,91 +1991,193 @@
       }
     },
     "J4": {
-      "value": "TFT-H035B22WVIST8N20_V3-0",
-      "footprint": "Sameat:FPC20",
+      "value": "KD024EGOIN152-01",
+      "footprint": "Sameat:FPC45",
       "sheet": "interfaces",
       "pins": {
         "1": {
-          "name": "PIN1",
-          "net": null
+          "name": "GND",
+          "net": "GND"
         },
         "2": {
-          "name": "PIN2",
-          "net": null
+          "name": "GND",
+          "net": "GND"
         },
         "3": {
-          "name": "PIN3",
-          "net": null
+          "name": "ELVSS",
+          "net": "ELVSS"
         },
         "4": {
-          "name": "PIN4",
-          "net": null
+          "name": "ELVSS",
+          "net": "ELVSS"
         },
         "5": {
-          "name": "PIN5",
-          "net": null
+          "name": "GND",
+          "net": "GND"
         },
         "6": {
-          "name": "VCI",
-          "net": "LCD_3V3"
+          "name": "ELVDD",
+          "net": "ELVDD"
         },
         "7": {
-          "name": "IOVCC",
-          "net": "LCD_3V3"
+          "name": "ELVDD",
+          "net": "ELVDD"
         },
         "8": {
           "name": "GND",
           "net": "GND"
         },
         "9": {
-          "name": "D1P",
-          "net": "DSI_D1P"
+          "name": "VCI",
+          "net": "LCD_3V3"
         },
         "10": {
-          "name": "D1N",
-          "net": "DSI_D1N"
+          "name": "GND",
+          "net": "GND"
         },
         "11": {
-          "name": "GND",
-          "net": "GND"
+          "name": "VDDIO",
+          "net": "LCD_1V8"
         },
         "12": {
-          "name": "DCKP",
-          "net": "DSI_CKP"
-        },
-        "13": {
-          "name": "DCKN",
-          "net": "DSI_CKN"
-        },
-        "14": {
           "name": "GND",
           "net": "GND"
         },
+        "13": {
+          "name": "TE1",
+          "net": "LCD_TE1"
+        },
+        "14": {
+          "name": "SWIRE",
+          "net": "LCD_SWIRE"
+        },
         "15": {
-          "name": "D0P",
-          "net": "DSI_D0P"
+          "name": "TE",
+          "net": "LCD_TE"
         },
         "16": {
-          "name": "D0N",
-          "net": "DSI_D0N"
+          "name": "RESX",
+          "net": "LCD_RST"
         },
         "17": {
           "name": "GND",
           "net": "GND"
         },
         "18": {
-          "name": "RESX",
-          "net": "LCD_RST"
+          "name": "PIN18",
+          "net": null
         },
         "19": {
-          "name": "LEDK",
-          "net": "LEDK"
+          "name": "PIN19",
+          "net": null
         },
         "20": {
-          "name": "LEDA",
-          "net": "LEDA"
+          "name": "PIN20",
+          "net": null
+        },
+        "21": {
+          "name": "PIN21",
+          "net": null
+        },
+        "22": {
+          "name": "PIN22",
+          "net": null
+        },
+        "23": {
+          "name": "PIN23",
+          "net": null
+        },
+        "24": {
+          "name": "PIN24",
+          "net": null
+        },
+        "25": {
+          "name": "PIN25",
+          "net": null
+        },
+        "26": {
+          "name": "PIN26",
+          "net": null
+        },
+        "27": {
+          "name": "PIN27",
+          "net": null
+        },
+        "28": {
+          "name": "PIN28",
+          "net": null
+        },
+        "29": {
+          "name": "PIN29",
+          "net": null
+        },
+        "30": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "31": {
+          "name": "IM1",
+          "net": "GND"
+        },
+        "32": {
+          "name": "IM0",
+          "net": "GND"
+        },
+        "33": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "34": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "35": {
+          "name": "D0P",
+          "net": "DSI_D0P"
+        },
+        "36": {
+          "name": "D0N",
+          "net": "DSI_D0N"
+        },
+        "37": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "38": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "39": {
+          "name": "CLKP",
+          "net": "DSI_CKP"
+        },
+        "40": {
+          "name": "CLKN",
+          "net": "DSI_CKN"
+        },
+        "41": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "42": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "43": {
+          "name": "MTP",
+          "net": "GND"
+        },
+        "44": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "45": {
+          "name": "GND",
+          "net": "GND"
         }
-      }
+      },
+      "note": "Molex 502598-4591 mate; MIPI 1-lane; IM0/IM1 strap GND; EL rails TBD PMIC",
+      "mpn": "502598-4591"
     },
     "U7": {
       "value": "TPS61169DCKR",
@@ -2040,7 +2204,10 @@
           "name": "VIN",
           "net": "VSYS"
         }
-      }
+      },
+      "dnp": true,
+      "note": "DNP: TFT backlight unused with KD024 AMOLED",
+      "mpn": "TPS61169DCKR"
     },
     "L4": {
       "value": "10uH/1.5A",
@@ -2055,7 +2222,8 @@
           "name": "2",
           "net": "BL_SW"
         }
-      }
+      },
+      "dnp": true
     },
     "D4": {
       "value": "SS16",
@@ -2070,7 +2238,8 @@
           "name": "2",
           "net": "LEDA"
         }
-      }
+      },
+      "dnp": true
     },
     "R19": {
       "value": "2.55R 1%",
@@ -2085,7 +2254,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "dnp": true
     },
     "C27": {
       "value": "1u/25V",
@@ -2100,7 +2270,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "dnp": true
     },
     "C28": {
       "value": "100n",
@@ -2115,7 +2286,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "dnp": true
     },
     "U8": {
       "value": "TPS22918DBVR",
@@ -2146,7 +2318,9 @@
           "name": "VOUT",
           "net": "LCD_3V3"
         }
-      }
+      },
+      "note": "Gates KD024 VCI. CT/QOD open OK.",
+      "mpn": "TPS22918DBVR"
     },
     "C29": {
       "value": "4.7u",
@@ -2162,6 +2336,137 @@
           "net": "GND"
         }
       }
+    },
+    "C42": {
+      "value": "1u",
+      "footprint": "Sameat:0603",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "LCD_3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      },
+      "note": "VCI local"
+    },
+    "C43": {
+      "value": "100n",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "LCD_3V3"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      },
+      "note": "VCI HF"
+    },
+    "R29": {
+      "value": "0R",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "1V8"
+        },
+        "2": {
+          "name": "2",
+          "net": "LCD_1V8"
+        }
+      },
+      "note": "VDDIO feed; swap for load-switch later if needed"
+    },
+    "C44": {
+      "value": "1u",
+      "footprint": "Sameat:0603",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "LCD_1V8"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      },
+      "note": "VDDIO local"
+    },
+    "C45": {
+      "value": "100n",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "LCD_1V8"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      },
+      "note": "VDDIO HF"
+    },
+    "TP1": {
+      "value": "ELVDD_TP",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "ELVDD"
+        },
+        "2": {
+          "name": "2",
+          "net": null
+        }
+      },
+      "dnp": true,
+      "note": "ELVDD probe / future PMIC out"
+    },
+    "TP2": {
+      "value": "ELVSS_TP",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "ELVSS"
+        },
+        "2": {
+          "name": "2",
+          "net": null
+        }
+      },
+      "dnp": true,
+      "note": "ELVSS probe / future PMIC out"
+    },
+    "TP3": {
+      "value": "SWIRE_TP",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "LCD_SWIRE"
+        },
+        "2": {
+          "name": "2",
+          "net": null
+        }
+      },
+      "dnp": true,
+      "note": "SWIRE to future EL PMIC"
     },
     "J5": {
       "value": "MicroSD",
@@ -2220,7 +2525,8 @@
           "name": "SH",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "MUP-M617-2"
     },
     "Q3": {
       "value": "AO3401A",
@@ -2239,7 +2545,8 @@
           "name": "D",
           "net": "SD_3V3"
         }
-      }
+      },
+      "mpn": "AO3401A"
     },
     "R20": {
       "value": "100k",
@@ -2299,7 +2606,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "PESD4V0Y1BBSF"
     },
     "D7": {
       "value": "PESD4V0",
@@ -2314,7 +2622,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "PESD4V0Y1BBSF"
     },
     "D8": {
       "value": "PESD4V0",
@@ -2329,7 +2638,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "PESD4V0Y1BBSF"
     },
     "D9": {
       "value": "PESD4V0",
@@ -2344,7 +2654,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "PESD4V0Y1BBSF"
     },
     "D10": {
       "value": "PESD4V0",
@@ -2359,7 +2670,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "PESD4V0Y1BBSF"
     },
     "D11": {
       "value": "PESD4V0",
@@ -2374,7 +2686,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "PESD4V0Y1BBSF"
     },
     "D12": {
       "value": "PESD4V0",
@@ -2389,7 +2702,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "PESD4V0Y1BBSF"
     },
     "SW1": {
       "value": "UP",
@@ -2408,7 +2722,8 @@
           "name": "GND",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "GT-TC072B-H045-L1"
     },
     "SW2": {
       "value": "DOWN",
@@ -2427,7 +2742,8 @@
           "name": "GND",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "GT-TC072B-H045-L1"
     },
     "SW3": {
       "value": "OK",
@@ -2446,7 +2762,8 @@
           "name": "GND",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "GT-TC072B-H045-L1"
     },
     "SW4": {
       "value": "BACK",
@@ -2465,7 +2782,8 @@
           "name": "GND",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "GT-TC072B-H045-L1"
     },
     "R22": {
       "value": "100k",
@@ -2570,7 +2888,8 @@
           "name": "2",
           "net": "GND"
         }
-      }
+      },
+      "mpn": "0603 Blue LED"
     },
     "R27": {
       "value": "2.2k",

@@ -1,8 +1,11 @@
-# Display selection is not frozen
+# Screen selection (working)
 
-The original screen discussion is retained under `reference/original_notes/screen.md`.
-It is historical context, not an approved panel specification.
+**Primary wiring target:** KD024EGOIN152-01 (2.4″ rigid AMOLED, RM690B0, 450×600, MIPI 1-lane, AOD yes / AOD-RTC no).
 
-The current PCB still contains the original 20-pin FPC placeholder and TFT/backlight circuitry. This revision does not select IPS versus OLED or certify its voltage/pinout.
+- Connector: Molex 502598-4591 (45-pin) → host J4 `Sameat:FPC45`
+- Netmap: `docs/DISPLAY_KD024_NETMAP.md`
+- Spec pack: `kd024_screen/`
 
-Before completing the display region, provide the exact module part number and its datasheet, including FPC pin numbering/contact side, rails, DSI lane count/polarity/timing, reset sequence and LED/backlight requirements. A controller name alone (for example ST7701S) does not identify a module pinout.
+Larger ~4.4″ SD5207-class remains a product preference long-term, but **this branch wires the confirmed 2.4″ AOD pack first**.
+
+EL± bias IC still TBD. Do not fab display island until EL PMIC + land pattern are locked.

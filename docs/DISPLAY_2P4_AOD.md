@@ -1,4 +1,13 @@
-# 2.4″ 真 AOD 显示接入（本分支目标）
+# Display track: 2.4″ AOD candidate (KD024 / RM690B0)
+
+**Wiring started** on this branch: J4 = Molex 502598-4591 / KD024EGOIN152-01 (see `docs/DISPLAY_KD024_NETMAP.md`).
+
+- Module pack: `kd024_screen/`
+- ELVDD/ELVSS/SWIRE: nets only — **no invented PMIC**
+- Legacy TFT backlight (U7): **DNP**
+- `fabrication_released: false`
+
+---
 
 > Branch: `feat/display-2p4-aod-rm690b0`（从 `board` 拉出）  
 > 与 `feat/u2-via-0p3-fanout-verify` **分开**；本分支不改 U2 0.3 孔实验。  

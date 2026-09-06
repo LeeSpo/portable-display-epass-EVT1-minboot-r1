@@ -1532,7 +1532,7 @@
 	)
 	(no_connect (at 289.560 195.580) (uuid "593771d2-e9c6-5551-baf1-8f71ceeb8f8d"))
 	(global_label "LCD_RST" (shape passive) (at 289.560 193.040 180) (effects (font (size .8 .8)) (justify right)) (uuid "cfab635a-6887-5cb1-aef6-3c566ac449c7"))
-	(global_label "LCD_PWM" (shape passive) (at 289.560 190.500 180) (effects (font (size .8 .8)) (justify right)) (uuid "ac399600-16f9-5794-88c8-04679e0afa81"))
+	(global_label "LCD_TE" (shape passive) (at 289.560 190.500 180) (effects (font (size .8 .8)) (justify right)) (uuid "ac399600-16f9-5794-88c8-04679e0afa81"))
 	(global_label "LCD_EN" (shape passive) (at 289.560 187.960 180) (effects (font (size .8 .8)) (justify right)) (uuid "07d84442-18cf-5b2c-87af-9a2340335064"))
 	(global_label "3V3" (shape passive) (at 289.560 185.420 180) (effects (font (size .8 .8)) (justify right)) (uuid "f522c252-f9d3-5d6f-b476-4cfa993e7f37"))
 	(global_label "SD_D1" (shape passive) (at 289.560 182.880 180) (effects (font (size .8 .8)) (justify right)) (uuid "7e31e16b-d809-52cf-b2a4-78155e834a0e"))
