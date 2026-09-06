@@ -10,10 +10,10 @@
     },
     {
       "id": "pmic_variant",
-      "requirement": "AXP2101 MPN C3036461 locked; complete OTP bench table in docs/POWER_AXP2101.md (DCDC4 must be 1.5V or safely reprogrammed before DRAM load); confirm VMID=VSYS",
+      "requirement": "AXP2101 C3036461 locked; design assumes Allwinner-ref defaults (DCDC1=3.3V, DCDC3≈0.9V, DCDC4=1.5V). First-board current-limit spot-check recommended.",
       "status": "open",
       "reviewer": "Sameat",
-      "evidence": "docs/POWER_AXP2101.md paper lock C3036461 + schematic review 2026-09-06; OTP appendix still empty — gate stays open"
+      "evidence": "docs/POWER_AXP2101.md §0 — 2026-09-06 proceed-under-ref-default decision; OTP appendix optional until first SMT"
     },
     {
       "id": "pinouts_footprints",
