@@ -6,7 +6,7 @@
       "requirement": "Exact display/module datasheet, FPC pinout, voltage, DSI timing and backlight topology",
       "status": "in_progress",
       "reviewer": "",
-      "evidence": "KD024EGOIN152-01 locked for schematic wiring on feat/display-2p4-aod-rm690b0; J4\u2192Molex 502598-4591 45-pin MIPI 1-lane; IM strap GND; VCI/VDDIO mapped; ELVDD/ELVSS/SWIRE nets TBD PMIC; U7 backlight DNP; see docs/DISPLAY_KD024_NETMAP.md and kd024_screen/. Still open: EL PMIC, PCB re-route, AOD power sequence."
+      "evidence": "KD024 J4 Molex 45-pin MIPI1 wired; EL bias locked to TPS65631DPDR (C165127) CTRL=LCD_EN, defaults 4.6/-4.0; SWIRE optional R31 DNP; see docs/DISPLAY_EL_TPS65631.md and DISPLAY_KD024_NETMAP.md. Still open: PCB place/route, VIN\u22644.5 check, ERC/DRC, AOD FW."
     },
     {
       "id": "pmic_variant",

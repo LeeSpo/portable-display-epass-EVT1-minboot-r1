@@ -7,7 +7,8 @@
     "connector": "Molex 502598-4591",
     "interface": "MIPI DSI 1-lane",
     "im_strap": "IM1=0 IM0=0",
-    "el_pmic": "TBD — do not invent IC",
+    "el_pmic": "TPS65631DPDR LCSC C165127",
+    "el_defaults": "ELVDD=4.6V ELVSS=-4.0V (panel typ optical was ±3.6; within abs max)",
     "legacy_backlight": "U7 chain DNP"
   },
   "components": {
@@ -2176,7 +2177,7 @@
           "net": "GND"
         }
       },
-      "note": "Molex 502598-4591 mate; MIPI 1-lane; IM0/IM1 strap GND; EL rails TBD PMIC",
+      "note": "Molex 502598-4591 mate; MIPI 1-lane; IM0/IM1 strap GND; EL± from U10 TPS65631",
       "mpn": "502598-4591"
     },
     "U7": {
@@ -2417,9 +2418,136 @@
       },
       "note": "VDDIO HF"
     },
-    "TP1": {
-      "value": "ELVDD_TP",
-      "footprint": "Sameat:0402",
+    "U10": {
+      "value": "TPS65631DPDR",
+      "footprint": "Sameat:WSON-12",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "SWP",
+          "net": "EL_SWP"
+        },
+        "2": {
+          "name": "PGND",
+          "net": "GND"
+        },
+        "3": {
+          "name": "OUTP",
+          "net": "ELVDD"
+        },
+        "4": {
+          "name": "FBS",
+          "net": "ELVDD"
+        },
+        "5": {
+          "name": "AGND",
+          "net": "GND"
+        },
+        "6": {
+          "name": "GND",
+          "net": "GND"
+        },
+        "7": {
+          "name": "CTRL",
+          "net": "LCD_EN"
+        },
+        "8": {
+          "name": "CT",
+          "net": "EL_CT"
+        },
+        "9": {
+          "name": "OUTN",
+          "net": "ELVSS"
+        },
+        "10": {
+          "name": "SWN",
+          "net": "EL_SWN"
+        },
+        "11": {
+          "name": "AVIN",
+          "net": "VSYS"
+        },
+        "12": {
+          "name": "PVIN",
+          "net": "VSYS"
+        },
+        "13": {
+          "name": "EPAD",
+          "net": "GND"
+        }
+      },
+      "note": "AMOLED EL± bias; CTRL=LCD_EN; default 4.6/-4.0; SWIRE optional via R31",
+      "mpn": "TPS65631DPDR"
+    },
+    "L5": {
+      "value": "4.7uH",
+      "footprint": "Sameat:IND_2x2",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "VSYS"
+        },
+        "2": {
+          "name": "2",
+          "net": "EL_SWP"
+        }
+      },
+      "note": "ELVDD boost",
+      "mpn": "4.7uH 1.5A"
+    },
+    "L6": {
+      "value": "4.7uH",
+      "footprint": "Sameat:IND_2x2",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "EL_SWN"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      },
+      "note": "ELVSS IBB L to GND per TPS65631 app",
+      "mpn": "4.7uH 1.5A"
+    },
+    "C46": {
+      "value": "10u",
+      "footprint": "Sameat:0603",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "VSYS"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      },
+      "note": "EL VIN"
+    },
+    "C47": {
+      "value": "10u",
+      "footprint": "Sameat:0603",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "VSYS"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      },
+      "note": "EL VIN"
+    },
+    "C48": {
+      "value": "10u",
+      "footprint": "Sameat:0603",
       "sheet": "interfaces",
       "pins": {
         "1": {
@@ -2428,15 +2556,14 @@
         },
         "2": {
           "name": "2",
-          "net": null
+          "net": "GND"
         }
       },
-      "dnp": true,
-      "note": "ELVDD probe / future PMIC out"
+      "note": "ELVDD cout"
     },
-    "TP2": {
-      "value": "ELVSS_TP",
-      "footprint": "Sameat:0402",
+    "C49": {
+      "value": "10u",
+      "footprint": "Sameat:0603",
       "sheet": "interfaces",
       "pins": {
         "1": {
@@ -2445,14 +2572,45 @@
         },
         "2": {
           "name": "2",
-          "net": null
+          "net": "GND"
         }
       },
-      "dnp": true,
-      "note": "ELVSS probe / future PMIC out"
+      "note": "ELVSS cout"
     },
-    "TP3": {
-      "value": "SWIRE_TP",
+    "C50": {
+      "value": "10u",
+      "footprint": "Sameat:0603",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "ELVSS"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      },
+      "note": "ELVSS cout"
+    },
+    "C51": {
+      "value": "100n",
+      "footprint": "Sameat:0402",
+      "sheet": "interfaces",
+      "pins": {
+        "1": {
+          "name": "1",
+          "net": "EL_CT"
+        },
+        "2": {
+          "name": "2",
+          "net": "GND"
+        }
+      },
+      "note": "VNEG transition CT"
+    },
+    "R31": {
+      "value": "0R",
       "footprint": "Sameat:0402",
       "sheet": "interfaces",
       "pins": {
@@ -2462,11 +2620,11 @@
         },
         "2": {
           "name": "2",
-          "net": null
+          "net": "LCD_EN"
         }
       },
       "dnp": true,
-      "note": "SWIRE to future EL PMIC"
+      "note": "DNP: populate to let panel SWIRE program VNEG; leave open per RM690B0 default"
     },
     "J5": {
       "value": "MicroSD",

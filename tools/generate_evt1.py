@@ -241,6 +241,8 @@ def add(devs: list[Device], ref: str, value: str, fp: str, sheet: str, x: float,
         elif fp == "SOT23-6": d.pads = dual_pads(6, 2.4, .95, (.8,.65))
         elif fp == "SSOP-8": d.pads = dual_pads(8, 3.6, .65, (1.05,.35))
         elif fp == "WSON-8": d.pads = dual_pads(8, 6.4, 1.27, (1.4,.6))
+        elif fp == "WSON-12":
+            d.pads = dual_pads(12, 3.0, 0.5, (0.95, 0.28)) + [Pad("13", 0, 0, 1.7, 1.7, "rect")]
         elif fp == "LGA-12": d.pads = lga12_pads()
         elif fp == "RTC-8": d.pads = dual_pads(8, 3.4, .5, (.65,.28))
         elif fp == "QFN40": d.pads = qfn_pads(40, 5.0, .4, "41", 3.1)
@@ -388,7 +390,7 @@ def devices() -> list[Device]:
     add(d, "J4", "KD024EGOIN152-01", "FPC45", "interfaces", 30, 39, kd024,
         mpn="502598-4591", lcsc="",
         datasheet="kd024_screen/KD024EGOIN152-01_engineering_spec.md",
-        note="Molex 502598-4591 mate; MIPI 1-lane; IM0/IM1 strap GND; EL rails TBD PMIC")
+        note="Molex 502598-4591 mate; MIPI 1-lane; IM0/IM1 strap GND; EL± from U10 TPS65631")
     # Legacy TFT LED backlight boost — DNP for AMOLED (brightness via 0x51).
     tps = {"1": ("SW", "BL_SW"), "2": ("GND", "GND"), "3": ("FB", "LEDK"), "4": ("CTRL", "LCD_PWM"), "5": ("VIN", "VSYS")}
     add(d, "U7", "TPS61169DCKR", "SC70-5", "interfaces", 45, 42, tps, mpn="TPS61169DCKR", lcsc="C71045",
@@ -410,10 +412,38 @@ def devices() -> list[Device]:
     add(d, "R29", "0R", "0402", "interfaces", 20, 46, passive("1V8", "LCD_1V8"), note="VDDIO feed; swap for load-switch later if needed")
     add(d, "C44", "1u", "0603", "interfaces", 24, 46, passive("LCD_1V8", "GND"), note="VDDIO local")
     add(d, "C45", "100n", "0402", "interfaces", 26, 46, passive("LCD_1V8", "GND"), note="VDDIO HF")
-    # EL placeholder pads — no undocumented PMIC invented; fab must leave open until EL IC locked.
-    add(d, "TP1", "ELVDD_TP", "0402", "interfaces", 36, 32, passive("ELVDD", None), dnp=True, note="ELVDD probe / future PMIC out")
-    add(d, "TP2", "ELVSS_TP", "0402", "interfaces", 38, 32, passive("ELVSS", None), dnp=True, note="ELVSS probe / future PMIC out")
-    add(d, "TP3", "SWIRE_TP", "0402", "interfaces", 40, 32, passive("LCD_SWIRE", None), dnp=True, note="SWIRE to future EL PMIC")
+    # EL bias: TPS65631DPDR (LCSC C165127). Defaults ELVDD=4.6 / ELVSS=-4.0 (within KD024 max).
+    # CTRL shares LCD_EN (host enable). Panel SWIRE left open by default (RM690B0 allows NC); R31 0R DNP to join later.
+    # VIN max 4.5 V — feed from VSYS; do not exceed during charge.
+    tps65631 = {
+        "1": ("SWP", "EL_SWP"),
+        "2": ("PGND", "GND"),
+        "3": ("OUTP", "ELVDD"),
+        "4": ("FBS", "ELVDD"),
+        "5": ("AGND", "GND"),
+        "6": ("GND", "GND"),
+        "7": ("CTRL", "LCD_EN"),
+        "8": ("CT", "EL_CT"),
+        "9": ("OUTN", "ELVSS"),
+        "10": ("SWN", "EL_SWN"),
+        "11": ("AVIN", "VSYS"),
+        "12": ("PVIN", "VSYS"),
+        "13": ("EPAD", "GND"),
+    }
+    add(d, "U10", "TPS65631DPDR", "WSON-12", "interfaces", 38, 36, tps65631,
+        mpn="TPS65631DPDR", lcsc="C165127",
+        datasheet="https://www.ti.com/lit/ds/symlink/tps65631.pdf",
+        note="AMOLED EL± bias; CTRL=LCD_EN; default 4.6/-4.0; SWIRE optional via R31")
+    add(d, "L5", "4.7uH", "IND_2x2", "interfaces", 32, 32, passive("VSYS", "EL_SWP"), mpn="4.7uH 1.5A", note="ELVDD boost")
+    add(d, "L6", "4.7uH", "IND_2x2", "interfaces", 44, 32, passive("EL_SWN", "GND"), mpn="4.7uH 1.5A", note="ELVSS IBB L to GND per TPS65631 app")
+    add(d, "C46", "10u", "0603", "interfaces", 34, 28, passive("VSYS", "GND"), note="EL VIN")
+    add(d, "C47", "10u", "0603", "interfaces", 36, 28, passive("VSYS", "GND"), note="EL VIN")
+    add(d, "C48", "10u", "0603", "interfaces", 34, 36, passive("ELVDD", "GND"), note="ELVDD cout")
+    add(d, "C49", "10u", "0603", "interfaces", 42, 36, passive("ELVSS", "GND"), note="ELVSS cout")
+    add(d, "C50", "10u", "0603", "interfaces", 44, 36, passive("ELVSS", "GND"), note="ELVSS cout")
+    add(d, "C51", "100n", "0402", "interfaces", 40, 40, passive("EL_CT", "GND"), note="VNEG transition CT")
+    add(d, "R31", "0R", "0402", "interfaces", 40, 44, passive("LCD_SWIRE", "LCD_EN"), dnp=True,
+        note="DNP: populate to let panel SWIRE program VNEG; leave open per RM690B0 default")
     sd={"1":("DAT2","SD_D2"),"2":("DAT3","SD_D3"),"3":("CMD","SD_CMD"),"4":("VDD","SD_3V3"),"5":("CLK","SD_CLK"),"6":("VSS","GND"),"7":("DAT0","SD_D0"),"8":("DAT1","SD_D1"),"9":("CD","SD_DET"),"10":("SH","GND"),"11":("SH","GND"),"12":("SH","GND"),"13":("SH","GND")}
     add(d,"J5","MicroSD","MICROSD","interfaces",29,7,sd,mpn="MUP-M617-2",lcsc="C5205359")
     add(d,"Q3","AO3401A","SOT23-3","interfaces",41,8,{"1":("G","SD_PWR_GATE"),"2":("S","3V3"),"3":("D","SD_3V3")},mpn="AO3401A",lcsc="C15127")

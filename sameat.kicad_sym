@@ -3818,7 +3818,7 @@
 				(at 0 0 0)
 				(effects (font (size 1.0 1.0)) (hide yes))
 			)
-			(property "Description" "Molex 502598-4591 mate; MIPI 1-lane; IM0/IM1 strap GND; EL rails TBD PMIC"
+			(property "Description" "Molex 502598-4591 mate; MIPI 1-lane; IM0/IM1 strap GND; EL± from U10 TPS65631"
 				(at 0 0 0)
 				(effects (font (size 1.0 1.0)) (hide yes))
 			)
@@ -4543,20 +4543,103 @@
 				)
 			)
 		)
-		(symbol "TP1_ELVDD_TP"
+		(symbol "U10_TPS65631DPDR"
 			(pin_names (offset 0.8))
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "T"
+			(property "Reference" "U"
 				(at 0 0 0)
 				(effects (font (size 1.0 1.0)) (hide yes))
 			)
-			(property "Value" "ELVDD_TP"
+			(property "Value" "TPS65631DPDR"
 				(at 0 0 0)
 				(effects (font (size 1.0 1.0)) (hide yes))
 			)
-			(property "Footprint" "Sameat:0402"
+			(property "Footprint" "Sameat:WSON-12"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps65631.pdf"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Description" "AMOLED EL± bias; CTRL=LCD_EN; default 4.6/-4.0; SWIRE optional via R31"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(symbol "U10_TPS65631DPDR_0_1"
+				(rectangle (start -12.7 -8.890) (end 12.7 8.890) (stroke (width 0.254) (type default)) (fill (type background)))
+			)
+			(symbol "U10_TPS65631DPDR_1_1"
+				(pin passive line (at -15.24 -7.620 0) (length 2.54)
+					(name "SWP" (effects (font (size .8 .8))))
+					(number "1" (effects (font (size .8 .8))))
+				)
+				(pin passive line (at -15.24 -5.080 0) (length 2.54)
+					(name "PGND" (effects (font (size .8 .8))))
+					(number "2" (effects (font (size .8 .8))))
+				)
+				(pin passive line (at -15.24 -2.540 0) (length 2.54)
+					(name "OUTP" (effects (font (size .8 .8))))
+					(number "3" (effects (font (size .8 .8))))
+				)
+				(pin passive line (at -15.24 0.000 0) (length 2.54)
+					(name "FBS" (effects (font (size .8 .8))))
+					(number "4" (effects (font (size .8 .8))))
+				)
+				(pin passive line (at -15.24 2.540 0) (length 2.54)
+					(name "AGND" (effects (font (size .8 .8))))
+					(number "5" (effects (font (size .8 .8))))
+				)
+				(pin passive line (at -15.24 5.080 0) (length 2.54)
+					(name "GND" (effects (font (size .8 .8))))
+					(number "6" (effects (font (size .8 .8))))
+				)
+				(pin passive line (at -15.24 7.620 0) (length 2.54)
+					(name "CTRL" (effects (font (size .8 .8))))
+					(number "7" (effects (font (size .8 .8))))
+				)
+				(pin passive line (at 15.24 -6.350 180) (length 2.54)
+					(name "CT" (effects (font (size .8 .8))))
+					(number "8" (effects (font (size .8 .8))))
+				)
+				(pin passive line (at 15.24 -3.810 180) (length 2.54)
+					(name "OUTN" (effects (font (size .8 .8))))
+					(number "9" (effects (font (size .8 .8))))
+				)
+				(pin passive line (at 15.24 -1.270 180) (length 2.54)
+					(name "SWN" (effects (font (size .8 .8))))
+					(number "10" (effects (font (size .8 .8))))
+				)
+				(pin passive line (at 15.24 1.270 180) (length 2.54)
+					(name "AVIN" (effects (font (size .8 .8))))
+					(number "11" (effects (font (size .8 .8))))
+				)
+				(pin passive line (at 15.24 3.810 180) (length 2.54)
+					(name "PVIN" (effects (font (size .8 .8))))
+					(number "12" (effects (font (size .8 .8))))
+				)
+				(pin passive line (at 15.24 6.350 180) (length 2.54)
+					(name "EPAD" (effects (font (size .8 .8))))
+					(number "13" (effects (font (size .8 .8))))
+				)
+			)
+		)
+		(symbol "L5_4.7uH"
+			(pin_names (offset 0.8))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Value" "4.7uH"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Footprint" "Sameat:IND_2x2"
 				(at 0 0 0)
 				(effects (font (size 1.0 1.0)) (hide yes))
 			)
@@ -4564,14 +4647,14 @@
 				(at 0 0 0)
 				(effects (font (size 1.0 1.0)) (hide yes))
 			)
-			(property "Description" "ELVDD probe / future PMIC out"
+			(property "Description" "ELVDD boost"
 				(at 0 0 0)
 				(effects (font (size 1.0 1.0)) (hide yes))
 			)
-			(symbol "TP1_ELVDD_TP_0_1"
+			(symbol "L5_4.7uH_0_1"
 				(rectangle (start -12.7 -5.080) (end 12.7 5.080) (stroke (width 0.254) (type default)) (fill (type background)))
 			)
-			(symbol "TP1_ELVDD_TP_1_1"
+			(symbol "L5_4.7uH_1_1"
 				(pin passive line (at -15.24 0.000 0) (length 2.54)
 					(name "1" (effects (font (size .8 .8))))
 					(number "1" (effects (font (size .8 .8))))
@@ -4582,20 +4665,20 @@
 				)
 			)
 		)
-		(symbol "TP2_ELVSS_TP"
+		(symbol "L6_4.7uH"
 			(pin_names (offset 0.8))
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "T"
+			(property "Reference" "L"
 				(at 0 0 0)
 				(effects (font (size 1.0 1.0)) (hide yes))
 			)
-			(property "Value" "ELVSS_TP"
+			(property "Value" "4.7uH"
 				(at 0 0 0)
 				(effects (font (size 1.0 1.0)) (hide yes))
 			)
-			(property "Footprint" "Sameat:0402"
+			(property "Footprint" "Sameat:IND_2x2"
 				(at 0 0 0)
 				(effects (font (size 1.0 1.0)) (hide yes))
 			)
@@ -4603,14 +4686,14 @@
 				(at 0 0 0)
 				(effects (font (size 1.0 1.0)) (hide yes))
 			)
-			(property "Description" "ELVSS probe / future PMIC out"
+			(property "Description" "ELVSS IBB L to GND per TPS65631 app"
 				(at 0 0 0)
 				(effects (font (size 1.0 1.0)) (hide yes))
 			)
-			(symbol "TP2_ELVSS_TP_0_1"
+			(symbol "L6_4.7uH_0_1"
 				(rectangle (start -12.7 -5.080) (end 12.7 5.080) (stroke (width 0.254) (type default)) (fill (type background)))
 			)
-			(symbol "TP2_ELVSS_TP_1_1"
+			(symbol "L6_4.7uH_1_1"
 				(pin passive line (at -15.24 0.000 0) (length 2.54)
 					(name "1" (effects (font (size .8 .8))))
 					(number "1" (effects (font (size .8 .8))))
@@ -4621,16 +4704,211 @@
 				)
 			)
 		)
-		(symbol "TP3_SWIRE_TP"
+		(symbol "C46_10u"
 			(pin_names (offset 0.8))
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "T"
+			(property "Reference" "C"
 				(at 0 0 0)
 				(effects (font (size 1.0 1.0)) (hide yes))
 			)
-			(property "Value" "SWIRE_TP"
+			(property "Value" "10u"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Footprint" "Sameat:0603"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Description" "EL VIN"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(symbol "C46_10u_0_1"
+				(rectangle (start -12.7 -5.080) (end 12.7 5.080) (stroke (width 0.254) (type default)) (fill (type background)))
+			)
+			(symbol "C46_10u_1_1"
+				(pin passive line (at -15.24 0.000 0) (length 2.54)
+					(name "1" (effects (font (size .8 .8))))
+					(number "1" (effects (font (size .8 .8))))
+				)
+				(pin passive line (at 15.24 0.000 180) (length 2.54)
+					(name "2" (effects (font (size .8 .8))))
+					(number "2" (effects (font (size .8 .8))))
+				)
+			)
+		)
+		(symbol "C47_10u"
+			(pin_names (offset 0.8))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Value" "10u"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Footprint" "Sameat:0603"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Description" "EL VIN"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(symbol "C47_10u_0_1"
+				(rectangle (start -12.7 -5.080) (end 12.7 5.080) (stroke (width 0.254) (type default)) (fill (type background)))
+			)
+			(symbol "C47_10u_1_1"
+				(pin passive line (at -15.24 0.000 0) (length 2.54)
+					(name "1" (effects (font (size .8 .8))))
+					(number "1" (effects (font (size .8 .8))))
+				)
+				(pin passive line (at 15.24 0.000 180) (length 2.54)
+					(name "2" (effects (font (size .8 .8))))
+					(number "2" (effects (font (size .8 .8))))
+				)
+			)
+		)
+		(symbol "C48_10u"
+			(pin_names (offset 0.8))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Value" "10u"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Footprint" "Sameat:0603"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Description" "ELVDD cout"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(symbol "C48_10u_0_1"
+				(rectangle (start -12.7 -5.080) (end 12.7 5.080) (stroke (width 0.254) (type default)) (fill (type background)))
+			)
+			(symbol "C48_10u_1_1"
+				(pin passive line (at -15.24 0.000 0) (length 2.54)
+					(name "1" (effects (font (size .8 .8))))
+					(number "1" (effects (font (size .8 .8))))
+				)
+				(pin passive line (at 15.24 0.000 180) (length 2.54)
+					(name "2" (effects (font (size .8 .8))))
+					(number "2" (effects (font (size .8 .8))))
+				)
+			)
+		)
+		(symbol "C49_10u"
+			(pin_names (offset 0.8))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Value" "10u"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Footprint" "Sameat:0603"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Description" "ELVSS cout"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(symbol "C49_10u_0_1"
+				(rectangle (start -12.7 -5.080) (end 12.7 5.080) (stroke (width 0.254) (type default)) (fill (type background)))
+			)
+			(symbol "C49_10u_1_1"
+				(pin passive line (at -15.24 0.000 0) (length 2.54)
+					(name "1" (effects (font (size .8 .8))))
+					(number "1" (effects (font (size .8 .8))))
+				)
+				(pin passive line (at 15.24 0.000 180) (length 2.54)
+					(name "2" (effects (font (size .8 .8))))
+					(number "2" (effects (font (size .8 .8))))
+				)
+			)
+		)
+		(symbol "C50_10u"
+			(pin_names (offset 0.8))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Value" "10u"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Footprint" "Sameat:0603"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Description" "ELVSS cout"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(symbol "C50_10u_0_1"
+				(rectangle (start -12.7 -5.080) (end 12.7 5.080) (stroke (width 0.254) (type default)) (fill (type background)))
+			)
+			(symbol "C50_10u_1_1"
+				(pin passive line (at -15.24 0.000 0) (length 2.54)
+					(name "1" (effects (font (size .8 .8))))
+					(number "1" (effects (font (size .8 .8))))
+				)
+				(pin passive line (at 15.24 0.000 180) (length 2.54)
+					(name "2" (effects (font (size .8 .8))))
+					(number "2" (effects (font (size .8 .8))))
+				)
+			)
+		)
+		(symbol "C51_100n"
+			(pin_names (offset 0.8))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Value" "100n"
 				(at 0 0 0)
 				(effects (font (size 1.0 1.0)) (hide yes))
 			)
@@ -4642,14 +4920,53 @@
 				(at 0 0 0)
 				(effects (font (size 1.0 1.0)) (hide yes))
 			)
-			(property "Description" "SWIRE to future EL PMIC"
+			(property "Description" "VNEG transition CT"
 				(at 0 0 0)
 				(effects (font (size 1.0 1.0)) (hide yes))
 			)
-			(symbol "TP3_SWIRE_TP_0_1"
+			(symbol "C51_100n_0_1"
 				(rectangle (start -12.7 -5.080) (end 12.7 5.080) (stroke (width 0.254) (type default)) (fill (type background)))
 			)
-			(symbol "TP3_SWIRE_TP_1_1"
+			(symbol "C51_100n_1_1"
+				(pin passive line (at -15.24 0.000 0) (length 2.54)
+					(name "1" (effects (font (size .8 .8))))
+					(number "1" (effects (font (size .8 .8))))
+				)
+				(pin passive line (at 15.24 0.000 180) (length 2.54)
+					(name "2" (effects (font (size .8 .8))))
+					(number "2" (effects (font (size .8 .8))))
+				)
+			)
+		)
+		(symbol "R31_0R"
+			(pin_names (offset 0.8))
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Value" "0R"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Footprint" "Sameat:0402"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(property "Description" "DNP: populate to let panel SWIRE program VNEG; leave open per RM690B0 default"
+				(at 0 0 0)
+				(effects (font (size 1.0 1.0)) (hide yes))
+			)
+			(symbol "R31_0R_0_1"
+				(rectangle (start -12.7 -5.080) (end 12.7 5.080) (stroke (width 0.254) (type default)) (fill (type background)))
+			)
+			(symbol "R31_0R_1_1"
 				(pin passive line (at -15.24 0.000 0) (length 2.54)
 					(name "1" (effects (font (size .8 .8))))
 					(number "1" (effects (font (size .8 .8))))

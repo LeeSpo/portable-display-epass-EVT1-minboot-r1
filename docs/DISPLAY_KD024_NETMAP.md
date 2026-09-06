@@ -12,9 +12,9 @@ Driver: **RM690B0**. Interface: **MIPI 1-lane** (`IM1=0`, `IM0=0` strapped to GN
 |---|---|---|
 | VCI | `LCD_3V3` | `3V3` via U8 (`LCD_EN`) |
 | VDDIO | `LCD_1V8` | `1V8` via R29 0Ω |
-| ELVDD | `ELVDD` | TBD OLED PMIC (TP1 probe) |
-| ELVSS | `ELVSS` | TBD OLED PMIC (TP2 probe) |
-| SWIRE | `LCD_SWIRE` | Panel → future EL PMIC (TP3) |
+| ELVDD | `ELVDD` | U10 TPS65631 `OUTP` (default 4.6 V) |
+| ELVSS | `ELVSS` | U10 TPS65631 `OUTN` (default −4.0 V) |
+| SWIRE | `LCD_SWIRE` | Open default; optional `R31`→`LCD_EN`/CTRL |
 
 ## Control / MIPI
 
@@ -35,7 +35,9 @@ U7 TPS61169 backlight chain is **DNP**.
 
 ## Open gates
 
-1. Pick EL± PMIC with SWIRE (vendor ref removed in Rev.02 — confirm with supplier).
-2. PCB: replace FPC20 island with FPC45 + re-route MIPI 1-lane + EL.
+1. PCB: place U10 + inductors, replace FPC20 island with FPC45, route MIPI 1-lane + EL±.
+2. Confirm VSYS never exceeds TPS65631 VIN max 4.5 V under charge.
 3. AOD command sequence / power policy (firmware).
 4. KiCad ERC/DRC after PCB edit.
+
+See also `docs/DISPLAY_EL_TPS65631.md`.
