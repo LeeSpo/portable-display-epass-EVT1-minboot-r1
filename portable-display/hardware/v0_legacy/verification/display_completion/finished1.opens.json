@@ -1,0 +1,46 @@
+{
+  "result": {
+    "key_up_corridor": false,
+    "j4_43": true,
+    "lcd_te_escape": false,
+    "lcd_en_escape": false,
+    "c29": false,
+    "LCD_TE": false,
+    "LCD_EN": false,
+    "LCD_3V3": true,
+    "KEY_DOWN": true,
+    "mipi_fanout": false,
+    "CK": false,
+    "D0": false,
+    "j4_mipi": {
+      "DSI_CKP": false,
+      "DSI_CKN": false,
+      "DSI_D0P": false,
+      "DSI_D0N": false
+    },
+    "DSI_CKP": true,
+    "DSI_CKN": false,
+    "DSI_D0P": false,
+    "DSI_D0N": false
+  },
+  "pad_islands": {
+    "LCD_EN": 2,
+    "LCD_TE": 2,
+    "LCD_RST": 1,
+    "LCD_3V3": 1,
+    "LCD_1V8": 1,
+    "LCD_SWIRE": 1,
+    "ELVDD": 1,
+    "ELVSS": 1,
+    "DSI_CKP": 1,
+    "DSI_CKN": 2,
+    "DSI_D0P": 2,
+    "DSI_D0N": 2,
+    "KEY_DOWN": 1
+  },
+  "geometry_issues": [],
+  "tracks_added": 30,
+  "vias_added": 4,
+  "impedance_verified": false,
+  "fabrication_released": false
+}

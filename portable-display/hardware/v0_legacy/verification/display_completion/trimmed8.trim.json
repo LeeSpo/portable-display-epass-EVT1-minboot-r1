@@ -1,0 +1,41 @@
+[
+  {
+    "uuid": "2fd3aba3-f08a-584a-b9e3-36622ec4f403",
+    "action": "trim",
+    "from": [
+      [
+        24.2053,
+        57.4438
+      ],
+      [
+        24.45,
+        57.45
+      ]
+    ],
+    "to": [
+      [
+        24.2053,
+        57.4438
+      ],
+      [
+        24.45,
+        57.45
+      ]
+    ]
+  },
+  {
+    "uuid": "0bd3bb99-07db-5697-b775-f53a0725c79f",
+    "net": "SD_D1",
+    "action": "remove"
+  },
+  {
+    "uuid": "b4e86925-13a3-5747-97bf-467491f8cc29",
+    "net": "KEY_UP",
+    "action": "remove"
+  },
+  {
+    "uuid": "59e9d97b-ec25-5c4c-88cb-4cb2b52fb8f3",
+    "net": "SD_D1",
+    "action": "remove"
+  }
+]

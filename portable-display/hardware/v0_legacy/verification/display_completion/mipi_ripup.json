@@ -1,0 +1,27 @@
+[
+  {
+    "uuid": "92d2e5d3-1ab9-5774-92c4-d884551bec65",
+    "net": "GND",
+    "reason": "MIPI pair exit clearance"
+  },
+  {
+    "uuid": "ac2e92d4-2563-57ba-8256-1f460d9b7770",
+    "net": "ELVDD",
+    "reason": "MIPI pair exit clearance"
+  },
+  {
+    "uuid": "38da190b-8fd7-5bef-887d-9ae747ab840f",
+    "net": "SD_D1",
+    "reason": "MIPI pair exit clearance"
+  },
+  {
+    "uuid": "f97d6648-82ad-5519-b492-85374fb50061",
+    "net": "SD_D1",
+    "reason": "MIPI pair exit clearance"
+  },
+  {
+    "uuid": "d3579dae-c99f-5d2d-9663-d8aa26aeec2e",
+    "net": "SD_D1",
+    "reason": "MIPI pair exit clearance"
+  }
+]

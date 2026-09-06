@@ -1,0 +1,12 @@
+# Display island DRC summary
+
+Found 7 violations
+Found 81 unconnected items
+Found 27 schematic parity issues
+Saved DRC Report to verification/display_island_drc.rpt
+
+Copper-ish violation types (excl unconnected/parity net_conflict): 7
+Unconnected: 81
+Schematic parity: 27
+Baseline pre-edit: 0 copper DRC, 162 unconnected.
+fabrication_released=false

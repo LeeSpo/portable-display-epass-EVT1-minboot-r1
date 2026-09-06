@@ -1,0 +1,100 @@
+{
+  "source_document": "KD024EGOIN152-01 SPEC V1.pdf",
+  "document_version": "Ver.02",
+  "document_date": "2026-08-26",
+  "module_part_no": "KD024EGOIN152-01",
+  "panel": {
+    "type": "Rigid AMOLED",
+    "size_inch": 2.4,
+    "resolution": {"width": 450, "height": 600},
+    "active_area_mm": {"width": 36.72, "height": 48.96},
+    "outline_mm": {"width": 38.72, "height": 51.56},
+    "ppi": 311,
+    "frame_rate_hz": 60,
+    "color_depth": "16.7M (24-bit)",
+    "tft": "LTPS",
+    "bonding": "COF",
+    "driver_ic": "RM690B0",
+    "driver_ram": "1/3 RAM",
+    "brightness_cd_m2_typ": 800,
+    "contrast_ratio_listed": "1000000:1",
+    "aod": true,
+    "aod_rtc": false
+  },
+  "interface": {
+    "types": ["MIPI", "MCU"],
+    "mode_select": {
+      "IM1_IM0_00": "MIPI",
+      "IM1_IM0_11": "MCU"
+    },
+    "mipi": {
+      "data_lanes": 1,
+      "data_pair": ["D0P", "D0N"],
+      "clock_pair": ["CLKP", "CLKN"],
+      "speed_mhz": 456,
+      "dclk_mhz": 18.5,
+      "porch": {"VBP": 6, "VFP": 4, "VSW": 2, "HBP": 24, "HFP": 24, "HSP": 4}
+    }
+  },
+  "power": {
+    "VCI_V": {"min": 2.7, "typ": 3.3, "max": 3.6},
+    "VDDIO_V": {"min": 1.65, "typ": 1.8, "max": 3.3},
+    "ELVDD_V": {"min": 2.0, "typ": 3.6, "max": 6.0},
+    "ELVSS_V": {"min": -4.7, "typ": -3.6, "max": -0.4},
+    "normal_100pct_pixels_60hz": {
+      "VCI_current_mA_typ": 3.1,
+      "VDDIO_current_mA_typ": 1.3,
+      "ELVDD_current_mA_typ": 67.1,
+      "ELVSS_current_mA_typ": 67.0,
+      "panel_power_mW_typ": 483,
+      "panel_power_mW_max": 526
+    }
+  },
+  "connector": {
+    "pins": 45,
+    "recommended": "Molex 502598-4591"
+  },
+  "initialization": {
+    "mipi": [
+      "0xFE 0x00",
+      "0x2A 0x00 0x10 0x01 0xD1",
+      "0x2B 0x00 0x00 0x02 0x57",
+      "0x35 0x00",
+      "0x51 0xFF",
+      "0x30 0x00 0x01 0x02 0x56",
+      "0x12 0x00",
+      "0x11",
+      "wait 120ms",
+      "0x29"
+    ],
+    "mcu": [
+      "0xFE 0x20",
+      "0x26 0x0A",
+      "0x24 0x80",
+      "0xFE 0x00",
+      "0x2A 0x00 0x10 0x01 0xD1",
+      "0x2B 0x00 0x00 0x02 0x57",
+      "0x35 0x00",
+      "0x51 0xFF",
+      "0x30 0x00 0x01 0x02 0x56",
+      "0x12 0x00",
+      "0x11",
+      "wait 120ms",
+      "0x29"
+    ]
+  },
+  "known_gaps": [
+    "AOD entry sequence not provided",
+    "AOD exit sequence not provided",
+    "AOD power consumption not provided",
+    "AOD refresh rate not provided",
+    "Maximum AOD region not provided",
+    "Whether MIPI can fully stop during retained AOD is not provided",
+    "Detailed AOD RAM behavior not provided",
+    "Recommended ELVDD/ELVSS power IC and reference circuit removed from Rev.02",
+    "SWIRE implementation details not provided"
+  ],
+  "source_inconsistencies": [
+    "OLED lifetime table lists LT95 as 30000 h, while section 3.10 states LT95 > 290 h"
+  ]
+}

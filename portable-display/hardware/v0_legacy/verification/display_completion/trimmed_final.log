@@ -1,0 +1,73 @@
+Found 2 violations
+Found 0 unconnected items
+Found 0 schematic parity issues
+Saved DRC Report to /Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/verification/display_completion/trimmed13_drc.json
+Saved board
+
+violations 2 {'track_dangling': 2}
+unconnected_items 0 {}
+schematic_parity 0 {}
+Found 1 violations
+Found 0 unconnected items
+Found 0 schematic parity issues
+Saved DRC Report to /Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/verification/display_completion/trimmed14_drc.json
+Saved board
+
+violations 1 {'track_dangling': 1}
+unconnected_items 0 {}
+schematic_parity 0 {}
+Found 1 violations
+Found 0 unconnected items
+Found 0 schematic parity issues
+Saved DRC Report to /Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/verification/display_completion/trimmed15_drc.json
+Saved board
+
+violations 1 {'track_dangling': 1}
+unconnected_items 0 {}
+schematic_parity 0 {}
+Found 1 violations
+Found 0 unconnected items
+Found 0 schematic parity issues
+Saved DRC Report to /Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/verification/display_completion/trimmed16_drc.json
+Saved board
+
+violations 1 {'track_dangling': 1}
+unconnected_items 0 {}
+schematic_parity 0 {}
+Found 1 violations
+Found 0 unconnected items
+Found 0 schematic parity issues
+Saved DRC Report to /Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/verification/display_completion/trimmed17_drc.json
+Saved board
+
+violations 1 {'track_dangling': 1}
+unconnected_items 0 {}
+schematic_parity 0 {}
+Found 1 violations
+Found 0 unconnected items
+Found 0 schematic parity issues
+Saved DRC Report to /Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/verification/display_completion/trimmed18_drc.json
+Saved board
+
+violations 1 {'track_dangling': 1}
+unconnected_items 0 {}
+schematic_parity 0 {}
+Found 1 violations
+Found 0 unconnected items
+Found 0 schematic parity issues
+Saved DRC Report to /Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/verification/display_completion/trimmed19_drc.json
+Saved board
+
+violations 1 {'track_dangling': 1}
+unconnected_items 0 {}
+schematic_parity 0 {}
+Found 1 violations
+Found 0 unconnected items
+Found 0 schematic parity issues
+Saved DRC Report to /Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/verification/display_completion/trimmed20_drc.json
+Saved board
+
+violations 1 {'track_dangling': 1}
+unconnected_items 0 {}
+schematic_parity 0 {}
+FINAL trimmed20

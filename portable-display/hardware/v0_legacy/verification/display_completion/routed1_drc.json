@@ -1,0 +1,599 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-06T19:23:26",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "portable_display_epass.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 84 [DSI_CKN] of U2 on F.Cu",
+                    "pos": {
+                        "x": 27.725,
+                        "y": 51.25
+                    },
+                    "uuid": "70d4c58c-9b60-5105-8f57-368889e5aa46"
+                },
+                {
+                    "description": "Pad 40 [DSI_CKN] of J4 on F.Cu",
+                    "pos": {
+                        "x": 35.1,
+                        "y": 35.935
+                    },
+                    "uuid": "bdd67db8-8ba0-5bba-887a-04a88de8d850"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 85 [DSI_CKP] of U2 on F.Cu",
+                    "pos": {
+                        "x": 27.375,
+                        "y": 51.25
+                    },
+                    "uuid": "49530dd1-1fc1-50be-92ba-ab2f80294412"
+                },
+                {
+                    "description": "Pad 39 [DSI_CKP] of J4 on F.Cu",
+                    "pos": {
+                        "x": 34.8,
+                        "y": 39.0
+                    },
+                    "uuid": "98c0a6d2-eebf-59f0-9ab9-7a109ba96803"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 80 [DSI_D0N] of U2 on F.Cu",
+                    "pos": {
+                        "x": 29.125,
+                        "y": 51.25
+                    },
+                    "uuid": "f8703728-7952-5aae-afc4-9ed322df42b2"
+                },
+                {
+                    "description": "Pad 36 [DSI_D0N] of J4 on F.Cu",
+                    "pos": {
+                        "x": 33.9,
+                        "y": 35.935
+                    },
+                    "uuid": "0bde4993-e320-5f25-af31-53a5446517fa"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 81 [DSI_D0P] of U2 on F.Cu",
+                    "pos": {
+                        "x": 28.775,
+                        "y": 51.25
+                    },
+                    "uuid": "6343802d-dfcb-5139-907f-898152c8c484"
+                },
+                {
+                    "description": "Pad 35 [DSI_D0P] of J4 on F.Cu",
+                    "pos": {
+                        "x": 33.6,
+                        "y": 39.0
+                    },
+                    "uuid": "47e0a916-b6c5-5ba6-b063-1dd5a7c9e354"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.7000 mm",
+                    "pos": {
+                        "x": 36.6,
+                        "y": 39.0
+                    },
+                    "uuid": "e69cd444-7692-5fe7-8456-e0fadcc63e74"
+                },
+                {
+                    "description": "Pad 43 [GND] of J4 on F.Cu",
+                    "pos": {
+                        "x": 36.0,
+                        "y": 39.0
+                    },
+                    "uuid": "ad28989b-d2cb-50b2-9f0a-3f94c07a5d67"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [KEY_DOWN] on B.Cu, length 0.2121 mm",
+                    "pos": {
+                        "x": 24.6,
+                        "y": 40.8
+                    },
+                    "uuid": "a35fdb17-e4c5-5d06-b8fd-02d625af3694"
+                },
+                {
+                    "description": "Track [KEY_DOWN] on F.Cu, length 0.1500 mm",
+                    "pos": {
+                        "x": 24.75,
+                        "y": 40.65
+                    },
+                    "uuid": "e16c3f2a-5bd7-5469-95b1-f2cdc90f4fb8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [LCD_3V3] on F.Cu, length 0.7000 mm",
+                    "pos": {
+                        "x": 15.2,
+                        "y": 40.0
+                    },
+                    "uuid": "4b0343fa-8d5e-58a1-8ff9-8e1225bafd78"
+                },
+                {
+                    "description": "Track [LCD_3V3] on F.Cu, length 0.7000 mm",
+                    "pos": {
+                        "x": 21.2,
+                        "y": 39.05
+                    },
+                    "uuid": "3e25eec6-25d7-5856-9d14-70e4275ffac8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [LCD_EN] of U2 on F.Cu",
+                    "pos": {
+                        "x": 25.25,
+                        "y": 53.375
+                    },
+                    "uuid": "58648318-d7f8-5707-9ec7-12643245f165"
+                },
+                {
+                    "description": "Track [LCD_EN] on F.Cu, length 1.8500 mm",
+                    "pos": {
+                        "x": 18.8,
+                        "y": 40.95
+                    },
+                    "uuid": "653e4c7f-ac85-525c-9b55-806c4f8ceefd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [LCD_TE] of U2 on F.Cu",
+                    "pos": {
+                        "x": 25.25,
+                        "y": 53.025
+                    },
+                    "uuid": "3209c54c-78c3-5f9e-a2d9-a0698055be43"
+                },
+                {
+                    "description": "Pad 15 [LCD_TE] of J4 on F.Cu",
+                    "pos": {
+                        "x": 27.6,
+                        "y": 39.0
+                    },
+                    "uuid": "621e4f90-79ed-5621-9b1c-9f9df69a4ca5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.7000 mm",
+                    "pos": {
+                        "x": 49.8,
+                        "y": 42.0
+                    },
+                    "uuid": "fe97dffd-821d-5f99-b99c-139a83f34163"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [SD_D1] on F.Cu, length 1.2728 mm",
+                    "pos": {
+                        "x": 22.8,
+                        "y": 40.95
+                    },
+                    "uuid": "6b385b04-1dc7-5edc-9f6a-97613034d2ec"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.7000 mm",
+                    "pos": {
+                        "x": 44.0,
+                        "y": 42.0
+                    },
+                    "uuid": "516f5675-112a-5dc5-b575-d210735bed65"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.7000 mm",
+                    "pos": {
+                        "x": 46.8,
+                        "y": 32.0
+                    },
+                    "uuid": "32afbd34-c013-5b9d-aaa3-6b93272c3330"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.7000 mm",
+                    "pos": {
+                        "x": 42.5,
+                        "y": 46.0
+                    },
+                    "uuid": "c0d9aae6-8252-5948-ae4b-47e1f4ade873"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [KEY_OK] on F.Cu, length 1.2500 mm",
+                    "pos": {
+                        "x": 52.5,
+                        "y": 27.8
+                    },
+                    "uuid": "5639ca39-6f4c-51ba-969b-a46a35ec0110"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [KEY_DOWN] on F.Cu, length 0.1500 mm",
+                    "pos": {
+                        "x": 24.75,
+                        "y": 40.65
+                    },
+                    "uuid": "e16c3f2a-5bd7-5469-95b1-f2cdc90f4fb8"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.4243 mm",
+                    "pos": {
+                        "x": 28.8,
+                        "y": 38.25
+                    },
+                    "uuid": "247542d8-1ea2-5c1c-ac5c-7c48e2c289a7"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [GND] on F.Cu, length 0.2121 mm",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 37.95
+                    },
+                    "uuid": "6b6c2604-760f-59fc-82fe-2b84d60f74a6"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone [VSYS] on F.Cu, priority 16",
+                    "pos": {
+                        "x": 48.5,
+                        "y": 34.0
+                    },
+                    "uuid": "0f8d31ad-c99c-5f2a-b7d7-e3edde58a978"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        },
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone [VSYS] on F.Cu, priority 16",
+                    "pos": {
+                        "x": 48.5,
+                        "y": 34.0
+                    },
+                    "uuid": "0f8d31ad-c99c-5f2a-b7d7-e3edde58a978"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        },
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone [VSYS] on F.Cu, priority 16",
+                    "pos": {
+                        "x": 48.5,
+                        "y": 34.0
+                    },
+                    "uuid": "0f8d31ad-c99c-5f2a-b7d7-e3edde58a978"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        },
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone [VSYS] on F.Cu, priority 16",
+                    "pos": {
+                        "x": 48.5,
+                        "y": 34.0
+                    },
+                    "uuid": "0f8d31ad-c99c-5f2a-b7d7-e3edde58a978"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        },
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone [VSYS] on F.Cu, priority 16",
+                    "pos": {
+                        "x": 48.5,
+                        "y": 34.0
+                    },
+                    "uuid": "0f8d31ad-c99c-5f2a-b7d7-e3edde58a978"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        },
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone [VSYS] on F.Cu, priority 16",
+                    "pos": {
+                        "x": 48.5,
+                        "y": 34.0
+                    },
+                    "uuid": "0f8d31ad-c99c-5f2a-b7d7-e3edde58a978"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        },
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone [VSYS] on F.Cu, priority 16",
+                    "pos": {
+                        "x": 48.5,
+                        "y": 34.0
+                    },
+                    "uuid": "0f8d31ad-c99c-5f2a-b7d7-e3edde58a978"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        },
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone [VSYS] on F.Cu, priority 16",
+                    "pos": {
+                        "x": 48.5,
+                        "y": 34.0
+                    },
+                    "uuid": "0f8d31ad-c99c-5f2a-b7d7-e3edde58a978"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        },
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone [VSYS] on F.Cu, priority 16",
+                    "pos": {
+                        "x": 48.5,
+                        "y": 34.0
+                    },
+                    "uuid": "0f8d31ad-c99c-5f2a-b7d7-e3edde58a978"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        },
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone [VSYS] on F.Cu, priority 16",
+                    "pos": {
+                        "x": 48.5,
+                        "y": 34.0
+                    },
+                    "uuid": "0f8d31ad-c99c-5f2a-b7d7-e3edde58a978"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        },
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone [VSYS] on F.Cu, priority 16",
+                    "pos": {
+                        "x": 48.5,
+                        "y": 34.0
+                    },
+                    "uuid": "0f8d31ad-c99c-5f2a-b7d7-e3edde58a978"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        },
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone [VSYS] on F.Cu, priority 16",
+                    "pos": {
+                        "x": 48.5,
+                        "y": 34.0
+                    },
+                    "uuid": "0f8d31ad-c99c-5f2a-b7d7-e3edde58a978"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        },
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone [VSYS] on F.Cu, priority 16",
+                    "pos": {
+                        "x": 48.5,
+                        "y": 34.0
+                    },
+                    "uuid": "0f8d31ad-c99c-5f2a-b7d7-e3edde58a978"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        },
+        {
+            "description": "Isolated copper fill",
+            "items": [
+                {
+                    "description": "Zone [VSYS] on F.Cu, priority 16",
+                    "pos": {
+                        "x": 48.5,
+                        "y": 34.0
+                    },
+                    "uuid": "0f8d31ad-c99c-5f2a-b7d7-e3edde58a978"
+                }
+            ],
+            "severity": "warning",
+            "type": "isolated_copper"
+        }
+    ]
+}

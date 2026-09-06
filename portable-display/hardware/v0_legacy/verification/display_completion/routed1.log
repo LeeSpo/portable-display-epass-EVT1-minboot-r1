@@ -1,0 +1,84 @@
+START EL_SWP
+EL_SWP islands 2
+RESULT EL_SWP True
+START EL_SWN
+EL_SWN islands 2
+RESULT EL_SWN True
+START EL_CT
+EL_CT islands 2
+RESULT EL_CT True
+START VSYS
+VSYS islands 6
+VSYS islands 5
+VSYS islands 4
+VSYS islands 3
+VSYS islands 2
+RESULT VSYS True
+START ELVDD
+ELVDD islands 5
+ELVDD islands 4
+ELVDD islands 3
+ELVDD islands 2
+RESULT ELVDD True
+START ELVSS
+ELVSS islands 5
+ELVSS islands 4
+ELVSS islands 3
+ELVSS islands 2
+RESULT ELVSS True
+START LCD_3V3
+LCD_3V3 islands 4
+LCD_3V3 islands 3
+LCD_3V3 islands 2
+RESULT LCD_3V3 True
+START LCD_1V8
+LCD_1V8 islands 4
+LCD_1V8 islands 3
+LCD_1V8 islands 2
+RESULT LCD_1V8 True
+START 1V8
+1V8 islands 2
+RESULT 1V8 True
+START KEY_UP
+KEY_UP islands 2
+RESULT KEY_UP True
+START KEY_DOWN
+KEY_DOWN islands 2
+RESULT KEY_DOWN True
+START KEY_OK
+KEY_OK islands 2
+RESULT KEY_OK True
+START PWRON_N
+PWRON_N islands 2
+RESULT PWRON_N True
+START SD_D1
+SD_D1 islands 2
+RESULT SD_D1 True
+START SD_PWR_EN
+SD_PWR_EN islands 2
+RESULT SD_PWR_EN True
+START WAKE_PULSE_N
+WAKE_PULSE_N islands 2
+RESULT WAKE_PULSE_N True
+START LCD_EN
+LCD_EN islands 4
+no grid path 1
+no grid path 1
+LCD_EN islands 3
+no grid path 1
+no grid path 1
+LCD_EN islands 2
+no grid path 1
+LCD_EN islands 2
+no grid path 1
+RESULT LCD_EN False
+START LCD_RST
+LCD_RST islands 2
+RESULT LCD_RST True
+START LCD_TE
+LCD_TE islands 2
+no terminal access 0 8
+RESULT LCD_TE False
+START LCD_SWIRE
+LCD_SWIRE islands 2
+RESULT LCD_SWIRE True
