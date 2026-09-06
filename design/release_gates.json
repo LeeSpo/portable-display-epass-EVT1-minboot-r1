@@ -10,10 +10,10 @@
     },
     {
       "id": "pmic_variant",
-      "requirement": "Exact AXP2101 variant/OTP/default rails, VMID/VSYS application and sequencing",
+      "requirement": "AXP2101 MPN locked to LCSC C3036461 (QFN-40-EP); confirm OTP/default rails on incoming parts (esp. DCDC4=1.5V for DRAM_1V5), VMID-tied-to-VSYS, and power sequencing; evidence in docs/POWER_AXP2101.md",
       "status": "open",
-      "reviewer": "",
-      "evidence": ""
+      "reviewer": "Sameat",
+      "evidence": "docs/POWER_AXP2101.md — candidate locked 2026-09-06; OTP bench table empty until parts measured"
     },
     {
       "id": "pinouts_footprints",
@@ -27,7 +27,7 @@
       "requirement": "Supply sizing, decoupling loops, battery polarity/protection/NTC, charge current and thermal review",
       "status": "open",
       "reviewer": "",
-      "evidence": ""
+      "evidence": "Charge current candidate 0.5–0.8A for 2000–2500mAh in docs/POWER_AXP2101.md; thermal/decoupling/polarity review still open"
     },
     {
       "id": "stackup_si",
