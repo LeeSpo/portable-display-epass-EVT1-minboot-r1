@@ -1,86 +1,66 @@
 # Display PCB status (KD024 / TPS65631 island)
 
-Date: 2026-09-06 (Asia/Shanghai). Board: `portable_display_epass.kicad_pcb` on this tree (not a full-history clone).  
-`fabrication_released`: **false** (unchanged).
+Date: 2026-09-06 (Asia/Shanghai). Board: root `portable_display_epass.kicad_pcb`.  
+`fabrication_released`: **false** (unchanged). Electrical connectivity under the current KiCad 10 rules is closed; this is not stackup, impedance, assembly, or fab approval.
 
-## What changed
+## What is on the project board now
 
-### Connector / nets
-- **J4** footprint swapped **FPC20 → `Sameat:FPC45`**, value `KD024EGOIN152-01`, placed at **(34.00, 38.00) mm** (shifted +4 mm X vs old TFT FPC20 at 30,39 to reduce clash with U8).
-- Pad nets assigned from current schematic/netlist: ELVSS 3–4, ELVDD 6–7, LCD_3V3 9, LCD_1V8 11, LCD_TE1 13, LCD_SWIRE 14, LCD_TE 15, LCD_RST 16, DSI_D0P/N 35/36, DSI_CKP/N 39/40, IM0/IM1/MTP + many pins → GND; pins 18–29 NC (no net).
-- **U2 pad 3** net renamed **LCD_PWM → LCD_TE**.
+The display-completion candidate (Codex routing + one `SOC_LDO_1V8` T-junction split) replaced the 19:09 `c168cd4` island. Earlier board (display island placed, not yet routed): `verification/display_completion/pre_display_completion.kicad_pcb`.
 
-### EL bias island (new)
-| Ref | Footprint | Value | XY mm | Notes |
-|---|---|---|---|---|
-| U10 | Sameat:WSON-12 | TPS65631DPDR | 46.00, 32.50 | CTRL=LCD_EN |
-| L5 | Sameat:IND_2x2 | 4.7uH | 39.50, 28.00 | VSYS–EL_SWP (footprint; SW copper ratsnest) |
-| L6 | Sameat:IND_2x2 | 4.7uH | 53.00, 31.50 | EL_SWN–GND (footprint; SW copper ratsnest) |
-| C46/C47 | 0603 | 10u | 47.50/50.50, 26.50 | VIN near PVIN/AVIN |
-| C48 | 0603 | 10u | 41.50, 34.50 | ELVDD Cout (local copper to U10 OUTP) |
-| C49/C50 | 0603 | 10u | 50.00,35.00 / 53.00,33.00 | ELVSS Cout |
-| C51 | 0402 | 100n | 49.50, 36.80 | CT |
+Placement matches `tools/generate_evt1.py` `display_placement` (J4 back at the generator origin, not the earlier +4 mm shift that sealed the west QFN corridor):
 
-### VCI / VDDIO
-| Ref | XY mm | Role |
+| Ref | XY mm | Notes |
 |---|---|---|
-| C42/C43 | 48.00/50.00, 41.00 | LCD_3V3 local |
-| R29 | 52.00, 41.00 | 1V8→LCD_1V8 0Ω |
-| C44/C45 | 48.00/50.00, 43.50 | LCD_1V8 local |
-| R31 | 52.00, 43.50 | **DNP** SWIRE option |
+| J4 | 30.00, 39.00 | `Sameat:FPC45` KD024 / Molex 502598-4593 candidate land |
+| U10 | 46.00, 30.00 | TPS65631DPDR, CTRL=`LCD_EN` |
+| L5 / L6 | 41.50, 28.00 / 50.50, 28.00 | EL boost / IBB |
+| C42–C45 | 25–32, 42.00 | VCI / VDDIO locals next to J4 |
+| R29 / R31 | 30.00, 45.00 / 35.00, 42.00 | 1V8→LCD_1V8 0Ω; SWIRE 0Ω **DNP** |
+| U2 | 30.00, 56.00 | unchanged |
 
-### DNP TFT backlight (parked, nets cleared)
-U7/L4/D4/R19/C27/C28 moved near **(52, 5…24)** and marked DNP / exclude-from-pos. Not for KD024 AMOLED.
+Legacy TFT backlight `U7/L4/D4/R19/C27/C28` is **removed** from the PCB (matches schematic / `design/pin_contract.json`). Source board has no stale zone fills; refill in KiCad to inspect copper.
 
-### Copper intentionally cleared
-Tracks/vias under the new J4 courtyard and the old backlight pocket (~40–54 × 27–37.5 mm) were deleted so FPC45/U10 could land. Some non-display routes that crossed that pocket were sacrificed and need restore/re-route later.
+Copper: **2594** tracks, **440** through-vias (0.40 / 0.20 mm). In1.Cu remains GND; no extra layers.
 
-## What is routed vs ratsnest
+## Routed (electrical)
 
-| Net group | Status |
+All previously open display nets are one pad-island, including MIPI 1-lane, `LCD_RST` / `LCD_TE` / `LCD_EN`, EL±, VCI/VDDIO, and leftover J4 GND.
+
+Geometric MIPI lengths on this board (not impedance-signed):
+
+| Pair | Length | Layers |
+|---|---:|---|
+| `DSI_CKP` / `DSI_CKN` | 18.645 mm each | F.Cu only, 0 via |
+| `DSI_D0P` / `DSI_D0N` | 19.589 mm each | F.Cu + B.Cu, 2 vias each |
+
+`LCD_EN` is electrically closed (`U2.4` / `U8.3` / `R31.2` / `U10.7`) but is a long F/B maze (~187 mm, 22 vias). Do not treat that as a clean GPIO.
+
+## Native check (full board, no display exceptions)
+
+| Item | Result |
 |---|---|
-| U10 OUTP/FBS ↔ C48 (ELVDD), OUTN ↔ C49/C50 (ELVSS), CT ↔ C51 | **Local island copper present** |
-| U10 PVIN/AVIN ↔ C46/C47 VSYS stitch | **Partial local copper** |
-| L5 EL_SWP / L6 EL_SWN short loops | **Footprints placed; SW copper left as ratsnest** after shorts against VSYS in dense pocket |
-| ELVDD/ELVSS / LCD_3V3 / LCD_1V8 → J4 | **Mostly ratsnest** (J4 stubs removed to avoid SD/KEY shorts) |
-| MIPI D0/CLK, LCD_RST, LCD_TE, LCD_EN to U2 | **Ratsnest only** — SoC/SD/KEY corridors too dense for blind F/B manhattan without a full rip-up |
-| U8 → LCD_3V3 / U10 CTRL | **Incomplete** |
+| KiCad | 10.0.6 |
+| ERC | 0 |
+| DRC violations (errors + warnings) | 0 |
+| Unconnected items | 0 |
+| Schematic parity | 0 |
+| Unit tests | 49 passed |
+| `fabrication_released` | false |
 
-Zones were refilled after edits.
+Report: `verification/native-20260906T131714Z-012dcd/status.json`. Command:
 
-## FPC45 land pattern
+```sh
+.venv/bin/python tools/verify_evt1.py --full-board --kicad-cli /Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli
+```
 
-`sameat.pretty/FPC45.kicad_mod` remains a **generator 0.5 mm pitch placeholder** for Molex **502598-4591** (not a manufacturer LP). Pads narrowed to **0.28×1.40 mm**, courtyard/silk pin-1 mark improved. Expect residual **solder_mask_bridge** warnings until a real Molex LP is dropped in. Documented for fab gate `pinouts_footprints`.
+Root PCB SHA-256: `1edb1ffa6b438935110cabcabe252466369eddc2f21f7d8a0532ef57d853df20`.
 
-## DRC / parity (honest)
+## Still not signed
 
-See `verification/display_island_drc.rpt`, `verification/display_island_drc_cli.log`, `verification/display_island_drc_summary.txt`.
+- Manufacturer stackup, MIPI/USB/SD impedance and return path (`stackup_si`).
+- Molex 502598 land pattern and TPS65631 paste/thermal (`docs/DISPLAY_FOOTPRINT_REVIEW.md`; `pinouts_footprints`).
+- EL voltage / CTRL topology / panel bring-up (`display`, `bringup_firmware`).
+- Power/thermal and AXP2101 variant.
+- Enclosure fit of J4 at (30, 39) vs the earlier (34, 38) shift.
 
-| Metric | Pre-edit (baseline) | Post-edit |
-|---|---:|---:|
-| Copper DRC violations (`--severity-error`) | **0** | **7** |
-| Unconnected items | **162** | **81** |
-| Schematic parity issues | (not run pre) | **27** |
-
-Unconnected count improved vs raw pre-edit CLI (162→81) largely from zone fill + net assignment + clearing orphan backlight connectivity, **not** because display→SoC is finished. New DRC errors are expected from FPC45 mask geometry, courtyard packing, and copper clearances against remaining neighbors after pocket delete.
-
-Blockers for “full display route”:
-1. Re-route SD/KEY/WAKE copper deleted under the island pocket.
-2. Length-matched MIPI 1-lane + LCD_RST/TE/EN on a planned layer pair with stackup.
-3. Complete EL± and VCI feeds to J4 without crossing the pad row.
-4. Replace FPC45 with manufacturer land pattern; resolve mask bridges.
-5. ERC/DRC clean + parity before any fab release.
-
-## Files touched
-
-- `portable_display_epass.kicad_pcb`
-- `sameat.pretty/FPC45.kicad_mod`
-- `tools/update_display_island_pcb.py`
-- `design/release_gates.json` (evidence only; fabrication_released still false)
-- `docs/DISPLAY_PCB_STATUS.md` (this file)
-- `verification/display_island_drc.rpt`
-- `verification/display_island_drc_cli.log`
-- `verification/display_island_drc_summary.txt`
-- `verification/portable_display_epass.kicad_pcb.pre_display_island.bak` (pre-edit backup)
-
-Do **not** treat this board as fab-ready.
+Release gates remain unsigned. Do **not** treat this board as fab-ready.
