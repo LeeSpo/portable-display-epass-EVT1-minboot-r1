@@ -6,7 +6,8 @@
   ],
   "footprints": 124,
   "all_front": true,
-  "original_net_membership_preserved": true,
+  "pad_net_map_matches": true,
+  "electrical_nets_corrected": true,
   "old_tracks_removed": 224,
   "old_vias_removed": 116,
   "new_tracks": 0,
@@ -30,11 +31,12 @@
   "verification_basis": "Saved PCB. Courtyards conservatively enclosed by rectangles; oval/rounded pads enclosed by rectangles. Screw-head D5 regions are provisional, not manufacturer dimensions.",
   "limitations": [
     "No native KiCad parsing or DRC",
-    "No schematic supplied; inherited electrical errors remain",
+    "No schematic supplied; pad nets were corrected on this layout (U6 pinout, VMID, U2 1V8 split); ERC still unavailable",
     "No tracks or vias; no unrouted-count pass",
     "No impedance or timing/thermal validation",
     "No FPC fold, card insertion, USB reach, or 3D collision sign-off",
     "No library-to-manufacturer footprint verification",
-    "Minimum gap is courtyard-to-courtyard, NOT lead pitch or via pitch"
+    "Minimum gap is courtyard-to-courtyard, NOT lead pitch or via pitch",
+    "TPS65631 default EL voltages remain unsigned vs panel typical ±3.6 V"
   ]
 }

@@ -68,13 +68,13 @@
     "2": "GND"
   },
   "U6": {
-    "1": "WAKE_PULSE",
-    "2": "GND",
-    "3": "WAKE_CEXT",
-    "4": "WAKE_REXT",
-    "5": "WAKE_REQ_N",
-    "6": "RTC_3V3",
-    "7": "RTC_3V3",
+    "1": "WAKE_REQ_N",
+    "2": "RTC_3V3",
+    "3": "RTC_3V3",
+    "4": "GND",
+    "5": "WAKE_PULSE",
+    "6": "WAKE_CEXT",
+    "7": "WAKE_REXT",
     "8": "RTC_3V3"
   },
   "J2": {
@@ -351,7 +351,7 @@
     "34": "DRAM_1V5",
     "35": "CORE_0V93",
     "36": "DRAM_1V5",
-    "37": "SOC_LDO_1V8",
+    "37": "1V8",
     "38": "PMIC_SDA",
     "39": "PMIC_SCL",
     "40": "SD_PWR_EN",
@@ -376,7 +376,7 @@
     "59": "NAND_MOSI",
     "60": "NAND_HOLD",
     "61": "NAND_WP",
-    "62": "SOC_LDO_1V8",
+    "62": "1V8",
     "63": "unconnected-(U2-PA11-Pad63)",
     "64": "unconnected-(U2-PA10-Pad64)",
     "65": "unconnected-(U2-PA9-Pad65)",
@@ -393,7 +393,7 @@
     "76": "USB_DP",
     "77": "USB_DM",
     "78": "3V3",
-    "79": "SOC_LDO_1V8",
+    "79": "1V8",
     "80": "DSI_D0N",
     "81": "DSI_D0P",
     "82": "unconnected-(U2-PD3_DSI_D1N-Pad82)",
@@ -471,7 +471,7 @@
     "33": "VBAT",
     "34": "VSYS",
     "35": "unconnected-(U1-SW-Pad35)",
-    "36": "VSYS",
+    "36": "VMID",
     "37": "VBUS",
     "38": "PMIC_IRQ_N",
     "39": "PMIC_SDA",
@@ -575,7 +575,7 @@
     "3": "WAKE_PULSE_N"
   },
   "C38": {
-    "1": "VSYS",
+    "1": "VMID",
     "2": "GND"
   },
   "C19": {

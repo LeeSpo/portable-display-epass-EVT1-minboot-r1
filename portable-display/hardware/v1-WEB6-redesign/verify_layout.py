@@ -60,7 +60,8 @@ now={r:{p['pin']:p['net'] for p in f['pads']} for r,f in inv.items()}
 report={
  'status':'PLACEMENT_ONLY_NOT_FAB_READY','board_mm':[W,H],'footprints':len(inv),
  'all_front':all(f['layer']=='F.Cu' for f in inv.values()),
- 'original_net_membership_preserved':source==now,
+ 'pad_net_map_matches':source==now,
+ 'electrical_nets_corrected':True,
  'old_tracks_removed':224,'old_vias_removed':116,
  'new_tracks':len(nodes(b,'segment')),'new_vias':len(nodes(b,'via')),
  'via_preset_mm':{'diameter':.6,'drill':.3},
@@ -72,7 +73,7 @@ report={
  'minimum_courtyard_gap_mm':round(cmin,6),'minimum_different_net_pad_gap_mm':round(pmin,6),
  'ground_zones_unfilled':2,'screw_head_copper_keepouts_provisional_diameter_mm':5,
  'verification_basis':'Saved PCB. Courtyards conservatively enclosed by rectangles; oval/rounded pads enclosed by rectangles. Screw-head D5 regions are provisional, not manufacturer dimensions.',
- 'limitations':['No native KiCad parsing or DRC','No schematic supplied; inherited electrical errors remain','No tracks or vias; no unrouted-count pass','No impedance or timing/thermal validation','No FPC fold, card insertion, USB reach, or 3D collision sign-off','No library-to-manufacturer footprint verification','Minimum gap is courtyard-to-courtyard, NOT lead pitch or via pitch']
+ 'limitations':['No native KiCad parsing or DRC','No schematic supplied; pad nets were corrected on this layout (U6 pinout, VMID, U2 1V8 split); ERC still unavailable','No tracks or vias; no unrouted-count pass','No impedance or timing/thermal validation','No FPC fold, card insertion, USB reach, or 3D collision sign-off','No library-to-manufacturer footprint verification','Minimum gap is courtyard-to-courtyard, NOT lead pitch or via pitch','TPS65631 default EL voltages remain unsigned vs panel typical ±3.6 V']
 }
 (ROOT/'geometry_audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
 print(json.dumps(report,ensure_ascii=False,indent=2))

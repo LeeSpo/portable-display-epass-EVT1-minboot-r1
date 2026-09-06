@@ -14,6 +14,12 @@
   ],
   "area_reduction_percent": 49.3333,
   "source_schematic_supplied": false,
-  "electrical_net_changes": false,
+  "electrical_net_changes": true,
+  "electrical_net_change_basis": [
+    "TI SN74LVC1G123 SCES586E DCT/DCU pinout for U6",
+    "AXP2101 pin 36 VMID as a separate bypass net from VSYS",
+    "Allwinner V851S pinout v0.1: VCC-LDOA&PLL is an internal LDO output; VDD18-DRAM, VCC-PA&VCC-MCSI and VCC-MDSI are 1V8 inputs; AVCC stays a local analog island"
+  ],
+  "electrical_net_change_source": "reference/v851s_pinout_v0.1.xlsx",
   "dimensions_status": "Proposed PCB dimensions; display/FPC assembly not verified"
 }
