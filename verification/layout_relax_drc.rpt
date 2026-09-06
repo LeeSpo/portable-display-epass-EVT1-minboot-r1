@@ -1,0 +1,1611 @@
+** Drc report for portable_display_epass.kicad_pcb **
+** Created on 2026-09-06T13:40:22+0000 **
+
+** Found 403 DRC violations **
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(34.0500 mm, 48.1500 mm): Track [1V8] on F.Cu, length 3.3941 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(18.8000 mm, 39.0500 mm): Track [3V3] on F.Cu, length 0.7000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(49.0000 mm, 34.5000 mm): Track [GND] on F.Cu, length 0.6500 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(50.0000 mm, 30.7000 mm): Track [GND] on F.Cu, length 0.6500 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(26.7000 mm, 35.9350 mm): Track [GND] on F.Cu, length 0.7000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(34.2000 mm, 36.6000 mm): Track [GND] on F.Cu, length 2.4000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(49.8000 mm, 25.5000 mm): Track [GND] on F.Cu, length 0.6500 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(52.0000 mm, 33.2000 mm): Track [GND] on F.Cu, length 0.6500 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(42.0000 mm, 30.7000 mm): Track [GND] on F.Cu, length 0.6500 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(44.5500 mm, 29.3250 mm): Track [GND] on F.Cu, length 0.6500 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(44.5500 mm, 30.6750 mm): Track [GND] on F.Cu, length 0.6500 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(25.0000 mm, 41.2000 mm): Track [GND] on F.Cu, length 0.6500 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(32.0000 mm, 41.5000 mm): Track [GND] on F.Cu, length 0.6500 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(51.5500 mm, 28.0000 mm): Track [GND] on F.Cu, length 0.6500 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(30.0000 mm, 41.2000 mm): Track [GND] on F.Cu, length 0.6500 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(16.8000 mm, 40.0000 mm): Track [GND] on F.Cu, length 0.7000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(26.1000 mm, 35.9350 mm): Track [GND] on F.Cu, length 0.7000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(18.8000 mm, 40.0000 mm): Track [GND] on F.Cu, length 0.7000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(25.5000 mm, 35.9350 mm): Track [GND] on F.Cu, length 0.7000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(44.5500 mm, 31.1250 mm): Track [GND] on F.Cu, length 0.6500 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(46.8000 mm, 25.5000 mm): Track [GND] on F.Cu, length 0.6500 mm
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(46.0000 mm, 30.0000 mm): Via [GND] on F.Cu - B.Cu
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(39.3000 mm, 44.7000 mm): Track [KEY_DOWN] on B.Cu, length 0.2121 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(38.2500 mm, 39.9000 mm): Track [KEY_DOWN] on B.Cu, length 0.2121 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(40.2000 mm, 39.0000 mm): Track [KEY_DOWN] on B.Cu, length 8.9095 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(36.3000 mm, 43.3500 mm): Track [KEY_DOWN] on B.Cu, length 0.2121 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(26.2500 mm, 50.8500 mm): Track [PWRON_N] on B.Cu, length 0.6000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(30.4500 mm, 40.6500 mm): Track [PWRON_N] on B.Cu, length 0.4243 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(23.4000 mm, 50.1000 mm): Track [SD_D0] on B.Cu, length 2.3335 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(26.4000 mm, 39.0000 mm): Track [SD_D0] on B.Cu, length 1.8000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(22.1625 mm, 53.4012 mm): Track [SD_D0] on B.Cu, length 0.3698 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(36.4500 mm, 38.7000 mm): Track [SD_PWR_EN] on B.Cu, length 0.2121 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(36.0000 mm, 40.0500 mm): Track [SD_PWR_EN] on B.Cu, length 0.3000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(29.4750 mm, 51.2500 mm): Track [SOC_LDO_1V8] on F.Cu, length 0.6000 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(31.9500 mm, 52.0500 mm): Track [SOC_LDO_1V8] on B.Cu, length 3.1820 mm
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(14.0000 mm, 36.0000 mm): Zone [LCD_3V3] on B.Cu
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(14.0000 mm, 36.0000 mm): Zone [LCD_3V3] on B.Cu
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(14.0000 mm, 36.0000 mm): Zone [LCD_3V3] on B.Cu
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(14.0000 mm, 36.0000 mm): Zone [LCD_3V3] on B.Cu
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(14.0000 mm, 36.0000 mm): Zone [LCD_3V3] on B.Cu
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(14.0000 mm, 36.0000 mm): Zone [LCD_3V3] on B.Cu
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(14.0000 mm, 36.0000 mm): Zone [LCD_3V3] on B.Cu
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(14.0000 mm, 36.0000 mm): Zone [LCD_3V3] on B.Cu
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(14.0000 mm, 36.0000 mm): Zone [LCD_3V3] on B.Cu
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(14.0000 mm, 36.0000 mm): Zone [LCD_3V3] on B.Cu
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(14.0000 mm, 36.0000 mm): Zone [LCD_3V3] on B.Cu
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(14.0000 mm, 36.0000 mm): Zone [LCD_3V3] on B.Cu
+[isolated_copper]: Isolated copper fill
+    Local override; warning
+    @(14.0000 mm, 36.0000 mm): Zone [LCD_3V3] on B.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(22.0000 mm, 48.1500 mm): Track [1V8] on F.Cu, length 12.0500 mm
+    @(22.0500 mm, 40.2000 mm): Track [3V3] on F.Cu, length 11.5500 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0750 mm)
+    Rule: netclass 'Default'; error
+    @(31.8000 mm, 37.0000 mm): Pad 29 [unconnected-(J4-PIN29-Pad29)] of J4 on F.Cu
+    @(32.1000 mm, 37.0000 mm): Track [GND] on F.Cu, length 0.3000 mm
+[shorting_items]: Items shorting two nets (nets VSYS and GND)
+    Local override; error
+    @(41.5000 mm, 46.0000 mm): Track [VSYS] on F.Cu, length 6.3640 mm
+    @(45.5500 mm, 42.0000 mm): Track [GND] on F.Cu, length 1.0000 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(25.3500 mm, 33.0000 mm): Track [KEY_DOWN] on F.Cu, length 2.3335 mm
+    @(23.7000 mm, 33.9350 mm): Track [GND] on F.Cu, length 3.0650 mm
+[shorting_items]: Items shorting two nets (nets 1V8 and CORE_0V93)
+    Local override; error
+    @(22.0000 mm, 48.1500 mm): Track [1V8] on F.Cu, length 12.0500 mm
+    @(30.8750 mm, 50.6500 mm): Track [CORE_0V93] on F.Cu, length 2.5517 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(17.5000 mm, 48.0000 mm): Track [LCD_3V3] on F.Cu, length 2.8000 mm
+    @(16.3000 mm, 48.0000 mm): Track [GND] on F.Cu, length 0.7000 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0250 mm)
+    Rule: netclass 'Default'; error
+    @(35.7000 mm, 33.9350 mm): Track [GND] on F.Cu, length 3.0650 mm
+    @(36.0000 mm, 34.0500 mm): Via [PWRON_N] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets 1V8 and ELVSS)
+    Local override; error
+    @(46.5000 mm, 50.0000 mm): Track [1V8] on F.Cu, length 1.7000 mm
+    @(44.0000 mm, 48.3000 mm): Track [ELVSS] on F.Cu, length 2.5000 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0400 mm)
+    Rule: netclass 'Default'; error
+    @(23.7000 mm, 33.9350 mm): Pad 2 [GND] of J4 on F.Cu
+    @(21.1500 mm, 33.6000 mm): Track [KEY_UP] on F.Cu, length 3.1500 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0400 mm)
+    Rule: netclass 'Default'; error
+    @(24.3000 mm, 33.9350 mm): Pad 4 [ELVSS] of J4 on F.Cu
+    @(24.3000 mm, 33.6000 mm): Track [KEY_UP] on F.Cu, length 8.0610 mm
+[shorting_items]: Items shorting two nets (nets 1V8 and 3V3)
+    Local override; error
+    @(22.0000 mm, 47.5000 mm): Track [1V8] on F.Cu, length 0.6500 mm
+    @(22.0500 mm, 40.2000 mm): Track [3V3] on F.Cu, length 11.5500 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2400 mm)
+    Rule: board setup constraints hole; error
+    @(23.0000 mm, 52.6750 mm): Track [LCD_RST] on B.Cu, length 17.8400 mm
+    @(22.6000 mm, 37.4850 mm): Via [GND] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets 1V8 and CORE_0V93)
+    Local override; error
+    @(22.0000 mm, 48.1500 mm): Track [1V8] on F.Cu, length 12.0500 mm
+    @(31.4438 mm, 48.1625 mm): Via [CORE_0V93] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets VSYS and STATUS_LED_A)
+    Local override; error
+    @(42.7500 mm, 43.3250 mm): Track [VSYS] on B.Cu, length 9.7250 mm
+    @(42.6000 mm, 52.2000 mm): Via [STATUS_LED_A] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(19.3000 mm, 55.8000 mm): Track [SD_D3] on F.Cu, length 14.2500 mm
+    @(18.0000 mm, 48.3000 mm): Track [LCD_1V8] on F.Cu, length 2.0224 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(43.0500 mm, 52.3500 mm): Track [STATUS_LED_A] on B.Cu, length 0.3000 mm
+    @(42.7500 mm, 43.3250 mm): Track [VSYS] on B.Cu, length 9.7250 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(38.5500 mm, 39.2000 mm): Track [ELVDD] on B.Cu, length 13.3500 mm
+    @(35.7000 mm, 37.3500 mm): Track [PWRON_N] on B.Cu, length 2.7577 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(38.5500 mm, 39.2000 mm): Track [ELVDD] on B.Cu, length 13.3500 mm
+    @(32.1000 mm, 39.1500 mm): Track [PWRON_N] on B.Cu, length 2.1213 mm
+[shorting_items]: Items shorting two nets (nets 1V8 and ELVSS)
+    Local override; error
+    @(45.9186 mm, 48.4025 mm): Via [1V8] on F.Cu - B.Cu
+    @(44.0000 mm, 48.3000 mm): Track [ELVSS] on F.Cu, length 2.5000 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(42.7500 mm, 43.3250 mm): Track [VSYS] on B.Cu, length 9.7250 mm
+    @(42.7500 mm, 52.3500 mm): Track [STATUS_LED_A] on B.Cu, length 0.2121 mm
+[shorting_items]: Items shorting two nets (nets VSYS and GND)
+    Local override; error
+    @(42.7500 mm, 43.3250 mm): Track [VSYS] on B.Cu, length 9.7250 mm
+    @(43.0000 mm, 48.9000 mm): Via [GND] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2400 mm)
+    Rule: board setup constraints hole; error
+    @(23.0000 mm, 34.8350 mm): Track [LCD_RST] on B.Cu, length 4.9000 mm
+    @(26.7000 mm, 35.2350 mm): Via [GND] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets GND and LCD_3V3)
+    Local override; error
+    @(17.8000 mm, 46.2000 mm): Via [GND] on F.Cu - B.Cu
+    @(17.5000 mm, 46.0000 mm): Pad 1 [LCD_3V3] of C43 on F.Cu
+[shorting_items]: Items shorting two nets (nets LCD_3V3 and GND)
+    Local override; error
+    @(17.5000 mm, 48.0000 mm): Track [LCD_3V3] on F.Cu, length 2.8000 mm
+    @(16.3000 mm, 48.0000 mm): Pad 2 [GND] of C29 on F.Cu
+[shorting_items]: Items shorting two nets (nets GND and LCD_3V3)
+    Local override; error
+    @(16.5000 mm, 44.7000 mm): Track [GND] on F.Cu, length 0.7000 mm
+    @(16.5000 mm, 44.5500 mm): Track [LCD_3V3] on F.Cu, length 1.7500 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0765 mm)
+    Rule: netclass 'Default'; error
+    @(17.8000 mm, 45.5000 mm): Pad 2 [GND] of U8 on F.Cu
+    @(16.5000 mm, 46.3000 mm): Track [LCD_3V3] on F.Cu, length 1.0440 mm
+[shorting_items]: Items shorting two nets (nets ELVDD and LCD_3V3)
+    Local override; error
+    @(24.9000 mm, 37.0000 mm): Track [ELVDD] on F.Cu, length 0.3000 mm
+    @(25.8000 mm, 37.0000 mm): Track [LCD_3V3] on F.Cu, length 0.8000 mm
+[shorting_items]: Items shorting two nets (nets GND and LCD_3V3)
+    Local override; error
+    @(16.5000 mm, 44.7000 mm): Track [GND] on F.Cu, length 0.7000 mm
+    @(20.2000 mm, 44.5500 mm): Track [LCD_3V3] on F.Cu, length 3.7000 mm
+[shorting_items]: Items shorting two nets (nets GND and KEY_DOWN)
+    Local override; error
+    @(40.8000 mm, 38.6000 mm): Via [GND] on F.Cu - B.Cu
+    @(40.2000 mm, 39.0000 mm): Track [KEY_DOWN] on B.Cu, length 8.9095 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(42.7500 mm, 43.3250 mm): Track [VSYS] on B.Cu, length 9.7250 mm
+    @(45.7500 mm, 48.3000 mm): Track [1V8] on B.Cu, length 9.1500 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0765 mm)
+    Rule: netclass 'Default'; error
+    @(17.8000 mm, 45.5000 mm): Pad 2 [GND] of U8 on F.Cu
+    @(17.5000 mm, 46.0000 mm): Track [LCD_3V3] on F.Cu, length 2.0000 mm
+[shorting_items]: Items shorting two nets (nets ELVDD and GND)
+    Local override; error
+    @(24.9000 mm, 33.9350 mm): Track [ELVDD] on F.Cu, length 3.0650 mm
+    @(24.6000 mm, 36.1500 mm): Via [GND] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2250 mm)
+    Rule: board setup constraints hole; error
+    @(23.7000 mm, 37.0000 mm): Track [GND] on F.Cu, length 0.9000 mm
+    @(25.0000 mm, 37.0000 mm): Via [LCD_3V3] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets LCD_1V8 and GND)
+    Local override; error
+    @(25.6000 mm, 49.0000 mm): Track [LCD_1V8] on B.Cu, length 12.0000 mm
+    @(25.6500 mm, 41.2000 mm): Via [GND] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0550 mm)
+    Rule: netclass 'Default'; error
+    @(34.5000 mm, 35.2350 mm): Via [GND] on F.Cu - B.Cu
+    @(29.0000 mm, 34.9350 mm): Track [DSI_CKN] on F.Cu, length 6.1000 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2000 mm)
+    Rule: board setup constraints hole; error
+    @(16.5000 mm, 47.0000 mm): Track [LCD_3V3] on B.Cu, length 8.5000 mm
+    @(18.0000 mm, 47.4000 mm): Via [GND] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0550 mm)
+    Rule: netclass 'Default'; error
+    @(25.2000 mm, 40.9500 mm): Track [SD_D0] on B.Cu, length 0.1500 mm
+    @(25.0000 mm, 47.0000 mm): Track [LCD_3V3] on B.Cu, length 10.0000 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0400 mm)
+    Rule: netclass 'Default'; error
+    @(23.2000 mm, 53.3750 mm): Track [LCD_EN] on F.Cu, length 9.3750 mm
+    @(23.0000 mm, 47.5000 mm): Track [LCD_1V8] on F.Cu, length 3.0000 mm
+[shorting_items]: Items shorting two nets (nets LCD_EN and 3V3)
+    Local override; error
+    @(25.2500 mm, 53.3750 mm): Track [LCD_EN] on F.Cu, length 2.0500 mm
+    @(24.6500 mm, 53.7250 mm): Track [3V3] on F.Cu, length 0.3816 mm
+[shorting_items]: Items shorting two nets (nets LCD_EN and GND)
+    Local override; error
+    @(17.8000 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 2.4500 mm
+    @(17.5000 mm, 45.0000 mm): Pad 2 [GND] of C43 on F.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(23.2000 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 18.2500 mm
+    @(38.5500 mm, 44.2250 mm): Track [ELVDD] on F.Cu, length 5.0250 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(16.5000 mm, 47.0000 mm): Track [LCD_3V3] on B.Cu, length 8.5000 mm
+    @(19.3000 mm, 56.3000 mm): Track [SD_DET] on B.Cu, length 14.5000 mm
+[shorting_items]: Items shorting two nets (nets LCD_EN and EL_CT)
+    Local override; error
+    @(41.4500 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 1.1250 mm
+    @(41.4500 mm, 44.6750 mm): Pad 8 [EL_CT] of U10 on F.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(22.0500 mm, 40.2000 mm): Track [3V3] on F.Cu, length 11.5500 mm
+    @(23.2000 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 5.4000 mm
+[shorting_items]: Items shorting two nets (nets ELVSS and GND)
+    Local override; error
+    @(44.0000 mm, 44.2250 mm): Track [ELVSS] on F.Cu, length 2.0750 mm
+    @(44.0000 mm, 45.6000 mm): Via [GND] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets LCD_RST and DSI_D0N)
+    Local override; error
+    @(27.9000 mm, 33.9350 mm): Track [LCD_RST] on F.Cu, length 0.9000 mm
+    @(27.5000 mm, 34.9350 mm): Track [DSI_D0N] on F.Cu, length 6.4000 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1900 mm)
+    Rule: board setup constraints hole; error
+    @(25.2500 mm, 52.6750 mm): Track [LCD_RST] on F.Cu, length 2.4500 mm
+    @(22.8000 mm, 53.0250 mm): Via [LCD_TE] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0550 mm)
+    Rule: netclass 'Default'; error
+    @(35.1000 mm, 44.7000 mm): Via [GND] on F.Cu - B.Cu
+    @(35.4000 mm, 43.0500 mm): Track [SD_PWR_EN] on F.Cu, length 1.6500 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0743 mm)
+    Rule: netclass 'Default'; error
+    @(34.9500 mm, 45.1500 mm): Via [SD_PWR_EN] on F.Cu - B.Cu
+    @(35.1000 mm, 44.7000 mm): Via [GND] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets LCD_RST and DSI_D0N)
+    Local override; error
+    @(27.9000 mm, 34.8350 mm): Via [LCD_RST] on F.Cu - B.Cu
+    @(27.5000 mm, 34.9350 mm): Track [DSI_D0N] on F.Cu, length 6.4000 mm
+[shorting_items]: Items shorting two nets (nets LCD_RST and SD_D0)
+    Local override; error
+    @(27.9000 mm, 34.8350 mm): Via [LCD_RST] on F.Cu - B.Cu
+    @(25.3500 mm, 34.6500 mm): Track [SD_D0] on B.Cu, length 3.6000 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1900 mm)
+    Rule: board setup constraints hole; error
+    @(25.2500 mm, 53.0250 mm): Track [LCD_TE] on F.Cu, length 2.4500 mm
+    @(22.8000 mm, 52.6750 mm): Via [LCD_RST] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(36.0000 mm, 44.7000 mm): Track [GND] on F.Cu, length 0.9000 mm
+    @(35.4000 mm, 44.7000 mm): Track [SD_PWR_EN] on F.Cu, length 0.6364 mm
+[shorting_items]: Items shorting two nets (nets LCD_TE and LCD_RST)
+    Local override; error
+    @(22.8000 mm, 53.0250 mm): Via [LCD_TE] on F.Cu - B.Cu
+    @(22.8000 mm, 52.6750 mm): Via [LCD_RST] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(36.0000 mm, 44.7000 mm): Track [GND] on F.Cu, length 0.9000 mm
+    @(35.4000 mm, 43.0500 mm): Track [SD_PWR_EN] on F.Cu, length 1.6500 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(22.0000 mm, 48.1500 mm): Track [1V8] on F.Cu, length 12.0500 mm
+    @(32.7000 mm, 47.7000 mm): Track [SD_PWR_EN] on F.Cu, length 1.9092 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1900 mm)
+    Rule: board setup constraints hole; error
+    @(22.8000 mm, 52.6750 mm): Track [LCD_RST] on B.Cu, length 0.2000 mm
+    @(22.8000 mm, 53.0250 mm): Via [LCD_TE] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(21.1500 mm, 37.0500 mm): Track [SD_D1] on B.Cu, length 3.3941 mm
+    @(23.0000 mm, 52.6750 mm): Track [LCD_RST] on B.Cu, length 17.8400 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(21.1500 mm, 37.0500 mm): Track [SD_D1] on B.Cu, length 3.3941 mm
+    @(23.0000 mm, 34.8350 mm): Track [LCD_RST] on B.Cu, length 4.9000 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0091 mm)
+    Rule: netclass 'Default'; error
+    @(35.2500 mm, 42.7500 mm): Via [SD_PWR_EN] on F.Cu - B.Cu
+    @(34.4500 mm, 42.0000 mm): Pad 1 [VSYS] of L5 on F.Cu
+[shorting_items]: Items shorting two nets (nets GND and LCD_3V3)
+    Local override; error
+    @(17.5000 mm, 45.7000 mm): Via [GND] on F.Cu - B.Cu
+    @(17.5000 mm, 46.0000 mm): Pad 1 [LCD_3V3] of C43 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2400 mm)
+    Rule: board setup constraints hole; error
+    @(23.0000 mm, 34.8350 mm): Track [LCD_RST] on B.Cu, length 4.9000 mm
+    @(23.7000 mm, 35.2350 mm): Via [GND] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0550 mm)
+    Rule: netclass 'Default'; error
+    @(32.7000 mm, 35.2350 mm): Via [GND] on F.Cu - B.Cu
+    @(29.0000 mm, 34.9350 mm): Track [DSI_CKN] on F.Cu, length 6.1000 mm
+[shorting_items]: Items shorting two nets (nets GND and LCD_EN)
+    Local override; error
+    @(40.0000 mm, 44.0000 mm): Via [GND] on F.Cu - B.Cu
+    @(23.2000 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 18.2500 mm
+[shorting_items]: Items shorting two nets (nets VSYS and GND)
+    Local override; error
+    @(46.0000 mm, 41.5000 mm): Track [VSYS] on F.Cu, length 0.1500 mm
+    @(45.5500 mm, 42.0000 mm): Pad 2 [GND] of L6 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0550 mm)
+    Rule: netclass 'Default'; error
+    @(29.0000 mm, 34.9350 mm): Track [DSI_CKN] on F.Cu, length 6.1000 mm
+    @(32.1000 mm, 35.2350 mm): Via [GND] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets 1V8 and USB_DM)
+    Local override; error
+    @(22.0000 mm, 48.1500 mm): Track [1V8] on F.Cu, length 12.0500 mm
+    @(30.1750 mm, 50.6500 mm): Track [USB_DM] on F.Cu, length 2.4901 mm
+[shorting_items]: Items shorting two nets (nets ELVDD and VSYS)
+    Local override; error
+    @(36.0000 mm, 46.3000 mm): Pad 1 [ELVDD] of C48 on F.Cu
+    @(35.5500 mm, 46.0500 mm): Track [VSYS] on F.Cu, length 7.0000 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(25.2500 mm, 53.0250 mm): Track [LCD_TE] on F.Cu, length 2.4500 mm
+    @(24.6500 mm, 53.7250 mm): Track [3V3] on F.Cu, length 2.8938 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(41.4500 mm, 44.2250 mm): Track [ELVSS] on F.Cu, length 2.5500 mm
+    @(41.5000 mm, 46.0000 mm): Track [VSYS] on F.Cu, length 6.3640 mm
+[shorting_items]: Items shorting two nets (nets 1V8 and USB_DM)
+    Local override; error
+    @(22.0000 mm, 48.1500 mm): Track [1V8] on F.Cu, length 12.0500 mm
+    @(30.2888 mm, 48.1625 mm): Via [USB_DM] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(41.4500 mm, 43.7750 mm): Track [EL_SWN] on F.Cu, length 2.6741 mm
+    @(41.4500 mm, 43.3250 mm): Track [VSYS] on F.Cu, length 1.3000 mm
+[shorting_items]: Items shorting two nets (nets EL_SWN and VSYS)
+    Local override; error
+    @(41.4500 mm, 43.7750 mm): Track [EL_SWN] on F.Cu, length 2.6741 mm
+    @(42.2000 mm, 39.5000 mm): Track [VSYS] on F.Cu, length 3.3750 mm
+[shorting_items]: Items shorting two nets (nets VSYS and EL_SWP)
+    Local override; error
+    @(34.4500 mm, 42.0000 mm): Track [VSYS] on F.Cu, length 5.3677 mm
+    @(36.5500 mm, 42.0000 mm): Pad 2 [EL_SWP] of L5 on F.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0550 mm)
+    Rule: netclass 'Default'; error
+    @(29.0000 mm, 34.9350 mm): Track [DSI_CKN] on F.Cu, length 6.1000 mm
+    @(33.3000 mm, 35.2350 mm): Via [GND] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(27.7250 mm, 51.2500 mm): Track [DSI_CKN] on F.Cu, length 9.2500 mm
+    @(28.7750 mm, 42.0000 mm): Track [DSI_D0P] on F.Cu, length 1.7750 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(29.0000 mm, 34.9350 mm): Track [DSI_CKN] on F.Cu, length 6.1000 mm
+    @(34.5000 mm, 33.9350 mm): Track [GND] on F.Cu, length 3.0650 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2250 mm)
+    Rule: board setup constraints hole; error
+    @(38.5500 mm, 43.7750 mm): Track [ELVDD] on F.Cu, length 2.5500 mm
+    @(37.5500 mm, 43.3250 mm): Via [GND] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets GND and 3V3)
+    Local override; error
+    @(16.5000 mm, 44.7000 mm): Pad 2 [GND] of C42 on F.Cu
+    @(17.8000 mm, 44.5500 mm): Track [3V3] on F.Cu, length 0.8000 mm
+[shorting_items]: Items shorting two nets (nets LCD_3V3 and GND)
+    Local override; error
+    @(16.5000 mm, 44.5500 mm): Track [LCD_3V3] on F.Cu, length 1.7500 mm
+    @(16.5000 mm, 45.4000 mm): Via [GND] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets GND and DSI_CKN)
+    Local override; error
+    @(29.1000 mm, 37.9500 mm): Track [GND] on F.Cu, length 0.9000 mm
+    @(29.0000 mm, 42.0000 mm): Track [DSI_CKN] on F.Cu, length 7.0650 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(28.5000 mm, 42.0000 mm): Track [DSI_CKP] on F.Cu, length 4.0000 mm
+    @(27.7250 mm, 42.0000 mm): Track [DSI_CKN] on F.Cu, length 1.2750 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(27.3750 mm, 42.0000 mm): Track [DSI_CKP] on F.Cu, length 1.1250 mm
+    @(27.5000 mm, 42.0000 mm): Track [DSI_D0N] on F.Cu, length 7.0650 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(34.8000 mm, 38.0000 mm): Track [DSI_CKP] on F.Cu, length 1.0000 mm
+    @(34.5000 mm, 37.0000 mm): Track [GND] on F.Cu, length 0.9000 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(33.6000 mm, 38.0000 mm): Track [DSI_D0P] on F.Cu, length 1.0000 mm
+    @(28.5000 mm, 38.0000 mm): Track [DSI_CKP] on F.Cu, length 6.3000 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(28.7750 mm, 42.0000 mm): Track [DSI_D0P] on F.Cu, length 1.7750 mm
+    @(28.5000 mm, 42.0000 mm): Track [DSI_CKP] on F.Cu, length 4.0000 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0350 mm)
+    Rule: netclass 'Default'; error
+    @(27.5000 mm, 42.0000 mm): Track [DSI_D0N] on F.Cu, length 7.0650 mm
+    @(27.3750 mm, 51.2500 mm): Track [DSI_CKP] on F.Cu, length 9.2500 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(29.1250 mm, 42.0000 mm): Track [DSI_D0N] on F.Cu, length 1.6250 mm
+    @(29.0000 mm, 42.0000 mm): Track [DSI_CKN] on F.Cu, length 7.0650 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(27.5000 mm, 42.0000 mm): Track [DSI_D0N] on F.Cu, length 7.0650 mm
+    @(28.7750 mm, 42.0000 mm): Track [DSI_D0P] on F.Cu, length 1.7750 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0350 mm)
+    Rule: netclass 'Default'; error
+    @(29.1250 mm, 51.2500 mm): Track [DSI_D0N] on F.Cu, length 9.2500 mm
+    @(29.0000 mm, 42.0000 mm): Track [DSI_CKN] on F.Cu, length 7.0650 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(41.5500 mm, 46.0500 mm): Track [VSYS] on F.Cu, length 6.0000 mm
+    @(36.0000 mm, 43.7750 mm): Track [ELVDD] on F.Cu, length 2.5250 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(29.0000 mm, 34.9350 mm): Track [DSI_CKN] on F.Cu, length 6.1000 mm
+    @(33.9000 mm, 34.9350 mm): Track [DSI_D0N] on F.Cu, length 1.0000 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(32.1000 mm, 33.9350 mm): Track [GND] on F.Cu, length 3.0650 mm
+    @(27.5000 mm, 34.9350 mm): Track [DSI_D0N] on F.Cu, length 6.4000 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(33.6000 mm, 38.0000 mm): Track [DSI_D0P] on F.Cu, length 1.0000 mm
+    @(33.3000 mm, 37.0000 mm): Track [GND] on F.Cu, length 0.9000 mm
+[shorting_items]: Items shorting two nets (nets DSI_CKP and DSI_D0P)
+    Local override; error
+    @(27.3750 mm, 42.0000 mm): Track [DSI_CKP] on F.Cu, length 1.1250 mm
+    @(28.7750 mm, 42.0000 mm): Track [DSI_D0P] on F.Cu, length 1.7750 mm
+[shorting_items]: Items shorting two nets (nets GND and VSYS)
+    Local override; error
+    @(45.5500 mm, 42.0000 mm): Pad 2 [GND] of L6 on F.Cu
+    @(45.5750 mm, 41.3500 mm): Track [VSYS] on F.Cu, length 5.5913 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(22.0000 mm, 48.1500 mm): Track [1V8] on F.Cu, length 12.0500 mm
+    @(28.7750 mm, 51.2500 mm): Track [DSI_D0P] on F.Cu, length 9.2500 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(29.0000 mm, 42.0000 mm): Track [DSI_CKN] on F.Cu, length 7.0650 mm
+    @(27.0000 mm, 38.0000 mm): Track [DSI_D0P] on F.Cu, length 6.6000 mm
+[shorting_items]: Items shorting two nets (nets LCD_SWIRE and 3V3)
+    Local override; error
+    @(22.0000 mm, 44.0000 mm): Pad 1 [LCD_SWIRE] of R31 on F.Cu
+    @(22.0500 mm, 40.2000 mm): Track [3V3] on F.Cu, length 11.5500 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0866 mm)
+    Rule: netclass 'Default'; error
+    @(41.4500 mm, 43.7750 mm): Track [EL_SWN] on F.Cu, length 2.6741 mm
+    @(41.4500 mm, 42.8750 mm): Track [VSYS] on F.Cu, length 0.4500 mm
+[shorting_items]: Items shorting two nets (nets LCD_1V8 and GND)
+    Local override; error
+    @(18.0000 mm, 48.3000 mm): Track [LCD_1V8] on F.Cu, length 2.0224 mm
+    @(20.0000 mm, 47.7000 mm): Via [GND] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets EL_SWN and VSYS)
+    Local override; error
+    @(41.4500 mm, 43.7750 mm): Track [EL_SWN] on F.Cu, length 2.6741 mm
+    @(42.2000 mm, 42.8750 mm): Track [VSYS] on F.Cu, length 0.7500 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2086 mm)
+    Rule: board setup constraints hole; error
+    @(42.0000 mm, 46.0500 mm): Track [WAKE_PULSE_N] on F.Cu, length 6.3640 mm
+    @(46.5500 mm, 42.0000 mm): Via [GND] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(40.8000 mm, 39.5000 mm): Track [GND] on F.Cu, length 0.9000 mm
+    @(39.2000 mm, 39.5000 mm): Track [VSYS] on F.Cu, length 3.0000 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2400 mm)
+    Rule: board setup constraints hole; error
+    @(23.0000 mm, 34.8350 mm): Track [LCD_RST] on B.Cu, length 4.9000 mm
+    @(25.5000 mm, 35.2350 mm): Via [GND] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets GND and KEY_DOWN)
+    Local override; error
+    @(26.7000 mm, 33.0850 mm): Via [GND] on F.Cu - B.Cu
+    @(27.3000 mm, 33.0000 mm): Track [KEY_DOWN] on F.Cu, length 1.9500 mm
+[shorting_items]: Items shorting two nets (nets GND and SD_D1)
+    Local override; error
+    @(26.7000 mm, 33.0850 mm): Via [GND] on F.Cu - B.Cu
+    @(25.3500 mm, 34.3500 mm): Track [SD_D1] on B.Cu, length 9.9702 mm
+[shorting_items]: Items shorting two nets (nets GND and VSYS)
+    Local override; error
+    @(45.5500 mm, 42.0000 mm): Pad 2 [GND] of L6 on F.Cu
+    @(46.0000 mm, 41.3500 mm): Track [VSYS] on F.Cu, length 0.4250 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0359 mm)
+    Rule: netclass 'Default'; error
+    @(42.7500 mm, 43.3250 mm): Track [VSYS] on B.Cu, length 9.7250 mm
+    @(42.9559 mm, 51.4650 mm): Track [USB_DM] on B.Cu, length 0.1500 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(23.0000 mm, 47.5000 mm): Track [LCD_1V8] on F.Cu, length 3.0000 mm
+    @(21.5500 mm, 54.0500 mm): Track [SD_CLK] on F.Cu, length 12.5000 mm
+[shorting_items]: Items shorting two nets (nets GND and 3V3)
+    Local override; error
+    @(16.5000 mm, 44.7000 mm): Pad 2 [GND] of C42 on F.Cu
+    @(17.0000 mm, 44.5500 mm): Via [3V3] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0108 mm)
+    Rule: netclass 'Default'; error
+    @(24.6000 mm, 37.0000 mm): Track [GND] on F.Cu, length 3.0650 mm
+    @(25.3500 mm, 33.0000 mm): Track [KEY_DOWN] on F.Cu, length 2.3335 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0108 mm)
+    Rule: netclass 'Default'; error
+    @(24.6000 mm, 33.9350 mm): Track [GND] on F.Cu, length 0.9000 mm
+    @(25.3500 mm, 33.0000 mm): Track [KEY_DOWN] on F.Cu, length 2.3335 mm
+[shorting_items]: Items shorting two nets (nets GND and ELVSS)
+    Local override; error
+    @(44.0000 mm, 44.7000 mm): Track [GND] on F.Cu, length 0.9000 mm
+    @(44.0000 mm, 44.2250 mm): Track [ELVSS] on F.Cu, length 2.0750 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0214 mm)
+    Rule: netclass 'Default'; error
+    @(22.6000 mm, 37.0000 mm): Track [GND] on F.Cu, length 0.8000 mm
+    @(23.1000 mm, 36.3000 mm): Track [KEY_DOWN] on F.Cu, length 1.9092 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(36.0000 mm, 44.7000 mm): Track [GND] on F.Cu, length 0.9000 mm
+    @(36.0000 mm, 43.7750 mm): Track [ELVDD] on F.Cu, length 2.5250 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0250 mm)
+    Rule: netclass 'Default'; error
+    @(36.3000 mm, 33.9350 mm): Track [GND] on F.Cu, length 3.0650 mm
+    @(36.0000 mm, 34.0500 mm): Via [PWRON_N] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(34.2000 mm, 36.6000 mm): Track [GND] on F.Cu, length 2.4000 mm
+    @(28.5000 mm, 38.0000 mm): Track [DSI_CKP] on F.Cu, length 6.3000 mm
+[shorting_items]: Items shorting two nets (nets DSI_CKP and GND)
+    Local override; error
+    @(28.5000 mm, 38.0000 mm): Track [DSI_CKP] on F.Cu, length 6.3000 mm
+    @(31.6426 mm, 38.0249 mm): Via [GND] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(32.1000 mm, 33.9350 mm): Track [GND] on F.Cu, length 3.0650 mm
+    @(29.0000 mm, 34.9350 mm): Track [DSI_CKN] on F.Cu, length 6.1000 mm
+[shorting_items]: Items shorting two nets (nets ELVSS and GND)
+    Local override; error
+    @(24.3000 mm, 37.0000 mm): Track [ELVSS] on F.Cu, length 0.3000 mm
+    @(23.7000 mm, 37.0000 mm): Track [GND] on F.Cu, length 0.9000 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(23.0000 mm, 47.5000 mm): Track [LCD_1V8] on F.Cu, length 3.0000 mm
+    @(21.0500 mm, 54.3000 mm): Track [SD_CMD] on F.Cu, length 12.2500 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(32.4000 mm, 37.0000 mm): Track [GND] on F.Cu, length 3.0650 mm
+    @(29.0000 mm, 34.9350 mm): Track [DSI_CKN] on F.Cu, length 6.1000 mm
+[shorting_items]: Items shorting two nets (nets GND and PWRON_N)
+    Local override; error
+    @(36.0000 mm, 33.9350 mm): Track [GND] on F.Cu, length 0.3000 mm
+    @(36.0000 mm, 34.0500 mm): Via [PWRON_N] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0463 mm)
+    Rule: netclass 'Default'; error
+    @(36.3000 mm, 33.9350 mm): Track [GND] on F.Cu, length 0.8500 mm
+    @(36.0000 mm, 34.0500 mm): Via [PWRON_N] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets DSI_CKN and GND)
+    Local override; error
+    @(29.0000 mm, 42.0000 mm): Track [DSI_CKN] on F.Cu, length 7.0650 mm
+    @(29.1604 mm, 37.8724 mm): Via [GND] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets GND and LCD_3V3)
+    Local override; error
+    @(17.8000 mm, 45.5000 mm): Track [GND] on F.Cu, length 0.7000 mm
+    @(17.5000 mm, 46.0000 mm): Pad 1 [LCD_3V3] of C43 on F.Cu
+[shorting_items]: Items shorting two nets (nets DSI_CKP and GND)
+    Local override; error
+    @(28.5000 mm, 38.0000 mm): Track [DSI_CKP] on F.Cu, length 6.3000 mm
+    @(29.8396 mm, 37.8724 mm): Via [GND] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(42.7500 mm, 43.3250 mm): Track [VSYS] on B.Cu, length 9.7250 mm
+    @(42.6000 mm, 46.2000 mm): Track [KEY_DOWN] on B.Cu, length 0.4243 mm
+[shorting_items]: Items shorting two nets (nets VSYS and USB_DM)
+    Local override; error
+    @(42.7500 mm, 43.3250 mm): Track [VSYS] on B.Cu, length 9.7250 mm
+    @(42.8059 mm, 51.3150 mm): Track [USB_DM] on B.Cu, length 0.2121 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(23.1000 mm, 36.3000 mm): Track [KEY_DOWN] on F.Cu, length 1.9092 mm
+    @(22.6000 mm, 36.6350 mm): Track [GND] on F.Cu, length 0.3650 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2150 mm)
+    Rule: board setup constraints hole; error
+    @(25.2500 mm, 53.0250 mm): Track [LCD_TE] on F.Cu, length 2.4500 mm
+    @(24.4500 mm, 53.4000 mm): Via [3V3] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0300 mm)
+    Rule: netclass 'Default'; error
+    @(23.4000 mm, 37.0000 mm): Track [GND] on F.Cu, length 3.0650 mm
+    @(23.7000 mm, 34.6500 mm): Track [KEY_DOWN] on F.Cu, length 0.1500 mm
+[shorting_items]: Items shorting two nets (nets GND and LCD_1V8)
+    Local override; error
+    @(20.0000 mm, 47.0000 mm): Track [GND] on F.Cu, length 0.7000 mm
+    @(20.0000 mm, 47.5000 mm): Track [LCD_1V8] on F.Cu, length 0.5000 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2400 mm)
+    Rule: board setup constraints hole; error
+    @(23.0000 mm, 34.8350 mm): Track [LCD_RST] on B.Cu, length 4.9000 mm
+    @(26.1000 mm, 35.2350 mm): Via [GND] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(29.0000 mm, 34.9350 mm): Track [DSI_CKN] on F.Cu, length 6.1000 mm
+    @(34.2000 mm, 37.0000 mm): Track [GND] on F.Cu, length 3.0650 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0108 mm)
+    Rule: netclass 'Default'; error
+    @(34.9500 mm, 33.0000 mm): Track [PWRON_N] on F.Cu, length 1.4849 mm
+    @(35.7000 mm, 33.9350 mm): Track [GND] on F.Cu, length 3.0650 mm
+[shorting_items]: Items shorting two nets (nets GND and PWRON_N)
+    Local override; error
+    @(36.0000 mm, 37.0000 mm): Track [GND] on F.Cu, length 3.0650 mm
+    @(36.0000 mm, 34.0500 mm): Via [PWRON_N] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0750 mm)
+    Rule: netclass 'Default'; error
+    @(35.4000 mm, 33.9350 mm): Track [GND] on F.Cu, length 0.3000 mm
+    @(35.1000 mm, 33.9350 mm): Pad 40 [DSI_CKN] of J4 on F.Cu
+[shorting_items]: Items shorting two nets (nets LCD_SWIRE and 3V3)
+    Local override; error
+    @(22.0000 mm, 33.9350 mm): Track [LCD_SWIRE] on B.Cu, length 10.0650 mm
+    @(22.0500 mm, 40.2000 mm): Via [3V3] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets GND and DSI_CKP)
+    Local override; error
+    @(34.5000 mm, 37.0000 mm): Track [GND] on F.Cu, length 0.9000 mm
+    @(34.8000 mm, 37.0000 mm): Pad 39 [DSI_CKP] of J4 on F.Cu
+[shorting_items]: Items shorting two nets (nets GND and DSI_CKP)
+    Local override; error
+    @(29.1000 mm, 37.9500 mm): Track [GND] on F.Cu, length 0.9000 mm
+    @(28.5000 mm, 38.0000 mm): Track [DSI_CKP] on F.Cu, length 6.3000 mm
+[shorting_items]: Items shorting two nets (nets NAND_WP and VSYS)
+    Local override; error
+    @(37.8375 mm, 52.8237 mm): Via [NAND_WP] on F.Cu - B.Cu
+    @(42.0000 mm, 53.0500 mm): Track [VSYS] on B.Cu, length 6.4500 mm
+[shorting_items]: Items shorting two nets (nets SD_D0 and LCD_1V8)
+    Local override; error
+    @(25.6500 mm, 40.3500 mm): Track [SD_D0] on B.Cu, length 0.6000 mm
+    @(25.6000 mm, 49.0000 mm): Track [LCD_1V8] on B.Cu, length 12.0000 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(24.9000 mm, 35.1000 mm): Track [SD_D0] on B.Cu, length 0.6364 mm
+    @(23.0000 mm, 34.8350 mm): Track [LCD_RST] on B.Cu, length 4.9000 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(23.4000 mm, 50.1000 mm): Track [SD_D0] on B.Cu, length 2.3335 mm
+    @(23.6000 mm, 53.0250 mm): Track [LCD_TE] on B.Cu, length 15.1250 mm
+[shorting_items]: Items shorting two nets (nets SD_D0 and LCD_3V3)
+    Local override; error
+    @(25.0500 mm, 48.4500 mm): Track [SD_D0] on B.Cu, length 7.3500 mm
+    @(25.0000 mm, 47.0000 mm): Track [LCD_3V3] on B.Cu, length 10.0000 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(40.9500 mm, 46.5000 mm): Track [WAKE_PULSE_N] on F.Cu, length 0.7500 mm
+    @(41.4500 mm, 44.6750 mm): Track [EL_CT] on F.Cu, length 3.3250 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(26.4000 mm, 39.0000 mm): Track [SD_D0] on B.Cu, length 1.8000 mm
+    @(23.6000 mm, 37.9000 mm): Track [LCD_TE] on B.Cu, length 4.0000 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0563 mm)
+    Rule: netclass 'Default'; error
+    @(37.8375 mm, 52.8237 mm): Track [NAND_WP] on B.Cu, length 0.2885 mm
+    @(42.0000 mm, 53.0500 mm): Track [VSYS] on B.Cu, length 6.4500 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0750 mm)
+    Rule: netclass 'Default'; error
+    @(34.5000 mm, 33.9350 mm): Track [GND] on F.Cu, length 3.0650 mm
+    @(34.8000 mm, 37.0000 mm): Pad 39 [DSI_CKP] of J4 on F.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(37.3000 mm, 52.8000 mm): Track [NAND_WP] on B.Cu, length 17.2500 mm
+    @(42.0000 mm, 53.0500 mm): Track [VSYS] on B.Cu, length 6.4500 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0800 mm)
+    Rule: netclass 'Default'; error
+    @(42.0000 mm, 53.0500 mm): Track [VSYS] on B.Cu, length 6.4500 mm
+    @(37.5500 mm, 52.8000 mm): Track [NAND_WP] on B.Cu, length 0.2500 mm
+[shorting_items]: Items shorting two nets (nets GND and KEY_DOWN)
+    Local override; error
+    @(26.7000 mm, 33.9350 mm): Track [GND] on F.Cu, length 0.8500 mm
+    @(27.3000 mm, 33.0000 mm): Track [KEY_DOWN] on F.Cu, length 1.9500 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0800 mm)
+    Rule: netclass 'Default'; error
+    @(25.3500 mm, 34.6500 mm): Track [SD_D0] on B.Cu, length 3.6000 mm
+    @(23.0000 mm, 34.8350 mm): Track [LCD_RST] on B.Cu, length 4.9000 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2300 mm)
+    Rule: board setup constraints hole; error
+    @(22.1625 mm, 53.4012 mm): Track [SD_D0] on B.Cu, length 0.3698 mm
+    @(22.8000 mm, 53.0250 mm): Via [LCD_TE] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets WAKE_PULSE_N and GND)
+    Local override; error
+    @(42.0000 mm, 46.0500 mm): Track [WAKE_PULSE_N] on F.Cu, length 6.3640 mm
+    @(44.0000 mm, 44.7000 mm): Pad 2 [GND] of C49 on F.Cu
+[shorting_items]: Items shorting two nets (nets SD_D0 and LCD_3V3)
+    Local override; error
+    @(25.0500 mm, 41.1000 mm): Track [SD_D0] on B.Cu, length 0.2121 mm
+    @(25.0000 mm, 47.0000 mm): Track [LCD_3V3] on B.Cu, length 10.0000 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0750 mm)
+    Rule: netclass 'Default'; error
+    @(35.4000 mm, 37.0000 mm): Track [GND] on F.Cu, length 3.0650 mm
+    @(35.1000 mm, 33.9350 mm): Pad 40 [DSI_CKN] of J4 on F.Cu
+[shorting_items]: Items shorting two nets (nets DSI_D0P and GND)
+    Local override; error
+    @(33.6000 mm, 37.0000 mm): Pad 35 [DSI_D0P] of J4 on F.Cu
+    @(33.3000 mm, 37.0000 mm): Track [GND] on F.Cu, length 0.9000 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0750 mm)
+    Rule: netclass 'Default'; error
+    @(33.9000 mm, 33.9350 mm): Pad 36 [DSI_D0N] of J4 on F.Cu
+    @(34.2000 mm, 33.9350 mm): Track [GND] on F.Cu, length 0.3000 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2250 mm)
+    Rule: board setup constraints hole; error
+    @(24.6000 mm, 37.0000 mm): Track [GND] on F.Cu, length 0.8500 mm
+    @(25.0000 mm, 37.0000 mm): Via [LCD_3V3] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(22.0000 mm, 33.9350 mm): Track [LCD_SWIRE] on B.Cu, length 10.0650 mm
+    @(21.7500 mm, 39.9000 mm): Track [3V3] on B.Cu, length 0.4243 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(38.5500 mm, 43.3250 mm): Track [GND] on F.Cu, length 1.0000 mm
+    @(38.5500 mm, 44.2250 mm): Track [ELVDD] on F.Cu, length 5.0250 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(23.1000 mm, 36.3000 mm): Track [KEY_DOWN] on F.Cu, length 1.9092 mm
+    @(22.6000 mm, 36.6350 mm): Track [GND] on F.Cu, length 0.8500 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(29.0000 mm, 34.9350 mm): Track [DSI_CKN] on F.Cu, length 6.1000 mm
+    @(32.7000 mm, 33.9350 mm): Track [GND] on F.Cu, length 3.0650 mm
+[shorting_items]: Items shorting two nets (nets LCD_EN and GND)
+    Local override; error
+    @(17.8000 mm, 46.4500 mm): Pad 3 [LCD_EN] of U8 on F.Cu
+    @(18.0000 mm, 46.7000 mm): Track [GND] on F.Cu, length 0.7000 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0550 mm)
+    Rule: netclass 'Default'; error
+    @(25.0000 mm, 47.0000 mm): Track [LCD_3V3] on B.Cu, length 10.0000 mm
+    @(25.2000 mm, 40.8000 mm): Track [SD_D0] on B.Cu, length 0.6364 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(29.0000 mm, 34.9350 mm): Track [DSI_CKN] on F.Cu, length 6.1000 mm
+    @(33.0000 mm, 37.0000 mm): Track [GND] on F.Cu, length 3.0650 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0650 mm)
+    Rule: netclass 'Default'; error
+    @(22.0000 mm, 33.9350 mm): Track [LCD_SWIRE] on B.Cu, length 10.0650 mm
+    @(19.6500 mm, 39.9000 mm): Track [3V3] on B.Cu, length 2.1000 mm
+[shorting_items]: Items shorting two nets (nets LCD_3V3 and GND)
+    Local override; error
+    @(17.5000 mm, 46.0000 mm): Pad 1 [LCD_3V3] of C43 on F.Cu
+    @(17.5000 mm, 45.0000 mm): Track [GND] on F.Cu, length 0.7000 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(42.7500 mm, 43.3250 mm): Track [VSYS] on B.Cu, length 9.7250 mm
+    @(37.5559 mm, 51.3150 mm): Track [USB_DM] on B.Cu, length 5.2500 mm
+[shorting_items]: Items shorting two nets (nets DSI_CKP and GND)
+    Local override; error
+    @(28.5000 mm, 38.0000 mm): Track [DSI_CKP] on F.Cu, length 6.3000 mm
+    @(31.6426 mm, 38.0249 mm): Track [GND] on F.Cu, length 0.0755 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0750 mm)
+    Rule: netclass 'Default'; error
+    @(33.6000 mm, 37.0000 mm): Pad 35 [DSI_D0P] of J4 on F.Cu
+    @(33.3000 mm, 33.9350 mm): Track [GND] on F.Cu, length 3.0650 mm
+[shorting_items]: Items shorting two nets (nets 1V8 and USB_DP)
+    Local override; error
+    @(22.0000 mm, 48.1500 mm): Track [1V8] on F.Cu, length 12.0500 mm
+    @(30.5250 mm, 50.6500 mm): Track [USB_DP] on F.Cu, length 2.5108 mm
+[shorting_items]: Items shorting two nets (nets 1V8 and USB_DP)
+    Local override; error
+    @(22.0000 mm, 48.1500 mm): Track [1V8] on F.Cu, length 12.0500 mm
+    @(30.8663 mm, 48.1625 mm): Via [USB_DP] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0446 mm)
+    Rule: netclass 'Default'; error
+    @(45.9000 mm, 47.7000 mm): Track [KEY_DOWN] on F.Cu, length 0.2121 mm
+    @(46.5000 mm, 48.3000 mm): Pad 1 [ELVSS] of C50 on F.Cu
+[shorting_items]: Items shorting two nets (nets ELVSS and KEY_DOWN)
+    Local override; error
+    @(46.5000 mm, 48.3000 mm): Pad 1 [ELVSS] of C50 on F.Cu
+    @(46.8000 mm, 48.1500 mm): Track [KEY_DOWN] on F.Cu, length 0.2121 mm
+[shorting_items]: Items shorting two nets (nets KEY_DOWN and GND)
+    Local override; error
+    @(23.1000 mm, 36.3000 mm): Track [KEY_DOWN] on F.Cu, length 1.9092 mm
+    @(22.6000 mm, 36.6350 mm): Pad MP1 [GND] of J4 on F.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(21.1500 mm, 37.0500 mm): Track [SD_D1] on B.Cu, length 3.3941 mm
+    @(22.0000 mm, 33.9350 mm): Track [LCD_SWIRE] on B.Cu, length 10.0650 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0421 mm)
+    Rule: netclass 'Default'; error
+    @(46.6500 mm, 48.1500 mm): Track [KEY_DOWN] on F.Cu, length 0.1500 mm
+    @(44.0000 mm, 48.3000 mm): Track [ELVSS] on F.Cu, length 2.5000 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0050 mm)
+    Rule: netclass 'Default'; error
+    @(46.5000 mm, 48.3000 mm): Pad 1 [ELVSS] of C50 on F.Cu
+    @(46.0500 mm, 47.8500 mm): Track [KEY_DOWN] on F.Cu, length 0.1500 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0800 mm)
+    Rule: netclass 'Default'; error
+    @(23.5500 mm, 34.6500 mm): Track [SD_D1] on B.Cu, length 1.3500 mm
+    @(23.0000 mm, 34.8350 mm): Track [LCD_RST] on B.Cu, length 4.9000 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(23.4000 mm, 37.0000 mm): Track [GND] on F.Cu, length 3.0650 mm
+    @(23.5500 mm, 34.6500 mm): Track [KEY_DOWN] on F.Cu, length 0.6364 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(27.3000 mm, 33.9350 mm): Track [LCD_SWIRE] on B.Cu, length 5.3000 mm
+    @(25.3500 mm, 34.3500 mm): Track [SD_D1] on B.Cu, length 9.9702 mm
+[shorting_items]: Items shorting two nets (nets ELVSS and KEY_DOWN)
+    Local override; error
+    @(46.5000 mm, 48.3000 mm): Pad 1 [ELVSS] of C50 on F.Cu
+    @(46.2000 mm, 47.8500 mm): Track [KEY_DOWN] on F.Cu, length 0.2121 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(42.7500 mm, 43.3250 mm): Track [VSYS] on B.Cu, length 9.7250 mm
+    @(42.6941 mm, 51.5850 mm): Track [USB_DP] on B.Cu, length 0.2121 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(24.6000 mm, 33.9350 mm): Track [GND] on F.Cu, length 0.9000 mm
+    @(24.9000 mm, 33.9350 mm): Track [ELVDD] on F.Cu, length 3.0650 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(25.2000 mm, 37.0000 mm): Track [ELVDD] on F.Cu, length 0.8500 mm
+    @(25.8000 mm, 37.0000 mm): Track [LCD_3V3] on F.Cu, length 0.8000 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0400 mm)
+    Rule: netclass 'Default'; error
+    @(23.2000 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 18.2500 mm
+    @(38.5500 mm, 43.7750 mm): Track [ELVDD] on F.Cu, length 2.5500 mm
+[shorting_items]: Items shorting two nets (nets LCD_3V3 and ELVDD)
+    Local override; error
+    @(25.0000 mm, 37.0000 mm): Via [LCD_3V3] on F.Cu - B.Cu
+    @(24.9000 mm, 37.0000 mm): Track [ELVDD] on F.Cu, length 0.3000 mm
+[shorting_items]: Items shorting two nets (nets ELVSS and KEY_DOWN)
+    Local override; error
+    @(46.5000 mm, 48.3000 mm): Pad 1 [ELVSS] of C50 on F.Cu
+    @(46.9500 mm, 48.3000 mm): Track [KEY_DOWN] on F.Cu, length 0.3000 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(23.2000 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 18.2500 mm
+    @(36.0000 mm, 43.7750 mm): Track [ELVDD] on F.Cu, length 2.5250 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(23.2000 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 18.2500 mm
+    @(38.5500 mm, 43.7750 mm): Track [ELVDD] on F.Cu, length 0.4500 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(36.5500 mm, 42.0000 mm): Track [EL_SWP] on F.Cu, length 2.1830 mm
+    @(38.5500 mm, 44.2250 mm): Track [ELVDD] on F.Cu, length 5.0250 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(24.3000 mm, 33.9350 mm): Track [ELVSS] on F.Cu, length 3.0650 mm
+    @(25.3500 mm, 33.0000 mm): Track [KEY_DOWN] on F.Cu, length 2.3335 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0800 mm)
+    Rule: netclass 'Default'; error
+    @(24.9000 mm, 34.6500 mm): Track [SD_D1] on B.Cu, length 0.4243 mm
+    @(23.0000 mm, 34.8350 mm): Track [LCD_RST] on B.Cu, length 4.9000 mm
+[shorting_items]: Items shorting two nets (nets ELVDD and LCD_3V3)
+    Local override; error
+    @(25.2000 mm, 37.8500 mm): Via [ELVDD] on F.Cu - B.Cu
+    @(25.0000 mm, 47.0000 mm): Track [LCD_3V3] on B.Cu, length 10.0000 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(23.7000 mm, 34.6500 mm): Track [KEY_DOWN] on F.Cu, length 0.1500 mm
+    @(23.7000 mm, 33.9350 mm): Track [GND] on F.Cu, length 3.0650 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0500 mm)
+    Rule: netclass 'Default'; error
+    @(39.2000 mm, 39.5000 mm): Pad 1 [VSYS] of C46 on F.Cu
+    @(38.5500 mm, 39.2000 mm): Via [ELVDD] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets ELVSS and ELVDD)
+    Local override; error
+    @(41.4500 mm, 39.2000 mm): Track [ELVSS] on B.Cu, length 17.4500 mm
+    @(38.5500 mm, 39.2000 mm): Via [ELVDD] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0421 mm)
+    Rule: netclass 'Default'; error
+    @(44.0000 mm, 48.3000 mm): Track [ELVSS] on F.Cu, length 2.5000 mm
+    @(46.5000 mm, 48.0000 mm): Track [KEY_DOWN] on F.Cu, length 0.2121 mm
+[shorting_items]: Items shorting two nets (nets ELVSS and KEY_DOWN)
+    Local override; error
+    @(46.5000 mm, 48.3000 mm): Pad 1 [ELVSS] of C50 on F.Cu
+    @(46.3500 mm, 48.0000 mm): Track [KEY_DOWN] on F.Cu, length 0.1500 mm
+[shorting_items]: Items shorting two nets (nets ELVDD and LCD_3V3)
+    Local override; error
+    @(25.2000 mm, 39.2000 mm): Track [ELVDD] on B.Cu, length 1.3500 mm
+    @(25.0000 mm, 47.0000 mm): Track [LCD_3V3] on B.Cu, length 10.0000 mm
+[shorting_items]: Items shorting two nets (nets ELVDD and LCD_3V3)
+    Local override; error
+    @(38.5500 mm, 39.2000 mm): Track [ELVDD] on B.Cu, length 13.3500 mm
+    @(25.0000 mm, 47.0000 mm): Track [LCD_3V3] on B.Cu, length 10.0000 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0400 mm)
+    Rule: netclass 'Default'; error
+    @(41.4500 mm, 44.2250 mm): Track [ELVSS] on F.Cu, length 2.5500 mm
+    @(23.2000 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 18.2500 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0250 mm)
+    Rule: netclass 'Default'; error
+    @(24.3000 mm, 37.0000 mm): Track [ELVSS] on F.Cu, length 0.3000 mm
+    @(24.6000 mm, 37.0000 mm): Pad 5 [GND] of J4 on F.Cu
+[shorting_items]: Items shorting two nets (nets ELVSS and GND)
+    Local override; error
+    @(44.0000 mm, 44.2250 mm): Track [ELVSS] on F.Cu, length 2.0750 mm
+    @(44.0000 mm, 44.7000 mm): Pad 2 [GND] of C49 on F.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(24.0000 mm, 37.0000 mm): Track [ELVSS] on F.Cu, length 0.8500 mm
+    @(23.7000 mm, 37.0000 mm): Track [GND] on F.Cu, length 0.9000 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(24.3000 mm, 33.9350 mm): Track [ELVSS] on F.Cu, length 3.0650 mm
+    @(23.7000 mm, 37.0000 mm): Track [GND] on F.Cu, length 0.9000 mm
+[shorting_items]: Items shorting two nets (nets LCD_SWIRE and KEY_DOWN)
+    Local override; error
+    @(22.0000 mm, 33.9350 mm): Track [LCD_SWIRE] on B.Cu, length 10.0650 mm
+    @(21.7500 mm, 37.6500 mm): Via [KEY_DOWN] on F.Cu - B.Cu
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(23.2000 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 18.2500 mm
+    @(41.4500 mm, 44.2250 mm): Track [ELVSS] on F.Cu, length 5.0250 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2431 mm)
+    Rule: board setup constraints hole; error
+    @(23.6000 mm, 53.0250 mm): Track [LCD_TE] on B.Cu, length 15.1250 mm
+    @(24.0000 mm, 37.8500 mm): Via [ELVSS] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets ELVSS and VSYS)
+    Local override; error
+    @(41.4500 mm, 39.2000 mm): Via [ELVSS] on F.Cu - B.Cu
+    @(39.2000 mm, 39.5000 mm): Track [VSYS] on F.Cu, length 3.0000 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(41.4500 mm, 39.2000 mm): Track [ELVSS] on B.Cu, length 17.4500 mm
+    @(25.0000 mm, 47.0000 mm): Track [LCD_3V3] on B.Cu, length 10.0000 mm
+[shorting_items]: Items shorting two nets (nets VSYS and USB_DP)
+    Local override; error
+    @(42.7500 mm, 43.3250 mm): Track [VSYS] on B.Cu, length 9.7250 mm
+    @(37.4441 mm, 51.5850 mm): Track [USB_DP] on B.Cu, length 5.2500 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(24.0000 mm, 39.2000 mm): Track [ELVSS] on B.Cu, length 1.3500 mm
+    @(23.6000 mm, 37.9000 mm): Track [LCD_TE] on B.Cu, length 4.0000 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0400 mm)
+    Rule: netclass 'Default'; error
+    @(41.4500 mm, 43.7750 mm): Track [EL_SWN] on F.Cu, length 2.6741 mm
+    @(23.2000 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 18.2500 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(41.5500 mm, 46.0500 mm): Track [VSYS] on F.Cu, length 6.0000 mm
+    @(41.4500 mm, 44.6750 mm): Track [EL_CT] on F.Cu, length 3.3250 mm
+[shorting_items]: Items shorting two nets (nets LCD_1V8 and LCD_3V3)
+    Local override; error
+    @(26.4000 mm, 37.0000 mm): Track [LCD_1V8] on F.Cu, length 0.8000 mm
+    @(25.8000 mm, 37.0000 mm): Track [LCD_3V3] on F.Cu, length 0.8000 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(20.0000 mm, 47.0000 mm): Track [GND] on F.Cu, length 0.7000 mm
+    @(23.0000 mm, 47.5000 mm): Track [LCD_1V8] on F.Cu, length 3.0000 mm
+[shorting_items]: Items shorting two nets (nets GND and LCD_1V8)
+    Local override; error
+    @(20.0000 mm, 47.7000 mm): Via [GND] on F.Cu - B.Cu
+    @(20.0000 mm, 47.5000 mm): Track [LCD_1V8] on F.Cu, length 0.5000 mm
+[shorting_items]: Items shorting two nets (nets LCD_1V8 and LCD_3V3)
+    Local override; error
+    @(25.6000 mm, 37.0000 mm): Via [LCD_1V8] on F.Cu - B.Cu
+    @(25.8000 mm, 37.0000 mm): Track [LCD_3V3] on F.Cu, length 0.8000 mm
+[shorting_items]: Items shorting two nets (nets 1V8 and CORE_0V93)
+    Local override; error
+    @(22.0000 mm, 48.1500 mm): Track [1V8] on F.Cu, length 12.0500 mm
+    @(26.3250 mm, 50.6500 mm): Track [CORE_0V93] on F.Cu, length 3.4487 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(25.6000 mm, 49.0000 mm): Track [LCD_1V8] on B.Cu, length 12.0000 mm
+    @(25.2000 mm, 40.8000 mm): Track [SD_D0] on B.Cu, length 0.6364 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(18.0000 mm, 49.0000 mm): Track [LCD_1V8] on B.Cu, length 7.6000 mm
+    @(23.6000 mm, 53.0250 mm): Track [LCD_TE] on B.Cu, length 15.1250 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(23.2000 mm, 53.3750 mm): Track [LCD_EN] on F.Cu, length 9.3750 mm
+    @(25.2500 mm, 53.0250 mm): Track [LCD_TE] on F.Cu, length 2.4500 mm
+[shorting_items]: Items shorting two nets (nets DSI_D0N and LCD_TE)
+    Local override; error
+    @(27.5000 mm, 42.0000 mm): Track [DSI_D0N] on F.Cu, length 7.0650 mm
+    @(27.6000 mm, 37.0000 mm): Track [LCD_TE] on F.Cu, length 0.9000 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2400 mm)
+    Rule: board setup constraints hole; error
+    @(23.2000 mm, 53.3750 mm): Track [LCD_EN] on F.Cu, length 9.3750 mm
+    @(22.8000 mm, 53.0250 mm): Via [LCD_TE] on F.Cu - B.Cu
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0741 mm)
+    Rule: netclass 'Default'; error
+    @(42.7500 mm, 43.3250 mm): Track [VSYS] on B.Cu, length 9.7250 mm
+    @(42.9941 mm, 51.7350 mm): Track [USB_DP] on B.Cu, length 0.6364 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2431 mm)
+    Rule: board setup constraints hole; error
+    @(23.0000 mm, 52.6750 mm): Track [LCD_RST] on B.Cu, length 17.8400 mm
+    @(22.8000 mm, 53.0250 mm): Via [LCD_TE] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets VSYS and USB_DP)
+    Local override; error
+    @(42.7500 mm, 43.3250 mm): Track [VSYS] on B.Cu, length 9.7250 mm
+    @(42.8441 mm, 51.7350 mm): Track [USB_DP] on B.Cu, length 0.1500 mm
+[shorting_items]: Items shorting two nets (nets LCD_TE and DSI_D0N)
+    Local override; error
+    @(27.6000 mm, 37.9000 mm): Via [LCD_TE] on F.Cu - B.Cu
+    @(27.5000 mm, 42.0000 mm): Track [DSI_D0N] on F.Cu, length 7.0650 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(23.6000 mm, 37.9000 mm): Track [LCD_TE] on B.Cu, length 4.0000 mm
+    @(25.0000 mm, 47.0000 mm): Track [LCD_3V3] on B.Cu, length 10.0000 mm
+[tracks_crossing]: Tracks crossing
+    Rule: netclass 'Default'; error
+    @(16.5000 mm, 47.0000 mm): Track [LCD_3V3] on B.Cu, length 8.5000 mm
+    @(23.6000 mm, 53.0250 mm): Track [LCD_TE] on B.Cu, length 15.1250 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1900 mm)
+    Rule: board setup constraints hole; error
+    @(22.8000 mm, 53.0250 mm): Track [LCD_TE] on B.Cu, length 0.8000 mm
+    @(22.8000 mm, 52.6750 mm): Via [LCD_RST] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets LCD_SWIRE and 3V3)
+    Local override; error
+    @(22.0000 mm, 44.0000 mm): Via [LCD_SWIRE] on F.Cu - B.Cu
+    @(22.0500 mm, 40.2000 mm): Track [3V3] on F.Cu, length 11.5500 mm
+[shorting_items]: Items shorting two nets (nets VSYS and KEY_DOWN)
+    Local override; error
+    @(42.7500 mm, 43.3250 mm): Track [VSYS] on B.Cu, length 9.7250 mm
+    @(42.4500 mm, 46.2000 mm): Track [KEY_DOWN] on B.Cu, length 0.1500 mm
+[shorting_items]: Items shorting two nets (nets VSYS and KEY_DOWN)
+    Local override; error
+    @(42.7500 mm, 43.3250 mm): Track [VSYS] on B.Cu, length 9.7250 mm
+    @(42.9000 mm, 46.5000 mm): Track [KEY_DOWN] on B.Cu, length 0.1500 mm
+[shorting_items]: Items shorting two nets (nets PWRON_N and GND)
+    Local override; error
+    @(34.9500 mm, 33.0000 mm): Track [PWRON_N] on F.Cu, length 1.4849 mm
+    @(36.0000 mm, 33.9350 mm): Track [GND] on F.Cu, length 0.3000 mm
+[clearance]: Clearance violation (netclass 'Default' clearance 0.0900 mm; actual 0.0300 mm)
+    Rule: netclass 'Default'; error
+    @(41.4500 mm, 39.2000 mm): Track [ELVSS] on B.Cu, length 17.4500 mm
+    @(40.2000 mm, 39.0000 mm): Track [KEY_DOWN] on B.Cu, length 8.9095 mm
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(16.5000 mm, 44.7000 mm): Pad 2 [GND] of C42 on F.Cu
+    @(17.0000 mm, 44.5500 mm): Via [3V3] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1091 mm)
+    Rule: board setup constraints hole; error
+    @(34.4500 mm, 42.0000 mm): Pad 1 [VSYS] of L5 on F.Cu
+    @(35.2500 mm, 42.7500 mm): Via [SD_PWR_EN] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1500 mm)
+    Rule: board setup constraints hole; error
+    @(39.2000 mm, 39.5000 mm): Pad 1 [VSYS] of C46 on F.Cu
+    @(38.5500 mm, 39.2000 mm): Via [ELVDD] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1500 mm)
+    Rule: board setup constraints hole; error
+    @(40.8000 mm, 39.5000 mm): Pad 2 [GND] of C46 on F.Cu
+    @(41.4500 mm, 39.2000 mm): Via [ELVSS] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0064 mm)
+    Rule: board setup constraints hole; error
+    @(46.5000 mm, 48.3000 mm): Pad 1 [ELVSS] of C50 on F.Cu
+    @(45.9186 mm, 48.4025 mm): Via [1V8] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(20.0000 mm, 48.0000 mm): Pad 1 [LCD_1V8] of C45 on F.Cu
+    @(20.0000 mm, 47.7000 mm): Via [GND] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets GND and unconnected-(U8-CT-Pad4))
+    Local override; error
+    @(20.0000 mm, 47.0000 mm): Pad 2 [GND] of C45 on F.Cu
+    @(20.2000 mm, 46.4500 mm): Pad 4 [unconnected-(U8-CT-Pad4)] of U8 on F.Cu
+[shorting_items]: Items shorting two nets (nets LCD_3V3 and GND)
+    Local override; error
+    @(17.5000 mm, 46.0000 mm): Pad 1 [LCD_3V3] of C43 on F.Cu
+    @(17.8000 mm, 45.5000 mm): Pad 2 [GND] of U8 on F.Cu
+[shorting_items]: Items shorting two nets (nets LCD_3V3 and GND)
+    Local override; error
+    @(17.5000 mm, 46.0000 mm): Pad 1 [LCD_3V3] of C43 on F.Cu
+    @(18.0000 mm, 46.7000 mm): Pad 2 [GND] of C44 on F.Cu
+[shorting_items]: Items shorting two nets (nets LCD_3V3 and LCD_EN)
+    Local override; error
+    @(17.5000 mm, 46.0000 mm): Pad 1 [LCD_3V3] of C43 on F.Cu
+    @(17.8000 mm, 46.4500 mm): Pad 3 [LCD_EN] of U8 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(17.5000 mm, 46.0000 mm): Pad 1 [LCD_3V3] of C43 on F.Cu
+    @(17.8000 mm, 46.2000 mm): Via [GND] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(17.5000 mm, 46.0000 mm): Pad 1 [LCD_3V3] of C43 on F.Cu
+    @(17.5000 mm, 45.7000 mm): Via [GND] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets GND and 3V3)
+    Local override; error
+    @(17.5000 mm, 45.0000 mm): Pad 2 [GND] of C43 on F.Cu
+    @(17.8000 mm, 44.5500 mm): Pad 1 [3V3] of U8 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1618 mm)
+    Rule: board setup constraints hole; error
+    @(17.5000 mm, 45.0000 mm): Pad 2 [GND] of C43 on F.Cu
+    @(17.0000 mm, 44.5500 mm): Via [3V3] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1500 mm)
+    Rule: board setup constraints hole; error
+    @(24.6000 mm, 37.0000 mm): Pad 5 [GND] of J4 on F.Cu
+    @(25.0000 mm, 37.0000 mm): Via [LCD_3V3] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(25.2000 mm, 37.0000 mm): Pad 7 [ELVDD] of J4 on F.Cu
+    @(25.0000 mm, 37.0000 mm): Via [LCD_3V3] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.1500 mm)
+    Rule: board setup constraints hole; error
+    @(25.2000 mm, 37.0000 mm): Pad 7 [ELVDD] of J4 on F.Cu
+    @(25.6000 mm, 37.0000 mm): Via [LCD_1V8] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(25.8000 mm, 37.0000 mm): Pad 9 [LCD_3V3] of J4 on F.Cu
+    @(25.6000 mm, 37.0000 mm): Via [LCD_1V8] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0500 mm)
+    Rule: board setup constraints hole; error
+    @(35.7000 mm, 33.9350 mm): Pad 42 [GND] of J4 on F.Cu
+    @(36.0000 mm, 34.0500 mm): Via [PWRON_N] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0500 mm)
+    Rule: board setup constraints hole; error
+    @(36.3000 mm, 33.9350 mm): Pad 44 [GND] of J4 on F.Cu
+    @(36.0000 mm, 34.0500 mm): Via [PWRON_N] on F.Cu - B.Cu
+[shorting_items]: Items shorting two nets (nets LCD_EN and GND)
+    Local override; error
+    @(17.8000 mm, 46.4500 mm): Pad 3 [LCD_EN] of U8 on F.Cu
+    @(18.0000 mm, 46.7000 mm): Pad 2 [GND] of C44 on F.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(17.8000 mm, 46.4500 mm): Pad 3 [LCD_EN] of U8 on F.Cu
+    @(17.8000 mm, 46.2000 mm): Via [GND] on F.Cu - B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2000 mm)
+    Rule: board setup constraints hole; error
+    @(44.0000 mm, 46.3000 mm): Pad 1 [ELVSS] of C49 on F.Cu
+    @(44.0000 mm, 45.6000 mm): Via [GND] on F.Cu - B.Cu
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(16.5000 mm, 45.5000 mm): Footprint C42
+    @(17.5000 mm, 45.5000 mm): Footprint C43
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(20.0000 mm, 47.5000 mm): Footprint C45
+    @(19.0000 mm, 45.5000 mm): Footprint U8
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(17.5000 mm, 45.5000 mm): Footprint C43
+    @(19.0000 mm, 45.5000 mm): Footprint U8
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(17.5000 mm, 45.5000 mm): Footprint C43
+    @(18.0000 mm, 47.5000 mm): Footprint C44
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(19.0000 mm, 45.5000 mm): Footprint U8
+    @(18.0000 mm, 47.5000 mm): Footprint C44
+[hole_to_hole]: Drilled hole too close to other hole (board setup constraints min 0.2495 mm; actual 0.1500 mm)
+    Rule: board setup constraints; error
+    @(22.8000 mm, 53.0250 mm): Via [LCD_TE] on F.Cu - B.Cu
+    @(22.8000 mm, 52.6750 mm): Via [LCD_RST] on F.Cu - B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; error
+    @(35.5500 mm, 53.0500 mm): Via [VSYS] on F.Cu - B.Cu
+    @(35.5500 mm, 53.0500 mm): Via [VSYS] on F.Cu - B.Cu
+[lib_footprint_mismatch]: Footprint 'FPC45' does not match copy in library 'Sameat'.
+    Local override; warning
+    @(30.0000 mm, 37.0000 mm): Footprint J4
+[lib_footprint_mismatch]: Footprint 'WSON-12' does not match copy in library 'Sameat'.
+    Local override; warning
+    @(40.0000 mm, 44.0000 mm): Footprint U10
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(38.0000 mm, 42.8750 mm): Circle of U10 on F.Silkscreen
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(46.5000 mm, 50.0000 mm): Track [1V8] on F.Cu, length 1.7000 mm
+    @(46.5000 mm, 48.3000 mm): Pad 1 [ELVSS] of C50 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(45.9186 mm, 48.4025 mm): Via [1V8] on F.Cu - B.Cu
+    @(46.5000 mm, 48.3000 mm): Pad 1 [ELVSS] of C50 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.8000 mm, 44.5500 mm): Track [3V3] on F.Cu, length 0.8000 mm
+    @(16.5000 mm, 44.7000 mm): Pad 2 [GND] of C42 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(22.0500 mm, 40.2000 mm): Track [3V3] on F.Cu, length 11.5500 mm
+    @(22.0000 mm, 47.5000 mm): Pad 1 [1V8] of R29 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(22.0500 mm, 40.2000 mm): Track [3V3] on F.Cu, length 11.5500 mm
+    @(22.0000 mm, 44.0000 mm): Pad 1 [LCD_SWIRE] of R31 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.0000 mm, 44.5500 mm): Via [3V3] on F.Cu - B.Cu
+    @(16.5000 mm, 44.7000 mm): Pad 2 [GND] of C42 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(27.5000 mm, 42.0000 mm): Track [DSI_D0N] on F.Cu, length 7.0650 mm
+    @(27.6000 mm, 37.0000 mm): Pad 15 [LCD_TE] of J4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(24.6000 mm, 33.9350 mm): Track [GND] on F.Cu, length 0.9000 mm
+    @(24.9000 mm, 33.9350 mm): Pad 6 [ELVDD] of J4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(23.7000 mm, 37.0000 mm): Track [GND] on F.Cu, length 0.9000 mm
+    @(24.0000 mm, 37.0000 mm): Pad 3 [ELVSS] of J4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.8000 mm, 45.5000 mm): Track [GND] on F.Cu, length 0.7000 mm
+    @(17.5000 mm, 46.0000 mm): Pad 1 [LCD_3V3] of C43 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.8000 mm, 45.5000 mm): Track [GND] on F.Cu, length 0.7000 mm
+    @(17.8000 mm, 46.4500 mm): Pad 3 [LCD_EN] of U8 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(20.0000 mm, 47.0000 mm): Track [GND] on F.Cu, length 0.7000 mm
+    @(20.0000 mm, 48.0000 mm): Pad 1 [LCD_1V8] of C45 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(34.5000 mm, 37.0000 mm): Track [GND] on F.Cu, length 0.9000 mm
+    @(34.8000 mm, 37.0000 mm): Pad 39 [DSI_CKP] of J4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(33.3000 mm, 37.0000 mm): Track [GND] on F.Cu, length 0.9000 mm
+    @(33.6000 mm, 37.0000 mm): Pad 35 [DSI_D0P] of J4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(18.0000 mm, 46.7000 mm): Track [GND] on F.Cu, length 0.7000 mm
+    @(17.8000 mm, 46.4500 mm): Pad 3 [LCD_EN] of U8 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.5000 mm, 45.0000 mm): Track [GND] on F.Cu, length 0.7000 mm
+    @(17.5000 mm, 46.0000 mm): Pad 1 [LCD_3V3] of C43 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.8000 mm, 46.2000 mm): Via [GND] on F.Cu - B.Cu
+    @(17.5000 mm, 46.0000 mm): Pad 1 [LCD_3V3] of C43 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.8000 mm, 46.2000 mm): Via [GND] on F.Cu - B.Cu
+    @(17.8000 mm, 46.4500 mm): Pad 3 [LCD_EN] of U8 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.5000 mm, 45.7000 mm): Via [GND] on F.Cu - B.Cu
+    @(17.5000 mm, 46.0000 mm): Pad 1 [LCD_3V3] of C43 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(20.0000 mm, 47.7000 mm): Via [GND] on F.Cu - B.Cu
+    @(20.0000 mm, 48.0000 mm): Pad 1 [LCD_1V8] of C45 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(46.8000 mm, 48.1500 mm): Track [KEY_DOWN] on F.Cu, length 0.2121 mm
+    @(46.5000 mm, 48.3000 mm): Pad 1 [ELVSS] of C50 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(23.1000 mm, 36.3000 mm): Track [KEY_DOWN] on F.Cu, length 1.9092 mm
+    @(22.6000 mm, 36.6350 mm): Pad MP1 [GND] of J4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(46.6500 mm, 48.1500 mm): Track [KEY_DOWN] on F.Cu, length 0.1500 mm
+    @(46.5000 mm, 48.3000 mm): Pad 1 [ELVSS] of C50 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(46.2000 mm, 47.8500 mm): Track [KEY_DOWN] on F.Cu, length 0.2121 mm
+    @(46.5000 mm, 48.3000 mm): Pad 1 [ELVSS] of C50 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(46.9500 mm, 48.3000 mm): Track [KEY_DOWN] on F.Cu, length 0.3000 mm
+    @(46.5000 mm, 48.3000 mm): Pad 1 [ELVSS] of C50 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(25.3500 mm, 33.0000 mm): Track [KEY_DOWN] on F.Cu, length 2.3335 mm
+    @(24.3000 mm, 33.9350 mm): Pad 4 [ELVSS] of J4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(46.5000 mm, 48.0000 mm): Track [KEY_DOWN] on F.Cu, length 0.2121 mm
+    @(46.5000 mm, 48.3000 mm): Pad 1 [ELVSS] of C50 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(46.3500 mm, 48.0000 mm): Track [KEY_DOWN] on F.Cu, length 0.1500 mm
+    @(46.5000 mm, 48.3000 mm): Pad 1 [ELVSS] of C50 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.5000 mm, 48.0000 mm): Track [LCD_3V3] on F.Cu, length 2.8000 mm
+    @(16.3000 mm, 48.0000 mm): Pad 2 [GND] of C29 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.5000 mm, 48.0000 mm): Track [LCD_3V3] on F.Cu, length 2.8000 mm
+    @(18.0000 mm, 48.3000 mm): Pad 1 [LCD_1V8] of C44 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(16.5000 mm, 44.5500 mm): Track [LCD_3V3] on F.Cu, length 1.7500 mm
+    @(16.5000 mm, 44.7000 mm): Pad 2 [GND] of C42 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(25.8000 mm, 37.0000 mm): Track [LCD_3V3] on F.Cu, length 0.8000 mm
+    @(25.2000 mm, 37.0000 mm): Pad 7 [ELVDD] of J4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(20.2000 mm, 44.5500 mm): Track [LCD_3V3] on F.Cu, length 3.7000 mm
+    @(16.5000 mm, 44.7000 mm): Pad 2 [GND] of C42 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(20.2000 mm, 44.5500 mm): Track [LCD_3V3] on F.Cu, length 3.7000 mm
+    @(17.8000 mm, 44.5500 mm): Pad 1 [3V3] of U8 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.5000 mm, 46.0000 mm): Track [LCD_3V3] on F.Cu, length 2.0000 mm
+    @(17.8000 mm, 46.4500 mm): Pad 3 [LCD_EN] of U8 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.5000 mm, 46.0000 mm): Track [LCD_3V3] on F.Cu, length 2.0000 mm
+    @(18.0000 mm, 46.7000 mm): Pad 2 [GND] of C44 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.5000 mm, 46.0000 mm): Track [LCD_3V3] on F.Cu, length 2.0000 mm
+    @(18.0000 mm, 48.3000 mm): Pad 1 [LCD_1V8] of C44 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(25.0000 mm, 37.0000 mm): Via [LCD_3V3] on F.Cu - B.Cu
+    @(25.2000 mm, 37.0000 mm): Pad 7 [ELVDD] of J4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(23.2000 mm, 53.3750 mm): Track [LCD_EN] on F.Cu, length 9.3750 mm
+    @(23.0000 mm, 47.5000 mm): Pad 2 [LCD_1V8] of R29 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.8000 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 2.4500 mm
+    @(17.5000 mm, 46.0000 mm): Pad 1 [LCD_3V3] of C43 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.8000 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 2.4500 mm
+    @(17.5000 mm, 45.0000 mm): Pad 2 [GND] of C43 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.8000 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 2.4500 mm
+    @(17.8000 mm, 44.5500 mm): Pad 1 [3V3] of U8 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.8000 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 2.4500 mm
+    @(17.8000 mm, 45.5000 mm): Pad 2 [GND] of U8 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.8000 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 2.4500 mm
+    @(18.0000 mm, 46.7000 mm): Pad 2 [GND] of C44 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(23.2000 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 18.2500 mm
+    @(40.0000 mm, 44.0000 mm): Pad 13 [GND] of U10 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(41.4500 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 1.1250 mm
+    @(41.4500 mm, 44.6750 mm): Pad 8 [EL_CT] of U10 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(41.4500 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 1.1250 mm
+    @(41.4500 mm, 44.2250 mm): Pad 9 [ELVSS] of U10 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(23.2000 mm, 44.0000 mm): Track [LCD_EN] on F.Cu, length 5.4000 mm
+    @(22.0000 mm, 44.0000 mm): Pad 1 [LCD_SWIRE] of R31 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(34.9500 mm, 33.0000 mm): Track [PWRON_N] on F.Cu, length 1.4849 mm
+    @(35.7000 mm, 33.9350 mm): Pad 42 [GND] of J4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(36.0000 mm, 34.0500 mm): Via [PWRON_N] on F.Cu - B.Cu
+    @(35.7000 mm, 33.9350 mm): Pad 42 [GND] of J4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(36.0000 mm, 34.0500 mm): Via [PWRON_N] on F.Cu - B.Cu
+    @(36.3000 mm, 33.9350 mm): Pad 44 [GND] of J4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(46.0000 mm, 41.5000 mm): Track [VSYS] on F.Cu, length 0.1500 mm
+    @(45.5500 mm, 42.0000 mm): Pad 2 [GND] of L6 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(35.5500 mm, 46.0500 mm): Track [VSYS] on F.Cu, length 7.0000 mm
+    @(36.0000 mm, 46.3000 mm): Pad 1 [ELVDD] of C48 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(41.5000 mm, 46.0000 mm): Track [VSYS] on F.Cu, length 6.3640 mm
+    @(45.5500 mm, 42.0000 mm): Pad 2 [GND] of L6 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(34.4500 mm, 42.0000 mm): Track [VSYS] on F.Cu, length 5.3677 mm
+    @(36.5500 mm, 42.0000 mm): Pad 2 [EL_SWP] of L5 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(41.5500 mm, 46.0500 mm): Track [VSYS] on F.Cu, length 6.0000 mm
+    @(36.0000 mm, 46.3000 mm): Pad 1 [ELVDD] of C48 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(45.5750 mm, 41.3500 mm): Track [VSYS] on F.Cu, length 5.5913 mm
+    @(45.5500 mm, 42.0000 mm): Pad 2 [GND] of L6 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(39.2000 mm, 39.5000 mm): Track [VSYS] on F.Cu, length 3.0000 mm
+    @(40.8000 mm, 39.5000 mm): Pad 2 [GND] of C46 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(46.0000 mm, 41.3500 mm): Track [VSYS] on F.Cu, length 0.4250 mm
+    @(45.5500 mm, 42.0000 mm): Pad 2 [GND] of L6 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(42.0000 mm, 46.0500 mm): Track [WAKE_PULSE_N] on F.Cu, length 6.3640 mm
+    @(45.5500 mm, 42.0000 mm): Pad 2 [GND] of L6 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(42.0000 mm, 46.0500 mm): Track [WAKE_PULSE_N] on F.Cu, length 6.3640 mm
+    @(44.0000 mm, 44.7000 mm): Pad 2 [GND] of C49 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(36.0000 mm, 43.7750 mm): Track [ELVDD] on F.Cu, length 2.5250 mm
+    @(36.0000 mm, 44.7000 mm): Pad 2 [GND] of C48 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(38.5500 mm, 44.2250 mm): Track [ELVDD] on F.Cu, length 5.0250 mm
+    @(38.5500 mm, 42.8750 mm): Pad 1 [EL_SWP] of U10 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(38.5500 mm, 44.2250 mm): Track [ELVDD] on F.Cu, length 5.0250 mm
+    @(38.5500 mm, 43.3250 mm): Pad 2 [GND] of U10 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(41.4500 mm, 44.2250 mm): Track [ELVSS] on F.Cu, length 2.5500 mm
+    @(44.0000 mm, 44.7000 mm): Pad 2 [GND] of C49 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(44.0000 mm, 44.2250 mm): Track [ELVSS] on F.Cu, length 2.0750 mm
+    @(44.0000 mm, 44.7000 mm): Pad 2 [GND] of C49 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(41.4500 mm, 44.2250 mm): Track [ELVSS] on F.Cu, length 5.0250 mm
+    @(41.4500 mm, 43.7750 mm): Pad 10 [EL_SWN] of U10 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(41.4500 mm, 44.2250 mm): Track [ELVSS] on F.Cu, length 5.0250 mm
+    @(41.4500 mm, 43.3250 mm): Pad 11 [VSYS] of U10 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(41.4500 mm, 44.2250 mm): Track [ELVSS] on F.Cu, length 5.0250 mm
+    @(41.4500 mm, 42.8750 mm): Pad 12 [VSYS] of U10 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(41.4500 mm, 43.7750 mm): Track [EL_SWN] on F.Cu, length 2.6741 mm
+    @(41.4500 mm, 43.3250 mm): Pad 11 [VSYS] of U10 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(41.4500 mm, 44.6750 mm): Track [EL_CT] on F.Cu, length 3.3250 mm
+    @(41.4500 mm, 45.1250 mm): Pad 7 [LCD_EN] of U10 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(26.4000 mm, 37.0000 mm): Track [LCD_1V8] on F.Cu, length 0.8000 mm
+    @(25.8000 mm, 37.0000 mm): Pad 9 [LCD_3V3] of J4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(23.0000 mm, 47.5000 mm): Track [LCD_1V8] on F.Cu, length 3.0000 mm
+    @(22.0000 mm, 47.5000 mm): Pad 1 [1V8] of R29 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(25.6000 mm, 37.0000 mm): Via [LCD_1V8] on F.Cu - B.Cu
+    @(25.8000 mm, 37.0000 mm): Pad 9 [LCD_3V3] of J4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(20.0000 mm, 47.0000 mm): Pad 2 [GND] of C45 on F.Cu
+    @(20.2000 mm, 46.4500 mm): Pad 4 [unconnected-(U8-CT-Pad4)] of U8 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.5000 mm, 46.0000 mm): Pad 1 [LCD_3V3] of C43 on F.Cu
+    @(17.8000 mm, 45.5000 mm): Pad 2 [GND] of U8 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.5000 mm, 46.0000 mm): Pad 1 [LCD_3V3] of C43 on F.Cu
+    @(17.8000 mm, 46.4500 mm): Pad 3 [LCD_EN] of U8 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.5000 mm, 45.0000 mm): Pad 2 [GND] of C43 on F.Cu
+    @(17.8000 mm, 44.5500 mm): Pad 1 [3V3] of U8 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(17.8000 mm, 46.4500 mm): Pad 3 [LCD_EN] of U8 on F.Cu
+    @(18.0000 mm, 46.7000 mm): Pad 2 [GND] of C44 on F.Cu
+[diff_pair_gap_out_of_range]: Differential pair gap out of range (netclass 'Default' (diff pair) minimum gap 0.0900 mm; actual -0.0900 mm)
+    Rule: netclass 'Default' (diff pair); error
+    @(27.3750 mm, 42.0000 mm): Track [DSI_CKP] on F.Cu, length 1.1250 mm
+    @(27.7250 mm, 42.0000 mm): Track [DSI_CKN] on F.Cu, length 1.2750 mm
+[diff_pair_gap_out_of_range]: Differential pair gap out of range (netclass 'Default' (diff pair) minimum gap 0.0900 mm; actual -0.0900 mm)
+    Rule: netclass 'Default' (diff pair); error
+    @(28.7750 mm, 42.0000 mm): Track [DSI_D0P] on F.Cu, length 1.7750 mm
+    @(29.1250 mm, 42.0000 mm): Track [DSI_D0N] on F.Cu, length 1.6250 mm
+
+** Found 10 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(30.8750 mm, 50.6500 mm): Track [CORE_0V93] on F.Cu, length 2.5517 mm
+    @(26.3250 mm, 50.6500 mm): Track [CORE_0V93] on F.Cu, length 3.4487 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(29.1604 mm, 37.8724 mm): Via [GND] on F.Cu - B.Cu
+    @(28.2000 mm, 37.0000 mm): Pad 17 [GND] of J4 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(40.2000 mm, 39.0000 mm): Track [KEY_DOWN] on B.Cu, length 8.9095 mm
+    @(38.2500 mm, 39.9000 mm): Track [KEY_DOWN] on B.Cu, length 0.2121 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(36.3000 mm, 43.3500 mm): Track [KEY_DOWN] on B.Cu, length 0.2121 mm
+    @(39.3000 mm, 44.7000 mm): Track [KEY_DOWN] on B.Cu, length 0.2121 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(32.1000 mm, 39.1500 mm): Track [PWRON_N] on B.Cu, length 2.1213 mm
+    @(35.7000 mm, 37.3500 mm): Track [PWRON_N] on B.Cu, length 2.7577 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(26.2500 mm, 50.8500 mm): Track [PWRON_N] on B.Cu, length 0.6000 mm
+    @(30.4500 mm, 40.6500 mm): Track [PWRON_N] on B.Cu, length 0.4243 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(25.6500 mm, 40.3500 mm): Track [SD_D0] on B.Cu, length 0.6000 mm
+    @(26.4000 mm, 39.0000 mm): Track [SD_D0] on B.Cu, length 1.8000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(23.4000 mm, 50.1000 mm): Track [SD_D0] on B.Cu, length 2.3335 mm
+    @(22.1625 mm, 53.4012 mm): Track [SD_D0] on B.Cu, length 0.3698 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(36.0000 mm, 40.0500 mm): Track [SD_PWR_EN] on B.Cu, length 0.3000 mm
+    @(36.4500 mm, 38.7000 mm): Track [SD_PWR_EN] on B.Cu, length 0.2121 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(31.9500 mm, 52.0500 mm): Track [SOC_LDO_1V8] on B.Cu, length 3.1820 mm
+    @(29.4750 mm, 51.2500 mm): Track [SOC_LDO_1V8] on F.Cu, length 0.6000 mm
+
+** Found 0 Footprint errors **
+
+** End of Report **

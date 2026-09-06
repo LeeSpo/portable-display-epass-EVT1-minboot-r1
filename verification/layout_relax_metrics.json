@@ -1,0 +1,441 @@
+{
+  "before": {
+    "label": "before",
+    "placements": {
+      "J4": [
+        30.0,
+        39.0,
+        0.0
+      ],
+      "U10": [
+        46.0,
+        30.0,
+        0.0
+      ],
+      "U8": [
+        20.0,
+        40.0,
+        0.0
+      ],
+      "L5": [
+        41.5,
+        28.0,
+        0.0
+      ],
+      "L6": [
+        50.5,
+        28.0,
+        0.0
+      ],
+      "R29": [
+        30.0,
+        45.0,
+        0.0
+      ],
+      "R31": [
+        35.0,
+        42.0,
+        0.0
+      ],
+      "C42": [
+        25.0,
+        42.0,
+        90.0
+      ],
+      "C43": [
+        27.0,
+        42.0,
+        90.0
+      ],
+      "C44": [
+        30.0,
+        42.0,
+        90.0
+      ],
+      "C45": [
+        32.0,
+        42.0,
+        90.0
+      ],
+      "C29": [
+        16.0,
+        40.0,
+        0.0
+      ],
+      "C46": [
+        46.0,
+        25.5,
+        0.0
+      ],
+      "C47": [
+        49.0,
+        25.5,
+        0.0
+      ],
+      "C48": [
+        42.0,
+        31.5,
+        90.0
+      ],
+      "C49": [
+        50.0,
+        31.5,
+        90.0
+      ],
+      "C50": [
+        52.0,
+        34.0,
+        90.0
+      ],
+      "C51": [
+        48.5,
+        34.5,
+        0.0
+      ],
+      "U2": [
+        30.0,
+        56.0,
+        0.0
+      ],
+      "J5": [
+        29.0,
+        7.0,
+        0.0
+      ]
+    },
+    "lengths": {
+      "DSI_CKN": 18.645,
+      "DSI_CKP": 18.645,
+      "DSI_D0N": 19.589,
+      "DSI_D0P": 19.589,
+      "ELVDD": 28.793,
+      "ELVSS": 36.513,
+      "EL_CT": 4.435,
+      "EL_SWN": 2.888,
+      "EL_SWP": 2.326,
+      "LCD_1V8": 12.847,
+      "LCD_3V3": 20.924,
+      "LCD_EN": 186.679,
+      "LCD_RST": 19.633,
+      "LCD_SWIRE": 12.3,
+      "LCD_TE": 15.855,
+      "LCD_TE1": 0.0
+    },
+    "vias": {
+      "DSI_CKN": 0,
+      "DSI_CKP": 0,
+      "DSI_D0N": 2,
+      "DSI_D0P": 2,
+      "ELVDD": 6,
+      "ELVSS": 2,
+      "EL_CT": 0,
+      "EL_SWN": 0,
+      "EL_SWP": 0,
+      "LCD_1V8": 0,
+      "LCD_3V3": 5,
+      "LCD_EN": 22,
+      "LCD_RST": 2,
+      "LCD_SWIRE": 2,
+      "LCD_TE": 2,
+      "LCD_TE1": 0
+    },
+    "layers": {
+      "LCD_3V3": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "VSYS": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "EL_SWP": [
+        "F.Cu"
+      ],
+      "EL_SWN": [
+        "F.Cu"
+      ],
+      "EL_CT": [
+        "F.Cu"
+      ],
+      "ELVDD": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "ELVSS": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "LCD_1V8": [
+        "F.Cu"
+      ],
+      "DSI_CKP": [
+        "F.Cu"
+      ],
+      "DSI_CKN": [
+        "F.Cu"
+      ],
+      "DSI_D0P": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "DSI_D0N": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "LCD_RST": [
+        "3V3 plane",
+        "F.Cu"
+      ],
+      "LCD_EN": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "LCD_TE": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "LCD_SWIRE": [
+        "3V3 plane",
+        "F.Cu"
+      ]
+    },
+    "fcu_under_u2": 85,
+    "fcu_under_u2_display": 11,
+    "unconnected": 0,
+    "lcd_en_u2_u10_manhattan": 44.45,
+    "tracks": 2594,
+    "via_count": 440
+  },
+  "after": {
+    "label": "after",
+    "placements": {
+      "J4": [
+        30.0,
+        37.0,
+        0.0
+      ],
+      "U10": [
+        40.0,
+        44.0,
+        0.0
+      ],
+      "U8": [
+        19.0,
+        45.5,
+        0.0
+      ],
+      "L5": [
+        35.5,
+        42.0,
+        0.0
+      ],
+      "L6": [
+        44.5,
+        42.0,
+        0.0
+      ],
+      "R29": [
+        22.5,
+        47.5,
+        0.0
+      ],
+      "R31": [
+        22.5,
+        44.0,
+        0.0
+      ],
+      "C42": [
+        16.5,
+        45.5,
+        90.0
+      ],
+      "C43": [
+        17.5,
+        45.5,
+        90.0
+      ],
+      "C44": [
+        18.0,
+        47.5,
+        90.0
+      ],
+      "C45": [
+        20.0,
+        47.5,
+        90.0
+      ],
+      "C29": [
+        15.5,
+        48.0,
+        0.0
+      ],
+      "C46": [
+        40.0,
+        39.5,
+        0.0
+      ],
+      "C47": [
+        43.0,
+        39.5,
+        0.0
+      ],
+      "C48": [
+        36.0,
+        45.5,
+        90.0
+      ],
+      "C49": [
+        44.0,
+        45.5,
+        90.0
+      ],
+      "C50": [
+        46.5,
+        47.5,
+        90.0
+      ],
+      "C51": [
+        42.5,
+        48.0,
+        0.0
+      ],
+      "U2": [
+        30.0,
+        56.0,
+        0.0
+      ],
+      "J5": [
+        29.0,
+        7.0,
+        0.0
+      ]
+    },
+    "lengths": {
+      "DSI_CKN": 24.69,
+      "DSI_CKP": 21.675,
+      "DSI_D0N": 25.34,
+      "DSI_D0P": 22.625,
+      "ELVDD": 29.465,
+      "ELVSS": 37.165,
+      "EL_CT": 3.875,
+      "EL_SWN": 2.674,
+      "EL_SWP": 2.183,
+      "LCD_1V8": 26.622,
+      "LCD_3V3": 31.294,
+      "LCD_EN": 38.85,
+      "LCD_RST": 26.29,
+      "LCD_SWIRE": 15.365,
+      "LCD_TE": 23.275,
+      "LCD_TE1": 0.0
+    },
+    "vias": {
+      "DSI_CKN": 0,
+      "DSI_CKP": 0,
+      "DSI_D0N": 0,
+      "DSI_D0P": 0,
+      "ELVDD": 2,
+      "ELVSS": 2,
+      "EL_CT": 0,
+      "EL_SWN": 0,
+      "EL_SWP": 0,
+      "LCD_1V8": 2,
+      "LCD_3V3": 2,
+      "LCD_EN": 0,
+      "LCD_RST": 2,
+      "LCD_SWIRE": 2,
+      "LCD_TE": 2,
+      "LCD_TE1": 0
+    },
+    "layers": {
+      "LCD_EN": [
+        "F.Cu"
+      ],
+      "LCD_TE": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "LCD_RST": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "DSI_CKN": [
+        "F.Cu"
+      ],
+      "DSI_CKP": [
+        "F.Cu"
+      ],
+      "DSI_D0N": [
+        "F.Cu"
+      ],
+      "DSI_D0P": [
+        "F.Cu"
+      ],
+      "LCD_SWIRE": [
+        "B.Cu"
+      ],
+      "LCD_1V8": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "LCD_3V3": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "ELVSS": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "ELVDD": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "EL_CT": [
+        "F.Cu"
+      ],
+      "VSYS": [
+        "B.Cu",
+        "F.Cu"
+      ],
+      "EL_SWN": [
+        "F.Cu"
+      ],
+      "EL_SWP": [
+        "F.Cu"
+      ]
+    },
+    "fcu_under_u2": 74,
+    "fcu_under_u2_display": 0,
+    "unconnected": 10,
+    "lcd_en_u2_u10_manhattan": 24.45,
+    "tracks": 2179,
+    "via_count": 422,
+    "collateral_channel_nets": {
+      "3V3": 2,
+      "CORE_0V93": 1,
+      "KEY_DOWN": 28,
+      "SOC_LDO_1V8": 5,
+      "SD_PWR_EN": 6,
+      "GND": 20,
+      "PWRON_N": 8,
+      "SD_D0": 3
+    }
+  },
+  "drc_counts": {
+    "track_dangling": 34,
+    "via_dangling": 1,
+    "isolated_copper": 13,
+    "tracks_crossing": 79,
+    "clearance": 49,
+    "shorting_items": 100,
+    "hole_clearance": 36,
+    "courtyards_overlap": 5,
+    "hole_to_hole": 1,
+    "holes_co_located": 1,
+    "lib_footprint_mismatch": 2,
+    "silk_over_copper": 1,
+    "solder_mask_bridge": 79,
+    "diff_pair_gap_out_of_range": 2,
+    "unconnected_items": 10
+  },
+  "open_display_pads": []
+}
