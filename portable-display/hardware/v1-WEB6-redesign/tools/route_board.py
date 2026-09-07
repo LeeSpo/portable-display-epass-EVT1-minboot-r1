@@ -48,7 +48,7 @@ PRIORITY = [
     "DSI_D0P", "DSI_D0N", "DSI_CKP", "DSI_CKN",
     "USB_DP", "USB_DM", "USB_CC1", "USB_CC2",
     "VBUS", "VBAT", "VSYS",
-    "NAND_CLK", "NAND_CS", "NAND_MISO", "NAND_MOSI", "NAND_HOLD", "NAND_WP",
+    "BOOT0", "BOOT1",
     "SD_CLK", "SD_CMD", "SD_D0", "SD_D1", "SD_D2", "SD_D3", "SD_DET",
     "SD_PWR_EN", "SD_PWR_GATE", "SD_3V3",
     "I2C0_SCL", "I2C0_SDA", "UART0_TX", "UART0_RX", "E907_TX", "E907_RX",

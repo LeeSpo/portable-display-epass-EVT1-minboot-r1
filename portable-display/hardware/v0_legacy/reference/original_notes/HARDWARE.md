@@ -14,8 +14,8 @@ This is a reference-derived engineering validation design. The display island (M
 |---|---|
 | MIPI DSI | PD1 D0N, PD2 D0P, PD3 D1N, PD4 D1P, PD5 CKN, PD6 CKP |
 | Display control | PD19 RESET, PD20 PWM, PD21 power enable |
-| MicroSD | PF0-PF5 data/clock/command, PF6 detect, PH12 power control |
-| SPI NAND | PC0-PC5 |
+| MicroSD (only onboard boot media) | PF0-PF5 data/clock/command, PF6 detect, PH12 power control |
+| Boot straps / FEL | PC2 BOOT0 (R10 pull-up, SW6 to GND), PC3 BOOT1 (R28 pull-up); PC0/PC1/PC4/PC5 NC. SPI NAND island removed. |
 | Sensors | PE4 TWI0 SCL, PE5 TWI0 SDA, PE6 accelerometer IRQ, PE7 RTC IRQ |
 | PMIC | PH13 SCL, PH14 SDA, PE2 IRQ |
 | Debug | PH9/PH10 A7 UART0; PE0/PE1 E907 UART3 |

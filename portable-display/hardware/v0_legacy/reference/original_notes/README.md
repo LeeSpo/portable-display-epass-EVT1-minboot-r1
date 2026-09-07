@@ -12,7 +12,7 @@ A battery-powered 3.5" MIPI display host:
 - Allwinner **V851s** (Cortex-A7 + E907). E907 manages standby; A7 boots, drives MIPI and H.264.
 - **AXP2101** USB / single-cell charge / power path / rails / fuel gauge. No TP4056, no MAX17048.
 - Panel placeholder **TFT-H035B22WVIST8N20_V3-0** (3.5" IPS) is still in the schematic but **not routed**; V1.0 intends to switch to MIPI OLED before that island is finished.
-- **W25N01GV** SPI NAND, MicroSD, LIS2DW12, RV-3028-C7, five side keys.
+- MicroSD (only onboard boot media), LIS2DW12, RV-3028-C7, five side keys. SPI NAND island removed.
 - No radio, no speaker, no touch, no AOD, no firmware, no enclosure.
 
 ## Architecture
@@ -27,8 +27,8 @@ AXP2101 ──── 1S LiPo + 10 kΩ NTC (JST-PH 3-pin)
 V851s
  ├── MIPI DSI ── 3.5" 480×800 IPS (FH12-20S)
  ├── TPS61169 backlight (~12 V / 80 mA)
- ├── W25N01GV SPI NAND
- ├── MicroSD (switched 3.3 V)
+ ├── MicroSD (switched 3.3 V; TF boot)
+ ├── BOOT0/BOOT1 straps + FEL (no SPI NAND)
  ├── LIS2DW12 + RV-3028-C7 on RTC rail
  └── 5 × side keys (GPADC ladder + AXP2101 PWRON)
 ```
@@ -83,13 +83,13 @@ Re-check LCSC stock, CPL rotation and the JLCPCB 4-layer impedance stackup on th
 
 Finish in KiCad before fab:
 
-1. Route MIPI (90 Ω), USB 2.0 (90 Ω), MicroSD, SPI NAND, I²C, buttons, backlight.
+1. Route MIPI (90 Ω), USB 2.0 (90 Ω), MicroSD, I²C, buttons, backlight.
 2. Fan out V851s / AXP2101 with a via class the chosen JLCPCB process allows. 0.35 mm pitch cannot take the project 0.60 / 0.30 mm via on every pin.
 3. Refill zones, run DRC, fix unconnected items.
 4. Confirm FPC contact side and battery outline against samples.
 5. Order 5 boards, not a production run.
 
-First-power sequence: current-limited supply → rails → USB FEL → SPI NAND → MicroSD → panel → wake path. Targets: PMIC-off < 150 µA, E907 standby < 8 mA, backlight ~80 mA. Misses become V1.1; this revision is not production-ready.
+First-power sequence: current-limited supply → rails → USB FEL → TF (8 KB BROM offset) → panel → wake path. Targets: PMIC-off < 150 µA, E907 standby < 8 mA, backlight ~80 mA. Misses become V1.1; this revision is not production-ready.
 
 ## Schematic sheets
 
@@ -97,7 +97,7 @@ First-power sequence: current-limited supply → rails → USB FEL → SPI NAND 
 |------|----------|
 | `portable_display_epass.kicad_sch` | Root |
 | `01_power.kicad_sch` | USB-C, AXP2101, battery, power key |
-| `02_soc_v851s.kicad_sch` | V851s, 24 MHz, SPI NAND, debug |
+| `02_soc_v851s.kicad_sch` | V851s, 24 MHz, TF boot straps, debug |
 | `03_sensors.kicad_sch` | LIS2DW12, RV-3028-C7, wake pulse |
 | `04_interfaces.kicad_sch` | Panel FPC, backlight, MicroSD, keys |
 

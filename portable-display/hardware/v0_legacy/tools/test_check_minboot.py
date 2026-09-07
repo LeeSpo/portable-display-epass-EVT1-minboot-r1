@@ -29,7 +29,7 @@ class ReleaseGateTests(unittest.TestCase):
     def test_display_exception_is_limited(self):
         e,d=reports();d['unconnected_items']=[opened('DSI_D0P')];self.assertFalse(check_reports(e,d));self.assertTrue(check_reports(e,d,allow_display=False))
     def test_non_display_opens_block(self):
-        for n in ('GND','USB_DM','NAND_MOSI','SOC_LDO_1V8'):
+        for n in ('GND','USB_DM','BOOT0','SOC_LDO_1V8'):
             with self.subTest(n=n):
                 e,d=reports();d['unconnected_items']=[opened(n)];self.assertTrue(check_reports(e,d))
     def test_unknown_endpoint_blocks(self):

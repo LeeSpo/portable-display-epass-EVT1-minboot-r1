@@ -20,7 +20,7 @@ U1 的第 36 脚名称恢复为 VMID，保留现有 VSYS 网络，没有擅自�
 
 ## 仍未完成
 
-非显示最小系统已开始在现有 PCB 上布线（电源缝合过孔、VSYS/VBUS 局部覆铜、部分 UART/NAND/时钟），但原生 DRC 仍报告 USB、VSYS、部分 NAND/SD/按键未连，以及大量只连一层的扇出过孔。忽略覆铜的焊盘组统计见 `verification/minboot_route_report.json`；原生未连项以最新 `verification/native-*` 为准。
+非显示最小系统已开始在现有 PCB 上布线（电源缝合过孔、VSYS/VBUS 局部覆铜、部分 UART/时钟）。原理图已改为只从 TF 启动：删除 SPI NAND 岛，PC2/PC3 为 `BOOT0`/`BOOT1`。WEB6 38×64 布局候选同步删件；本目录 58×110 PCB 仍是带 NAND 的旧快照。忽略覆铜的焊盘组统计见 `verification/minboot_route_report.json`；原生未连项以最新 `verification/native-*` 为准。
 
 器件通用封装、阻焊与锡膏、安装孔和壳体、走线载流、USB/MIPI 回流与阻抗、PMIC 供电和充电、按键/唤醒时序、固件及启动方案，都尚不能视为审签完成。
 

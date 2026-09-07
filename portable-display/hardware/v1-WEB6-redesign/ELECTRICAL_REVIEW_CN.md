@@ -67,7 +67,13 @@ C1/C2 靠近 U1 底侧，C3 靠近 BAT，C11 靠近 VREF，C40/C41 靠近 VIN，
 
 U10 输入接到 VSYS；TPS65631 输入范围为 2.9～4.5 V，VSYS 全工况范围尚未验证。
 
-## F. 其他未签核事项
+## F. 启动介质：只从 TF，本布局稿已改
+
+已删除 SPI NAND 岛：U3 W25N01GVZEIG、C22、R7、R8、R9。U2 的 PC0/PC1/PC4/PC5 改为 NC。PC2/PC3 网络改为 `BOOT0`/`BOOT1`，仍由 R10/R28 上拉到 3V3（`BOOT_SEL=11`）。同族 V853 参考图中该组合先扫 SDC0（TF），再试其它介质；找不到合法镜像后进 USB FEL。SW6 仍把 PC2 拉低作救援。J5 microSD、Q3 供电开关和 ESD 未改。
+
+`BOOT_SEL` 表来自 V853_PRO 参考原理图，不是 V851S 用户手册原文。投板前用手册再对一次；若 `11` 不是 SDC0 优先，只改 R10/R28 上下拉，不必把 NAND 焊回去。固件必须是 MMC/SD 启动包（BROM 偏移 8 KB / sector 16），不能再跑 `setargs_nand`。
+
+## G. 其他未签核事项
 
 显示 VDDIO 当前使用 `LCD_1V8`，主控相关 I/O 与 RESX/TE/SWIRE 的电平兼容性需逐脚审核。
 

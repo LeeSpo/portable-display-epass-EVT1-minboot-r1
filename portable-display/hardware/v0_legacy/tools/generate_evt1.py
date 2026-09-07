@@ -203,8 +203,8 @@ def v851_pins() -> dict[str, tuple[str, str | None]]:
         26:"I2C0_SDA",30:"ACCEL_INT_N",31:"E907_RX",33:"CORE_0V93",34:"DRAM_1V5",35:"CORE_0V93",
         36:"DRAM_1V5",37:"SOC_LDO_1V8",38:"PMIC_SDA",39:"PMIC_SCL",40:"SD_PWR_EN",41:"STATUS_LED",
         42:"UART0_RX",43:"UART0_TX",44:"3V3",45:"WAKE_PULSE_N",46:"ADC_KEYS",47:"3V3",48:"SOC_AVCC",
-        50:"VRA1",51:"GND",54:"CORE_0V93",55:"3V3",56:"NAND_CS",57:"NAND_CLK",58:"NAND_MISO",
-        59:"NAND_MOSI",60:"NAND_HOLD",61:"NAND_WP",62:"SOC_LDO_1V8",75:"CORE_0V93",76:"USB_DP",
+        50:"VRA1",51:"GND",54:"CORE_0V93",55:"3V3",58:"BOOT1",
+        59:"BOOT0",62:"SOC_LDO_1V8",75:"CORE_0V93",76:"USB_DP",
         77:"USB_DM",78:"3V3",79:"SOC_LDO_1V8",80:"DSI_D0N",81:"DSI_D0P",
         84:"DSI_CKN",85:"DSI_CKP",88:"CORE_0V93",89:"GND",
     }
@@ -324,18 +324,10 @@ def devices() -> list[Device]:
     for idx,(rail,dy) in enumerate(bypass,14):
         slot=idx-14
         add(d,f"C{idx}","100n","0402","soc",40+(slot%2)*4,60+(slot//2)*3,passive(rail,"GND"),mpn="0402 100n X7R",lcsc="C1525")
-    nandpins={"1":("CS","NAND_CS"),"2":("MISO","NAND_MISO"),"3":("WP","NAND_WP"),"4":("GND","GND"),"5":("MOSI","NAND_MOSI"),"6":("CLK","NAND_CLK"),"7":("HOLD","NAND_HOLD"),"8":("VCC","3V3")}
-    # SPI0 is on the right side of U2 (PC0-PC5). Keep the NAND package in that
-    # corridor so the maze does not have to wrap around the QFN via ring.
-    add(d,"U3","W25N01GVZEIG","WSON-8","soc",50,62,nandpins,mpn="W25N01GVZEIG",lcsc="C907680",datasheet="https://www.winbond.com/hq/product/code-storage-flash-memory/qspinand-flash/?__locale=en&partNo=W25N01GV")
-    add(d,"C22","100n","0402","soc",50,67,passive("3V3","GND"),lcsc="C1525")
-    add(d,"R7","10k","0402","soc",50,75,passive("3V3","NAND_CS"))
-    add(d,"R8","10k","0402","soc",53,75,passive("3V3","NAND_WP"))
-    add(d,"R9","10k","0402","soc",56,75,passive("3V3","NAND_HOLD"))
-    add(d,"J3","DEBUG POGO","HDR8","soc",44,72,{str(i+1):(n,net) for i,(n,net) in enumerate([("GND","GND"),("3V3","3V3"),("UART0_TX","UART0_TX"),("UART0_RX","UART0_RX"),("E907_TX","E907_TX"),("E907_RX","E907_RX"),("FEL_PC2","NAND_MOSI"),("PWRON_N","PWRON_N")])},note="1.27mm production/debug pads")
-    add(d,"SW6","FEL","SW_SIDE","soc",55,91,{"1":("FEL_PC2","NAND_MOSI"),"2":("FEL_PC2","NAND_MOSI"),"3":("GND","GND")},mpn="GT-TC072B-H045-L1",lcsc="C5117859",rotation=90,note="Recessed recovery switch; straps PC2 low")
-    add(d,"R10","10k","0402","soc",47,91,passive("3V3","NAND_MOSI"))
-    add(d,"R28","10k","0402","soc",44,91,passive("3V3","NAND_MISO"),note="PC3 BOOT1 pull-up; SPI NAND boot")
+    add(d,"J3","DEBUG POGO","HDR8","soc",44,72,{str(i+1):(n,net) for i,(n,net) in enumerate([("GND","GND"),("3V3","3V3"),("UART0_TX","UART0_TX"),("UART0_RX","UART0_RX"),("E907_TX","E907_TX"),("E907_RX","E907_RX"),("FEL_PC2","BOOT0"),("PWRON_N","PWRON_N")])},note="1.27mm production/debug pads")
+    add(d,"SW6","FEL","SW_SIDE","soc",55,91,{"1":("FEL_PC2","BOOT0"),"2":("FEL_PC2","BOOT0"),"3":("GND","GND")},mpn="GT-TC072B-H045-L1",lcsc="C5117859",rotation=90,note="Recessed recovery switch; straps PC2 low")
+    add(d,"R10","10k","0402","soc",47,91,passive("3V3","BOOT0"))
+    add(d,"R28","10k","0402","soc",44,91,passive("3V3","BOOT1"),note="PC3 BOOT1 pull-up; BOOT_SEL=11 TF first")
 
     lis={"1":("SCL","I2C0_SCL"),"2":("CS","RTC_3V3"),"3":("SDO_SA0",None),"4":("SDA","I2C0_SDA"),"5":("NC",None),"6":("GND","GND"),"7":("RES","GND"),"8":("GND","GND"),"9":("VDD","RTC_3V3"),"10":("VDDIO","RTC_3V3"),"11":("INT2",None),"12":("INT1","ACCEL_INT_N")}
     add(d,"U4","LIS2DW12TR","LGA-12","sensors",8,19,lis,mpn="LIS2DW12TR",lcsc="C189624",datasheet="https://www.st.com/resource/en/datasheet/lis2dw12.pdf")
@@ -490,9 +482,6 @@ def pin_type(dev: Device, num: str) -> str:
         if num in {"2", "5", "8", "18", "22", "28", "34"}: return "power_out"
         if num in {"4", "9", "21", "30", "31", "40"}: return "input"
         if num == "39": return "bidirectional"
-    if dev.ref == "U3":
-        if num in {"4", "8"}: return "power_in"
-        return "bidirectional" if num in {"2", "3", "5", "7"} else "input"
     return "passive"
 
 
@@ -902,7 +891,7 @@ def deterministic_fanout_and_routes(devs: list[Device], net_ids: dict[str,int]) 
                 continue
             stub_and_via(dev,pad,net,rings,int(pad.number)%len(rings),f"{ref}-{pad.number}")
 
-    for ref in ("U3","J5","U9","J3","U4","U5","U6"):
+    for ref in ("J5","U9","J3","U4","U5","U6"):
         fan_part(ref)
 
     def via_of(ref, pin) -> tuple[float,float] | None:
@@ -1152,7 +1141,7 @@ def autoroute(terminals: dict[str,list[Terminal]], net_ids: dict[str,int]) -> tu
         work.append((net,unique,span))
     power_first={"1V8","CORE_0V93","DRAM_1V5","RTC_3V3","VSYS","VBAT","VBUS","SD_3V3"}
     sd_bus={"SD_D0","SD_D1","SD_D2","SD_D3","SD_CMD","SD_CLK","SD_DET"}
-    nand_bus={"NAND_CS","NAND_CLK","NAND_MISO","NAND_MOSI","NAND_HOLD","NAND_WP"}
+    nand_bus={"BOOT0","BOOT1"}
     display_ctrl={"LCD_TE","LCD_EN","LCD_RST"}
     pmic_bus={"PMIC_SCL","PMIC_SDA","PMIC_IRQ_N"}
     priority=lambda net: 0 if net=="LCD_RST" else (1 if net.startswith("USB_D") else (2 if net=="VBUS" else (3 if net=="VBAT" else (4 if net=="SD_3V3" else (5 if net=="SD_PWR_EN" else (6 if net in sd_bus else (7 if net.startswith("DSI_") else (8 if net in nand_bus else (9 if net=="1V8" else (10 if net=="CORE_0V93" else (11 if net in pmic_bus else (12 if net in display_ctrl else (13 if net in power_first else 14)))))))))))))
