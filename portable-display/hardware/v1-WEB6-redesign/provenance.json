@@ -21,5 +21,8 @@
     "Allwinner V851S pinout v0.1: VCC-LDOA&PLL is an internal LDO output; VDD18-DRAM, VCC-PA&VCC-MCSI and VCC-MDSI are 1V8 inputs; AVCC stays a local analog island"
   ],
   "electrical_net_change_source": "reference/v851s_pinout_v0.1.xlsx",
-  "dimensions_status": "Proposed PCB dimensions; display/FPC assembly not verified"
+  "dimensions_status": "Proposed PCB dimensions; display/FPC assembly not verified",
+  "routing_status": "Shapely-checked F.Cu/B.Cu candidate; native DRC has zero shorts/clearance/crossings; unconnected nets remain",
+  "routing_via_mm": {"diameter": 0.6, "drill": 0.3},
+  "native_drc": "verification/drc.json"
 }

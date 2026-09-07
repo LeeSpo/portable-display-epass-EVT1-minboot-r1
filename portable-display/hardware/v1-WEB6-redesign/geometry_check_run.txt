@@ -1,5 +1,5 @@
 {
-  "status": "PLACEMENT_ONLY_NOT_FAB_READY",
+  "status": "ROUTED_CANDIDATE_NOT_FAB_READY",
   "board_mm": [
     38.0,
     64.0
@@ -10,14 +10,14 @@
   "electrical_nets_corrected": true,
   "old_tracks_removed": 224,
   "old_vias_removed": 116,
-  "new_tracks": 0,
-  "new_vias": 0,
+  "new_tracks": 2044,
+  "new_vias": 14,
   "via_preset_mm": {
     "diameter": 0.6,
     "drill": 0.3
   },
-  "native_kicad_drc_run": false,
-  "native_drc_reason": "KiCad/pcbnew unavailable. Custom checks are not ERC, DRC, routing, or sign-off.",
+  "native_kicad_drc_run": true,
+  "native_drc_reason": "kicad-cli pcb drc after Shapely-checked routing. Zero short/clearance/crossing errors; remaining unconnected items and dangling-track warnings. Not ERC or fab sign-off.",
   "courtyard_intersections": [],
   "courtyard_gaps_below_0p3": [],
   "different_net_pad_intersections": [],
@@ -26,14 +26,15 @@
   "component_reservation_intersections": [],
   "minimum_courtyard_gap_mm": 0.35,
   "minimum_different_net_pad_gap_mm": 0.17,
-  "ground_zones_unfilled": 2,
+  "ground_zones_unfilled": 0,
   "screw_head_copper_keepouts_provisional_diameter_mm": 5,
   "verification_basis": "Saved PCB. Courtyards conservatively enclosed by rectangles; oval/rounded pads enclosed by rectangles. Screw-head D5 regions are provisional, not manufacturer dimensions.",
   "limitations": [
-    "No native KiCad parsing or DRC",
+    "Native DRC still reports unconnected items and dangling tracks; not all nets are closed",
     "No schematic supplied; pad nets were corrected on this layout (U6 pinout, VMID, U2 1V8 split); ERC still unavailable",
-    "No tracks or vias; no unrouted-count pass",
-    "No impedance or timing/thermal validation",
+    "0.60/0.30 mm vias remain a QFN fanout bottleneck; few vias placed",
+    "HS_IMPEDANCE_TBD and POWER_PROVISIONAL widths are placeholders, not solved impedance or ampacity",
+    "No timing/thermal validation",
     "No FPC fold, card insertion, USB reach, or 3D collision sign-off",
     "No library-to-manufacturer footprint verification",
     "Minimum gap is courtyard-to-courtyard, NOT lead pitch or via pitch",

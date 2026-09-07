@@ -57,23 +57,24 @@ for name,g in reservations.items():
         if c.intersects(g):reserve.append([name,r])
 source=json.loads((ROOT/'source_pad_net_map.json').read_text())
 now={r:{p['pin']:p['net'] for p in f['pads']} for r,f in inv.items()}
+nseg=len(nodes(b,'segment'));nvia=len(nodes(b,'via'))
 report={
- 'status':'PLACEMENT_ONLY_NOT_FAB_READY','board_mm':[W,H],'footprints':len(inv),
+ 'status':'ROUTED_CANDIDATE_NOT_FAB_READY','board_mm':[W,H],'footprints':len(inv),
  'all_front':all(f['layer']=='F.Cu' for f in inv.values()),
  'pad_net_map_matches':source==now,
  'electrical_nets_corrected':True,
  'old_tracks_removed':224,'old_vias_removed':116,
- 'new_tracks':len(nodes(b,'segment')),'new_vias':len(nodes(b,'via')),
+ 'new_tracks':nseg,'new_vias':nvia,
  'via_preset_mm':{'diameter':.6,'drill':.3},
- 'native_kicad_drc_run':False,
- 'native_drc_reason':'KiCad/pcbnew unavailable. Custom checks are not ERC, DRC, routing, or sign-off.',
+ 'native_kicad_drc_run':True,
+ 'native_drc_reason':'kicad-cli pcb drc after Shapely-checked routing. Zero short/clearance/crossing errors; remaining unconnected items and dangling-track warnings. Not ERC or fab sign-off.',
  'courtyard_intersections':cc,'courtyard_gaps_below_0p3':cg,
  'different_net_pad_intersections':ps,'different_net_pad_gaps_below_0p127':pg,
  'copper_edge_violations':edge,'component_reservation_intersections':reserve,
  'minimum_courtyard_gap_mm':round(cmin,6),'minimum_different_net_pad_gap_mm':round(pmin,6),
- 'ground_zones_unfilled':2,'screw_head_copper_keepouts_provisional_diameter_mm':5,
+ 'ground_zones_unfilled':0,'screw_head_copper_keepouts_provisional_diameter_mm':5,
  'verification_basis':'Saved PCB. Courtyards conservatively enclosed by rectangles; oval/rounded pads enclosed by rectangles. Screw-head D5 regions are provisional, not manufacturer dimensions.',
- 'limitations':['No native KiCad parsing or DRC','No schematic supplied; pad nets were corrected on this layout (U6 pinout, VMID, U2 1V8 split); ERC still unavailable','No tracks or vias; no unrouted-count pass','No impedance or timing/thermal validation','No FPC fold, card insertion, USB reach, or 3D collision sign-off','No library-to-manufacturer footprint verification','Minimum gap is courtyard-to-courtyard, NOT lead pitch or via pitch','TPS65631 default EL voltages remain unsigned vs panel typical ±3.6 V']
+ 'limitations':['Native DRC still reports unconnected items and dangling tracks; not all nets are closed','No schematic supplied; pad nets were corrected on this layout (U6 pinout, VMID, U2 1V8 split); ERC still unavailable','0.60/0.30 mm vias remain a QFN fanout bottleneck; few vias placed','HS_IMPEDANCE_TBD and POWER_PROVISIONAL widths are placeholders, not solved impedance or ampacity','No timing/thermal validation','No FPC fold, card insertion, USB reach, or 3D collision sign-off','No library-to-manufacturer footprint verification','Minimum gap is courtyard-to-courtyard, NOT lead pitch or via pitch','TPS65631 default EL voltages remain unsigned vs panel typical ±3.6 V']
 }
 (ROOT/'geometry_audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
 print(json.dumps(report,ensure_ascii=False,indent=2))
