@@ -1,0 +1,176 @@
+{
+  "board_sha256": "c98703585c7844f161dfef1c8fab4dfb2e216a1dbfe8a7644322f9c177577cb5",
+  "nand_absent": true,
+  "trace_count": 2319,
+  "via_count": 188,
+  "native_drc": {
+    "unconnected": 19,
+    "violations": {
+      "starved_thermal": 4,
+      "track_dangling": 2,
+      "track_not_centered_on_via": 4,
+      "missing_courtyard": 4,
+      "footprint_type_mismatch": 2,
+      "lib_footprint_issues": 115
+    }
+  },
+  "critical_nets": {
+    "DSI_CKN": {
+      "layers": [
+        "F.Cu"
+      ],
+      "vias": 0,
+      "total_copper_length_mm": 7.8598
+    },
+    "DSI_CKP": {
+      "layers": [
+        "F.Cu"
+      ],
+      "vias": 0,
+      "total_copper_length_mm": 15.2349
+    },
+    "DSI_D0N": {
+      "layers": [
+        "F.Cu"
+      ],
+      "vias": 0,
+      "total_copper_length_mm": 8.0598
+    },
+    "DSI_D0P": {
+      "layers": [
+        "F.Cu"
+      ],
+      "vias": 0,
+      "total_copper_length_mm": 20.6349
+    },
+    "EL_SWN": {
+      "layers": [
+        "F.Cu"
+      ],
+      "vias": 0,
+      "total_copper_length_mm": 2.025
+    },
+    "EL_SWP": {
+      "layers": [
+        "F.Cu"
+      ],
+      "vias": 0,
+      "total_copper_length_mm": 1.975
+    },
+    "LX_3V3": {
+      "layers": [
+        "F.Cu"
+      ],
+      "vias": 0,
+      "total_copper_length_mm": 2.15
+    },
+    "LX_CORE": {
+      "layers": [
+        "F.Cu"
+      ],
+      "vias": 0,
+      "total_copper_length_mm": 2.85
+    },
+    "LX_DRAM": {
+      "layers": [
+        "F.Cu"
+      ],
+      "vias": 0,
+      "total_copper_length_mm": 2.8521
+    },
+    "SD_CLK": {
+      "layers": [
+        "F.Cu"
+      ],
+      "vias": 0,
+      "total_copper_length_mm": 13.1042
+    },
+    "USB_DM": {
+      "layers": [
+        "F.Cu"
+      ],
+      "vias": 0,
+      "total_copper_length_mm": 83.3048
+    },
+    "USB_DP": {
+      "layers": [
+        "F.Cu"
+      ],
+      "vias": 0,
+      "total_copper_length_mm": 64.3302
+    },
+    "XIN": {
+      "layers": [
+        "F.Cu"
+      ],
+      "vias": 0,
+      "total_copper_length_mm": 5.425
+    },
+    "XOUT": {
+      "layers": [
+        "F.Cu"
+      ],
+      "vias": 0,
+      "total_copper_length_mm": 7.4341
+    }
+  },
+  "zones": [
+    {
+      "net": "GND",
+      "layer": "F.Cu",
+      "filled_polygons": 37,
+      "filled_area_mm2": 1275.346
+    },
+    {
+      "net": "GND",
+      "layer": "B.Cu",
+      "filled_polygons": 14,
+      "filled_area_mm2": 1553.079
+    },
+    {
+      "net": "GND",
+      "layer": "In1.Cu",
+      "filled_polygons": 1,
+      "filled_area_mm2": 2135.532
+    },
+    {
+      "net": "VSYS",
+      "layer": "In2.Cu",
+      "filled_polygons": 1,
+      "filled_area_mm2": 43.575
+    },
+    {
+      "net": "CORE_0V93",
+      "layer": "In2.Cu",
+      "filled_polygons": 1,
+      "filled_area_mm2": 146.25
+    },
+    {
+      "net": "3V3",
+      "layer": "In2.Cu",
+      "filled_polygons": 1,
+      "filled_area_mm2": 193.987
+    },
+    {
+      "net": "GND",
+      "layer": "In2.Cu",
+      "filled_polygons": 15,
+      "filled_area_mm2": 1483.098
+    },
+    {
+      "net": "DRAM_1V5",
+      "layer": "In2.Cu",
+      "filled_polygons": 1,
+      "filled_area_mm2": 57.238
+    },
+    {
+      "net": "1V8",
+      "layer": "In2.Cu",
+      "filled_polygons": 1,
+      "filled_area_mm2": 98.689
+    }
+  ],
+  "ampacity_verified": false,
+  "impedance_verified": false,
+  "fabrication_released": false
+}

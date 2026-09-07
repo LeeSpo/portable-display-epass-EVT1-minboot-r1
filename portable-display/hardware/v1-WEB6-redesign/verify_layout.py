@@ -3,12 +3,17 @@ Requires Python 3.10+ and Shapely 2.x. Run: python verify_layout.py [board.kicad
 All numerical geometry is reloaded from the saved PCB, not the optimizer state.
 """
 from pathlib import Path
-import sys,json,math
+import sys,json,math,argparse,hashlib,collections
 from shapely.geometry import box,Point
 from shapely.affinity import rotate,translate
 from pcb_parser import info,nodes,one,val
 ROOT=Path(__file__).resolve().parent
-path=Path(sys.argv[1]) if len(sys.argv)>1 else ROOT/'ak_display_38x64_PLACEMENT_ONLY.kicad_pcb'
+ap=argparse.ArgumentParser()
+ap.add_argument('board',nargs='?',default=str(ROOT/'ak_display_38x64_PLACEMENT_ONLY.kicad_pcb'))
+ap.add_argument('--output')
+args=ap.parse_args()
+path=Path(args.board)
+output=Path(args.output) if args.output else path.parent/'geometry_audit.json'
 b,inv=info(path)
 edge_rects=[g for g in nodes(b,'gr_rect') if val(one(g,'layer')[1])=='Edge.Cuts']
 if len(edge_rects)!=1:raise ValueError('Expected one rectangular board outline')
@@ -58,24 +63,34 @@ for name,g in reservations.items():
 source=json.loads((ROOT/'source_pad_net_map.json').read_text())
 now={r:{p['pin']:p['net'] for p in f['pads']} for r,f in inv.items()}
 nseg=len(nodes(b,'segment'));nvia=len(nodes(b,'via'))
+digest=hashlib.sha256(path.read_bytes()).hexdigest()
+provenance_path=path.parent/'verification'/'drc_provenance.json'
+native=None
+if provenance_path.exists():
+    provenance=json.loads(provenance_path.read_text())
+    drc_path=path.parent/'verification'/'drc.json'
+    if provenance.get('board_sha256')==digest and drc_path.exists():
+        drc=json.loads(drc_path.read_text())
+        native={'kicad_version':drc.get('kicad_version'),'unconnected_items':len(drc.get('unconnected_items',[])),
+                'violations_by_type':dict(collections.Counter(v['type'] for v in drc.get('violations',[])))}
 report={
  'status':'ROUTED_CANDIDATE_NOT_FAB_READY','board_mm':[W,H],'footprints':len(inv),
  'all_front':all(f['layer']=='F.Cu' for f in inv.values()),
  'pad_net_map_matches':source==now,
- 'electrical_nets_corrected':True,
- 'old_tracks_removed':224,'old_vias_removed':116,
- 'new_tracks':nseg,'new_vias':nvia,
+ 'track_segments':nseg,'vias':nvia,
+ 'board_sha256':digest,
  'via_preset_mm':{'diameter':.6,'drill':.3},
- 'native_kicad_drc_run':True,
- 'native_drc_reason':'kicad-cli pcb drc after Shapely-checked routing. Zero short/clearance/crossing errors; remaining unconnected items and dangling-track warnings. Not ERC or fab sign-off.',
+ 'native_kicad_drc_verified_for_this_file':native is not None,
+ 'native_drc':native,
  'courtyard_intersections':cc,'courtyard_gaps_below_0p3':cg,
  'different_net_pad_intersections':ps,'different_net_pad_gaps_below_0p127':pg,
  'copper_edge_violations':edge,'component_reservation_intersections':reserve,
  'minimum_courtyard_gap_mm':round(cmin,6),'minimum_different_net_pad_gap_mm':round(pmin,6),
- 'ground_zones_unfilled':0,'screw_head_copper_keepouts_provisional_diameter_mm':5,
+ 'ground_zones_unfilled':sum(1 for z in nodes(b,'zone') if val(one(z,'net_name',one(z,'net',['net','""']))[-1])=='GND' and not one(z,'keepout') and not nodes(z,'filled_polygon')),
+ 'screw_head_copper_keepouts_provisional_diameter_mm':5,
  'verification_basis':'Saved PCB. Courtyards conservatively enclosed by rectangles; oval/rounded pads enclosed by rectangles. Screw-head D5 regions are provisional, not manufacturer dimensions.',
- 'limitations':['Native DRC still reports unconnected items and dangling tracks; not all nets are closed','No schematic supplied; pad nets were corrected on this layout (U6 pinout, VMID, U2 1V8 split); ERC still unavailable','0.60/0.30 mm vias remain a QFN fanout bottleneck; few vias placed','HS_IMPEDANCE_TBD and POWER_PROVISIONAL widths are placeholders, not solved impedance or ampacity','No timing/thermal validation','No FPC fold, card insertion, USB reach, or 3D collision sign-off','No library-to-manufacturer footprint verification','Minimum gap is courtyard-to-courtyard, NOT lead pitch or via pitch','TPS65631 default EL voltages remain unsigned vs panel typical ±3.6 V']
+ 'limitations':['Geometry checks do not establish electrical completion; consult the matching native DRC report','No synchronized candidate schematic/ERC verification','0.60/0.30 mm via fanout remains constrained','HS_IMPEDANCE_TBD and POWER_PROVISIONAL are not solved impedance or ampacity','No timing/thermal validation','No FPC fold, card insertion, USB reach, or 3D collision sign-off','No library-to-manufacturer footprint verification','Minimum gap is courtyard-to-courtyard, NOT lead pitch or via pitch','Panel supply working point remains unconfirmed']
 }
-(ROOT/'geometry_audit.json').write_text(json.dumps(report,ensure_ascii=False,indent=2))
+output.write_text(json.dumps(report,ensure_ascii=False,indent=2))
 print(json.dumps(report,ensure_ascii=False,indent=2))
 if any([cc,cg,ps,pg,edge,reserve]) or source!=now:sys.exit(1)

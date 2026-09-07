@@ -1,0 +1,7 @@
+{
+  "board_sha256": "c98703585c7844f161dfef1c8fab4dfb2e216a1dbfe8a7644322f9c177577cb5",
+  "project_sha256": "9f90c2af5a13b3d944e1d2a9065df396c58ad52d29852e59a70e89a9a0a6603b",
+  "drc_sha256": "9354bbb28604ab2cbc60e376ddebdbc3d618d60a30053156cc4b54acef8b7ba5",
+  "command": "kicad-cli pcb drc --refill-zones --format json",
+  "fabrication_released": false
+}
