@@ -1,0 +1,256 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-10T23:54:54",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "work.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [WAKE_REQ_N] on F.Cu, length 0.7713 mm",
+                    "pos": {
+                        "x": 21.394,
+                        "y": 10.661
+                    },
+                    "uuid": "680896d5-1cdd-436b-a87e-c9c0b8c734aa"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [DRAM_1V5] on B.Cu, length 0.9439 mm",
+                    "pos": {
+                        "x": 14.5419,
+                        "y": 29.8742
+                    },
+                    "uuid": "89cad7a2-d1ea-4ee4-a0d9-4b7be2922e8f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [DRAM_1V5] on B.Cu, length 9.0982 mm",
+                    "pos": {
+                        "x": 29.7952,
+                        "y": 45.2572
+                    },
+                    "uuid": "eadcd342-1e7e-4969-91ce-12fd362b7d46"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [LCD_3V3] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 6.8,
+                        "y": 39.0
+                    },
+                    "uuid": "da541397-f761-5b70-a213-3cbb01f60b66"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VSYS] on B.Cu, length 6.4000 mm",
+                    "pos": {
+                        "x": 17.6,
+                        "y": 49.7
+                    },
+                    "uuid": "8d99b66a-3954-5db3-8818-1a4d5da04d3a"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VSYS] on B.Cu, length 5.7826 mm",
+                    "pos": {
+                        "x": 18.8667,
+                        "y": 55.0802
+                    },
+                    "uuid": "e0188ad1-f408-4707-85c3-abc1f9a41c0c"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [VSYS] on B.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 30.6,
+                        "y": 57.8
+                    },
+                    "uuid": "e2dc1ae8-d3ff-5698-9c41-5520cc6c2b4f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [USB_CC1] on F.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 15.4,
+                        "y": 56.5
+                    },
+                    "uuid": "552ec4c5-946c-5334-8ffc-73d05d8e1b1c"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [3V3] on B.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 12.4,
+                        "y": 34.4
+                    },
+                    "uuid": "47368f23-61ed-5d49-9a3c-932dd210afc7"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [3V3] on B.Cu, length 1.0000 mm",
+                    "pos": {
+                        "x": 11.5,
+                        "y": 31.8
+                    },
+                    "uuid": "56c390b5-abea-56ae-9fcc-987d66d309c3"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [3V3] on B.Cu, length 1.3515 mm",
+                    "pos": {
+                        "x": 12.7106,
+                        "y": 34.6515
+                    },
+                    "uuid": "91dc901c-322d-4874-8e87-bb6cc0869bb0"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [USB_CC2] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 18.8,
+                        "y": 53.9
+                    },
+                    "uuid": "657a9ff7-c3da-5e4b-8c7d-d6bc7be2df87"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [USB_CC2] on B.Cu, length 0.8000 mm",
+                    "pos": {
+                        "x": 20.7,
+                        "y": 58.6
+                    },
+                    "uuid": "0a60efe9-845c-5888-9c66-f2ebf5271284"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [USB_CC2] on B.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 30.0,
+                        "y": 57.8
+                    },
+                    "uuid": "120630f8-01ee-5100-9347-c13bbec69727"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [USB_CC2] on B.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 30.2,
+                        "y": 44.9
+                    },
+                    "uuid": "be0a4862-4b6a-5c89-9087-773b1a48de80"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [LCD_EN] on B.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 14.3,
+                        "y": 48.1
+                    },
+                    "uuid": "b4f6c746-7a92-5e23-bb56-ff4eb104459f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

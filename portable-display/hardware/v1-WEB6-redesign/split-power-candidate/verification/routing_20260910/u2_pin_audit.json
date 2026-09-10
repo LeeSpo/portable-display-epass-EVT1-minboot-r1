@@ -1,0 +1,626 @@
+{
+  "source": "https://bbs.aw-ol.com/assets/uploads/files/1664634614433-705eb7fa-ac80-4aa7-a263-45ee8d799341-v851s_pinout_v0.1.xlsx",
+  "sheet": "1 Pin Characteristics",
+  "source_sha256": "dd822163ceeffdbc599d5497699d9339ee43ae93629c0f03664ab312467d2508",
+  "checked_peripheral_pins": 88,
+  "mismatches": [],
+  "pins": [
+    {
+      "pin": 1,
+      "board_function": "PD18",
+      "official_name": "PD18",
+      "official_row": 36,
+      "matches": true
+    },
+    {
+      "pin": 2,
+      "board_function": "PD19",
+      "official_name": "PD19",
+      "official_row": 37,
+      "matches": true
+    },
+    {
+      "pin": 3,
+      "board_function": "PD20",
+      "official_name": "PD20",
+      "official_row": 38,
+      "matches": true
+    },
+    {
+      "pin": 4,
+      "board_function": "PD21",
+      "official_name": "PD21",
+      "official_row": 39,
+      "matches": true
+    },
+    {
+      "pin": 5,
+      "board_function": "VCC33_PF_PD",
+      "official_name": "VCC33-PF&PD",
+      "official_row": 40,
+      "matches": true
+    },
+    {
+      "pin": 6,
+      "board_function": "PF0_SDC0_D1",
+      "official_name": "PF0",
+      "official_row": 59,
+      "matches": true
+    },
+    {
+      "pin": 7,
+      "board_function": "PF1_SDC0_D0",
+      "official_name": "PF1",
+      "official_row": 60,
+      "matches": true
+    },
+    {
+      "pin": 8,
+      "board_function": "PF2_SDC0_CLK",
+      "official_name": "PF2",
+      "official_row": 61,
+      "matches": true
+    },
+    {
+      "pin": 9,
+      "board_function": "PF3_SDC0_CMD",
+      "official_name": "PF3",
+      "official_row": 62,
+      "matches": true
+    },
+    {
+      "pin": 10,
+      "board_function": "PF4_SDC0_D3",
+      "official_name": "PF4",
+      "official_row": 63,
+      "matches": true
+    },
+    {
+      "pin": 11,
+      "board_function": "PF5_SDC0_D2",
+      "official_name": "PF5",
+      "official_row": 64,
+      "matches": true
+    },
+    {
+      "pin": 12,
+      "board_function": "PF6_DBG_CLK",
+      "official_name": "PF6",
+      "official_row": 65,
+      "matches": true
+    },
+    {
+      "pin": 13,
+      "board_function": "VDD_SYS0",
+      "official_name": "VDD-SYS\u00a0",
+      "official_row": 94,
+      "matches": true
+    },
+    {
+      "pin": 14,
+      "board_function": "VCC_LDOA_PLL",
+      "official_name": "VCC-LDOA&PLL",
+      "official_row": 78,
+      "matches": true
+    },
+    {
+      "pin": 15,
+      "board_function": "DXOUT",
+      "official_name": "DXOUT",
+      "official_row": 76,
+      "matches": true
+    },
+    {
+      "pin": 16,
+      "board_function": "DXIN",
+      "official_name": "DXIN",
+      "official_row": 75,
+      "matches": true
+    },
+    {
+      "pin": 17,
+      "board_function": "VDD_SYS1",
+      "official_name": "VDD-SYS\u00a0",
+      "official_row": 94,
+      "matches": true
+    },
+    {
+      "pin": 18,
+      "board_function": "PE13",
+      "official_name": "PE13",
+      "official_row": 56,
+      "matches": true
+    },
+    {
+      "pin": 19,
+      "board_function": "PE12",
+      "official_name": "PE12",
+      "official_row": 55,
+      "matches": true
+    },
+    {
+      "pin": 20,
+      "board_function": "PE11",
+      "official_name": "PE11",
+      "official_row": 54,
+      "matches": true
+    },
+    {
+      "pin": 21,
+      "board_function": "PE4",
+      "official_name": "PE4",
+      "official_row": 47,
+      "matches": true
+    },
+    {
+      "pin": 22,
+      "board_function": "VCC_PE",
+      "official_name": "VCC-PE",
+      "official_row": 57,
+      "matches": true
+    },
+    {
+      "pin": 23,
+      "board_function": "PE2",
+      "official_name": "PE2",
+      "official_row": 45,
+      "matches": true
+    },
+    {
+      "pin": 24,
+      "board_function": "PE7",
+      "official_name": "PE7",
+      "official_row": 50,
+      "matches": true
+    },
+    {
+      "pin": 25,
+      "board_function": "PE0",
+      "official_name": "PE0",
+      "official_row": 43,
+      "matches": true
+    },
+    {
+      "pin": 26,
+      "board_function": "PE5",
+      "official_name": "PE5",
+      "official_row": 48,
+      "matches": true
+    },
+    {
+      "pin": 27,
+      "board_function": "PE8",
+      "official_name": "PE8",
+      "official_row": 51,
+      "matches": true
+    },
+    {
+      "pin": 28,
+      "board_function": "PE9",
+      "official_name": "PE9",
+      "official_row": 52,
+      "matches": true
+    },
+    {
+      "pin": 29,
+      "board_function": "PE3",
+      "official_name": "PE3",
+      "official_row": 46,
+      "matches": true
+    },
+    {
+      "pin": 30,
+      "board_function": "PE6",
+      "official_name": "PE6",
+      "official_row": 49,
+      "matches": true
+    },
+    {
+      "pin": 31,
+      "board_function": "PE1",
+      "official_name": "PE1",
+      "official_row": 44,
+      "matches": true
+    },
+    {
+      "pin": 32,
+      "board_function": "PE10",
+      "official_name": "PE10",
+      "official_row": 53,
+      "matches": true
+    },
+    {
+      "pin": 33,
+      "board_function": "VDD_SYS2",
+      "official_name": "VDD-SYS\u00a0",
+      "official_row": 94,
+      "matches": true
+    },
+    {
+      "pin": 34,
+      "board_function": "VCC_DRAM0",
+      "official_name": "VCC-DRAM",
+      "official_row": 3,
+      "matches": true
+    },
+    {
+      "pin": 35,
+      "board_function": "VDD_SYS3",
+      "official_name": "VDD-SYS\u00a0",
+      "official_row": 94,
+      "matches": true
+    },
+    {
+      "pin": 36,
+      "board_function": "VCC_DRAM1",
+      "official_name": "VCC-DRAM",
+      "official_row": 3,
+      "matches": true
+    },
+    {
+      "pin": 37,
+      "board_function": "VDD18_DRAM",
+      "official_name": "VDD18-DRAM",
+      "official_row": 4,
+      "matches": true
+    },
+    {
+      "pin": 38,
+      "board_function": "PH14",
+      "official_name": "PH14",
+      "official_row": 73,
+      "matches": true
+    },
+    {
+      "pin": 39,
+      "board_function": "PH13",
+      "official_name": "PH13",
+      "official_row": 72,
+      "matches": true
+    },
+    {
+      "pin": 40,
+      "board_function": "PH12",
+      "official_name": "PH12",
+      "official_row": 71,
+      "matches": true
+    },
+    {
+      "pin": 41,
+      "board_function": "PH11",
+      "official_name": "PH11",
+      "official_row": 70,
+      "matches": true
+    },
+    {
+      "pin": 42,
+      "board_function": "PH10",
+      "official_name": "PH10",
+      "official_row": 69,
+      "matches": true
+    },
+    {
+      "pin": 43,
+      "board_function": "PH9",
+      "official_name": "PH9",
+      "official_row": 68,
+      "matches": true
+    },
+    {
+      "pin": 44,
+      "board_function": "VCC_IO",
+      "official_name": "VCC-IO",
+      "official_row": 95,
+      "matches": true
+    },
+    {
+      "pin": 45,
+      "board_function": "PH0",
+      "official_name": "PH0",
+      "official_row": 67,
+      "matches": true
+    },
+    {
+      "pin": 46,
+      "board_function": "GPADC0",
+      "official_name": "GPADC0",
+      "official_row": 84,
+      "matches": true
+    },
+    {
+      "pin": 47,
+      "board_function": "VDD33",
+      "official_name": "VDD33",
+      "official_row": 90,
+      "matches": true
+    },
+    {
+      "pin": 48,
+      "board_function": "AVCC",
+      "official_name": "AVCC",
+      "official_row": 91,
+      "matches": true
+    },
+    {
+      "pin": 49,
+      "board_function": "LINEOUTP",
+      "official_name": "LINEOUTP",
+      "official_row": 88,
+      "matches": true
+    },
+    {
+      "pin": 50,
+      "board_function": "VRA1",
+      "official_name": "VRA1",
+      "official_row": 89,
+      "matches": true
+    },
+    {
+      "pin": 51,
+      "board_function": "AGND",
+      "official_name": "AGND",
+      "official_row": 92,
+      "matches": true
+    },
+    {
+      "pin": 52,
+      "board_function": "MICIN1N",
+      "official_name": "MICIN1N",
+      "official_row": 86,
+      "matches": true
+    },
+    {
+      "pin": 53,
+      "board_function": "MICIN1P",
+      "official_name": "MICIN1P",
+      "official_row": 87,
+      "matches": true
+    },
+    {
+      "pin": 54,
+      "board_function": "VDD_SYS4",
+      "official_name": "VDD-SYS\u00a0",
+      "official_row": 94,
+      "matches": true
+    },
+    {
+      "pin": 55,
+      "board_function": "VCC_PC",
+      "official_name": "VCC-PC",
+      "official_row": 26,
+      "matches": true
+    },
+    {
+      "pin": 56,
+      "board_function": "PC1_SPI0_CS",
+      "official_name": "PC1",
+      "official_row": 21,
+      "matches": true
+    },
+    {
+      "pin": 57,
+      "board_function": "PC0_SPI0_CLK",
+      "official_name": "PC0",
+      "official_row": 20,
+      "matches": true
+    },
+    {
+      "pin": 58,
+      "board_function": "PC3_SPI0_MISO_BOOT1",
+      "official_name": "PC3",
+      "official_row": 23,
+      "matches": true
+    },
+    {
+      "pin": 59,
+      "board_function": "PC2_SPI0_MOSI_BOOT0",
+      "official_name": "PC2",
+      "official_row": 22,
+      "matches": true
+    },
+    {
+      "pin": 60,
+      "board_function": "PC5_SPI0_HOLD",
+      "official_name": "PC5",
+      "official_row": 25,
+      "matches": true
+    },
+    {
+      "pin": 61,
+      "board_function": "PC4_SPI0_WP",
+      "official_name": "PC4",
+      "official_row": 24,
+      "matches": true
+    },
+    {
+      "pin": 62,
+      "board_function": "VCC_PA_MCSI",
+      "official_name": "VCC-PA&VCC-MCSI",
+      "official_row": 18,
+      "matches": true
+    },
+    {
+      "pin": 63,
+      "board_function": "PA11",
+      "official_name": "PA11",
+      "official_row": 17,
+      "matches": true
+    },
+    {
+      "pin": 64,
+      "board_function": "PA10",
+      "official_name": "PA10",
+      "official_row": 16,
+      "matches": true
+    },
+    {
+      "pin": 65,
+      "board_function": "PA9",
+      "official_name": "PA9",
+      "official_row": 15,
+      "matches": true
+    },
+    {
+      "pin": 66,
+      "board_function": "PA8",
+      "official_name": "PA8",
+      "official_row": 14,
+      "matches": true
+    },
+    {
+      "pin": 67,
+      "board_function": "PA7",
+      "official_name": "PA7",
+      "official_row": 13,
+      "matches": true
+    },
+    {
+      "pin": 68,
+      "board_function": "PA6",
+      "official_name": "PA6",
+      "official_row": 12,
+      "matches": true
+    },
+    {
+      "pin": 69,
+      "board_function": "PA5",
+      "official_name": "PA5",
+      "official_row": 11,
+      "matches": true
+    },
+    {
+      "pin": 70,
+      "board_function": "PA4",
+      "official_name": "PA4",
+      "official_row": 10,
+      "matches": true
+    },
+    {
+      "pin": 71,
+      "board_function": "PA3",
+      "official_name": "PA3",
+      "official_row": 9,
+      "matches": true
+    },
+    {
+      "pin": 72,
+      "board_function": "PA2",
+      "official_name": "PA2",
+      "official_row": 8,
+      "matches": true
+    },
+    {
+      "pin": 73,
+      "board_function": "PA1",
+      "official_name": "PA1",
+      "official_row": 7,
+      "matches": true
+    },
+    {
+      "pin": 74,
+      "board_function": "PA0",
+      "official_name": "PA0",
+      "official_row": 6,
+      "matches": true
+    },
+    {
+      "pin": 75,
+      "board_function": "VDD_SYS5",
+      "official_name": "VDD-SYS\u00a0",
+      "official_row": 94,
+      "matches": true
+    },
+    {
+      "pin": 76,
+      "board_function": "USB0_DP",
+      "official_name": "USB0-DP",
+      "official_row": 81,
+      "matches": true
+    },
+    {
+      "pin": 77,
+      "board_function": "USB0_DM",
+      "official_name": "USB0-DM",
+      "official_row": 80,
+      "matches": true
+    },
+    {
+      "pin": 78,
+      "board_function": "VCC33_USB",
+      "official_name": "VCC33-USB",
+      "official_row": 82,
+      "matches": true
+    },
+    {
+      "pin": 79,
+      "board_function": "VCC18_MDSI",
+      "official_name": "VCC-MDSI",
+      "official_row": 41,
+      "matches": true
+    },
+    {
+      "pin": 80,
+      "board_function": "PD1_DSI_D0N",
+      "official_name": "PD1",
+      "official_row": 28,
+      "matches": true
+    },
+    {
+      "pin": 81,
+      "board_function": "PD2_DSI_D0P",
+      "official_name": "PD2",
+      "official_row": 29,
+      "matches": true
+    },
+    {
+      "pin": 82,
+      "board_function": "PD3_DSI_D1N",
+      "official_name": "PD3",
+      "official_row": 30,
+      "matches": true
+    },
+    {
+      "pin": 83,
+      "board_function": "PD4_DSI_D1P",
+      "official_name": "PD4",
+      "official_row": 31,
+      "matches": true
+    },
+    {
+      "pin": 84,
+      "board_function": "PD5_DSI_CKN",
+      "official_name": "PD5",
+      "official_row": 32,
+      "matches": true
+    },
+    {
+      "pin": 85,
+      "board_function": "PD6_DSI_CKP",
+      "official_name": "PD6",
+      "official_row": 33,
+      "matches": true
+    },
+    {
+      "pin": 86,
+      "board_function": "PD7",
+      "official_name": "PD7",
+      "official_row": 34,
+      "matches": true
+    },
+    {
+      "pin": 87,
+      "board_function": "PD8",
+      "official_name": "PD8",
+      "official_row": 35,
+      "matches": true
+    },
+    {
+      "pin": 88,
+      "board_function": "VDD_SYS6",
+      "official_name": "VDD-SYS\u00a0",
+      "official_row": 94,
+      "matches": true
+    }
+  ],
+  "EPAD_note": "Board uses pad 89 for GND EPAD; manufacturer lists 88 numbered peripheral pins and a separate EPAD. Copper land dimensions are not established by this electrical pin table."
+}

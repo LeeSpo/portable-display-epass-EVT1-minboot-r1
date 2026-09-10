@@ -1,0 +1,14 @@
+[
+  {
+    "net": "USB_DM",
+    "passes": [
+      {
+        "ok": false,
+        "reason": "no path",
+        "visited": 849,
+        "reachable_via": 0
+      }
+    ],
+    "groups": 5
+  }
+]

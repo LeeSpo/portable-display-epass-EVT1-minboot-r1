@@ -1,0 +1,28 @@
+[
+  {
+    "net": "SD_D1",
+    "ok": false,
+    "passes": [
+      {
+        "ok": false,
+        "reason": "no path",
+        "visited": 40346,
+        "reachable_via": 3918
+      }
+    ],
+    "seconds": 4.35
+  },
+  {
+    "net": "LCD_EN",
+    "ok": false,
+    "passes": [
+      {
+        "ok": false,
+        "reason": "no path",
+        "visited": 42847,
+        "reachable_via": 3986
+      }
+    ],
+    "seconds": 4.44
+  }
+]

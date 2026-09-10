@@ -1,0 +1,25 @@
+{
+  "centered": [],
+  "removed": [
+    {
+      "uuid": "b7e20c85-c834-571e-83ef-b9f26d9c4fec",
+      "net": "VSYS",
+      "reason": "via_dangling"
+    },
+    {
+      "uuid": "a7f4047a-0836-556e-8d08-2710b633bff5",
+      "net": "USB_CC2",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "a0d42ac1-602f-597d-b683-94fd05f0b62a",
+      "net": "USB_CC2",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "ad801b68-27d6-5d25-9f16-94e002ba458d",
+      "net": "LCD_EN",
+      "reason": "track_dangling"
+    }
+  ]
+}
