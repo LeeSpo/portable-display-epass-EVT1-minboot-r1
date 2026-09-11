@@ -1,42 +1,38 @@
 # 四层分区供电候选
 
-**已实现分区供电结构，尚未完成全部优化与验收，不可投板。**
+2026-09-11：**布线连通和本轮封装修正已保存；原生 DRC 为 0 未连接、0 违规、0 告警。当前仍是工程候选，不是投板放行版本。**
 
-打开本目录的 `ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pro` 查看候选。
-原目录中的 `ak_display_38x64_PLACEMENT_ONLY.kicad_pcb` 未覆盖；此前原板备份保存在上级目录的 `verification/power_optimization/`。
+打开本目录 `ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pro` 或 `.kicad_pcb`。主 PCB 已更新，项目本地封装库为 `sameat.pretty`，请随工程保留。
 
-## 已落地的改动
+## 已完成
 
-| 层 | 当前保存的设计 |
+- 补齐核心电源、接地铜区及 SD/控制信号连接，修复热连接、残线和过孔端点问题。
+- 按厂家资料重建 U4 LIS2DW12 的 4-2-4-2 焊盘排列和 U5 RV-3028-C7 的横向两排焊盘，恢复相关走线。
+- U6、U8、U9 使用本器件对应的推荐 land；U1/U2 修正真实本体的 F.Fab 轮廓。细节、图纸页码及未确认项见 [封装核查记录](FOOTPRINT_REVIEW_CN.md)。
+- 清理并重布 U9—J1 附近的 USB 路径。关键 MIPI、USB、SD_CLK、晶振、LX/SW 网络仍全部位于 F.Cu，无换层过孔；这只是层别检查，高速约束尚未签核。
+- 保留主工程 L2/C6/C7 的位置；为封装间距及走线调整 C14、C16、C26、C34、D10、R1、U8、U9。完整前后坐标见 `verification/assessment.json`。
+- 119 个封装均在正面，NAND 保持删除，逐引脚网络映射一致；38×64 mm 板框及安装孔位置保持不变。
+
+## 层与验证
+
+| 层 | 当前用途 |
 |---|---|
-| F.Cu | 元件、关键线路、局部供电和接地铜 |
-| In1.Cu | 完整 GND，填充后为一个连续多边形 |
-| In2.Cu | VSYS、3V3、CORE_0V93、DRAM_1V5、1V8 五个独立电源铜区；其余区域接地 |
-| B.Cu | 辅助信号、局部供电和接地铜 |
+| F.Cu | 元件、关键线路、局部供电与接地铜 |
+| In1.Cu | GND，保存后为一个连续填充多边形，无信号走线 |
+| In2.Cu | VSYS、3V3、CORE_0V93、DRAM_1V5、1V8 电源区、GND 和少量局部信号跨接 |
+| B.Cu | 辅助信号及局部供电与接地铜 |
 
-- 保留 NAND 删除状态，119 个封装及其引脚网络与既定映射一致。
-- 延续 U1/U2 周围的摆件调整，板框、孔位和接口引脚定义不变。全部封装仍在 F.Cu。
-- 五个主要供电区按实际过孔接入和负载分布构建；保存并填充后，各电源区均为一个多边形。局部供电网络保持独立，没有合并同电压但不同来源的网络。
-- MIPI、USB、SD 时钟、晶振和五个 LX/SW 开关网络的铜线均在顶层，均没有跨层过孔。**所在层检查通过，不代表差分耦合、时序或阻抗已经通过。**
-- 在几何间距允许处加宽电源线路，补充部分接地过孔并清理残线。主电源到负载的接入仍有未完成项。
+部分 In2 电源区被间隙/局部线路分成多个填充多边形；已通过其他铜层及过孔连通。GND 与六个复查电源网络的所有焊盘各属一个连通组，并由原生 DRC 确认没有未连接项。不能把多边形数或连通结果当作载流能力证明。
 
-## 实际检查结果
+KiCad 10.0.6 原生检查采用原有工程规则，未降低严重级别或增加豁免。二维几何检查通过：最小 courtyard 间距 0.302076 mm，不同网络焊盘最小间距 0.15 mm，未发现庭院/焊盘重叠或进入预留区。
 
-KiCad 10.0.6 原生 DRC：**19 处未连接、4 处热连接不足**。未报告短路或铜间距违规；另有残线、过孔端点和封装相关告警。没有调整 DRC 严重级别或添加豁免来隐藏这些问题。
+## 交付文件
 
-二维摆件检查通过：最小 courtyard 间距 0.35 mm，不同网络焊盘最小间距 0.17 mm；未发现庭院重叠、焊盘重叠或元件进入预留区。此检查不覆盖三维装配。
+- [四层预览](four_layers.png)，以及 `verification/layers/` 的四个 KiCad 原生 SVG。
+- `verification/drc.json` 和 `drc_provenance.json`：最终主板的 DRC、版本与文件哈希。
+- `verification/geometry_audit.json`：二维几何与引脚网络映射。
+- `verification/assessment.json`：关键网络层别、铜线总长、铜区和最终摆件变动。
+- `verification/via_in_pad_audit.json`：钻孔与 SMD 焊盘相交位置。
+- `verification/routing_20260910/main_before_promote_20260911.kicad_pcb`：覆盖主板前的完整备份；该目录其余文件为过程检查点，不能替代最终 `verification/drc.json`。
 
-MIPI 长度匹配、USB 路径与支路、实际阻抗、供电压降/载流、封装核对及屏幕机械配合尚未完成。完整列表见 [未完成项与验收记录](OPEN_ISSUES_CN.md)。
-
-## 文件索引
-
-- [四层彩色预览](four_layers.png)：来自当前保存的 PCB，颜色区分五个电源网络。
-- `verification/layers/`：KiCad 原生导出的四个铜层 SVG。
-- `verification/drc.json`：原生 DRC 明细。
-- `verification/drc_provenance.json`：候选 PCB、工程文件和 DRC 报告的 SHA-256。
-- `verification/geometry_audit.json`：二维摆件与引脚网络映射检查。
-- `verification/assessment.json`：保存后铜区数量、面积、关键网络层别和铜线总长。
-- `verification/power_zone_plan.json`：生成阶段的分区多边形与未直接纳入铜区的过孔。以保存后的 PCB 和原生 DRC 为准。
-- `verification/power_widths.json`：最后一轮外层电源加宽记录及细颈统计，不是载流能力签核。
-
-屏幕架在正面元件上方的结构评估见上级 `SCREEN_STACK_CN.md`；J4 仍为占位，不能据此认定排线已经适配。
+U1/U2 推荐焊盘、高速差分线、焊盘内过孔工艺、实际层叠/载流、J4 机械接口及原理图/ERC 仍需验收，见 [未完成项](OPEN_ISSUES_CN.md)。尚未生成或提交生产订单。

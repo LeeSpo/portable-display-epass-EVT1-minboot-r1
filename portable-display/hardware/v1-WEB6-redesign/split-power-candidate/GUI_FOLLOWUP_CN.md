@@ -1,9 +1,7 @@
-# KiCad 窗口续作检查
+# KiCad 窗口检查
 
-本轮未完成布线优化，不能投板。
+2026-09-11 已打开并目视复查最终 `ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pcb`。编辑器状态栏显示 Unrouted 0；当前主文件原生 DRC 为 0 未连接、0 违规、0 告警。
 
-尝试将 L2、C6、C7 向右移动 0.5 mm，为 U1 核心反馈留出空间。原生 DRC 检出 L2 与 VSYS 走线、C7 与 CORE 走线合计 3 项短路；试摆及试加过孔均已撤回。重新铺铜、保存并运行原生 DRC 后，恢复为 19 处未连接、131 项违规/告警，没有 shorting_items 或 clearance 项。
+此前尝试右移 L2/C6/C7 后撤回的记录已归档至 `verification/routing_20260910/historical_GUI_FOLLOWUP_CN.md`。本次最终板保留这三个元件在主工程中的位置，并重新接好周围电源线路。
 
-编辑器坐标选取与实际选中对象未能可靠对应，本轮未继续进行精细布线，避免误改。U1/U2 CORE、电源地孤岛、SD/控制信号、热连接及高速检查仍需完成。
-
-本次保存版本对应 verification/gui_followup_drc.json 和 gui_followup_provenance.json。此前报告和四层预览属于此前版本，不能替代本次检查。
+最终状态以 `README_CN.md`、`FOOTPRINT_REVIEW_CN.md`、`OPEN_ISSUES_CN.md` 和与主文件哈希匹配的 `verification/drc.json` 为准；仍未完成生产验收。

@@ -7,9 +7,9 @@
   "footprints": 119,
   "all_front": true,
   "pad_net_map_matches": true,
-  "track_segments": 2319,
-  "vias": 188,
-  "board_sha256": "c98703585c7844f161dfef1c8fab4dfb2e216a1dbfe8a7644322f9c177577cb5",
+  "track_segments": 2439,
+  "vias": 230,
+  "board_sha256": "0936ef67ea554887cbe91614736e3e75637f2c097b439aacee3b80974dabdc9d",
   "via_preset_mm": {
     "diameter": 0.6,
     "drill": 0.3
@@ -17,15 +17,8 @@
   "native_kicad_drc_verified_for_this_file": true,
   "native_drc": {
     "kicad_version": "10.0.6",
-    "unconnected_items": 19,
-    "violations_by_type": {
-      "starved_thermal": 4,
-      "track_dangling": 2,
-      "track_not_centered_on_via": 4,
-      "missing_courtyard": 4,
-      "footprint_type_mismatch": 2,
-      "lib_footprint_issues": 115
-    }
+    "unconnected_items": 0,
+    "violations_by_type": {}
   },
   "courtyard_intersections": [],
   "courtyard_gaps_below_0p3": [],
@@ -33,8 +26,8 @@
   "different_net_pad_gaps_below_0p127": [],
   "copper_edge_violations": [],
   "component_reservation_intersections": [],
-  "minimum_courtyard_gap_mm": 0.35,
-  "minimum_different_net_pad_gap_mm": 0.17,
+  "minimum_courtyard_gap_mm": 0.302076,
+  "minimum_different_net_pad_gap_mm": 0.15,
   "ground_zones_unfilled": 0,
   "screw_head_copper_keepouts_provisional_diameter_mm": 5,
   "verification_basis": "Saved PCB. Courtyards conservatively enclosed by rectangles; oval/rounded pads enclosed by rectangles. Screw-head D5 regions are provisional, not manufacturer dimensions.",
@@ -45,7 +38,7 @@
     "HS_IMPEDANCE_TBD and POWER_PROVISIONAL are not solved impedance or ampacity",
     "No timing/thermal validation",
     "No FPC fold, card insertion, USB reach, or 3D collision sign-off",
-    "No library-to-manufacturer footprint verification",
+    "Manufacturer footprint checks are outside this geometry script; see the candidate FOOTPRINT_REVIEW_CN.md for the seven-IC audit",
     "Minimum gap is courtyard-to-courtyard, NOT lead pitch or via pitch",
     "Panel supply working point remains unconfirmed"
   ]

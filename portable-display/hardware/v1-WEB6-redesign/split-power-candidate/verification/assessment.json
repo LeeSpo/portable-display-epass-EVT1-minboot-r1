@@ -1,18 +1,12 @@
 {
-  "board_sha256": "c98703585c7844f161dfef1c8fab4dfb2e216a1dbfe8a7644322f9c177577cb5",
+  "board_sha256": "0936ef67ea554887cbe91614736e3e75637f2c097b439aacee3b80974dabdc9d",
   "nand_absent": true,
-  "trace_count": 2319,
-  "via_count": 188,
+  "footprints": 119,
+  "trace_count": 2439,
+  "via_count": 230,
   "native_drc": {
-    "unconnected": 19,
-    "violations": {
-      "starved_thermal": 4,
-      "track_dangling": 2,
-      "track_not_centered_on_via": 4,
-      "missing_courtyard": 4,
-      "footprint_type_mismatch": 2,
-      "lib_footprint_issues": 115
-    }
+    "unconnected": 0,
+    "violations": {}
   },
   "critical_nets": {
     "DSI_CKN": {
@@ -69,7 +63,7 @@
         "F.Cu"
       ],
       "vias": 0,
-      "total_copper_length_mm": 2.85
+      "total_copper_length_mm": 4.5328
     },
     "LX_DRAM": {
       "layers": [
@@ -83,21 +77,21 @@
         "F.Cu"
       ],
       "vias": 0,
-      "total_copper_length_mm": 13.1042
+      "total_copper_length_mm": 12.9608
     },
     "USB_DM": {
       "layers": [
         "F.Cu"
       ],
       "vias": 0,
-      "total_copper_length_mm": 83.3048
+      "total_copper_length_mm": 47.4952
     },
     "USB_DP": {
       "layers": [
         "F.Cu"
       ],
       "vias": 0,
-      "total_copper_length_mm": 64.3302
+      "total_copper_length_mm": 48.9142
     },
     "XIN": {
       "layers": [
@@ -114,62 +108,176 @@
       "total_copper_length_mm": 7.4341
     }
   },
+  "length_measurement": "Sum of all track segments, not routed pin-to-pin skew or an impedance result",
   "zones": [
     {
       "net": "GND",
       "layer": "F.Cu",
-      "filled_polygons": 37,
-      "filled_area_mm2": 1275.346
+      "filled_polygons": 35,
+      "filled_area_mm2": 1319.702
     },
     {
       "net": "GND",
       "layer": "B.Cu",
-      "filled_polygons": 14,
-      "filled_area_mm2": 1553.079
+      "filled_polygons": 20,
+      "filled_area_mm2": 1581.435
     },
     {
       "net": "GND",
       "layer": "In1.Cu",
       "filled_polygons": 1,
-      "filled_area_mm2": 2135.532
+      "filled_area_mm2": 2126.062
     },
     {
       "net": "VSYS",
       "layer": "In2.Cu",
       "filled_polygons": 1,
-      "filled_area_mm2": 43.575
+      "filled_area_mm2": 43.574
     },
     {
       "net": "CORE_0V93",
       "layer": "In2.Cu",
-      "filled_polygons": 1,
-      "filled_area_mm2": 146.25
+      "filled_polygons": 3,
+      "filled_area_mm2": 130.887
     },
     {
       "net": "3V3",
       "layer": "In2.Cu",
       "filled_polygons": 1,
-      "filled_area_mm2": 193.987
+      "filled_area_mm2": 190.732
+    },
+    {
+      "net": "CORE_0V93",
+      "layer": "In2.Cu",
+      "filled_polygons": 1,
+      "filled_area_mm2": 29.608
     },
     {
       "net": "GND",
       "layer": "In2.Cu",
-      "filled_polygons": 15,
-      "filled_area_mm2": 1483.098
+      "filled_polygons": 20,
+      "filled_area_mm2": 1447.094
     },
     {
       "net": "DRAM_1V5",
       "layer": "In2.Cu",
-      "filled_polygons": 1,
-      "filled_area_mm2": 57.238
+      "filled_polygons": 2,
+      "filled_area_mm2": 54.645
     },
     {
       "net": "1V8",
       "layer": "In2.Cu",
-      "filled_polygons": 1,
-      "filled_area_mm2": 98.689
+      "filled_polygons": 2,
+      "filled_area_mm2": 92.863
     }
   ],
+  "power_pad_groups": {
+    "GND": 1,
+    "CORE_0V93": 1,
+    "3V3": 1,
+    "DRAM_1V5": 1,
+    "1V8": 1,
+    "VSYS": 1,
+    "SOC_LDO_1V8": 1
+  },
+  "placement_changes_from_main": [
+    {
+      "ref": "C16",
+      "before": [
+        "17.625",
+        "34.45",
+        "-90"
+      ],
+      "after": [
+        "16.85",
+        "34.75"
+      ]
+    },
+    {
+      "ref": "R1",
+      "before": [
+        "14.75",
+        "55.5",
+        "-90"
+      ],
+      "after": [
+        "14.3",
+        "55.4",
+        "-90"
+      ]
+    },
+    {
+      "ref": "C26",
+      "before": [
+        "29.3",
+        "5.425"
+      ],
+      "after": [
+        "29.3",
+        "4.9"
+      ]
+    },
+    {
+      "ref": "C14",
+      "before": [
+        "24.45",
+        "31.275"
+      ],
+      "after": [
+        "25.35",
+        "31.275"
+      ]
+    },
+    {
+      "ref": "U8",
+      "before": [
+        "6.1",
+        "37.5"
+      ],
+      "after": [
+        "5.8",
+        "37.35"
+      ]
+    },
+    {
+      "ref": "U9",
+      "before": [
+        "17.05",
+        "54.75",
+        "-90"
+      ],
+      "after": [
+        "16.825",
+        "54.7",
+        "-90"
+      ]
+    },
+    {
+      "ref": "D10",
+      "before": [
+        "24.1",
+        "28",
+        "-90"
+      ],
+      "after": [
+        "24.3",
+        "28",
+        "-90"
+      ]
+    },
+    {
+      "ref": "C34",
+      "before": [
+        "24.85",
+        "29.825"
+      ],
+      "after": [
+        "25.8",
+        "29.825"
+      ]
+    }
+  ],
+  "smd_lands_intersected_by_via_drills": 30,
   "ampacity_verified": false,
   "impedance_verified": false,
   "fabrication_released": false

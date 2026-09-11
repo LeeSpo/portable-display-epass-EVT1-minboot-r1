@@ -350,4 +350,14 @@
 	)
 	(embedded_fonts no)
 	(descr "Body outline corrected using manufacturer package drawing; existing peripheral copper and EP remain provisional")
+	(fp_circle
+		(center -2 -1.8)
+		(end -1.8599999999999999 -1.8)
+		(stroke
+			(width .05)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.Fab")
+	)
 )

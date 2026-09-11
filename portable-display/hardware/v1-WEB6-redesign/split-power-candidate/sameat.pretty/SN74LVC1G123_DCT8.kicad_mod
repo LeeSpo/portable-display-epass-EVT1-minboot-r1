@@ -153,4 +153,14 @@
 	)
 	(embedded_fonts no)
 	(descr "TI DCT0008A 4220784/D 10/2025 board layout, 3.8mm rows; https://www.ti.com/lit/ds/symlink/sn74lvc1g123.pdf")
+	(fp_circle
+		(center -1.1 -0.975)
+		(end -0.9700000000000001 -0.975)
+		(stroke
+			(width .05)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.Fab")
+	)
 )

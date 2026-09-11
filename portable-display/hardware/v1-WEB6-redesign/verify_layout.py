@@ -89,7 +89,7 @@ report={
  'ground_zones_unfilled':sum(1 for z in nodes(b,'zone') if val(one(z,'net_name',one(z,'net',['net','""']))[-1])=='GND' and not one(z,'keepout') and not nodes(z,'filled_polygon')),
  'screw_head_copper_keepouts_provisional_diameter_mm':5,
  'verification_basis':'Saved PCB. Courtyards conservatively enclosed by rectangles; oval/rounded pads enclosed by rectangles. Screw-head D5 regions are provisional, not manufacturer dimensions.',
- 'limitations':['Geometry checks do not establish electrical completion; consult the matching native DRC report','No synchronized candidate schematic/ERC verification','0.60/0.30 mm via fanout remains constrained','HS_IMPEDANCE_TBD and POWER_PROVISIONAL are not solved impedance or ampacity','No timing/thermal validation','No FPC fold, card insertion, USB reach, or 3D collision sign-off','No library-to-manufacturer footprint verification','Minimum gap is courtyard-to-courtyard, NOT lead pitch or via pitch','Panel supply working point remains unconfirmed']
+ 'limitations':['Geometry checks do not establish electrical completion; consult the matching native DRC report','No synchronized candidate schematic/ERC verification','0.60/0.30 mm via fanout remains constrained','HS_IMPEDANCE_TBD and POWER_PROVISIONAL are not solved impedance or ampacity','No timing/thermal validation','No FPC fold, card insertion, USB reach, or 3D collision sign-off','Manufacturer footprint checks are outside this geometry script; see the candidate FOOTPRINT_REVIEW_CN.md for the seven-IC audit','Minimum gap is courtyard-to-courtyard, NOT lead pitch or via pitch','Panel supply working point remains unconfirmed']
 }
 output.write_text(json.dumps(report,ensure_ascii=False,indent=2))
 print(json.dumps(report,ensure_ascii=False,indent=2))

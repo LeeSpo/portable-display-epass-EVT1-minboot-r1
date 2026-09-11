@@ -1,0 +1,606 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-11T11:36:22",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "work.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Items shorting two nets (nets CORE_0V93 and VSYS)",
+            "items": [
+                {
+                    "description": "Pad 2 [CORE_0V93] of L2 on F.Cu",
+                    "pos": {
+                        "x": 31.4,
+                        "y": 52.0
+                    },
+                    "uuid": "3f8160ca-0574-5832-945b-d3da5386cf9a"
+                },
+                {
+                    "description": "Via [VSYS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 31.0,
+                        "y": 50.9
+                    },
+                    "uuid": "f31fbd19-ad0d-5000-bf7f-d8289d58ab53"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1270 mm; actual 0.0518 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [CORE_0V93] of L2 on F.Cu",
+                    "pos": {
+                        "x": 31.4,
+                        "y": 52.0
+                    },
+                    "uuid": "3f8160ca-0574-5832-945b-d3da5386cf9a"
+                },
+                {
+                    "description": "Track [VSYS] on F.Cu, length 0.5000 mm",
+                    "pos": {
+                        "x": 30.5,
+                        "y": 50.9
+                    },
+                    "uuid": "fe68dc22-a026-5de0-8dfa-5adf380f00ad"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets LX_CORE and CORE_0V93)",
+            "items": [
+                {
+                    "description": "Pad 1 [LX_CORE] of L2 on F.Cu",
+                    "pos": {
+                        "x": 29.3,
+                        "y": 52.0
+                    },
+                    "uuid": "93ce6069-721c-5be1-91f3-7147ab63513a"
+                },
+                {
+                    "description": "Track [CORE_0V93] on F.Cu, length 1.8000 mm",
+                    "pos": {
+                        "x": 29.0,
+                        "y": 51.2
+                    },
+                    "uuid": "fac15016-c94a-50f8-8462-22bc2afcd3ba"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets CORE_0V93 and LX_CORE)",
+            "items": [
+                {
+                    "description": "Track [CORE_0V93] on F.Cu, length 1.0000 mm",
+                    "pos": {
+                        "x": 28.0,
+                        "y": 51.2
+                    },
+                    "uuid": "7b4cd051-3edc-591c-a8f0-14fe39b0e949"
+                },
+                {
+                    "description": "Pad 1 [LX_CORE] of L2 on F.Cu",
+                    "pos": {
+                        "x": 29.3,
+                        "y": 52.0
+                    },
+                    "uuid": "93ce6069-721c-5be1-91f3-7147ab63513a"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1270 mm; actual 0.0365 mm)",
+            "items": [
+                {
+                    "description": "Track [CORE_0V93] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 29.0,
+                        "y": 53.0
+                    },
+                    "uuid": "19afd97b-7d22-5d64-bd40-ddd3c62d2173"
+                },
+                {
+                    "description": "Pad 1 [LX_CORE] of L2 on F.Cu",
+                    "pos": {
+                        "x": 29.3,
+                        "y": 52.0
+                    },
+                    "uuid": "93ce6069-721c-5be1-91f3-7147ab63513a"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets GND and DRAM_1V5)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C7 on F.Cu",
+                    "pos": {
+                        "x": 34.6,
+                        "y": 53.5
+                    },
+                    "uuid": "ac4ecac6-eab3-5da3-97fd-878e1b43d19f"
+                },
+                {
+                    "description": "Track [DRAM_1V5] on F.Cu, length 2.2500 mm",
+                    "pos": {
+                        "x": 34.2,
+                        "y": 51.6
+                    },
+                    "uuid": "e3636859-3434-5fb8-b495-e0230974600e"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets GND and DRAM_1V5)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C7 on F.Cu",
+                    "pos": {
+                        "x": 34.6,
+                        "y": 53.5
+                    },
+                    "uuid": "ac4ecac6-eab3-5da3-97fd-878e1b43d19f"
+                },
+                {
+                    "description": "Track [DRAM_1V5] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 34.2,
+                        "y": 53.85
+                    },
+                    "uuid": "bd0cc489-44a2-5cc8-bafd-a373a26ada90"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets GND and DRAM_1V5)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C7 on F.Cu",
+                    "pos": {
+                        "x": 34.6,
+                        "y": 53.5
+                    },
+                    "uuid": "ac4ecac6-eab3-5da3-97fd-878e1b43d19f"
+                },
+                {
+                    "description": "Track [DRAM_1V5] on F.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 34.25,
+                        "y": 53.9
+                    },
+                    "uuid": "ad355d3c-471a-5024-9a07-8ab98072b3be"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets GND and DRAM_1V5)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C6 on F.Cu",
+                    "pos": {
+                        "x": 34.6,
+                        "y": 52.0
+                    },
+                    "uuid": "3e7d8114-ef62-5aaa-87ba-bf9f86adce3d"
+                },
+                {
+                    "description": "Track [DRAM_1V5] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 34.15,
+                        "y": 51.45
+                    },
+                    "uuid": "8ca5124e-61b4-50be-b708-03034611bed2"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Clearance violation ( clearance 0.1270 mm; actual 0.0302 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [GND] of C6 on F.Cu",
+                    "pos": {
+                        "x": 34.6,
+                        "y": 52.0
+                    },
+                    "uuid": "3e7d8114-ef62-5aaa-87ba-bf9f86adce3d"
+                },
+                {
+                    "description": "Track [DRAM_1V5] on F.Cu, length 1.4849 mm",
+                    "pos": {
+                        "x": 33.1,
+                        "y": 50.4
+                    },
+                    "uuid": "6546b55b-2c4a-5f80-a98e-b311cecb4244"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets DRAM_1V5 and GND)",
+            "items": [
+                {
+                    "description": "Track [DRAM_1V5] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 34.25,
+                        "y": 53.95
+                    },
+                    "uuid": "51480e24-ac66-5d25-95ba-0da787d1dea8"
+                },
+                {
+                    "description": "Pad 2 [GND] of C7 on F.Cu",
+                    "pos": {
+                        "x": 34.6,
+                        "y": 53.5
+                    },
+                    "uuid": "ac4ecac6-eab3-5da3-97fd-878e1b43d19f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets DRAM_1V5 and GND)",
+            "items": [
+                {
+                    "description": "Track [DRAM_1V5] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 34.15,
+                        "y": 51.55
+                    },
+                    "uuid": "131eafe7-049a-5d43-8596-3b78cd24a95b"
+                },
+                {
+                    "description": "Pad 2 [GND] of C6 on F.Cu",
+                    "pos": {
+                        "x": 34.6,
+                        "y": 52.0
+                    },
+                    "uuid": "3e7d8114-ef62-5aaa-87ba-bf9f86adce3d"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Items shorting two nets (nets DRAM_1V5 and GND)",
+            "items": [
+                {
+                    "description": "Track [DRAM_1V5] on F.Cu, length 0.5000 mm",
+                    "pos": {
+                        "x": 34.3,
+                        "y": 54.0
+                    },
+                    "uuid": "089131bc-83ff-584d-835a-a838c868602b"
+                },
+                {
+                    "description": "Pad 2 [GND] of C7 on F.Cu",
+                    "pos": {
+                        "x": 34.6,
+                        "y": 53.5
+                    },
+                    "uuid": "ac4ecac6-eab3-5da3-97fd-878e1b43d19f"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0518 mm)",
+            "items": [
+                {
+                    "description": "Pad 2 [CORE_0V93] of L2 on F.Cu",
+                    "pos": {
+                        "x": 31.4,
+                        "y": 52.0
+                    },
+                    "uuid": "3f8160ca-0574-5832-945b-d3da5386cf9a"
+                },
+                {
+                    "description": "Via [VSYS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 31.0,
+                        "y": 50.9
+                    },
+                    "uuid": "f31fbd19-ad0d-5000-bf7f-d8289d58ab53"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [CORE_0V93] on F.Cu, length 1.0000 mm",
+                    "pos": {
+                        "x": 28.0,
+                        "y": 51.2
+                    },
+                    "uuid": "7b4cd051-3edc-591c-a8f0-14fe39b0e949"
+                },
+                {
+                    "description": "Pad 1 [LX_CORE] of L2 on F.Cu",
+                    "pos": {
+                        "x": 29.3,
+                        "y": 52.0
+                    },
+                    "uuid": "93ce6069-721c-5be1-91f3-7147ab63513a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Via [VSYS] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 31.0,
+                        "y": 50.9
+                    },
+                    "uuid": "f31fbd19-ad0d-5000-bf7f-d8289d58ab53"
+                },
+                {
+                    "description": "Pad 2 [CORE_0V93] of L2 on F.Cu",
+                    "pos": {
+                        "x": 31.4,
+                        "y": 52.0
+                    },
+                    "uuid": "3f8160ca-0574-5832-945b-d3da5386cf9a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [DRAM_1V5] on F.Cu, length 0.5000 mm",
+                    "pos": {
+                        "x": 34.3,
+                        "y": 54.0
+                    },
+                    "uuid": "089131bc-83ff-584d-835a-a838c868602b"
+                },
+                {
+                    "description": "Pad 2 [GND] of C7 on F.Cu",
+                    "pos": {
+                        "x": 34.6,
+                        "y": 53.5
+                    },
+                    "uuid": "ac4ecac6-eab3-5da3-97fd-878e1b43d19f"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [DRAM_1V5] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 34.15,
+                        "y": 51.55
+                    },
+                    "uuid": "131eafe7-049a-5d43-8596-3b78cd24a95b"
+                },
+                {
+                    "description": "Pad 2 [GND] of C6 on F.Cu",
+                    "pos": {
+                        "x": 34.6,
+                        "y": 52.0
+                    },
+                    "uuid": "3e7d8114-ef62-5aaa-87ba-bf9f86adce3d"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [DRAM_1V5] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 34.25,
+                        "y": 53.95
+                    },
+                    "uuid": "51480e24-ac66-5d25-95ba-0da787d1dea8"
+                },
+                {
+                    "description": "Pad 2 [GND] of C7 on F.Cu",
+                    "pos": {
+                        "x": 34.6,
+                        "y": 53.5
+                    },
+                    "uuid": "ac4ecac6-eab3-5da3-97fd-878e1b43d19f"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [CORE_0V93] on F.Cu, length 1.8000 mm",
+                    "pos": {
+                        "x": 29.0,
+                        "y": 51.2
+                    },
+                    "uuid": "fac15016-c94a-50f8-8462-22bc2afcd3ba"
+                },
+                {
+                    "description": "Pad 1 [LX_CORE] of L2 on F.Cu",
+                    "pos": {
+                        "x": 29.3,
+                        "y": 52.0
+                    },
+                    "uuid": "93ce6069-721c-5be1-91f3-7147ab63513a"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [DRAM_1V5] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 34.15,
+                        "y": 51.45
+                    },
+                    "uuid": "8ca5124e-61b4-50be-b708-03034611bed2"
+                },
+                {
+                    "description": "Pad 2 [GND] of C6 on F.Cu",
+                    "pos": {
+                        "x": 34.6,
+                        "y": 52.0
+                    },
+                    "uuid": "3e7d8114-ef62-5aaa-87ba-bf9f86adce3d"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [DRAM_1V5] on F.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 34.25,
+                        "y": 53.9
+                    },
+                    "uuid": "ad355d3c-471a-5024-9a07-8ab98072b3be"
+                },
+                {
+                    "description": "Pad 2 [GND] of C7 on F.Cu",
+                    "pos": {
+                        "x": 34.6,
+                        "y": 53.5
+                    },
+                    "uuid": "ac4ecac6-eab3-5da3-97fd-878e1b43d19f"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [DRAM_1V5] on F.Cu, length 0.0707 mm",
+                    "pos": {
+                        "x": 34.2,
+                        "y": 53.85
+                    },
+                    "uuid": "bd0cc489-44a2-5cc8-bafd-a373a26ada90"
+                },
+                {
+                    "description": "Pad 2 [GND] of C7 on F.Cu",
+                    "pos": {
+                        "x": 34.6,
+                        "y": 53.5
+                    },
+                    "uuid": "ac4ecac6-eab3-5da3-97fd-878e1b43d19f"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [DRAM_1V5] on F.Cu, length 2.2500 mm",
+                    "pos": {
+                        "x": 34.2,
+                        "y": 51.6
+                    },
+                    "uuid": "e3636859-3434-5fb8-b495-e0230974600e"
+                },
+                {
+                    "description": "Pad 2 [GND] of C7 on F.Cu",
+                    "pos": {
+                        "x": 34.6,
+                        "y": 53.5
+                    },
+                    "uuid": "ac4ecac6-eab3-5da3-97fd-878e1b43d19f"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Front solder mask aperture bridges items with different nets",
+            "items": [
+                {
+                    "description": "Track [DRAM_1V5] on F.Cu, length 2.2500 mm",
+                    "pos": {
+                        "x": 34.2,
+                        "y": 51.6
+                    },
+                    "uuid": "e3636859-3434-5fb8-b495-e0230974600e"
+                },
+                {
+                    "description": "Pad 2 [GND] of C6 on F.Cu",
+                    "pos": {
+                        "x": 34.6,
+                        "y": 52.0
+                    },
+                    "uuid": "3e7d8114-ef62-5aaa-87ba-bf9f86adce3d"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [CORE_0V93] on F.Cu, length 1.0523 mm",
+                    "pos": {
+                        "x": 33.0,
+                        "y": 53.5
+                    },
+                    "uuid": "e8a7899b-cfeb-41d0-941e-d0629e10822f"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

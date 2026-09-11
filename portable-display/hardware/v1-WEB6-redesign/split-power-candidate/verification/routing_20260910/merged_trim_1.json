@@ -1,0 +1,10 @@
+{
+  "centered": [],
+  "removed": [
+    {
+      "uuid": "9af5131b-959a-5648-84cd-cf4e33e879c7",
+      "net": "CORE_0V93",
+      "reason": "track_dangling"
+    }
+  ]
+}

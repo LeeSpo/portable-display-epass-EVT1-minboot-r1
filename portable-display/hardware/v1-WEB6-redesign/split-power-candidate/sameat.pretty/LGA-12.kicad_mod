@@ -201,4 +201,14 @@
 	)
 	(embedded_fonts no)
 	(descr "ST LIS2DW12 DS11811 Rev9 pp4,56 and TN0018 section3.7; 4-2-4-2 pad positions; https://www.st.com/resource/en/datasheet/lis2dw12.pdf")
+	(fp_circle
+		(center -0.65 -0.65)
+		(end -0.55 -0.65)
+		(stroke
+			(width .05)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.Fab")
+	)
 )

@@ -1,0 +1,15 @@
+{
+  "centered": [],
+  "removed": [
+    {
+      "uuid": "df326577-bf94-547e-a44d-98a312451d12",
+      "net": "USB_CC2",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "2c68d4bd-e0b3-5449-bacc-aa1d06fe4451",
+      "net": "LCD_EN",
+      "reason": "track_dangling"
+    }
+  ]
+}
