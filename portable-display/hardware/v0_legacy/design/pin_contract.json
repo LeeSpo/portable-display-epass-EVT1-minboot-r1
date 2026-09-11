@@ -1001,27 +1001,27 @@
         },
         "56": {
           "name": "PC1_SPI0_CS",
-          "net": "NAND_CS"
+          "net": null
         },
         "57": {
           "name": "PC0_SPI0_CLK",
-          "net": "NAND_CLK"
+          "net": null
         },
         "58": {
           "name": "PC3_SPI0_MISO_BOOT1",
-          "net": "NAND_MISO"
+          "net": "BOOT1"
         },
         "59": {
           "name": "PC2_SPI0_MOSI_BOOT0",
-          "net": "NAND_MOSI"
+          "net": "BOOT0"
         },
         "60": {
           "name": "PC5_SPI0_HOLD",
-          "net": "NAND_HOLD"
+          "net": null
         },
         "61": {
           "name": "PC4_SPI0_WP",
-          "net": "NAND_WP"
+          "net": null
         },
         "62": {
           "name": "VCC_PA_MCSI",
@@ -1370,105 +1370,6 @@
         }
       }
     },
-    "U3": {
-      "value": "W25N01GVZEIG",
-      "footprint": "Sameat:WSON-8",
-      "sheet": "soc",
-      "pins": {
-        "1": {
-          "name": "CS",
-          "net": "NAND_CS"
-        },
-        "2": {
-          "name": "MISO",
-          "net": "NAND_MISO"
-        },
-        "3": {
-          "name": "WP",
-          "net": "NAND_WP"
-        },
-        "4": {
-          "name": "GND",
-          "net": "GND"
-        },
-        "5": {
-          "name": "MOSI",
-          "net": "NAND_MOSI"
-        },
-        "6": {
-          "name": "CLK",
-          "net": "NAND_CLK"
-        },
-        "7": {
-          "name": "HOLD",
-          "net": "NAND_HOLD"
-        },
-        "8": {
-          "name": "VCC",
-          "net": "3V3"
-        }
-      }
-    },
-    "C22": {
-      "value": "100n",
-      "footprint": "Sameat:0402",
-      "sheet": "soc",
-      "pins": {
-        "1": {
-          "name": "1",
-          "net": "3V3"
-        },
-        "2": {
-          "name": "2",
-          "net": "GND"
-        }
-      }
-    },
-    "R7": {
-      "value": "10k",
-      "footprint": "Sameat:0402",
-      "sheet": "soc",
-      "pins": {
-        "1": {
-          "name": "1",
-          "net": "3V3"
-        },
-        "2": {
-          "name": "2",
-          "net": "NAND_CS"
-        }
-      }
-    },
-    "R8": {
-      "value": "10k",
-      "footprint": "Sameat:0402",
-      "sheet": "soc",
-      "pins": {
-        "1": {
-          "name": "1",
-          "net": "3V3"
-        },
-        "2": {
-          "name": "2",
-          "net": "NAND_WP"
-        }
-      }
-    },
-    "R9": {
-      "value": "10k",
-      "footprint": "Sameat:0402",
-      "sheet": "soc",
-      "pins": {
-        "1": {
-          "name": "1",
-          "net": "3V3"
-        },
-        "2": {
-          "name": "2",
-          "net": "NAND_HOLD"
-        }
-      }
-    },
     "J3": {
       "value": "DEBUG POGO",
       "footprint": "Sameat:HDR8",
@@ -1500,7 +1401,7 @@
         },
         "7": {
           "name": "FEL_PC2",
-          "net": "NAND_MOSI"
+          "net": "BOOT0"
         },
         "8": {
           "name": "PWRON_N",
@@ -1515,11 +1416,11 @@
       "pins": {
         "1": {
           "name": "FEL_PC2",
-          "net": "NAND_MOSI"
+          "net": "BOOT0"
         },
         "2": {
           "name": "FEL_PC2",
-          "net": "NAND_MOSI"
+          "net": "BOOT0"
         },
         "3": {
           "name": "GND",
@@ -1538,7 +1439,7 @@
         },
         "2": {
           "name": "2",
-          "net": "NAND_MOSI"
+          "net": "BOOT0"
         }
       }
     },
@@ -1553,7 +1454,7 @@
         },
         "2": {
           "name": "2",
-          "net": "NAND_MISO"
+          "net": "BOOT1"
         }
       }
     },

@@ -1,3 +1,9 @@
+## 2026-09-07 TF-only boot（去掉 SPI NAND）
+
+- 原理图 `02_soc_v851s.kicad_sch` 删除 U3 W25N01GV 及 R7/R8/R9/C22；PC2/PC3 改为 `BOOT0`/`BOOT1` 上拉，保留 FEL。
+- `design/pin_contract.json` 同步。WEB6 38×64 PCB 去掉对应封装与 NAND 铜线。
+- 58×110 的 `portable_display_epass.kicad_pcb` 仍是旧 EVT1 快照，含 NAND 岛；不要把它和当前原理图当成同一版去跑一致性检查。
+
 ## 2026-09-05 最小系统布线闭合
 
 - 补齐非显示信号和电源连接；原生 ERC / DRC / parity 无未解决项，保留 16 项显示未连接豁免。
