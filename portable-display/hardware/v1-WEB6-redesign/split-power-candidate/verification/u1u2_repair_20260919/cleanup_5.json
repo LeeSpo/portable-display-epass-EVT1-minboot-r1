@@ -1,0 +1,40 @@
+{
+  "centered": [],
+  "removed": [
+    {
+      "uuid": "730b8885-7358-56ab-98e5-950257a9d342",
+      "net": "DRAM_1V5",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "293ce259-e1aa-521b-bec0-762e0cc19498",
+      "net": "CORE_0V93",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "8207359f-f1a3-58c9-92a5-35de78d70b30",
+      "net": "CORE_0V93",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "2153ded0-418b-57ed-8667-a4a589a51897",
+      "net": "SD_DET",
+      "reason": "via_dangling"
+    },
+    {
+      "uuid": "eb6984b5-deff-595f-9fe2-666badcd6e53",
+      "net": "BOOT0",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "81975585-9cf6-5c3f-9dbd-8992e0259d3c",
+      "net": "CHGLED_N",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "49c0181f-3a87-505f-b9ca-faf8825f53d4",
+      "net": "LCD_RST",
+      "reason": "track_dangling"
+    }
+  ]
+}

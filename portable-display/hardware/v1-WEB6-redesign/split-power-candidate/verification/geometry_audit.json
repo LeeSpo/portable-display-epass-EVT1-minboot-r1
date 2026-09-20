@@ -7,9 +7,9 @@
   "footprints": 119,
   "all_front": true,
   "pad_net_map_matches": true,
-  "track_segments": 2439,
-  "vias": 230,
-  "board_sha256": "0936ef67ea554887cbe91614736e3e75637f2c097b439aacee3b80974dabdc9d",
+  "track_segments": 3316,
+  "vias": 248,
+  "board_sha256": "4e20633abbfaa8e60ab0ce2a67993ccdac4fafc891b56ac3ff77a26b16965893",
   "via_preset_mm": {
     "diameter": 0.6,
     "drill": 0.3

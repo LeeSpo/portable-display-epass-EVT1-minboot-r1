@@ -1,0 +1,30 @@
+{
+  "centered": [],
+  "removed": [
+    {
+      "uuid": "03d32528-9215-5d39-a4e2-c190b30ae81b",
+      "net": "DRAM_1V5",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "7977be3b-92ad-5ed1-888a-ec1e59676aa7",
+      "net": "CORE_0V93",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "a6539149-1de7-5225-b291-0e83af65e38b",
+      "net": "CORE_0V93",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "4b5947ac-e576-5389-b375-468cd7398e07",
+      "net": "CHGLED_N",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "e7c837aa-6eb8-555b-aa9a-b90ceef74260",
+      "net": "LCD_RST",
+      "reason": "track_dangling"
+    }
+  ]
+}

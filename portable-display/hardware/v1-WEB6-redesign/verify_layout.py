@@ -36,6 +36,8 @@ for r,f in inv.items():
     rad=math.radians(a)
     for p in f['pads']:
         if p['type']=='np_thru_hole':continue
+        # Stencil-only apertures have no copper and may intentionally overlap EP.
+        if not any('.Cu' in layer for layer in p['layers']):continue
         u,v,*pa=p['at'];pa=pa[0] if pa else 0
         px=x+u*math.cos(rad)+v*math.sin(rad);py=y-u*math.sin(rad)+v*math.cos(rad)
         w,h=p['size']
@@ -61,7 +63,9 @@ for name,g in reservations.items():
     for r,c in courts.items():
         if c.intersects(g):reserve.append([name,r])
 source=json.loads((ROOT/'source_pad_net_map.json').read_text())
-now={r:{p['pin']:p['net'] for p in f['pads']} for r,f in inv.items()}
+now={r:{p['pin']:p['net'] for p in f['pads']
+        if p['type']=='np_thru_hole' or any('.Cu' in layer for layer in p['layers'])}
+     for r,f in inv.items()}
 nseg=len(nodes(b,'segment'));nvia=len(nodes(b,'via'))
 digest=hashlib.sha256(path.read_bytes()).hexdigest()
 provenance_path=path.parent/'verification'/'drc_provenance.json'

@@ -1,7 +1,18 @@
 {
-  "board_sha256": "0936ef67ea554887cbe91614736e3e75637f2c097b439aacee3b80974dabdc9d",
-  "scope": "Drill intersects SMD copper; no process approval inferred",
+  "board_sha256": "4e20633abbfaa8e60ab0ce2a67993ccdac4fafc891b56ac3ff77a26b16965893",
+  "scope": "Drill intersects SMD copper; counts are via/pad intersections; no process approval inferred",
+  "intersections": 39,
+  "unique_vias": 38,
   "locations": [
+    {
+      "via": "0adc659d-f3c7-525a-b177-d5be0b023e90",
+      "pos": [
+        23.9,
+        25.3
+      ],
+      "pad": "C37.2",
+      "net": "GND"
+    },
     {
       "via": "158aa404-e702-5e3b-89be-f97c3060248a",
       "pos": [
@@ -48,12 +59,30 @@
       "net": "GND"
     },
     {
+      "via": "b6bdcae0-08e2-551e-b170-afb5cbdf3bec",
+      "pos": [
+        25.85,
+        31.275
+      ],
+      "pad": "C14.2",
+      "net": "GND"
+    },
+    {
       "via": "b916194e-b830-58a9-8ad0-9446c9fed459",
       "pos": [
         7.5,
         48.7
       ],
       "pad": "U10.13",
+      "net": "GND"
+    },
+    {
+      "via": "d409f59f-c0d2-5021-b2e0-14bb4d7fdb45",
+      "pos": [
+        8.9,
+        52.1
+      ],
+      "pad": "C51.2",
       "net": "GND"
     },
     {
@@ -120,6 +149,33 @@
       "net": "CORE_0V93"
     },
     {
+      "via": "2b421334-f0f3-57cd-b0a1-c316c0446ea3",
+      "pos": [
+        10.5,
+        22.7
+      ],
+      "pad": "R22.1",
+      "net": "1V8"
+    },
+    {
+      "via": "77b920cf-f432-57b2-a789-08ec86535f5c",
+      "pos": [
+        27.25,
+        50.15
+      ],
+      "pad": "U1.6",
+      "net": "VSYS"
+    },
+    {
+      "via": "77b920cf-f432-57b2-a789-08ec86535f5c",
+      "pos": [
+        27.25,
+        50.15
+      ],
+      "pad": "U1.7",
+      "net": "VSYS"
+    },
+    {
       "via": "ab793247-117e-559a-aaf4-f53b2651e7c4",
       "pos": [
         22.0,
@@ -183,6 +239,15 @@
       "net": "SD_PWR_EN"
     },
     {
+      "via": "06e22fa7-024f-55fe-a097-98480ea537ab",
+      "pos": [
+        26.6,
+        54.45
+      ],
+      "pad": "C32.1",
+      "net": "VBUS"
+    },
+    {
       "via": "c6d128f9-bfb7-54f3-b5c8-e1fb3350716d",
       "pos": [
         17.0,
@@ -219,10 +284,28 @@
       "net": "I2C0_SDA"
     },
     {
+      "via": "17ed47b4-415c-5c2d-b138-ed89720a4653",
+      "pos": [
+        24.3,
+        27.5
+      ],
+      "pad": "D10.1",
+      "net": "SD_D0"
+    },
+    {
       "via": "ccc35986-85d9-514b-860d-c306f4fd41c8",
       "pos": [
         30.2,
         29.45
+      ],
+      "pad": "J5.7",
+      "net": "SD_D0"
+    },
+    {
+      "via": "e91a89bc-6d3d-5d6e-9073-eb47bb24566c",
+      "pos": [
+        31.0,
+        29.75
       ],
       "pad": "J5.7",
       "net": "SD_D0"
@@ -272,5 +355,89 @@
       "pad": "U5.8",
       "net": "RTC_EVI"
     }
-  ]
+  ],
+  "new_intersections_this_repair": [
+    {
+      "via": "0adc659d-f3c7-525a-b177-d5be0b023e90",
+      "pos": [
+        23.9,
+        25.3
+      ],
+      "pad": "C37.2",
+      "net": "GND"
+    },
+    {
+      "via": "b6bdcae0-08e2-551e-b170-afb5cbdf3bec",
+      "pos": [
+        25.85,
+        31.275
+      ],
+      "pad": "C14.2",
+      "net": "GND"
+    },
+    {
+      "via": "d409f59f-c0d2-5021-b2e0-14bb4d7fdb45",
+      "pos": [
+        8.9,
+        52.1
+      ],
+      "pad": "C51.2",
+      "net": "GND"
+    },
+    {
+      "via": "2b421334-f0f3-57cd-b0a1-c316c0446ea3",
+      "pos": [
+        10.5,
+        22.7
+      ],
+      "pad": "R22.1",
+      "net": "1V8"
+    },
+    {
+      "via": "77b920cf-f432-57b2-a789-08ec86535f5c",
+      "pos": [
+        27.25,
+        50.15
+      ],
+      "pad": "U1.6",
+      "net": "VSYS"
+    },
+    {
+      "via": "77b920cf-f432-57b2-a789-08ec86535f5c",
+      "pos": [
+        27.25,
+        50.15
+      ],
+      "pad": "U1.7",
+      "net": "VSYS"
+    },
+    {
+      "via": "06e22fa7-024f-55fe-a097-98480ea537ab",
+      "pos": [
+        26.6,
+        54.45
+      ],
+      "pad": "C32.1",
+      "net": "VBUS"
+    },
+    {
+      "via": "17ed47b4-415c-5c2d-b138-ed89720a4653",
+      "pos": [
+        24.3,
+        27.5
+      ],
+      "pad": "D10.1",
+      "net": "SD_D0"
+    },
+    {
+      "via": "e91a89bc-6d3d-5d6e-9073-eb47bb24566c",
+      "pos": [
+        31.0,
+        29.75
+      ],
+      "pad": "J5.7",
+      "net": "SD_D0"
+    }
+  ],
+  "assembly_status": "Filled/capped process and stencil/reflow qualification required"
 }

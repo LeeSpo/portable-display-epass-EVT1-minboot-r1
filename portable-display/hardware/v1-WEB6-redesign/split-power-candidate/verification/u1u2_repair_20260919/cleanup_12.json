@@ -1,0 +1,25 @@
+{
+  "centered": [],
+  "removed": [
+    {
+      "uuid": "0dcdc840-1368-5e21-b07b-b91ee0dc4c39",
+      "net": "CORE_0V93",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "b4d4c73c-48d6-5c13-9029-a1861f98b79e",
+      "net": "CORE_0V93",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "1469a208-0aa0-5fdb-9658-673ef49d9890",
+      "net": "CHGLED_N",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "5f133a5f-5253-5d90-b681-1705c76d62f8",
+      "net": "LCD_RST",
+      "reason": "track_dangling"
+    }
+  ]
+}

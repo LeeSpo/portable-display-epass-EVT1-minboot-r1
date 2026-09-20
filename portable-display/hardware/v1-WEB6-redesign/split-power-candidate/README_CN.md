@@ -1,38 +1,37 @@
 # 四层分区供电候选
 
-2026-09-11：**布线连通和本轮封装修正已保存；原生 DRC 为 0 未连接、0 违规、0 告警。当前仍是工程候选，不是投板放行版本。**
+2026-09-20：**U1/U2 铜焊盘、EP 与钢网分窗已修复并同步本地库；最终主文件原生 DRC 为 0 未连接、0 违规、0 告警。当前为工程候选，尚未投板放行。**
 
-打开本目录 `ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pro` 或 `.kicad_pcb`。主 PCB 已更新，项目本地封装库为 `sameat.pretty`，请随工程保留。
+打开本目录 `ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pro` 或 `.kicad_pcb`，并保留 `sameat.pretty` 与 `fp-lib-table`。
 
-## 已完成
+## 本次修复
 
-- 补齐核心电源、接地铜区及 SD/控制信号连接，修复热连接、残线和过孔端点问题。
-- 按厂家资料重建 U4 LIS2DW12 的 4-2-4-2 焊盘排列和 U5 RV-3028-C7 的横向两排焊盘，恢复相关走线。
-- U6、U8、U9 使用本器件对应的推荐 land；U1/U2 修正真实本体的 F.Fab 轮廓。细节、图纸页码及未确认项见 [封装核查记录](FOOTPRINT_REVIEW_CN.md)。
-- 清理并重布 U9—J1 附近的 USB 路径。关键 MIPI、USB、SD_CLK、晶振、LX/SW 网络仍全部位于 F.Cu，无换层过孔；这只是层别检查，高速约束尚未签核。
-- 保留主工程 L2/C6/C7 的位置；为封装间距及走线调整 C14、C16、C26、C34、D10、R1、U8、U9。完整前后坐标见 `verification/assessment.json`。
-- 119 个封装均在正面，NAND 保持删除，逐引脚网络映射一致；38×64 mm 板框及安装孔位置保持不变。
+- U1 AXP2101：本体 5×5 mm、节距 0.40 mm；外围铜焊盘 0.70×0.20 mm、径向中心 ±2.40 mm；EP 3.40×3.40 mm，钢网 2×2 分窗。
+- U2 V851S：本体 9×9 mm、节距 0.35 mm；外围铜焊盘 0.70×0.18 mm、径向中心 ±4.40 mm；EP 6.50×6.50 mm，钢网 4×4 分窗。
+- 按新焊盘重新扇出，补齐供电/控制信号和接地连接，清理残线与多余过孔。C38 向下微移 0.40 mm，其余元件中心和旋转不变。
+- 119 个封装均在正面，逐引脚网络映射一致，NAND 保持删除，板框仍为 38×64 mm。此前 U4/U5/U6/U8/U9 的封装修正保持，详见 [封装核查记录](FOOTPRINT_REVIEW_CN.md)。
+- MIPI、USB、SD_CLK、晶振、LX/SW 仍全部在 F.Cu，无换层过孔；层别检查通过不代表高速性能合格。
 
 ## 层与验证
 
-| 层 | 当前用途 |
+| 层 | 用途 |
 |---|---|
-| F.Cu | 元件、关键线路、局部供电与接地铜 |
-| In1.Cu | GND，保存后为一个连续填充多边形，无信号走线 |
-| In2.Cu | VSYS、3V3、CORE_0V93、DRAM_1V5、1V8 电源区、GND 和少量局部信号跨接 |
-| B.Cu | 辅助信号及局部供电与接地铜 |
+| F.Cu | 元件、关键线路、局部供电及接地铜 |
+| In1.Cu | GND，一个连续填充多边形，无信号走线 |
+| In2.Cu | 分区供电、GND 及局部信号跨接 |
+| B.Cu | 辅助信号、局部供电及接地铜 |
 
-部分 In2 电源区被间隙/局部线路分成多个填充多边形；已通过其他铜层及过孔连通。GND 与六个复查电源网络的所有焊盘各属一个连通组，并由原生 DRC 确认没有未连接项。不能把多边形数或连通结果当作载流能力证明。
+In2 的走线总长由 14.2399 mm 增至 67.5065 mm，含供电和信号；具体网络长度见 `verification/assessment.json`。这会改变电源铜区形状，实际载流及回流路径仍需结合电流和层叠审核。
 
-KiCad 10.0.6 原生检查采用原有工程规则，未降低严重级别或增加豁免。二维几何检查通过：最小 courtyard 间距 0.302076 mm，不同网络焊盘最小间距 0.15 mm，未发现庭院/焊盘重叠或进入预留区。
+KiCad 10.0.6 按原工程规则检查，未改变规则、降低严重级别或新增豁免。GND 和六个复查电源网络的焊盘各为一个连通组。二维几何检查通过：最小 courtyard 间距 0.302076 mm，不同网络焊盘最小间距 0.15 mm，未进入预留区。
 
-## 交付文件
+## 文件与追溯
 
-- [四层预览](four_layers.png)，以及 `verification/layers/` 的四个 KiCad 原生 SVG。
-- `verification/drc.json` 和 `drc_provenance.json`：最终主板的 DRC、版本与文件哈希。
-- `verification/geometry_audit.json`：二维几何与引脚网络映射。
-- `verification/assessment.json`：关键网络层别、铜线总长、铜区和最终摆件变动。
-- `verification/via_in_pad_audit.json`：钻孔与 SMD 焊盘相交位置。
-- `verification/routing_20260910/main_before_promote_20260911.kicad_pcb`：覆盖主板前的完整备份；该目录其余文件为过程检查点，不能替代最终 `verification/drc.json`。
+- [四层预览](four_layers.png)，四个原生 SVG 位于 `verification/layers/`。
+- `verification/drc.json`、`drc_provenance.json`：与最终主文件哈希对应的 DRC。
+- `verification/geometry_audit.json`、`assessment.json`：几何、引脚网络、层别、铜线长度及摆件变化。
+- `verification/u1_u2_repair_audit.json`：本次封装、钢网、网络与接地核查。
+- `verification/via_in_pad_audit.json`：39 处钻孔/SMD 焊盘相交记录，涉及 38 个不同过孔，仍须确认填孔封帽和装联工艺。
+- `verification/u1u2_repair_20260919/before_promotion/`：本轮覆盖前的 PCB、两个 QFN 库和旧报告备份；同级过程检查点仅供追溯。
 
-U1/U2 推荐焊盘、高速差分线、焊盘内过孔工艺、实际层叠/载流、J4 机械接口及原理图/ERC 仍需验收，见 [未完成项](OPEN_ISSUES_CN.md)。尚未生成或提交生产订单。
+本轮 land 是根据厂家机械图制定的工程设计，仍需装联资格确认；高速差分线、实际层叠/载流、J4 机械接口及原理图/ERC 的未完成项见 [验收记录](OPEN_ISSUES_CN.md)。没有生成生产 Gerber 或提交生产订单。
