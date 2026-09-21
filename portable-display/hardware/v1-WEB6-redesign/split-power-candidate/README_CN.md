@@ -4,6 +4,8 @@
 
 打开本目录 `ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pro` 或 `.kicad_pcb`，并保留 `sameat.pretty` 与 `fp-lib-table`。
 
+2026-09-20 电源复核补充：现已提供同名 `.kicad_sch`、四张子原理图及 `sameat.kicad_sym`/`sym-lib-table`，对应当前 115 个电气器件；四个机械孔只在 PCB 中。电源连接及采购要求见 [电源审查](POWER_REVIEW_CN.md)。**嘉立创 C3036461 的出厂电压/使能/时序尚未确认，电源冷启动仍未关闭。** 本轮未修改 PCB。新增原生检查和逐脚比对位于 `verification/power_review_20260920/`，原有检查记录保留用于追溯。
+
 ## 本次修复
 
 - U1 AXP2101：本体 5×5 mm、节距 0.40 mm；外围铜焊盘 0.70×0.20 mm、径向中心 ±2.40 mm；EP 3.40×3.40 mm，钢网 2×2 分窗。
@@ -34,4 +36,4 @@ KiCad 10.0.6 按原工程规则检查，未改变规则、降低严重级别或�
 - `verification/via_in_pad_audit.json`：39 处钻孔/SMD 焊盘相交记录，涉及 38 个不同过孔，仍须确认填孔封帽和装联工艺。
 - `verification/u1u2_repair_20260919/before_promotion/`：本轮覆盖前的 PCB、两个 QFN 库和旧报告备份；同级过程检查点仅供追溯。
 
-本轮 land 是根据厂家机械图制定的工程设计，仍需装联资格确认；高速差分线、实际层叠/载流、J4 机械接口及原理图/ERC 的未完成项见 [验收记录](OPEN_ISSUES_CN.md)。没有生成生产 Gerber 或提交生产订单。
+本轮 land 是根据厂家机械图制定的工程设计，仍需装联资格确认；高速差分线、实际层叠/载流、J4 机械接口及功能验收的未完成项见 [验收记录](OPEN_ISSUES_CN.md)。新增原理图用于连接审查，不能替代电源默认配置或实板验证。没有生成生产 Gerber 或提交生产订单。

@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "scope": "Static power wiring and procurement requirements, not verified OTP or measurements",
+  "platform": "JLCPCB/LCSC",
+  "part": "AXP2101",
+  "part_number": "C3036461",
+  "factory_configuration_verified": false,
+  "expected_pins": {
+    "U1": {
+      "2": "VREF",
+      "3": "GND",
+      "4": "CORE_0V93",
+      "5": "LX_CORE",
+      "6": "VSYS",
+      "7": "VSYS",
+      "8": "LX_DRAM",
+      "9": "DRAM_1V5",
+      "13": "3V3",
+      "17": "3V3",
+      "18": "1V8",
+      "21": "3V3",
+      "22": "LX_3V3",
+      "23": "VSYS",
+      "24": "VSYS",
+      "25": "NC",
+      "26": "NC",
+      "27": "PMIC_BACKUP",
+      "28": "RTC_3V3",
+      "29": "NC",
+      "30": "PWRON_N",
+      "31": "BAT_NTC",
+      "32": "NC",
+      "33": "VBAT",
+      "34": "VSYS",
+      "35": "NC",
+      "36": "VMID",
+      "37": "VBUS",
+      "38": "PMIC_IRQ_N",
+      "39": "PMIC_SDA",
+      "40": "PMIC_SCL",
+      "41": "GND"
+    },
+    "U2": {
+      "5": "3V3",
+      "13": "CORE_0V93",
+      "14": "SOC_LDO_1V8",
+      "17": "CORE_0V93",
+      "22": "3V3",
+      "33": "CORE_0V93",
+      "34": "DRAM_1V5",
+      "35": "CORE_0V93",
+      "36": "DRAM_1V5",
+      "37": "1V8",
+      "44": "3V3",
+      "47": "3V3",
+      "48": "SOC_AVCC",
+      "50": "VRA1",
+      "51": "GND",
+      "54": "CORE_0V93",
+      "55": "3V3",
+      "62": "1V8",
+      "75": "CORE_0V93",
+      "78": "3V3",
+      "79": "1V8",
+      "88": "CORE_0V93",
+      "89": "GND"
+    },
+    "L1": {
+      "1": "LX_3V3",
+      "2": "3V3"
+    },
+    "L2": {
+      "1": "LX_CORE",
+      "2": "CORE_0V93"
+    },
+    "L3": {
+      "1": "LX_DRAM",
+      "2": "DRAM_1V5"
+    },
+    "C38": {
+      "1": "VMID",
+      "2": "GND"
+    },
+    "C34": {
+      "1": "SOC_LDO_1V8",
+      "2": "GND"
+    },
+    "C37": {
+      "1": "SOC_LDO_1V8",
+      "2": "GND"
+    },
+    "C35": {
+      "1": "SOC_AVCC",
+      "2": "GND"
+    },
+    "C10": {
+      "1": "1V8",
+      "2": "GND"
+    },
+    "C33": {
+      "1": "RTC_3V3",
+      "2": "GND"
+    },
+    "J2": {
+      "1": "VBAT",
+      "2": "BAT_NTC",
+      "3": "GND"
+    }
+  },
+  "rail_requirements": [
+    {
+      "net": "3V3",
+      "regulator": "DCDC1",
+      "target_v": 3.3,
+      "enabled_before_cpu_boot_required": true,
+      "voltage_register": "0x82",
+      "mask": "0x1f",
+      "target_code": "0x12",
+      "observed_factory_value": null
+    },
+    {
+      "net": "CORE_0V93",
+      "regulator": "DCDC3",
+      "target_v": 0.93,
+      "enabled_before_cpu_boot_required": true,
+      "voltage_register": "0x84",
+      "mask": "0x7f",
+      "target_code": "0x2b",
+      "observed_factory_value": null
+    },
+    {
+      "net": "DRAM_1V5",
+      "regulator": "DCDC4",
+      "target_v": 1.5,
+      "enabled_before_cpu_boot_required": true,
+      "voltage_register": "0x85",
+      "mask": "0x7f",
+      "target_code": "0x55",
+      "observed_factory_value": null
+    },
+    {
+      "net": "1V8",
+      "regulator": "ALDO1",
+      "target_v": 1.8,
+      "enabled_before_cpu_boot_required": true,
+      "voltage_register": "0x92",
+      "mask": "0x1f",
+      "target_code": "0x0d",
+      "observed_factory_value": null
+    }
+  ],
+  "rtc_requirement": {
+    "net": "RTC_3V3",
+    "target_v": 3.3,
+    "enabled_during_pmic_off_required": true,
+    "observed_factory_value": null
+  },
+  "unused_dcdc_default_disabled": [
+    "DCDC2",
+    "DCDC5"
+  ],
+  "sequence_requirements": [
+    "DCDC1 3V3 starts first",
+    "Core ramp starts at least 1 ms after internal LDOA/PLL stable, conservative reading of V851S section 2.3.5",
+    "Internal reset timing >=8 ms relative to core as shown in Figure 2-2; not an external PH0 reset pin"
+  ],
+  "evidence_document": "POWER_REVIEW_CN.md"
+}
