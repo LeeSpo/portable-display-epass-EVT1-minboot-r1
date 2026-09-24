@@ -17,7 +17,7 @@ import generate_evt1 as g
 import kicad_sexpr as s
 
 STEM = 'ak_display_38x64_SPLIT_POWER_CANDIDATE'
-DATE = '2026-09-20'
+DATE = '2026-09-24'
 original_pin_type = g.pin_type
 
 
@@ -52,6 +52,9 @@ def main():
     g.pin_type = pin_type
     board = s.load(BASE / f'{STEM}.kicad_pcb')
     records = {d.ref: copy.deepcopy(d) for d in g.devices()}
+    records['R32'] = copy.deepcopy(records['R20'])
+    records['R32'].ref = 'R32'
+    records['R32'].sheet = 'interfaces'
     devices = []
     for fp in s.children(board, 'footprint'):
         props = s.props(fp)
@@ -82,20 +85,22 @@ def main():
     root = s.loads(root_text)
     s.child(s.child(root,'title_block'),'title')[1] = s.Q('38x64 split-power candidate - connectivity schematic')
     s.child(s.child(root,'title_block'),'comment')[2] = s.Q('Power configuration incomplete: C3036461 factory profile not confirmed')
-    s.child(root, 'text')[1] = s.Q('PCB connectivity reconstructed from the current candidate.\nPower targets are requirements, NOT measured/default outputs.\nRead POWER_REVIEW_CN.md before ordering PCBA.\nUSB / TF / wake / display fixes are separate work items.')
+    s.child(root, 'text')[1] = s.Q('PCB connectivity reconstructed from the current candidate.\nPower targets are requirements, NOT measured/default outputs.\nRead POWER_REVIEW_CN.md before ordering PCBA.\nTF default ON: PH12 low or Hi-Z = ON; high = OFF.\nDisplay RESET = PA8; TE = PA9; both share the 1V8 domain.\nUSB / wake / display power and timing remain separate work items.')
     all_libs = []
     for sheet, sheet_uuid in sheets.items():
         tree = s.loads(g.schematic_for_sheet(sheet, devices, g.uid('root-schematic'), sheet_uuid))
         selected = [d for d in devices if d.sheet == sheet]
         # Variable-height column packing prevents USB and SoC symbols overlapping.
         tops = [35.56] * 4
+        top_margin = 5.08 if sheet == 'interfaces' else 6.35
+        bottom_gap = 10.16 if sheet == 'interfaces' else 12.7
         objects = {s.val(x,'uuid'): x for x in tree if isinstance(x,list) and s.val(x,'uuid')}
         for d in sorted(selected, key=lambda d: -len(d.pins)):
             obj = objects[g.uid('symbol-'+d.ref)]
             half = max(5.08, (((len(d.pins)+1)//2)-1)*2.54/2+1.27)
             col = min(range(4), key=lambda c: tops[c])
             x = 63.5 + 132.08*col
-            y = round((tops[col]+half+6.35)/1.27)*1.27
+            y = round((tops[col]+half+top_margin)/1.27)*1.27
             old = s.child(obj,'at')
             dx, dy = x-float(old[1]), y-float(old[2])
             translate(obj, dx, dy)
@@ -103,8 +108,8 @@ def main():
                 for prefix in ['label','nc']:
                     label = objects.get(g.uid(f'{prefix}-{d.ref}-{num}'))
                     if label: translate(label, dx, dy)
-            tops[col] = y+half+12.7
-        assert max(tops) < 365, (sheet,tops)
+            tops[col] = y+half+bottom_gap
+        assert max(tops) < (347 if sheet == 'interfaces' else 365), (sheet,tops)
         # Supply flags certify only physical external feeds and inductor outputs.
         # They do not certify actual voltage, OTP state or load capability.
         for idx in range(6):
@@ -113,10 +118,20 @@ def main():
                 if obj:
                     old = s.child(obj,'at')
                     translate(obj, 50.8+idx*76.2-float(old[1]), 381-float(old[2]))
+        if sheet == 'interfaces':
+            tree.append(['text', s.Q('TF POWER: R20 10k to GND; R21 100R. PH12 / SD_PWR_EN: LOW or Hi-Z = ON, HIGH = OFF.\n3V3 must be valid before boot. Card detection / cold-start waveforms still require hardware validation.'),
+                         ['at', '38.1', '370.84', '0'],
+                         ['effects', ['font', ['size', '1.27', '1.27']], ['justify', 'left']],
+                         ['uuid', s.Q(g.uid('tf-default-on-note'))]])
+        if sheet in {'interfaces', 'soc'}:
+            tree.append(['text', s.Q('DISPLAY GPIO: PA8 (U2.66) -> LCD_RST; PA9 / EINT9 (U2.65) <- LCD_TE. Both use 1V8.\nR32 10k holds reset LOW at boot. R29 must remain fitted 0R; VDDIO must share the PA supply.\nUpdate firmware pin assignments; PD19 / PD20 are now unconnected. See DISPLAY_IO_REPAIR_CN.md.'),
+                         ['at', '38.1', '358.14' if sheet == 'interfaces' else '370.84', '0'],
+                         ['effects', ['font', ['size', '1.27', '1.27']], ['justify', 'left']],
+                         ['uuid', s.Q(g.uid('display-io-note-' + sheet))]])
         all_libs += [copy.deepcopy(x) for x in s.children(s.child(tree,'lib_symbols'),'symbol')]
         for title in [s.child(tree,'title_block')]:
             s.child(title,'date')[1] = s.Q(DATE)
-            s.child(title,'rev')[1] = s.Q('PWR-REVIEW1')
+            s.child(title,'rev')[1] = s.Q('LCD-IO1')
             for comment in s.children(title,'comment'):
                 if comment[1] == '1': comment[2] = s.Q('Current PCB pin nets; C3036461 factory configuration NOT verified')
         replace_atoms(tree, 'portable_display_epass', STEM)
@@ -124,7 +139,7 @@ def main():
         s.dump(tree, BASE / f'{filename}.kicad_sch')
     replace_atoms(root, 'portable_display_epass', STEM)
     s.child(s.child(root,'title_block'),'date')[1] = s.Q(DATE)
-    s.child(s.child(root,'title_block'),'rev')[1] = s.Q('PWR-REVIEW1')
+    s.child(s.child(root,'title_block'),'rev')[1] = s.Q('LCD-IO1')
     s.dump(root, BASE / f'{STEM}.kicad_sch')
     unique = {}
     for symbol in all_libs:

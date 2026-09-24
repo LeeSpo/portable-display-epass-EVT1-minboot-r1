@@ -1,0 +1,20 @@
+[
+  {
+    "case": "pull_up_regression",
+    "rejected": true,
+    "problems": [
+      "Power contract R20.1: expected GND, got 3V3",
+      "Schematic mismatch R20.1: PCB=3V3, schematic=GND"
+    ],
+    "note": "Native reports are unchanged; this tests only the independent pin/value and netlist contract."
+  },
+  {
+    "case": "series_resistor_regression",
+    "rejected": true,
+    "problems": [
+      "Value contract R21: expected 100, got 10k",
+      "Schematic value mismatch R21: PCB=10k, schematic=100"
+    ],
+    "note": "Native reports are unchanged; this tests only the independent pin/value and netlist contract."
+  }
+]

@@ -6,8 +6,8 @@
 	(paper "A2")
 	(title_block
 		(title "02 V851s / Boot / Storage")
-		(date "2026-09-20")
-		(rev "PWR-REVIEW1")
+		(date "2026-09-24")
+		(rev "LCD-IO1")
 		(company "Sameat")
 		(comment 1 "Current PCB pin nets; C3036461 factory configuration NOT verified")
 		(comment 2 "NOT physically validated; review before fabrication")
@@ -5526,27 +5526,13 @@
 		(at 48.260 154.940)
 		(uuid "593771d2-e9c6-5551-baf1-8f71ceeb8f8d")
 	)
-	(global_label "LCD_RST"
-		(shape passive)
-		(at 48.260 152.400 180)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify right)
-		)
-		(uuid "cfab635a-6887-5cb1-aef6-3c566ac449c7")
+	(no_connect
+		(at 48.260 152.400)
+		(uuid "ce9185fb-c699-5b32-9635-19e48c049ca9")
 	)
-	(global_label "LCD_TE"
-		(shape passive)
-		(at 48.260 149.860 180)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify right)
-		)
-		(uuid "ac399600-16f9-5794-88c8-04679e0afa81")
+	(no_connect
+		(at 48.260 149.860)
+		(uuid "80f39780-ded8-5747-8c6a-b4930e04ccce")
 	)
 	(global_label "LCD_EN"
 		(shape passive)
@@ -6107,13 +6093,27 @@
 		(at 78.740 107.950)
 		(uuid "332dd873-1b72-5e88-9368-42432a46d06a")
 	)
-	(no_connect
-		(at 78.740 105.410)
-		(uuid "6c84138b-088b-536b-9e1f-304e749be7e5")
+	(global_label "LCD_TE"
+		(shape passive)
+		(at 78.740 105.410 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "36d700b8-f6cf-5895-9186-26e1371851ed")
 	)
-	(no_connect
-		(at 78.740 102.870)
-		(uuid "104f3f06-ec5d-5695-92fc-edeef104d2e7")
+	(global_label "LCD_RST"
+		(shape passive)
+		(at 78.740 102.870 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "2a95e567-3e2b-5928-8ad9-36e1a2c1fec1")
 	)
 	(no_connect
 		(at 78.740 100.330)
@@ -7155,4 +7155,14 @@
 		(uuid "5041d732-61c0-5a47-8c8a-2c689c646b75")
 	)
 	(embedded_fonts no)
+	(text "DISPLAY GPIO: PA8 (U2.66) -> LCD_RST; PA9 / EINT9 (U2.65) <- LCD_TE. Both use 1V8.\nR32 10k holds reset LOW at boot. R29 must remain fitted 0R; VDDIO must share the PA supply.\nUpdate firmware pin assignments; PD19 / PD20 are now unconnected. See DISPLAY_IO_REPAIR_CN.md."
+		(at 38.1 370.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c92bdda6-ffe8-592d-8700-9558d0d22a41")
+	)
 )

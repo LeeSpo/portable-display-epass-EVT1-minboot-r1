@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-24",
+  "kicad_version": "10.0.6",
+  "board_sha256": "3675f6d3802411b48f3dcaef5d8873ba77279e64ff1c9458de9d3306261c34f8",
+  "before_sha256": "05af2af6138012e6b749530d8bcedb3d7fa88d8564eebb4ffb727f2124159fbb",
+  "drc_options": [
+    "--refill-zones",
+    "--save-board",
+    "--schematic-parity",
+    "--severity-all",
+    "--format json"
+  ],
+  "erc_options": [
+    "--severity-all",
+    "--format json"
+  ],
+  "project_sha256": "9f90c2af5a13b3d944e1d2a9065df396c58ad52d29852e59a70e89a9a0a6603b",
+  "schematic_sha256": {
+    "01_power.kicad_sch": "07d164aceb78efb98a495caa24dd9f471272774a2a437e9d33a5dfbcf44b8061",
+    "02_soc_v851s.kicad_sch": "85f2997d734ecbcd3b5863d1e93e3202cfb00de08d08552f9d376db3a761c734",
+    "03_sensors.kicad_sch": "0e2bdc3f2e2259da5df15e1325f2eb47d14b8bf1aeeb3170204d4e8c9643aff4",
+    "04_interfaces.kicad_sch": "2c3849466433b64708f37c288e35e8cd8da5083860aee336876653a95b485f70",
+    "ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_sch": "aec2ad3cc6003a377a06e221d865f6bb82dd28504ab3b59725322afa5e8fed7b"
+  },
+  "local_reference_sha256": {
+    "portable-display/hardware/v1-WEB6-redesign/reference/v851s_pinout_v0.1.xlsx": "dd822163ceeffdbc599d5497699d9339ee43ae93629c0f03664ab312467d2508",
+    "portable-display/docs/kd024_screen/raw-pdf/KD024EGOIN152-01 SPEC V1.pdf": "a60551a1370fbd490cb32bcfd6f7f81fca758faad3141a2ad9c3f73b5fa8c930"
+  },
+  "firmware_present": false,
+  "fabrication_released": false
+}

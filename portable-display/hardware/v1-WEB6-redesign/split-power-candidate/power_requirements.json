@@ -63,7 +63,12 @@
       "78": "3V3",
       "79": "1V8",
       "88": "CORE_0V93",
-      "89": "GND"
+      "89": "GND",
+      "40": "SD_PWR_EN",
+      "2": "NC",
+      "3": "NC",
+      "65": "LCD_TE",
+      "66": "LCD_RST"
     },
     "L1": {
       "1": "LX_3V3",
@@ -105,6 +110,32 @@
       "1": "VBAT",
       "2": "BAT_NTC",
       "3": "GND"
+    },
+    "R20": {
+      "1": "GND",
+      "2": "SD_PWR_GATE"
+    },
+    "R21": {
+      "1": "SD_PWR_EN",
+      "2": "SD_PWR_GATE"
+    },
+    "Q3": {
+      "1": "SD_PWR_GATE",
+      "2": "3V3",
+      "3": "SD_3V3"
+    },
+    "J4": {
+      "11": "LCD_1V8",
+      "15": "LCD_TE",
+      "16": "LCD_RST"
+    },
+    "R29": {
+      "1": "1V8",
+      "2": "LCD_1V8"
+    },
+    "R32": {
+      "1": "LCD_RST",
+      "2": "GND"
     }
   },
   "rail_requirements": [
@@ -164,5 +195,44 @@
     "Core ramp starts at least 1 ms after internal LDOA/PLL stable, conservative reading of V851S section 2.3.5",
     "Internal reset timing >=8 ms relative to core as shown in Figure 2-2; not an external PH0 reset pin"
   ],
-  "evidence_document": "POWER_REVIEW_CN.md"
+  "evidence_document": "POWER_REVIEW_CN.md",
+  "expected_values": {
+    "R20": "10k",
+    "R21": "100",
+    "Q3": "AO3401A",
+    "R29": "0R",
+    "R32": "10k"
+  },
+  "tf_control_requirement": {
+    "gpio": "U2 PH12 / pin 40 / SD_PWR_EN",
+    "high_impedance": "ON when 3V3 is valid",
+    "low": "ON",
+    "high": "OFF",
+    "hardware_verified": false,
+    "evidence_document": "TF_POWER_REPAIR_CN.md"
+  },
+  "required_fitted": [
+    "Q3",
+    "R20",
+    "R21",
+    "R29",
+    "R32"
+  ],
+  "display_io_requirement": {
+    "reset_gpio": "PA8",
+    "reset_pin": "U2.66",
+    "reset_active_level": "low",
+    "reset_default": "low via R32 10k to GND",
+    "te_gpio": "PA9 / PA-EINT9",
+    "te_pin": "U2.65",
+    "common_supply_net": "1V8",
+    "panel_feed": "R29 populated 0R to LCD_1V8",
+    "required_operating_range_v": [
+      1.7,
+      1.95
+    ],
+    "firmware_pin_migration_required": true,
+    "hardware_verified": false,
+    "evidence_document": "DISPLAY_IO_REPAIR_CN.md"
+  }
 }

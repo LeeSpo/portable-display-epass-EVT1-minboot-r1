@@ -21,9 +21,14 @@ def inspect(board_path, netlist_path, report_dir):
     board = s.load(board_path)
     actual = {}
     electrical = set()
+    fitted_values = {}
+    populated = set()
     problems = []
     for fp in s.children(board,'footprint'):
         ref = s.props(fp)['Reference']
+        fitted_values[ref] = s.props(fp).get('Value', '')
+        if 'dnp' not in s.values(fp, 'attr'):
+            populated.add(ref)
         for pad in s.children(fp,'pad'):
             if not pad[1]: continue
             electrical.add(ref)
@@ -38,7 +43,17 @@ def inspect(board_path, netlist_path, report_dir):
         for pin, net in pins.items():
             if actual.get(f'{ref}.{pin}') != net:
                 problems.append(f'Power contract {ref}.{pin}: expected {net}, got {actual.get(f"{ref}.{pin}")}')
+    for ref, value in requirements.get('expected_values', {}).items():
+        if fitted_values.get(ref) != value:
+            problems.append(f'Value contract {ref}: expected {value}, got {fitted_values.get(ref)}')
+    for ref in requirements.get('required_fitted', []):
+        if ref not in populated:
+            problems.append(f'Population contract: {ref} must be fitted')
     xml = ET.parse(netlist_path).getroot()
+    xml_values = {c.attrib['ref']: c.findtext('value') for c in xml.findall('./components/comp')}
+    for ref, value in fitted_values.items():
+        if ref in electrical and xml_values.get(ref) != value:
+            problems.append(f'Schematic value mismatch {ref}: PCB={value}, schematic={xml_values.get(ref)}')
     refs = {c.attrib['ref'] for c in xml.findall('./components/comp') if not c.attrib['ref'].startswith('#')}
     if refs != electrical:
         problems.append(f'Component sets differ: PCB-only {sorted(electrical-refs)}; schematic-only {sorted(refs-electrical)}')
@@ -74,6 +89,9 @@ def inspect(board_path, netlist_path, report_dir):
         'electrical_components': len(electrical),
         'unique_numbered_pads': len(actual),
         'power_pins_checked': sum(len(v) for v in requirements['expected_pins'].values()),
+        'component_values_checked': len(electrical),
+        'independent_value_requirements': requirements.get('expected_values', {}),
+        'required_fitted': requirements.get('required_fitted', []),
         'native_findings': native,
         'problems': problems,
         'factory_configuration_verified': False,
