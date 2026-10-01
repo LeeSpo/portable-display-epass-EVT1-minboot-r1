@@ -10536,7 +10536,7 @@
 			)
 		)
 	)
-	(symbol "C23_100n"
+	(symbol "C23_3.3u"
 		(pin_names
 			(offset 0.8)
 		)
@@ -10552,7 +10552,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "3.3u"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10561,7 +10561,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Sameat:0402"
+		(property "Footprint" "Sameat:C_0805_2012Metric"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10570,7 +10570,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/partdetail/CCTC-TCC0805X7R335K250FT/C7393948"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10579,7 +10579,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Wake timing capacitor: 3.3uF 25V X7R 10% 0805; bias/temperature timing qualification required"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10588,7 +10588,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "C23_100n_0_1"
+		(symbol "C23_3.3u_0_1"
 			(rectangle
 				(start -12.7 -5.080)
 				(end 12.7 5.080)
@@ -10601,7 +10601,7 @@
 				)
 			)
 		)
-		(symbol "C23_100n_1_1"
+		(symbol "C23_3.3u_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -10744,7 +10744,7 @@
 			)
 		)
 	)
-	(symbol "R12_820k"
+	(symbol "R12_910k"
 		(pin_names
 			(offset 0.8)
 		)
@@ -10760,7 +10760,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "820k"
+		(property "Value" "910k"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10778,7 +10778,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/partdetail/RESI-AECR0402F910KK9/C352384"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10787,7 +10787,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Wake timer: 910k 1% 0402; with C23 3.3u approx 3s, measure 2.2-3.8s"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10796,7 +10796,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "R12_820k_0_1"
+		(symbol "R12_910k_0_1"
 			(rectangle
 				(start -12.7 -5.080)
 				(end 12.7 5.080)
@@ -10809,7 +10809,7 @@
 				)
 			)
 		)
-		(symbol "R12_820k_1_1"
+		(symbol "R12_910k_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)

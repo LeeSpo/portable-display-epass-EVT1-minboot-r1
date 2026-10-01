@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "38x64 split-power candidate - connectivity schematic")
-		(date "2026-09-24")
-		(rev "LCD-IO1")
+		(date "2026-10-01")
+		(rev "WAKE1")
 		(company "Sameat")
 		(comment 1 "Power configuration incomplete: C3036461 factory profile not confirmed")
 		(comment 2 "EVT design: not physically validated")
@@ -177,7 +177,7 @@
 			)
 		)
 	)
-	(text "PCB connectivity reconstructed from the current candidate.\nPower targets are requirements, NOT measured/default outputs.\nRead POWER_REVIEW_CN.md before ordering PCBA.\nTF default ON: PH12 low or Hi-Z = ON; high = OFF.\nDisplay RESET = PA8; TE = PA9; both share the 1V8 domain.\nUSB / wake / display power and timing remain separate work items."
+	(text "PCB connectivity reconstructed from the current candidate.\nPower targets are requirements, NOT measured/default outputs.\nRead POWER_REVIEW_CN.md before ordering PCBA.\nTF default ON: PH12 low or Hi-Z = ON; high = OFF.\nDisplay RESET = PA8; TE = PA9; both share the 1V8 domain.\nWake timer: approx 3 s nominal; measure 2.2-3.8 s.\nUSB / display power and timing remain separate work items."
 		(exclude_from_sim no)
 		(at 25 150 0)
 		(effects

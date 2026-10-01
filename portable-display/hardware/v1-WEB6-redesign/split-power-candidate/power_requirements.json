@@ -68,7 +68,8 @@
       "2": "NC",
       "3": "NC",
       "65": "LCD_TE",
-      "66": "LCD_RST"
+      "66": "LCD_RST",
+      "45": "WAKE_PULSE_N"
     },
     "L1": {
       "1": "LX_3V3",
@@ -136,6 +137,34 @@
     "R32": {
       "1": "LCD_RST",
       "2": "GND"
+    },
+    "U6": {
+      "1": "WAKE_REQ_N",
+      "2": "RTC_3V3",
+      "3": "RTC_3V3",
+      "4": "GND",
+      "5": "WAKE_PULSE",
+      "6": "WAKE_CEXT",
+      "7": "WAKE_REXT",
+      "8": "RTC_3V3"
+    },
+    "R12": {
+      "1": "RTC_3V3",
+      "2": "WAKE_REXT"
+    },
+    "C23": {
+      "1": "WAKE_REXT",
+      "2": "WAKE_CEXT"
+    },
+    "Q1": {
+      "1": "WAKE_PULSE",
+      "2": "GND",
+      "3": "PWRON_N"
+    },
+    "Q2": {
+      "1": "WAKE_PULSE",
+      "2": "GND",
+      "3": "WAKE_PULSE_N"
     }
   },
   "rail_requirements": [
@@ -201,7 +230,10 @@
     "R21": "100",
     "Q3": "AO3401A",
     "R29": "0R",
-    "R32": "10k"
+    "R32": "10k",
+    "R12": "910k",
+    "C23": "3.3u",
+    "U6": "SN74LVC1G123DCTR"
   },
   "tf_control_requirement": {
     "gpio": "U2 PH12 / pin 40 / SD_PWR_EN",
@@ -216,7 +248,12 @@
     "R20",
     "R21",
     "R29",
-    "R32"
+    "R32",
+    "R12",
+    "C23",
+    "U6",
+    "Q1",
+    "Q2"
   ],
   "display_io_requirement": {
     "reset_gpio": "PA8",
@@ -234,5 +271,45 @@
     "firmware_pin_migration_required": true,
     "hardware_verified": false,
     "evidence_document": "DISPLAY_IO_REPAIR_CN.md"
+  },
+  "expected_component_properties": {
+    "R12": {
+      "MPN": "AECR0402F910KK9",
+      "LCSC": "C352384",
+      "Footprint": "Sameat:0402"
+    },
+    "C23": {
+      "MPN": "TCC0805X7R335K250FT",
+      "LCSC": "C7393948",
+      "Footprint": "Sameat:C_0805_2012Metric"
+    }
+  },
+  "wake_pulse_requirement": {
+    "resistance_ohm": 910000,
+    "resistance_tolerance": 0.01,
+    "capacitance_f": 3.3e-06,
+    "capacitance_tolerance": 0.1,
+    "nominal_k_assumption": 1.0,
+    "nominal_pulse_s": 3.003,
+    "pmic_onlevel_options_s": [
+      0.128,
+      0.512,
+      1.0,
+      2.0
+    ],
+    "pmic_minimum_offlevel_s": 4.0,
+    "measured_acceptance_window_s": [
+      2.2,
+      3.8
+    ],
+    "pmic_pin_mode_required": "PWRON, not customized EN",
+    "rtc_supply_required_v": [
+      3.0,
+      3.6
+    ],
+    "trigger_policy": "Single falling edge; use latched active-low interrupts and prevent repeated edges until pulse ends",
+    "worst_case_timing_guaranteed": false,
+    "hardware_verified": false,
+    "evidence_document": "WAKE_PULSE_REPAIR_CN.md"
   }
 }

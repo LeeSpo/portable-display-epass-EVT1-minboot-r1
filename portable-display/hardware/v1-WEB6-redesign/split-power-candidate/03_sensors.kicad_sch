@@ -6,8 +6,8 @@
 	(paper "A2")
 	(title_block
 		(title "03 Always-on Sensors / Wake")
-		(date "2026-09-24")
-		(rev "LCD-IO1")
+		(date "2026-10-01")
+		(rev "WAKE1")
 		(company "Sameat")
 		(comment 1 "Current PCB pin nets; C3036461 factory configuration NOT verified")
 		(comment 2 "NOT physically validated; review before fabrication")
@@ -2005,7 +2005,7 @@
 				)
 			)
 		)
-		(symbol "Sameat:C23_100n"
+		(symbol "Sameat:C23_3.3u"
 			(pin_names
 				(offset 0.8)
 			)
@@ -2021,7 +2021,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "100n"
+			(property "Value" "3.3u"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2030,7 +2030,7 @@
 					(hide yes)
 				)
 			)
-			(property "Footprint" "Sameat:0402"
+			(property "Footprint" "Sameat:C_0805_2012Metric"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2039,7 +2039,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://jlcpcb.com/partdetail/CCTC-TCC0805X7R335K250FT/C7393948"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2048,7 +2048,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Wake timing capacitor: 3.3uF 25V X7R 10% 0805; bias/temperature timing qualification required"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2057,7 +2057,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "C23_100n_0_1"
+			(symbol "C23_3.3u_0_1"
 				(rectangle
 					(start -12.7 -5.080)
 					(end 12.7 5.080)
@@ -2070,7 +2070,7 @@
 					)
 				)
 			)
-			(symbol "C23_100n_1_1"
+			(symbol "C23_3.3u_1_1"
 				(pin passive line
 					(at -15.24 0.000 0)
 					(length 2.54)
@@ -2213,7 +2213,7 @@
 				)
 			)
 		)
-		(symbol "Sameat:R12_820k"
+		(symbol "Sameat:R12_910k"
 			(pin_names
 				(offset 0.8)
 			)
@@ -2229,7 +2229,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "820k"
+			(property "Value" "910k"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2247,7 +2247,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://jlcpcb.com/partdetail/RESI-AECR0402F910KK9/C352384"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2256,7 +2256,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Wake timer: 910k 1% 0402; with C23 3.3u approx 3s, measure 2.2-3.8s"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2265,7 +2265,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "R12_820k_0_1"
+			(symbol "R12_910k_0_1"
 				(rectangle
 					(start -12.7 -5.080)
 					(end 12.7 5.080)
@@ -2278,7 +2278,7 @@
 					)
 				)
 			)
-			(symbol "R12_820k_1_1"
+			(symbol "R12_910k_1_1"
 				(pin passive line
 					(at -15.24 0.000 0)
 					(length 2.54)
@@ -4401,7 +4401,7 @@
 		(uuid "ea88ad4e-0da7-5b97-9939-ce712e4cd887")
 	)
 	(symbol
-		(lib_id "Sameat:C23_100n")
+		(lib_id "Sameat:C23_3.3u")
 		(at 63.500 139.700 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4417,7 +4417,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "3.3u"
 			(at 63.500 132.620 0)
 			(effects
 				(font
@@ -4425,7 +4425,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sameat:0402"
+		(property "Footprint" "Sameat:C_0805_2012Metric"
 			(at 63.500 139.700 0)
 			(effects
 				(font
@@ -4434,7 +4434,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/partdetail/CCTC-TCC0805X7R335K250FT/C7393948"
 			(at 63.500 139.700 0)
 			(effects
 				(font
@@ -4443,7 +4443,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "TCC0805X7R335K250FT"
 			(at 63.500 139.700 0)
 			(effects
 				(font
@@ -4452,7 +4452,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C7393948"
 			(at 63.500 139.700 0)
 			(effects
 				(font
@@ -4461,7 +4461,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Wake timing capacitor: 3.3uF 25V X7R 10% 0805; bias/temperature timing qualification required"
 			(at 63.500 139.700 0)
 			(effects
 				(font
@@ -4615,7 +4615,7 @@
 		(uuid "49564d38-077d-5dbb-9506-4ec04c1cae8e")
 	)
 	(symbol
-		(lib_id "Sameat:R12_820k")
+		(lib_id "Sameat:R12_910k")
 		(at 327.660 163.830 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4631,7 +4631,7 @@
 				)
 			)
 		)
-		(property "Value" "820k"
+		(property "Value" "910k"
 			(at 327.660 156.750 0)
 			(effects
 				(font
@@ -4648,7 +4648,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/partdetail/RESI-AECR0402F910KK9/C352384"
 			(at 327.660 163.830 0)
 			(effects
 				(font
@@ -4657,7 +4657,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "AECR0402F910KK9"
 			(at 327.660 163.830 0)
 			(effects
 				(font
@@ -4666,7 +4666,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C352384"
 			(at 327.660 163.830 0)
 			(effects
 				(font
@@ -4675,7 +4675,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Wake timer: 910k 1% 0402; with C23 3.3u approx 3s, measure 2.2-3.8s"
 			(at 327.660 163.830 0)
 			(effects
 				(font
@@ -4829,4 +4829,14 @@
 		(uuid "795ae5a1-3e24-5323-a37a-e4237b457faa")
 	)
 	(embedded_fonts no)
+	(text "WAKE TIMER: R12 910k 1%; C23 3.3uF 25V X7R 10% 0805; approx 3 s nominal.\nMeasure PWRON_N LOW for 2.2-3.8 s. RC tolerances alone do NOT guarantee this window.\nUse latched active-low interrupts; repeated edges retrigger U6. See WAKE_PULSE_REPAIR_CN.md."
+		(at 38.1 370.84 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b79788fc-7d13-54be-9c45-aafd0fbae150")
+	)
 )

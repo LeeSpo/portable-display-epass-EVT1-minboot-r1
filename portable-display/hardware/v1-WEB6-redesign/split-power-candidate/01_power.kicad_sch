@@ -6,8 +6,8 @@
 	(paper "A2")
 	(title_block
 		(title "01 Power / Charger / PMIC")
-		(date "2026-09-24")
-		(rev "LCD-IO1")
+		(date "2026-10-01")
+		(rev "WAKE1")
 		(company "Sameat")
 		(comment 1 "Current PCB pin nets; C3036461 factory configuration NOT verified")
 		(comment 2 "NOT physically validated; review before fabrication")
