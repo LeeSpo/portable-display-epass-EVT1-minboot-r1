@@ -23,10 +23,12 @@ def inspect(board_path, netlist_path, report_dir):
     electrical = set()
     fitted_values = {}
     populated = set()
+    component_properties = {}
     problems = []
     for fp in s.children(board,'footprint'):
         ref = s.props(fp)['Reference']
         fitted_values[ref] = s.props(fp).get('Value', '')
+        component_properties[ref] = {**s.props(fp), 'Footprint': str(fp[1])}
         if 'dnp' not in s.values(fp, 'attr'):
             populated.add(ref)
         for pad in s.children(fp,'pad'):
@@ -49,6 +51,11 @@ def inspect(board_path, netlist_path, report_dir):
     for ref in requirements.get('required_fitted', []):
         if ref not in populated:
             problems.append(f'Population contract: {ref} must be fitted')
+    for ref, expected in requirements.get('expected_component_properties', {}).items():
+        for name, value in expected.items():
+            actual_property = component_properties.get(ref, {}).get(name)
+            if actual_property != value:
+                problems.append(f'Component contract {ref}.{name}: expected {value}, got {actual_property}')
     xml = ET.parse(netlist_path).getroot()
     xml_values = {c.attrib['ref']: c.findtext('value') for c in xml.findall('./components/comp')}
     for ref, value in fitted_values.items():
