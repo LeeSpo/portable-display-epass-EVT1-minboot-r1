@@ -1,0 +1,26 @@
+{
+  "nominal_k_assumption": 1.0,
+  "original_nominal_s": 0.08199999999999999,
+  "nominal_s": 3.003,
+  "r_c_initial_tolerance_only_s": [
+    2.675673,
+    3.336333
+  ],
+  "with_x7r_temperature_15_percent_only_s": [
+    2.2743220500000003,
+    3.83678295
+  ],
+  "not_included": [
+    "MLCC DC bias and aging",
+    "U6 K variation and timing pin leakage",
+    "PCB leakage",
+    "Supply variation",
+    "Retriggering"
+  ],
+  "guaranteed_worst_case": false,
+  "measured_acceptance_s": [
+    2.2,
+    3.8
+  ],
+  "hardware_verified": false
+}

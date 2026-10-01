@@ -87,3 +87,5 @@ AXP2101 默认输出和启动顺序由定制/EFUSE 决定；I²C 上电后写寄
 - [X-Powers AXP2101 Datasheet V1.4，LilyGo 托管的厂家副本](https://wiki.lilygo.cc/datasheet/AXP2101_Datasheet_V1.4_en.pdf)：7–9 页脚位、22 页表 6-1、49–55 页寄存器、57 页典型应用。
 - [嘉立创 C3036461](https://jlcpcb.com/partdetail/x_powersTech-AXP2101/C3036461)、[立创国内商品页](https://item.szlcsc.com/3587325.html)：平台型号及封装核对；不作为默认电压证据。
 - 本地全志 `../reference/v851s_pinout_v0.1.xlsx`：V851S QFN88 脚位与电源域。未采用 V851SE 替代脚位。
+
+2026-10-01 后续修改：已完成 [自动唤醒定时阻容修复](WAKE_PULSE_REPAIR_CN.md)，名义约 3 s；实测窗口和连续触发行为仍待验收。本项不证明 PMIC 出厂电源配置或冷启动已确认。
