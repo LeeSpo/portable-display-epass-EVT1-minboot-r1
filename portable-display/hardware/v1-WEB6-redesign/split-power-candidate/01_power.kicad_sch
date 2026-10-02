@@ -6,8 +6,8 @@
 	(paper "A2")
 	(title_block
 		(title "01 Power / Charger / PMIC")
-		(date "2026-10-01")
-		(rev "WAKE1")
+		(date "2026-10-02")
+		(rev "USB1")
 		(company "Sameat")
 		(comment 1 "Current PCB pin nets; C3036461 factory configuration NOT verified")
 		(comment 2 "NOT physically validated; review before fabrication")
@@ -8670,7 +8670,7 @@
 			)
 		)
 	)
-	(global_label "USB_DP"
+	(global_label "USB_DM"
 		(shape passive)
 		(at 312.420 49.530 180)
 		(effects
@@ -8692,7 +8692,7 @@
 		)
 		(uuid "92763f25-cafc-5b61-814e-1fdb65344b37")
 	)
-	(global_label "USB_DM"
+	(global_label "USB_DP"
 		(shape passive)
 		(at 312.420 44.450 180)
 		(effects
@@ -8703,7 +8703,7 @@
 		)
 		(uuid "7a201a10-dfef-5ebb-bbdb-e8ebc151d150")
 	)
-	(global_label "USB_DM"
+	(global_label "USB_DP"
 		(shape passive)
 		(at 342.900 49.530 0)
 		(effects
@@ -8725,7 +8725,7 @@
 		)
 		(uuid "cb92ca59-c14a-584a-bf13-9a838f72fb20")
 	)
-	(global_label "USB_DP"
+	(global_label "USB_DM"
 		(shape passive)
 		(at 342.900 44.450 0)
 		(effects

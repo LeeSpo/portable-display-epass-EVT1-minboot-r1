@@ -69,7 +69,9 @@
       "3": "NC",
       "65": "LCD_TE",
       "66": "LCD_RST",
-      "45": "WAKE_PULSE_N"
+      "45": "WAKE_PULSE_N",
+      "76": "USB_DP",
+      "77": "USB_DM"
     },
     "L1": {
       "1": "LX_3V3",
@@ -165,6 +167,20 @@
       "1": "WAKE_PULSE",
       "2": "GND",
       "3": "WAKE_PULSE_N"
+    },
+    "U9": {
+      "1": "USB_DM",
+      "2": "GND",
+      "3": "USB_DP",
+      "4": "USB_DP",
+      "5": "VBUS",
+      "6": "USB_DM"
+    },
+    "J1": {
+      "A6": "USB_DP",
+      "B6": "USB_DP",
+      "A7": "USB_DM",
+      "B7": "USB_DM"
     }
   },
   "rail_requirements": [

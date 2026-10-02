@@ -6,8 +6,8 @@
 	(paper "A2")
 	(title_block
 		(title "03 Always-on Sensors / Wake")
-		(date "2026-10-01")
-		(rev "WAKE1")
+		(date "2026-10-02")
+		(rev "USB1")
 		(company "Sameat")
 		(comment 1 "Current PCB pin nets; C3036461 factory configuration NOT verified")
 		(comment 2 "NOT physically validated; review before fabrication")

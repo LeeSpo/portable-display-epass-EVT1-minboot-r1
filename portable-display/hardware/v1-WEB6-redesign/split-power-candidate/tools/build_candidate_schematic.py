@@ -17,7 +17,7 @@ import generate_evt1 as g
 import kicad_sexpr as s
 
 STEM = 'ak_display_38x64_SPLIT_POWER_CANDIDATE'
-DATE = '2026-10-01'
+DATE = '2026-10-02'
 original_pin_type = g.pin_type
 
 
@@ -85,7 +85,7 @@ def main():
     root = s.loads(root_text)
     s.child(s.child(root,'title_block'),'title')[1] = s.Q('38x64 split-power candidate - connectivity schematic')
     s.child(s.child(root,'title_block'),'comment')[2] = s.Q('Power configuration incomplete: C3036461 factory profile not confirmed')
-    s.child(root, 'text')[1] = s.Q('PCB connectivity reconstructed from the current candidate.\nPower targets are requirements, NOT measured/default outputs.\nRead POWER_REVIEW_CN.md before ordering PCBA.\nTF default ON: PH12 low or Hi-Z = ON; high = OFF.\nDisplay RESET = PA8; TE = PA9; both share the 1V8 domain.\nWake timer: approx 3 s nominal; measure 2.2-3.8 s.\nUSB / display power and timing remain separate work items.')
+    s.child(root, 'text')[1] = s.Q('PCB connectivity reconstructed from the current candidate.\nPower targets are requirements, NOT measured/default outputs.\nRead POWER_REVIEW_CN.md before ordering PCBA.\nTF default ON: PH12 low or Hi-Z = ON; high = OFF.\nDisplay RESET = PA8; TE = PA9; both share the 1V8 domain.\nWake timer: approx 3 s nominal; measure 2.2-3.8 s.\nUSB routed as a pair; see USB_ROUTING_REPAIR_CN.md.\nUSB impedance / MIPI / display power still require validation.')
     all_libs = []
     for sheet, sheet_uuid in sheets.items():
         tree = s.loads(g.schematic_for_sheet(sheet, devices, g.uid('root-schematic'), sheet_uuid))
@@ -119,6 +119,10 @@ def main():
                     old = s.child(obj,'at')
                     translate(obj, 50.8+idx*76.2-float(old[1]), 381-float(old[2]))
         if sheet == 'interfaces':
+            tree.append(['text', s.Q('USB ESD: U9 I/O2 pins 3/4 = DP; I/O1 pins 1/6 = DM. USB polarity at U2/J1 is unchanged.\nMain pair on F.Cu; the duplicated Type-C B7 contact uses a short B.Cu branch.\n90-ohm impedance and both-orientation HS/ESD tests remain pending. See USB_ROUTING_REPAIR_CN.md.'),
+                         ['at', '38.1', '345.44', '0'],
+                         ['effects', ['font', ['size', '1.27', '1.27']], ['justify', 'left']],
+                         ['uuid', s.Q(g.uid('usb-routing-note'))]])
             tree.append(['text', s.Q('TF POWER: R20 10k to GND; R21 100R. PH12 / SD_PWR_EN: LOW or Hi-Z = ON, HIGH = OFF.\n3V3 must be valid before boot. Card detection / cold-start waveforms still require hardware validation.'),
                          ['at', '38.1', '370.84', '0'],
                          ['effects', ['font', ['size', '1.27', '1.27']], ['justify', 'left']],
@@ -136,7 +140,7 @@ def main():
         all_libs += [copy.deepcopy(x) for x in s.children(s.child(tree,'lib_symbols'),'symbol')]
         for title in [s.child(tree,'title_block')]:
             s.child(title,'date')[1] = s.Q(DATE)
-            s.child(title,'rev')[1] = s.Q('WAKE1')
+            s.child(title,'rev')[1] = s.Q('USB1')
             for comment in s.children(title,'comment'):
                 if comment[1] == '1': comment[2] = s.Q('Current PCB pin nets; C3036461 factory configuration NOT verified')
         replace_atoms(tree, 'portable_display_epass', STEM)
@@ -144,7 +148,7 @@ def main():
         s.dump(tree, BASE / f'{filename}.kicad_sch')
     replace_atoms(root, 'portable_display_epass', STEM)
     s.child(s.child(root,'title_block'),'date')[1] = s.Q(DATE)
-    s.child(s.child(root,'title_block'),'rev')[1] = s.Q('WAKE1')
+    s.child(s.child(root,'title_block'),'rev')[1] = s.Q('USB1')
     s.dump(root, BASE / f'{STEM}.kicad_sch')
     unique = {}
     for symbol in all_libs:

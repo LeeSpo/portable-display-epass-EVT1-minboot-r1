@@ -6,8 +6,8 @@
 	(paper "A2")
 	(title_block
 		(title "04 Display / SD / Buttons")
-		(date "2026-10-01")
-		(rev "WAKE1")
+		(date "2026-10-02")
+		(rev "USB1")
 		(company "Sameat")
 		(comment 1 "Current PCB pin nets; C3036461 factory configuration NOT verified")
 		(comment 2 "NOT physically validated; review before fabrication")
@@ -11480,6 +11480,16 @@
 		(uuid "e146e9ee-64eb-5939-8056-cb93784c096e")
 	)
 	(embedded_fonts no)
+	(text "USB ESD: U9 I/O2 pins 3/4 = DP; I/O1 pins 1/6 = DM. USB polarity at U2/J1 is unchanged.\nMain pair on F.Cu; the duplicated Type-C B7 contact uses a short B.Cu branch.\n90-ohm impedance and both-orientation HS/ESD tests remain pending. See USB_ROUTING_REPAIR_CN.md."
+		(at 38.1 345.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "01bd0f66-c13e-51aa-9543-41f82003ec50")
+	)
 	(text "TF POWER: R20 10k to GND; R21 100R. PH12 / SD_PWR_EN: LOW or Hi-Z = ON, HIGH = OFF.\n3V3 must be valid before boot. Card detection / cold-start waveforms still require hardware validation."
 		(at 38.1 370.84 0)
 		(effects
