@@ -1,0 +1,178 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-04T18:36:02",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [ACCEL_INT_SOC_N] of U11 on F.Cu",
+                    "pos": {
+                        "x": 31.7,
+                        "y": 15.95
+                    },
+                    "uuid": "d4cdfc67-98dc-4f2c-be3a-c6d89175fcde"
+                },
+                {
+                    "description": "Track [ACCEL_INT_SOC_N] on F.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 19.45,
+                        "y": 21.775
+                    },
+                    "uuid": "2d3ccfa1-7664-548a-a34e-fb020660b4f8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Items shorting two nets (nets ACCEL_INT_N and ACCEL_INT_SOC_N)",
+            "items": [
+                {
+                    "description": "Track [ACCEL_INT_N] on In2.Cu, length 0.7425 mm",
+                    "pos": {
+                        "x": 17.875,
+                        "y": 19.75
+                    },
+                    "uuid": "2bdfcc86-6bc9-5eb6-819e-471a6676874b"
+                },
+                {
+                    "description": "Via [ACCEL_INT_SOC_N] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 17.875,
+                        "y": 19.95
+                    },
+                    "uuid": "fe9cbf5d-495c-593b-b762-390ae8f7f861"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Track [ACCEL_INT_N] on In2.Cu, length 0.7425 mm",
+                    "pos": {
+                        "x": 17.875,
+                        "y": 19.75
+                    },
+                    "uuid": "2bdfcc86-6bc9-5eb6-819e-471a6676874b"
+                },
+                {
+                    "description": "Via [ACCEL_INT_SOC_N] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 17.875,
+                        "y": 19.95
+                    },
+                    "uuid": "fe9cbf5d-495c-593b-b762-390ae8f7f861"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Items shorting two nets (nets ACCEL_INT_N and ACCEL_INT_SOC_N)",
+            "items": [
+                {
+                    "description": "Track [ACCEL_INT_N] on In2.Cu, length 0.2000 mm",
+                    "pos": {
+                        "x": 17.875,
+                        "y": 19.95
+                    },
+                    "uuid": "d02dd721-b8f1-53b8-ada1-951055f0a0bc"
+                },
+                {
+                    "description": "Via [ACCEL_INT_SOC_N] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 17.875,
+                        "y": 19.95
+                    },
+                    "uuid": "fe9cbf5d-495c-593b-b762-390ae8f7f861"
+                }
+            ],
+            "severity": "error",
+            "type": "shorting_items"
+        },
+        {
+            "description": "Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)",
+            "items": [
+                {
+                    "description": "Track [ACCEL_INT_N] on In2.Cu, length 0.2000 mm",
+                    "pos": {
+                        "x": 17.875,
+                        "y": 19.95
+                    },
+                    "uuid": "d02dd721-b8f1-53b8-ada1-951055f0a0bc"
+                },
+                {
+                    "description": "Via [ACCEL_INT_SOC_N] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 17.875,
+                        "y": 19.95
+                    },
+                    "uuid": "fe9cbf5d-495c-593b-b762-390ae8f7f861"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [RTC_3V3] on F.Cu, length 1.2677 mm",
+                    "pos": {
+                        "x": 30.5649,
+                        "y": 13.9503
+                    },
+                    "uuid": "878acc27-d96d-4b7f-83e8-91a42d1841c7"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [RTC_3V3] on F.Cu, length 5.9261 mm",
+                    "pos": {
+                        "x": 34.7553,
+                        "y": 24.0382
+                    },
+                    "uuid": "bc432908-3150-4ab7-abbe-31634a329c05"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [RTC_INT_N] on B.Cu, length 0.0354 mm",
+                    "pos": {
+                        "x": 19.15,
+                        "y": 22.3
+                    },
+                    "uuid": "12e7af0b-8b07-5784-82ad-d071d667cab2"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}

@@ -17,11 +17,14 @@ import generate_evt1 as g
 import kicad_sexpr as s
 
 STEM = 'ak_display_38x64_SPLIT_POWER_CANDIDATE'
-DATE = '2026-10-02'
+DATE = '2026-10-04'
 original_pin_type = g.pin_type
 
 
 def pin_type(dev, num):
+    if dev.ref == 'U11':
+        return {'1': 'input', '2': 'power_in', '3': 'input',
+                '4': 'output', '5': 'power_in', '6': 'output'}[num]
     if dev.ref == 'U1':
         if num in {'2','5','8','10','11','12','14','15','16','18','19','20','22','25','28','34','35','36'}:
             return 'power_out'
@@ -55,6 +58,12 @@ def main():
     records['R32'] = copy.deepcopy(records['R20'])
     records['R32'].ref = 'R32'
     records['R32'].sheet = 'interfaces'
+    records['C52'] = copy.deepcopy(records['C26'])
+    records['C52'].ref = 'C52'
+    records['U11'] = g.Device('U11', 'SN74LVC2G17DBVR', 'SN74LVC2G17_DBV6',
+                             'sensors', 0, 0,
+                             {str(n): (name, None) for n, name in enumerate(
+                                 ['1A', 'GND', '2A', '2Y', 'VCC', '1Y'], 1)})
     devices = []
     for fp in s.children(board, 'footprint'):
         props = s.props(fp)
@@ -128,6 +137,10 @@ def main():
                          ['effects', ['font', ['size', '1.27', '1.27']], ['justify', 'left']],
                          ['uuid', s.Q(g.uid('tf-default-on-note'))]])
         if sheet == 'sensors':
+            tree.append(['text', s.Q('WAKE DOMAINS: R17/R18 pull up to RTC_3V3. U11 SN74LVC2G17 isolates both IRQs from U2.\nU11/C52 use switched 3V3. RTC_INT_SOC_N -> PE7; ACCEL_INT_SOC_N -> PE6; polarity unchanged.\nRequire latched active-low IRQs and AON supply retention. See WAKE_DOMAIN_REPAIR_CN.md.'),
+                         ['at', '38.1', '358.14', '0'],
+                         ['effects', ['font', ['size', '1.27', '1.27']], ['justify', 'left']],
+                         ['uuid', s.Q(g.uid('wake-domain-note'))]])
             tree.append(['text', s.Q('WAKE TIMER: R12 910k 1%; C23 3.3uF 25V X7R 10% 0805; approx 3 s nominal.\nMeasure PWRON_N LOW for 2.2-3.8 s. RC tolerances alone do NOT guarantee this window.\nUse latched active-low interrupts; repeated edges retrigger U6. See WAKE_PULSE_REPAIR_CN.md.'),
                          ['at', '38.1', '370.84', '0'],
                          ['effects', ['font', ['size', '1.27', '1.27']], ['justify', 'left']],
@@ -140,7 +153,7 @@ def main():
         all_libs += [copy.deepcopy(x) for x in s.children(s.child(tree,'lib_symbols'),'symbol')]
         for title in [s.child(tree,'title_block')]:
             s.child(title,'date')[1] = s.Q(DATE)
-            s.child(title,'rev')[1] = s.Q('USB1')
+            s.child(title,'rev')[1] = s.Q('WAKE2')
             for comment in s.children(title,'comment'):
                 if comment[1] == '1': comment[2] = s.Q('Current PCB pin nets; C3036461 factory configuration NOT verified')
         replace_atoms(tree, 'portable_display_epass', STEM)
@@ -148,7 +161,7 @@ def main():
         s.dump(tree, BASE / f'{filename}.kicad_sch')
     replace_atoms(root, 'portable_display_epass', STEM)
     s.child(s.child(root,'title_block'),'date')[1] = s.Q(DATE)
-    s.child(s.child(root,'title_block'),'rev')[1] = s.Q('USB1')
+    s.child(s.child(root,'title_block'),'rev')[1] = s.Q('WAKE2')
     s.dump(root, BASE / f'{STEM}.kicad_sch')
     unique = {}
     for symbol in all_libs:

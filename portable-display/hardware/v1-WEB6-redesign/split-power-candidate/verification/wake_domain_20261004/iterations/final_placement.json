@@ -1,0 +1,17 @@
+{
+  "U11": [
+    30.75,
+    17.4,
+    90
+  ],
+  "C52": [
+    31.5,
+    13.95,
+    90
+  ],
+  "source_via_new": [
+    31.55,
+    19.55
+  ],
+  "reason": "Provide room for an ordinary output via outside all SMD lands"
+}

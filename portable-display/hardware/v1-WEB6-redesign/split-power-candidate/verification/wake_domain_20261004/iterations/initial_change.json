@@ -1,0 +1,864 @@
+{
+  "removed_copper": [
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "01ead5ff-a58a-53c7-8ca3-936f914cfa82"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "02d7d959-0c4a-5baa-b868-5ad1201d105a"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "09c39953-07b5-51c2-8355-b444b744c3e7"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "09fb101c-64b5-5162-b600-9860a0c565ae"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "0a5300c5-29c8-598a-8b75-4a3cd2b3d387"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "11291167-7b00-5d9c-b5b7-c5bffcfa73bf"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "14dc1c64-f6c9-5ddc-b7e6-71063b4d4c2a"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "15069d0f-1d1c-5117-8bf5-2fad1d88ba10"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "1d623760-4626-5212-b524-9545bf1dd70c"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "2acf92e1-a53c-51dc-b662-5799a59dbbe0"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "2d3ccfa1-7664-548a-a34e-fb020660b4f8"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "3559e96a-046d-542c-b75a-3eb6d7660ac2"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "358700dc-56ea-5508-a837-49b75f8f6609"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "359b80bf-4fd7-511b-b3aa-a7489162a469"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "36a2af5f-2398-50da-afcd-2cdeb285931c"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "3f01d206-63b7-5f7b-829e-5522fc238df9"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "44cb3ac1-2c58-5505-8e38-e6fc5164f5fa"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "456732ba-5b19-5dfc-8c75-cb077f542b61"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "46445be8-a5a2-5560-9ee4-c1a8141d4d12"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "487bafa5-a05b-5de2-ae8f-551f17050f3c"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "4e8afe5d-e338-50c4-a84d-eeb5a0c22786"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "4f6c72ab-0e54-4545-a8c3-4cceeed7ba42"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "4fbf7c88-5813-5931-bf05-b8ee5efcb401"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "52629840-ac82-4bd5-9618-ffd802165014"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "55012aaa-1364-547b-9cfd-8133b0de5807"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "5a33ffa6-3bd4-4edd-9443-9156cd2fa1d7"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "5c34e316-ad60-5024-83f3-2712ba52dbd1"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "5ce971f7-394e-5381-8eaa-0f83d41e884a"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "5d05f278-dfe8-5ffd-82f2-335e5878ec3d"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "5dab9d01-19fa-5bfb-94bd-fd4e4c79d965"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "5e7af17f-f29a-52d9-8671-afa16aa8ef3b"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "6190af22-d056-5a5e-8ab9-bc13b89f6185"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "663977c6-dde5-5c7d-8a42-cfc7bd55eb9d"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "6786dd68-75fc-5b1f-828e-249370c102d2"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "685a44ef-e6b8-50c3-9da5-f9220d23b226"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "6aed5c82-19b6-563e-82e6-b9091f9c2927"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "6b4266c6-6d7a-5ca4-aaef-cb09e0a0369d"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "6c20a34e-2e9d-5f8b-b935-acf8febc14ca"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "6e673e50-3862-5c39-994b-8417dee38945"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "6e739729-9012-5de5-a721-c669182f652a"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "7353776b-1dfc-54b2-b635-7781c965c40e"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "74848a16-c9a9-418d-8e73-986fe8da65f2"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "75d50291-c227-5f0b-9dda-c0bd9237f095"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "7c02c7c4-bd6c-5871-abc8-b69256bfd6ea"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "812483f0-f8a1-5c33-af78-811a97c12f49"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "95ba950b-bce6-5e94-91ab-fd19557bcbe1"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "969c1a0f-228b-5a05-bc08-90ac27fef6d2"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "9f716f94-9f84-541e-9e0d-8e6f63f04d5b"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "a226b062-de9b-510e-8f82-22c3b4e6efa1"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "a269e35f-1e7a-56af-b024-b8485198b8f9"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "ad738294-e4ca-5122-bc57-3cdfb57e263d"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "af6a81c8-8c78-58b5-aa43-4edf10dc07e7"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "b005f343-ab76-5cec-a8c9-40c4db7503c7"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "b2175fdc-9a97-5bdf-8d5a-d397dfb8d063"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "b221a709-0bd8-5d65-802e-2341c2a9c7eb"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "b4539f02-859c-5011-a6dc-a2611dcd3db3"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "b5736e10-470f-502e-bff6-df557c181a0c"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "b7274d5b-a4f5-5540-8fdf-6e50654f9b44"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "b983357f-f897-5433-b641-0a76ab89adca"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "bbaa2513-91ec-5181-af96-2de372eea990"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "bedda74f-e36a-5ab7-8209-07e87017e26f"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "c491cae0-cbb6-5a39-9c80-034f5251354f"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "c73d7fa6-fb63-5a47-9423-ad64613d3a49"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "c8a338b4-19c1-50a4-811e-6b6296b02e51"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "cde466e9-aebf-5cbc-b2ae-9173dba73d92"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "db8da6e4-50de-5e8a-9522-55286d1e9359"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "dc172a69-2034-56b8-976b-064e285847d2"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "dc8f9227-3ea4-440c-8d54-641e21abb512"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "de94da25-b079-55b9-936b-43f8983d2f58"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "e37b2e64-0f37-5c86-9679-328b3353a4a5"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "e7e43e98-4eb8-5ee5-8089-b73588bf8597"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "e9a56a26-322a-5ac1-b77c-f87278f12e1c"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "ea5df990-54b1-53b4-8f8b-521ef3d9db54"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "eae88a18-d613-5c4a-9d38-e1e8ba2929ba"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "ed6a6918-10a2-5612-8c32-0e0e00ee8b0c"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "ef3cca5d-404a-580a-885e-fe4a80927ba8"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "f37b935c-a198-5c9d-b4b3-24f468ca85de"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "f4b2cf8f-0c49-51ba-80c5-2b0fb2e409b3"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "f7e8efa2-a7fb-5d48-b309-d3f9ba605e94"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "f95f76f8-3d2a-4cc7-9a7e-19c142fd834c"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "fd7ee76f-8397-50ae-963a-2586aed746ac"
+    },
+    {
+      "kind": "via",
+      "net": "ACCEL_INT_N",
+      "uuid": "850f40d6-59e5-559a-b937-7ae8e9e7c012"
+    },
+    {
+      "kind": "via",
+      "net": "ACCEL_INT_N",
+      "uuid": "fe9cbf5d-495c-593b-b762-390ae8f7f861"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "21ee3004-3521-560d-ace9-8d62ab63c34a"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "2bdfcc86-6bc9-5eb6-819e-471a6676874b"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "347be374-cdc9-5fdf-acc8-079e3fe9c03f"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "3d3f4b07-07a9-5116-8fc7-9b4a0acafd4b"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "40afcce5-9260-5d77-b531-46a333966060"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "43f17b14-4c68-53b9-9598-e6c94cfa26c0"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "49c1300e-468c-59cd-bda8-5f890406ba86"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "5a601520-56a2-5a04-a9ad-618d57855d24"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "86a072d3-4147-5d8b-9256-2196f9704a51"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "a78ef8b1-ba6a-5c2a-8534-353b777de2c5"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "b87b7b59-1666-52e9-abd7-081fa240097e"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "cb0cd2f0-1026-5337-80c0-32cee4263939"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "d02dd721-b8f1-53b8-ada1-951055f0a0bc"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "d475202c-98bb-5a57-a6e5-2a5cbe55cfa8"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "e3a75522-5a1a-50fe-9424-8aef9b8841dc"
+    },
+    {
+      "kind": "segment",
+      "net": "ACCEL_INT_N",
+      "uuid": "f76b484e-8e15-50f7-882b-9f33cdea81d9"
+    },
+    {
+      "kind": "segment",
+      "net": "3V3",
+      "uuid": "12c313ac-1910-462f-81bb-b3b68e0bd856"
+    },
+    {
+      "kind": "segment",
+      "net": "3V3",
+      "uuid": "43f04802-15dc-4b38-8c5f-29d256a04012"
+    },
+    {
+      "kind": "segment",
+      "net": "3V3",
+      "uuid": "5717836c-8b13-41a2-9ae8-37f60e4ea632"
+    },
+    {
+      "kind": "segment",
+      "net": "3V3",
+      "uuid": "635ecff7-85dd-47c1-a911-ece61e2d1637"
+    },
+    {
+      "kind": "segment",
+      "net": "3V3",
+      "uuid": "8a96d77e-8def-436e-b1e4-ab8dc9ce304e"
+    },
+    {
+      "kind": "segment",
+      "net": "3V3",
+      "uuid": "9e1ab3ff-6c2b-459a-a7d7-a2af106cd10c"
+    },
+    {
+      "kind": "segment",
+      "net": "3V3",
+      "uuid": "df23ab19-8ad6-4756-9d2f-b4fddf589287"
+    },
+    {
+      "kind": "segment",
+      "net": "3V3",
+      "uuid": "e41665f2-d0f3-4811-8e17-10bc92211c54"
+    },
+    {
+      "kind": "segment",
+      "net": "3V3",
+      "uuid": "e85b90a1-ae29-40d4-9b81-1f29bb7408d5"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "0b790ffc-6c52-5f77-bff9-397155eef1a1"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "102431e1-3fee-45f2-97de-330783396748"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "1ea8eb16-c5d5-5dad-820d-1b879f061fc4"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "2259b6b7-a74f-537c-b149-f4c1d5e473f6"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "264d3a54-8b22-5f8c-bb0c-6920d9b09a4c"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "3f4947e1-0da6-52a6-b305-3dfc8709c151"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "43309b94-dada-57a4-b69a-1d72ff461674"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "48ed8703-b475-428b-bfcd-8bcbfdb66151"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "4947d7dc-241b-5589-9a62-78d9f94037f4"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "49f8e80e-9bb0-553a-aefd-f1d7d093a74c"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "4e109fc8-0158-5526-8ae0-78c8115e65dd"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "54ebff77-50d5-5d2f-a608-4e63ad326722"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "5e17b530-f8ae-598c-a0b1-74fdf0605ac1"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "67503368-afbf-53ba-a3e3-0dc4f05a8043"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "6796177b-9921-5582-a7dd-2e358234322d"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "6f45a25f-c3b4-56f6-9b7d-7a7c0d40cd4d"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "723d1610-9f8f-5c3e-aed9-7327351eadc7"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "760e64a1-87dc-5553-bcc1-ddcdc24e4ad3"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "82b4fb04-6852-47d3-b59b-be6365ad7647"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "8a368e40-f229-5c57-84b6-70cc3d927286"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "9dcc2924-4351-4814-bd63-c75a8e29237a"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "abbd7739-7e19-5360-84a9-6ab610540eca"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "b6b98ec7-210e-5255-815c-a9ab06f88452"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "ba6f97f0-2966-54ac-b9d9-b82fd60e8a07"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "c0d3a6ef-7dbb-467d-b1e9-afd105c3f6d6"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "c4899432-9ea1-563f-b621-070110abfb1f"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "ca9eae3a-863b-574c-860e-158b117b78a0"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "d177d735-242a-5237-ba98-d9c25eace8ac"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "d5e02a06-69f8-575c-8c33-f3d707a0329f"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "d69c7776-54e7-5977-b0ec-b36de63b423d"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "da2de56d-e1e7-4e68-88de-1163098beab6"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "e144bcd3-d66d-45a9-8cae-69f9271533e2"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "e978ba3b-122e-5474-b5ae-2b70e5c98034"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "ef44dc47-aade-4d44-9d6d-202d454e2e13"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "fc8e1d03-1a64-493e-8588-265cd99409b3"
+    },
+    {
+      "kind": "via",
+      "net": "RTC_INT_N",
+      "uuid": "64da4089-9b70-4a5a-9cbb-021bfe3d7cfb"
+    },
+    {
+      "kind": "via",
+      "net": "RTC_INT_N",
+      "uuid": "64f4ab6e-5745-4dea-a913-9c30cec87eb9"
+    },
+    {
+      "kind": "via",
+      "net": "RTC_INT_N",
+      "uuid": "6bdbecf5-bd40-440e-ae2b-5bdf1126b88b"
+    },
+    {
+      "kind": "via",
+      "net": "RTC_INT_N",
+      "uuid": "876d6fc8-ea97-5e25-a765-81f1d71f81e4"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "12e7af0b-8b07-5784-82ad-d071d667cab2"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "1c4fbcba-833f-5661-9b95-5a1a08335a8c"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "1d93a88b-e2b4-54a6-88b3-353b035e142a"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "2a14e582-da45-5139-8098-a1f41b4680f1"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "36983b39-444f-53b1-a12d-7aa478468eff"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "3f550be5-a867-55bd-941c-bb938e3bfedd"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "460fc237-10b6-5258-a2b2-bd341ad6f445"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "4bfb2133-4673-55d7-a4b9-9781791f7cda"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "4e06a748-b862-5e0c-a7c1-83ca003688c8"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "5d6a5ce1-2e74-5532-87dc-a3f74d0e792f"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "67d34c45-b1fa-45f6-b4f2-a519bf506fe5"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "754d703f-1642-58bd-8ce8-aa4dc5a6d33f"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "8d6f0798-e6d6-5bc8-b430-dd4471f43c59"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "97e47518-c93a-5651-91d9-ec062dda5481"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "a2694d79-051d-5148-b035-004b04a2dda3"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "a6430520-a0e8-542e-b641-15c5e28b6e86"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "a7967da4-4231-5233-966c-38ce2f80a03f"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "a950c958-4c21-5f34-92f7-302cb65479fc"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "b3619dfb-eef9-52ca-8a84-4b5b5054ab6b"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "c3fae416-ffc6-4b53-a781-d9a4038c9bfa"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "c6e5c09b-92dd-55ae-bc50-e9fb137c90a2"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "ddd2274f-7a27-52b5-947d-6f18c87598f4"
+    },
+    {
+      "kind": "segment",
+      "net": "RTC_INT_N",
+      "uuid": "e73d44d4-3e4b-54a5-bf53-af13cf4d9e09"
+    }
+  ],
+  "new_refs": [
+    "U11",
+    "C52"
+  ],
+  "changed_pad_nets": [
+    "R17.1",
+    "R18.1",
+    "U2.24",
+    "U2.30"
+  ]
+}

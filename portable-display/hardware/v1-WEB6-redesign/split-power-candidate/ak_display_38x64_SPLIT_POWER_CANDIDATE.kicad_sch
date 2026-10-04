@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "38x64 split-power candidate - connectivity schematic")
-		(date "2026-10-02")
-		(rev "USB1")
+		(date "2026-10-04")
+		(rev "WAKE2")
 		(company "Sameat")
 		(comment 1 "Power configuration incomplete: C3036461 factory profile not confirmed")
 		(comment 2 "EVT design: not physically validated")

@@ -1,0 +1,77 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-04T18:52:40",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [ACCEL_INT_N] on F.Cu, length 1.2728 mm",
+                    "pos": {
+                        "x": 14.35,
+                        "y": 16.325
+                    },
+                    "uuid": "55012aaa-1364-547b-9cfd-8133b0de5807"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [RTC_INT_N] on B.Cu, length 0.0500 mm",
+                    "pos": {
+                        "x": 19.125,
+                        "y": 22.325
+                    },
+                    "uuid": "1c4fbcba-833f-5661-9b95-5a1a08335a8c"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [ACCEL_INT_SOC_N] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 15.9,
+                        "y": 17.9
+                    },
+                    "uuid": "850f40d6-59e5-559a-b937-7ae8e9e7c012"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [ACCEL_INT_SOC_N] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 31.5,
+                        "y": 17.6
+                    },
+                    "uuid": "08fff5c3-abc7-550a-97f4-140957bd4136"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

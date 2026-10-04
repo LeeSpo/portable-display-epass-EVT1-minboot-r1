@@ -71,7 +71,9 @@
       "66": "LCD_RST",
       "45": "WAKE_PULSE_N",
       "76": "USB_DP",
-      "77": "USB_DM"
+      "77": "USB_DM",
+      "24": "RTC_INT_SOC_N",
+      "30": "ACCEL_INT_SOC_N"
     },
     "L1": {
       "1": "LX_3V3",
@@ -181,6 +183,48 @@
       "B6": "USB_DP",
       "A7": "USB_DM",
       "B7": "USB_DM"
+    },
+    "U11": {
+      "1": "RTC_INT_N",
+      "2": "GND",
+      "3": "ACCEL_INT_N",
+      "4": "ACCEL_INT_SOC_N",
+      "5": "3V3",
+      "6": "RTC_INT_SOC_N"
+    },
+    "C52": {
+      "1": "3V3",
+      "2": "GND"
+    },
+    "R17": {
+      "1": "RTC_3V3",
+      "2": "RTC_INT_N"
+    },
+    "R18": {
+      "1": "RTC_3V3",
+      "2": "ACCEL_INT_N"
+    },
+    "R11": {
+      "1": "RTC_3V3",
+      "2": "WAKE_REQ_N"
+    },
+    "U4": {
+      "2": "RTC_3V3",
+      "9": "RTC_3V3",
+      "10": "RTC_3V3",
+      "12": "ACCEL_INT_N"
+    },
+    "U5": {
+      "2": "RTC_INT_N",
+      "7": "RTC_3V3"
+    },
+    "D2": {
+      "1": "RTC_INT_N",
+      "2": "WAKE_REQ_N"
+    },
+    "D3": {
+      "1": "ACCEL_INT_N",
+      "2": "WAKE_REQ_N"
     }
   },
   "rail_requirements": [
@@ -249,7 +293,12 @@
     "R32": "10k",
     "R12": "910k",
     "C23": "3.3u",
-    "U6": "SN74LVC1G123DCTR"
+    "U6": "SN74LVC1G123DCTR",
+    "R11": "10k",
+    "R17": "10k",
+    "R18": "10k",
+    "U11": "SN74LVC2G17DBVR",
+    "C52": "100n"
   },
   "tf_control_requirement": {
     "gpio": "U2 PH12 / pin 40 / SD_PWR_EN",
@@ -269,7 +318,14 @@
     "C23",
     "U6",
     "Q1",
-    "Q2"
+    "Q2",
+    "R11",
+    "R17",
+    "R18",
+    "D2",
+    "D3",
+    "U11",
+    "C52"
   ],
   "display_io_requirement": {
     "reset_gpio": "PA8",
@@ -298,6 +354,11 @@
       "MPN": "TCC0805X7R335K250FT",
       "LCSC": "C7393948",
       "Footprint": "Sameat:C_0805_2012Metric"
+    },
+    "U11": {
+      "MPN": "SN74LVC2G17DBVR",
+      "LCSC": "C10429",
+      "Footprint": "Sameat:SN74LVC2G17_DBV6"
     }
   },
   "wake_pulse_requirement": {
@@ -327,5 +388,25 @@
     "worst_case_timing_guaranteed": false,
     "hardware_verified": false,
     "evidence_document": "WAKE_PULSE_REPAIR_CN.md"
+  },
+  "wake_domain_requirement": {
+    "always_on_supply": "RTC_3V3",
+    "switched_supply": "3V3",
+    "buffer": "TI SN74LVC2G17DBVR (DBV6); partial power-down Ioff; inputs tolerate voltage at VCC=0",
+    "soc_inputs": {
+      "PE7": "RTC_INT_SOC_N",
+      "PE6": "ACCEL_INT_SOC_N"
+    },
+    "wake_sources": {
+      "RV3028_INT": "RTC_INT_N",
+      "LIS2DW12_INT1": "ACCEL_INT_N"
+    },
+    "source_pullups_ohm": 10000,
+    "buffer_i_off_max_a": 1e-05,
+    "buffer_input_leakage_max_a": 5e-06,
+    "source_configuration_required": "active-low latched; LIS2DW12 open-drain; clear stale events and require WAKE_REQ_N high before shutdown",
+    "mask_soc_interrupts_during_supply_ramp": true,
+    "hardware_verified": false,
+    "evidence_document": "WAKE_DOMAIN_REPAIR_CN.md"
   }
 }
