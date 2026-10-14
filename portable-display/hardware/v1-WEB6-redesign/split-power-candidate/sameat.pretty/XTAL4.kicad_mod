@@ -12,4 +12,5 @@
 	(pad "2" smd roundrect (at 1.2000 -0.9000 0) (size 1.0000 0.9000) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio .2))
 	(pad "3" smd roundrect (at 1.2000 0.9000 0) (size 1.0000 0.9000) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio .2))
 	(pad "4" smd roundrect (at -1.2000 0.9000 0) (size 1.0000 0.9000) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio .2))
+(fp_circle (center -0.337 -0.543) (end -0.262 -0.543) (stroke (width 0.15) (type default)) (fill yes) (layer "F.SilkS") (uuid "0d2dac29-5892-47b4-b859-9835c6a2d8a7"))
 )

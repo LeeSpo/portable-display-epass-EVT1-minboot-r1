@@ -115,3 +115,12 @@
 - 新增 C62 100nF（C1525）B 面 (19.43,24.3)，经 B 走线接 pin 37 的 1V8 via (16.75,22.9)；原最近电容 C17 8.2 mm（布线距离约 3 mm）。
 - pin 47：F 面 3V3 走线 47→55 约 2.6 mm，与 pin 55 共用 C57（B 面，经 via 12.8,28.3）。再加电容需拆 PMIC_SDA/SCL/FEL_KEY_N，风险大于收益，暂不做，记录在 OPEN_ISSUES。
 - 验证：verification/preflight_u2dec_20261015，全部 0。
+
+## 2026-10-15 · 丝印 pin-1 圆点与二极管极性
+- 在库 footprint（sameat.pretty）与板上实例同时加入 F.SilkS 标记，避免 lib_footprint_mismatch：
+  - pin-1 实心圆点（Ø0.3 mm）：U1、U2、U4、U5、U6、U8、U9、U10、U11、U12/U13、Q1–Q3、J2、J3、J4、J5、Y1。位置由脚本在所有实例上同时检查：与任何焊盘/丝印 ≥0.16 mm、离板边 ≥0.3 mm。
+  - 阴极条（0.15 mm 线）：D1/D5 LED0603 在 pin 2（阴极，pin 1 = 阳极 3V3_B / STATUS_LED_A）；D2/D3 SOD-123 在 pin 1（阴极接 RTC_INT_N / ACCEL_INT_N，WAKE_REQ_N 为阳极侧）。
+  - D13/D14 ESDLC5V0LB 为双向 TVS（Yangjie 规格书：Bidirectional，无极性标记），不加极性标记。
+- L1–L3/L5/L6 电感、J1 USB-C 无方向要求。
+- 注意：D2/D3 仍无 MPN/LCSC（见 OPEN_ISSUES），阴极映射需按最终选型的 SOD-123 规格书再次确认。
+- 验证：verification/preflight_silk_20261015，全部 0。

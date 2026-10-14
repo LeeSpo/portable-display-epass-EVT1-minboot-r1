@@ -22,4 +22,5 @@
 	(pad "11" smd rect (at -5.1000 -3.1000 0) (size 1.3000 1.4000) (layers "F.Cu" "F.Paste" "F.Mask"))
 	(pad "12" smd rect (at 5.1000 -3.1000 0) (size 1.3000 1.4000) (layers "F.Cu" "F.Paste" "F.Mask"))
 	(pad "13" smd rect (at 5.1000 1.3500 0) (size 1.3000 1.4000) (layers "F.Cu" "F.Paste" "F.Mask"))
+(fp_circle (center 4.602 3.705) (end 4.677 3.705) (stroke (width 0.15) (type default)) (fill yes) (layer "F.SilkS") (uuid "12504f6f-3add-427e-9867-0493548630c9"))
 )
