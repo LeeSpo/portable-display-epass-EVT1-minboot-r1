@@ -131,3 +131,15 @@
 - 仍在焊盘内（20 个，空间不足）：U9.2、C18.1/.2、J4.3/.5/.9、C17.2(另一个)、C29.2、R20.1、C12.2、U8.6(另一个)、R22.1、L1.2、C23.1、C46.2、C32.1、U5.3、U5.8、C37.1、VSYS C1/C40。
   - 处理建议：下单时选 JLC “盘中孔 树脂塞孔+电镀盖帽 (POFV)” 工艺，或至少对这些 via 阻焊塞孔。四层板 POFV 加价需在下单时确认（不在本 PR 内采购）。
 - 验证：verification/preflight_vip_20261015，全部 0。
+
+## 2026-10-15 · J4 定型 + DSI 等长
+- **J4 定型：Molex 502598-4593，LCSC C5365339**（JLC 扩展库，库存约 1.7 万，≈$0.46）。KD024 规格书（kd024_screen/KD024EGOIN152-01_engineering_spec.md）推荐 502598-4591，该型号已停产，DigiKey 标注 -4593 为直接替代（同系列 BackFlip，45P/0.3 mm，双面触点，高 1.14 mm）。
+- 引脚对照 KD024 pinout.csv（与 reference/display_pinout_supplied.csv 一致）逐脚核对：GND/ELVSS/ELVDD/VCI(LCD_3V3)/VDDIO(LCD_1V8)/TE/RESX/SWIRE/D0P/D0N/CLKP/CLKN 均正确；IM1/IM0（31/32）接 GND = MIPI 模式（规格书 §5）；MTP(43) 接 GND 符合“开路或接地”；MCU 总线 18–29 不用、悬空；TE1(13) 悬空。
+- 焊盘与 LCSC/EasyEDA C5365339 封装对比：45 个信号焊盘位置/尺寸一致（行距 3.065 vs 3.06 mm，差 5 µm）；MP1/MP2 固定脚差 0.17 mm(x)/0.1 mm(y)。项目库基于 Molex SD-502598-003 图纸审过，保留不改；Molex 官网图纸此次无法下载（连接被拒），列入 OPEN_ISSUES 待人工对照。
+- **DSI 等长**：错位双排使 P 线（远排）必须绕行，拓扑无法缩短。改为在 N 线上加蛇形（0.127 mm 线宽，0.3 mm 节距，与异网 ≥0.17 mm）：
+  - D0：P 19.009 / N 19.007 mm（原 N 7.957）
+  - CK：P 12.871 / N 12.874 mm（原 N 7.874）
+  - 线对内偏差 ≤0.003 mm。D0 和 CK 之间差 6.1 mm（约 41 ps），远小于 456 Mbps 时 D-PHY 允许的时钟-数据偏差（±0.15 UI ≈ ±330 ps）。
+  - 蛇形切断了 F 面一小块 GND 铺铜孤岛，新增 GND via (18.3,35.9) 接回。
+  - 差分阻抗（100 Ω）和耦合：仍是单根走线、没有紧耦合，阻抗未经仿真，记录在 OPEN_ISSUES。
+- 验证：verification/preflight_j4dsi_20261015（全部 0，dsi_lengths.txt）。

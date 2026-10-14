@@ -2862,7 +2862,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Molex 502598-4593; verify -4591 module FPC compatibility; MIPI 1-lane; EL± from U10"
+			(property "Description" "Molex 502598-4593 (LCSC C5365339): 45P 0.3mm BackFlip dual-contact, direct replacement of KD024-recommended 502598-4591 (obsolete); MIPI 1-lane; EL± from U10"
 				(at 0 0 0)
 				(effects
 					(font
@@ -8508,7 +8508,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C5365339"
 			(at 63.500 71.120 0)
 			(effects
 				(font
@@ -8517,7 +8517,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Molex 502598-4593; verify -4591 module FPC compatibility; MIPI 1-lane; EL± from U10"
+		(property "Description" "Molex 502598-4593 (LCSC C5365339): 45P 0.3mm BackFlip dual-contact, direct replacement of KD024-recommended 502598-4591 (obsolete); MIPI 1-lane; EL± from U10"
 			(at 63.500 71.120 0)
 			(effects
 				(font
