@@ -107,3 +107,11 @@
 - ERC：1V8_PMIC 由 U1.18（power_out）驱动，不能加 PWR_FLAG；改为对负载侧 1V8 加 SUPPLY_SOURCE 标记（EXTRA_SUPPLY_NETS）。
 - 修复：footprint 复制（pcbnew.FOOTPRINT(src)）会复制 UUID，导致 DRC 报错张冠李戴；已为 10 个重复的 footprint 重新生成 UUID。
 - 流程见 BRINGUP_CN.md。验证：verification/preflight_links_20261015（DRC 0 / ERC 0 / unconnected 0 / parity 0，power_contract / fel / usb / wake 全部 True）。
+
+## 2026-10-15 · U2 左上角去耦（pin 44 / 47 / 37）
+- F 面 U2 左上角无空间（U2 courtyard 到 12.76/22.75，C31/R4/R5 紧邻），按指示改在 B 面。
+- 拆除并重布 B 面 STATUS_LED、UART0_RX、WAKE_PULSE_N、KEY_BACK（全部低速 GPIO）。KEY_BACK 35.6→39.6 mm，多 2 个 via；其余长度基本不变。
+- 新增 C60 100nF（CL05B104KO5NNNC，C1525，basic）B 面 (12.93,21.78)，经新 3V3 via (13.7,20.915) 接 pin 44 扇出；原最近电容 C57 6.4 mm。
+- 新增 C62 100nF（C1525）B 面 (19.43,24.3)，经 B 走线接 pin 37 的 1V8 via (16.75,22.9)；原最近电容 C17 8.2 mm（布线距离约 3 mm）。
+- pin 47：F 面 3V3 走线 47→55 约 2.6 mm，与 pin 55 共用 C57（B 面，经 via 12.8,28.3）。再加电容需拆 PMIC_SDA/SCL/FEL_KEY_N，风险大于收益，暂不做，记录在 OPEN_ISSUES。
+- 验证：verification/preflight_u2dec_20261015，全部 0。

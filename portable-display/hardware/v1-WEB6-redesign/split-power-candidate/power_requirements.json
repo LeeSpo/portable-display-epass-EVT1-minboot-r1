@@ -563,6 +563,16 @@
       "MPN": "0402WGF0000TCE",
       "LCSC": "C17168",
       "Footprint": "Sameat:0402"
+    },
+    "C60": {
+      "MPN": "CL05B104KO5NNNC",
+      "LCSC": "C1525",
+      "Footprint": "Sameat:0402"
+    },
+    "C62": {
+      "MPN": "CL05B104KO5NNNC",
+      "LCSC": "C1525",
+      "Footprint": "Sameat:0402"
     }
   },
   "wake_pulse_requirement": {
