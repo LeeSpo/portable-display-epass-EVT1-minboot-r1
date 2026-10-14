@@ -60,7 +60,7 @@ def main():
     records['R32'].sheet = 'interfaces'
     records['C52'] = copy.deepcopy(records['C26'])
     records['C52'].ref = 'C52'
-    for ref in ['R33', 'R34']:
+    for ref in ['R33', 'R34', 'R35']:
         records[ref] = copy.deepcopy(records['R10'])
         records[ref].ref = ref
     records['U11'] = g.Device('U11', 'SN74LVC2G17DBVR', 'SN74LVC2G17_DBV6',

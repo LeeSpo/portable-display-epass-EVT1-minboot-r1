@@ -5256,6 +5256,110 @@
 			)
 		)
 	)
+	(symbol "R35_10k"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "LCD_EN default-off pulldown: holds U8 ON / U10 CTRL low while PD21 is Hi-Z; 10k sized for 10uA GPIO leakage (<=0.1V)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R35_10k_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R35_10k_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "C13_18p"
 		(pin_names
 			(offset 0.8)
