@@ -1448,7 +1448,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0402 100n X7R"
+			(property "Description" "CL05B104KO5NNNC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4054,7 +4054,7 @@
 					(hide yes)
 				)
 			)
-			(property "Footprint" "Sameat:0603"
+			(property "Footprint" "Sameat:0402"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4072,7 +4072,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "V851SX internal LDOA output bypass"
+			(property "Description" "CL05A225MQ5NSNC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5638,7 +5638,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0402 100n X7R"
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 327.660 163.830 0)
 			(effects
 				(font
@@ -5680,7 +5680,7 @@
 			)
 		)
 	)
-	(global_label "3V3"
+	(global_label "GND"
 		(shape passive)
 		(at 312.420 163.830 180)
 		(effects
@@ -5691,7 +5691,7 @@
 		)
 		(uuid "b956f73b-b249-5c93-8a09-678096e863af")
 	)
-	(global_label "GND"
+	(global_label "3V3"
 		(shape passive)
 		(at 342.900 163.830 0)
 		(effects
@@ -7712,7 +7712,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sameat:0603"
+		(property "Footprint" "Sameat:0402"
 			(at 327.660 222.250 0)
 			(effects
 				(font
@@ -7730,7 +7730,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL05A225MQ5NSNC"
 			(at 327.660 222.250 0)
 			(effects
 				(font
@@ -7739,7 +7739,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C12530"
 			(at 327.660 222.250 0)
 			(effects
 				(font
@@ -7748,7 +7748,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "V851SX internal LDOA output bypass"
+		(property "Description" ""
 			(at 327.660 222.250 0)
 			(effects
 				(font

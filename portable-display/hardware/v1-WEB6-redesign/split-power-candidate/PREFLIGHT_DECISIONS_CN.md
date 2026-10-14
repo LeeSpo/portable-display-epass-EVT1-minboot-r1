@@ -58,3 +58,21 @@
 - DRC（含 --schematic-parity --refill-zones --severity-all）：0 violations / 0 unconnected / 0 parity。
 - ERC：0。
 - check_power_contract / check_fel_recovery / check_usb_routing / check_wake_domain：static_checks_passed = true。
+
+## J5 microSD 换座与重布线（2026-10-15，已完成）
+
+- **J5 换为 XKTF-0803-0（LCSC C381083，有库存，自弹式，约 11.6×10.5 mm 封装）**。原 MUP-M617-2 无库存。备选 TF PUSH C393941（深约 15 mm）、LCK-TF-110（15 mm）、TF-110（11.3 mm）因深度/板边不合适，放弃。
+- **SD ESD 方案改为 2× TPD4E05U06DQAR（U12/U13，LCSC C138714，约 $0.082，库存约 9.4 万，IO 电容 0.5 pF）**，替换原来 7 颗分立 ESDLC5V0LB（D6–D12，约 3 pF/颗）。原因：
+  - 0.5 pF 远低于 3 pF，对 SD_CLK 更友好；
+  - 流通式（flow-through）封装可以让 6 根 SD 线直接穿过，不需要再绕线。
+  - U12 接 SD_D2/D3/CMD/DET，U13 接 SD_CLK/D0/D1，U13 的 1/10 脚留空（数据手册允许）。
+  - D13/D14（CC1/CC2）保留 ESDLC5V0LB。
+- **SD 总线全部改为 F.Cu 0.127 mm 平行走线**，路径是 U2 → 45° 斜线 → U12/U13 → J5，**Y1 晶振投影区下方已没有任何 SD 线**（脚本检查过：Y1 区域内只剩 GND 过孔）。
+- **改动和移动的元件：**
+  - C13 移到 (28.4,28.85)，XOUT 走线变短。
+  - C14（3V3 100 nF）原位置被 SD 总线占用，改放在 Q3 输入旁 (28.6,36.7)，作为 SD 电源开关的输入去耦。
+  - C34（SOC_LDO_1V8 2.2 µF）由 0603 改为 0402 CL05A225MQ5NSNC（C12530，basic 库，$0.0054），放到 **B 面** (24.05,29.275)，避开 Y1 投影。
+- **重布的网络：** PMIC_SDA、PMIC_SCL、PMIC_IRQ_N、PWRON_N、RTC_3V3、DRAM_1V5、SOC_LDO_1V8、SD_PWR_GATE、SD_3V3、SD_PWR_EN。
+  - SD_3V3 从 J5.4 引出的颈部是 0.15 mm、长约 0.8 mm，夹在 CMD 与 DET 两个焊盘之间，没有更宽的空间；SD 卡峰值电流约 100–200 mA，这个宽度足够。
+  - SD_PWR_EN 与原设计一样借用 In2 走一段（在 U2 下方 15.68,24.32 → 19.5,33.2）。这是低速静态使能信号；In2 是电源层，不是参考地，DRC 确认没有产生孤岛或未连接。
+- 检查结果：DRC 0 违规 / 0 未连接 / 0 原理图一致性问题；ERC 0；power_contract、fel_recovery、usb_routing、wake_domain 全部通过。输出在 `verification/preflight_j5_20261015/`。

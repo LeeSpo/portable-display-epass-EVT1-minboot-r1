@@ -25,6 +25,8 @@ def pin_type(dev, num):
     if dev.ref == 'U11':
         return {'1': 'input', '2': 'power_in', '3': 'input',
                 '4': 'output', '5': 'power_in', '6': 'output'}[num]
+    if dev.ref in ('U12', 'U13'):
+        return 'power_in' if num in ('3', '8') else 'passive'
     if dev.ref == 'U1':
         if num in {'2','5','8','10','11','12','14','15','16','18','19','20','22','25','28','34','35','36'}:
             return 'power_out'
@@ -60,12 +62,21 @@ def main():
     records['R32'].sheet = 'interfaces'
     records['C52'] = copy.deepcopy(records['C26'])
     records['C52'].ref = 'C52'
-    for ref in ['C53', 'C54']:
+    for ref in ['C53', 'C54', 'C57']:
         records[ref] = copy.deepcopy(records['C26'])
         records[ref].ref = ref
     for ref in ['R33', 'R34', 'R35']:
         records[ref] = copy.deepcopy(records['R10'])
         records[ref].ref = ref
+    for ref in ['U12', 'U13']:
+        records[ref] = g.Device(ref, 'TPD4E05U06DQAR', 'TPD4E05U06_DQA',
+                                'interfaces', 0, 0,
+                                {str(n): (name, None) for n, name in enumerate(
+                                    ['IO1', 'IO2', 'GND', 'IO3', 'IO4',
+                                     'NC_FT4', 'NC_FT3', 'GND', 'NC_FT2', 'NC_FT1'], 1)})
+    records['J5'].pins = {str(n): (name, None) for n, name in enumerate(
+        ['DAT2', 'CD_DAT3', 'CMD', 'VDD', 'CLK', 'VSS', 'DAT0', 'DAT1', 'DET',
+         'SHIELD', 'SHIELD', 'SHIELD', 'SHIELD'], 1)}
     records['U11'] = g.Device('U11', 'SN74LVC2G17DBVR', 'SN74LVC2G17_DBV6',
                              'sensors', 0, 0,
                              {str(n): (name, None) for n, name in enumerate(

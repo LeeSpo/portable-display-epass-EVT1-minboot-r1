@@ -6171,7 +6171,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0402 100n X7R"
+		(property "Description" "CL05B104KO5NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8777,7 +8777,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Sameat:0603"
+		(property "Footprint" "Sameat:0402"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8795,7 +8795,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "V851SX internal LDOA output bypass"
+		(property "Description" "CL05A225MQ5NSNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11752,6 +11752,110 @@
 			)
 		)
 	)
+	(symbol "C57_100n"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "100n"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CL05B104KO5NNNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C57_100n_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C57_100n_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "R27_2.2k"
 		(pin_names
 			(offset 0.8)
@@ -11922,214 +12026,6 @@
 			)
 		)
 		(symbol "C42_1u_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "D6_ESDLC5V0LB"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "ESDLC5V0LB"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:DFN1006-2"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "ESDLC5V0LB"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D6_ESDLC5V0LB_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D6_ESDLC5V0LB_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "D12_ESDLC5V0LB"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "ESDLC5V0LB"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:DFN1006-2"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "ESDLC5V0LB"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D12_ESDLC5V0LB_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D12_ESDLC5V0LB_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -12376,6 +12272,308 @@
 			)
 		)
 	)
+	(symbol "J5_MicroSD"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "MicroSD"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:XKTF-0803-0"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "microSD push-push, pin 9 = card detect to shell/GND; card overhangs right edge"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "J5_MicroSD_0_1"
+			(rectangle
+				(start -12.7 -8.890)
+				(end 12.7 8.890)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "J5_MicroSD_1_1"
+			(pin passive line
+				(at -15.24 -7.620 0)
+				(length 2.54)
+				(name "DAT2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 -5.080 0)
+				(length 2.54)
+				(name "CD_DAT3"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 -2.540 0)
+				(length 2.54)
+				(name "CMD"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 2.540 0)
+				(length 2.54)
+				(name "CLK"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 5.080 0)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 7.620 0)
+				(length 2.54)
+				(name "DAT0"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 -6.350 180)
+				(length 2.54)
+				(name "DAT1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 -3.810 180)
+				(length 2.54)
+				(name "DET"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 -1.270 180)
+				(length 2.54)
+				(name "SHIELD"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 1.270 180)
+				(length 2.54)
+				(name "SHIELD"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 3.810 180)
+				(length 2.54)
+				(name "SHIELD"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 6.350 180)
+				(length 2.54)
+				(name "SHIELD"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "L5_4.7uH"
 		(pin_names
 			(offset 0.8)
@@ -12575,6 +12773,254 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "U13_TPD4E05U06DQAR"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "TPD4E05U06DQAR"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:TPD4E05U06_DQA"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4-ch 0.5pF flow-through ESD for microSD lines"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "U13_TPD4E05U06DQAR_0_1"
+			(rectangle
+				(start -12.7 -6.350)
+				(end 12.7 6.350)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "U13_TPD4E05U06DQAR_1_1"
+			(pin passive line
+				(at -15.24 -5.080 0)
+				(length 2.54)
+				(name "IO1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 -2.540 0)
+				(length 2.54)
+				(name "IO2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 2.540 0)
+				(length 2.54)
+				(name "IO3"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 5.080 0)
+				(length 2.54)
+				(name "IO4"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 -5.080 180)
+				(length 2.54)
+				(name "NC_FT4"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 -2.540 180)
+				(length 2.54)
+				(name "NC_FT3"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 2.540 180)
+				(length 2.54)
+				(name "NC_FT2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 5.080 180)
+				(length 2.54)
+				(name "NC_FT1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "10"
 					(effects
 						(font
 							(size .8 .8)
@@ -15410,6 +15856,254 @@
 			)
 		)
 	)
+	(symbol "U12_TPD4E05U06DQAR"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "TPD4E05U06DQAR"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:TPD4E05U06_DQA"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4-ch 0.5pF flow-through ESD for microSD lines"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "U12_TPD4E05U06DQAR_0_1"
+			(rectangle
+				(start -12.7 -6.350)
+				(end 12.7 6.350)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "U12_TPD4E05U06DQAR_1_1"
+			(pin passive line
+				(at -15.24 -5.080 0)
+				(length 2.54)
+				(name "IO1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 -2.540 0)
+				(length 2.54)
+				(name "IO2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 2.540 0)
+				(length 2.54)
+				(name "IO3"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 5.080 0)
+				(length 2.54)
+				(name "IO4"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 -5.080 180)
+				(length 2.54)
+				(name "NC_FT4"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 -2.540 180)
+				(length 2.54)
+				(name "NC_FT3"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 2.540 180)
+				(length 2.54)
+				(name "NC_FT2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 5.080 180)
+				(length 2.54)
+				(name "NC_FT1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "SW2_DOWN"
 		(pin_names
 			(offset 0.8)
@@ -15523,110 +16217,6 @@
 					)
 				)
 				(number "3"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "D7_ESDLC5V0LB"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "ESDLC5V0LB"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:DFN1006-2"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "ESDLC5V0LB"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D7_ESDLC5V0LB_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D7_ESDLC5V0LB_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
 					(effects
 						(font
 							(size .8 .8)
@@ -16042,110 +16632,6 @@
 			)
 		)
 	)
-	(symbol "D9_ESDLC5V0LB"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "ESDLC5V0LB"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:DFN1006-2"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "ESDLC5V0LB"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D9_ESDLC5V0LB_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D9_ESDLC5V0LB_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
 	(symbol "C30_10u"
 		(pin_names
 			(offset 0.8)
@@ -16354,412 +16840,6 @@
 			)
 		)
 	)
-	(symbol "D10_ESDLC5V0LB"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "ESDLC5V0LB"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:DFN1006-2"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "ESDLC5V0LB"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D10_ESDLC5V0LB_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D10_ESDLC5V0LB_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "J5_MicroSD"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "J"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "MicroSD"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:MICROSD"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "MUP-M617-2"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "J5_MicroSD_0_1"
-			(rectangle
-				(start -12.7 -8.890)
-				(end 12.7 8.890)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "J5_MicroSD_1_1"
-			(pin passive line
-				(at -15.24 -7.620 0)
-				(length 2.54)
-				(name "DAT2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -15.24 -5.080 0)
-				(length 2.54)
-				(name "DAT3"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -15.24 -2.540 0)
-				(length 2.54)
-				(name "CMD"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "VDD"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -15.24 2.540 0)
-				(length 2.54)
-				(name "CLK"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -15.24 5.080 0)
-				(length 2.54)
-				(name "VSS"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -15.24 7.620 0)
-				(length 2.54)
-				(name "DAT0"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 -6.350 180)
-				(length 2.54)
-				(name "DAT1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 -3.810 180)
-				(length 2.54)
-				(name "CD"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 -1.270 180)
-				(length 2.54)
-				(name "SH"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 1.270 180)
-				(length 2.54)
-				(name "SH"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 3.810 180)
-				(length 2.54)
-				(name "SH"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 6.350 180)
-				(length 2.54)
-				(name "SH"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
 	(symbol "C48_10u"
 		(pin_names
 			(offset 0.8)
@@ -16930,110 +17010,6 @@
 			)
 		)
 		(symbol "R20_10k_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "D11_ESDLC5V0LB"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "ESDLC5V0LB"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:DFN1006-2"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "ESDLC5V0LB"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D11_ESDLC5V0LB_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D11_ESDLC5V0LB_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -17346,110 +17322,6 @@
 			)
 		)
 		(symbol "R25_47k_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "D8_ESDLC5V0LB"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "ESDLC5V0LB"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:DFN1006-2"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "ESDLC5V0LB"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D8_ESDLC5V0LB_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D8_ESDLC5V0LB_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)

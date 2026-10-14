@@ -253,6 +253,32 @@
     "R34": {
       "1": "3V3",
       "2": "FEL_N"
+    },
+    "U12": {
+      "1": "SD_DET",
+      "2": "SD_CMD",
+      "3": "GND",
+      "4": "SD_D3",
+      "5": "SD_D2",
+      "6": "SD_D2",
+      "7": "SD_D3",
+      "8": "GND",
+      "9": "SD_CMD",
+      "10": "SD_DET"
+    },
+    "U13": {
+      "2": "SD_D1",
+      "3": "GND",
+      "4": "SD_D0",
+      "5": "SD_CLK",
+      "6": "SD_CLK",
+      "7": "SD_D0",
+      "8": "GND",
+      "9": "SD_D1"
+    },
+    "C57": {
+      "1": "GND",
+      "2": "3V3"
     }
   },
   "rail_requirements": [
@@ -435,41 +461,6 @@
       "LCSC": "C7430445",
       "Footprint": "Sameat:SH1.0_3P_RA"
     },
-    "D6": {
-      "MPN": "ESDLC5V0LB",
-      "LCSC": "C20168172",
-      "Footprint": "Sameat:DFN1006-2"
-    },
-    "D7": {
-      "MPN": "ESDLC5V0LB",
-      "LCSC": "C20168172",
-      "Footprint": "Sameat:DFN1006-2"
-    },
-    "D8": {
-      "MPN": "ESDLC5V0LB",
-      "LCSC": "C20168172",
-      "Footprint": "Sameat:DFN1006-2"
-    },
-    "D9": {
-      "MPN": "ESDLC5V0LB",
-      "LCSC": "C20168172",
-      "Footprint": "Sameat:DFN1006-2"
-    },
-    "D10": {
-      "MPN": "ESDLC5V0LB",
-      "LCSC": "C20168172",
-      "Footprint": "Sameat:DFN1006-2"
-    },
-    "D11": {
-      "MPN": "ESDLC5V0LB",
-      "LCSC": "C20168172",
-      "Footprint": "Sameat:DFN1006-2"
-    },
-    "D12": {
-      "MPN": "ESDLC5V0LB",
-      "LCSC": "C20168172",
-      "Footprint": "Sameat:DFN1006-2"
-    },
     "D13": {
       "MPN": "ESDLC5V0LB",
       "LCSC": "C20168172",
@@ -479,6 +470,31 @@
       "MPN": "ESDLC5V0LB",
       "LCSC": "C20168172",
       "Footprint": "Sameat:DFN1006-2"
+    },
+    "U12": {
+      "MPN": "TPD4E05U06DQAR",
+      "LCSC": "C138714",
+      "Footprint": "Sameat:TPD4E05U06_DQA"
+    },
+    "U13": {
+      "MPN": "TPD4E05U06DQAR",
+      "LCSC": "C138714",
+      "Footprint": "Sameat:TPD4E05U06_DQA"
+    },
+    "J5": {
+      "MPN": "XKTF-0803-0",
+      "LCSC": "C381083",
+      "Footprint": "Sameat:XKTF-0803-0"
+    },
+    "C34": {
+      "MPN": "CL05A225MQ5NSNC",
+      "LCSC": "C12530",
+      "Footprint": "Sameat:0402"
+    },
+    "C57": {
+      "MPN": "CL05B104KO5NNNC",
+      "LCSC": "C1525",
+      "Footprint": "Sameat:0402"
     }
   },
   "wake_pulse_requirement": {
