@@ -15,6 +15,10 @@ from kicad_sexpr import children,val,values
 from shapely.geometry import LineString,Point
 from shapely.ops import unary_union,nearest_points
 
+# Geometry contract (2026-10-15): JLC04101H-3313 stackup, USB 90 ohm edge-coupled microstrip
+# w=0.127 mm, s=0.140 mm -> centre pitch 0.267 mm; window -0.005/+0.020 mm covers mitred 45-degree corners.
+PAIR_PITCH_MIN=0.262
+PAIR_PITCH_MAX=0.287
 def graph_metrics(path):
  b=rb.load(path);r=Router(b);thick=float(val(children(b,'general')[0],'thickness'));report={};paths={}
  for net in ['USB_DP','USB_DM']:
@@ -62,7 +66,7 @@ def graph_metrics(path):
  report['orientation_skew_mm']={orientation:abs(report['USB_DP']['paths']['J1.'+orientation+'6']['with_nominal_board_thickness_mm']-report['USB_DM']['paths']['J1.'+orientation+'7']['with_nominal_board_thickness_mm']) for orientation in ['A','B']}
  report['trunk_coupling_fraction_within_0_270mm']={}
  for net,other in [('USB_DP','USB_DM'),('USB_DM','USB_DP')]:
-  line=paths[net];n=math.ceil(line.length/.02);d=[line.interpolate((i+.5)*line.length/n).distance(paths[other]) for i in range(n)];report['trunk_coupling_fraction_within_0_270mm'][net]=sum(.253<q<.270 for q in d)/n
+  line=paths[net];n=math.ceil(line.length/.02);d=[line.interpolate((i+.5)*line.length/n).distance(paths[other]) for i in range(n)];report['trunk_coupling_fraction_within_0_270mm'][net]=sum(PAIR_PITCH_MIN<q<PAIR_PITCH_MAX for q in d)/n
  return report
 
 
@@ -86,7 +90,7 @@ def inspect(board_path):
   metrics=graph_metrics(board_path)
   if abs(metrics['nominal_board_thickness_mm']-1.)>1e-6:problems.append('Nominal board thickness changed; requalify via path estimates')
   if max(metrics['orientation_skew_mm'].values())>1.:problems.append('Either orientation exceeds the 1 mm nominal geometric path mismatch target')
-  if min(metrics['trunk_coupling_fraction_within_0_270mm'].values())<.90:problems.append('Less than 90% of either CPU-to-ESD route has a partner centerline within 0.253-0.270 mm')
+  if min(metrics['trunk_coupling_fraction_within_0_270mm'].values())<.90:problems.append('Less than 90% of either CPU-to-ESD route has a partner centerline within %.3f-%.3f mm (coupled 0.127/0.140 on JLC04101H-3313)'%(PAIR_PITCH_MIN,PAIR_PITCH_MAX))
   if metrics['USB_DP']['vias']!=0 or metrics['USB_DM']['vias']!=2:problems.append('Unexpected USB via count')
   if metrics['USB_DP']['layers']!=['F.Cu'] or metrics['USB_DM']['layers']!=['B.Cu','F.Cu']:problems.append('Unexpected USB routing layers')
  except (AssertionError,ValueError,KeyError) as e:problems.append(str(e))
