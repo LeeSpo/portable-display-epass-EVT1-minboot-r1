@@ -279,6 +279,14 @@
     "C57": {
       "1": "GND",
       "2": "3V3"
+    },
+    "U10": {
+      "11": "3V3",
+      "12": "3V3",
+      "7": "LCD_EN"
+    },
+    "L5": {
+      "1": "3V3"
     }
   },
   "rail_requirements": [
@@ -494,6 +502,21 @@
     "C57": {
       "MPN": "CL05B104KO5NNNC",
       "LCSC": "C1525",
+      "Footprint": "Sameat:0402"
+    },
+    "C59": {
+      "MPN": "CL05B104KO5NNNC",
+      "LCSC": "C1525",
+      "Footprint": "Sameat:0402"
+    },
+    "C46": {
+      "MPN": "CL05A106MQ5NUNC",
+      "LCSC": "C15525",
+      "Footprint": "Sameat:0402"
+    },
+    "C47": {
+      "MPN": "CL05A106MQ5NUNC",
+      "LCSC": "C15525",
       "Footprint": "Sameat:0402"
     }
   },

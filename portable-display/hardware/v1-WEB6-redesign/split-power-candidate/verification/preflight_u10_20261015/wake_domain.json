@@ -1,0 +1,23 @@
+{
+  "static_checks_passed": true,
+  "board_sha256": "b3d9a8d86152fc16f3930c0471725792576da80d579e8082a0333a96d3869adb",
+  "errors": [],
+  "old_off_state_model": {
+    "assumptions": "RTC_3V3=3.3V; 3V3=0V; equal 10k resistors; diode Vf=0.2..0.4V; sources released",
+    "wake_req_v": [
+      1.2333333333333332,
+      1.3666666666666665
+    ],
+    "u6_vih_min_v_at_3_to_3_6_v": 2.0
+  },
+  "new_domain": {
+    "source_pullups": "RTC_3V3",
+    "soc_buffer_supply": "3V3",
+    "input_voltage_allowed_at_vcc_zero": true,
+    "ti_input_leakage_bound_a": 5e-06,
+    "ti_i_off_bound_a": 1e-05,
+    "drop_from_5ua_buffer_input_leakage_across_10k_v": 0.05,
+    "leakage_note": "TI test conditions apply; excludes sensor/diode leakage and PCB contamination"
+  },
+  "hardware_verified": false
+}

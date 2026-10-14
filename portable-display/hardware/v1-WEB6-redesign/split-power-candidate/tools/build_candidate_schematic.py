@@ -62,7 +62,7 @@ def main():
     records['R32'].sheet = 'interfaces'
     records['C52'] = copy.deepcopy(records['C26'])
     records['C52'].ref = 'C52'
-    for ref in ['C53', 'C54', 'C57']:
+    for ref in ['C53', 'C54', 'C57', 'C59']:
         records[ref] = copy.deepcopy(records['C26'])
         records[ref].ref = ref
     for ref in ['R33', 'R34', 'R35']:
