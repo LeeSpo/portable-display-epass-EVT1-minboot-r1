@@ -4941,7 +4941,7 @@
 			)
 		)
 	)
-	(global_label "DRAM_1V5"
+	(global_label "DRAM_1V5_PMIC"
 		(shape passive)
 		(at 180.340 91.440 180)
 		(effects
@@ -5048,7 +5048,7 @@
 			)
 		)
 	)
-	(global_label "CORE_0V93"
+	(global_label "CORE_0V93_PMIC"
 		(shape passive)
 		(at 312.420 105.410 180)
 		(effects
@@ -5262,7 +5262,7 @@
 			)
 		)
 	)
-	(global_label "3V3"
+	(global_label "3V3_PMIC"
 		(shape passive)
 		(at 48.260 119.380 180)
 		(effects
@@ -5918,7 +5918,7 @@
 			)
 		)
 	)
-	(global_label "DRAM_1V5"
+	(global_label "DRAM_1V5_PMIC"
 		(shape passive)
 		(at 180.340 149.860 180)
 		(effects
@@ -6370,7 +6370,7 @@
 			)
 		)
 	)
-	(global_label "CORE_0V93"
+	(global_label "CORE_0V93_PMIC"
 		(shape passive)
 		(at 312.420 163.830 180)
 		(effects
@@ -6488,7 +6488,7 @@
 		)
 		(uuid "be49c7c5-0229-5b1f-bd55-8fa08e731f67")
 	)
-	(global_label "3V3"
+	(global_label "3V3_PMIC"
 		(shape passive)
 		(at 474.980 163.830 0)
 		(effects
@@ -6702,7 +6702,7 @@
 		)
 		(uuid "81566741-9315-5199-a4e9-90e9fc4cf947")
 	)
-	(global_label "CORE_0V93"
+	(global_label "CORE_0V93_PMIC"
 		(shape passive)
 		(at 210.820 179.070 0)
 		(effects
@@ -7251,7 +7251,7 @@
 		)
 		(uuid "f26d0315-bd73-50df-8cd0-857e9cf51865")
 	)
-	(global_label "DRAM_1V5"
+	(global_label "DRAM_1V5_PMIC"
 		(shape passive)
 		(at 210.820 208.280 0)
 		(effects
@@ -7454,7 +7454,7 @@
 			)
 		)
 	)
-	(global_label "3V3"
+	(global_label "3V3_B"
 		(shape passive)
 		(at 444.500 222.250 180)
 		(effects
@@ -8139,7 +8139,7 @@
 		)
 		(uuid "60df0256-51d6-5d5a-9441-61921b2d56da")
 	)
-	(global_label "CORE_0V93"
+	(global_label "CORE_0V93_PMIC"
 		(shape passive)
 		(at 48.260 86.360 180)
 		(effects
@@ -8194,7 +8194,7 @@
 		)
 		(uuid "32e311b2-11cc-5c69-ad18-be8f540b24ea")
 	)
-	(global_label "DRAM_1V5"
+	(global_label "DRAM_1V5_PMIC"
 		(shape passive)
 		(at 48.260 73.660 180)
 		(effects
@@ -8217,7 +8217,7 @@
 		(at 48.260 66.040)
 		(uuid "6fee6011-fcf7-5788-86da-94fdce0ae9eb")
 	)
-	(global_label "3V3"
+	(global_label "3V3_PMIC"
 		(shape passive)
 		(at 48.260 63.500 180)
 		(effects
@@ -8240,7 +8240,7 @@
 		(at 48.260 55.880)
 		(uuid "c01a6dca-fcea-583f-b907-b93d04ed5a6b")
 	)
-	(global_label "3V3"
+	(global_label "3V3_PMIC"
 		(shape passive)
 		(at 48.260 53.340 180)
 		(effects
@@ -8251,7 +8251,7 @@
 		)
 		(uuid "76b3e5cb-09e0-55b5-85ef-7f50dac4278e")
 	)
-	(global_label "1V8"
+	(global_label "1V8_PMIC"
 		(shape passive)
 		(at 48.260 50.800 180)
 		(effects
@@ -8270,7 +8270,7 @@
 		(at 48.260 45.720)
 		(uuid "cb1fc871-d3de-55f3-ad28-415ddbf43fc0")
 	)
-	(global_label "3V3"
+	(global_label "3V3_PMIC"
 		(shape passive)
 		(at 48.260 43.180 180)
 		(effects
@@ -8714,7 +8714,7 @@
 			)
 		)
 	)
-	(global_label "1V8"
+	(global_label "1V8_PMIC"
 		(shape passive)
 		(at 48.260 265.430 180)
 		(effects
@@ -8821,7 +8821,7 @@
 			)
 		)
 	)
-	(global_label "3V3"
+	(global_label "3V3_PMIC"
 		(shape passive)
 		(at 180.340 266.700 180)
 		(effects
@@ -9439,6 +9439,236 @@
 			(justify left)
 		)
 		(uuid "5171700d-894e-5a8c-8340-7a5cb6faf893")
+	)
+	(symbol
+		(lib_id "Sameat:SUPPLY_SOURCE")
+		(at 254.0 279.4 0)
+		(unit 1)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "cde915af-1a53-5de5-aa06-348ced14ad4c")
+		(property "Reference" "#FLG20"
+			(at 254.0 276.85999999999996 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SUPPLY_SOURCE"
+			(at 254.0 274.32 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
+					(reference "#FLG20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "3V3_PMIC"
+		(shape passive)
+		(at 254.0 279.4 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "b1d1664d-743c-59af-93e0-89f82785ac9f")
+	)
+	(symbol
+		(lib_id "Sameat:SUPPLY_SOURCE")
+		(at 274.32 279.4 0)
+		(unit 1)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "fef6a9cc-d718-5ab5-a2c0-8067e8291378")
+		(property "Reference" "#FLG21"
+			(at 274.32 276.85999999999996 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SUPPLY_SOURCE"
+			(at 274.32 274.32 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
+					(reference "#FLG21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "3V3_B"
+		(shape passive)
+		(at 274.32 279.4 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "2738836f-de9a-50d2-82fb-e8a77009eb1c")
+	)
+	(symbol
+		(lib_id "Sameat:SUPPLY_SOURCE")
+		(at 294.64 279.4 0)
+		(unit 1)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "6c3ea917-5704-5988-90e1-c7d15f399d78")
+		(property "Reference" "#FLG22"
+			(at 294.64 276.85999999999996 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SUPPLY_SOURCE"
+			(at 294.64 274.32 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
+					(reference "#FLG22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "CORE_0V93_PMIC"
+		(shape passive)
+		(at 294.64 279.4 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "8012e703-575f-52b1-a98f-fdf5c6e40b7a")
+	)
+	(symbol
+		(lib_id "Sameat:SUPPLY_SOURCE")
+		(at 314.96 279.4 0)
+		(unit 1)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "a23750f7-7f68-5c4f-8a1a-e81ebd3047d1")
+		(property "Reference" "#FLG23"
+			(at 314.96 276.85999999999996 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SUPPLY_SOURCE"
+			(at 314.96 274.32 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
+					(reference "#FLG23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "DRAM_1V5_PMIC"
+		(shape passive)
+		(at 314.96 279.4 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "53e22f0d-a756-5a8b-be11-8c76440f4c44")
+	)
+	(symbol
+		(lib_id "Sameat:SUPPLY_SOURCE")
+		(at 335.28 279.4 0)
+		(unit 1)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "394d7cc7-3b67-55be-a00e-ef1c7ca5808e")
+		(property "Reference" "#FLG24"
+			(at 335.28 276.85999999999996 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SUPPLY_SOURCE"
+			(at 335.28 274.32 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
+					(reference "#FLG24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "1V8"
+		(shape passive)
+		(at 335.28 279.4 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "d301b4c1-bb7a-584e-a573-31a5f045f85a")
 	)
 	(embedded_fonts no)
 )

@@ -98,3 +98,12 @@
   - 加上 SoC IO、SD 卡（峰值约 0.2 A）等其余负载，最坏合计约 1.4–1.5 A，低于 2 A。
   - 需要实测确认屏幕全白画面的电流。
 - 检查：DRC 0/0/0，ERC 0，四项静态检查通过（`verification/preflight_u10_20261015/`）。
+
+## 2026-10-15 · 0Ω 电源隔离链接（R36–R40）
+- 在 AXP2101 每路输出与负载之间加 0402 0Ω（0402WGF0000TCE，C17168，basic，≈$0.0011）。成本几乎为零，可逐路隔离短路/OTP 错误。
+- 3V3 分为两路：R39（B 面，主干，经新 3V3 via (16.1,49.95) 进入 In2 3V3 带）、R38（北支路 3V3_B）。原因：两片负载区在 U2 下方无法在负载侧互连（布线失败），因此各自从 PMIC 侧取电。3V3_B 原有 0.18 mm 线段仍偏细（负载 Q3/U2.5/U2.78/D1，电流小），列入 OPEN_ISSUES。
+- 反馈点保持在 PMIC 侧（U1.4/U1.9），断链接时 PMIC 可空载上电。
+- R40 原放在 FPC_MATING_PROVISIONAL keepout 内，移至 (24.6,44.5) 90°，不放宽规则。
+- ERC：1V8_PMIC 由 U1.18（power_out）驱动，不能加 PWR_FLAG；改为对负载侧 1V8 加 SUPPLY_SOURCE 标记（EXTRA_SUPPLY_NETS）。
+- 修复：footprint 复制（pcbnew.FOOTPRINT(src)）会复制 UUID，导致 DRC 报错张冠李戴；已为 10 个重复的 footprint 重新生成 UUID。
+- 流程见 BRINGUP_CN.md。验证：verification/preflight_links_20261015（DRC 0 / ERC 0 / unconnected 0 / parity 0，power_contract / fel / usb / wake 全部 True）。

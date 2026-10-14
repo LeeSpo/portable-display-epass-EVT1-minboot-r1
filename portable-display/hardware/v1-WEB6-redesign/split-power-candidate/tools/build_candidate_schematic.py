@@ -17,6 +17,7 @@ import generate_evt1 as g
 import kicad_sexpr as s
 
 STEM = 'ak_display_38x64_SPLIT_POWER_CANDIDATE'
+EXTRA_SUPPLY_NETS = ('3V3_PMIC', '3V3_B', 'CORE_0V93_PMIC', 'DRAM_1V5_PMIC', '1V8')
 DATE = '2026-10-05'
 original_pin_type = g.pin_type
 
@@ -65,7 +66,7 @@ def main():
     for ref in ['C53', 'C54', 'C57', 'C59']:
         records[ref] = copy.deepcopy(records['C26'])
         records[ref].ref = ref
-    for ref in ['R33', 'R34', 'R35']:
+    for ref in ['R33', 'R34', 'R35', 'R36', 'R37', 'R38', 'R39', 'R40']:
         records[ref] = copy.deepcopy(records['R10'])
         records[ref].ref = ref
     for ref in ['U12', 'U13']:
@@ -118,7 +119,17 @@ def main():
     s.child(root, 'text')[1] = s.Q('PCB connectivity reconstructed from the current candidate.\nPower targets are requirements, NOT measured/default outputs.\nRead POWER_REVIEW_CN.md before ordering PCBA.\nTF default ON: PH12 low or Hi-Z = ON; high = OFF.\nDisplay RESET = PA8; TE = PA9; both share the 1V8 domain.\nWake timer: approx 3 s nominal; measure 2.2-3.8 s.\nUSB routed as a pair; see USB_ROUTING_REPAIR_CN.md.\nUSB impedance / MIPI / display power still require validation.')
     all_libs = []
     for sheet, sheet_uuid in sheets.items():
-        tree = s.loads(g.schematic_for_sheet(sheet, devices, g.uid('root-schematic'), sheet_uuid))
+        text = g.schematic_for_sheet(sheet, devices, g.uid('root-schematic'), sheet_uuid)
+        if sheet == 'power':
+            # Bring-up 0R links split PMIC-side and load-side rails; each side is
+            # sourced physically by the PMIC through the fitted link.
+            extra = []
+            for idx, net in enumerate(EXTRA_SUPPLY_NETS):
+                ref = f'#FLG{20 + idx}'; x = 254.0 + idx * 20.32; y = 279.4
+                extra.append(f'(symbol (lib_id "Sameat:SUPPLY_SOURCE") (at {x} {y} 0) (unit 1) (in_bom no) (on_board no) (dnp no) (uuid "{g.uid(ref)}") (property "Reference" "{ref}" (at {x} {y-2.54} 0) (effects (font (size 1 1)) (hide yes))) (property "Value" "SUPPLY_SOURCE" (at {x} {y-5.08} 0) (effects (font (size 1 1)) (hide yes))) (instances (project "portable_display_epass" (path "/{g.uid('root-schematic')}/{sheet_uuid}" (reference "{ref}") (unit 1)))))')
+                extra.append(f'(global_label "{net}" (shape passive) (at {x} {y} 0) (effects (font (size 1 1)) (justify left)) (uuid "{g.uid(ref + "-label")}"))')
+            text = text.replace('\t(embedded_fonts no)', '\n'.join(extra) + '\n\t(embedded_fonts no)', 1)
+        tree = s.loads(text)
         selected = [d for d in devices if d.sheet == sheet]
         # Variable-height column packing prevents USB and SoC symbols overlapping.
         tops = [35.56] * 4

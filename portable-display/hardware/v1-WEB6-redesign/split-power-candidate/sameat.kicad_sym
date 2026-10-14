@@ -6024,6 +6024,110 @@
 			)
 		)
 	)
+	(symbol "R38_0R"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bring-up isolation link; fit after rail check"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R38_0R_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R38_0R_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "R28_10k"
 		(pin_names
 			(offset 0.8)
@@ -6090,6 +6194,110 @@
 			)
 		)
 		(symbol "R28_10k_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "R36_0R"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bring-up isolation link; fit after rail check"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R36_0R_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R36_0R_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -8648,6 +8856,214 @@
 			)
 		)
 	)
+	(symbol "R40_0R"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bring-up isolation link; fit after rail check"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R40_0R_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R40_0R_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "R37_0R"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bring-up isolation link; fit after rail check"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R37_0R_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R37_0R_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "R10_10k"
 		(pin_names
 			(offset 0.8)
@@ -8714,6 +9130,110 @@
 			)
 		)
 		(symbol "R10_10k_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "R39_0R"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bring-up isolation link; fit after rail check"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R39_0R_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R39_0R_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -11752,110 +12272,6 @@
 			)
 		)
 	)
-	(symbol "C57_100n"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "C"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "100n"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CL05B104KO5NNNC"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "C57_100n_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "C57_100n_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
 	(symbol "C59_100n"
 		(pin_names
 			(offset 0.8)
@@ -11922,6 +12338,110 @@
 			)
 		)
 		(symbol "C59_100n_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C57_100n"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "100n"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CL05B104KO5NNNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C57_100n_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C57_100n_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -17360,110 +17880,6 @@
 			)
 		)
 	)
-	(symbol "C46_10u"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "C"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "10u"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "CL05A106MQ5NUNC"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "C46_10u_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "C46_10u_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
 	(symbol "C47_10u"
 		(pin_names
 			(offset 0.8)
@@ -17530,6 +17946,110 @@
 			)
 		)
 		(symbol "C47_10u_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C46_10u"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "10u"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CL05A106MQ5NUNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C46_10u_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C46_10u_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)

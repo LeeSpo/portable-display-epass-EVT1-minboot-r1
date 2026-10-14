@@ -5413,110 +5413,6 @@
 				)
 			)
 		)
-		(symbol "Sameat:C46_10u"
-			(pin_names
-				(offset 0.8)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "10u"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "Sameat:0402"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "CL05A106MQ5NUNC"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C46_10u_0_1"
-				(rectangle
-					(start -12.7 -5.080)
-					(end 12.7 5.080)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "C46_10u_1_1"
-				(pin passive line
-					(at -15.24 0.000 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size .8 .8)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size .8 .8)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 0.000 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size .8 .8)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size .8 .8)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Sameat:C47_10u"
 			(pin_names
 				(offset 0.8)
@@ -5583,6 +5479,110 @@
 				)
 			)
 			(symbol "C47_10u_1_1"
+				(pin passive line
+					(at -15.24 0.000 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0.000 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Sameat:C46_10u"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "10u"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Sameat:0402"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "CL05A106MQ5NUNC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C46_10u_0_1"
+				(rectangle
+					(start -12.7 -5.080)
+					(end 12.7 5.080)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "C46_10u_1_1"
 				(pin passive line
 					(at -15.24 0.000 0)
 					(length 2.54)
@@ -7457,7 +7457,7 @@
 		)
 		(uuid "dffe568b-bfa0-5d2f-95da-f81c801a7e23")
 	)
-	(global_label "3V3"
+	(global_label "3V3_B"
 		(shape passive)
 		(at 180.340 102.870 180)
 		(effects
@@ -10709,15 +10709,15 @@
 		(uuid "e146e9ee-64eb-5939-8056-cb93784c096e")
 	)
 	(symbol
-		(lib_id "Sameat:C46_10u")
+		(lib_id "Sameat:C47_10u")
 		(at 195.580 281.940 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "830f1070-2da7-5152-b217-f86d619b6c1a")
-		(property "Reference" "C46"
+		(uuid "64fe9e1b-1932-5d8b-bcc1-771df03b4e7b")
+		(property "Reference" "C47"
 			(at 195.580 272.860 0)
 			(effects
 				(font
@@ -10779,15 +10779,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "5ded3f1c-77d8-59cb-965f-fb1c09461f9f")
+			(uuid "09a9be01-e95d-5c61-a3fa-bc7d814f814b")
 		)
 		(pin "2"
-			(uuid "d04e9280-0800-54d5-bab9-21a112bbe58c")
+			(uuid "8bb3d8c3-d1e9-5bf0-9549-10535b5d3a1e")
 		)
 		(instances
 			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
 				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/7309f07d-a051-57ea-bb97-60dcbb9d92b6"
-					(reference "C46")
+					(reference "C47")
 					(unit 1)
 				)
 			)
@@ -10802,7 +10802,7 @@
 			)
 			(justify right)
 		)
-		(uuid "3c729cf0-e72d-5e1a-84dd-dc9cca4072b5")
+		(uuid "75b42a1b-9173-59ca-97b9-3b83d81d4f2f")
 	)
 	(global_label "3V3"
 		(shape passive)
@@ -10813,18 +10813,18 @@
 			)
 			(justify left)
 		)
-		(uuid "c8749984-1301-5dea-ab98-3ade8787b7e8")
+		(uuid "e5211b81-366f-536b-b402-0cc8ee3a5745")
 	)
 	(symbol
-		(lib_id "Sameat:C47_10u")
+		(lib_id "Sameat:C46_10u")
 		(at 327.660 281.940 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "64fe9e1b-1932-5d8b-bcc1-771df03b4e7b")
-		(property "Reference" "C47"
+		(uuid "830f1070-2da7-5152-b217-f86d619b6c1a")
+		(property "Reference" "C46"
 			(at 327.660 272.860 0)
 			(effects
 				(font
@@ -10886,15 +10886,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "09a9be01-e95d-5c61-a3fa-bc7d814f814b")
+			(uuid "5ded3f1c-77d8-59cb-965f-fb1c09461f9f")
 		)
 		(pin "2"
-			(uuid "8bb3d8c3-d1e9-5bf0-9549-10535b5d3a1e")
+			(uuid "d04e9280-0800-54d5-bab9-21a112bbe58c")
 		)
 		(instances
 			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
 				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/7309f07d-a051-57ea-bb97-60dcbb9d92b6"
-					(reference "C47")
+					(reference "C46")
 					(unit 1)
 				)
 			)
@@ -10909,7 +10909,7 @@
 			)
 			(justify right)
 		)
-		(uuid "75b42a1b-9173-59ca-97b9-3b83d81d4f2f")
+		(uuid "3c729cf0-e72d-5e1a-84dd-dc9cca4072b5")
 	)
 	(global_label "3V3"
 		(shape passive)
@@ -10920,7 +10920,7 @@
 			)
 			(justify left)
 		)
-		(uuid "e5211b81-366f-536b-b402-0cc8ee3a5745")
+		(uuid "c8749984-1301-5dea-ab98-3ade8787b7e8")
 	)
 	(embedded_fonts no)
 	(text "USB ESD: U9 I/O2 pins 3/4 = DP; I/O1 pins 1/6 = DM. USB polarity at U2/J1 is unchanged.\nMain pair on F.Cu; the duplicated Type-C B7 contact uses a short B.Cu branch.\n90-ohm impedance and both-orientation HS/ESD tests remain pending. See USB_ROUTING_REPAIR_CN.md."

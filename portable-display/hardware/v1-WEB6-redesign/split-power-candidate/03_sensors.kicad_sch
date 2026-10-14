@@ -2909,110 +2909,6 @@
 				)
 			)
 		)
-		(symbol "Sameat:C57_100n"
-			(pin_names
-				(offset 0.8)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "100n"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "Sameat:0402"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "CL05B104KO5NNNC"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C57_100n_0_1"
-				(rectangle
-					(start -12.7 -5.080)
-					(end 12.7 5.080)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "C57_100n_1_1"
-				(pin passive line
-					(at -15.24 0.000 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size .8 .8)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size .8 .8)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 0.000 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size .8 .8)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size .8 .8)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Sameat:C59_100n"
 			(pin_names
 				(offset 0.8)
@@ -3079,6 +2975,110 @@
 				)
 			)
 			(symbol "C59_100n_1_1"
+				(pin passive line
+					(at -15.24 0.000 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0.000 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Sameat:C57_100n"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "100n"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Sameat:0402"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "CL05B104KO5NNNC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C57_100n_0_1"
+				(rectangle
+					(start -12.7 -5.080)
+					(end 12.7 5.080)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "C57_100n_1_1"
 				(pin passive line
 					(at -15.24 0.000 0)
 					(length 2.54)
@@ -6009,15 +6009,15 @@
 		(uuid "795ae5a1-3e24-5323-a37a-e4237b457faa")
 	)
 	(symbol
-		(lib_id "Sameat:C57_100n")
+		(lib_id "Sameat:C59_100n")
 		(at 63.500 198.120 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "affcb307-3212-52d2-b6df-88e8d4a3519a")
-		(property "Reference" "C57"
+		(uuid "8602eaa1-c6eb-58bd-a264-c338757ac588")
+		(property "Reference" "C59"
 			(at 63.500 189.040 0)
 			(effects
 				(font
@@ -6079,15 +6079,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c5682aa2-74fe-5275-a8a9-55d76f3a30d7")
+			(uuid "bd3559ab-1c69-5985-ab10-82f325663482")
 		)
 		(pin "2"
-			(uuid "2152874c-0ebc-5edb-97d4-eee026696244")
+			(uuid "f5ceac0e-ae17-5d77-8fc3-9616b200c72f")
 		)
 		(instances
 			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
 				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/51072dd9-1bb1-5c78-ad53-b3e9d0a07bc6"
-					(reference "C57")
+					(reference "C59")
 					(unit 1)
 				)
 			)
@@ -6102,7 +6102,7 @@
 			)
 			(justify right)
 		)
-		(uuid "755a4ea8-a64f-5c28-8f51-94938a3bc107")
+		(uuid "cd3d9dbb-5ecf-52b2-b6c8-675477540256")
 	)
 	(global_label "3V3"
 		(shape passive)
@@ -6113,18 +6113,18 @@
 			)
 			(justify left)
 		)
-		(uuid "54eaf05a-dca4-5521-8d55-e705bc32b66a")
+		(uuid "f71d0fea-beb6-532f-9ef7-0164e54426f5")
 	)
 	(symbol
-		(lib_id "Sameat:C59_100n")
+		(lib_id "Sameat:C57_100n")
 		(at 195.580 222.250 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8602eaa1-c6eb-58bd-a264-c338757ac588")
-		(property "Reference" "C59"
+		(uuid "affcb307-3212-52d2-b6df-88e8d4a3519a")
+		(property "Reference" "C57"
 			(at 195.580 213.170 0)
 			(effects
 				(font
@@ -6186,15 +6186,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "bd3559ab-1c69-5985-ab10-82f325663482")
+			(uuid "c5682aa2-74fe-5275-a8a9-55d76f3a30d7")
 		)
 		(pin "2"
-			(uuid "f5ceac0e-ae17-5d77-8fc3-9616b200c72f")
+			(uuid "2152874c-0ebc-5edb-97d4-eee026696244")
 		)
 		(instances
 			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
 				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/51072dd9-1bb1-5c78-ad53-b3e9d0a07bc6"
-					(reference "C59")
+					(reference "C57")
 					(unit 1)
 				)
 			)
@@ -6209,7 +6209,7 @@
 			)
 			(justify right)
 		)
-		(uuid "cd3d9dbb-5ecf-52b2-b6c8-675477540256")
+		(uuid "755a4ea8-a64f-5c28-8f51-94938a3bc107")
 	)
 	(global_label "3V3"
 		(shape passive)
@@ -6220,7 +6220,7 @@
 			)
 			(justify left)
 		)
-		(uuid "f71d0fea-beb6-532f-9ef7-0164e54426f5")
+		(uuid "54eaf05a-dca4-5521-8d55-e705bc32b66a")
 	)
 	(embedded_fonts no)
 	(text "WAKE DOMAINS: R17/R18 pull up to RTC_3V3. U11 SN74LVC2G17 isolates both IRQs from U2.\nU11/C52 use switched 3V3. RTC_INT_SOC_N -> PE7; ACCEL_INT_SOC_N -> PE6; polarity unchanged.\nRequire latched active-low IRQs and AON supply retention. See WAKE_DOMAIN_REPAIR_CN.md."
