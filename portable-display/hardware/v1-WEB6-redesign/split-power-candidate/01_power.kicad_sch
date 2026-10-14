@@ -56,7 +56,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0603 1u X5R"
+			(property "Description" "CL10A105KB8NNNC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -160,7 +160,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0603 22u X5R"
+			(property "Description" "CL10A226MQ8NRNC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -264,7 +264,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0603 22u X5R"
+			(property "Description" "CL10A226MQ8NRNC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -472,7 +472,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0603 22u X5R"
+			(property "Description" "CL10A226MQ8NRNC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -576,7 +576,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0603 22u X5R"
+			(property "Description" "CL10A226MP8NUNE"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1114,7 +1114,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0603 22u X5R"
+			(property "Description" "CL10A226MQ8NRNC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1646,7 +1646,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0603 22u X5R"
+			(property "Description" "CL10A226MQ8NRNC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1750,7 +1750,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "1uH 2A shielded"
+			(property "Description" "WPN201610H1R0MT"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1854,7 +1854,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0603 1u X5R"
+			(property "Description" "CL10A105KB8NNNC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1958,7 +1958,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "1uH 2A shielded"
+			(property "Description" "WPN201610H1R0MT"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2062,7 +2062,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0603 22u X5R"
+			(property "Description" "CL10A226MP8NUNE"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2496,7 +2496,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "1uH 2A shielded"
+			(property "Description" "WPN201610H1R0MT"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2704,7 +2704,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0603 Green LED"
+			(property "Description" "KT-0603G"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2912,7 +2912,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0603 1u X5R"
+			(property "Description" "CL10A105KB8NNNC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4206,7 +4206,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0603 2.2u X5R"
+			(property "Description" "CL10A225KO8NNNC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4310,7 +4310,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0603 22u X5R"
+			(property "Description" "CL10A226MQ8NRNC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4518,7 +4518,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0603 10u X5R"
+			(property "Description" "CL10A106KP8NNNC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4792,7 +4792,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0603 1u X5R"
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 459.740 76.200 0)
 			(effects
 				(font
@@ -4801,7 +4801,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15849"
 			(at 459.740 76.200 0)
 			(effects
 				(font
@@ -4899,7 +4899,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0603 22u X5R"
+		(property "MPN" "CL10A226MQ8NRNC"
 			(at 195.580 91.440 0)
 			(effects
 				(font
@@ -4908,7 +4908,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59461"
 			(at 195.580 91.440 0)
 			(effects
 				(font
@@ -5006,7 +5006,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0603 22u X5R"
+		(property "MPN" "CL10A226MQ8NRNC"
 			(at 327.660 105.410 0)
 			(effects
 				(font
@@ -5015,7 +5015,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59461"
 			(at 327.660 105.410 0)
 			(effects
 				(font
@@ -5113,7 +5113,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 459.740 105.410 0)
 			(effects
 				(font
@@ -5122,7 +5122,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15849"
 			(at 459.740 105.410 0)
 			(effects
 				(font
@@ -5220,7 +5220,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0603 22u X5R"
+		(property "MPN" "CL10A226MQ8NRNC"
 			(at 63.500 119.380 0)
 			(effects
 				(font
@@ -5229,7 +5229,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59461"
 			(at 63.500 119.380 0)
 			(effects
 				(font
@@ -5327,7 +5327,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0603 22u X5R"
+		(property "MPN" "CL10A226MP8NUNE"
 			(at 195.580 120.650 0)
 			(effects
 				(font
@@ -5336,7 +5336,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C86295"
 			(at 195.580 120.650 0)
 			(effects
 				(font
@@ -5769,7 +5769,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 63.500 148.590 0)
 			(effects
 				(font
@@ -5778,7 +5778,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15849"
 			(at 63.500 148.590 0)
 			(effects
 				(font
@@ -5876,7 +5876,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0603 22u X5R"
+		(property "MPN" "CL10A226MQ8NRNC"
 			(at 195.580 149.860 0)
 			(effects
 				(font
@@ -5885,7 +5885,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59461"
 			(at 195.580 149.860 0)
 			(effects
 				(font
@@ -6328,7 +6328,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0603 22u X5R"
+		(property "MPN" "CL10A226MQ8NRNC"
 			(at 327.660 163.830 0)
 			(effects
 				(font
@@ -6337,7 +6337,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59461"
 			(at 327.660 163.830 0)
 			(effects
 				(font
@@ -6435,7 +6435,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "1uH 2A shielded"
+		(property "MPN" "WPN201610H1R0MT"
 			(at 459.740 163.830 0)
 			(effects
 				(font
@@ -6444,7 +6444,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C97002"
 			(at 459.740 163.830 0)
 			(effects
 				(font
@@ -6542,7 +6542,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0603 1u X5R"
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 63.500 177.800 0)
 			(effects
 				(font
@@ -6551,7 +6551,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15849"
 			(at 63.500 177.800 0)
 			(effects
 				(font
@@ -6649,7 +6649,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "1uH 2A shielded"
+		(property "MPN" "WPN201610H1R0MT"
 			(at 195.580 179.070 0)
 			(effects
 				(font
@@ -6658,7 +6658,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C97002"
 			(at 195.580 179.070 0)
 			(effects
 				(font
@@ -6756,7 +6756,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0603 22u X5R"
+		(property "MPN" "CL10A226MP8NUNE"
 			(at 327.660 193.040 0)
 			(effects
 				(font
@@ -6765,7 +6765,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C86295"
 			(at 327.660 193.040 0)
 			(effects
 				(font
@@ -7198,7 +7198,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "1uH 2A shielded"
+		(property "MPN" "WPN201610H1R0MT"
 			(at 195.580 208.280 0)
 			(effects
 				(font
@@ -7207,7 +7207,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C97002"
 			(at 195.580 208.280 0)
 			(effects
 				(font
@@ -7412,7 +7412,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0603 Green LED"
+		(property "MPN" "KT-0603G"
 			(at 459.740 222.250 0)
 			(effects
 				(font
@@ -7421,7 +7421,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C12624"
 			(at 459.740 222.250 0)
 			(effects
 				(font
@@ -7626,7 +7626,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0603 1u X5R"
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 195.580 237.490 0)
 			(effects
 				(font
@@ -7635,7 +7635,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15849"
 			(at 195.580 237.490 0)
 			(effects
 				(font
@@ -7733,7 +7733,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 327.660 251.460 0)
 			(effects
 				(font
@@ -7742,7 +7742,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1525"
 			(at 327.660 251.460 0)
 			(effects
 				(font
@@ -8672,7 +8672,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0603 2.2u X5R"
+		(property "MPN" "CL10A225KO8NNNC"
 			(at 63.500 265.430 0)
 			(effects
 				(font
@@ -8681,7 +8681,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23630"
 			(at 63.500 265.430 0)
 			(effects
 				(font
@@ -8779,7 +8779,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0603 22u X5R"
+		(property "MPN" "CL10A226MQ8NRNC"
 			(at 195.580 266.700 0)
 			(effects
 				(font
@@ -8788,7 +8788,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59461"
 			(at 195.580 266.700 0)
 			(effects
 				(font
@@ -8886,7 +8886,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10A225KO8NNNC"
 			(at 327.660 280.670 0)
 			(effects
 				(font
@@ -8895,7 +8895,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23630"
 			(at 327.660 280.670 0)
 			(effects
 				(font
@@ -8993,7 +8993,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0603 10u X5R"
+		(property "MPN" "CL10A106KP8NNNC"
 			(at 459.740 280.670 0)
 			(effects
 				(font
@@ -9002,7 +9002,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C19702"
 			(at 459.740 280.670 0)
 			(effects
 				(font

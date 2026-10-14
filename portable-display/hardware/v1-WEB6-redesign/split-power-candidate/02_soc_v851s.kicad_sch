@@ -680,7 +680,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "0402CG180J500NT"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1204,7 +1204,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "24MHz 10ppm 3225"
+			(property "Description" "XXDBBCNANF-24MHZ"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3864,7 +3864,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "0402CG180J500NT"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3968,7 +3968,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "CL05B104KO5NNNC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -4976,7 +4976,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10A225KO8NNNC"
 			(at 459.740 76.200 0)
 			(effects
 				(font
@@ -4985,7 +4985,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23630"
 			(at 459.740 76.200 0)
 			(effects
 				(font
@@ -5190,7 +5190,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL05A474KP5NNNC"
 			(at 327.660 105.410 0)
 			(effects
 				(font
@@ -5199,7 +5199,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C47339"
 			(at 327.660 105.410 0)
 			(effects
 				(font
@@ -5404,7 +5404,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402CG180J500NT"
 			(at 195.580 134.620 0)
 			(effects
 				(font
@@ -5413,7 +5413,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1549"
 			(at 195.580 134.620 0)
 			(effects
 				(font
@@ -5916,7 +5916,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "24MHz 10ppm 3225"
+		(property "MPN" "XXDBBCNANF-24MHZ"
 			(at 327.660 46.990 0)
 			(effects
 				(font
@@ -5925,7 +5925,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C16197264"
 			(at 327.660 46.990 0)
 			(effects
 				(font
@@ -6158,7 +6158,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF1002TCE"
 			(at 327.660 163.830 0)
 			(effects
 				(font
@@ -6167,7 +6167,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 327.660 163.830 0)
 			(effects
 				(font
@@ -8036,7 +8036,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402CG180J500NT"
 			(at 63.500 209.550 0)
 			(effects
 				(font
@@ -8045,7 +8045,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1549"
 			(at 63.500 209.550 0)
 			(effects
 				(font
@@ -8143,7 +8143,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 195.580 222.250 0)
 			(effects
 				(font
@@ -8152,7 +8152,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1525"
 			(at 195.580 222.250 0)
 			(effects
 				(font
@@ -8571,7 +8571,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF1002TCE"
 			(at 195.580 251.460 0)
 			(effects
 				(font
@@ -8580,7 +8580,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 195.580 251.460 0)
 			(effects
 				(font

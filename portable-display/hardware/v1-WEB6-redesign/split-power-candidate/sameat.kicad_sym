@@ -44,7 +44,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 1u X5R"
+		(property "Description" "CL10A105KB8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -148,7 +148,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 22u X5R"
+		(property "Description" "CL10A226MQ8NRNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -252,7 +252,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 22u X5R"
+		(property "Description" "CL10A226MQ8NRNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -460,7 +460,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 22u X5R"
+		(property "Description" "CL10A226MQ8NRNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -564,7 +564,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 22u X5R"
+		(property "Description" "CL10A226MP8NUNE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1102,7 +1102,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 22u X5R"
+		(property "Description" "CL10A226MQ8NRNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1634,7 +1634,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 22u X5R"
+		(property "Description" "CL10A226MQ8NRNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1738,7 +1738,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1uH 2A shielded"
+		(property "Description" "WPN201610H1R0MT"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1842,7 +1842,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 1u X5R"
+		(property "Description" "CL10A105KB8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1946,7 +1946,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1uH 2A shielded"
+		(property "Description" "WPN201610H1R0MT"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2050,7 +2050,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 22u X5R"
+		(property "Description" "CL10A226MP8NUNE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2484,7 +2484,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1uH 2A shielded"
+		(property "Description" "WPN201610H1R0MT"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2692,7 +2692,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 Green LED"
+		(property "Description" "KT-0603G"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2900,7 +2900,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 1u X5R"
+		(property "Description" "CL10A105KB8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4194,7 +4194,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 2.2u X5R"
+		(property "Description" "CL10A225KO8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4298,7 +4298,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 22u X5R"
+		(property "Description" "CL10A226MQ8NRNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4506,7 +4506,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 10u X5R"
+		(property "Description" "CL10A106KP8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5403,7 +5403,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402CG180J500NT"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5927,7 +5927,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "24MHz 10ppm 3225"
+		(property "Description" "XXDBBCNANF-24MHZ"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8587,7 +8587,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402CG180J500NT"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8691,7 +8691,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CL05B104KO5NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9523,7 +9523,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF1002TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9943,7 +9943,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF4701TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11077,7 +11077,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF1002TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11393,7 +11393,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF1002TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11497,7 +11497,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF1002TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11827,7 +11827,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF4701TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -12211,7 +12211,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF1002TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -12731,7 +12731,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF2201TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -13553,7 +13553,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF2202TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14027,7 +14027,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF1000TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14253,7 +14253,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF1003TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14895,7 +14895,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CL10A475KO8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15103,7 +15103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 Blue LED"
+		(property "Description" "KT-0603B"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15433,7 +15433,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CL05B103KB5NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -17299,7 +17299,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF1003TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -17403,7 +17403,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CL10A106KP8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -17611,7 +17611,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF1002TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -17715,7 +17715,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF0000TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -17923,7 +17923,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF4702TCE"
 			(at 0 0 0)
 			(effects
 				(font

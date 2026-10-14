@@ -160,7 +160,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "0402WGF1002TCE"
 				(at 0 0 0)
 				(effects
 					(font
@@ -580,7 +580,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "0402WGF4701TCE"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1714,7 +1714,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "0402WGF1002TCE"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2030,7 +2030,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "0402WGF1002TCE"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2134,7 +2134,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "0402WGF1002TCE"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2464,7 +2464,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "0402WGF4701TCE"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2848,7 +2848,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "0402WGF1002TCE"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3541,7 +3541,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF1002TCE"
 			(at 63.500 81.280 0)
 			(effects
 				(font
@@ -3550,7 +3550,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 63.500 81.280 0)
 			(effects
 				(font
@@ -3764,7 +3764,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C123302"
 			(at 195.580 46.990 0)
 			(effects
 				(font
@@ -3946,7 +3946,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF4701TCE"
 			(at 327.660 105.410 0)
 			(effects
 				(font
@@ -3955,7 +3955,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25900"
 			(at 327.660 105.410 0)
 			(effects
 				(font
@@ -5042,7 +5042,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF1002TCE"
 			(at 195.580 163.830 0)
 			(effects
 				(font
@@ -5051,7 +5051,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 195.580 163.830 0)
 			(effects
 				(font
@@ -5333,7 +5333,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF1002TCE"
 			(at 327.660 163.830 0)
 			(effects
 				(font
@@ -5342,7 +5342,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 327.660 163.830 0)
 			(effects
 				(font
@@ -5440,7 +5440,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF1002TCE"
 			(at 459.740 163.830 0)
 			(effects
 				(font
@@ -5449,7 +5449,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 459.740 163.830 0)
 			(effects
 				(font
@@ -5775,7 +5775,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF4701TCE"
 			(at 195.580 193.040 0)
 			(effects
 				(font
@@ -5784,7 +5784,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25900"
 			(at 195.580 193.040 0)
 			(effects
 				(font
@@ -6152,7 +6152,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF1002TCE"
 			(at 459.740 193.040 0)
 			(effects
 				(font
@@ -6161,7 +6161,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 459.740 193.040 0)
 			(effects
 				(font

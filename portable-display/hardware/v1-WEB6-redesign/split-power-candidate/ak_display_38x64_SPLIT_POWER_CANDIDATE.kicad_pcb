@@ -197,7 +197,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 1u X5R"
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -209,7 +209,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15849"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -621,7 +621,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 22u X5R"
+		(property "MPN" "CL10A226MQ8NRNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -633,7 +633,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59461"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -755,7 +755,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF2201TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -767,7 +767,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25879"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -887,7 +887,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -899,7 +899,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15849"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1021,7 +1021,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 22u X5R"
+		(property "MPN" "CL10A226MQ8NRNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1033,7 +1033,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59461"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1289,7 +1289,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1301,7 +1301,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15849"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1423,7 +1423,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10A225KO8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1435,7 +1435,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23630"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1691,7 +1691,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 22u X5R"
+		(property "MPN" "CL10A226MQ8NRNC"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -1703,7 +1703,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59461"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -1825,7 +1825,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 22u X5R"
+		(property "MPN" "CL10A226MP8NUNE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1837,7 +1837,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C86295"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1959,7 +1959,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF1002TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1971,7 +1971,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2091,7 +2091,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF0000TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2103,7 +2103,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C17168"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2357,7 +2357,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2369,7 +2369,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1525"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2839,7 +2839,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL05A474KP5NNNC"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -2851,7 +2851,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C47339"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -3120,7 +3120,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C123302"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3322,7 +3322,7 @@
 				)
 			)
 		)
-		(property "MPN" "4.7uH 1.5A"
+		(property "MPN" "WPN201610U4R7MT"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3334,7 +3334,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C97018"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3456,7 +3456,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF2202TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3468,7 +3468,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25768"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3772,7 +3772,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402CG180J500NT"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3784,7 +3784,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1549"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4342,7 +4342,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -4354,7 +4354,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15849"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -4476,7 +4476,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF1000TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4488,7 +4488,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25076"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4610,7 +4610,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 22u X5R"
+		(property "MPN" "CL10A226MQ8NRNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4622,7 +4622,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59461"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5284,7 +5284,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 22u X5R"
+		(property "MPN" "CL10A226MQ8NRNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5296,7 +5296,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59461"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5647,7 +5647,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF4701TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5659,7 +5659,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25900"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5781,7 +5781,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF1003TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5793,7 +5793,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25741"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5913,7 +5913,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10A106KP8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5925,7 +5925,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C19702"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6837,7 +6837,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6849,7 +6849,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1525"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6969,7 +6969,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6981,7 +6981,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1525"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7103,7 +7103,7 @@
 				)
 			)
 		)
-		(property "MPN" "1uH 2A shielded"
+		(property "MPN" "WPN201610H1R0MT"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7115,7 +7115,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C97002"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7237,7 +7237,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF1002TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7249,7 +7249,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7371,7 +7371,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 1u X5R"
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7383,7 +7383,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15849"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7505,7 +7505,7 @@
 				)
 			)
 		)
-		(property "MPN" "1uH 2A shielded"
+		(property "MPN" "WPN201610H1R0MT"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7517,7 +7517,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C97002"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7639,7 +7639,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 22u X5R"
+		(property "MPN" "CL10A226MP8NUNE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7651,7 +7651,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C86295"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7773,7 +7773,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10A475KO8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7785,7 +7785,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C19666"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8175,7 +8175,7 @@
 				)
 			)
 		)
-		(property "MPN" "24MHz 10ppm 3225"
+		(property "MPN" "XXDBBCNANF-24MHZ"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -8187,7 +8187,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C16197264"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -8868,7 +8868,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 Blue LED"
+		(property "MPN" "KT-0603B"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8880,7 +8880,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2288"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9012,7 +9012,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF1002TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9024,7 +9024,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9290,7 +9290,7 @@
 				)
 			)
 		)
-		(property "MPN" "1uH 2A shielded"
+		(property "MPN" "WPN201610H1R0MT"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9302,7 +9302,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C97002"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9836,7 +9836,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 Green LED"
+		(property "MPN" "KT-0603G"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9848,7 +9848,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C12624"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9978,7 +9978,7 @@
 				)
 			)
 		)
-		(property "MPN" "4.7uH 1.5A"
+		(property "MPN" "WPN201610U4R7MT"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9990,7 +9990,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C97018"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10112,7 +10112,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL05B103KB5NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10124,7 +10124,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15195"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10938,7 +10938,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 1u X5R"
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10950,7 +10950,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15849"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11911,7 +11911,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF1002TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11923,7 +11923,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12045,7 +12045,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -12057,7 +12057,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1525"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -13876,7 +13876,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C131941"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15483,7 +15483,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF1003TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15495,7 +15495,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25741"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15617,7 +15617,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10A106KP8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15629,7 +15629,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C19702"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15981,7 +15981,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF1002TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15993,7 +15993,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16580,7 +16580,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402CG180J500NT"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -16592,7 +16592,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1549"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -16714,7 +16714,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL05B104KO5NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16726,7 +16726,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1525"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16848,7 +16848,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 2.2u X5R"
+		(property "MPN" "CL10A225KO8NNNC"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -16860,7 +16860,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23630"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -17067,7 +17067,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF1002TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17079,7 +17079,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17201,7 +17201,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 22u X5R"
+		(property "MPN" "CL10A226MQ8NRNC"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -17213,7 +17213,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C59461"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -17333,7 +17333,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10A106KP8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17345,7 +17345,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C19702"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17552,7 +17552,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF1002TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17564,7 +17564,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17841,7 +17841,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10A225KO8NNNC"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -17853,7 +17853,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23630"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -18109,7 +18109,7 @@
 				)
 			)
 		)
-		(property "MPN" "0603 10u X5R"
+		(property "MPN" "CL10A106KP8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18121,7 +18121,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C19702"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18406,7 +18406,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF4701TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18418,7 +18418,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25900"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18985,7 +18985,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF0000TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18997,7 +18997,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C17168"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19117,7 +19117,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10A105KB8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19129,7 +19129,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15849"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19519,7 +19519,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF4702TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19531,7 +19531,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25792"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19653,7 +19653,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF1002TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19665,7 +19665,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19787,7 +19787,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402WGF1002TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19799,7 +19799,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25744"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19919,7 +19919,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10A106KP8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19931,7 +19931,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C19702"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
