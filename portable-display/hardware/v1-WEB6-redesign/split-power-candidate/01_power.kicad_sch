@@ -429,110 +429,6 @@
 				)
 			)
 		)
-		(symbol "Sameat:D13_PESD4V0"
-			(pin_names
-				(offset 0.8)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "PESD4V0"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "Sameat:0402"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "PESD4V0Y1BBSF"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D13_PESD4V0_0_1"
-				(rectangle
-					(start -12.7 -5.080)
-					(end 12.7 5.080)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "D13_PESD4V0_1_1"
-				(pin passive line
-					(at -15.24 0.000 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size .8 .8)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size .8 .8)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 0.000 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size .8 .8)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size .8 .8)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Sameat:C4_22u"
 			(pin_names
 				(offset 0.8)
@@ -1811,110 +1707,6 @@
 				)
 			)
 		)
-		(symbol "Sameat:D14_PESD4V0"
-			(pin_names
-				(offset 0.8)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "PESD4V0"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "Sameat:0402"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "PESD4V0Y1BBSF"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.0 1.0)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D14_PESD4V0_0_1"
-				(rectangle
-					(start -12.7 -5.080)
-					(end 12.7 5.080)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "D14_PESD4V0_1_1"
-				(pin passive line
-					(at -15.24 0.000 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size .8 .8)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size .8 .8)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 15.24 0.000 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size .8 .8)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size .8 .8)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Sameat:L1_1uH/2A"
 			(pin_names
 				(offset 0.8)
@@ -2397,6 +2189,110 @@
 				)
 			)
 			(symbol "R3_4.7k_1_1"
+				(pin passive line
+					(at -15.24 0.000 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0.000 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Sameat:D13_ESDLC5V0LB"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "ESDLC5V0LB"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Sameat:DFN1006-2"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "ESDLC5V0LB"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D13_ESDLC5V0LB_0_1"
+				(rectangle
+					(start -12.7 -5.080)
+					(end 12.7 5.080)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "D13_ESDLC5V0LB_1_1"
 				(pin passive line
 					(at -15.24 0.000 0)
 					(length 2.54)
@@ -4683,6 +4579,110 @@
 				)
 			)
 		)
+		(symbol "Sameat:D14_ESDLC5V0LB"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "ESDLC5V0LB"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Sameat:DFN1006-2"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "ESDLC5V0LB"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D14_ESDLC5V0LB_0_1"
+				(rectangle
+					(start -12.7 -5.080)
+					(end 12.7 5.080)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "D14_ESDLC5V0LB_1_1"
+				(pin passive line
+					(at -15.24 0.000 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0.000 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Sameat:SUPPLY_SOURCE"
 			(power)
 			(pin_names
@@ -5178,15 +5178,15 @@
 		(uuid "7cd2bb0f-d86c-586e-aadd-9ebd9a964014")
 	)
 	(symbol
-		(lib_id "Sameat:D13_PESD4V0")
+		(lib_id "Sameat:C4_22u")
 		(at 63.500 119.380 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "29e561e2-27b2-5dbb-af09-2b3c0228c108")
-		(property "Reference" "D13"
+		(uuid "d192928a-cac0-5d83-8cf6-37742f1193ff")
+		(property "Reference" "C4"
 			(at 63.500 110.300 0)
 			(effects
 				(font
@@ -5194,7 +5194,7 @@
 				)
 			)
 		)
-		(property "Value" "PESD4V0"
+		(property "Value" "22u"
 			(at 63.500 112.300 0)
 			(effects
 				(font
@@ -5202,7 +5202,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sameat:0402"
+		(property "Footprint" "Sameat:0603"
 			(at 63.500 119.380 0)
 			(effects
 				(font
@@ -5220,7 +5220,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "PESD4V0Y1BBSF"
+		(property "MPN" "0603 22u X5R"
 			(at 63.500 119.380 0)
 			(effects
 				(font
@@ -5248,21 +5248,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "cfe1d0c6-a007-59a5-b47e-588ed8b218ee")
+			(uuid "55ac15d9-bf98-5d73-873e-843757a6e921")
 		)
 		(pin "2"
-			(uuid "1e5ff0d8-8e10-5587-ab1e-c458c3b3f786")
+			(uuid "f6838d2b-5b8f-5b66-9455-ea8c908d41df")
 		)
 		(instances
 			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
 				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
-					(reference "D13")
+					(reference "C4")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(global_label "USB_CC1"
+	(global_label "3V3"
 		(shape passive)
 		(at 48.260 119.380 180)
 		(effects
@@ -5271,7 +5271,7 @@
 			)
 			(justify right)
 		)
-		(uuid "3224752a-fc5d-5125-acd5-dcf45ca84574")
+		(uuid "65e7b8e1-e648-564d-a675-f2a6efa609a3")
 	)
 	(global_label "GND"
 		(shape passive)
@@ -5282,18 +5282,18 @@
 			)
 			(justify left)
 		)
-		(uuid "af8b77d4-a427-5130-9ca6-c511dbb2e1bf")
+		(uuid "1c7a04ee-c6d6-5074-8a5d-ed9fa08f76c0")
 	)
 	(symbol
-		(lib_id "Sameat:C4_22u")
+		(lib_id "Sameat:C2_22u")
 		(at 195.580 120.650 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d192928a-cac0-5d83-8cf6-37742f1193ff")
-		(property "Reference" "C4"
+		(uuid "e927bfa8-cfca-543c-a15c-0915726355e4")
+		(property "Reference" "C2"
 			(at 195.580 111.570 0)
 			(effects
 				(font
@@ -5355,113 +5355,6 @@
 			)
 		)
 		(pin "1"
-			(uuid "55ac15d9-bf98-5d73-873e-843757a6e921")
-		)
-		(pin "2"
-			(uuid "f6838d2b-5b8f-5b66-9455-ea8c908d41df")
-		)
-		(instances
-			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
-				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "3V3"
-		(shape passive)
-		(at 180.340 120.650 180)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify right)
-		)
-		(uuid "65e7b8e1-e648-564d-a675-f2a6efa609a3")
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 210.820 120.650 0)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify left)
-		)
-		(uuid "1c7a04ee-c6d6-5074-8a5d-ed9fa08f76c0")
-	)
-	(symbol
-		(lib_id "Sameat:C2_22u")
-		(at 327.660 134.620 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e927bfa8-cfca-543c-a15c-0915726355e4")
-		(property "Reference" "C2"
-			(at 327.660 125.540 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "22u"
-			(at 327.660 127.540 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "Sameat:0603"
-			(at 327.660 134.620 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 327.660 134.620 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "0603 22u X5R"
-			(at 327.660 134.620 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 327.660 134.620 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 327.660 134.620 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
 			(uuid "1892c1b7-7496-5681-8b25-59c0ad388e0e")
 		)
 		(pin "2"
@@ -5478,7 +5371,7 @@
 	)
 	(global_label "VSYS"
 		(shape passive)
-		(at 312.420 134.620 180)
+		(at 180.340 120.650 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -5489,7 +5382,7 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 342.900 134.620 0)
+		(at 210.820 120.650 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -5500,7 +5393,7 @@
 	)
 	(symbol
 		(lib_id "Sameat:R1_5.1k")
-		(at 459.740 134.620 0)
+		(at 327.660 134.620 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5508,7 +5401,7 @@
 		(dnp no)
 		(uuid "899b9dcd-0fbf-50fd-8e0e-4e9f5a37f45a")
 		(property "Reference" "R1"
-			(at 459.740 125.540 0)
+			(at 327.660 125.540 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5516,7 +5409,7 @@
 			)
 		)
 		(property "Value" "5.1k"
-			(at 459.740 127.540 0)
+			(at 327.660 127.540 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5524,7 +5417,7 @@
 			)
 		)
 		(property "Footprint" "Sameat:0402"
-			(at 459.740 134.620 0)
+			(at 327.660 134.620 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5533,7 +5426,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 459.740 134.620 0)
+			(at 327.660 134.620 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5542,7 +5435,7 @@
 			)
 		)
 		(property "MPN" "0402 5.1k 1%"
-			(at 459.740 134.620 0)
+			(at 327.660 134.620 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5551,7 +5444,7 @@
 			)
 		)
 		(property "LCSC" "C25905"
-			(at 459.740 134.620 0)
+			(at 327.660 134.620 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5560,7 +5453,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 459.740 134.620 0)
+			(at 327.660 134.620 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5585,7 +5478,7 @@
 	)
 	(global_label "USB_CC1"
 		(shape passive)
-		(at 444.500 134.620 180)
+		(at 312.420 134.620 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -5596,7 +5489,7 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 474.980 134.620 0)
+		(at 342.900 134.620 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -5728,7 +5621,7 @@
 	)
 	(symbol
 		(lib_id "Sameat:R2_5.1k")
-		(at 63.500 148.590 0)
+		(at 459.740 134.620 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5736,7 +5629,7 @@
 		(dnp no)
 		(uuid "806682c7-cf78-5449-bd7a-09d6f478e09e")
 		(property "Reference" "R2"
-			(at 63.500 139.510 0)
+			(at 459.740 125.540 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5744,7 +5637,7 @@
 			)
 		)
 		(property "Value" "5.1k"
-			(at 63.500 141.510 0)
+			(at 459.740 127.540 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5752,7 +5645,7 @@
 			)
 		)
 		(property "Footprint" "Sameat:0402"
-			(at 63.500 148.590 0)
+			(at 459.740 134.620 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5761,7 +5654,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.500 148.590 0)
+			(at 459.740 134.620 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5770,7 +5663,7 @@
 			)
 		)
 		(property "MPN" "0402 5.1k 1%"
-			(at 63.500 148.590 0)
+			(at 459.740 134.620 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5779,7 +5672,7 @@
 			)
 		)
 		(property "LCSC" "C25905"
-			(at 63.500 148.590 0)
+			(at 459.740 134.620 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5788,7 +5681,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.500 148.590 0)
+			(at 459.740 134.620 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5813,7 +5706,7 @@
 	)
 	(global_label "USB_CC2"
 		(shape passive)
-		(at 48.260 148.590 180)
+		(at 444.500 134.620 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -5824,7 +5717,7 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 78.740 148.590 0)
+		(at 474.980 134.620 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -5835,7 +5728,7 @@
 	)
 	(symbol
 		(lib_id "Sameat:C40_1u")
-		(at 195.580 149.860 0)
+		(at 63.500 148.590 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5843,7 +5736,7 @@
 		(dnp no)
 		(uuid "cde65841-38b0-5763-bb44-8b1b59fa9ecd")
 		(property "Reference" "C40"
-			(at 195.580 140.780 0)
+			(at 63.500 139.510 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5851,6 +5744,113 @@
 			)
 		)
 		(property "Value" "1u"
+			(at 63.500 141.510 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:0603"
+			(at 63.500 148.590 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.500 148.590 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 63.500 148.590 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 63.500 148.590 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "VIN3/VIN4 local bypass"
+			(at 63.500 148.590 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8587e22a-4763-5ee2-9552-7f9260b04b02")
+		)
+		(pin "2"
+			(uuid "f2acf340-30da-5271-9a23-bfc01d227c99")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
+					(reference "C40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VSYS"
+		(shape passive)
+		(at 48.260 148.590 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "b96a54d6-c42e-5f46-8e7e-54a39b6aaee1")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 78.740 148.590 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "abdf9abb-3b30-5ab8-94e2-c60790a9a4aa")
+	)
+	(symbol
+		(lib_id "Sameat:C8_22u")
+		(at 195.580 149.860 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "59bc55dd-801a-50d3-986a-69e557762da8")
+		(property "Reference" "C8"
+			(at 195.580 140.780 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "22u"
 			(at 195.580 142.780 0)
 			(effects
 				(font
@@ -5876,115 +5876,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
-			(at 195.580 149.860 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 195.580 149.860 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "VIN3/VIN4 local bypass"
-			(at 195.580 149.860 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8587e22a-4763-5ee2-9552-7f9260b04b02")
-		)
-		(pin "2"
-			(uuid "f2acf340-30da-5271-9a23-bfc01d227c99")
-		)
-		(instances
-			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
-				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
-					(reference "C40")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VSYS"
-		(shape passive)
-		(at 180.340 149.860 180)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify right)
-		)
-		(uuid "b96a54d6-c42e-5f46-8e7e-54a39b6aaee1")
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 210.820 149.860 0)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify left)
-		)
-		(uuid "abdf9abb-3b30-5ab8-94e2-c60790a9a4aa")
-	)
-	(symbol
-		(lib_id "Sameat:C8_22u")
-		(at 327.660 163.830 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "59bc55dd-801a-50d3-986a-69e557762da8")
-		(property "Reference" "C8"
-			(at 327.660 154.750 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "22u"
-			(at 327.660 156.750 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "Sameat:0603"
-			(at 327.660 163.830 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 327.660 163.830 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "0603 22u X5R"
-			(at 327.660 163.830 0)
+			(at 195.580 149.860 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5993,7 +5886,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 327.660 163.830 0)
+			(at 195.580 149.860 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6002,7 +5895,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 327.660 163.830 0)
+			(at 195.580 149.860 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6027,7 +5920,7 @@
 	)
 	(global_label "DRAM_1V5"
 		(shape passive)
-		(at 312.420 163.830 180)
+		(at 180.340 149.860 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -6038,7 +5931,7 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 342.900 163.830 0)
+		(at 210.820 149.860 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -6394,7 +6287,7 @@
 	)
 	(symbol
 		(lib_id "Sameat:C6_22u")
-		(at 459.740 163.830 0)
+		(at 327.660 163.830 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6402,7 +6295,7 @@
 		(dnp no)
 		(uuid "b09f9d44-3c81-5a3f-bf69-0b8531da12e0")
 		(property "Reference" "C6"
-			(at 459.740 154.750 0)
+			(at 327.660 154.750 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6410,7 +6303,7 @@
 			)
 		)
 		(property "Value" "22u"
-			(at 459.740 156.750 0)
+			(at 327.660 156.750 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6418,7 +6311,7 @@
 			)
 		)
 		(property "Footprint" "Sameat:0603"
-			(at 459.740 163.830 0)
+			(at 327.660 163.830 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6427,7 +6320,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 459.740 163.830 0)
+			(at 327.660 163.830 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6436,7 +6329,7 @@
 			)
 		)
 		(property "MPN" "0603 22u X5R"
-			(at 459.740 163.830 0)
+			(at 327.660 163.830 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6445,7 +6338,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 459.740 163.830 0)
+			(at 327.660 163.830 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6454,7 +6347,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 459.740 163.830 0)
+			(at 327.660 163.830 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6479,7 +6372,7 @@
 	)
 	(global_label "CORE_0V93"
 		(shape passive)
-		(at 444.500 163.830 180)
+		(at 312.420 163.830 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -6490,7 +6383,7 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 474.980 163.830 0)
+		(at 342.900 163.830 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -6500,15 +6393,122 @@
 		(uuid "6d1ec689-f36c-5f25-ad4e-ed665cbb2f29")
 	)
 	(symbol
-		(lib_id "Sameat:D14_PESD4V0")
+		(lib_id "Sameat:L1_1uH/2A")
+		(at 459.740 163.830 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ded04b3c-b595-5c77-90c1-a51f2898f255")
+		(property "Reference" "L1"
+			(at 459.740 154.750 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "1uH/2A"
+			(at 459.740 156.750 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:IND_2x2"
+			(at 459.740 163.830 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 459.740 163.830 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "1uH 2A shielded"
+			(at 459.740 163.830 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 459.740 163.830 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 459.740 163.830 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1403fa50-1df4-56ae-89d4-c66c206eb9b9")
+		)
+		(pin "2"
+			(uuid "13520e79-1b4a-5234-8b28-1793d951b657")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "LX_3V3"
+		(shape passive)
+		(at 444.500 163.830 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "be49c7c5-0229-5b1f-bd55-8fa08e731f67")
+	)
+	(global_label "3V3"
+		(shape passive)
+		(at 474.980 163.830 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "b579fef3-7e8a-5de2-a2b9-56c657b2118d")
+	)
+	(symbol
+		(lib_id "Sameat:C3_1u")
 		(at 63.500 177.800 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "acb53840-a2b5-5b17-9e00-53a929f9fd7d")
-		(property "Reference" "D14"
+		(uuid "931316ce-d9d9-57dc-94c2-59059767729a")
+		(property "Reference" "C3"
 			(at 63.500 168.720 0)
 			(effects
 				(font
@@ -6516,7 +6516,7 @@
 				)
 			)
 		)
-		(property "Value" "PESD4V0"
+		(property "Value" "1u"
 			(at 63.500 170.720 0)
 			(effects
 				(font
@@ -6524,7 +6524,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sameat:0402"
+		(property "Footprint" "Sameat:0603"
 			(at 63.500 177.800 0)
 			(effects
 				(font
@@ -6542,7 +6542,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "PESD4V0Y1BBSF"
+		(property "MPN" "0603 1u X5R"
 			(at 63.500 177.800 0)
 			(effects
 				(font
@@ -6570,21 +6570,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "e0e8fd57-ef3b-59fc-8197-279a57295700")
+			(uuid "193f599c-226a-5322-8c49-cb6e250da064")
 		)
 		(pin "2"
-			(uuid "fe29486f-ca44-5962-b17e-0a6294c8eadf")
+			(uuid "1fa8817d-be71-576a-95d3-16f3f5ab535f")
 		)
 		(instances
 			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
 				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
-					(reference "D14")
+					(reference "C3")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(global_label "USB_CC2"
+	(global_label "VBAT"
 		(shape passive)
 		(at 48.260 177.800 180)
 		(effects
@@ -6593,7 +6593,7 @@
 			)
 			(justify right)
 		)
-		(uuid "ff62e700-19e8-5fb7-864e-ee3414ab1ffc")
+		(uuid "984a2930-39f6-5e55-a864-e25ba6f969a8")
 	)
 	(global_label "GND"
 		(shape passive)
@@ -6604,18 +6604,18 @@
 			)
 			(justify left)
 		)
-		(uuid "a2753a34-ca2e-5de4-97af-28f29e422dcf")
+		(uuid "62d8a25e-9f81-533c-930c-2f457e364517")
 	)
 	(symbol
-		(lib_id "Sameat:L1_1uH/2A")
+		(lib_id "Sameat:L2_1uH/2A")
 		(at 195.580 179.070 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ded04b3c-b595-5c77-90c1-a51f2898f255")
-		(property "Reference" "L1"
+		(uuid "23110645-2ff3-5161-a140-e70adedc711f")
+		(property "Reference" "L2"
 			(at 195.580 169.990 0)
 			(effects
 				(font
@@ -6677,21 +6677,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "1403fa50-1df4-56ae-89d4-c66c206eb9b9")
+			(uuid "90b2da34-134d-54d9-98d3-f63c5fca444a")
 		)
 		(pin "2"
-			(uuid "13520e79-1b4a-5234-8b28-1793d951b657")
+			(uuid "44919cce-a39f-520e-bf1a-8a2a38355900")
 		)
 		(instances
 			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
 				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
-					(reference "L1")
+					(reference "L2")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(global_label "LX_3V3"
+	(global_label "LX_CORE"
 		(shape passive)
 		(at 180.340 179.070 180)
 		(effects
@@ -6700,9 +6700,9 @@
 			)
 			(justify right)
 		)
-		(uuid "be49c7c5-0229-5b1f-bd55-8fa08e731f67")
+		(uuid "81566741-9315-5199-a4e9-90e9fc4cf947")
 	)
-	(global_label "3V3"
+	(global_label "CORE_0V93"
 		(shape passive)
 		(at 210.820 179.070 0)
 		(effects
@@ -6711,18 +6711,18 @@
 			)
 			(justify left)
 		)
-		(uuid "b579fef3-7e8a-5de2-a2b9-56c657b2118d")
+		(uuid "ea536658-9b49-5734-a905-accd64ca46fc")
 	)
 	(symbol
-		(lib_id "Sameat:C3_1u")
+		(lib_id "Sameat:C1_22u")
 		(at 327.660 193.040 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "931316ce-d9d9-57dc-94c2-59059767729a")
-		(property "Reference" "C3"
+		(uuid "42bcabdc-3a0c-595a-8ab2-e48a12e82ac7")
+		(property "Reference" "C1"
 			(at 327.660 183.960 0)
 			(effects
 				(font
@@ -6730,7 +6730,7 @@
 				)
 			)
 		)
-		(property "Value" "1u"
+		(property "Value" "22u"
 			(at 327.660 185.960 0)
 			(effects
 				(font
@@ -6756,222 +6756,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0603 1u X5R"
-			(at 327.660 193.040 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 327.660 193.040 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 327.660 193.040 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "193f599c-226a-5322-8c49-cb6e250da064")
-		)
-		(pin "2"
-			(uuid "1fa8817d-be71-576a-95d3-16f3f5ab535f")
-		)
-		(instances
-			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
-				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VBAT"
-		(shape passive)
-		(at 312.420 193.040 180)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify right)
-		)
-		(uuid "984a2930-39f6-5e55-a864-e25ba6f969a8")
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 342.900 193.040 0)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify left)
-		)
-		(uuid "62d8a25e-9f81-533c-930c-2f457e364517")
-	)
-	(symbol
-		(lib_id "Sameat:L2_1uH/2A")
-		(at 459.740 193.040 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "23110645-2ff3-5161-a140-e70adedc711f")
-		(property "Reference" "L2"
-			(at 459.740 183.960 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "1uH/2A"
-			(at 459.740 185.960 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "Sameat:IND_2x2"
-			(at 459.740 193.040 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 459.740 193.040 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "1uH 2A shielded"
-			(at 459.740 193.040 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 459.740 193.040 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 459.740 193.040 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "90b2da34-134d-54d9-98d3-f63c5fca444a")
-		)
-		(pin "2"
-			(uuid "44919cce-a39f-520e-bf1a-8a2a38355900")
-		)
-		(instances
-			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
-				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
-					(reference "L2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "LX_CORE"
-		(shape passive)
-		(at 444.500 193.040 180)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify right)
-		)
-		(uuid "81566741-9315-5199-a4e9-90e9fc4cf947")
-	)
-	(global_label "CORE_0V93"
-		(shape passive)
-		(at 474.980 193.040 0)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify left)
-		)
-		(uuid "ea536658-9b49-5734-a905-accd64ca46fc")
-	)
-	(symbol
-		(lib_id "Sameat:C1_22u")
-		(at 63.500 207.010 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "42bcabdc-3a0c-595a-8ab2-e48a12e82ac7")
-		(property "Reference" "C1"
-			(at 63.500 197.930 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "22u"
-			(at 63.500 199.930 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "Sameat:0603"
-			(at 63.500 207.010 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.500 207.010 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "0603 22u X5R"
-			(at 63.500 207.010 0)
+			(at 327.660 193.040 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6980,7 +6766,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 63.500 207.010 0)
+			(at 327.660 193.040 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6989,7 +6775,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.500 207.010 0)
+			(at 327.660 193.040 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7014,7 +6800,7 @@
 	)
 	(global_label "VSYS"
 		(shape passive)
-		(at 48.260 207.010 180)
+		(at 312.420 193.040 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -7025,7 +6811,7 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 78.740 207.010 0)
+		(at 342.900 193.040 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -7036,7 +6822,7 @@
 	)
 	(symbol
 		(lib_id "Sameat:R3_4.7k")
-		(at 195.580 208.280 0)
+		(at 459.740 193.040 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7044,7 +6830,7 @@
 		(dnp no)
 		(uuid "9cbd8bc2-629d-5197-afba-d2bf2f1f1551")
 		(property "Reference" "R3"
-			(at 195.580 199.200 0)
+			(at 459.740 183.960 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7052,7 +6838,7 @@
 			)
 		)
 		(property "Value" "4.7k"
-			(at 195.580 201.200 0)
+			(at 459.740 185.960 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7060,7 +6846,7 @@
 			)
 		)
 		(property "Footprint" "Sameat:0402"
-			(at 195.580 208.280 0)
+			(at 459.740 193.040 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7069,7 +6855,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.580 208.280 0)
+			(at 459.740 193.040 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7078,7 +6864,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 195.580 208.280 0)
+			(at 459.740 193.040 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7087,7 +6873,7 @@
 			)
 		)
 		(property "LCSC" "C25900"
-			(at 195.580 208.280 0)
+			(at 459.740 193.040 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7096,7 +6882,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 195.580 208.280 0)
+			(at 459.740 193.040 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7121,7 +6907,7 @@
 	)
 	(global_label "3V3"
 		(shape passive)
-		(at 180.340 208.280 180)
+		(at 444.500 193.040 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -7132,7 +6918,7 @@
 	)
 	(global_label "PMIC_IRQ_N"
 		(shape passive)
-		(at 210.820 208.280 0)
+		(at 474.980 193.040 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -7140,6 +6926,113 @@
 			(justify left)
 		)
 		(uuid "054a7d66-9baa-58ab-b93c-ec3156692c5a")
+	)
+	(symbol
+		(lib_id "Sameat:D13_ESDLC5V0LB")
+		(at 63.500 207.010 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "29e561e2-27b2-5dbb-af09-2b3c0228c108")
+		(property "Reference" "D13"
+			(at 63.500 197.930 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "ESDLC5V0LB"
+			(at 63.500 199.930 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:DFN1006-2"
+			(at 63.500 207.010 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.500 207.010 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ESDLC5V0LB"
+			(at 63.500 207.010 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C20168172"
+			(at 63.500 207.010 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 63.500 207.010 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cfe1d0c6-a007-59a5-b47e-588ed8b218ee")
+		)
+		(pin "2"
+			(uuid "1e5ff0d8-8e10-5587-ab1e-c458c3b3f786")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "USB_CC1"
+		(shape passive)
+		(at 48.260 207.010 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "3224752a-fc5d-5125-acd5-dcf45ca84574")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 78.740 207.010 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "af8b77d4-a427-5130-9ca6-c511dbb2e1bf")
 	)
 	(symbol
 		(lib_id "Sameat:SW5_POWER")
@@ -7264,7 +7157,7 @@
 	)
 	(symbol
 		(lib_id "Sameat:L3_1uH/2A")
-		(at 327.660 222.250 0)
+		(at 195.580 208.280 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7272,7 +7165,7 @@
 		(dnp no)
 		(uuid "92749ab7-53c9-548a-a8aa-cbdbf3a9dba6")
 		(property "Reference" "L3"
-			(at 327.660 213.170 0)
+			(at 195.580 199.200 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7280,7 +7173,7 @@
 			)
 		)
 		(property "Value" "1uH/2A"
-			(at 327.660 215.170 0)
+			(at 195.580 201.200 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7288,7 +7181,7 @@
 			)
 		)
 		(property "Footprint" "Sameat:IND_2x2"
-			(at 327.660 222.250 0)
+			(at 195.580 208.280 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7297,7 +7190,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 327.660 222.250 0)
+			(at 195.580 208.280 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7306,7 +7199,7 @@
 			)
 		)
 		(property "MPN" "1uH 2A shielded"
-			(at 327.660 222.250 0)
+			(at 195.580 208.280 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7315,7 +7208,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 327.660 222.250 0)
+			(at 195.580 208.280 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7324,7 +7217,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 327.660 222.250 0)
+			(at 195.580 208.280 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7349,7 +7242,7 @@
 	)
 	(global_label "LX_DRAM"
 		(shape passive)
-		(at 312.420 222.250 180)
+		(at 180.340 208.280 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -7360,7 +7253,7 @@
 	)
 	(global_label "DRAM_1V5"
 		(shape passive)
-		(at 342.900 222.250 0)
+		(at 210.820 208.280 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -7371,7 +7264,7 @@
 	)
 	(symbol
 		(lib_id "Sameat:R5_2.2k")
-		(at 459.740 222.250 0)
+		(at 327.660 222.250 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7379,7 +7272,7 @@
 		(dnp no)
 		(uuid "792c5f02-7065-5022-b98d-c80c5be78d81")
 		(property "Reference" "R5"
-			(at 459.740 213.170 0)
+			(at 327.660 213.170 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7387,7 +7280,7 @@
 			)
 		)
 		(property "Value" "2.2k"
-			(at 459.740 215.170 0)
+			(at 327.660 215.170 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7395,7 +7288,7 @@
 			)
 		)
 		(property "Footprint" "Sameat:0402"
-			(at 459.740 222.250 0)
+			(at 327.660 222.250 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7404,7 +7297,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 459.740 222.250 0)
+			(at 327.660 222.250 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7413,7 +7306,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 459.740 222.250 0)
+			(at 327.660 222.250 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7422,7 +7315,7 @@
 			)
 		)
 		(property "LCSC" "C25879"
-			(at 459.740 222.250 0)
+			(at 327.660 222.250 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7431,7 +7324,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 459.740 222.250 0)
+			(at 327.660 222.250 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7456,7 +7349,7 @@
 	)
 	(global_label "3V3"
 		(shape passive)
-		(at 444.500 222.250 180)
+		(at 312.420 222.250 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -7467,7 +7360,7 @@
 	)
 	(global_label "PMIC_SDA"
 		(shape passive)
-		(at 474.980 222.250 0)
+		(at 342.900 222.250 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -7478,7 +7371,7 @@
 	)
 	(symbol
 		(lib_id "Sameat:D1_CHARGE")
-		(at 63.500 236.220 0)
+		(at 459.740 222.250 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7486,7 +7379,7 @@
 		(dnp no)
 		(uuid "8e38dc4e-f4d5-5a33-9e8a-ecf6c89b32cf")
 		(property "Reference" "D1"
-			(at 63.500 227.140 0)
+			(at 459.740 213.170 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7494,7 +7387,7 @@
 			)
 		)
 		(property "Value" "CHARGE"
-			(at 63.500 229.140 0)
+			(at 459.740 215.170 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7502,7 +7395,7 @@
 			)
 		)
 		(property "Footprint" "Sameat:LED0603"
-			(at 63.500 236.220 0)
+			(at 459.740 222.250 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7511,7 +7404,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.500 236.220 0)
+			(at 459.740 222.250 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7520,7 +7413,7 @@
 			)
 		)
 		(property "MPN" "0603 Green LED"
-			(at 63.500 236.220 0)
+			(at 459.740 222.250 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7529,7 +7422,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 63.500 236.220 0)
+			(at 459.740 222.250 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7538,7 +7431,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.500 236.220 0)
+			(at 459.740 222.250 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7563,7 +7456,7 @@
 	)
 	(global_label "3V3"
 		(shape passive)
-		(at 48.260 236.220 180)
+		(at 444.500 222.250 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -7574,7 +7467,7 @@
 	)
 	(global_label "CHGLED_A"
 		(shape passive)
-		(at 78.740 236.220 0)
+		(at 474.980 222.250 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -7585,7 +7478,7 @@
 	)
 	(symbol
 		(lib_id "Sameat:R6_2.2k")
-		(at 195.580 237.490 0)
+		(at 63.500 236.220 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7593,7 +7486,7 @@
 		(dnp no)
 		(uuid "0193af4c-59f2-570d-ae58-fa05434e8a31")
 		(property "Reference" "R6"
-			(at 195.580 228.410 0)
+			(at 63.500 227.140 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7601,7 +7494,7 @@
 			)
 		)
 		(property "Value" "2.2k"
-			(at 195.580 230.410 0)
+			(at 63.500 229.140 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7609,7 +7502,7 @@
 			)
 		)
 		(property "Footprint" "Sameat:0402"
-			(at 195.580 237.490 0)
+			(at 63.500 236.220 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7618,7 +7511,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.580 237.490 0)
+			(at 63.500 236.220 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7627,7 +7520,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 195.580 237.490 0)
+			(at 63.500 236.220 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7636,7 +7529,7 @@
 			)
 		)
 		(property "LCSC" "C25879"
-			(at 195.580 237.490 0)
+			(at 63.500 236.220 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7645,7 +7538,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 195.580 237.490 0)
+			(at 63.500 236.220 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7670,7 +7563,7 @@
 	)
 	(global_label "CHGLED_A"
 		(shape passive)
-		(at 180.340 237.490 180)
+		(at 48.260 236.220 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -7681,7 +7574,7 @@
 	)
 	(global_label "CHGLED_N"
 		(shape passive)
-		(at 210.820 237.490 0)
+		(at 78.740 236.220 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -7692,7 +7585,7 @@
 	)
 	(symbol
 		(lib_id "Sameat:C33_1u")
-		(at 327.660 251.460 0)
+		(at 195.580 237.490 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7700,7 +7593,7 @@
 		(dnp no)
 		(uuid "76339d8c-13a9-59a0-b05d-ba1936935426")
 		(property "Reference" "C33"
-			(at 327.660 242.380 0)
+			(at 195.580 228.410 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7708,7 +7601,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 327.660 244.380 0)
+			(at 195.580 230.410 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7716,7 +7609,7 @@
 			)
 		)
 		(property "Footprint" "Sameat:0603"
-			(at 327.660 251.460 0)
+			(at 195.580 237.490 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7725,7 +7618,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 327.660 251.460 0)
+			(at 195.580 237.490 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7734,7 +7627,7 @@
 			)
 		)
 		(property "MPN" "0603 1u X5R"
-			(at 327.660 251.460 0)
+			(at 195.580 237.490 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7743,7 +7636,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 327.660 251.460 0)
+			(at 195.580 237.490 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7752,7 +7645,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 327.660 251.460 0)
+			(at 195.580 237.490 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7777,7 +7670,7 @@
 	)
 	(global_label "RTC_3V3"
 		(shape passive)
-		(at 312.420 251.460 180)
+		(at 180.340 237.490 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -7788,7 +7681,7 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 342.900 251.460 0)
+		(at 210.820 237.490 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -7799,7 +7692,7 @@
 	)
 	(symbol
 		(lib_id "Sameat:C39_100n")
-		(at 459.740 251.460 0)
+		(at 327.660 251.460 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7807,7 +7700,7 @@
 		(dnp no)
 		(uuid "831e0a56-8dbd-5d56-966b-a17bd4959050")
 		(property "Reference" "C39"
-			(at 459.740 242.380 0)
+			(at 327.660 242.380 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7815,6 +7708,113 @@
 			)
 		)
 		(property "Value" "100n"
+			(at 327.660 244.380 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 327.660 251.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 327.660 251.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 327.660 251.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 327.660 251.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "No backup cell; do not short backup charger output"
+			(at 327.660 251.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d6967cf-2cc8-5059-9167-41453093d853")
+		)
+		(pin "2"
+			(uuid "12f59413-925d-5523-90d9-aba05372fe80")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
+					(reference "C39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "PMIC_BACKUP"
+		(shape passive)
+		(at 312.420 251.460 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "d3482193-89b7-5031-a380-661453dac316")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 342.900 251.460 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "6887b6fa-4ac0-50ee-aadf-520d9e41a57c")
+	)
+	(symbol
+		(lib_id "Sameat:R4_2.2k")
+		(at 459.740 251.460 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ddcacd2a-fc44-5f94-a69d-1a8b5ab1d04e")
+		(property "Reference" "R4"
+			(at 459.740 242.380 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "2.2k"
 			(at 459.740 244.380 0)
 			(effects
 				(font
@@ -7849,115 +7849,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
-			(at 459.740 251.460 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "No backup cell; do not short backup charger output"
-			(at 459.740 251.460 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1d6967cf-2cc8-5059-9167-41453093d853")
-		)
-		(pin "2"
-			(uuid "12f59413-925d-5523-90d9-aba05372fe80")
-		)
-		(instances
-			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
-				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
-					(reference "C39")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "PMIC_BACKUP"
-		(shape passive)
-		(at 444.500 251.460 180)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify right)
-		)
-		(uuid "d3482193-89b7-5031-a380-661453dac316")
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 474.980 251.460 0)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify left)
-		)
-		(uuid "6887b6fa-4ac0-50ee-aadf-520d9e41a57c")
-	)
-	(symbol
-		(lib_id "Sameat:R4_2.2k")
-		(at 63.500 265.430 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ddcacd2a-fc44-5f94-a69d-1a8b5ab1d04e")
-		(property "Reference" "R4"
-			(at 63.500 256.350 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "2.2k"
-			(at 63.500 258.350 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 63.500 265.430 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.500 265.430 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 63.500 265.430 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C25879"
-			(at 63.500 265.430 0)
+			(at 459.740 251.460 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7966,7 +7859,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.500 265.430 0)
+			(at 459.740 251.460 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7991,7 +7884,7 @@
 	)
 	(global_label "3V3"
 		(shape passive)
-		(at 48.260 265.430 180)
+		(at 444.500 251.460 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -8002,7 +7895,7 @@
 	)
 	(global_label "PMIC_SCL"
 		(shape passive)
-		(at 78.740 265.430 0)
+		(at 474.980 251.460 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -8738,7 +8631,7 @@
 	)
 	(symbol
 		(lib_id "Sameat:C10_2.2u")
-		(at 195.580 266.700 0)
+		(at 63.500 265.430 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8746,7 +8639,7 @@
 		(dnp no)
 		(uuid "aee24abe-b061-5364-b51e-cca80c2e1011")
 		(property "Reference" "C10"
-			(at 195.580 257.620 0)
+			(at 63.500 256.350 0)
 			(effects
 				(font
 					(size 1 1)
@@ -8754,6 +8647,113 @@
 			)
 		)
 		(property "Value" "2.2u"
+			(at 63.500 258.350 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:0603"
+			(at 63.500 265.430 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.500 265.430 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0603 2.2u X5R"
+			(at 63.500 265.430 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 63.500 265.430 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 63.500 265.430 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b807397-fc5e-5461-9d35-cb232b97c2c7")
+		)
+		(pin "2"
+			(uuid "4e4f9afa-0761-5bef-bfcd-de15d899d4f5")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "1V8"
+		(shape passive)
+		(at 48.260 265.430 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "1b7f521a-39bf-5a99-9fc7-26d0a560a109")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 78.740 265.430 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "d9a87eec-92ae-5b2c-987f-d244dfd75e56")
+	)
+	(symbol
+		(lib_id "Sameat:C5_22u")
+		(at 195.580 266.700 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0c4e6581-0587-54eb-9710-500d7966e650")
+		(property "Reference" "C5"
+			(at 195.580 257.620 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "22u"
 			(at 195.580 259.620 0)
 			(effects
 				(font
@@ -8779,7 +8779,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0603 2.2u X5R"
+		(property "MPN" "0603 22u X5R"
 			(at 195.580 266.700 0)
 			(effects
 				(font
@@ -8807,21 +8807,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "2b807397-fc5e-5461-9d35-cb232b97c2c7")
+			(uuid "7371df7c-a21d-5c18-a771-1623c94f8ba9")
 		)
 		(pin "2"
-			(uuid "4e4f9afa-0761-5bef-bfcd-de15d899d4f5")
+			(uuid "265b8525-0b27-5a15-a653-0aa64f75595f")
 		)
 		(instances
 			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
 				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
-					(reference "C10")
+					(reference "C5")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(global_label "1V8"
+	(global_label "3V3"
 		(shape passive)
 		(at 180.340 266.700 180)
 		(effects
@@ -8830,7 +8830,7 @@
 			)
 			(justify right)
 		)
-		(uuid "1b7f521a-39bf-5a99-9fc7-26d0a560a109")
+		(uuid "36697753-b986-5478-87cb-524a1697a780")
 	)
 	(global_label "GND"
 		(shape passive)
@@ -8841,18 +8841,18 @@
 			)
 			(justify left)
 		)
-		(uuid "d9a87eec-92ae-5b2c-987f-d244dfd75e56")
+		(uuid "bebd5e8e-c728-5431-aa4d-965dd93c1ec3")
 	)
 	(symbol
-		(lib_id "Sameat:C5_22u")
+		(lib_id "Sameat:C38_2.2u")
 		(at 327.660 280.670 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "0c4e6581-0587-54eb-9710-500d7966e650")
-		(property "Reference" "C5"
+		(uuid "18b13f5a-63ae-53df-a052-eb0722a8fa6d")
+		(property "Reference" "C38"
 			(at 327.660 271.590 0)
 			(effects
 				(font
@@ -8860,7 +8860,7 @@
 				)
 			)
 		)
-		(property "Value" "22u"
+		(property "Value" "2.2u"
 			(at 327.660 273.590 0)
 			(effects
 				(font
@@ -8886,7 +8886,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0603 22u X5R"
+		(property "MPN" ""
 			(at 327.660 280.670 0)
 			(effects
 				(font
@@ -8904,7 +8904,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "VMID local bypass; separate from VSYS"
 			(at 327.660 280.670 0)
 			(effects
 				(font
@@ -8914,21 +8914,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "7371df7c-a21d-5c18-a771-1623c94f8ba9")
+			(uuid "8d4bfe8e-a8fd-5cfb-95f4-0f5edc1718b0")
 		)
 		(pin "2"
-			(uuid "265b8525-0b27-5a15-a653-0aa64f75595f")
+			(uuid "dee9d7cc-b4fe-5a08-b12a-7307849e672f")
 		)
 		(instances
 			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
 				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
-					(reference "C5")
+					(reference "C38")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(global_label "3V3"
+	(global_label "VMID"
 		(shape passive)
 		(at 312.420 280.670 180)
 		(effects
@@ -8937,7 +8937,7 @@
 			)
 			(justify right)
 		)
-		(uuid "36697753-b986-5478-87cb-524a1697a780")
+		(uuid "fc955367-559b-533b-8efa-d00ef81adae4")
 	)
 	(global_label "GND"
 		(shape passive)
@@ -8948,18 +8948,18 @@
 			)
 			(justify left)
 		)
-		(uuid "bebd5e8e-c728-5431-aa4d-965dd93c1ec3")
+		(uuid "3c7d0022-606f-5782-beeb-1e086a5950b4")
 	)
 	(symbol
-		(lib_id "Sameat:C38_2.2u")
+		(lib_id "Sameat:C32_10u")
 		(at 459.740 280.670 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "18b13f5a-63ae-53df-a052-eb0722a8fa6d")
-		(property "Reference" "C38"
+		(uuid "02c0e519-24fe-5c74-a3a9-f2578e792145")
+		(property "Reference" "C32"
 			(at 459.740 271.590 0)
 			(effects
 				(font
@@ -8967,7 +8967,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2u"
+		(property "Value" "10u"
 			(at 459.740 273.590 0)
 			(effects
 				(font
@@ -8993,115 +8993,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
-			(at 459.740 280.670 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 459.740 280.670 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "VMID local bypass; separate from VSYS"
-			(at 459.740 280.670 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8d4bfe8e-a8fd-5cfb-95f4-0f5edc1718b0")
-		)
-		(pin "2"
-			(uuid "dee9d7cc-b4fe-5a08-b12a-7307849e672f")
-		)
-		(instances
-			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
-				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
-					(reference "C38")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "VMID"
-		(shape passive)
-		(at 444.500 280.670 180)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify right)
-		)
-		(uuid "fc955367-559b-533b-8efa-d00ef81adae4")
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 474.980 280.670 0)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify left)
-		)
-		(uuid "3c7d0022-606f-5782-beeb-1e086a5950b4")
-	)
-	(symbol
-		(lib_id "Sameat:C32_10u")
-		(at 63.500 294.640 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "02c0e519-24fe-5c74-a3a9-f2578e792145")
-		(property "Reference" "C32"
-			(at 63.500 285.560 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 63.500 287.560 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "Sameat:0603"
-			(at 63.500 294.640 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.500 294.640 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
 		(property "MPN" "0603 10u X5R"
-			(at 63.500 294.640 0)
+			(at 459.740 280.670 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9110,7 +9003,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 63.500 294.640 0)
+			(at 459.740 280.670 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9119,7 +9012,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.500 294.640 0)
+			(at 459.740 280.670 0)
 			(effects
 				(font
 					(size 1 1)
@@ -9144,7 +9037,7 @@
 	)
 	(global_label "VBUS"
 		(shape passive)
-		(at 48.260 294.640 180)
+		(at 444.500 280.670 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -9155,7 +9048,7 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 78.740 294.640 0)
+		(at 474.980 280.670 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -9163,6 +9056,113 @@
 			(justify left)
 		)
 		(uuid "e5e98f2d-8a83-5efa-a4eb-ec1884f0036c")
+	)
+	(symbol
+		(lib_id "Sameat:D14_ESDLC5V0LB")
+		(at 63.500 294.640 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "acb53840-a2b5-5b17-9e00-53a929f9fd7d")
+		(property "Reference" "D14"
+			(at 63.500 285.560 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "ESDLC5V0LB"
+			(at 63.500 287.560 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:DFN1006-2"
+			(at 63.500 294.640 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.500 294.640 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ESDLC5V0LB"
+			(at 63.500 294.640 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C20168172"
+			(at 63.500 294.640 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 63.500 294.640 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0e8fd57-ef3b-59fc-8197-279a57295700")
+		)
+		(pin "2"
+			(uuid "fe29486f-ca44-5962-b17e-0a6294c8eadf")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "USB_CC2"
+		(shape passive)
+		(at 48.260 294.640 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "ff62e700-19e8-5fb7-864e-ee3414ab1ffc")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 78.740 294.640 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "a2753a34-ca2e-5de4-97af-28f29e422dcf")
 	)
 	(symbol
 		(lib_id "Sameat:SUPPLY_SOURCE")

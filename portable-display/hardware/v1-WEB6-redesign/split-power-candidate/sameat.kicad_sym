@@ -417,110 +417,6 @@
 			)
 		)
 	)
-	(symbol "D13_PESD4V0"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PESD4V0"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PESD4V0Y1BBSF"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D13_PESD4V0_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D13_PESD4V0_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
 	(symbol "C4_22u"
 		(pin_names
 			(offset 0.8)
@@ -1799,110 +1695,6 @@
 			)
 		)
 	)
-	(symbol "D14_PESD4V0"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PESD4V0"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PESD4V0Y1BBSF"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D14_PESD4V0_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D14_PESD4V0_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
 	(symbol "L1_1uH/2A"
 		(pin_names
 			(offset 0.8)
@@ -2385,6 +2177,110 @@
 			)
 		)
 		(symbol "R3_4.7k_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "D13_ESDLC5V0LB"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "ESDLC5V0LB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:DFN1006-2"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "ESDLC5V0LB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D13_ESDLC5V0LB_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "D13_ESDLC5V0LB_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -4633,6 +4529,110 @@
 			)
 		)
 		(symbol "C32_10u_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "D14_ESDLC5V0LB"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "ESDLC5V0LB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:DFN1006-2"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "ESDLC5V0LB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D14_ESDLC5V0LB_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "D14_ESDLC5V0LB_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -11752,7 +11752,7 @@
 			)
 		)
 	)
-	(symbol "D7_PESD4V0"
+	(symbol "D6_ESDLC5V0LB"
 		(pin_names
 			(offset 0.8)
 		)
@@ -11768,7 +11768,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "PESD4V0"
+		(property "Value" "ESDLC5V0LB"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11777,7 +11777,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Sameat:0402"
+		(property "Footprint" "Sameat:DFN1006-2"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11795,7 +11795,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "PESD4V0Y1BBSF"
+		(property "Description" "ESDLC5V0LB"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11804,7 +11804,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D7_PESD4V0_0_1"
+		(symbol "D6_ESDLC5V0LB_0_1"
 			(rectangle
 				(start -12.7 -5.080)
 				(end 12.7 5.080)
@@ -11817,7 +11817,111 @@
 				)
 			)
 		)
-		(symbol "D7_PESD4V0_1_1"
+		(symbol "D6_ESDLC5V0LB_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "D12_ESDLC5V0LB"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "ESDLC5V0LB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:DFN1006-2"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "ESDLC5V0LB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D12_ESDLC5V0LB_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "D12_ESDLC5V0LB_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -12026,110 +12130,6 @@
 			)
 		)
 		(symbol "C51_100n_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "D12_PESD4V0"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PESD4V0"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PESD4V0Y1BBSF"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D12_PESD4V0_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D12_PESD4V0_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -13149,110 +13149,6 @@
 					)
 				)
 				(number "3"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "D6_PESD4V0"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PESD4V0"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PESD4V0Y1BBSF"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D6_PESD4V0_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D6_PESD4V0_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
 					(effects
 						(font
 							(size .8 .8)
@@ -15428,6 +15324,110 @@
 			)
 		)
 	)
+	(symbol "D7_ESDLC5V0LB"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "ESDLC5V0LB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:DFN1006-2"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "ESDLC5V0LB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D7_ESDLC5V0LB_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "D7_ESDLC5V0LB_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "U10_TPS65631DPDR"
 		(pin_names
 			(offset 0.8)
@@ -15834,6 +15834,110 @@
 			)
 		)
 	)
+	(symbol "D9_ESDLC5V0LB"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "ESDLC5V0LB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:DFN1006-2"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "ESDLC5V0LB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D9_ESDLC5V0LB_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "D9_ESDLC5V0LB_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "C30_10u"
 		(pin_names
 			(offset 0.8)
@@ -16042,7 +16146,7 @@
 			)
 		)
 	)
-	(symbol "D11_PESD4V0"
+	(symbol "D10_ESDLC5V0LB"
 		(pin_names
 			(offset 0.8)
 		)
@@ -16058,7 +16162,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "PESD4V0"
+		(property "Value" "ESDLC5V0LB"
 			(at 0 0 0)
 			(effects
 				(font
@@ -16067,7 +16171,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Sameat:0402"
+		(property "Footprint" "Sameat:DFN1006-2"
 			(at 0 0 0)
 			(effects
 				(font
@@ -16085,7 +16189,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "PESD4V0Y1BBSF"
+		(property "Description" "ESDLC5V0LB"
 			(at 0 0 0)
 			(effects
 				(font
@@ -16094,7 +16198,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D11_PESD4V0_0_1"
+		(symbol "D10_ESDLC5V0LB_0_1"
 			(rectangle
 				(start -12.7 -5.080)
 				(end 12.7 5.080)
@@ -16107,111 +16211,7 @@
 				)
 			)
 		)
-		(symbol "D11_PESD4V0_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "D8_PESD4V0"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PESD4V0"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PESD4V0Y1BBSF"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D8_PESD4V0_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D8_PESD4V0_1_1"
+		(symbol "D10_ESDLC5V0LB_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -16760,6 +16760,110 @@
 			)
 		)
 	)
+	(symbol "D11_ESDLC5V0LB"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "ESDLC5V0LB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:DFN1006-2"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "ESDLC5V0LB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D11_ESDLC5V0LB_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "D11_ESDLC5V0LB_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "R23_0R"
 		(pin_names
 			(offset 0.8)
@@ -16968,110 +17072,6 @@
 			)
 		)
 	)
-	(symbol "D10_PESD4V0"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PESD4V0"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PESD4V0Y1BBSF"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D10_PESD4V0_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D10_PESD4V0_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
 	(symbol "R25_47k"
 		(pin_names
 			(offset 0.8)
@@ -17176,7 +17176,7 @@
 			)
 		)
 	)
-	(symbol "D9_PESD4V0"
+	(symbol "D8_ESDLC5V0LB"
 		(pin_names
 			(offset 0.8)
 		)
@@ -17192,7 +17192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "PESD4V0"
+		(property "Value" "ESDLC5V0LB"
 			(at 0 0 0)
 			(effects
 				(font
@@ -17201,7 +17201,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Sameat:0402"
+		(property "Footprint" "Sameat:DFN1006-2"
 			(at 0 0 0)
 			(effects
 				(font
@@ -17219,7 +17219,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "PESD4V0Y1BBSF"
+		(property "Description" "ESDLC5V0LB"
 			(at 0 0 0)
 			(effects
 				(font
@@ -17228,7 +17228,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D9_PESD4V0_0_1"
+		(symbol "D8_ESDLC5V0LB_0_1"
 			(rectangle
 				(start -12.7 -5.080)
 				(end 12.7 5.080)
@@ -17241,7 +17241,7 @@
 				)
 			)
 		)
-		(symbol "D9_PESD4V0_1_1"
+		(symbol "D8_ESDLC5V0LB_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
