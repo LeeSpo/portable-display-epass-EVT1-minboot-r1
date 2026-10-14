@@ -1,0 +1,2601 @@
+{
+  "review_started": "2026-10-09",
+  "review_completed": "2026-10-14",
+  "timezone": "Asia/Shanghai",
+  "board_sha256": "9801b487f879cf5314230d11dbd18dc759a0dfbec91ab028c0c4b6da58afe1ae",
+  "scope": "Read-only design review; only review evidence written. No fabrication approval.",
+  "findings": [
+    {
+      "id": "MFG-J5",
+      "severity": "P1",
+      "status": "confirmed_mpn_footprint_mismatch",
+      "refs": [
+        "J5"
+      ],
+      "actual_signal_pitch_mm": 1.0,
+      "actual_signal_span_mm": 7.0,
+      "manufacturer_signal_pitch_mm": 1.1,
+      "manufacturer_signal_span_mm": 7.7,
+      "manufacturer_model": "MUP-M617-2",
+      "source_url": "https://p.globalsources.com/IMAGES/PDT/SPEC/363/K1189584363.pdf",
+      "source_identity": "MUP INDUSTRIAL CO., LTD, Revision 1.1, Issue Date AUG.2.2017; original manufacturer PDF hosted by GlobalSources",
+      "source_pdf_page": 8,
+      "source_pdf_sha256": "85b1f6a7ae7be07a5e930ea74d76a56aa939231379391acf11ad1ebc2882657f",
+      "actual": {
+        "ref": "J5",
+        "footprint": "Sameat:MICROSD",
+        "properties": {
+          "Reference": "J5",
+          "Value": "MicroSD",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "MUP-M617-2",
+          "LCSC": "C5205359"
+        },
+        "at": [
+          "34.7",
+          "32",
+          "90"
+        ],
+        "pads": [
+          {
+            "number": "1",
+            "type": "smd",
+            "shape": "rect",
+            "at": [
+              "-3.5",
+              "-4.35",
+              "90"
+            ],
+            "size": [
+              "0.55",
+              "1.4"
+            ],
+            "drill": [],
+            "net": [
+              "SD_D2"
+            ]
+          },
+          {
+            "number": "2",
+            "type": "smd",
+            "shape": "rect",
+            "at": [
+              "-2.5",
+              "-4.35",
+              "90"
+            ],
+            "size": [
+              "0.55",
+              "1.4"
+            ],
+            "drill": [],
+            "net": [
+              "SD_D3"
+            ]
+          },
+          {
+            "number": "3",
+            "type": "smd",
+            "shape": "rect",
+            "at": [
+              "-1.5",
+              "-4.35",
+              "90"
+            ],
+            "size": [
+              "0.55",
+              "1.4"
+            ],
+            "drill": [],
+            "net": [
+              "SD_CMD"
+            ]
+          },
+          {
+            "number": "4",
+            "type": "smd",
+            "shape": "rect",
+            "at": [
+              "-0.5",
+              "-4.35",
+              "90"
+            ],
+            "size": [
+              "0.55",
+              "1.4"
+            ],
+            "drill": [],
+            "net": [
+              "SD_3V3"
+            ]
+          },
+          {
+            "number": "5",
+            "type": "smd",
+            "shape": "rect",
+            "at": [
+              "0.5",
+              "-4.35",
+              "90"
+            ],
+            "size": [
+              "0.55",
+              "1.4"
+            ],
+            "drill": [],
+            "net": [
+              "SD_CLK"
+            ]
+          },
+          {
+            "number": "6",
+            "type": "smd",
+            "shape": "rect",
+            "at": [
+              "1.5",
+              "-4.35",
+              "90"
+            ],
+            "size": [
+              "0.55",
+              "1.4"
+            ],
+            "drill": [],
+            "net": [
+              "GND"
+            ]
+          },
+          {
+            "number": "7",
+            "type": "smd",
+            "shape": "rect",
+            "at": [
+              "2.5",
+              "-4.35",
+              "90"
+            ],
+            "size": [
+              "0.55",
+              "1.4"
+            ],
+            "drill": [],
+            "net": [
+              "SD_D0"
+            ]
+          },
+          {
+            "number": "8",
+            "type": "smd",
+            "shape": "rect",
+            "at": [
+              "3.5",
+              "-4.35",
+              "90"
+            ],
+            "size": [
+              "0.55",
+              "1.4"
+            ],
+            "drill": [],
+            "net": [
+              "SD_D1"
+            ]
+          },
+          {
+            "number": "9",
+            "type": "smd",
+            "shape": "roundrect",
+            "at": [
+              "5.1",
+              "-1.8",
+              "90"
+            ],
+            "size": [
+              "0.7",
+              "1.2"
+            ],
+            "drill": [],
+            "net": [
+              "SD_DET"
+            ]
+          },
+          {
+            "number": "10",
+            "type": "smd",
+            "shape": "roundrect",
+            "at": [
+              "-6",
+              "1.8",
+              "90"
+            ],
+            "size": [
+              "1.3",
+              "1.8"
+            ],
+            "drill": [],
+            "net": [
+              "GND"
+            ]
+          },
+          {
+            "number": "11",
+            "type": "smd",
+            "shape": "roundrect",
+            "at": [
+              "6",
+              "1.8",
+              "90"
+            ],
+            "size": [
+              "1.3",
+              "1.8"
+            ],
+            "drill": [],
+            "net": [
+              "GND"
+            ]
+          },
+          {
+            "number": "12",
+            "type": "smd",
+            "shape": "roundrect",
+            "at": [
+              "-5.6",
+              "-3.8",
+              "90"
+            ],
+            "size": [
+              "1.2",
+              "1.5"
+            ],
+            "drill": [],
+            "net": [
+              "GND"
+            ]
+          },
+          {
+            "number": "13",
+            "type": "smd",
+            "shape": "roundrect",
+            "at": [
+              "5.6",
+              "-3.8",
+              "90"
+            ],
+            "size": [
+              "1.2",
+              "1.5"
+            ],
+            "drill": [],
+            "net": [
+              "GND"
+            ]
+          }
+        ]
+      },
+      "source_reference_line": 16081,
+      "library_path": "sameat.pretty/MICROSD.kicad_mod",
+      "library_lines": [
+        11,
+        18
+      ]
+    },
+    {
+      "id": "MFG-J2",
+      "severity": "P1",
+      "status": "confirmed_mpn_footprint_mismatch",
+      "refs": [
+        "J2"
+      ],
+      "actual_retention_pad_count": 0,
+      "manufacturer_retention_pad_count": 2,
+      "actual_fab_courtyard_box_mm": [
+        5.4,
+        2.4
+      ],
+      "manufacturer_width_B_mm": 9.9,
+      "source_url": "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf",
+      "source_pdf_pages": [
+        2,
+        4
+      ],
+      "source_pdf_sha256": "447624f4f2f7d37c58c1eaa7ee314ad757fe7aff48f6186491ef6f69fbc00b96",
+      "actual": {
+        "ref": "J2",
+        "footprint": "Sameat:BAT3",
+        "properties": {
+          "Reference": "J2",
+          "Value": "1S LiPo + NTC",
+          "Datasheet": "",
+          "Description": "",
+          "MPN": "S3B-PH-SM4-TB(LF)(SN)",
+          "LCSC": "C265101"
+        },
+        "at": [
+          "28.5",
+          "61.5"
+        ],
+        "pads": [
+          {
+            "number": "1",
+            "type": "smd",
+            "shape": "roundrect",
+            "at": [
+              "-2",
+              "0"
+            ],
+            "size": [
+              "1.2",
+              "2.2"
+            ],
+            "drill": [],
+            "net": [
+              "VBAT"
+            ]
+          },
+          {
+            "number": "2",
+            "type": "smd",
+            "shape": "roundrect",
+            "at": [
+              "0",
+              "0"
+            ],
+            "size": [
+              "1.2",
+              "2.2"
+            ],
+            "drill": [],
+            "net": [
+              "BAT_NTC"
+            ]
+          },
+          {
+            "number": "3",
+            "type": "smd",
+            "shape": "roundrect",
+            "at": [
+              "2",
+              "0"
+            ],
+            "size": [
+              "1.2",
+              "2.2"
+            ],
+            "drill": [],
+            "net": [
+              "GND"
+            ]
+          }
+        ]
+      },
+      "source_reference_line": 2971,
+      "library_path": "sameat.pretty/BAT3.kicad_mod",
+      "library_lines": [
+        28,
+        74
+      ],
+      "retention_pad_size_note": "The 3.4 mm figure dimension is a relative position, not pad length. Full XY land dimensions are not inferred from this generic drawing; use controlled part drawing when repairing."
+    },
+    {
+      "id": "MFG-ESD",
+      "severity": "P1",
+      "status": "confirmed_mpn_package_mismatch",
+      "refs": [
+        "D6",
+        "D7",
+        "D8",
+        "D9",
+        "D10",
+        "D11",
+        "D12",
+        "D13",
+        "D14"
+      ],
+      "actual_land_center_pitch_mm": 1.0,
+      "actual_land_size_mm": [
+        0.6,
+        0.7
+      ],
+      "manufacturer_terminal_pitch_mm": 0.4,
+      "manufacturer_package": "DSN0603-2/SOD962-2",
+      "manufacturer_body_mm": [
+        0.6,
+        0.3,
+        0.3
+      ],
+      "source_urls": [
+        "https://www.nexperia.com/product/PESD4V0Y1BBSF",
+        "https://www.nexperia.com/packages/SOD962-2.html",
+        "https://assets.nexperia.com/documents/package-information/SOD962-2.pdf"
+      ],
+      "source_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "source_revision_date": "2021-01-06",
+      "source_access": "Manufacturer product and package PDF text re-read with web on 2026-10-14. Direct PDF download returned HTTP403; no local PDF claimed.",
+      "actual": [
+        {
+          "ref": "D6",
+          "footprint": "Sameat:0402",
+          "properties": {
+            "Reference": "D6",
+            "Value": "PESD4V0",
+            "Datasheet": "",
+            "Description": "",
+            "MPN": "PESD4V0Y1BBSF",
+            "LCSC": ""
+          },
+          "at": [
+            "28.1",
+            "34.25",
+            "180"
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "type": "smd",
+              "shape": "roundrect",
+              "at": [
+                "-0.5",
+                "0",
+                "180"
+              ],
+              "size": [
+                "0.6",
+                "0.7"
+              ],
+              "drill": [],
+              "net": [
+                "SD_D2"
+              ]
+            },
+            {
+              "number": "2",
+              "type": "smd",
+              "shape": "roundrect",
+              "at": [
+                "0.5",
+                "0",
+                "180"
+              ],
+              "size": [
+                "0.6",
+                "0.7"
+              ],
+              "drill": [],
+              "net": [
+                "GND"
+              ]
+            }
+          ]
+        },
+        {
+          "ref": "D7",
+          "footprint": "Sameat:0402",
+          "properties": {
+            "Reference": "D7",
+            "Value": "PESD4V0",
+            "Datasheet": "",
+            "Description": "",
+            "MPN": "PESD4V0Y1BBSF",
+            "LCSC": ""
+          },
+          "at": [
+            "28.1",
+            "33",
+            "180"
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "type": "smd",
+              "shape": "roundrect",
+              "at": [
+                "-0.5",
+                "0",
+                "180"
+              ],
+              "size": [
+                "0.6",
+                "0.7"
+              ],
+              "drill": [],
+              "net": [
+                "SD_D3"
+              ]
+            },
+            {
+              "number": "2",
+              "type": "smd",
+              "shape": "roundrect",
+              "at": [
+                "0.5",
+                "0",
+                "180"
+              ],
+              "size": [
+                "0.6",
+                "0.7"
+              ],
+              "drill": [],
+              "net": [
+                "GND"
+              ]
+            }
+          ]
+        },
+        {
+          "ref": "D8",
+          "footprint": "Sameat:0402",
+          "properties": {
+            "Reference": "D8",
+            "Value": "PESD4V0",
+            "Datasheet": "",
+            "Description": "",
+            "MPN": "PESD4V0Y1BBSF",
+            "LCSC": ""
+          },
+          "at": [
+            "28.1",
+            "31.75",
+            "180"
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "type": "smd",
+              "shape": "roundrect",
+              "at": [
+                "-0.5",
+                "0",
+                "180"
+              ],
+              "size": [
+                "0.6",
+                "0.7"
+              ],
+              "drill": [],
+              "net": [
+                "SD_CMD"
+              ]
+            },
+            {
+              "number": "2",
+              "type": "smd",
+              "shape": "roundrect",
+              "at": [
+                "0.5",
+                "0",
+                "180"
+              ],
+              "size": [
+                "0.6",
+                "0.7"
+              ],
+              "drill": [],
+              "net": [
+                "GND"
+              ]
+            }
+          ]
+        },
+        {
+          "ref": "D9",
+          "footprint": "Sameat:0402",
+          "properties": {
+            "Reference": "D9",
+            "Value": "PESD4V0",
+            "Datasheet": "",
+            "Description": "",
+            "MPN": "PESD4V0Y1BBSF",
+            "LCSC": ""
+          },
+          "at": [
+            "25.85",
+            "34",
+            "180"
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "type": "smd",
+              "shape": "roundrect",
+              "at": [
+                "-0.5",
+                "0",
+                "180"
+              ],
+              "size": [
+                "0.6",
+                "0.7"
+              ],
+              "drill": [],
+              "net": [
+                "SD_CLK"
+              ]
+            },
+            {
+              "number": "2",
+              "type": "smd",
+              "shape": "roundrect",
+              "at": [
+                "0.5",
+                "0",
+                "180"
+              ],
+              "size": [
+                "0.6",
+                "0.7"
+              ],
+              "drill": [],
+              "net": [
+                "GND"
+              ]
+            }
+          ]
+        },
+        {
+          "ref": "D10",
+          "footprint": "Sameat:0402",
+          "properties": {
+            "Reference": "D10",
+            "Value": "PESD4V0",
+            "Datasheet": "",
+            "Description": "",
+            "MPN": "PESD4V0Y1BBSF",
+            "LCSC": ""
+          },
+          "at": [
+            "24.3",
+            "28",
+            "-90"
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "type": "smd",
+              "shape": "roundrect",
+              "at": [
+                "-0.5",
+                "0",
+                "270"
+              ],
+              "size": [
+                "0.6",
+                "0.7"
+              ],
+              "drill": [],
+              "net": [
+                "SD_D0"
+              ]
+            },
+            {
+              "number": "2",
+              "type": "smd",
+              "shape": "roundrect",
+              "at": [
+                "0.5",
+                "0",
+                "270"
+              ],
+              "size": [
+                "0.6",
+                "0.7"
+              ],
+              "drill": [],
+              "net": [
+                "GND"
+              ]
+            }
+          ]
+        },
+        {
+          "ref": "D11",
+          "footprint": "Sameat:0402",
+          "properties": {
+            "Reference": "D11",
+            "Value": "PESD4V0",
+            "Datasheet": "",
+            "Description": "",
+            "MPN": "PESD4V0Y1BBSF",
+            "LCSC": ""
+          },
+          "at": [
+            "28.85",
+            "24.25",
+            "180"
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "type": "smd",
+              "shape": "roundrect",
+              "at": [
+                "-0.5",
+                "0",
+                "180"
+              ],
+              "size": [
+                "0.6",
+                "0.7"
+              ],
+              "drill": [],
+              "net": [
+                "SD_D1"
+              ]
+            },
+            {
+              "number": "2",
+              "type": "smd",
+              "shape": "roundrect",
+              "at": [
+                "0.5",
+                "0",
+                "180"
+              ],
+              "size": [
+                "0.6",
+                "0.7"
+              ],
+              "drill": [],
+              "net": [
+                "GND"
+              ]
+            }
+          ]
+        },
+        {
+          "ref": "D12",
+          "footprint": "Sameat:0402",
+          "properties": {
+            "Reference": "D12",
+            "Value": "PESD4V0",
+            "Datasheet": "",
+            "Description": "",
+            "MPN": "PESD4V0Y1BBSF",
+            "LCSC": ""
+          },
+          "at": [
+            "31.15",
+            "24.4",
+            "180"
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "type": "smd",
+              "shape": "roundrect",
+              "at": [
+                "-0.5",
+                "0",
+                "180"
+              ],
+              "size": [
+                "0.6",
+                "0.7"
+              ],
+              "drill": [],
+              "net": [
+                "SD_DET"
+              ]
+            },
+            {
+              "number": "2",
+              "type": "smd",
+              "shape": "roundrect",
+              "at": [
+                "0.5",
+                "0",
+                "180"
+              ],
+              "size": [
+                "0.6",
+                "0.7"
+              ],
+              "drill": [],
+              "net": [
+                "GND"
+              ]
+            }
+          ]
+        },
+        {
+          "ref": "D13",
+          "footprint": "Sameat:0402",
+          "properties": {
+            "Reference": "D13",
+            "Value": "PESD4V0",
+            "Datasheet": "",
+            "Description": "",
+            "MPN": "PESD4V0Y1BBSF",
+            "LCSC": ""
+          },
+          "at": [
+            "13.25",
+            "57.5",
+            "-90"
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "type": "smd",
+              "shape": "roundrect",
+              "at": [
+                "-0.5",
+                "0",
+                "270"
+              ],
+              "size": [
+                "0.6",
+                "0.7"
+              ],
+              "drill": [],
+              "net": [
+                "USB_CC1"
+              ]
+            },
+            {
+              "number": "2",
+              "type": "smd",
+              "shape": "roundrect",
+              "at": [
+                "0.5",
+                "0",
+                "270"
+              ],
+              "size": [
+                "0.6",
+                "0.7"
+              ],
+              "drill": [],
+              "net": [
+                "GND"
+              ]
+            }
+          ]
+        },
+        {
+          "ref": "D14",
+          "footprint": "Sameat:0402",
+          "properties": {
+            "Reference": "D14",
+            "Value": "PESD4V0",
+            "Datasheet": "",
+            "Description": "",
+            "MPN": "PESD4V0Y1BBSF",
+            "LCSC": ""
+          },
+          "at": [
+            "24.85",
+            "61.4",
+            "90"
+          ],
+          "pads": [
+            {
+              "number": "1",
+              "type": "smd",
+              "shape": "roundrect",
+              "at": [
+                "-0.5",
+                "0",
+                "90"
+              ],
+              "size": [
+                "0.6",
+                "0.7"
+              ],
+              "drill": [],
+              "net": [
+                "USB_CC2"
+              ]
+            },
+            {
+              "number": "2",
+              "type": "smd",
+              "shape": "roundrect",
+              "at": [
+                "0.5",
+                "0",
+                "90"
+              ],
+              "size": [
+                "0.6",
+                "0.7"
+              ],
+              "drill": [],
+              "net": [
+                "GND"
+              ]
+            }
+          ]
+        }
+      ],
+      "library_path": "sameat.pretty/0402.kicad_mod",
+      "library_lines": [
+        11,
+        12
+      ]
+    }
+  ],
+  "footprint_counts": {
+    "total": 124,
+    "electrical": 120,
+    "mechanical_only": 4
+  },
+  "library_pad_geometry_comparison": {
+    "method": "Compare number, type, shape, local XY, symmetric rotation modulo180, size, drill, layer set, corner radius, mask/paste margins; round to 1nm. Does not assert full graphic/courtyard/library correctness or manufacturer footprint compliance.",
+    "matched_count": 120,
+    "matched_refs": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C2",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C29",
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C5",
+      "C50",
+      "C51",
+      "C52",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "D1",
+      "D10",
+      "D11",
+      "D12",
+      "D13",
+      "D14",
+      "D2",
+      "D3",
+      "D5",
+      "D6",
+      "D7",
+      "D8",
+      "D9",
+      "J1",
+      "J2",
+      "J3",
+      "J4",
+      "J5",
+      "L1",
+      "L2",
+      "L3",
+      "L5",
+      "L6",
+      "Q1",
+      "Q2",
+      "Q3",
+      "R1",
+      "R10",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R15",
+      "R16",
+      "R17",
+      "R18",
+      "R2",
+      "R20",
+      "R21",
+      "R22",
+      "R23",
+      "R24",
+      "R25",
+      "R26",
+      "R27",
+      "R28",
+      "R29",
+      "R3",
+      "R31",
+      "R32",
+      "R33",
+      "R34",
+      "R4",
+      "R5",
+      "R6",
+      "SW1",
+      "SW2",
+      "SW3",
+      "SW4",
+      "SW5",
+      "SW6",
+      "U1",
+      "U10",
+      "U11",
+      "U2",
+      "U4",
+      "U5",
+      "U6",
+      "U8",
+      "U9",
+      "Y1"
+    ],
+    "mismatches": [],
+    "local_library_sha256": {
+      "sameat.pretty/0603.kicad_mod": "4a7b096348d7cdbb247714fcc08d67b68a5496888bc16a8e9a96c5f8a8f7610a",
+      "sameat.pretty/D_SOD123.kicad_mod": "a84020018a8adc9e01e07277545021c48136ac3ac200b0dfe2c51f37781bb876",
+      "sameat.pretty/0402.kicad_mod": "d41b45af6430341aca489ff2c72aaaa69340893b4409558ccb67e3f3552bed75",
+      "sameat.pretty/SN74LVC1G123_DCT8.kicad_mod": "5337de74bbb2e96e1267fbb59117737c3670ae50eca207ae0035d7fd915f3509",
+      "sameat.pretty/BAT3.kicad_mod": "880311fbcde2211e8ab7fce3bc974d76f7a544c27f1205127f0298e41c3c0bf2",
+      "sameat.pretty/IND_2x2.kicad_mod": "9b837b1b2edbc8f1650fa40ced8c89418fb2d490fd65f6c0a49fefc1e21dd012",
+      "sameat.pretty/SW_SIDE.kicad_mod": "07e216b720c2ef7c45ba4a5c972b0b2bb82d03342e7c4ec753b2dd21823fa0fb",
+      "sameat.pretty/USB4105.kicad_mod": "3821f445924c6a40242567f978d08793ddc8bc70648c88ed2e68c93863e09885",
+      "sameat.pretty/SOT23-3.kicad_mod": "564f3f249546289fb211c1683b739700edd2052d59d635132046350da273a6e4",
+      "sameat.pretty/HDR8.kicad_mod": "9ae95bed70cedcc5e9c0f24e0fb1afb2c4a045f7aae7733de1fd8882e7190a36",
+      "sameat.pretty/XTAL4.kicad_mod": "4d5e84d940c5a9665961180ea0a355c284a60e5adafadfde3577f174a0a7293b",
+      "sameat.pretty/LED0603.kicad_mod": "11a5f00976f9be0403f2012460eeceeeed6641d6f3bddacd06e21967d58aa8f9",
+      "sameat.pretty/FPC45.kicad_mod": "6fb33cadd3001a873b765a100b805cc0f0d2143a48e72b4f5b5ad2dc45545582",
+      "sameat.pretty/LGA-12.kicad_mod": "aa104a67fbf6eb58e1bfc7927ec30cab7def7cbd1e4e9b389c51ebab4870e81d",
+      "sameat.pretty/QFN88.kicad_mod": "b2304b4b7e0bcbdf0a8476c49333ab5595100041d267bb29b2c47666fb43bfa7",
+      "sameat.pretty/TPS22918_DBV6.kicad_mod": "84bf6e5b2fbc0b88ea1ae3e9a9ccb63e85258efba61e769e3d078b5d75d34dfd",
+      "sameat.pretty/WSON-12.kicad_mod": "0914836edfcffc44fb3ad919f0cb1f39f32bdfa4ada395e3f0a7e0d7d9eb0fda",
+      "sameat.pretty/QFN40.kicad_mod": "9fc9e1b6e37e065a1902cfae6b2081f4ea67fd1d22e15247631a7ee3b35372df",
+      "sameat.pretty/RTC-8.kicad_mod": "d11b5ec398e020bc77c9c11e3aeb925f353070ebc48a547da93205eb66c34484",
+      "sameat.pretty/USBLC6-2SC6_SOT23-6.kicad_mod": "f1345e6670dda26c723db5420d4d3b15f0cdd996dc744b122c88682a2a49b253",
+      "sameat.pretty/MICROSD.kicad_mod": "b2babb193245a809858baf96698ef8fe1e61ff99e50bb9e42b5503565f0263bd",
+      "sameat.pretty/C_0805_2012Metric.kicad_mod": "e305d7881cdd3559733867b508e1f81c0da0cf8f4598945f8452c4cf1b4eebe5",
+      "sameat.pretty/SN74LVC2G17_DBV6.kicad_mod": "17148f8027eb016ea5632bb4caebd4f622222e76565d226cef897b5cc157851d"
+    }
+  },
+  "bom_metadata": {
+    "blank_MPN_refs": [
+      "D3",
+      "R27",
+      "C42",
+      "C41",
+      "C35",
+      "R18",
+      "R29",
+      "C51",
+      "C24",
+      "C36",
+      "R24",
+      "C13",
+      "C40",
+      "R21",
+      "R15",
+      "C46",
+      "R26",
+      "C50",
+      "J3",
+      "C45",
+      "C43",
+      "R32",
+      "C29",
+      "R3",
+      "C25",
+      "R31",
+      "C26",
+      "R28",
+      "R5",
+      "C31",
+      "R6",
+      "C52",
+      "D2",
+      "R11",
+      "C39",
+      "R4",
+      "R22",
+      "C30",
+      "C47",
+      "R13",
+      "C12",
+      "C37",
+      "R14",
+      "C48",
+      "R20",
+      "C38",
+      "R16",
+      "R23",
+      "C44",
+      "R25",
+      "R17",
+      "R10",
+      "C49",
+      "C34"
+    ],
+    "blank_LCSC_refs": [
+      "C11",
+      "D3",
+      "C9",
+      "R27",
+      "C42",
+      "C7",
+      "C41",
+      "C35",
+      "D13",
+      "C4",
+      "C2",
+      "D7",
+      "R18",
+      "R29",
+      "C51",
+      "C36",
+      "U6",
+      "D12",
+      "L5",
+      "R24",
+      "C13",
+      "C40",
+      "R21",
+      "C8",
+      "C6",
+      "R15",
+      "C46",
+      "R26",
+      "D14",
+      "C50",
+      "J3",
+      "D6",
+      "C45",
+      "C43",
+      "L1",
+      "R32",
+      "C3",
+      "L2",
+      "C1",
+      "C29",
+      "Y1",
+      "R31",
+      "D5",
+      "R28",
+      "L3",
+      "D1",
+      "L6",
+      "C31",
+      "J4",
+      "C33",
+      "D2",
+      "R11",
+      "C39",
+      "U8",
+      "R22",
+      "C30",
+      "C47",
+      "R13",
+      "D11",
+      "C12",
+      "C37",
+      "D8",
+      "C10",
+      "R14",
+      "C5",
+      "C48",
+      "R20",
+      "C38",
+      "C32",
+      "R16",
+      "R23",
+      "C44",
+      "D10",
+      "R25",
+      "R17",
+      "R10",
+      "D9",
+      "C49",
+      "C34"
+    ],
+    "blank_MPN_count": 54,
+    "blank_LCSC_count": 79,
+    "note": "Includes J3 debug pads. Nonblank MPN fields may still be generic descriptions; blank platform ID alone is not an electrical defect.",
+    "components": [
+      {
+        "ref": "C11",
+        "footprint": "Sameat:0603",
+        "Reference": "C11",
+        "Value": "1u",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0603 1u X5R",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "D3",
+        "footprint": "Sameat:D_SOD123",
+        "Reference": "D3",
+        "Value": "BAT54",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C9",
+        "footprint": "Sameat:0603",
+        "Reference": "C9",
+        "Value": "22u",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0603 22u X5R",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R27",
+        "footprint": "Sameat:0402",
+        "Reference": "R27",
+        "Value": "2.2k",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C42",
+        "footprint": "Sameat:0603",
+        "Reference": "C42",
+        "Value": "1u",
+        "Datasheet": "",
+        "Description": "VCI local",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C7",
+        "footprint": "Sameat:0603",
+        "Reference": "C7",
+        "Value": "22u",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0603 22u X5R",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C17",
+        "footprint": "Sameat:0402",
+        "Reference": "C17",
+        "Value": "100n",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0402 100n X7R",
+        "LCSC": "C1525",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C41",
+        "footprint": "Sameat:0603",
+        "Reference": "C41",
+        "Value": "1u",
+        "Datasheet": "",
+        "Description": "VIN1/VIN2 local bypass",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C35",
+        "footprint": "Sameat:0603",
+        "Reference": "C35",
+        "Value": "2.2u",
+        "Datasheet": "",
+        "Description": "V851SX internal analog LDO output bypass",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C16",
+        "footprint": "Sameat:0402",
+        "Reference": "C16",
+        "Value": "100n",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0402 100n X7R",
+        "LCSC": "C1525",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "D13",
+        "footprint": "Sameat:0402",
+        "Reference": "D13",
+        "Value": "PESD4V0",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "PESD4V0Y1BBSF",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C4",
+        "footprint": "Sameat:0603",
+        "Reference": "C4",
+        "Value": "22u",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0603 22u X5R",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C2",
+        "footprint": "Sameat:0603",
+        "Reference": "C2",
+        "Value": "22u",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0603 22u X5R",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "D7",
+        "footprint": "Sameat:0402",
+        "Reference": "D7",
+        "Value": "PESD4V0",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "PESD4V0Y1BBSF",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R18",
+        "footprint": "Sameat:0402",
+        "Reference": "R18",
+        "Value": "10k",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R29",
+        "footprint": "Sameat:0402",
+        "Reference": "R29",
+        "Value": "0R",
+        "Datasheet": "",
+        "Description": "0R shared 1V8 with PA bank; do not gate VDDIO independently",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R1",
+        "footprint": "Sameat:0402",
+        "Reference": "R1",
+        "Value": "5.1k",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0402 5.1k 1%",
+        "LCSC": "C25905",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C51",
+        "footprint": "Sameat:0402",
+        "Reference": "C51",
+        "Value": "100n",
+        "Datasheet": "",
+        "Description": "VNEG transition CT",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C24",
+        "footprint": "Sameat:0402",
+        "Reference": "C24",
+        "Value": "100n",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "C1525",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C36",
+        "footprint": "Sameat:0402",
+        "Reference": "C36",
+        "Value": "470n",
+        "Datasheet": "",
+        "Description": "V851SX analog reference bypass",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "U6",
+        "footprint": "Sameat:SN74LVC1G123_DCT8",
+        "Reference": "U6",
+        "Value": "SN74LVC1G123DCTR",
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc1g123.pdf",
+        "Description": "",
+        "MPN": "SN74LVC1G123DCTR",
+        "LCSC": "",
+        "numbered_pad_count": 8
+      },
+      {
+        "ref": "J2",
+        "footprint": "Sameat:BAT3",
+        "Reference": "J2",
+        "Value": "1S LiPo + NTC",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "S3B-PH-SM4-TB(LF)(SN)",
+        "LCSC": "C265101",
+        "numbered_pad_count": 3
+      },
+      {
+        "ref": "D12",
+        "footprint": "Sameat:0402",
+        "Reference": "D12",
+        "Value": "PESD4V0",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "PESD4V0Y1BBSF",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "L5",
+        "footprint": "Sameat:IND_2x2",
+        "Reference": "L5",
+        "Value": "4.7uH",
+        "Datasheet": "",
+        "Description": "ELVDD boost",
+        "MPN": "4.7uH 1.5A",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R24",
+        "footprint": "Sameat:0402",
+        "Reference": "R24",
+        "Value": "22k",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C13",
+        "footprint": "Sameat:0402",
+        "Reference": "C13",
+        "Value": "18p",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R2",
+        "footprint": "Sameat:0402",
+        "Reference": "R2",
+        "Value": "5.1k",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0402 5.1k 1%",
+        "LCSC": "C25905",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "SW3",
+        "footprint": "Sameat:SW_SIDE",
+        "Reference": "SW3",
+        "Value": "OK",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "GT-TC072B-H045-L1",
+        "LCSC": "C5117859",
+        "numbered_pad_count": 3
+      },
+      {
+        "ref": "C40",
+        "footprint": "Sameat:0603",
+        "Reference": "C40",
+        "Value": "1u",
+        "Datasheet": "",
+        "Description": "VIN3/VIN4 local bypass",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R21",
+        "footprint": "Sameat:0402",
+        "Reference": "R21",
+        "Value": "100",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C8",
+        "footprint": "Sameat:0603",
+        "Reference": "C8",
+        "Value": "22u",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0603 22u X5R",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "J1",
+        "footprint": "Sameat:USB4105",
+        "Reference": "J1",
+        "Value": "USB4105-GF-A-060",
+        "Datasheet": "https://gct.co/files/drawings/usb4105.pdf",
+        "Description": "",
+        "MPN": "USB4105-GF-A-060",
+        "LCSC": "C3025063",
+        "numbered_pad_count": 20
+      },
+      {
+        "ref": "H2",
+        "footprint": "MountingHole_2",
+        "Reference": "H2",
+        "Value": "M2",
+        "Datasheet": "",
+        "Description": "",
+        "numbered_pad_count": 0
+      },
+      {
+        "ref": "C15",
+        "footprint": "Sameat:0402",
+        "Reference": "C15",
+        "Value": "100n",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0402 100n X7R",
+        "LCSC": "C1525",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C6",
+        "footprint": "Sameat:0603",
+        "Reference": "C6",
+        "Value": "22u",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0603 22u X5R",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "SW1",
+        "footprint": "Sameat:SW_SIDE",
+        "Reference": "SW1",
+        "Value": "UP",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "GT-TC072B-H045-L1",
+        "LCSC": "C5117859",
+        "numbered_pad_count": 3
+      },
+      {
+        "ref": "H1",
+        "footprint": "MountingHole_1",
+        "Reference": "H1",
+        "Value": "M2",
+        "Datasheet": "",
+        "Description": "",
+        "numbered_pad_count": 0
+      },
+      {
+        "ref": "R15",
+        "footprint": "Sameat:0402",
+        "Reference": "R15",
+        "Value": "4.7k",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C46",
+        "footprint": "Sameat:0603",
+        "Reference": "C46",
+        "Value": "10u",
+        "Datasheet": "",
+        "Description": "EL VIN",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R26",
+        "footprint": "Sameat:0402",
+        "Reference": "R26",
+        "Value": "100k",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "D14",
+        "footprint": "Sameat:0402",
+        "Reference": "D14",
+        "Value": "PESD4V0",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "PESD4V0Y1BBSF",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C50",
+        "footprint": "Sameat:0603",
+        "Reference": "C50",
+        "Value": "10u",
+        "Datasheet": "",
+        "Description": "ELVSS cout",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C20",
+        "footprint": "Sameat:0402",
+        "Reference": "C20",
+        "Value": "100n",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0402 100n X7R",
+        "LCSC": "C1525",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "Q3",
+        "footprint": "Sameat:SOT23-3",
+        "Reference": "Q3",
+        "Value": "AO3401A",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "AO3401A",
+        "LCSC": "C15127",
+        "numbered_pad_count": 3
+      },
+      {
+        "ref": "Q1",
+        "footprint": "Sameat:SOT23-3",
+        "Reference": "Q1",
+        "Value": "2N7002",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "2N7002",
+        "LCSC": "C8545",
+        "numbered_pad_count": 3
+      },
+      {
+        "ref": "J3",
+        "footprint": "Sameat:HDR8",
+        "Reference": "J3",
+        "Value": "DEBUG POGO",
+        "Datasheet": "",
+        "Description": "1.27mm debug pads; pin 7 FEL_KEY_N is open-drain recovery input via R33 to PC1",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 8
+      },
+      {
+        "ref": "D6",
+        "footprint": "Sameat:0402",
+        "Reference": "D6",
+        "Value": "PESD4V0",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "PESD4V0Y1BBSF",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C45",
+        "footprint": "Sameat:0402",
+        "Reference": "C45",
+        "Value": "100n",
+        "Datasheet": "",
+        "Description": "VDDIO HF",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C43",
+        "footprint": "Sameat:0402",
+        "Reference": "C43",
+        "Value": "100n",
+        "Datasheet": "",
+        "Description": "VCI HF",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "L1",
+        "footprint": "Sameat:IND_2x2",
+        "Reference": "L1",
+        "Value": "1uH/2A",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "1uH 2A shielded",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R32",
+        "footprint": "Sameat:0402",
+        "Reference": "R32",
+        "Value": "10k",
+        "Datasheet": "",
+        "Description": "1% reset pulldown; hold panel reset while PA8 is Hi-Z",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C3",
+        "footprint": "Sameat:0603",
+        "Reference": "C3",
+        "Value": "1u",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0603 1u X5R",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "L2",
+        "footprint": "Sameat:IND_2x2",
+        "Reference": "L2",
+        "Value": "1uH/2A",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "1uH 2A shielded",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C1",
+        "footprint": "Sameat:0603",
+        "Reference": "C1",
+        "Value": "22u",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0603 22u X5R",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C29",
+        "footprint": "Sameat:0603",
+        "Reference": "C29",
+        "Value": "4.7u",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R3",
+        "footprint": "Sameat:0402",
+        "Reference": "R3",
+        "Value": "4.7k",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "C25900",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C25",
+        "footprint": "Sameat:0402",
+        "Reference": "C25",
+        "Value": "100n",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "C1525",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "Y1",
+        "footprint": "Sameat:XTAL4",
+        "Reference": "Y1",
+        "Value": "24MHz 10ppm",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "24MHz 10ppm 3225",
+        "LCSC": "",
+        "numbered_pad_count": 4
+      },
+      {
+        "ref": "R31",
+        "footprint": "Sameat:0402",
+        "Reference": "R31",
+        "Value": "0R",
+        "Datasheet": "",
+        "Description": "DNP required: shared CTRL/VCI enable; do not bridge or pulse until control topology reviewed",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C26",
+        "footprint": "Sameat:0402",
+        "Reference": "C26",
+        "Value": "100n",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "C1525",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "D5",
+        "footprint": "Sameat:LED0603",
+        "Reference": "D5",
+        "Value": "STATUS",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0603 Blue LED",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R28",
+        "footprint": "Sameat:0402",
+        "Reference": "R28",
+        "Value": "10k",
+        "Datasheet": "",
+        "Description": "PC3 BOOT1 pull-up; BOOT_SEL=11 TF first",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "SW5",
+        "footprint": "Sameat:SW_SIDE",
+        "Reference": "SW5",
+        "Value": "POWER",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "GT-TC072B-H045-L1",
+        "LCSC": "C5117859",
+        "numbered_pad_count": 3
+      },
+      {
+        "ref": "L3",
+        "footprint": "Sameat:IND_2x2",
+        "Reference": "L3",
+        "Value": "1uH/2A",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "1uH 2A shielded",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R5",
+        "footprint": "Sameat:0402",
+        "Reference": "R5",
+        "Value": "2.2k",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "C25879",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "SW4",
+        "footprint": "Sameat:SW_SIDE",
+        "Reference": "SW4",
+        "Value": "BACK",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "GT-TC072B-H045-L1",
+        "LCSC": "C5117859",
+        "numbered_pad_count": 3
+      },
+      {
+        "ref": "D1",
+        "footprint": "Sameat:LED0603",
+        "Reference": "D1",
+        "Value": "CHARGE",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0603 Green LED",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "L6",
+        "footprint": "Sameat:IND_2x2",
+        "Reference": "L6",
+        "Value": "4.7uH",
+        "Datasheet": "",
+        "Description": "ELVSS IBB L to GND per TPS65631 app",
+        "MPN": "4.7uH 1.5A",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C31",
+        "footprint": "Sameat:0402",
+        "Reference": "C31",
+        "Value": "10n",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R6",
+        "footprint": "Sameat:0402",
+        "Reference": "R6",
+        "Value": "2.2k",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "C25879",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "J4",
+        "footprint": "Sameat:FPC45",
+        "Reference": "J4",
+        "Value": "KD024EGOIN152-01",
+        "Datasheet": "kd024_screen/KD024EGOIN152-01_engineering_spec.md",
+        "Description": "Molex 502598-4593; verify -4591 module FPC compatibility; MIPI 1-lane; EL± from U10",
+        "MPN": "502598-4593",
+        "LCSC": "",
+        "numbered_pad_count": 47
+      },
+      {
+        "ref": "C33",
+        "footprint": "Sameat:0603",
+        "Reference": "C33",
+        "Value": "1u",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0603 1u X5R",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C52",
+        "footprint": "Sameat:0402",
+        "Reference": "C52",
+        "Value": "100n",
+        "Datasheet": "",
+        "Description": "U11 switched-3V3 local decoupling",
+        "MPN": "",
+        "LCSC": "C1525",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C14",
+        "footprint": "Sameat:0402",
+        "Reference": "C14",
+        "Value": "100n",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0402 100n X7R",
+        "LCSC": "C1525",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "U4",
+        "footprint": "Sameat:LGA-12",
+        "Reference": "U4",
+        "Value": "LIS2DW12TR",
+        "Datasheet": "https://www.st.com/resource/en/datasheet/lis2dw12.pdf",
+        "Description": "",
+        "MPN": "LIS2DW12TR",
+        "LCSC": "C189624",
+        "numbered_pad_count": 12
+      },
+      {
+        "ref": "D2",
+        "footprint": "Sameat:D_SOD123",
+        "Reference": "D2",
+        "Value": "BAT54",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R11",
+        "footprint": "Sameat:0402",
+        "Reference": "R11",
+        "Value": "10k",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C39",
+        "footprint": "Sameat:0402",
+        "Reference": "C39",
+        "Value": "100n",
+        "Datasheet": "",
+        "Description": "No backup cell; do not short backup charger output",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "U2",
+        "footprint": "Sameat:QFN88",
+        "Reference": "U2",
+        "Value": "V851s",
+        "Datasheet": "https://www.allwinnertech.com/index.php?a=index&c=product&id=118",
+        "Description": "",
+        "MPN": "V851s",
+        "LCSC": "C5365286",
+        "numbered_pad_count": 89
+      },
+      {
+        "ref": "R4",
+        "footprint": "Sameat:0402",
+        "Reference": "R4",
+        "Value": "2.2k",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "C25879",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "SW6",
+        "footprint": "Sameat:SW_SIDE",
+        "Reference": "SW6",
+        "Value": "FEL",
+        "Datasheet": "",
+        "Description": "Hold before cold power-on for BROM FEL via R33 and PC1 / U2.56",
+        "MPN": "GT-TC072B-H045-L1",
+        "LCSC": "C5117859",
+        "numbered_pad_count": 3
+      },
+      {
+        "ref": "U8",
+        "footprint": "Sameat:TPS22918_DBV6",
+        "Reference": "U8",
+        "Value": "TPS22918DBVR",
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/tps22918.pdf",
+        "Description": "Gates KD024 VCI. CT/QOD open OK.",
+        "MPN": "TPS22918DBVR",
+        "LCSC": "",
+        "numbered_pad_count": 6
+      },
+      {
+        "ref": "SW2",
+        "footprint": "Sameat:SW_SIDE",
+        "Reference": "SW2",
+        "Value": "DOWN",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "GT-TC072B-H045-L1",
+        "LCSC": "C5117859",
+        "numbered_pad_count": 3
+      },
+      {
+        "ref": "U10",
+        "footprint": "Sameat:WSON-12",
+        "Reference": "U10",
+        "Value": "TPS65631DPDR",
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/tps65631.pdf",
+        "Description": "AMOLED EL± bias; CTRL shares VCI enable; default 4.6/-4.0 requires panel approval; no CTRL pulses",
+        "MPN": "TPS65631DPDR",
+        "LCSC": "C165127",
+        "numbered_pad_count": 13
+      },
+      {
+        "ref": "C18",
+        "footprint": "Sameat:0402",
+        "Reference": "C18",
+        "Value": "100n",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0402 100n X7R",
+        "LCSC": "C1525",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "U1",
+        "footprint": "Sameat:QFN40",
+        "Reference": "U1",
+        "Value": "AXP2101",
+        "Datasheet": "https://www.x-powers.com/en.php/Info/product_detail/article_id/95",
+        "Description": "",
+        "MPN": "AXP2101",
+        "LCSC": "C3036461",
+        "numbered_pad_count": 41
+      },
+      {
+        "ref": "R22",
+        "footprint": "Sameat:0402",
+        "Reference": "R22",
+        "Value": "100k",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C30",
+        "footprint": "Sameat:0603",
+        "Reference": "C30",
+        "Value": "10u",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C47",
+        "footprint": "Sameat:0603",
+        "Reference": "C47",
+        "Value": "10u",
+        "Datasheet": "",
+        "Description": "EL VIN",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "U5",
+        "footprint": "Sameat:RTC-8",
+        "Reference": "U5",
+        "Value": "RV-3028-C7",
+        "Datasheet": "https://www.microcrystal.com/fileadmin/Media/Products/RTC/App.Manual/RV-3028-C7_App-Manual.pdf",
+        "Description": "",
+        "MPN": "RV-3028-C7-32.768kHz-1ppm-TA-QC",
+        "LCSC": "C3019759",
+        "numbered_pad_count": 8
+      },
+      {
+        "ref": "R13",
+        "footprint": "Sameat:0402",
+        "Reference": "R13",
+        "Value": "10k",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "U9",
+        "footprint": "Sameat:USBLC6-2SC6_SOT23-6",
+        "Reference": "U9",
+        "Value": "USBLC6-2SC6",
+        "Datasheet": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+        "Description": "",
+        "MPN": "USBLC6-2SC6",
+        "LCSC": "C2827654",
+        "numbered_pad_count": 6
+      },
+      {
+        "ref": "C21",
+        "footprint": "Sameat:0402",
+        "Reference": "C21",
+        "Value": "100n",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0402 100n X7R",
+        "LCSC": "C1525",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "D11",
+        "footprint": "Sameat:0402",
+        "Reference": "D11",
+        "Value": "PESD4V0",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "PESD4V0Y1BBSF",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C12",
+        "footprint": "Sameat:0402",
+        "Reference": "C12",
+        "Value": "18p",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C37",
+        "footprint": "Sameat:0402",
+        "Reference": "C37",
+        "Value": "100n",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "D8",
+        "footprint": "Sameat:0402",
+        "Reference": "D8",
+        "Value": "PESD4V0",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "PESD4V0Y1BBSF",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "J5",
+        "footprint": "Sameat:MICROSD",
+        "Reference": "J5",
+        "Value": "MicroSD",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "MUP-M617-2",
+        "LCSC": "C5205359",
+        "numbered_pad_count": 13
+      },
+      {
+        "ref": "C10",
+        "footprint": "Sameat:0603",
+        "Reference": "C10",
+        "Value": "2.2u",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0603 2.2u X5R",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "H3",
+        "footprint": "MountingHole_3",
+        "Reference": "H3",
+        "Value": "M2",
+        "Datasheet": "",
+        "Description": "",
+        "numbered_pad_count": 0
+      },
+      {
+        "ref": "R14",
+        "footprint": "Sameat:0402",
+        "Reference": "R14",
+        "Value": "10k",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C5",
+        "footprint": "Sameat:0603",
+        "Reference": "C5",
+        "Value": "22u",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0603 22u X5R",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C48",
+        "footprint": "Sameat:0603",
+        "Reference": "C48",
+        "Value": "10u",
+        "Datasheet": "",
+        "Description": "ELVDD cout",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "H4",
+        "footprint": "MountingHole_4",
+        "Reference": "H4",
+        "Value": "M2",
+        "Datasheet": "",
+        "Description": "",
+        "numbered_pad_count": 0
+      },
+      {
+        "ref": "R20",
+        "footprint": "Sameat:0402",
+        "Reference": "R20",
+        "Value": "10k",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "Q2",
+        "footprint": "Sameat:SOT23-3",
+        "Reference": "Q2",
+        "Value": "2N7002",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "2N7002",
+        "LCSC": "C8545",
+        "numbered_pad_count": 3
+      },
+      {
+        "ref": "C38",
+        "footprint": "Sameat:0603",
+        "Reference": "C38",
+        "Value": "2.2u",
+        "Datasheet": "",
+        "Description": "VMID local bypass; separate from VSYS",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C19",
+        "footprint": "Sameat:0402",
+        "Reference": "C19",
+        "Value": "100n",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0402 100n X7R",
+        "LCSC": "C1525",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C32",
+        "footprint": "Sameat:0603",
+        "Reference": "C32",
+        "Value": "10u",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "0603 10u X5R",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C23",
+        "footprint": "Sameat:C_0805_2012Metric",
+        "Reference": "C23",
+        "Value": "3.3u",
+        "Datasheet": "https://jlcpcb.com/partdetail/CCTC-TCC0805X7R335K250FT/C7393948",
+        "Description": "Wake timing capacitor: 3.3uF 25V X7R 10% 0805; bias/temperature timing qualification required",
+        "MPN": "TCC0805X7R335K250FT",
+        "LCSC": "C7393948",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R16",
+        "footprint": "Sameat:0402",
+        "Reference": "R16",
+        "Value": "4.7k",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "U11",
+        "footprint": "Sameat:SN74LVC2G17_DBV6",
+        "Reference": "U11",
+        "Value": "SN74LVC2G17DBVR",
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf",
+        "Description": "Dual non-inverting Schmitt buffer; switched 3V3 supply; partial-power-down Ioff isolation of AON wake IRQs.",
+        "MPN": "SN74LVC2G17DBVR",
+        "LCSC": "C10429",
+        "numbered_pad_count": 6
+      },
+      {
+        "ref": "R23",
+        "footprint": "Sameat:0402",
+        "Reference": "R23",
+        "Value": "0R",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C44",
+        "footprint": "Sameat:0603",
+        "Reference": "C44",
+        "Value": "1u",
+        "Datasheet": "",
+        "Description": "VDDIO local",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "D10",
+        "footprint": "Sameat:0402",
+        "Reference": "D10",
+        "Value": "PESD4V0",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "PESD4V0Y1BBSF",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R12",
+        "footprint": "Sameat:0402",
+        "Reference": "R12",
+        "Value": "910k",
+        "Datasheet": "https://jlcpcb.com/partdetail/RESI-AECR0402F910KK9/C352384",
+        "Description": "Wake timer: 910k 1% 0402; with C23 3.3u approx 3s, measure 2.2-3.8s",
+        "MPN": "AECR0402F910KK9",
+        "LCSC": "C352384",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R25",
+        "footprint": "Sameat:0402",
+        "Reference": "R25",
+        "Value": "47k",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R17",
+        "footprint": "Sameat:0402",
+        "Reference": "R17",
+        "Value": "10k",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R10",
+        "footprint": "Sameat:0402",
+        "Reference": "R10",
+        "Value": "10k",
+        "Datasheet": "",
+        "Description": "PC2 BOOT0 pull-up; independent of FEL key; default BOOT_SEL=11",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "D9",
+        "footprint": "Sameat:0402",
+        "Reference": "D9",
+        "Value": "PESD4V0",
+        "Datasheet": "",
+        "Description": "",
+        "MPN": "PESD4V0Y1BBSF",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C49",
+        "footprint": "Sameat:0603",
+        "Reference": "C49",
+        "Value": "10u",
+        "Datasheet": "",
+        "Description": "ELVSS cout",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "C34",
+        "footprint": "Sameat:0603",
+        "Reference": "C34",
+        "Value": "2.2u",
+        "Datasheet": "",
+        "Description": "V851SX internal LDOA output bypass",
+        "MPN": "",
+        "LCSC": "",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R33",
+        "footprint": "Sameat:0402",
+        "Reference": "R33",
+        "Value": "1k",
+        "Datasheet": "https://www.lcsc.com/product-detail/C11702.html",
+        "Description": "1% series resistor for PC1 FEL key and debug input; limits accidental output contention",
+        "MPN": "0402WGF1001TCE",
+        "LCSC": "C11702",
+        "numbered_pad_count": 2
+      },
+      {
+        "ref": "R34",
+        "footprint": "Sameat:0402",
+        "Reference": "R34",
+        "Value": "10k",
+        "Datasheet": "https://www.lcsc.com/product-detail/C25744.html",
+        "Description": "1% pull-up to switched VCC-PC domain; PC1 FEL released HIGH",
+        "MPN": "0402WGF1002TCE",
+        "LCSC": "C25744",
+        "numbered_pad_count": 2
+      }
+    ]
+  },
+  "stackup": {
+    "board_thickness_mm": 1.0,
+    "explicit_stackup_present": false,
+    "copper_dielectric_thickness_verified": false,
+    "impedance_verified": false
+  },
+  "via_treatment": {
+    "tenting": true,
+    "covering": false,
+    "plugging": false,
+    "capping": false,
+    "filling": false,
+    "current_intersections_report": "via_in_pad_audit.json"
+  },
+  "limitations": [
+    "No physical assembly, power-up or functional measurements",
+    "Manufacturer review of unlisted components is incomplete",
+    "J4 final FPC/connector assembly compatibility remains unqualified",
+    "QFN engineering land/stencil qualification remains open"
+  ]
+}

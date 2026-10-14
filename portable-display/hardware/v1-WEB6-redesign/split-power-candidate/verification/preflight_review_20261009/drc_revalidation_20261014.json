@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-14",
+  "refilled_sha256": "6921247488934becacd4f2205facfa68f950939ae91285556c1f78c191d273b7",
+  "matches_original_analyzed_sha256": true,
+  "native_counts": {
+    "violations": 3,
+    "unconnected_items": 5,
+    "schematic_parity": 9
+  },
+  "findings_identical_to_20261009": true,
+  "exit_code": 5
+}

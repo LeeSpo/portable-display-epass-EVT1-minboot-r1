@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+    "sch",
+    "export",
+    "netlist",
+    "--format",
+    "kicadxml",
+    "-o",
+    "/Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/verification/preflight_review_20261009/netlist.xml",
+    "/tmp/portable-display-preflight-20261009/source/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_sch"
+  ],
+  "cwd": "/tmp/portable-display-preflight-20261009/source/portable-display/hardware/v1-WEB6-redesign/split-power-candidate",
+  "exit_code": 0,
+  "elapsed_seconds": 1.843
+}

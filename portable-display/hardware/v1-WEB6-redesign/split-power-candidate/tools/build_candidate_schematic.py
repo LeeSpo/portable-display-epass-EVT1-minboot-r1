@@ -17,7 +17,7 @@ import generate_evt1 as g
 import kicad_sexpr as s
 
 STEM = 'ak_display_38x64_SPLIT_POWER_CANDIDATE'
-DATE = '2026-10-04'
+DATE = '2026-10-05'
 original_pin_type = g.pin_type
 
 
@@ -30,8 +30,8 @@ def pin_type(dev, num):
             return 'power_out'
         if num == '26':
             return 'input'
-    if dev.ref == 'U2' and num in {'58','59'}:
-        return 'bidirectional'  # PC2/PC3 boot straps, not SPI outputs in this board.
+    if dev.ref == 'U2' and num in {'56','58','59'}:
+        return 'bidirectional'  # PC1 FEL input and PC2/PC3 boot straps at reset.
     return original_pin_type(dev, num)
 
 
@@ -60,6 +60,9 @@ def main():
     records['R32'].sheet = 'interfaces'
     records['C52'] = copy.deepcopy(records['C26'])
     records['C52'].ref = 'C52'
+    for ref in ['R33', 'R34']:
+        records[ref] = copy.deepcopy(records['R10'])
+        records[ref].ref = ref
     records['U11'] = g.Device('U11', 'SN74LVC2G17DBVR', 'SN74LVC2G17_DBV6',
                              'sensors', 0, 0,
                              {str(n): (name, None) for n, name in enumerate(
@@ -82,6 +85,10 @@ def main():
         names = {n: v[0] for n, v in d.pins.items()}
         if ref == 'U6':
             names = dict(zip(map(str, range(1,9)), ['~{A}','B','~{CLR}','GND','Q','CEXT','REXT_CEXT','VCC']))
+        if ref == 'SW6':
+            names.update({'1': 'FEL_KEY_N', '2': 'FEL_KEY_N'})
+        if ref == 'J3':
+            names['7'] = 'FEL_KEY_N'
         d.pins = {n: (names[n], net) for n, net in actual.items()}
         d.value = props['Value']
         d.footprint = str(fp[1]).split(':', 1)[-1]
@@ -145,6 +152,11 @@ def main():
                          ['at', '38.1', '370.84', '0'],
                          ['effects', ['font', ['size', '1.27', '1.27']], ['justify', 'left']],
                          ['uuid', s.Q(g.uid('wake-timer-note'))]])
+        if sheet == 'soc':
+            tree.append(['text', s.Q('RECOVERY: hold SW6 before cold power-on. SW6 / J3.7 -> R33 1k -> PC1 / U2.56 (FEL_N).\nR34 10k pulls FEL_N to switched 3V3. BOOT_SEL[1:0] remains 11 on PC3 / PC2.\nJ3.7: open-drain LOW or release only. BROM tries UART upgrade before USB. See FEL_REPAIR_CN.md.'),
+                         ['at', '38.1', '358.14', '0'],
+                         ['effects', ['font', ['size', '1.27', '1.27']], ['justify', 'left']],
+                         ['uuid', s.Q(g.uid('fel-recovery-note'))]])
         if sheet in {'interfaces', 'soc'}:
             tree.append(['text', s.Q('DISPLAY GPIO: PA8 (U2.66) -> LCD_RST; PA9 / EINT9 (U2.65) <- LCD_TE. Both use 1V8.\nR32 10k holds reset LOW at boot. R29 must remain fitted 0R; VDDIO must share the PA supply.\nUpdate firmware pin assignments; PD19 / PD20 are now unconnected. See DISPLAY_IO_REPAIR_CN.md.'),
                          ['at', '38.1', '358.14' if sheet == 'interfaces' else '370.84', '0'],
@@ -153,7 +165,7 @@ def main():
         all_libs += [copy.deepcopy(x) for x in s.children(s.child(tree,'lib_symbols'),'symbol')]
         for title in [s.child(tree,'title_block')]:
             s.child(title,'date')[1] = s.Q(DATE)
-            s.child(title,'rev')[1] = s.Q('WAKE2')
+            s.child(title,'rev')[1] = s.Q('FEL1')
             for comment in s.children(title,'comment'):
                 if comment[1] == '1': comment[2] = s.Q('Current PCB pin nets; C3036461 factory configuration NOT verified')
         replace_atoms(tree, 'portable_display_epass', STEM)
@@ -161,7 +173,7 @@ def main():
         s.dump(tree, BASE / f'{filename}.kicad_sch')
     replace_atoms(root, 'portable_display_epass', STEM)
     s.child(s.child(root,'title_block'),'date')[1] = s.Q(DATE)
-    s.child(s.child(root,'title_block'),'rev')[1] = s.Q('WAKE2')
+    s.child(s.child(root,'title_block'),'rev')[1] = s.Q('FEL1')
     s.dump(root, BASE / f'{STEM}.kicad_sch')
     unique = {}
     for symbol in all_libs:

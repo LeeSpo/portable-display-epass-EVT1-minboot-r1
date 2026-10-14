@@ -73,7 +73,10 @@
       "76": "USB_DP",
       "77": "USB_DM",
       "24": "RTC_INT_SOC_N",
-      "30": "ACCEL_INT_SOC_N"
+      "30": "ACCEL_INT_SOC_N",
+      "56": "FEL_N",
+      "58": "BOOT1",
+      "59": "BOOT0"
     },
     "L1": {
       "1": "LX_3V3",
@@ -225,6 +228,31 @@
     "D3": {
       "1": "ACCEL_INT_N",
       "2": "WAKE_REQ_N"
+    },
+    "SW6": {
+      "1": "FEL_KEY_N",
+      "2": "FEL_KEY_N",
+      "3": "GND"
+    },
+    "J3": {
+      "1": "GND",
+      "7": "FEL_KEY_N"
+    },
+    "R10": {
+      "1": "3V3",
+      "2": "BOOT0"
+    },
+    "R28": {
+      "1": "3V3",
+      "2": "BOOT1"
+    },
+    "R33": {
+      "1": "FEL_KEY_N",
+      "2": "FEL_N"
+    },
+    "R34": {
+      "1": "3V3",
+      "2": "FEL_N"
     }
   },
   "rail_requirements": [
@@ -298,7 +326,11 @@
     "R17": "10k",
     "R18": "10k",
     "U11": "SN74LVC2G17DBVR",
-    "C52": "100n"
+    "C52": "100n",
+    "R10": "10k",
+    "R28": "10k",
+    "R33": "1k",
+    "R34": "10k"
   },
   "tf_control_requirement": {
     "gpio": "U2 PH12 / pin 40 / SD_PWR_EN",
@@ -325,7 +357,13 @@
     "D2",
     "D3",
     "U11",
-    "C52"
+    "C52",
+    "R10",
+    "R28",
+    "R33",
+    "R34",
+    "SW6",
+    "J3"
   ],
   "display_io_requirement": {
     "reset_gpio": "PA8",
@@ -359,6 +397,16 @@
       "MPN": "SN74LVC2G17DBVR",
       "LCSC": "C10429",
       "Footprint": "Sameat:SN74LVC2G17_DBV6"
+    },
+    "R33": {
+      "MPN": "0402WGF1001TCE",
+      "LCSC": "C11702",
+      "Footprint": "Sameat:0402"
+    },
+    "R34": {
+      "MPN": "0402WGF1002TCE",
+      "LCSC": "C25744",
+      "Footprint": "Sameat:0402"
     }
   },
   "wake_pulse_requirement": {
@@ -408,5 +456,21 @@
     "mask_soc_interrupts_during_supply_ramp": true,
     "hardware_verified": false,
     "evidence_document": "WAKE_DOMAIN_REPAIR_CN.md"
+  },
+  "fel_recovery_requirement": {
+    "cpu_pin": "U2.56 / PC1 / SPI0-CS0",
+    "key_net": "FEL_KEY_N",
+    "cpu_net": "FEL_N",
+    "series_resistance_ohm": 1000,
+    "pullup_resistance_ohm": 10000,
+    "resistance_tolerance": 0.01,
+    "supply": "switched 3V3 / VCC-PC",
+    "default_boot_select": "11; PC3=1 / PC2=1",
+    "assertion": "Hold SW6 or pull J3.7 LOW before cold power-on; release after USB enumeration",
+    "fixture": "Open-drain LOW or release, no independent pull-up; share J3.1 ground",
+    "firmware": "Reserve PC1 for FEL; do not configure as an output or SPI0 CS",
+    "brom_flow": "Mandatory upgrade: UART handshake then USB after timeout",
+    "hardware_verified": false,
+    "evidence_document": "FEL_REPAIR_CN.md"
   }
 }

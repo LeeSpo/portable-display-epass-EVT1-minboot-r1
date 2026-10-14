@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+    "pcb",
+    "drc",
+    "--format",
+    "json",
+    "--severity-all",
+    "--schematic-parity",
+    "--all-track-errors",
+    "--refill-zones",
+    "--save-board",
+    "--exit-code-violations",
+    "-o",
+    "/Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/verification/preflight_review_20261009/drc.json",
+    "/tmp/portable-display-preflight-20261009/source/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pcb"
+  ],
+  "cwd": "/tmp/portable-display-preflight-20261009/source/portable-display/hardware/v1-WEB6-redesign/split-power-candidate",
+  "exit_code": 5,
+  "elapsed_seconds": 5.054
+}
