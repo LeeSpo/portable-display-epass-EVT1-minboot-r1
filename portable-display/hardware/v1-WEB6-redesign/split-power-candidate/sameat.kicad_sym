@@ -9419,7 +9419,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "BAT54W"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10973,7 +10973,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "BAT54W"
 			(at 0 0 0)
 			(effects
 				(font

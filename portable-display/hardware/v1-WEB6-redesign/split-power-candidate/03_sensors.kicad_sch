@@ -56,7 +56,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "BAT54W"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1610,7 +1610,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "BAT54W"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3434,7 +3434,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "BAT54W"
 			(at 459.740 76.200 0)
 			(effects
 				(font
@@ -3443,7 +3443,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C699107"
 			(at 459.740 76.200 0)
 			(effects
 				(font
@@ -4935,7 +4935,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "BAT54W"
 			(at 63.500 139.700 0)
 			(effects
 				(font
@@ -4944,7 +4944,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C699107"
 			(at 63.500 139.700 0)
 			(effects
 				(font

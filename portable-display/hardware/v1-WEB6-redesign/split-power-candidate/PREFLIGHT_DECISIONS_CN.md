@@ -149,3 +149,12 @@
 - **PMIC_SCL**：实际没有走 In1，而是在 In2 上走了 2.65 mm（x 25.1–27.5，y 15.35–15.95）。该处 In2 是 GND 铺铜（zmap 已确认，不在任何电源分区内），只切出一条短缝；I2C 为 100/400 kHz，不处理。另外 B 面一段从 L2/LX_CORE 下方经过，中间 In1 是完整的 GND（见上文 (b)）。
 - **3V3_B**：12 段 0.18 mm 加宽到 0.25 mm（含 R38 出口的一段），1 段加到 0.22 mm（受 DRAM_1V5 via 间距限制）。剩下 12 段 0.18 mm 是 U2.78 旁边贴着 DSI_D0N 的扇出线，以及 DRAM via 旁 3 段很短的线，加宽会违反 0.127 mm 间距。3V3_B 负载很小（Q3 栅极、U2.5/78 IO 电源、D1 LED），0.18 mm 足够。
 - 验证：verification/preflight_fel_20261015，全部 0。
+
+## 2026-10-15 · D2/D3 选型：BAT54W（Yangjie，LCSC C699107）
+- 电路：RTC_INT_N / ACCEL_INT_N（开漏，R17/R18 10 kΩ 上拉到 RTC_3V3）经 D2/D3 做“线与”，驱动 WAKE_REQ_N → U6。阴极接 INT（pin 1），阳极接 WAKE_REQ_N（pin 2）。
+- 候选对比：
+  - B5819W C8598（basic，40 V/1 A）：IR 为 1 mA@40 V。一路触发时另一只管子反偏约 3 V，高温下几十到几百 µA 的漏电流流过 10 kΩ 上拉，会把未触发的 INT 拉低 0.5–3 V。可能误判，**不满足“works first”**。
+  - **BAT54W C699107**（extended，库存约 2.3 万，$0.032，IR 2 µA@25 V）：漏电流小两到三个数量级。Vf 约 0.25 V@0.33 mA，WAKE_REQ_N 低电平 ≈ 0.4 + 0.25 ≈ 0.65 V，低于 74LVC1G123 的 VIL 0.8 V。选用它，代价是 JLC extended 换料费。
+- 极性核对：EasyEDA C699107 符号 pin 1 = C（阴极），封装 pad 1 在 −x 并有阴极条；本库 D_SOD123 的 pad 1 在 −x，丝印阴极条在 −2.1 mm，三者一致。
+- 焊盘：原 land（±1.25，1.2×1.1）外缘只到 1.85 mm，覆盖不到 SOD-123 引脚尖（最大 1.93 mm）。改为 ±1.33、1.1×1.1，外缘 1.88 mm。再往外会与 KEY_BACK 过孔和 RTC_3V3 走线冲突。库和板同步修改。
+- 验证：verification/preflight_d23_20261015，全部 0。
