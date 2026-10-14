@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/workspace/repos/epass-evt1/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_sch</source>
-    <date>2026-10-15T03:53:53</date>
+    <date>2026-10-15T04:02:13</date>
     <tool>Eeschema 10.0.7</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -2085,6 +2085,32 @@
         </unit>
       </units>
     </comp>
+    <comp ref="C56">
+      <value>100n</value>
+      <footprint>Sameat:0402</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="LCSC">C1525</field>
+        <field name="Footprint">Sameat:0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Sameat" part="C56_100n" description="CL05B104KO5NNNC"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Sheetname" value="SENSORS"/>
+      <property name="Sheetfile" value="03_sensors.kicad_sch"/>
+      <sheetpath names="/SENSORS/" tstamps="/51072dd9-1bb1-5c78-ad53-b3e9d0a07bc6/"/>
+      <tstamps>18c2424a-dbae-581e-ad0e-e1d935b93c54</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="C57">
       <value>100n</value>
       <footprint>Sameat:0402</footprint>
@@ -2102,6 +2128,32 @@
       <property name="Sheetfile" value="03_sensors.kicad_sch"/>
       <sheetpath names="/SENSORS/" tstamps="/51072dd9-1bb1-5c78-ad53-b3e9d0a07bc6/"/>
       <tstamps>affcb307-3212-52d2-b6df-88e8d4a3519a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C58">
+      <value>100n</value>
+      <footprint>Sameat:0402</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="LCSC">C1525</field>
+        <field name="Footprint">Sameat:0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Sameat" part="C58_100n" description="CL05B104KO5NNNC"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Sheetname" value="SENSORS"/>
+      <property name="Sheetfile" value="03_sensors.kicad_sch"/>
+      <sheetpath names="/SENSORS/" tstamps="/51072dd9-1bb1-5c78-ad53-b3e9d0a07bc6/"/>
+      <tstamps>087caa88-60c8-5f7c-8f70-2e234661c63d</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -2154,6 +2206,32 @@
       <property name="Sheetfile" value="03_sensors.kicad_sch"/>
       <sheetpath names="/SENSORS/" tstamps="/51072dd9-1bb1-5c78-ad53-b3e9d0a07bc6/"/>
       <tstamps>91e962e1-2832-519d-bb1f-cf1dc909c7ea</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C61">
+      <value>100n</value>
+      <footprint>Sameat:0402</footprint>
+      <fields>
+        <field name="MPN">CL05B104KO5NNNC</field>
+        <field name="LCSC">C1525</field>
+        <field name="Footprint">Sameat:0402</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Sameat" part="C61_100n" description="CL05B104KO5NNNC"/>
+      <property name="MPN" value="CL05B104KO5NNNC"/>
+      <property name="LCSC" value="C1525"/>
+      <property name="Sheetname" value="SENSORS"/>
+      <property name="Sheetfile" value="03_sensors.kicad_sch"/>
+      <sheetpath names="/SENSORS/" tstamps="/51072dd9-1bb1-5c78-ad53-b3e9d0a07bc6/"/>
+      <tstamps>e77cad3d-6427-5c5d-a9c4-c68be44a8f29</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -4387,7 +4465,35 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Sameat" part="C56_100n">
+      <description>CL05B104KO5NNNC</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n</field>
+        <field name="Footprint">Sameat:0402</field>
+        <field name="Datasheet"/>
+        <field name="Description">CL05B104KO5NNNC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Sameat" part="C57_100n">
+      <description>CL05B104KO5NNNC</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n</field>
+        <field name="Footprint">Sameat:0402</field>
+        <field name="Datasheet"/>
+        <field name="Description">CL05B104KO5NNNC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sameat" part="C58_100n">
       <description>CL05B104KO5NNNC</description>
       <fields>
         <field name="Reference">C</field>
@@ -4430,6 +4536,20 @@
       </pins>
     </libpart>
     <libpart lib="Sameat" part="C60_100n">
+      <description>CL05B104KO5NNNC</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">100n</field>
+        <field name="Footprint">Sameat:0402</field>
+        <field name="Datasheet"/>
+        <field name="Description">CL05B104KO5NNNC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sameat" part="C61_100n">
       <description>CL05B104KO5NNNC</description>
       <fields>
         <field name="Reference">C</field>
@@ -5930,6 +6050,9 @@
       <node ref="C18" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="C19" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="C20" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C56" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C58" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C61" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R36" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U2" pin="13" pinfunction="VDD_SYS0_13" pintype="power_in"/>
       <node ref="U2" pin="17" pinfunction="VDD_SYS1_17" pintype="power_in"/>
@@ -6067,10 +6190,13 @@
       <node ref="C52" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C53" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C54" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C56" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="C57" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C58" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C59" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="C6" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C60" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C61" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="C62" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C7" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="C8" pin="2" pinfunction="2_2" pintype="passive"/>

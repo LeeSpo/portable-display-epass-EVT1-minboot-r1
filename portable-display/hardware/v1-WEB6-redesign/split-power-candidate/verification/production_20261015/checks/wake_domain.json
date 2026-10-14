@@ -1,6 +1,6 @@
 {
   "static_checks_passed": true,
-  "board_sha256": "6ef23dcf82663cda288f60a88f92edab7f577f93420433428856ca112466625f",
+  "board_sha256": "94dfe7223654ee6a35d66aa2d591a83110220de74a82acc37a12f044bfb41f0e",
   "errors": [],
   "old_off_state_model": {
     "assumptions": "RTC_3V3=3.3V; 3V3=0V; equal 10k resistors; diode Vf=0.2..0.4V; sources released",

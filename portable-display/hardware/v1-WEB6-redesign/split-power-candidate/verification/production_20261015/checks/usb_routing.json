@@ -1,6 +1,6 @@
 {
   "static_checks_passed": true,
-  "board_sha256": "6ef23dcf82663cda288f60a88f92edab7f577f93420433428856ca112466625f",
+  "board_sha256": "94dfe7223654ee6a35d66aa2d591a83110220de74a82acc37a12f044bfb41f0e",
   "metrics": {
     "USB_DP": {
       "total_planar_copper_mm": 42.99928349099468,

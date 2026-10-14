@@ -1,6 +1,6 @@
 # 未完成项与验收记录
 
-更新：2026-10-15（fix/preflight-blockers）。主 PCB SHA-256：`6ef23dcf82663cda288f60a88f92edab7f577f93420433428856ca112466625f`。
+更新：2026-10-15（fix/preflight-blockers）。主 PCB SHA-256：`94dfe7223654ee6a35d66aa2d591a83110220de74a82acc37a12f044bfb41f0e`。
 
 - **检查结果：**
   - 原生 DRC：0 违规 / 0 未连接 / 0 原理图一致性问题。
@@ -25,7 +25,7 @@
     - DSI CK 改为 0.100/0.150 耦合线对（约 101 Ω）。
     - D0 是两根独立的约 50 Ω 线。
     - 线对内都已等长。
-  - 62 颗料补齐 LCSC（aa48459）。JLC 生产包从 aa48459 导出，放在 `verification/production_20261015/`（36db4dd），**未放行**。
+  - 62 颗料补齐 LCSC（aa48459）。JLC 生产包从 d49a636 导出（替换了 aa48459 版本），放在 `verification/production_20261015/`，**未放行**。
   - POFV 已决定：全部 0.30 mm 孔做树脂塞孔 + 电镀封帽，写进了 ORDERING_GUIDE。
 - **仍未完成：**
   - **U2-47 去耦：** 仍然和 U2-55 共用 C57。引脚旁边没有地方放 3V3 过孔，原因见 PREFLIGHT_DECISIONS。CORE 13/17/75 已在 B 面补了 C56/C58/C61。
