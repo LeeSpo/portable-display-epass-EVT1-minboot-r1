@@ -330,7 +330,10 @@
     "R10": "10k",
     "R28": "10k",
     "R33": "1k",
-    "R34": "10k"
+    "R34": "10k",
+    "R35": "10k",
+    "C53": "1u",
+    "C54": "100n"
   },
   "tf_control_requirement": {
     "gpio": "U2 PH12 / pin 40 / SD_PWR_EN",
@@ -363,7 +366,11 @@
     "R33",
     "R34",
     "SW6",
-    "J3"
+    "J3",
+    "R35",
+    "C53",
+    "C54",
+    "J2"
   ],
   "display_io_requirement": {
     "reset_gpio": "PA8",
@@ -407,6 +414,71 @@
       "MPN": "0402WGF1002TCE",
       "LCSC": "C25744",
       "Footprint": "Sameat:0402"
+    },
+    "R35": {
+      "MPN": "0402WGF1002TCE",
+      "LCSC": "C25744",
+      "Footprint": "Sameat:0402"
+    },
+    "C53": {
+      "MPN": "CL05A105KA5NQNC",
+      "LCSC": "C52923",
+      "Footprint": "Sameat:0402"
+    },
+    "C54": {
+      "MPN": "CL05B104KO5NNNC",
+      "LCSC": "C1525",
+      "Footprint": "Sameat:0402"
+    },
+    "J2": {
+      "MPN": "ZX-SH1.0-3PWT",
+      "LCSC": "C7430445",
+      "Footprint": "Sameat:SH1.0_3P_RA"
+    },
+    "D6": {
+      "MPN": "ESDLC5V0LB",
+      "LCSC": "C20168172",
+      "Footprint": "Sameat:DFN1006-2"
+    },
+    "D7": {
+      "MPN": "ESDLC5V0LB",
+      "LCSC": "C20168172",
+      "Footprint": "Sameat:DFN1006-2"
+    },
+    "D8": {
+      "MPN": "ESDLC5V0LB",
+      "LCSC": "C20168172",
+      "Footprint": "Sameat:DFN1006-2"
+    },
+    "D9": {
+      "MPN": "ESDLC5V0LB",
+      "LCSC": "C20168172",
+      "Footprint": "Sameat:DFN1006-2"
+    },
+    "D10": {
+      "MPN": "ESDLC5V0LB",
+      "LCSC": "C20168172",
+      "Footprint": "Sameat:DFN1006-2"
+    },
+    "D11": {
+      "MPN": "ESDLC5V0LB",
+      "LCSC": "C20168172",
+      "Footprint": "Sameat:DFN1006-2"
+    },
+    "D12": {
+      "MPN": "ESDLC5V0LB",
+      "LCSC": "C20168172",
+      "Footprint": "Sameat:DFN1006-2"
+    },
+    "D13": {
+      "MPN": "ESDLC5V0LB",
+      "LCSC": "C20168172",
+      "Footprint": "Sameat:DFN1006-2"
+    },
+    "D14": {
+      "MPN": "ESDLC5V0LB",
+      "LCSC": "C20168172",
+      "Footprint": "Sameat:DFN1006-2"
     }
   },
   "wake_pulse_requirement": {
@@ -472,5 +544,14 @@
     "brom_flow": "Mandatory upgrade: UART handshake then USB after timeout",
     "hardware_verified": false,
     "evidence_document": "FEL_REPAIR_CN.md"
+  },
+  "lcd_en_default_requirement": {
+    "net": "LCD_EN",
+    "pulldown": "R35 10k to GND",
+    "r31": "0R LCD_SWIRE<->LCD_EN bridge, DNP (not a pulldown)",
+    "default": "U8 OFF / U10 CTRL low while PD21 is Hi-Z",
+    "sizing": "10uA worst-case GPIO leakage -> <=0.1V",
+    "hardware_verified": false,
+    "evidence_document": "PREFLIGHT_DECISIONS_CN.md"
   }
 }
