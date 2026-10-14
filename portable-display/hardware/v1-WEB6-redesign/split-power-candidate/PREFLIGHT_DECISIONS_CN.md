@@ -7,7 +7,7 @@
 ## 1. FEL 铜皮 + 原理图同步
 - 详见 `FEL_REPAIR_CN.md`。原理图由 `tools/build_candidate_schematic.py` 从 PCB 重新生成。parity 0 / ERC 0。
 
-## 2. LCD_EN 默认关断：R35 10k（C25744，basic，约 $0.0005）
+## 2. LCD_EN 默认关断：R35 10k（C25744，basic，LCSC $0.0033 @100）
 - 评审建议在 R31 上贴 100k。核对后发现 **R31 不是下拉**，它是 LCD_SWIRE↔LCD_EN 之间的 0R 跨接，应保持 DNP。如果把它贴上，SWIRE 和 EN 会被短接，所以没有采纳这条建议。
 - 因此新增 R35 下拉到 GND。阻值取 10k 而不是 100k：按 GPIO 漏电最坏 10 µA 估算，10k 上的压降 ≤0.1 V，可以可靠地保持 U8 / U10 CTRL 为低；换成 100k 最坏会到 1 V，不安全。PD21 驱动为高时，10k 上的电流是 0.33 mA，可以接受。
 
@@ -27,7 +27,7 @@
 - 建议：在 KiCad GUI 里用交互式推挤布线完成，大约 1–2 小时。SD 走线放在 F/B 层，不要走 In2。可以顺便把 Y1 下方的 SD 线移开（见第 9 节）。
 
 ## 6. U8 输入电容（评审 g）
-- C53 1 µF（CL05A105KA5NQNC，C52923，basic，$0.0079）+ C54 100 nF（CL05B104KO5NNNC，C1525，basic）。两颗都在顶层，距离 U8.1 焊盘边 ≤0.65 mm。GND 过孔放在焊盘外，焊盘边到孔的距离 ≥0.15 mm。
+- C53 1 µF（CL05A105KA5NQNC，C52923，basic，$0.0079）+ C54 100 nF（CL05B104KO5NNNC，C1525，basic，LCSC $0.0046 @100）。两颗都在顶层，距离 U8.1 焊盘边 ≤0.65 mm。GND 过孔放在焊盘外，焊盘边到孔的距离 ≥0.15 mm。
 
 ## 7. VBUS 线宽（评审 h）
 - J1→C32/U1.37 主路径上，B.Cu 的两段 0.25 mm 已加宽到 0.6 mm。
