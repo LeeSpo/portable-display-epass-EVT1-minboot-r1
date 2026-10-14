@@ -766,7 +766,7 @@
 					(hide yes)
 				)
 			)
-			(property "Footprint" "Sameat:BAT3"
+			(property "Footprint" "Sameat:SH1.0_3P_RA"
 				(at 0 0 0)
 				(effects
 					(font
@@ -784,7 +784,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "S3B-PH-SM4-TB(LF)(SN)"
+			(property "Description" "1S battery: pin1 VBAT, pin2 NTC, pin3 GND; JST-SH compatible 1.0 mm, 1 A/contact; check battery plug pinout"
 				(at 0 0 0)
 				(effects
 					(font
@@ -5523,7 +5523,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Sameat:BAT3"
+		(property "Footprint" "Sameat:SH1.0_3P_RA"
 			(at 459.740 46.990 0)
 			(effects
 				(font
@@ -5541,7 +5541,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "S3B-PH-SM4-TB(LF)(SN)"
+		(property "MPN" "ZX-SH1.0-3PWT"
 			(at 459.740 46.990 0)
 			(effects
 				(font
@@ -5550,7 +5550,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C265101"
+		(property "LCSC" "C7430445"
 			(at 459.740 46.990 0)
 			(effects
 				(font
@@ -5559,7 +5559,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "1S battery: pin1 VBAT, pin2 NTC, pin3 GND; JST-SH compatible 1.0 mm, 1 A/contact; check battery plug pinout"
 			(at 459.740 46.990 0)
 			(effects
 				(font

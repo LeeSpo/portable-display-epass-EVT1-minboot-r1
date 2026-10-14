@@ -7,7 +7,7 @@
 	(property "Value" "SH1.0-3P RA" (at 0 4.00 0) (layer "F.Fab") (effects (font (size .8 .8) (thickness .12))))
 	(attr smd)
 	(fp_rect (start -2.675 -1.6) (end 2.675 2.7) (stroke (width .1) (type default)) (fill none) (layer "F.Fab"))
-	(fp_rect (start -2.95 -2.8) (end 2.95 3.2) (stroke (width .05) (type default)) (fill none) (layer "F.CrtYd"))
+	(fp_poly (pts (xy -1.5 -2.8) (xy 1.5 -2.8) (xy 1.5 -1.85) (xy 2.95 -1.85) (xy 2.95 3.2) (xy -2.95 3.2) (xy -2.95 -1.85) (xy -1.5 -1.85)) (stroke (width .05) (type default)) (fill none) (layer "F.CrtYd"))
 	(fp_text user "${REFERENCE}" (at 0 0 0) (layer "F.Fab") (effects (font (size .5 .5) (thickness .08))))
 	(pad "1" smd rect (at -1.0000 -1.7000 0) (size 0.5000 1.7000) (layers "F.Cu" "F.Paste" "F.Mask"))
 	(pad "2" smd rect (at 0.0000 -1.7000 0) (size 0.5000 1.7000) (layers "F.Cu" "F.Paste" "F.Mask"))
