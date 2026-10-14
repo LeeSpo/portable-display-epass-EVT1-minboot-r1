@@ -4736,6 +4736,110 @@
 			)
 		)
 	)
+	(symbol "R33_1k"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "1k"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C11702.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1% series resistor for PC1 FEL key and debug input; limits accidental output contention"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R33_1k_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R33_1k_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "C17_100n"
 		(pin_names
 			(offset 0.8)
@@ -5507,7 +5611,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1.27mm production/debug pads"
+		(property "Description" "1.27mm debug pads; pin 7 FEL_KEY_N is open-drain recovery input via R33 to PC1"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5641,7 +5745,7 @@
 			(pin passive line
 				(at 15.24 1.270 180)
 				(length 2.54)
-				(name "FEL_PC2"
+				(name "FEL_KEY_N"
 					(effects
 						(font
 							(size .8 .8)
@@ -7080,7 +7184,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin bidirectional line
 				(at 15.24 -29.210 180)
 				(length 2.54)
 				(name "PC1_SPI0_CS"
@@ -7737,7 +7841,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Recessed recovery switch; straps PC2 low"
+		(property "Description" "Hold before cold power-on for BROM FEL via R33 and PC1 / U2.56"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7763,7 +7867,7 @@
 			(pin passive line
 				(at -15.24 -1.270 0)
 				(length 2.54)
-				(name "FEL_PC2"
+				(name "FEL_KEY_N"
 					(effects
 						(font
 							(size .8 .8)
@@ -7781,7 +7885,7 @@
 			(pin passive line
 				(at -15.24 1.270 0)
 				(length 2.54)
-				(name "FEL_PC2"
+				(name "FEL_KEY_N"
 					(effects
 						(font
 							(size .8 .8)
@@ -7986,6 +8090,110 @@
 			)
 		)
 		(symbol "C21_100n_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "R34_10k"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1% pull-up to switched VCC-PC domain; PC1 FEL released HIGH"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R34_10k_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R34_10k_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -8379,7 +8587,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "PC2 BOOT0 pull-up; independent of FEL key; default BOOT_SEL=11"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9464,6 +9672,110 @@
 			)
 		)
 		(symbol "C26_100n_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C52_100n"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "100n"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "U11 switched-3V3 local decoupling"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C52_100n_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C52_100n_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -10744,214 +11056,6 @@
 			)
 		)
 	)
-	(symbol "R12_910k"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "R"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "910k"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/RESI-AECR0402F910KK9/C352384"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Wake timer: 910k 1% 0402; with C23 3.3u approx 3s, measure 2.2-3.8s"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "R12_910k_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "R12_910k_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "R17_10k"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "R"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "10k"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "R17_10k_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "R17_10k_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
 	(symbol "U11_SN74LVC2G17DBVR"
 		(pin_names
 			(offset 0.8)
@@ -11128,14 +11232,14 @@
 			)
 		)
 	)
-	(symbol "C52_100n"
+	(symbol "R12_910k"
 		(pin_names
 			(offset 0.8)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "C"
+		(property "Reference" "R"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11144,7 +11248,111 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "910k"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/RESI-AECR0402F910KK9/C352384"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Wake timer: 910k 1% 0402; with C23 3.3u approx 3s, measure 2.2-3.8s"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R12_910k_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R12_910k_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "R17_10k"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "10k"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11171,7 +11379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "U11 switched-3V3 local decoupling"
+		(property "Description" ""
 			(at 0 0 0)
 			(effects
 				(font
@@ -11180,7 +11388,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "C52_100n_0_1"
+		(symbol "R17_10k_0_1"
 			(rectangle
 				(start -12.7 -5.080)
 				(end 12.7 5.080)
@@ -11193,7 +11401,7 @@
 				)
 			)
 		)
-		(symbol "C52_100n_1_1"
+		(symbol "R17_10k_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
