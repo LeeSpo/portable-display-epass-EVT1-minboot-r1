@@ -3013,6 +3013,110 @@
 				)
 			)
 		)
+		(symbol "Sameat:C55_100n"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "100n"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Sameat:0402"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "CL05B104KO5NNNC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C55_100n_0_1"
+				(rectangle
+					(start -12.7 -5.080)
+					(end 12.7 5.080)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "C55_100n_1_1"
+				(pin passive line
+					(at -15.24 0.000 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0.000 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Sameat:C58_100n"
 			(pin_names
 				(offset 0.8)
@@ -3079,6 +3183,110 @@
 				)
 			)
 			(symbol "C58_100n_1_1"
+				(pin passive line
+					(at -15.24 0.000 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0.000 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Sameat:C63_100n"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "100n"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Sameat:0402"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "CL05B104KO5NNNC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C63_100n_0_1"
+				(rectangle
+					(start -12.7 -5.080)
+					(end 12.7 5.080)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "C63_100n_1_1"
 				(pin passive line
 					(at -15.24 0.000 0)
 					(length 2.54)
@@ -6636,15 +6844,15 @@
 		(uuid "e4737551-d8fe-51e1-b20f-4d45f5af2e82")
 	)
 	(symbol
-		(lib_id "Sameat:C58_100n")
+		(lib_id "Sameat:C55_100n")
 		(at 195.580 222.250 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "087caa88-60c8-5f7c-8f70-2e234661c63d")
-		(property "Reference" "C58"
+		(uuid "97c14770-f65c-5c90-b507-d293b5b3ff0f")
+		(property "Reference" "C55"
 			(at 195.580 213.170 0)
 			(effects
 				(font
@@ -6706,21 +6914,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "aeb34d63-2245-50c9-92f0-c4c96bf43cca")
+			(uuid "f7dbf4e7-1653-5a43-8ba5-3a87822ded0e")
 		)
 		(pin "2"
-			(uuid "9561088b-e86b-5dd2-9775-6cd5b5c98161")
+			(uuid "9ed7c1fc-2129-5b81-8439-cdf4b879c9bc")
 		)
 		(instances
 			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
 				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/51072dd9-1bb1-5c78-ad53-b3e9d0a07bc6"
-					(reference "C58")
+					(reference "C55")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(global_label "CORE_0V93"
+	(global_label "3V3_B"
 		(shape passive)
 		(at 180.340 222.250 180)
 		(effects
@@ -6729,7 +6937,7 @@
 			)
 			(justify right)
 		)
-		(uuid "ca024fa5-119a-51a1-9667-06187d20fdf9")
+		(uuid "033d6ab4-fb70-50e9-91ff-8d7fb2c3e5fa")
 	)
 	(global_label "GND"
 		(shape passive)
@@ -6740,18 +6948,18 @@
 			)
 			(justify left)
 		)
-		(uuid "a69b72c5-19ab-5851-9296-d0b25a2de2fe")
+		(uuid "0dca2e43-0273-5e31-95f7-8d9d0d6da8da")
 	)
 	(symbol
-		(lib_id "Sameat:C59_100n")
+		(lib_id "Sameat:C58_100n")
 		(at 327.660 222.250 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "8602eaa1-c6eb-58bd-a264-c338757ac588")
-		(property "Reference" "C59"
+		(uuid "087caa88-60c8-5f7c-8f70-2e234661c63d")
+		(property "Reference" "C58"
 			(at 327.660 213.170 0)
 			(effects
 				(font
@@ -6813,21 +7021,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "bd3559ab-1c69-5985-ab10-82f325663482")
+			(uuid "aeb34d63-2245-50c9-92f0-c4c96bf43cca")
 		)
 		(pin "2"
-			(uuid "f5ceac0e-ae17-5d77-8fc3-9616b200c72f")
+			(uuid "9561088b-e86b-5dd2-9775-6cd5b5c98161")
 		)
 		(instances
 			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
 				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/51072dd9-1bb1-5c78-ad53-b3e9d0a07bc6"
-					(reference "C59")
+					(reference "C58")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(global_label "GND"
+	(global_label "CORE_0V93"
 		(shape passive)
 		(at 312.420 222.250 180)
 		(effects
@@ -6836,9 +7044,9 @@
 			)
 			(justify right)
 		)
-		(uuid "cd3d9dbb-5ecf-52b2-b6c8-675477540256")
+		(uuid "ca024fa5-119a-51a1-9667-06187d20fdf9")
 	)
-	(global_label "3V3"
+	(global_label "GND"
 		(shape passive)
 		(at 342.900 222.250 0)
 		(effects
@@ -6847,18 +7055,18 @@
 			)
 			(justify left)
 		)
-		(uuid "f71d0fea-beb6-532f-9ef7-0164e54426f5")
+		(uuid "a69b72c5-19ab-5851-9296-d0b25a2de2fe")
 	)
 	(symbol
-		(lib_id "Sameat:C56_100n")
+		(lib_id "Sameat:C63_100n")
 		(at 459.740 222.250 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "18c2424a-dbae-581e-ad0e-e1d935b93c54")
-		(property "Reference" "C56"
+		(uuid "b2f051d2-42ce-5238-bf6f-a1c7c684c00b")
+		(property "Reference" "C63"
 			(at 459.740 213.170 0)
 			(effects
 				(font
@@ -6920,15 +7128,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "4166524f-c68f-5499-8429-8bf623b80f95")
+			(uuid "91b09ac8-8025-5277-b25f-c9047b58995f")
 		)
 		(pin "2"
-			(uuid "d5951c96-abb0-5f5b-b327-4807f0b67042")
+			(uuid "06831e9c-58fb-564a-a557-c6d8cd3e6205")
 		)
 		(instances
 			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
 				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/51072dd9-1bb1-5c78-ad53-b3e9d0a07bc6"
-					(reference "C56")
+					(reference "C63")
 					(unit 1)
 				)
 			)
@@ -6943,9 +7151,9 @@
 			)
 			(justify right)
 		)
-		(uuid "2ad46d21-9d85-5e87-a121-54051b93e167")
+		(uuid "dd32c400-5fa9-5bd3-9ec7-08b1c52f17cb")
 	)
-	(global_label "CORE_0V93"
+	(global_label "3V3_B"
 		(shape passive)
 		(at 474.980 222.250 0)
 		(effects
@@ -6954,18 +7162,18 @@
 			)
 			(justify left)
 		)
-		(uuid "9d7c4ca6-c1a5-59a8-95e6-abc611a11e8a")
+		(uuid "18c39e02-5bc5-5ef2-a6cc-913f0a35d10b")
 	)
 	(symbol
-		(lib_id "Sameat:C61_100n")
+		(lib_id "Sameat:C59_100n")
 		(at 63.500 227.330 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e77cad3d-6427-5c5d-a9c4-c68be44a8f29")
-		(property "Reference" "C61"
+		(uuid "8602eaa1-c6eb-58bd-a264-c338757ac588")
+		(property "Reference" "C59"
 			(at 63.500 218.250 0)
 			(effects
 				(font
@@ -7027,15 +7235,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "d0b47652-ce41-52d2-860c-5775ccb4186f")
+			(uuid "bd3559ab-1c69-5985-ab10-82f325663482")
 		)
 		(pin "2"
-			(uuid "0f8c969c-fd56-5d3e-83ab-8f600941df80")
+			(uuid "f5ceac0e-ae17-5d77-8fc3-9616b200c72f")
 		)
 		(instances
 			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
 				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/51072dd9-1bb1-5c78-ad53-b3e9d0a07bc6"
-					(reference "C61")
+					(reference "C59")
 					(unit 1)
 				)
 			)
@@ -7050,9 +7258,9 @@
 			)
 			(justify right)
 		)
-		(uuid "4502d80f-fe28-5a5e-a74e-fa6c08138ca9")
+		(uuid "cd3d9dbb-5ecf-52b2-b6c8-675477540256")
 	)
-	(global_label "CORE_0V93"
+	(global_label "3V3"
 		(shape passive)
 		(at 78.740 227.330 0)
 		(effects
@@ -7061,18 +7269,18 @@
 			)
 			(justify left)
 		)
-		(uuid "b11583b6-333c-53b3-8015-1214a5fc657b")
+		(uuid "f71d0fea-beb6-532f-9ef7-0164e54426f5")
 	)
 	(symbol
-		(lib_id "Sameat:C57_100n")
+		(lib_id "Sameat:C56_100n")
 		(at 195.580 251.460 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "affcb307-3212-52d2-b6df-88e8d4a3519a")
-		(property "Reference" "C57"
+		(uuid "18c2424a-dbae-581e-ad0e-e1d935b93c54")
+		(property "Reference" "C56"
 			(at 195.580 242.380 0)
 			(effects
 				(font
@@ -7134,15 +7342,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c5682aa2-74fe-5275-a8a9-55d76f3a30d7")
+			(uuid "4166524f-c68f-5499-8429-8bf623b80f95")
 		)
 		(pin "2"
-			(uuid "2152874c-0ebc-5edb-97d4-eee026696244")
+			(uuid "d5951c96-abb0-5f5b-b327-4807f0b67042")
 		)
 		(instances
 			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
 				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/51072dd9-1bb1-5c78-ad53-b3e9d0a07bc6"
-					(reference "C57")
+					(reference "C56")
 					(unit 1)
 				)
 			)
@@ -7157,9 +7365,9 @@
 			)
 			(justify right)
 		)
-		(uuid "755a4ea8-a64f-5c28-8f51-94938a3bc107")
+		(uuid "2ad46d21-9d85-5e87-a121-54051b93e167")
 	)
-	(global_label "3V3"
+	(global_label "CORE_0V93"
 		(shape passive)
 		(at 210.820 251.460 0)
 		(effects
@@ -7168,18 +7376,18 @@
 			)
 			(justify left)
 		)
-		(uuid "54eaf05a-dca4-5521-8d55-e705bc32b66a")
+		(uuid "9d7c4ca6-c1a5-59a8-95e6-abc611a11e8a")
 	)
 	(symbol
-		(lib_id "Sameat:C60_100n")
+		(lib_id "Sameat:C61_100n")
 		(at 327.660 251.460 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "91e962e1-2832-519d-bb1f-cf1dc909c7ea")
-		(property "Reference" "C60"
+		(uuid "e77cad3d-6427-5c5d-a9c4-c68be44a8f29")
+		(property "Reference" "C61"
 			(at 327.660 242.380 0)
 			(effects
 				(font
@@ -7241,6 +7449,220 @@
 			)
 		)
 		(pin "1"
+			(uuid "d0b47652-ce41-52d2-860c-5775ccb4186f")
+		)
+		(pin "2"
+			(uuid "0f8c969c-fd56-5d3e-83ab-8f600941df80")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/51072dd9-1bb1-5c78-ad53-b3e9d0a07bc6"
+					(reference "C61")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 312.420 251.460 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "4502d80f-fe28-5a5e-a74e-fa6c08138ca9")
+	)
+	(global_label "CORE_0V93"
+		(shape passive)
+		(at 342.900 251.460 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "b11583b6-333c-53b3-8015-1214a5fc657b")
+	)
+	(symbol
+		(lib_id "Sameat:C57_100n")
+		(at 459.740 251.460 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "affcb307-3212-52d2-b6df-88e8d4a3519a")
+		(property "Reference" "C57"
+			(at 459.740 242.380 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 459.740 244.380 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 459.740 251.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 459.740 251.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 459.740 251.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 459.740 251.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 459.740 251.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c5682aa2-74fe-5275-a8a9-55d76f3a30d7")
+		)
+		(pin "2"
+			(uuid "2152874c-0ebc-5edb-97d4-eee026696244")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/51072dd9-1bb1-5c78-ad53-b3e9d0a07bc6"
+					(reference "C57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 444.500 251.460 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "755a4ea8-a64f-5c28-8f51-94938a3bc107")
+	)
+	(global_label "3V3"
+		(shape passive)
+		(at 474.980 251.460 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "54eaf05a-dca4-5521-8d55-e705bc32b66a")
+	)
+	(symbol
+		(lib_id "Sameat:C60_100n")
+		(at 63.500 256.540 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "91e962e1-2832-519d-bb1f-cf1dc909c7ea")
+		(property "Reference" "C60"
+			(at 63.500 247.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 63.500 249.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 63.500 256.540 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.500 256.540 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 63.500 256.540 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 63.500 256.540 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 63.500 256.540 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
 			(uuid "f845499c-43f8-5af6-b0d0-698926290554")
 		)
 		(pin "2"
@@ -7257,7 +7679,7 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 312.420 251.460 180)
+		(at 48.260 256.540 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -7268,7 +7690,7 @@
 	)
 	(global_label "3V3"
 		(shape passive)
-		(at 342.900 251.460 0)
+		(at 78.740 256.540 0)
 		(effects
 			(font
 				(size .8 .8)
