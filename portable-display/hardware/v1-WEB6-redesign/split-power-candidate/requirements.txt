@@ -1,0 +1,3 @@
+# Candidate geometry audits; native verification also requires KiCad 10.
+shapely>=2.0,<3
+numpy>=1.26,<3

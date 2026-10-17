@@ -8,12 +8,9 @@ of PMIC OTP defaults or a functional sign-off.
 """
 from pathlib import Path
 import copy
-import sys
 
 BASE = Path(__file__).resolve().parents[1]
-LEGACY = BASE.parents[1] / 'v0_legacy' / 'tools'
-sys.path.insert(0, str(LEGACY))
-import generate_evt1 as g
+import schematic_support as g
 import kicad_sexpr as s
 
 STEM = 'ak_display_38x64_SPLIT_POWER_CANDIDATE'

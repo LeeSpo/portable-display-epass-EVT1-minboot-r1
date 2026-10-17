@@ -8,11 +8,9 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
-import sys
 import xml.etree.ElementTree as ET
 
 BASE = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(BASE.parents[1] / 'v0_legacy' / 'tools'))
 import kicad_sexpr as s
 
 

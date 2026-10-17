@@ -4,11 +4,10 @@
 Path lengths include nominal board thickness for F/B vias. Coupling is a sampled
 centerline-distance proxy, not electromagnetic extraction. Run native DRC separately.
 """
-import sys,heapq,math,json
+import heapq,math,json
 from pathlib import Path
 from collections import defaultdict
 BASE = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(BASE.parent/'tools'))
 from finish_power_routes import Router,rb
 from plane_connectivity import zones,connected_groups
 from kicad_sexpr import children,val,values
