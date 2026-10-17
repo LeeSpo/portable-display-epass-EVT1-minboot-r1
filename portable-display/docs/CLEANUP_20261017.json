@@ -10374,11 +10374,13 @@
     },
     {
       "from": "portable-display/hardware/v1-WEB6-redesign/reference/display_pinout_supplied.csv",
-      "to": "portable-display/reference/display_pinout_supplied.csv"
+      "to": "portable-display/docs/kd024_screen/KD024EGOIN152-01_pinout.csv",
+      "deduplicated": true
     },
     {
       "from": "portable-display/hardware/v1-WEB6-redesign/reference/display_structured_supplied.json",
-      "to": "portable-display/reference/display_structured_supplied.json"
+      "to": "portable-display/docs/kd024_screen/KD024EGOIN152-01_structured.json",
+      "deduplicated": true
     },
     {
       "from": "portable-display/hardware/v1-WEB6-redesign/reference/v851s_pinout_v0.1.xlsx",
@@ -10386,7 +10388,8 @@
     },
     {
       "from": "portable-display/hardware/v1-WEB6-redesign/reference/display_engineering_spec_supplied.md",
-      "to": "portable-display/reference/display_engineering_spec_supplied.md"
+      "to": "portable-display/docs/kd024_screen/KD024EGOIN152-01_engineering_spec.md",
+      "deduplicated": true
     },
     {
       "from": "portable-display/hardware/v1-WEB6-redesign/SCREEN_STACK_CN.md",

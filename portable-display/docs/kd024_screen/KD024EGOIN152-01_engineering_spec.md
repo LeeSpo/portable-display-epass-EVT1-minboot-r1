@@ -1,6 +1,6 @@
 # KD024EGOIN152-01 Engineering Specification
 
-Source: `KD024EGOIN152-01 SPEC V1.pdf`  
+Source: [KD024EGOIN152-01_SPEC_V1.pdf](raw-pdf/KD024EGOIN152-01_SPEC_V1.pdf)
 Module: KD024EGOIN152-01  
 Panel: 2.4-inch Rigid AMOLED  
 Driver IC: RM690B0  

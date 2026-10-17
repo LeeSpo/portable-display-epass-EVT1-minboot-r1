@@ -1,5 +1,7 @@
 # 电源审查与平台料要求
 
+> 历史工程决策记录：器件数量、哈希、图片和检查结果对应各段原日期。当前状态见 [README](README_CN.md)、[未完成项](OPEN_ISSUES_CN.md)及本轮验证；旧报告从固定 Git 提交读取。
+
 2026-09-20；对象：本目录 38×64 mm 四层候选。用户计划由嘉立创使用平台料贴片。
 
 **状态：配套原理图已恢复并与 PCB 核对；电源冷启动问题尚未关闭。** U1 平台料号为 C3036461，平台公开信息没有确认该料号/批次的上电电压、默认使能和顺序。不能把这次原理图同步或 ERC/DRC 通过表述为“电源已修好、可直接贴片上电”。本次没有改变 PCB 铜线、焊盘、元件值或布局。
@@ -76,7 +78,7 @@ AXP2101 默认输出和启动顺序由定制/EFUSE 决定；I²C 上电后写寄
 
 ## 5. 检查与后续验收
 
-原生网表、ERC、DRC（含原理图一致性）及逐脚审查报告见 `verification/power_review_20260920/`。源 PCB 哈希为 `4e20633abbfaa8e60ab0ce2a67993ccdac4fafc891b56ac3ff77a26b16965893`。
+原生网表、ERC、DRC（含原理图一致性）及逐脚审查报告见 [verification/power_review_20260920/](https://github.com/LeeSpo/portable-display-epass-EVT1-minboot-r1/tree/b14e0fbead4cc5602254eedcb0fa77d3e3236ec2/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/verification/power_review_20260920/)。源 PCB 哈希为 `4e20633abbfaa8e60ab0ce2a67993ccdac4fafc891b56ac3ff77a26b16965893`。
 
 在已核实采购配置后，仍需验证：有效去耦容量与输入旁路、峰值电流/压降、USB 输入电流限额、VSYS 全工况、充电与电池 NTC、温升及各路上/下电波形。本次未做实板测量，没有给出虚构的测试值。
 
@@ -86,7 +88,7 @@ AXP2101 默认输出和启动顺序由定制/EFUSE 决定；I²C 上电后写寄
 - [全志 V851S/V851SE Datasheet v0.1](https://bbs.aw-ol.com/assets/uploads/files/1664112156052-c55b9458-9847-4731-873e-c98d352589ea-v851s-amp-v851se_datasheet_v0.1.pdf)：表 2-6、2.3.5/图 2-2、8.3.2/图 8-6。该文件标为 Draft；本次按可得原厂资料记录，采购前应索取最新受控版本。
 - [X-Powers AXP2101 Datasheet V1.4，LilyGo 托管的厂家副本](https://wiki.lilygo.cc/datasheet/AXP2101_Datasheet_V1.4_en.pdf)：7–9 页脚位、22 页表 6-1、49–55 页寄存器、57 页典型应用。
 - [嘉立创 C3036461](https://jlcpcb.com/partdetail/x_powersTech-AXP2101/C3036461)、[立创国内商品页](https://item.szlcsc.com/3587325.html)：平台型号及封装核对；不作为默认电压证据。
-- 本地全志 `../reference/v851s_pinout_v0.1.xlsx`：V851S QFN88 脚位与电源域。未采用 V851SE 替代脚位。
+- 本地全志 `../../../reference/v851s_pinout_v0.1.xlsx`：V851S QFN88 脚位与电源域。未采用 V851SE 替代脚位。
 
 2026-10-01 后续修改：已完成 [自动唤醒定时阻容修复](WAKE_PULSE_REPAIR_CN.md)，名义约 3 s；实测窗口和连续触发行为仍待验收。本项不证明 PMIC 出厂电源配置或冷启动已确认。
 

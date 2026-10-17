@@ -1,5 +1,7 @@
 # TF 默认上电修复
 
+> 历史工程决策记录：器件数量、哈希、图片和检查结果对应各段原日期。当前状态见 [README](README_CN.md)、[未完成项](OPEN_ISSUES_CN.md)及本轮验证；旧报告从固定 Git 提交读取。
+
 2026-09-21，修订 TF-ON1。已修改候选 PCB、原理图及独立连接/阻值检查。此项关闭的是“主控复位高阻时，TF 被上拉栅极默认关断”的电路问题；实板启动尚未验证。第一项的 AXP2101 平台料默认配置仍待确认。
 
 ## 电路与控制
@@ -32,7 +34,7 @@ R20 原 3V3 焊盘同时承担电源转接，不能只改网络名。现将该�
 
 原生 KiCad 10.0.6 检查：DRC 0 违规、0 未连接、0 原理图一致性问题；ERC 0 违规。核对 115 个电气器件、489 个编号焊盘、84 项独立引脚约束和全部 115 个器件值，结果一致。另用“R20 恢复上拉”和“R21 恢复 10 kΩ”两种故障验证检查器，均被拒绝。未降低规则或新增豁免。
 
-报告在 `verification/tf_power_20260921/`：`drc.json`、`erc.json`、`netlist.xml`、`power_audit.json`、`change_audit.json`、`negative_checks.json`、`provenance.json`。本次 PCB SHA-256：`05af2af6138012e6b749530d8bcedb3d7fa88d8564eebb4ffb727f2124159fbb`。旧报告仅用于追溯。四层预览已更新。
+报告在 [verification/tf_power_20260921/](https://github.com/LeeSpo/portable-display-epass-EVT1-minboot-r1/tree/b14e0fbead4cc5602254eedcb0fa77d3e3236ec2/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/verification/tf_power_20260921/)：`drc.json`、`erc.json`、`netlist.xml`、`power_audit.json`、`change_audit.json`、`negative_checks.json`、`provenance.json`。本次 PCB SHA-256：`05af2af6138012e6b749530d8bcedb3d7fa88d8564eebb4ffb727f2124159fbb`。旧报告仅用于追溯。四层预览已更新。
 
 ## 固件与实板验收
 

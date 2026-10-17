@@ -1,5 +1,7 @@
 # 预投板阻塞项修复：决策日志（fix/preflight-blockers）
 
+> 历史工程决策记录：器件数量、哈希、图片和检查结果对应各段原日期。当前状态见 [README](README_CN.md)、[未完成项](OPEN_ISSUES_CN.md)及本轮验证；旧报告从固定 Git 提交读取。
+
 > 用户把所有选择都交给了我们，原则是：**先保证能工作，再尽量便宜**。优先选 JLC/LCSC 有库存的料，basic 库优先。
 > DRC 规则一律不放宽，也不加任何豁免。过孔统一 0.60/0.30。U1/U2 不移动。fabrication 仍为 **未放行**。
 > 价格和库存是 2026-10-15 查询 JLC/LCSC API 得到的。
@@ -75,7 +77,7 @@
 - **重布的网络：** PMIC_SDA、PMIC_SCL、PMIC_IRQ_N、PWRON_N、RTC_3V3、DRAM_1V5、SOC_LDO_1V8、SD_PWR_GATE、SD_3V3、SD_PWR_EN。
   - SD_3V3 从 J5.4 引出的颈部是 0.15 mm、长约 0.8 mm，夹在 CMD 与 DET 两个焊盘之间，没有更宽的空间；SD 卡峰值电流约 100–200 mA，这个宽度足够。
   - SD_PWR_EN 与原设计一样借用 In2 走一段（在 U2 下方 15.68,24.32 → 19.5,33.2）。这是低速静态使能信号；In2 是电源层，不是参考地，DRC 确认没有产生孤岛或未连接。
-- 检查结果：DRC 0 违规 / 0 未连接 / 0 原理图一致性问题；ERC 0；power_contract、fel_recovery、usb_routing、wake_domain 全部通过。输出在 `verification/preflight_j5_20261015/`。
+- 检查结果：DRC 0 违规 / 0 未连接 / 0 原理图一致性问题；ERC 0；power_contract、fel_recovery、usb_routing、wake_domain 全部通过。输出在 [verification/preflight_j5_20261015/](https://github.com/LeeSpo/portable-display-epass-EVT1-minboot-r1/tree/b14e0fbead4cc5602254eedcb0fa77d3e3236ec2/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/verification/preflight_j5_20261015/)。
 
 ## U10 TPS65631 改由 3V3 供电（2026-10-15）
 
@@ -97,7 +99,7 @@
   - U10 典型负载（屏幕约 100 mA@4.6 V / −4 V，效率约 85%）时，3V3 输入约 0.3 A；数据手册满载（各 300 mA）最坏约 1.0 A。
   - 加上 SoC IO、SD 卡（峰值约 0.2 A）等其余负载，最坏合计约 1.4–1.5 A，低于 2 A。
   - 需要实测确认屏幕全白画面的电流。
-- 检查：DRC 0/0/0，ERC 0，四项静态检查通过（`verification/preflight_u10_20261015/`）。
+- 检查：DRC 0/0/0，ERC 0，四项静态检查通过（[verification/preflight_u10_20261015/](https://github.com/LeeSpo/portable-display-epass-EVT1-minboot-r1/tree/b14e0fbead4cc5602254eedcb0fa77d3e3236ec2/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/verification/preflight_u10_20261015/)）。
 
 ## 2026-10-15 · 0Ω 电源隔离链接（R36–R40）
 - 在 AXP2101 每路输出与负载之间加 0402 0Ω（0402WGF0000TCE，C17168，basic，≈$0.0011）。成本几乎为零，可逐路隔离短路/OTP 错误。
@@ -133,8 +135,8 @@
 - 验证：verification/preflight_vip_20261015，全部 0。
 
 ## 2026-10-15 · J4 定型 + DSI 等长
-- **J4 定型：Molex 502598-4593，LCSC C5365339**（JLC 扩展库，库存约 1.7 万，≈$0.46）。KD024 规格书（kd024_screen/KD024EGOIN152-01_engineering_spec.md）推荐 502598-4591，该型号已停产，DigiKey 标注 -4593 为直接替代（同系列 BackFlip，45P/0.3 mm，双面触点，高 1.14 mm）。
-- 引脚对照 KD024 pinout.csv（与 reference/display_pinout_supplied.csv 一致）逐脚核对：GND/ELVSS/ELVDD/VCI(LCD_3V3)/VDDIO(LCD_1V8)/TE/RESX/SWIRE/D0P/D0N/CLKP/CLKN 均正确；IM1/IM0（31/32）接 GND = MIPI 模式（规格书 §5）；MTP(43) 接 GND 符合“开路或接地”；MCU 总线 18–29 不用、悬空；TE1(13) 悬空。
+- **J4 定型：Molex 502598-4593，LCSC C5365339**（JLC 扩展库，库存约 1.7 万，≈$0.46）。KD024 规格书（../../../docs/kd024_screen/KD024EGOIN152-01_engineering_spec.md）推荐 502598-4591，该型号已停产，DigiKey 标注 -4593 为直接替代（同系列 BackFlip，45P/0.3 mm，双面触点，高 1.14 mm）。
+- 引脚对照 KD024 pinout.csv（与 ../../../docs/kd024_screen/KD024EGOIN152-01_pinout.csv 一致）逐脚核对：GND/ELVSS/ELVDD/VCI(LCD_3V3)/VDDIO(LCD_1V8)/TE/RESX/SWIRE/D0P/D0N/CLKP/CLKN 均正确；IM1/IM0（31/32）接 GND = MIPI 模式（规格书 §5）；MTP(43) 接 GND 符合“开路或接地”；MCU 总线 18–29 不用、悬空；TE1(13) 悬空。
 - 焊盘与 LCSC/EasyEDA C5365339 封装对比：45 个信号焊盘位置/尺寸一致（行距 3.065 vs 3.06 mm，差 5 µm）；MP1/MP2 固定脚差 0.17 mm(x)/0.1 mm(y)。项目库基于 Molex SD-502598-003 图纸审过，保留不改；Molex 官网图纸此次无法下载（连接被拒），列入 OPEN_ISSUES 待人工对照。
 - **DSI 等长**：错位双排使 P 线（远排）必须绕行，拓扑无法缩短。改为在 N 线上加蛇形（0.127 mm 线宽，0.3 mm 节距，与异网 ≥0.17 mm）：
   - D0：P 19.009 / N 19.007 mm（原 N 7.957）

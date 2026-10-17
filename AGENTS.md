@@ -4,34 +4,25 @@
 
 This repository contains portable-display hardware designs and Python validation tools; there is no application or firmware build here.
 
-- `portable-display/hardware/v0_legacy/`: EVT1-minboot KiCad project, local symbol/footprint libraries, `design/` contracts, `tools/`, and historical documentation.
-- `portable-display/hardware/v1-WEB6-redesign/`: 38×64 mm redesign, routing utilities, and layout previews. `split-power-candidate/` contains the split-power KiCad project, power requirements, and dedicated checks.
-- `portable-display/docs/` and `reference/`: display specifications, pinout data, and reference material.
-- Each hardware revision's `verification/` directory holds reports, previews, hashes, and snapshots. Match evidence to the actual source revision.
+- `portable-display/hardware/v1-WEB6-redesign/split-power-candidate/`: the maintained 38×64 mm KiCad project, local libraries, power requirements, and self-contained validation tools.
+- `portable-display/hardware/v2-dev-board/`: YuzukiHD-Lizard learning references; this is not the next revision of the custom PCB.
+- `portable-display/docs/` and `portable-display/reference/`: display specifications, mechanical notes, pinout data, source datasheets, and the cleanup/recovery index.
+- The candidate's `verification/` contains only the latest verification run and the retained production preview package. Historical designs and reports are recoverable from Git; see `portable-display/docs/PROJECT_STATUS_CN.md`.
 
 ## Build, Test, and Development Commands
 
-Use KiCad 9/10 for the legacy project; split-power reports document KiCad 10.0.6. Keep project-local libraries available through `${KIPRJMOD}`.
-
-From `portable-display/hardware/v0_legacy/`:
-
-```sh
-python3 -m pip install -r requirements.txt
-python3 -m unittest discover -s tools -p 'test_*.py' -v
-python3 tools/verify_evt1.py --static
-python3 tools/verify_evt1.py
-```
-
-These install Shapely/NumPy, run unit tests, perform static checks, and run native ERC/DRC respectively. Native verification requires `kicad-cli` and checks an isolated project copy.
+Use KiCad 10; the current verification uses 10.0.6 and the retained production package reports 10.0.7. Keep project-local libraries available through `${KIPRJMOD}`.
 
 From `portable-display/hardware/v1-WEB6-redesign/split-power-candidate/`:
 
 ```sh
+python3 -m pip install -r requirements.txt
+python3 tools/verify_candidate.py --output /tmp/split-power-check
 python3 tools/check_wake_domain.py --output /tmp/wake-audit.json
 python3 tools/test_wake_domain.py --output /tmp/wake-faults.json
 ```
 
-These check wake-domain topology and rejection of injected wiring/assembly faults.
+The full runner requires a new or empty output directory, uses an isolated project copy, and checks native ERC/DRC/parity, power/FEL/USB/wake contracts, six injected faults and production BOM/CPL correspondence. Set `KICAD_CLI` or pass `--kicad-cli` when needed. DRC acceptance requires `--refill-zones`; saved-fill diagnostics are retained separately. Never use `--save-board` on maintained sources as part of verification.
 
 ## Coding Style & Naming Conventions
 
@@ -39,7 +30,7 @@ Use four-space indentation and `snake_case` for new Python functions, variables,
 
 ## Testing Guidelines
 
-Legacy tests use Python `unittest`; the wake fault test is a standalone script. No numeric coverage target is configured. Add regression cases for changed validation logic. Hardware changes require relevant contract checks plus native ERC/DRC and schematic parity checks. Preserve dated reports and source hashes; static success does not establish physical operation or manufacturing approval.
+The wake fault test is a standalone script. No numeric coverage target is configured. Add regression cases for changed validation logic. Hardware changes require relevant contract checks plus native ERC/DRC and schematic parity checks. Keep current dated reports and source hashes matched to the source; older evidence stays accessible through fixed Git references. Static success does not establish physical operation or manufacturing approval.
 
 ## Commit & Pull Request Guidelines
 

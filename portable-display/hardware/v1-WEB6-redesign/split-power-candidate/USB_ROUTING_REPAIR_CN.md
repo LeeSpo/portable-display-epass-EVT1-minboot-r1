@@ -1,10 +1,12 @@
 # USB 差分布线修复
 
+> 历史工程决策记录：器件数量、哈希、图片和检查结果对应各段原日期。当前状态见 [README](README_CN.md)、[未完成项](OPEN_ISSUES_CN.md)及本轮验证；旧报告从固定 Git 提交读取。
+
 更新：2026-10-02。主 PCB SHA-256：`c60d34a61d91977091526055a69a3e2fe428a5c76689d51b27c738f2bd9dcb34`。
 
 **USB 布线候选已写回主工程并同步原理图。** 原生 ERC、DRC、未连接及原理图一致性检查均为 0 问题。此结论只覆盖连接与几何；90 Ω 阻抗、USB 高速通信和系统 ESD 尚未实测，整板尚未投板放行。MIPI 本次未修改。
 
-[查看走线对照预览](verification/usb_routing_20261002/usb_before_after.png)。
+[查看走线对照预览](https://github.com/LeeSpo/portable-display-epass-EVT1-minboot-r1/tree/b14e0fbead4cc5602254eedcb0fa77d3e3236ec2/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/verification/usb_routing_20261002/usb_before_after.png)。
 
 ## 电路和布局变化
 
@@ -34,7 +36,7 @@ B7 路径的平面铜长单独为 40.4964 mm，加上两次 1.0 mm 过孔得到 
 - 当前线宽/线距是已通过几何检查的候选参数。尚无嘉立创实际层叠、介质厚度/介电常数、成品铜厚或阻抗控制单，不能据此宣称已实现 90 Ω。确定层叠后须重新计算并必要时调整线宽、线距及局部避让。
 - 实板需分别验证 Type-C 正反插的枚举、480 Mb/s 模式、持续传输与插拔；系统 ESD、连接器装配和参考地/电源噪声也需验收。PMIC C3036461 默认配置与冷启动、MIPI 差分、显示电源和其他未完成项仍见 [OPEN_ISSUES_CN.md](OPEN_ISSUES_CN.md)。
 
-原生报告、独立检查、变化审计和哈希记录均在 `verification/usb_routing_20261002/`。`tools/check_usb_routing.py` 可复跑；检查通过不表示 `impedance_verified`、`hardware_verified` 或 `fabrication_released`。
+原生报告、独立检查、变化审计和哈希记录均在 [verification/usb_routing_20261002/](https://github.com/LeeSpo/portable-display-epass-EVT1-minboot-r1/tree/b14e0fbead4cc5602254eedcb0fa77d3e3236ec2/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/verification/usb_routing_20261002/)。`tools/check_usb_routing.py` 可复跑；检查通过不表示 `impedance_verified`、`hardware_verified` 或 `fabrication_released`。
 
 ## 2026-10-15 更新：阻抗几何
 

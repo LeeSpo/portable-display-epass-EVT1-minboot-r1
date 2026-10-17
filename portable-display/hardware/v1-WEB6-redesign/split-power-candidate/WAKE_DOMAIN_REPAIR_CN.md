@@ -1,6 +1,8 @@
 # 唤醒中断电源域修复
 
-更新：2026-10-04。此修改解决主控断电后中断上拉失效，以及常供电中断直接连接主控 GPIO 的电源域问题。已同步原理图、PCB、本地封装库和独立连接约束；验证结果见 `verification/wake_domain_20261004/`。实板唤醒尚未验证。
+> 历史工程决策记录：器件数量、哈希、图片和检查结果对应各段原日期。当前状态见 [README](README_CN.md)、[未完成项](OPEN_ISSUES_CN.md)及本轮验证；旧报告从固定 Git 提交读取。
+
+更新：2026-10-04。此修改解决主控断电后中断上拉失效，以及常供电中断直接连接主控 GPIO 的电源域问题。已同步原理图、PCB、本地封装库和独立连接约束；验证结果见 [verification/wake_domain_20261004/](https://github.com/LeeSpo/portable-display-epass-EVT1-minboot-r1/tree/b14e0fbead4cc5602254eedcb0fa77d3e3236ec2/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/verification/wake_domain_20261004/)。实板唤醒尚未验证。
 
 ## 问题与修复
 

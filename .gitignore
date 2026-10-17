@@ -10,6 +10,7 @@
 *-save.kicad_pcb
 *-save.kicad_sch
 _autosave-*
+*.kicad_*.lck
 *.bak
 *-bak
 *.sch-bak

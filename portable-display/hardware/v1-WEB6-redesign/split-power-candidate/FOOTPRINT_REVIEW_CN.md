@@ -1,5 +1,7 @@
 # 指定器件封装核查与修正记录
 
+> 历史工程决策记录：器件数量、哈希、图片和检查结果对应各段原日期。当前状态见 [README](README_CN.md)、[未完成项](OPEN_ISSUES_CN.md)及本轮验证；旧报告从固定 Git 提交读取。
+
 核查日期：2026-09-10 至 2026-09-20。本次追加修复仅针对 split power 的 U1/U2 及相关布线。已先核对厂家资料，再修改候选 PCB 和本目录 `sameat.pretty`。数据手册的封装底视图已转换为 PCB 顶视图；引脚网络保持既定映射。
 
 | 器件 | 核查结论 | 当前处理 |
@@ -51,7 +53,7 @@
 - [ST USBLC6-2](https://www.st.com/resource/en/datasheet/usblc6-2.pdf)，DS4260 Rev 7，第 12～13 页，Figure 19。
 - [全志社区提供的 AXP2101 厂家数据手册](https://bbs.aw-ol.com/assets/uploads/files/1662612785463-c9f5c599-8055-43f4-ae16-690bbc0536e6-axp2101_datasheet_v1.0_en.pdf)，V1.0，第 7～9 页引脚、第 59 页机械图。
 - [全志社区提供的 V851S/V851SE 厂家数据手册](https://bbs.aw-ol.com/assets/uploads/files/1664112156052-c55b9458-9847-4731-873e-c98d352589ea-v851s-amp-v851se_datasheet_v0.1.pdf)，本次合并 PDF 第 36 页（页内编号 22）。
-- [全志 V851S Pinout V0.1](https://bbs.aw-ol.com/assets/uploads/files/1664634614433-705eb7fa-ac80-4aa7-a263-45ee8d799341-v851s_pinout_v0.1.xlsx)，`1 Pin Characteristics` 工作表；逐脚结果见 `verification/routing_20260910/u2_pin_audit.json`。
+- [全志 V851S Pinout V0.1](https://bbs.aw-ol.com/assets/uploads/files/1664634614433-705eb7fa-ac80-4aa7-a263-45ee8d799341-v851s_pinout_v0.1.xlsx)，`1 Pin Characteristics` 工作表；逐脚结果见 [verification/routing_20260910/u2_pin_audit.json](https://github.com/LeeSpo/portable-display-epass-EVT1-minboot-r1/tree/b14e0fbead4cc5602254eedcb0fa77d3e3236ec2/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/verification/routing_20260910/u2_pin_audit.json)。
 
 - [TI QFN/SON PCB Attachment 指南](https://www.ti.com/lit/pdf/slua271)，SLUA271C，2023-12，§3.3、3.4、4.4；用于工程 land 与分窗方法。
 

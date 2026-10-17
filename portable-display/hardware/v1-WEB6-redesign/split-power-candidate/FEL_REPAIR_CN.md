@@ -1,5 +1,7 @@
 # FEL 恢复通路修复（fix/preflight-blockers）
 
+> 历史工程决策记录：器件数量、哈希、图片和检查结果对应各段原日期。当前状态见 [README](README_CN.md)、[未完成项](OPEN_ISSUES_CN.md)及本轮验证；旧报告从固定 Git 提交读取。
+
 状态：静态检查通过（`tools/check_fel_recovery.py` → `static_checks_passed: true`）。**未经实物验证，fabrication 仍未放行。**
 
 ## 电路

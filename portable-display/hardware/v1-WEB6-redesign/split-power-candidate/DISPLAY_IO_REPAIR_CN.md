@@ -1,5 +1,7 @@
 # 屏幕 RESET / TE 电平修复
 
+> 历史工程决策记录：器件数量、哈希、图片和检查结果对应各段原日期。当前状态见 [README](README_CN.md)、[未完成项](OPEN_ISSUES_CN.md)及本轮验证；旧报告从固定 Git 提交读取。
+
 2026-09-24，修订 LCD-IO1。已修改主 PCB、原理图及独立检查约束。通过使用空闲的 1.8 V GPIO，消除屏幕控制信号与原 3.3 V GPIO 的电平不匹配；并增加复位下拉。硬件静态检查已通过，固件迁移和实板点屏仍待验证。
 
 ## 最终连接
@@ -17,9 +19,9 @@ R29 的旧备注“后续可换负载开关”已移除：若以后独立切断�
 
 ## 依据与电平裕量
 
-- 项目内全志引脚表 `../reference/v851s_pinout_v0.1.xlsx`：PA8=66 脚、PA9=65 脚，属于 VCC-PA&VCC-MCSI；默认高阻。Function 14 为 PA-EINT8 / PA-EINT9。原 PD19 / PD20 属于 VCC33-PF&PD。
+- 项目内全志引脚表 `../../../reference/v851s_pinout_v0.1.xlsx`：PA8=66 脚、PA9=65 脚，属于 VCC-PA&VCC-MCSI；默认高阻。Function 14 为 PA-EINT8 / PA-EINT9。原 PD19 / PD20 属于 VCC33-PF&PD。
 - [全志 V851S/V851SE 数据手册](https://bbs.aw-ol.com/assets/uploads/files/1664112156052-c55b9458-9847-4731-873e-c98d352589ea-v851s-amp-v851se_datasheet_v0.1.pdf)：表 2-6 给出 PA 域 1.62–1.98 V；表 2-7 给出 GPIO VIH≥0.7×供电、VIL≤0.3×供电、VOH≥供电−0.2 V、VOL≤0.2 V，高阻漏电流上限 ±10 µA。
-- 已核对原始屏幕 PDF `../../../docs/kd024_screen/raw-pdf/KD024EGOIN152-01 SPEC V1.pdf`：PDF 第 13 页（印刷 14/25）定义 TE 输出和低有效 RESX；PDF 第 22 页（印刷 23/25）规定输入 VIH≥0.8×VDDIO、VIL≤0.2×VDDIO，输出 VOH≥0.8×VDDIO、VOL≤0.2×VDDIO。VDDIO 典型 1.8 V。
+- 已核对原始屏幕 PDF `../../../docs/kd024_screen/raw-pdf/KD024EGOIN152-01_SPEC_V1.pdf`：PDF 第 13 页（印刷 14/25）定义 TE 输出和低有效 RESX；PDF 第 22 页（印刷 23/25）规定输入 VIH≥0.8×VDDIO、VIL≤0.2×VDDIO，输出 VOH≥0.8×VDDIO、VOL≤0.2×VDDIO。VDDIO 典型 1.8 V。
 
 按本板 1V8 的既定要求 1.70–1.95 V、PA 与 VDDIO 共电源计算，最小静态裕量如下。此计算不包含布线噪声、地弹和瞬态供电压降。
 
@@ -38,7 +40,7 @@ R32 在 GPIO 高阻时将 RESET 下拉，单独计入主控 10 µA 高阻漏电�
 
 原生 KiCad 10.0.6：DRC 0 违规、0 未连接、0 原理图一致性问题；ERC 0 违规。116 个电气器件、491 个编号焊盘、全部器件值与原理图一致；95 项独立引脚要求和必装器件约束通过。将 PD19 重新接到 RESET、PA 域改成 3.3 V、漏装 R29、漏装 R32 四种故障注入检查，均被拒绝。
 
-最新记录在 `verification/display_io_20260924/`。`change_audit.json` 校验修改范围、过孔及保存的铺铜连通性；`provenance.json` 记录当前 PCB、原理图和原始资料哈希。四层预览已更新。之前目录下的报告保留作历史记录。
+最新记录在 [verification/display_io_20260924/](https://github.com/LeeSpo/portable-display-epass-EVT1-minboot-r1/tree/b14e0fbead4cc5602254eedcb0fa77d3e3236ec2/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/verification/display_io_20260924/)。`change_audit.json` 校验修改范围、过孔及保存的铺铜连通性；`provenance.json` 记录当前 PCB、原理图和原始资料哈希。四层预览已更新。之前目录下的报告保留作历史记录。
 
 ## 固件与实板验收
 
