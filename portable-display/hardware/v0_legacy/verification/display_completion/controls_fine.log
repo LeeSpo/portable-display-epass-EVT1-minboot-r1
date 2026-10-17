@@ -1,7 +1,0 @@
-LCD_EN islands 2
-LCD_EN True
-LCD_RST islands 2
-no grid path 78
-LCD_RST islands 2
-no grid path 78
-LCD_RST False

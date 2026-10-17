@@ -1,8 +1,0 @@
-breakout 27.9 35.2
-LCD_RST islands 2
-inner RST True
-LCD_SWIRE islands 2
-no grid path 94
-LCD_SWIRE islands 2
-no grid path 94
-SWIRE False

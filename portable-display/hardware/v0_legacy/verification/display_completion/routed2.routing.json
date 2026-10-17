@@ -1,8 +1,0 @@
-{
-  "LCD_3V3": true,
-  "LCD_EN": false,
-  "LCD_TE": false,
-  "geometry_issues": [],
-  "tracks_added": 8,
-  "vias_added": 2
-}

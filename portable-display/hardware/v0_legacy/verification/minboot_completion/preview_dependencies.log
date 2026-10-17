@@ -1,6 +1,0 @@
-Collecting pillow
-  Downloading pillow-12.3.0-cp314-cp314-macosx_11_0_arm64.whl.metadata (9.1 kB)
-Downloading pillow-12.3.0-cp314-cp314-macosx_11_0_arm64.whl (4.8 MB)
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 1.6 MB/s  0:00:03
-Installing collected packages: pillow
-Successfully installed pillow-12.3.0

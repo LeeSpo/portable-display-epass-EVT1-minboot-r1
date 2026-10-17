@@ -1,9 +1,0 @@
-{
-  "mode": "NATIVE",
-  "native_kicad_executed": false,
-  "fabrication_released": false,
-  "verification_passed": false,
-  "problems": [
-    "ModuleNotFoundError: No module named 'shapely'"
-  ]
-}
