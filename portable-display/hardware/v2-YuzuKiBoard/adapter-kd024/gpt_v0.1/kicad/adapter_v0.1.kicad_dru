@@ -1,0 +1,10 @@
+(version 1)
+(rule "Minimum copper clearance" (constraint clearance (min 0.15mm)))
+(rule "Minimum trace width" (constraint track_width (min 0.15mm)))
+(rule "Copper to edge" (constraint edge_clearance (min 0.3mm)))
+(rule "Through vias" (condition "A.Type == 'Via'") (constraint via_diameter (min 0.6mm)) (constraint hole_size (min 0.3mm)))
+(rule "DSI on Top only" (condition "A.NetName == 'DSI_D0_P' || A.NetName == 'DSI_D0_N' || A.NetName == 'DSI_CK_P' || A.NetName == 'DSI_CK_N'") (layer "inner") (constraint disallow track via))
+(rule "No DSI on Bottom" (condition "A.NetName == 'DSI_D0_P' || A.NetName == 'DSI_D0_N' || A.NetName == 'DSI_CK_P' || A.NetName == 'DSI_CK_N'") (layer "B.Cu") (constraint disallow track via))
+(rule "No DSI vias" (condition "A.Type == 'Via' && (A.NetName == 'DSI_D0_P' || A.NetName == 'DSI_D0_N' || A.NetName == 'DSI_CK_P' || A.NetName == 'DSI_CK_N')") (constraint disallow via))
+# Differential width, spacing and skew constraints cannot be signed off until
+# actual stackup and the official 100-ohm calculator result are provided.

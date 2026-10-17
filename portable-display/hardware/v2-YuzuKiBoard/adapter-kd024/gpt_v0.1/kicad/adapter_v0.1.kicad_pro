@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "filename": "adapter_v0.1.kicad_pro",
+    "version": 1
+  },
+  "board": {
+    "design_settings": {
+      "rules": {
+        "min_clearance": 0.15,
+        "min_track_width": 0.15,
+        "min_via_diameter": 0.6,
+        "min_through_hole_diameter": 0.3,
+        "min_copper_edge_clearance": 0.3,
+        "min_hole_clearance": 0.25,
+        "min_hole_to_hole": 0.25
+      },
+      "defaults": {
+        "copper_line_width": 0.15,
+        "edge_cuts_line_width": 0.05,
+        "silk_line_width": 0.1,
+        "silk_text_size_h": 0.8,
+        "silk_text_size_v": 0.8,
+        "silk_text_thickness": 0.12
+      },
+      "drc_exclusions": [],
+      "track_widths": [
+        0.15,
+        0.25,
+        0.4,
+        0.6
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.6,
+          "drill": 0.3
+        }
+      ]
+    }
+  },
+  "net_settings": {
+    "classes": [
+      {
+        "name": "Default",
+        "clearance": 0.15,
+        "track_width": 0.15,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "microvia_diameter": 0.2,
+        "microvia_drill": 0.1
+      }
+    ],
+    "meta": {
+      "version": 3
+    }
+  },
+  "schematic": {
+    "drawing": {
+      "default_line_thickness": 6.0
+    }
+  },
+  "text_variables": {
+    "FABRICATION_RELEASE": "HOLD",
+    "TARGET_STACKUP": "JLC04101H-3313; dielectric data UNVERIFIED",
+    "DSI_IMPEDANCE": "UNVERIFIED; NO ROUTES"
+  }
+}

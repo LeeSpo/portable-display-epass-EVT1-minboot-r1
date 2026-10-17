@@ -1,0 +1,10 @@
+{
+  "note": "Static geometry only. NOT KiCad DRC; zone fill/thermal relief/manufacturer rules are not validated.",
+  "body_collisions": [],
+  "header_clearance": [],
+  "hole_clearance": [],
+  "copper_clearance": [],
+  "via_to_pad": [],
+  "via_in_pad": [],
+  "min_track_width": 0.15
+}

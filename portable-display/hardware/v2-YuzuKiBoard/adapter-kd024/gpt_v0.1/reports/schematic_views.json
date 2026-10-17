@@ -1,0 +1,6400 @@
+{
+  "root": {
+    "title": "HOST / PANEL INTERFACES",
+    "texts": [
+      [
+        18,
+        14,
+        2.1,
+        "LIZARD - KD024  |  HOST / PANEL INTERFACES"
+      ],
+      [
+        18,
+        22,
+        1.3,
+        "v0.1-review.1  |  ENGINEERING HOLD  |  ERC / DRC NOT RUN"
+      ],
+      [
+        107,
+        48,
+        1.0,
+        "FFC identity mapping is a conditional design assumption."
+      ],
+      [
+        107,
+        53,
+        1.0,
+        "Never power an unverified cable. LEDA / LEDK stay NC."
+      ],
+      [
+        107,
+        58,
+        1.0,
+        "H1 / H2: bottom mating, manual fit / assembly DNP."
+      ],
+      [
+        107,
+        63,
+        1.0,
+        "DSI lanes: only D0 and CK. No D1 or backlight nets."
+      ],
+      [
+        326,
+        167,
+        1.0,
+        "IM0 = IM1 = 0; MTP = GND."
+      ],
+      [
+        326,
+        173,
+        1.0,
+        "Pins 18-29 on J2: intentionally NC."
+      ]
+    ],
+    "items": [
+      {
+        "part": {
+          "ref": "J1",
+          "value": "FH34SRJ-24S-0.5SH(50)",
+          "footprint": "Hirose_FH34SRJ_24S_0.5SH_50",
+          "x": 65.3022,
+          "y": 79.45,
+          "angle": 0,
+          "nets": {
+            "1": "GND",
+            "4": "GND",
+            "7": "GND",
+            "10": "GND",
+            "13": "GND",
+            "15": "GND",
+            "17": "GND",
+            "19": "GND",
+            "23": "GND",
+            "2": "DSI_D0_N",
+            "3": "DSI_D0_P",
+            "5": "DSI_CK_N",
+            "6": "DSI_CK_P",
+            "11": "HOST_3V3_LOGIC",
+            "12": "HOST_3V3_LOGIC",
+            "14": "HOST_3V3_LOGIC",
+            "18": "HOST_RST_3V3",
+            "MP1": "GND",
+            "MP2": "GND"
+          },
+          "symbol": "J1",
+          "section": "root",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "FH34SRJ-24S-0.5SH(50)",
+          "reason": "24P host FFC; electrical numbering assumes verified identity harness; cable orientation not signed off",
+          "uuid": "0e1c5aa7-f85f-592e-93b9-4de0ce42bcc0",
+          "footprint_uuid": "27d1a83a-dec9-582b-8215-eaf0bf71af2f",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            62,
+            86
+          ]
+        },
+        "geom": {
+          "w": 15.24,
+          "h": 34.290000000000006,
+          "pins": [
+            {
+              "num": "1",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": 31.75,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "2",
+              "name": "D0N",
+              "type": "passive",
+              "x": 20.32,
+              "y": 29.21,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "3",
+              "name": "D0P",
+              "type": "passive",
+              "x": 20.32,
+              "y": 26.67,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "4",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": 24.13,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "5",
+              "name": "CKN",
+              "type": "passive",
+              "x": 20.32,
+              "y": 21.59,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "6",
+              "name": "CKP",
+              "type": "passive",
+              "x": 20.32,
+              "y": 19.05,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "7",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": 16.51,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "8",
+              "name": "D1N_NC",
+              "type": "passive",
+              "x": 20.32,
+              "y": 13.97,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "9",
+              "name": "D1P_NC",
+              "type": "passive",
+              "x": 20.32,
+              "y": 11.43,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "10",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": 8.89,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "11",
+              "name": "3V3",
+              "type": "passive",
+              "x": 20.32,
+              "y": 6.35,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "12",
+              "name": "3V3",
+              "type": "passive",
+              "x": 20.32,
+              "y": 3.81,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "13",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": 1.27,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "14",
+              "name": "3V3",
+              "type": "passive",
+              "x": 20.32,
+              "y": -1.27,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "15",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": -3.81,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "16",
+              "name": "NC",
+              "type": "passive",
+              "x": 20.32,
+              "y": -6.35,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "17",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": -8.89,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "18",
+              "name": "DSI_RST_3V3",
+              "type": "passive",
+              "x": 20.32,
+              "y": -11.43,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "19",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": -13.97,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "20",
+              "name": "NC",
+              "type": "passive",
+              "x": 20.32,
+              "y": -16.51,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "21",
+              "name": "NC",
+              "type": "passive",
+              "x": 20.32,
+              "y": -19.05,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "22",
+              "name": "LEDK_NC",
+              "type": "passive",
+              "x": 20.32,
+              "y": -21.59,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "23",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": -24.13,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "24",
+              "name": "LEDA_HV_NC",
+              "type": "passive",
+              "x": 20.32,
+              "y": -26.67,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "MP1",
+              "name": "MP1",
+              "type": "passive",
+              "x": 20.32,
+              "y": -29.21,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "MP2",
+              "name": "MP2",
+              "type": "passive",
+              "x": 20.32,
+              "y": -31.75,
+              "angle": 180,
+              "length": 5.08
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "GND",
+            "type": "passive",
+            "x": 82.32,
+            "y": 54.25,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": "GND"
+          },
+          {
+            "num": "2",
+            "name": "D0N",
+            "type": "passive",
+            "x": 82.32,
+            "y": 56.79,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": "DSI_D0_N"
+          },
+          {
+            "num": "3",
+            "name": "D0P",
+            "type": "passive",
+            "x": 82.32,
+            "y": 59.33,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": "DSI_D0_P"
+          },
+          {
+            "num": "4",
+            "name": "GND",
+            "type": "passive",
+            "x": 82.32,
+            "y": 61.870000000000005,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": "GND"
+          },
+          {
+            "num": "5",
+            "name": "CKN",
+            "type": "passive",
+            "x": 82.32,
+            "y": 64.41,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": "DSI_CK_N"
+          },
+          {
+            "num": "6",
+            "name": "CKP",
+            "type": "passive",
+            "x": 82.32,
+            "y": 66.95,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": "DSI_CK_P"
+          },
+          {
+            "num": "7",
+            "name": "GND",
+            "type": "passive",
+            "x": 82.32,
+            "y": 69.49,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": "GND"
+          },
+          {
+            "num": "8",
+            "name": "D1N_NC",
+            "type": "passive",
+            "x": 82.32,
+            "y": 72.03,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": null
+          },
+          {
+            "num": "9",
+            "name": "D1P_NC",
+            "type": "passive",
+            "x": 82.32,
+            "y": 74.57,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": null
+          },
+          {
+            "num": "10",
+            "name": "GND",
+            "type": "passive",
+            "x": 82.32,
+            "y": 77.11,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": "GND"
+          },
+          {
+            "num": "11",
+            "name": "3V3",
+            "type": "passive",
+            "x": 82.32,
+            "y": 79.65,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": "HOST_3V3_LOGIC"
+          },
+          {
+            "num": "12",
+            "name": "3V3",
+            "type": "passive",
+            "x": 82.32,
+            "y": 82.19,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": "HOST_3V3_LOGIC"
+          },
+          {
+            "num": "13",
+            "name": "GND",
+            "type": "passive",
+            "x": 82.32,
+            "y": 84.73,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": "GND"
+          },
+          {
+            "num": "14",
+            "name": "3V3",
+            "type": "passive",
+            "x": 82.32,
+            "y": 87.27,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": "HOST_3V3_LOGIC"
+          },
+          {
+            "num": "15",
+            "name": "GND",
+            "type": "passive",
+            "x": 82.32,
+            "y": 89.81,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": "GND"
+          },
+          {
+            "num": "16",
+            "name": "NC",
+            "type": "passive",
+            "x": 82.32,
+            "y": 92.35,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": null
+          },
+          {
+            "num": "17",
+            "name": "GND",
+            "type": "passive",
+            "x": 82.32,
+            "y": 94.89,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": "GND"
+          },
+          {
+            "num": "18",
+            "name": "DSI_RST_3V3",
+            "type": "passive",
+            "x": 82.32,
+            "y": 97.43,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": "HOST_RST_3V3"
+          },
+          {
+            "num": "19",
+            "name": "GND",
+            "type": "passive",
+            "x": 82.32,
+            "y": 99.97,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": "GND"
+          },
+          {
+            "num": "20",
+            "name": "NC",
+            "type": "passive",
+            "x": 82.32,
+            "y": 102.51,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": null
+          },
+          {
+            "num": "21",
+            "name": "NC",
+            "type": "passive",
+            "x": 82.32,
+            "y": 105.05,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": null
+          },
+          {
+            "num": "22",
+            "name": "LEDK_NC",
+            "type": "passive",
+            "x": 82.32,
+            "y": 107.59,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": null
+          },
+          {
+            "num": "23",
+            "name": "GND",
+            "type": "passive",
+            "x": 82.32,
+            "y": 110.13,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": "GND"
+          },
+          {
+            "num": "24",
+            "name": "LEDA_HV_NC",
+            "type": "passive",
+            "x": 82.32,
+            "y": 112.67,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": null
+          },
+          {
+            "num": "MP1",
+            "name": "MP1",
+            "type": "passive",
+            "x": 82.32,
+            "y": 115.21000000000001,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": "GND"
+          },
+          {
+            "num": "MP2",
+            "name": "MP2",
+            "type": "passive",
+            "x": 82.32,
+            "y": 117.75,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 86.13,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "J2",
+          "value": "502598-4593",
+          "footprint": "Molex_502598_4593_45P_Staggered",
+          "x": 76.5,
+          "y": 46.865,
+          "angle": 180,
+          "nets": {
+            "1": "GND",
+            "2": "GND",
+            "5": "GND",
+            "8": "GND",
+            "10": "GND",
+            "12": "GND",
+            "17": "GND",
+            "30": "GND",
+            "33": "GND",
+            "34": "GND",
+            "37": "GND",
+            "38": "GND",
+            "41": "GND",
+            "42": "GND",
+            "44": "GND",
+            "45": "GND",
+            "3": "ELVSS",
+            "4": "ELVSS",
+            "6": "ELVDD",
+            "7": "ELVDD",
+            "9": "PANEL_VCI_3V3",
+            "11": "VDDIO_1V8",
+            "13": "PANEL_TE1",
+            "14": "PANEL_SWIRE",
+            "15": "PANEL_TE",
+            "16": "PANEL_RESET_1V8",
+            "31": "GND",
+            "32": "GND",
+            "35": "DSI_D0_P",
+            "36": "DSI_D0_N",
+            "39": "DSI_CK_P",
+            "40": "DSI_CK_N",
+            "43": "GND",
+            "MP1": "GND",
+            "MP2": "GND"
+          },
+          "symbol": "J2",
+          "section": "root",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "C5365339",
+          "mpn": "502598-4593",
+          "reason": "45P staggered lands; replaces panel-referenced -4591 only after physical approval",
+          "uuid": "3da01c95-bbf8-5ccb-8ff0-448a67a83fac",
+          "footprint_uuid": "5ddd8aac-3914-5f2e-8030-37052a76ad87",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            245,
+            108
+          ]
+        },
+        "geom": {
+          "w": 15.24,
+          "h": 60.96,
+          "pins": [
+            {
+              "num": "1",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": 58.42,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "2",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": 55.88,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "3",
+              "name": "ELVSS",
+              "type": "passive",
+              "x": 20.32,
+              "y": 53.34,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "4",
+              "name": "ELVSS",
+              "type": "passive",
+              "x": 20.32,
+              "y": 50.8,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "5",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": 48.26,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "6",
+              "name": "ELVDD",
+              "type": "passive",
+              "x": 20.32,
+              "y": 45.72,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "7",
+              "name": "ELVDD",
+              "type": "passive",
+              "x": 20.32,
+              "y": 43.18,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "8",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": 40.64,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "9",
+              "name": "VCI",
+              "type": "passive",
+              "x": 20.32,
+              "y": 38.1,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "10",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": 35.56,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "11",
+              "name": "VDDIO",
+              "type": "passive",
+              "x": 20.32,
+              "y": 33.02,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "12",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": 30.48,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "13",
+              "name": "TE1",
+              "type": "passive",
+              "x": 20.32,
+              "y": 27.94,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "14",
+              "name": "SWIRE_OUT",
+              "type": "passive",
+              "x": 20.32,
+              "y": 25.4,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "15",
+              "name": "TE",
+              "type": "passive",
+              "x": 20.32,
+              "y": 22.86,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "16",
+              "name": "RESX",
+              "type": "passive",
+              "x": 20.32,
+              "y": 20.32,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "17",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": 17.78,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "18",
+              "name": "SDI_RDX",
+              "type": "passive",
+              "x": 20.32,
+              "y": 15.24,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "19",
+              "name": "DCX",
+              "type": "passive",
+              "x": 20.32,
+              "y": 12.7,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "20",
+              "name": "SCL",
+              "type": "passive",
+              "x": 20.32,
+              "y": 10.16,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "21",
+              "name": "CSX",
+              "type": "passive",
+              "x": 20.32,
+              "y": 7.62,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "22",
+              "name": "D0",
+              "type": "passive",
+              "x": 20.32,
+              "y": 5.08,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "23",
+              "name": "D1",
+              "type": "passive",
+              "x": 20.32,
+              "y": 2.54,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "24",
+              "name": "D2",
+              "type": "passive",
+              "x": 20.32,
+              "y": 0.0,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "25",
+              "name": "D3",
+              "type": "passive",
+              "x": 20.32,
+              "y": -2.54,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "26",
+              "name": "D4",
+              "type": "passive",
+              "x": 20.32,
+              "y": -5.08,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "27",
+              "name": "D5",
+              "type": "passive",
+              "x": 20.32,
+              "y": -7.62,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "28",
+              "name": "D6",
+              "type": "passive",
+              "x": 20.32,
+              "y": -10.16,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "29",
+              "name": "D7",
+              "type": "passive",
+              "x": 20.32,
+              "y": -12.7,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "30",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": -15.24,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "31",
+              "name": "IM1",
+              "type": "passive",
+              "x": 20.32,
+              "y": -17.78,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "32",
+              "name": "IM0",
+              "type": "passive",
+              "x": 20.32,
+              "y": -20.32,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "33",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": -22.86,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "34",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": -25.4,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "35",
+              "name": "D0P",
+              "type": "passive",
+              "x": 20.32,
+              "y": -27.94,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "36",
+              "name": "D0N",
+              "type": "passive",
+              "x": 20.32,
+              "y": -30.48,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "37",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": -33.02,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "38",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": -35.56,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "39",
+              "name": "CLKP",
+              "type": "passive",
+              "x": 20.32,
+              "y": -38.1,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "40",
+              "name": "CLKN",
+              "type": "passive",
+              "x": 20.32,
+              "y": -40.64,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "41",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": -43.18,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "42",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": -45.72,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "43",
+              "name": "MTP",
+              "type": "passive",
+              "x": 20.32,
+              "y": -48.26,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "44",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": -50.8,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "45",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": -53.34,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "MP1",
+              "name": "MP1",
+              "type": "passive",
+              "x": 20.32,
+              "y": -55.88,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "MP2",
+              "name": "MP2",
+              "type": "passive",
+              "x": 20.32,
+              "y": -58.42,
+              "angle": 180,
+              "length": 5.08
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "GND",
+            "type": "passive",
+            "x": 265.32,
+            "y": 49.58,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "2",
+            "name": "GND",
+            "type": "passive",
+            "x": 265.32,
+            "y": 52.12,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "3",
+            "name": "ELVSS",
+            "type": "passive",
+            "x": 265.32,
+            "y": 54.66,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "ELVSS"
+          },
+          {
+            "num": "4",
+            "name": "ELVSS",
+            "type": "passive",
+            "x": 265.32,
+            "y": 57.2,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "ELVSS"
+          },
+          {
+            "num": "5",
+            "name": "GND",
+            "type": "passive",
+            "x": 265.32,
+            "y": 59.74,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "6",
+            "name": "ELVDD",
+            "type": "passive",
+            "x": 265.32,
+            "y": 62.28,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "ELVDD"
+          },
+          {
+            "num": "7",
+            "name": "ELVDD",
+            "type": "passive",
+            "x": 265.32,
+            "y": 64.82,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "ELVDD"
+          },
+          {
+            "num": "8",
+            "name": "GND",
+            "type": "passive",
+            "x": 265.32,
+            "y": 67.36,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "9",
+            "name": "VCI",
+            "type": "passive",
+            "x": 265.32,
+            "y": 69.9,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "PANEL_VCI_3V3"
+          },
+          {
+            "num": "10",
+            "name": "GND",
+            "type": "passive",
+            "x": 265.32,
+            "y": 72.44,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "11",
+            "name": "VDDIO",
+            "type": "passive",
+            "x": 265.32,
+            "y": 74.97999999999999,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "VDDIO_1V8"
+          },
+          {
+            "num": "12",
+            "name": "GND",
+            "type": "passive",
+            "x": 265.32,
+            "y": 77.52,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "13",
+            "name": "TE1",
+            "type": "passive",
+            "x": 265.32,
+            "y": 80.06,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "PANEL_TE1"
+          },
+          {
+            "num": "14",
+            "name": "SWIRE_OUT",
+            "type": "passive",
+            "x": 265.32,
+            "y": 82.6,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "PANEL_SWIRE"
+          },
+          {
+            "num": "15",
+            "name": "TE",
+            "type": "passive",
+            "x": 265.32,
+            "y": 85.14,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "PANEL_TE"
+          },
+          {
+            "num": "16",
+            "name": "RESX",
+            "type": "passive",
+            "x": 265.32,
+            "y": 87.68,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "PANEL_RESET_1V8"
+          },
+          {
+            "num": "17",
+            "name": "GND",
+            "type": "passive",
+            "x": 265.32,
+            "y": 90.22,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "18",
+            "name": "SDI_RDX",
+            "type": "passive",
+            "x": 265.32,
+            "y": 92.76,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": null
+          },
+          {
+            "num": "19",
+            "name": "DCX",
+            "type": "passive",
+            "x": 265.32,
+            "y": 95.3,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": null
+          },
+          {
+            "num": "20",
+            "name": "SCL",
+            "type": "passive",
+            "x": 265.32,
+            "y": 97.84,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": null
+          },
+          {
+            "num": "21",
+            "name": "CSX",
+            "type": "passive",
+            "x": 265.32,
+            "y": 100.38,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": null
+          },
+          {
+            "num": "22",
+            "name": "D0",
+            "type": "passive",
+            "x": 265.32,
+            "y": 102.92,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": null
+          },
+          {
+            "num": "23",
+            "name": "D1",
+            "type": "passive",
+            "x": 265.32,
+            "y": 105.46,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": null
+          },
+          {
+            "num": "24",
+            "name": "D2",
+            "type": "passive",
+            "x": 265.32,
+            "y": 108.0,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": null
+          },
+          {
+            "num": "25",
+            "name": "D3",
+            "type": "passive",
+            "x": 265.32,
+            "y": 110.54,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": null
+          },
+          {
+            "num": "26",
+            "name": "D4",
+            "type": "passive",
+            "x": 265.32,
+            "y": 113.08,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": null
+          },
+          {
+            "num": "27",
+            "name": "D5",
+            "type": "passive",
+            "x": 265.32,
+            "y": 115.62,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": null
+          },
+          {
+            "num": "28",
+            "name": "D6",
+            "type": "passive",
+            "x": 265.32,
+            "y": 118.16,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": null
+          },
+          {
+            "num": "29",
+            "name": "D7",
+            "type": "passive",
+            "x": 265.32,
+            "y": 120.7,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": null
+          },
+          {
+            "num": "30",
+            "name": "GND",
+            "type": "passive",
+            "x": 265.32,
+            "y": 123.24,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "31",
+            "name": "IM1",
+            "type": "passive",
+            "x": 265.32,
+            "y": 125.78,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "32",
+            "name": "IM0",
+            "type": "passive",
+            "x": 265.32,
+            "y": 128.32,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "33",
+            "name": "GND",
+            "type": "passive",
+            "x": 265.32,
+            "y": 130.86,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "34",
+            "name": "GND",
+            "type": "passive",
+            "x": 265.32,
+            "y": 133.4,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "35",
+            "name": "D0P",
+            "type": "passive",
+            "x": 265.32,
+            "y": 135.94,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "DSI_D0_P"
+          },
+          {
+            "num": "36",
+            "name": "D0N",
+            "type": "passive",
+            "x": 265.32,
+            "y": 138.48,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "DSI_D0_N"
+          },
+          {
+            "num": "37",
+            "name": "GND",
+            "type": "passive",
+            "x": 265.32,
+            "y": 141.02,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "38",
+            "name": "GND",
+            "type": "passive",
+            "x": 265.32,
+            "y": 143.56,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "39",
+            "name": "CLKP",
+            "type": "passive",
+            "x": 265.32,
+            "y": 146.1,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "DSI_CK_P"
+          },
+          {
+            "num": "40",
+            "name": "CLKN",
+            "type": "passive",
+            "x": 265.32,
+            "y": 148.64,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "DSI_CK_N"
+          },
+          {
+            "num": "41",
+            "name": "GND",
+            "type": "passive",
+            "x": 265.32,
+            "y": 151.18,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "42",
+            "name": "GND",
+            "type": "passive",
+            "x": 265.32,
+            "y": 153.72,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "43",
+            "name": "MTP",
+            "type": "passive",
+            "x": 265.32,
+            "y": 156.26,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "44",
+            "name": "GND",
+            "type": "passive",
+            "x": 265.32,
+            "y": 158.8,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "45",
+            "name": "GND",
+            "type": "passive",
+            "x": 265.32,
+            "y": 161.34,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "MP1",
+            "name": "MP1",
+            "type": "passive",
+            "x": 265.32,
+            "y": 163.88,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          },
+          {
+            "num": "MP2",
+            "name": "MP2",
+            "type": "passive",
+            "x": 265.32,
+            "y": 166.42000000000002,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 269.13,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "H1",
+          "value": "MANUAL: 1x13 pass-through",
+          "footprint": "Header_1x13_P2.54_PassThrough",
+          "x": 87.197,
+          "y": 55.127,
+          "angle": 0,
+          "nets": {
+            "1": "GND",
+            "12": "GND",
+            "13": "VBUS_5V"
+          },
+          "symbol": "H13",
+          "section": "root",
+          "dnp": true,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "MANUAL: 1x13 pass-through",
+          "reason": "Bottom mating to host, manual fit; exact Gerber XY; all other pads no electrical net",
+          "uuid": "d2d29229-f67a-573f-995e-b537ebd47c4a",
+          "footprint_uuid": "e38e5645-6b3a-5fc0-8d7c-342c52026f52",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            61,
+            180
+          ]
+        },
+        "geom": {
+          "w": 15.24,
+          "h": 17.78,
+          "pins": [
+            {
+              "num": "1",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": 15.24,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "2",
+              "name": "UNUSED",
+              "type": "passive",
+              "x": 20.32,
+              "y": 12.7,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "3",
+              "name": "UNUSED",
+              "type": "passive",
+              "x": 20.32,
+              "y": 10.16,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "4",
+              "name": "UNUSED",
+              "type": "passive",
+              "x": 20.32,
+              "y": 7.62,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "5",
+              "name": "UNUSED",
+              "type": "passive",
+              "x": 20.32,
+              "y": 5.08,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "6",
+              "name": "UNUSED",
+              "type": "passive",
+              "x": 20.32,
+              "y": 2.54,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "7",
+              "name": "UNUSED",
+              "type": "passive",
+              "x": 20.32,
+              "y": 0.0,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "8",
+              "name": "UNUSED",
+              "type": "passive",
+              "x": 20.32,
+              "y": -2.54,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "9",
+              "name": "UNUSED",
+              "type": "passive",
+              "x": 20.32,
+              "y": -5.08,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "10",
+              "name": "UNUSED",
+              "type": "passive",
+              "x": 20.32,
+              "y": -7.62,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "11",
+              "name": "UNUSED",
+              "type": "passive",
+              "x": 20.32,
+              "y": -10.16,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "12",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": -12.7,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "13",
+              "name": "VBUS_5V",
+              "type": "passive",
+              "x": 20.32,
+              "y": -15.24,
+              "angle": 180,
+              "length": 5.08
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "GND",
+            "type": "passive",
+            "x": 81.32,
+            "y": 164.76,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 85.13,
+            "net": "GND"
+          },
+          {
+            "num": "2",
+            "name": "UNUSED",
+            "type": "passive",
+            "x": 81.32,
+            "y": 167.3,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 85.13,
+            "net": null
+          },
+          {
+            "num": "3",
+            "name": "UNUSED",
+            "type": "passive",
+            "x": 81.32,
+            "y": 169.84,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 85.13,
+            "net": null
+          },
+          {
+            "num": "4",
+            "name": "UNUSED",
+            "type": "passive",
+            "x": 81.32,
+            "y": 172.38,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 85.13,
+            "net": null
+          },
+          {
+            "num": "5",
+            "name": "UNUSED",
+            "type": "passive",
+            "x": 81.32,
+            "y": 174.92,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 85.13,
+            "net": null
+          },
+          {
+            "num": "6",
+            "name": "UNUSED",
+            "type": "passive",
+            "x": 81.32,
+            "y": 177.46,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 85.13,
+            "net": null
+          },
+          {
+            "num": "7",
+            "name": "UNUSED",
+            "type": "passive",
+            "x": 81.32,
+            "y": 180.0,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 85.13,
+            "net": null
+          },
+          {
+            "num": "8",
+            "name": "UNUSED",
+            "type": "passive",
+            "x": 81.32,
+            "y": 182.54,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 85.13,
+            "net": null
+          },
+          {
+            "num": "9",
+            "name": "UNUSED",
+            "type": "passive",
+            "x": 81.32,
+            "y": 185.08,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 85.13,
+            "net": null
+          },
+          {
+            "num": "10",
+            "name": "UNUSED",
+            "type": "passive",
+            "x": 81.32,
+            "y": 187.62,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 85.13,
+            "net": null
+          },
+          {
+            "num": "11",
+            "name": "UNUSED",
+            "type": "passive",
+            "x": 81.32,
+            "y": 190.16,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 85.13,
+            "net": null
+          },
+          {
+            "num": "12",
+            "name": "GND",
+            "type": "passive",
+            "x": 81.32,
+            "y": 192.7,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 85.13,
+            "net": "GND"
+          },
+          {
+            "num": "13",
+            "name": "VBUS_5V",
+            "type": "passive",
+            "x": 81.32,
+            "y": 195.24,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 85.13,
+            "net": "VBUS_5V"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "H2",
+          "value": "MANUAL: 1x05 pass-through",
+          "footprint": "Header_1x05_P2.54_PassThrough",
+          "x": 87.197,
+          "y": 75.04,
+          "angle": 0,
+          "nets": {
+            "1": "GND",
+            "3": "PANEL_VCI_3V3"
+          },
+          "symbol": "H5",
+          "section": "root",
+          "dnp": true,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "MANUAL: 1x05 pass-through",
+          "reason": "Bottom mating to host, manual fit; do not bridge with J1 logic 3V3 on adapter",
+          "uuid": "6dfef9a9-7b3b-524e-81df-a37a904f8277",
+          "footprint_uuid": "ad46997b-5e0c-5883-9e97-6c5190de387d",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            151,
+            177
+          ]
+        },
+        "geom": {
+          "w": 15.24,
+          "h": 7.619999999999999,
+          "pins": [
+            {
+              "num": "1",
+              "name": "GND",
+              "type": "passive",
+              "x": 20.32,
+              "y": 5.08,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "2",
+              "name": "UNUSED",
+              "type": "passive",
+              "x": 20.32,
+              "y": 2.54,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "3",
+              "name": "3V3",
+              "type": "passive",
+              "x": 20.32,
+              "y": 0.0,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "4",
+              "name": "UNUSED",
+              "type": "passive",
+              "x": 20.32,
+              "y": -2.54,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "5",
+              "name": "UNUSED",
+              "type": "passive",
+              "x": 20.32,
+              "y": -5.08,
+              "angle": 180,
+              "length": 5.08
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "GND",
+            "type": "passive",
+            "x": 171.32,
+            "y": 171.92,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 175.13,
+            "net": "GND"
+          },
+          {
+            "num": "2",
+            "name": "UNUSED",
+            "type": "passive",
+            "x": 171.32,
+            "y": 174.46,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 175.13,
+            "net": null
+          },
+          {
+            "num": "3",
+            "name": "3V3",
+            "type": "passive",
+            "x": 171.32,
+            "y": 177.0,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 175.13,
+            "net": "PANEL_VCI_3V3"
+          },
+          {
+            "num": "4",
+            "name": "UNUSED",
+            "type": "passive",
+            "x": 171.32,
+            "y": 179.54,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 175.13,
+            "net": null
+          },
+          {
+            "num": "5",
+            "name": "UNUSED",
+            "type": "passive",
+            "x": 171.32,
+            "y": 182.08,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 175.13,
+            "net": null
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C18",
+          "value": "1uF 10V X7R",
+          "footprint": "C_0603",
+          "x": 79.0,
+          "y": 50.5,
+          "angle": 90,
+          "nets": {
+            "1": "PANEL_VCI_3V3",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "root",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "c36047ed-9c35-5126-aa32-864f62780dd2",
+          "footprint_uuid": "cd8f38fe-45c5-54aa-be8a-877222d51f39",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            42,
+            234
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 36.92,
+            "y": 234,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 33.11,
+            "net": "PANEL_VCI_3V3"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 47.08,
+            "y": 234,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 50.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C19",
+          "value": "0.1uF 10V X7R",
+          "footprint": "C_0603",
+          "x": 81.0,
+          "y": 50.5,
+          "angle": 90,
+          "nets": {
+            "1": "PANEL_VCI_3V3",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "root",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "2d510bb7-a9a0-512f-a1d6-5cfaf6af00dc",
+          "footprint_uuid": "9a0da91f-308a-5496-9513-f055ed751aff",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            107,
+            234
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 101.92,
+            "y": 234,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 98.11,
+            "net": "PANEL_VCI_3V3"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 112.08,
+            "y": 234,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 115.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C20",
+          "value": "1uF 10V X7R",
+          "footprint": "C_0603",
+          "x": 75.0,
+          "y": 50.5,
+          "angle": 90,
+          "nets": {
+            "1": "VDDIO_1V8",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "root",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "bbe630b4-6f3a-50b7-95d1-7ee87346f181",
+          "footprint_uuid": "9ee2c343-5d56-5ab5-8a83-c359125d5420",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            172,
+            234
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 166.92,
+            "y": 234,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 163.10999999999999,
+            "net": "VDDIO_1V8"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 177.08,
+            "y": 234,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 180.89000000000001,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C21",
+          "value": "0.1uF 10V X7R",
+          "footprint": "C_0603",
+          "x": 77.0,
+          "y": 50.5,
+          "angle": 90,
+          "nets": {
+            "1": "VDDIO_1V8",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "root",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "3872525a-c084-5902-8803-d38089c0256c",
+          "footprint_uuid": "08c4420a-b3e9-5176-8670-5c16aa78e942",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            237,
+            234
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 231.92,
+            "y": 234,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 228.10999999999999,
+            "net": "VDDIO_1V8"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 242.08,
+            "y": 234,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 245.89000000000001,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C22",
+          "value": "1uF 10V X7R",
+          "footprint": "C_0603",
+          "x": 83.0,
+          "y": 50.5,
+          "angle": 90,
+          "nets": {
+            "1": "ELVDD",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "root",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "d1824b8b-f7b7-59c7-86eb-8d720e5e4cc6",
+          "footprint_uuid": "8670d19c-0ac3-5321-b3a1-936fd4bb629e",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            302,
+            234
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 296.92,
+            "y": 234,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 293.11,
+            "net": "ELVDD"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 307.08,
+            "y": 234,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 310.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C23",
+          "value": "1uF 10V X7R",
+          "footprint": "C_0603",
+          "x": 85.0,
+          "y": 50.5,
+          "angle": 90,
+          "nets": {
+            "1": "ELVSS",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "root",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "3cb0c671-5a71-5b62-8ad3-398cb2ff06ae",
+          "footprint_uuid": "dcb309e4-9d09-52eb-8b9d-c4f04ab252f9",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            367,
+            234
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 361.92,
+            "y": 234,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 358.11,
+            "net": "ELVSS"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 372.08,
+            "y": 234,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 375.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "MH1",
+          "value": "M2 NPTH 2.2",
+          "footprint": "Mount_M2_NPTH_2.2",
+          "x": 52.75,
+          "y": 46.75,
+          "angle": 0,
+          "nets": {},
+          "symbol": "Mechanical",
+          "section": "root",
+          "dnp": false,
+          "feature": true,
+          "lcsc": "",
+          "mpn": "M2 NPTH 2.2",
+          "reason": "",
+          "uuid": "f60e1649-6dbe-5d9a-a1bc-0df62223d57f",
+          "footprint_uuid": "13fc2367-bde6-5f52-adb5-599eb5ffa28e",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            40,
+            266
+          ]
+        },
+        "geom": {
+          "w": 2.0,
+          "h": 2.0,
+          "pins": []
+        },
+        "pins": []
+      },
+      {
+        "part": {
+          "ref": "MH2",
+          "value": "M2 NPTH 2.2",
+          "footprint": "Mount_M2_NPTH_2.2",
+          "x": 89.25,
+          "y": 46.75,
+          "angle": 0,
+          "nets": {},
+          "symbol": "Mechanical",
+          "section": "root",
+          "dnp": false,
+          "feature": true,
+          "lcsc": "",
+          "mpn": "M2 NPTH 2.2",
+          "reason": "",
+          "uuid": "b963e7e4-b506-575a-b21a-caca01c691a5",
+          "footprint_uuid": "39f2076c-1c98-558c-9bb6-a623ecd46072",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            97,
+            266
+          ]
+        },
+        "geom": {
+          "w": 2.0,
+          "h": 2.0,
+          "pins": []
+        },
+        "pins": []
+      },
+      {
+        "part": {
+          "ref": "MH3",
+          "value": "M2 NPTH 2.2",
+          "footprint": "Mount_M2_NPTH_2.2",
+          "x": 52.75,
+          "y": 79.25,
+          "angle": 0,
+          "nets": {},
+          "symbol": "Mechanical",
+          "section": "root",
+          "dnp": false,
+          "feature": true,
+          "lcsc": "",
+          "mpn": "M2 NPTH 2.2",
+          "reason": "",
+          "uuid": "d1b52913-405c-5a6e-9813-b134368137d0",
+          "footprint_uuid": "39819fcd-cf6b-5efe-be7a-72f0d9e7779d",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            154,
+            266
+          ]
+        },
+        "geom": {
+          "w": 2.0,
+          "h": 2.0,
+          "pins": []
+        },
+        "pins": []
+      },
+      {
+        "part": {
+          "ref": "MH4",
+          "value": "M2 NPTH 2.2",
+          "footprint": "Mount_M2_NPTH_2.2",
+          "x": 89.25,
+          "y": 79.25,
+          "angle": 0,
+          "nets": {},
+          "symbol": "Mechanical",
+          "section": "root",
+          "dnp": false,
+          "feature": true,
+          "lcsc": "",
+          "mpn": "M2 NPTH 2.2",
+          "reason": "",
+          "uuid": "ebcf012b-ead7-5f97-b0c4-c976096cb1e9",
+          "footprint_uuid": "0ab14172-3e34-5ca4-94e5-4fa2921bfa22",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            211,
+            266
+          ]
+        },
+        "geom": {
+          "w": 2.0,
+          "h": 2.0,
+          "pins": []
+        },
+        "pins": []
+      },
+      {
+        "part": {
+          "ref": "FID1",
+          "value": "FID 1mm / 2mm mask",
+          "footprint": "Fiducial_1mm_Mask2mm",
+          "x": 56.7,
+          "y": 46.4,
+          "angle": 0,
+          "nets": {},
+          "symbol": "Mechanical",
+          "section": "root",
+          "dnp": false,
+          "feature": true,
+          "lcsc": "",
+          "mpn": "FID 1mm / 2mm mask",
+          "reason": "",
+          "uuid": "60fe4f64-9781-5341-98ec-7df9b7308616",
+          "footprint_uuid": "53218ea6-ec2b-52be-a6e0-8d522cf46f00",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            268,
+            266
+          ]
+        },
+        "geom": {
+          "w": 2.0,
+          "h": 2.0,
+          "pins": []
+        },
+        "pins": []
+      },
+      {
+        "part": {
+          "ref": "FID2",
+          "value": "FID 1mm / 2mm mask",
+          "footprint": "Fiducial_1mm_Mask2mm",
+          "x": 85.6,
+          "y": 79.7,
+          "angle": 0,
+          "nets": {},
+          "symbol": "Mechanical",
+          "section": "root",
+          "dnp": false,
+          "feature": true,
+          "lcsc": "",
+          "mpn": "FID 1mm / 2mm mask",
+          "reason": "",
+          "uuid": "df8de1d4-7053-5f60-aa74-f4d53183fc66",
+          "footprint_uuid": "bbad249e-eed4-502c-8428-d012451ec69d",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            325,
+            266
+          ]
+        },
+        "geom": {
+          "w": 2.0,
+          "h": 2.0,
+          "pins": []
+        },
+        "pins": []
+      }
+    ],
+    "flags": [
+      [
+        "VBUS_5V",
+        30,
+        281
+      ],
+      [
+        "HOST_3V3_LOGIC",
+        127,
+        281
+      ],
+      [
+        "PANEL_VCI_3V3",
+        240,
+        281
+      ],
+      [
+        "GND",
+        365,
+        281
+      ]
+    ]
+  },
+  "bias": {
+    "title": "5 V PREREGULATOR / TPS65631 BIAS",
+    "texts": [
+      [
+        18,
+        14,
+        2.1,
+        "LIZARD - KD024  |  5 V PREREGULATOR / TPS65631 BIAS"
+      ],
+      [
+        18,
+        22,
+        1.3,
+        "v0.1-review.1  |  ENGINEERING HOLD  |  ERC / DRC NOT RUN"
+      ],
+      [
+        107,
+        36,
+        1.05,
+        "U2: 0.8 * (1 + 34.8k / 10k) = 3.584 V nominal"
+      ],
+      [
+        107,
+        42,
+        1.05,
+        "Do not apply host 5 V to U1 directly."
+      ],
+      [
+        174,
+        121,
+        1.0,
+        "R5 = 10k: bias defaults OFF."
+      ],
+      [
+        174,
+        126,
+        1.0,
+        "R9: Kelvin sense from C9 positive to FBS."
+      ],
+      [
+        22,
+        275,
+        1.05,
+        "U1 defaults: +4.6 V / -4.0 V. Panel vendor must approve before CTRL is driven HIGH."
+      ]
+    ],
+    "items": [
+      {
+        "part": {
+          "ref": "U1",
+          "value": "TPS65631DPDR",
+          "footprint": "TI_TPS65631_DPD_12_EP",
+          "x": 59.5,
+          "y": 64.2,
+          "angle": 0,
+          "nets": {
+            "1": "SWP",
+            "2": "GND",
+            "3": "ELVDD",
+            "4": "ELVDD_SENSE",
+            "5": "GND",
+            "6": "GND",
+            "7": "LCD_EN",
+            "8": "BIAS_CT",
+            "9": "ELVSS",
+            "10": "SWN",
+            "11": "BIAS_IN_3V6",
+            "12": "BIAS_IN_3V6",
+            "13": "GND"
+          },
+          "symbol": "TPS65631",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "TPS65631DPDR",
+          "reason": "Required chip; 2.9-4.5 V operating input; defaults +4.6 / -4.0 V are not panel-approved",
+          "uuid": "f2dc9be9-4cee-535f-8872-fbf8802f5ef3",
+          "footprint_uuid": "3d8ca0fa-428a-5bc4-b649-1cc907b80dc7",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            252,
+            66
+          ]
+        },
+        "geom": {
+          "w": 13.97,
+          "h": 10.16,
+          "pins": [
+            {
+              "num": "1",
+              "name": "SWP",
+              "type": "passive",
+              "x": -19.05,
+              "y": 7.62,
+              "angle": 0,
+              "length": 5.08
+            },
+            {
+              "num": "2",
+              "name": "PGND",
+              "type": "power_in",
+              "x": -19.05,
+              "y": 5.08,
+              "angle": 0,
+              "length": 5.08
+            },
+            {
+              "num": "3",
+              "name": "OUTP",
+              "type": "power_out",
+              "x": -19.05,
+              "y": 2.54,
+              "angle": 0,
+              "length": 5.08
+            },
+            {
+              "num": "4",
+              "name": "FBS",
+              "type": "input",
+              "x": -19.05,
+              "y": 0.0,
+              "angle": 0,
+              "length": 5.08
+            },
+            {
+              "num": "5",
+              "name": "AGND",
+              "type": "power_in",
+              "x": -19.05,
+              "y": -2.54,
+              "angle": 0,
+              "length": 5.08
+            },
+            {
+              "num": "6",
+              "name": "GND",
+              "type": "power_in",
+              "x": -19.05,
+              "y": -5.08,
+              "angle": 0,
+              "length": 5.08
+            },
+            {
+              "num": "7",
+              "name": "CTRL",
+              "type": "input",
+              "x": -19.05,
+              "y": -7.62,
+              "angle": 0,
+              "length": 5.08
+            },
+            {
+              "num": "8",
+              "name": "CT",
+              "type": "passive",
+              "x": 19.05,
+              "y": 6.35,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "9",
+              "name": "OUTN",
+              "type": "power_out",
+              "x": 19.05,
+              "y": 3.81,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "10",
+              "name": "SWN",
+              "type": "passive",
+              "x": 19.05,
+              "y": 1.27,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "11",
+              "name": "AVIN",
+              "type": "power_in",
+              "x": 19.05,
+              "y": -1.27,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "12",
+              "name": "PVIN",
+              "type": "power_in",
+              "x": 19.05,
+              "y": -3.81,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "13",
+              "name": "EP",
+              "type": "power_in",
+              "x": 19.05,
+              "y": -6.35,
+              "angle": 180,
+              "length": 5.08
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "SWP",
+            "type": "passive",
+            "x": 232.95,
+            "y": 58.38,
+            "angle": 0,
+            "length": 5.08,
+            "label_x": 229.14,
+            "net": "SWP"
+          },
+          {
+            "num": "2",
+            "name": "PGND",
+            "type": "power_in",
+            "x": 232.95,
+            "y": 60.92,
+            "angle": 0,
+            "length": 5.08,
+            "label_x": 229.14,
+            "net": "GND"
+          },
+          {
+            "num": "3",
+            "name": "OUTP",
+            "type": "power_out",
+            "x": 232.95,
+            "y": 63.46,
+            "angle": 0,
+            "length": 5.08,
+            "label_x": 229.14,
+            "net": "ELVDD"
+          },
+          {
+            "num": "4",
+            "name": "FBS",
+            "type": "input",
+            "x": 232.95,
+            "y": 66.0,
+            "angle": 0,
+            "length": 5.08,
+            "label_x": 229.14,
+            "net": "ELVDD_SENSE"
+          },
+          {
+            "num": "5",
+            "name": "AGND",
+            "type": "power_in",
+            "x": 232.95,
+            "y": 68.54,
+            "angle": 0,
+            "length": 5.08,
+            "label_x": 229.14,
+            "net": "GND"
+          },
+          {
+            "num": "6",
+            "name": "GND",
+            "type": "power_in",
+            "x": 232.95,
+            "y": 71.08,
+            "angle": 0,
+            "length": 5.08,
+            "label_x": 229.14,
+            "net": "GND"
+          },
+          {
+            "num": "7",
+            "name": "CTRL",
+            "type": "input",
+            "x": 232.95,
+            "y": 73.62,
+            "angle": 0,
+            "length": 5.08,
+            "label_x": 229.14,
+            "net": "LCD_EN"
+          },
+          {
+            "num": "8",
+            "name": "CT",
+            "type": "passive",
+            "x": 271.05,
+            "y": 59.65,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 274.86,
+            "net": "BIAS_CT"
+          },
+          {
+            "num": "9",
+            "name": "OUTN",
+            "type": "power_out",
+            "x": 271.05,
+            "y": 62.19,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 274.86,
+            "net": "ELVSS"
+          },
+          {
+            "num": "10",
+            "name": "SWN",
+            "type": "passive",
+            "x": 271.05,
+            "y": 64.73,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 274.86,
+            "net": "SWN"
+          },
+          {
+            "num": "11",
+            "name": "AVIN",
+            "type": "power_in",
+            "x": 271.05,
+            "y": 67.27,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 274.86,
+            "net": "BIAS_IN_3V6"
+          },
+          {
+            "num": "12",
+            "name": "PVIN",
+            "type": "power_in",
+            "x": 271.05,
+            "y": 69.81,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 274.86,
+            "net": "BIAS_IN_3V6"
+          },
+          {
+            "num": "13",
+            "name": "EP",
+            "type": "power_in",
+            "x": 271.05,
+            "y": 72.35,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 274.86,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "U2",
+          "value": "TLV76701DRVR",
+          "footprint": "TI_TLV767_DRV_6_EP",
+          "x": 55.8,
+          "y": 72.0,
+          "angle": 0,
+          "nets": {
+            "1": "PRE_3V584",
+            "2": "LDO_FB",
+            "3": "GND",
+            "4": "VBUS_5V",
+            "5": "GND",
+            "6": "VBUS_5V",
+            "7": "GND"
+          },
+          "symbol": "TLV76701DRVR",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "TLV76701DRVR",
+          "reason": "16 V input rating, adjustable 0.8 V feedback, preregulates 5 V to 3.584 V; thermal review required",
+          "uuid": "0b06c1de-61d4-5409-b798-e54d386d45b5",
+          "footprint_uuid": "d4dee3c1-21ff-5f35-90a4-ad0a9411d744",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            65,
+            64
+          ]
+        },
+        "geom": {
+          "w": 13.97,
+          "h": 6.35,
+          "pins": [
+            {
+              "num": "1",
+              "name": "OUT",
+              "type": "power_out",
+              "x": -19.05,
+              "y": 3.81,
+              "angle": 0,
+              "length": 5.08
+            },
+            {
+              "num": "2",
+              "name": "FB",
+              "type": "input",
+              "x": -19.05,
+              "y": 1.27,
+              "angle": 0,
+              "length": 5.08
+            },
+            {
+              "num": "3",
+              "name": "GND",
+              "type": "power_in",
+              "x": -19.05,
+              "y": -1.27,
+              "angle": 0,
+              "length": 5.08
+            },
+            {
+              "num": "4",
+              "name": "EN",
+              "type": "input",
+              "x": -19.05,
+              "y": -3.81,
+              "angle": 0,
+              "length": 5.08
+            },
+            {
+              "num": "5",
+              "name": "GND",
+              "type": "power_in",
+              "x": 19.05,
+              "y": 2.54,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "6",
+              "name": "IN",
+              "type": "power_in",
+              "x": 19.05,
+              "y": 0.0,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "7",
+              "name": "EP",
+              "type": "power_in",
+              "x": 19.05,
+              "y": -2.54,
+              "angle": 180,
+              "length": 5.08
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "OUT",
+            "type": "power_out",
+            "x": 45.95,
+            "y": 60.19,
+            "angle": 0,
+            "length": 5.08,
+            "label_x": 42.14,
+            "net": "PRE_3V584"
+          },
+          {
+            "num": "2",
+            "name": "FB",
+            "type": "input",
+            "x": 45.95,
+            "y": 62.73,
+            "angle": 0,
+            "length": 5.08,
+            "label_x": 42.14,
+            "net": "LDO_FB"
+          },
+          {
+            "num": "3",
+            "name": "GND",
+            "type": "power_in",
+            "x": 45.95,
+            "y": 65.27,
+            "angle": 0,
+            "length": 5.08,
+            "label_x": 42.14,
+            "net": "GND"
+          },
+          {
+            "num": "4",
+            "name": "EN",
+            "type": "input",
+            "x": 45.95,
+            "y": 67.81,
+            "angle": 0,
+            "length": 5.08,
+            "label_x": 42.14,
+            "net": "VBUS_5V"
+          },
+          {
+            "num": "5",
+            "name": "GND",
+            "type": "power_in",
+            "x": 84.05,
+            "y": 61.46,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 87.86,
+            "net": "GND"
+          },
+          {
+            "num": "6",
+            "name": "IN",
+            "type": "power_in",
+            "x": 84.05,
+            "y": 64.0,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 87.86,
+            "net": "VBUS_5V"
+          },
+          {
+            "num": "7",
+            "name": "EP",
+            "type": "power_in",
+            "x": 84.05,
+            "y": 66.54,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 87.86,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "L1",
+          "value": "4.7uH XFL4020-472MEC",
+          "footprint": "Coilcraft_XFL4020_472MEC",
+          "x": 55.3,
+          "y": 61.0,
+          "angle": 0,
+          "nets": {
+            "1": "BIAS_IN_3V6",
+            "2": "SWP"
+          },
+          "symbol": "L",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "XFL4020-472MEC",
+          "reason": "4.7 uH +/-20%, DCR max 57.4 mOhm; saturation and temperature margins must be confirmed",
+          "uuid": "45477a33-e66e-50a2-9dac-a4ad402fe7ca",
+          "footprint_uuid": "2133e449-2449-5f7d-9772-d71c3a4f33b3",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            220,
+            32
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 214.92,
+            "y": 32,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 211.10999999999999,
+            "net": "BIAS_IN_3V6"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 225.08,
+            "y": 32,
+            "angle": 180,
+            "length": 2.54,
+            "label_x": 228.89000000000001,
+            "net": "SWP"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "L2",
+          "value": "4.7uH XFL4020-472MEC",
+          "footprint": "Coilcraft_XFL4020_472MEC",
+          "x": 63.4,
+          "y": 69.1,
+          "angle": 270,
+          "nets": {
+            "1": "SWN",
+            "2": "GND"
+          },
+          "symbol": "L",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "XFL4020-472MEC",
+          "reason": "Inverting topology: L2 goes from SWN to GND, NOT to VIN; same current-qualified candidate as L1",
+          "uuid": "7bb5da64-505d-5f32-b40a-abb53123e297",
+          "footprint_uuid": "464063e6-229c-5497-9197-3b4ca5daa523",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            342,
+            103
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 336.92,
+            "y": 103,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 333.11,
+            "net": "SWN"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 347.08,
+            "y": 103,
+            "angle": 180,
+            "length": 2.54,
+            "label_x": 350.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "R1",
+          "value": "0R 0603",
+          "footprint": "R_0603",
+          "x": 62.4,
+          "y": 73.9,
+          "angle": 0,
+          "nets": {
+            "1": "PRE_3V584",
+            "2": "BIAS_IN_3V6"
+          },
+          "symbol": "R",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "Removable 0603 input current link for TPS65631",
+          "uuid": "6ea9711a-0a42-56a3-b6c5-1ef913a94565",
+          "footprint_uuid": "ef166e88-5a33-53d5-8061-0bbf55da78a8",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            148,
+            65
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 142.92,
+            "y": 65,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 139.10999999999999,
+            "net": "PRE_3V584"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 153.08,
+            "y": 65,
+            "angle": 180,
+            "length": 2.54,
+            "label_x": 156.89000000000001,
+            "net": "BIAS_IN_3V6"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "R3",
+          "value": "34.8k 1%",
+          "footprint": "R_0603",
+          "x": 53.5,
+          "y": 75.2,
+          "angle": 0,
+          "nets": {
+            "1": "PRE_3V584",
+            "2": "LDO_FB"
+          },
+          "symbol": "R",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "Top feedback resistor, 0.8*(1+34.8/10)=3.584 V",
+          "uuid": "0bee12b8-c7bf-5992-b2a3-c8625d001e3a",
+          "footprint_uuid": "0001bab8-4938-5178-aeab-edbf7ab86ac3",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            65,
+            108
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 59.92,
+            "y": 108,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 56.11,
+            "net": "PRE_3V584"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 70.08,
+            "y": 108,
+            "angle": 180,
+            "length": 2.54,
+            "label_x": 73.89,
+            "net": "LDO_FB"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "R4",
+          "value": "10k 1%",
+          "footprint": "R_0603",
+          "x": 56.5,
+          "y": 75.2,
+          "angle": 0,
+          "nets": {
+            "1": "LDO_FB",
+            "2": "GND"
+          },
+          "symbol": "R",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "Bottom feedback resistor",
+          "uuid": "f66561c7-78b8-58a1-8625-00a368e90d63",
+          "footprint_uuid": "0d24154d-5bdf-5246-b738-3d20279255a5",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            65,
+            141
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 59.92,
+            "y": 141,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 56.11,
+            "net": "LDO_FB"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 70.08,
+            "y": 141,
+            "angle": 180,
+            "length": 2.54,
+            "label_x": 73.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "R5",
+          "value": "10k 1%",
+          "footprint": "R_0603",
+          "x": 59.0,
+          "y": 69.3,
+          "angle": 0,
+          "nets": {
+            "1": "LCD_EN",
+            "2": "GND"
+          },
+          "symbol": "R",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "Required 10k enable pull-down; bias defaults OFF",
+          "uuid": "675132fb-bc37-54ad-b386-20fe05657be0",
+          "footprint_uuid": "415769f1-3d28-5661-9887-5ed3daac7882",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            249,
+            107
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 243.92,
+            "y": 107,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 240.10999999999999,
+            "net": "LCD_EN"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 254.08,
+            "y": 107,
+            "angle": 180,
+            "length": 2.54,
+            "label_x": 257.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "R9",
+          "value": "0R 0603 Kelvin",
+          "footprint": "R_0603",
+          "x": 55.3,
+          "y": 67.35,
+          "angle": 0,
+          "nets": {
+            "1": "ELVDD_SENSE",
+            "2": "ELVDD"
+          },
+          "symbol": "R",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "Kelvin sense isolation link: place star at C9 positive; route ELVDD_SENSE independently to FBS",
+          "uuid": "dbfed066-87a6-579e-bddd-e9ed2876de16",
+          "footprint_uuid": "adb222ae-fb04-54d7-b4d3-5cbaec4986db",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            345,
+            65
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 339.92,
+            "y": 65,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 336.11,
+            "net": "ELVDD_SENSE"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 350.08,
+            "y": 65,
+            "angle": 180,
+            "length": 2.54,
+            "label_x": 353.89,
+            "net": "ELVDD"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C1",
+          "value": "10uF 10V X7R",
+          "footprint": "C_0805",
+          "x": 58.5,
+          "y": 73.6,
+          "angle": 0,
+          "nets": {
+            "1": "VBUS_5V",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "fd26bb25-2f26-5c86-a893-5fc39461f240",
+          "footprint_uuid": "bdcc060c-a9bf-5a61-b0e5-001eb2648791",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            42,
+            181
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 36.92,
+            "y": 181,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 33.11,
+            "net": "VBUS_5V"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 47.08,
+            "y": 181,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 50.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C2",
+          "value": "0.1uF 10V X7R",
+          "footprint": "C_0603",
+          "x": 58.7,
+          "y": 71.6,
+          "angle": 0,
+          "nets": {
+            "1": "VBUS_5V",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "a57a50b3-4e87-54b5-a4bd-fa86b461d136",
+          "footprint_uuid": "f3e1b868-c48f-5309-818d-bf5f28feb84a",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            111,
+            181
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 105.92,
+            "y": 181,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 102.11,
+            "net": "VBUS_5V"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 116.08,
+            "y": 181,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 119.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C3",
+          "value": "10uF 10V X7R",
+          "footprint": "C_0805",
+          "x": 52.4,
+          "y": 72.0,
+          "angle": 180,
+          "nets": {
+            "1": "PRE_3V584",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "051bb536-69ab-5cd5-8344-d13dc06ca9cb",
+          "footprint_uuid": "b98cb012-021c-5761-be3a-50dde483dc4c",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            42,
+            215
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 36.92,
+            "y": 215,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 33.11,
+            "net": "PRE_3V584"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 47.08,
+            "y": 215,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 50.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C4",
+          "value": "0.1uF 10V X7R",
+          "footprint": "C_0603",
+          "x": 53.0,
+          "y": 69.5,
+          "angle": 180,
+          "nets": {
+            "1": "PRE_3V584",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "961c6618-c8c5-53c7-8be8-bace5a7d09c4",
+          "footprint_uuid": "7639e64a-c4db-516a-92fa-2ab31316d8c8",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            111,
+            215
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 105.92,
+            "y": 215,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 102.11,
+            "net": "PRE_3V584"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 116.08,
+            "y": 215,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 119.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C5",
+          "value": "10uF 10V X7R",
+          "footprint": "C_0805",
+          "x": 62.8,
+          "y": 59.9,
+          "angle": 90,
+          "nets": {
+            "1": "BIAS_IN_3V6",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "662b5ed5-71d2-52c3-b944-cb2f46bb9f06",
+          "footprint_uuid": "8c60b7ef-5449-5485-8b36-5db9435a7f2e",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            185,
+            148
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 179.92,
+            "y": 148,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 176.10999999999999,
+            "net": "BIAS_IN_3V6"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 190.08,
+            "y": 148,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 193.89000000000001,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C6",
+          "value": "10uF 10V X7R",
+          "footprint": "C_0805",
+          "x": 65.5,
+          "y": 60.0,
+          "angle": 90,
+          "nets": {
+            "1": "BIAS_IN_3V6",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "6180ba50-daa3-534e-a02e-71ef2ff3af52",
+          "footprint_uuid": "0202b0d6-dd90-55c3-9007-32bbced0cd71",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            185,
+            184
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 179.92,
+            "y": 184,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 176.10999999999999,
+            "net": "BIAS_IN_3V6"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 190.08,
+            "y": 184,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 193.89000000000001,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C7",
+          "value": "0.1uF 10V X7R",
+          "footprint": "C_0603",
+          "x": 63.3,
+          "y": 62.8,
+          "angle": 0,
+          "nets": {
+            "1": "BIAS_IN_3V6",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "02c75cec-0b0e-58d3-b788-9336d66ab186",
+          "footprint_uuid": "10aedf31-9963-55d0-a110-ddc6bb3bbd45",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            254,
+            148
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 248.92,
+            "y": 148,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 245.10999999999999,
+            "net": "BIAS_IN_3V6"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 259.08,
+            "y": 148,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 262.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C8",
+          "value": "0.1uF 10V X7R",
+          "footprint": "C_0603",
+          "x": 66.2,
+          "y": 62.8,
+          "angle": 0,
+          "nets": {
+            "1": "BIAS_IN_3V6",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "90b4ab8c-c307-5ca4-ad6b-1a198453b87c",
+          "footprint_uuid": "91502102-0e4d-5d18-90ee-1f6af028c98b",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            254,
+            184
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 248.92,
+            "y": 184,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 245.10999999999999,
+            "net": "BIAS_IN_3V6"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 259.08,
+            "y": 184,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 262.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C9",
+          "value": "10uF 10V X7R",
+          "footprint": "C_0805",
+          "x": 55.3,
+          "y": 65.2,
+          "angle": 180,
+          "nets": {
+            "1": "ELVDD",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "13f1556b-7648-58b6-92c7-8dec2e6ef49d",
+          "footprint_uuid": "10f99316-cb8f-5b1a-8ef8-31c94682d8c0",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            344,
+            141
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 338.92,
+            "y": 141,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 335.11,
+            "net": "ELVDD"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 349.08,
+            "y": 141,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 352.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C10",
+          "value": "10uF 10V X7R",
+          "footprint": "C_0805",
+          "x": 63.2,
+          "y": 65.0,
+          "angle": 0,
+          "nets": {
+            "1": "ELVSS",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "ce250756-ae97-5269-8c76-2d548ec472d3",
+          "footprint_uuid": "cad60ddf-1692-5ed1-9e56-89613d2235c0",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            344,
+            177
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 338.92,
+            "y": 177,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 335.11,
+            "net": "ELVSS"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 349.08,
+            "y": 177,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 352.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C11",
+          "value": "10uF 10V X7R",
+          "footprint": "C_0805",
+          "x": 66.6,
+          "y": 65.0,
+          "angle": 0,
+          "nets": {
+            "1": "ELVSS",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "cf0c1593-200c-5084-9fd7-8afc4166863a",
+          "footprint_uuid": "3b8da1e1-6942-5b24-a3ed-724df0079932",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            344,
+            213
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 338.92,
+            "y": 213,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 335.11,
+            "net": "ELVSS"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 349.08,
+            "y": 213,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 352.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C12",
+          "value": "0.1uF 10V X7R",
+          "footprint": "C_0603",
+          "x": 58.9,
+          "y": 67.15,
+          "angle": 0,
+          "nets": {
+            "1": "BIAS_CT",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "bias",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "03ee5d1a-d195-5705-ad1f-5f37e0b421bf",
+          "footprint_uuid": "24098d70-a8e6-5e06-bed7-67a6a3e04669",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            255,
+            219
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 249.92,
+            "y": 219,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 246.10999999999999,
+            "net": "BIAS_CT"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 260.08,
+            "y": 219,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 263.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "TP1",
+          "value": "VBUS_5V",
+          "footprint": "TestPoint_1.2mm",
+          "x": 52.0,
+          "y": 68.0,
+          "angle": 0,
+          "nets": {
+            "1": "VBUS_5V"
+          },
+          "symbol": "TP",
+          "section": "bias",
+          "dnp": false,
+          "feature": true,
+          "lcsc": "",
+          "mpn": "VBUS_5V",
+          "reason": "Copper test point; excluded from assembly BOM/CPL, listed separately",
+          "uuid": "0dfc8d26-8bce-5e9f-b3f0-58892ff14788",
+          "footprint_uuid": "1c03f5c5-e2ef-52a3-a0a5-782d96dd6b75",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            40,
+            255
+          ]
+        },
+        "geom": {
+          "w": 1.27,
+          "h": 1.27,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -2.54,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 37.46,
+            "y": 255,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 33.65,
+            "net": "VBUS_5V"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "TP2",
+          "value": "BIAS_IN_3V6",
+          "footprint": "TestPoint_1.2mm",
+          "x": 65.8,
+          "y": 73.4,
+          "angle": 0,
+          "nets": {
+            "1": "BIAS_IN_3V6"
+          },
+          "symbol": "TP",
+          "section": "bias",
+          "dnp": false,
+          "feature": true,
+          "lcsc": "",
+          "mpn": "BIAS_IN_3V6",
+          "reason": "Copper test point; excluded from assembly BOM/CPL, listed separately",
+          "uuid": "e8dedf05-d1fa-5787-a952-2f54e8564b10",
+          "footprint_uuid": "f5ae1d93-79f6-55dd-953a-ca1d0a76b50e",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            113,
+            255
+          ]
+        },
+        "geom": {
+          "w": 1.27,
+          "h": 1.27,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -2.54,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 110.46,
+            "y": 255,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 106.64999999999999,
+            "net": "BIAS_IN_3V6"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "TP3",
+          "value": "ELVDD",
+          "footprint": "TestPoint_1.2mm",
+          "x": 52.0,
+          "y": 64.0,
+          "angle": 0,
+          "nets": {
+            "1": "ELVDD"
+          },
+          "symbol": "TP",
+          "section": "bias",
+          "dnp": false,
+          "feature": true,
+          "lcsc": "",
+          "mpn": "ELVDD",
+          "reason": "Copper test point; excluded from assembly BOM/CPL, listed separately",
+          "uuid": "5352c21d-99ca-52be-ab46-85635b72eba3",
+          "footprint_uuid": "bb6b72de-484f-59ea-b77a-a73d1ad4de4b",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            186,
+            255
+          ]
+        },
+        "geom": {
+          "w": 1.27,
+          "h": 1.27,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -2.54,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 183.46,
+            "y": 255,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 179.65,
+            "net": "ELVDD"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "TP4",
+          "value": "ELVSS",
+          "footprint": "TestPoint_1.2mm",
+          "x": 67.4,
+          "y": 67.4,
+          "angle": 0,
+          "nets": {
+            "1": "ELVSS"
+          },
+          "symbol": "TP",
+          "section": "bias",
+          "dnp": false,
+          "feature": true,
+          "lcsc": "",
+          "mpn": "ELVSS",
+          "reason": "Copper test point; excluded from assembly BOM/CPL, listed separately",
+          "uuid": "15225822-1af7-529a-95fd-6bb1da3ce5ff",
+          "footprint_uuid": "9b19bfbc-9b06-5ef7-b611-6189a6a72838",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            259,
+            255
+          ]
+        },
+        "geom": {
+          "w": 1.27,
+          "h": 1.27,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -2.54,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 256.46,
+            "y": 255,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 252.64999999999998,
+            "net": "ELVSS"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "TP7",
+          "value": "LCD_EN",
+          "footprint": "TestPoint_1.2mm",
+          "x": 65.0,
+          "y": 75.0,
+          "angle": 0,
+          "nets": {
+            "1": "LCD_EN"
+          },
+          "symbol": "TP",
+          "section": "bias",
+          "dnp": false,
+          "feature": true,
+          "lcsc": "",
+          "mpn": "LCD_EN",
+          "reason": "Copper test point; excluded from assembly BOM/CPL, listed separately",
+          "uuid": "e530798c-de2e-511c-8a11-5ccae486ff9d",
+          "footprint_uuid": "4ee6c009-aab1-54eb-b32f-31c9da936e30",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            332,
+            255
+          ]
+        },
+        "geom": {
+          "w": 1.27,
+          "h": 1.27,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -2.54,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 329.46,
+            "y": 255,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 325.65,
+            "net": "LCD_EN"
+          }
+        ]
+      }
+    ],
+    "flags": [
+      [
+        "BIAS_IN_3V6",
+        145,
+        105
+      ]
+    ]
+  },
+  "logic": {
+    "title": "1.8 V LOGIC / RESET / TEST ACCESS",
+    "texts": [
+      [
+        18,
+        14,
+        2.1,
+        "LIZARD - KD024  |  1.8 V LOGIC / RESET / TEST ACCESS"
+      ],
+      [
+        18,
+        22,
+        1.3,
+        "v0.1-review.1  |  ENGINEERING HOLD  |  ERC / DRC NOT RUN"
+      ],
+      [
+        170,
+        31,
+        1.0,
+        "PD8 3.3 V -> U4 at 1.8 V -> RESX; input tolerant."
+      ],
+      [
+        170,
+        37,
+        1.0,
+        "VCI is separate from LCD_EN; no bias pulses on VCI."
+      ],
+      [
+        175,
+        174,
+        1.0,
+        "R8 DNP: panel SWIRE is an OUTPUT, not a host input."
+      ],
+      [
+        175,
+        180,
+        1.0,
+        "TE and TE1 are probe-only. No DSI probe stubs."
+      ],
+      [
+        22,
+        267,
+        1.05,
+        "Rail sequencing and RM690B0 initialization require a panel-approved MIPI procedure."
+      ]
+    ],
+    "items": [
+      {
+        "part": {
+          "ref": "U3",
+          "value": "TLV75518PDBVR",
+          "footprint": "TI_DBV_SOT23_5",
+          "x": 80.5,
+          "y": 61.5,
+          "angle": 0,
+          "nets": {
+            "1": "LOGIC_LDO_IN",
+            "2": "GND",
+            "3": "LOGIC_LDO_IN",
+            "5": "VDDIO_1V8"
+          },
+          "symbol": "TLV75518PDBVR",
+          "section": "logic",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "TLV75518PDBVR",
+          "reason": "Fixed 1.8 V logic LDO supplied only from J1 11/12/14; enabled with input",
+          "uuid": "97a58307-cc45-58a1-95f0-9017c1b467d9",
+          "footprint_uuid": "4b4fc624-6f20-50d7-86b0-94501ee63c84",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            72,
+            63
+          ]
+        },
+        "geom": {
+          "w": 13.97,
+          "h": 5.08,
+          "pins": [
+            {
+              "num": "1",
+              "name": "IN",
+              "type": "power_in",
+              "x": -19.05,
+              "y": 2.54,
+              "angle": 0,
+              "length": 5.08
+            },
+            {
+              "num": "2",
+              "name": "GND",
+              "type": "power_in",
+              "x": -19.05,
+              "y": 0.0,
+              "angle": 0,
+              "length": 5.08
+            },
+            {
+              "num": "3",
+              "name": "EN",
+              "type": "input",
+              "x": -19.05,
+              "y": -2.54,
+              "angle": 0,
+              "length": 5.08
+            },
+            {
+              "num": "4",
+              "name": "NC",
+              "type": "no_connect",
+              "x": 19.05,
+              "y": 1.27,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "5",
+              "name": "OUT",
+              "type": "power_out",
+              "x": 19.05,
+              "y": -1.27,
+              "angle": 180,
+              "length": 5.08
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "IN",
+            "type": "power_in",
+            "x": 52.95,
+            "y": 60.46,
+            "angle": 0,
+            "length": 5.08,
+            "label_x": 49.14,
+            "net": "LOGIC_LDO_IN"
+          },
+          {
+            "num": "2",
+            "name": "GND",
+            "type": "power_in",
+            "x": 52.95,
+            "y": 63.0,
+            "angle": 0,
+            "length": 5.08,
+            "label_x": 49.14,
+            "net": "GND"
+          },
+          {
+            "num": "3",
+            "name": "EN",
+            "type": "input",
+            "x": 52.95,
+            "y": 65.54,
+            "angle": 0,
+            "length": 5.08,
+            "label_x": 49.14,
+            "net": "LOGIC_LDO_IN"
+          },
+          {
+            "num": "4",
+            "name": "NC",
+            "type": "no_connect",
+            "x": 91.05,
+            "y": 61.73,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 94.86,
+            "net": null
+          },
+          {
+            "num": "5",
+            "name": "OUT",
+            "type": "power_out",
+            "x": 91.05,
+            "y": 64.27,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 94.86,
+            "net": "VDDIO_1V8"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "U4",
+          "value": "SN74LVC1G17DBVR",
+          "footprint": "TI_DBV_SOT23_5",
+          "x": 80.5,
+          "y": 68.8,
+          "angle": 0,
+          "nets": {
+            "2": "HOST_RST_3V3",
+            "3": "GND",
+            "4": "PANEL_RESET_1V8",
+            "5": "VDDIO_1V8"
+          },
+          "symbol": "SN74LVC1G17DBVR",
+          "section": "logic",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "SN74LVC1G17DBVR",
+          "reason": "Non-inverting Schmitt buffer at 1.8 V, accepts 3.3 V input and has Ioff; no direct 3.3 V RESX drive",
+          "uuid": "85b04b3e-9b11-5ad4-afd8-3ff8eb85d5e0",
+          "footprint_uuid": "cb20a036-b638-52a5-9717-73dfa5924469",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            250,
+            63
+          ]
+        },
+        "geom": {
+          "w": 13.97,
+          "h": 5.08,
+          "pins": [
+            {
+              "num": "1",
+              "name": "NC",
+              "type": "no_connect",
+              "x": -19.05,
+              "y": 2.54,
+              "angle": 0,
+              "length": 5.08
+            },
+            {
+              "num": "2",
+              "name": "A",
+              "type": "input",
+              "x": -19.05,
+              "y": 0.0,
+              "angle": 0,
+              "length": 5.08
+            },
+            {
+              "num": "3",
+              "name": "GND",
+              "type": "power_in",
+              "x": -19.05,
+              "y": -2.54,
+              "angle": 0,
+              "length": 5.08
+            },
+            {
+              "num": "4",
+              "name": "Y",
+              "type": "output",
+              "x": 19.05,
+              "y": 1.27,
+              "angle": 180,
+              "length": 5.08
+            },
+            {
+              "num": "5",
+              "name": "VCC",
+              "type": "power_in",
+              "x": 19.05,
+              "y": -1.27,
+              "angle": 180,
+              "length": 5.08
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "NC",
+            "type": "no_connect",
+            "x": 230.95,
+            "y": 60.46,
+            "angle": 0,
+            "length": 5.08,
+            "label_x": 227.14,
+            "net": null
+          },
+          {
+            "num": "2",
+            "name": "A",
+            "type": "input",
+            "x": 230.95,
+            "y": 63.0,
+            "angle": 0,
+            "length": 5.08,
+            "label_x": 227.14,
+            "net": "HOST_RST_3V3"
+          },
+          {
+            "num": "3",
+            "name": "GND",
+            "type": "power_in",
+            "x": 230.95,
+            "y": 65.54,
+            "angle": 0,
+            "length": 5.08,
+            "label_x": 227.14,
+            "net": "GND"
+          },
+          {
+            "num": "4",
+            "name": "Y",
+            "type": "output",
+            "x": 269.05,
+            "y": 61.73,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 272.86,
+            "net": "PANEL_RESET_1V8"
+          },
+          {
+            "num": "5",
+            "name": "VCC",
+            "type": "power_in",
+            "x": 269.05,
+            "y": 64.27,
+            "angle": 180,
+            "length": 5.08,
+            "label_x": 272.86,
+            "net": "VDDIO_1V8"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "R2",
+          "value": "0R 0603",
+          "footprint": "R_0603",
+          "x": 76.2,
+          "y": 63.2,
+          "angle": 0,
+          "nets": {
+            "1": "HOST_3V3_LOGIC",
+            "2": "LOGIC_LDO_IN"
+          },
+          "symbol": "R",
+          "section": "logic",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "Removable 0603 input current link for 1.8 V LDO",
+          "uuid": "b7c2b53b-1ae1-58fe-9b66-463910a19e41",
+          "footprint_uuid": "45bd2a5e-96c9-54ce-9dc8-77d5aaa3029e",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            70,
+            108
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 64.92,
+            "y": 108,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 61.11,
+            "net": "HOST_3V3_LOGIC"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 75.08,
+            "y": 108,
+            "angle": 180,
+            "length": 2.54,
+            "label_x": 78.89,
+            "net": "LOGIC_LDO_IN"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "R6",
+          "value": "100k 1%",
+          "footprint": "R_0603",
+          "x": 76.8,
+          "y": 69.8,
+          "angle": 0,
+          "nets": {
+            "1": "HOST_RST_3V3",
+            "2": "GND"
+          },
+          "symbol": "R",
+          "section": "logic",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "Default host-reset low without FFC",
+          "uuid": "8d3c43bc-be67-5cfa-9023-90896ce7c035",
+          "footprint_uuid": "45f2477a-8e15-5902-8ff5-6d10dfbeaf3b",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            176,
+            111
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 170.92,
+            "y": 111,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 167.10999999999999,
+            "net": "HOST_RST_3V3"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 181.08,
+            "y": 111,
+            "angle": 180,
+            "length": 2.54,
+            "label_x": 184.89000000000001,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "R7",
+          "value": "100k 1%",
+          "footprint": "R_0603",
+          "x": 84.7,
+          "y": 70.3,
+          "angle": 0,
+          "nets": {
+            "1": "PANEL_RESET_1V8",
+            "2": "GND"
+          },
+          "symbol": "R",
+          "section": "logic",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "Default panel reset low; 18 uA load at 1.8 V",
+          "uuid": "8f3b5b92-3c8e-5c85-9f29-10084bce5b86",
+          "footprint_uuid": "68626780-6ea9-5839-bc7b-d0be2b166dc4",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            325,
+            109
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 319.92,
+            "y": 109,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 316.11,
+            "net": "PANEL_RESET_1V8"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 330.08,
+            "y": 109,
+            "angle": 180,
+            "length": 2.54,
+            "label_x": 333.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "R8",
+          "value": "0R DNP",
+          "footprint": "R_0603",
+          "x": 85.2,
+          "y": 65.2,
+          "angle": 0,
+          "nets": {
+            "1": "PANEL_SWIRE",
+            "2": "LCD_EN"
+          },
+          "symbol": "R",
+          "section": "logic",
+          "dnp": true,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "DO NOT FIT: optional SWIRE-to-CTRL link pending output direction/timing review",
+          "uuid": "ff97bdc0-af32-5fb5-92e1-734511f737cf",
+          "footprint_uuid": "d5823a0f-02b4-5d2f-9bb6-52c3f0cde9ef",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            323,
+            149
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 317.92,
+            "y": 149,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 314.11,
+            "net": "PANEL_SWIRE"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 328.08,
+            "y": 149,
+            "angle": 180,
+            "length": 2.54,
+            "label_x": 331.89,
+            "net": "LCD_EN"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C13",
+          "value": "4.7uF 10V X7R",
+          "footprint": "C_0603",
+          "x": 76.2,
+          "y": 60.6,
+          "angle": 0,
+          "nets": {
+            "1": "LOGIC_LDO_IN",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "logic",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "22f59515-1a8d-5f6d-8d7b-6fdda08c792b",
+          "footprint_uuid": "63e9071d-5a2b-5d5d-ad71-5fe38937498e",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            44,
+            154
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 38.92,
+            "y": 154,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 35.11,
+            "net": "LOGIC_LDO_IN"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 49.08,
+            "y": 154,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 52.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C14",
+          "value": "0.1uF 10V X7R",
+          "footprint": "C_0603",
+          "x": 79.2,
+          "y": 58.9,
+          "angle": 0,
+          "nets": {
+            "1": "LOGIC_LDO_IN",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "logic",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "c049fb44-6ec1-58b9-9e0a-8d6d3bdf9f50",
+          "footprint_uuid": "c330de7a-8284-5b13-974b-9fc1a589a293",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            112,
+            154
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 106.92,
+            "y": 154,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 103.11,
+            "net": "LOGIC_LDO_IN"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 117.08,
+            "y": 154,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 120.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C15",
+          "value": "4.7uF 10V X7R",
+          "footprint": "C_0603",
+          "x": 84.7,
+          "y": 60.6,
+          "angle": 0,
+          "nets": {
+            "1": "VDDIO_1V8",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "logic",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "f063ee6b-e2d9-558c-9498-584cdbf97414",
+          "footprint_uuid": "c9d903da-3771-5b4e-bc14-9ad70d58ea16",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            44,
+            194
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 38.92,
+            "y": 194,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 35.11,
+            "net": "VDDIO_1V8"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 49.08,
+            "y": 194,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 52.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C16",
+          "value": "0.1uF 10V X7R",
+          "footprint": "C_0603",
+          "x": 84.7,
+          "y": 62.8,
+          "angle": 0,
+          "nets": {
+            "1": "VDDIO_1V8",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "logic",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "98a59fbb-33a1-541c-8252-e97ee54bd327",
+          "footprint_uuid": "d3a27630-bd71-515d-af89-123280e8d526",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            112,
+            194
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 106.92,
+            "y": 194,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 103.11,
+            "net": "VDDIO_1V8"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 117.08,
+            "y": 194,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 120.89,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "C17",
+          "value": "0.1uF 10V X7R",
+          "footprint": "C_0603",
+          "x": 84.7,
+          "y": 67.8,
+          "angle": 0,
+          "nets": {
+            "1": "VDDIO_1V8",
+            "2": "GND"
+          },
+          "symbol": "C",
+          "section": "logic",
+          "dnp": false,
+          "feature": false,
+          "lcsc": "",
+          "mpn": "PROCUREMENT_PENDING",
+          "reason": "10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN",
+          "uuid": "7931f01f-d770-5f9d-8915-3905a19409fe",
+          "footprint_uuid": "4de10bc1-74c0-5c5a-8adf-e827b20ef10d",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            245,
+            151
+          ]
+        },
+        "geom": {
+          "w": 5.08,
+          "h": 2.54,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -5.08,
+              "y": 0,
+              "angle": 0,
+              "length": 4.445
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "type": "passive",
+              "x": 5.08,
+              "y": 0,
+              "angle": 180,
+              "length": 4.445
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 239.92,
+            "y": 151,
+            "angle": 0,
+            "length": 4.445,
+            "label_x": 236.10999999999999,
+            "net": "VDDIO_1V8"
+          },
+          {
+            "num": "2",
+            "name": "2",
+            "type": "passive",
+            "x": 250.08,
+            "y": 151,
+            "angle": 180,
+            "length": 4.445,
+            "label_x": 253.89000000000001,
+            "net": "GND"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "TP5",
+          "value": "VDDIO_1V8",
+          "footprint": "TestPoint_1.2mm",
+          "x": 87.8,
+          "y": 63.8,
+          "angle": 0,
+          "nets": {
+            "1": "VDDIO_1V8"
+          },
+          "symbol": "TP",
+          "section": "logic",
+          "dnp": false,
+          "feature": true,
+          "lcsc": "",
+          "mpn": "VDDIO_1V8",
+          "reason": "Copper test point; excluded from assembly BOM/CPL, listed separately",
+          "uuid": "0a117278-901b-562b-9068-a2b161e0850f",
+          "footprint_uuid": "99ab623c-c1e8-5100-966a-440c9e1dacb1",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            35,
+            234
+          ]
+        },
+        "geom": {
+          "w": 1.27,
+          "h": 1.27,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -2.54,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 32.46,
+            "y": 234,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 28.650000000000002,
+            "net": "VDDIO_1V8"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "TP6",
+          "value": "PANEL_VCI_3V3",
+          "footprint": "TestPoint_1.2mm",
+          "x": 87.8,
+          "y": 67.4,
+          "angle": 0,
+          "nets": {
+            "1": "PANEL_VCI_3V3"
+          },
+          "symbol": "TP",
+          "section": "logic",
+          "dnp": false,
+          "feature": true,
+          "lcsc": "",
+          "mpn": "PANEL_VCI_3V3",
+          "reason": "Copper test point; excluded from assembly BOM/CPL, listed separately",
+          "uuid": "b7e323cd-0242-5867-852d-851d66a81b8f",
+          "footprint_uuid": "6972a741-e635-5d26-9160-81f3466d4b7c",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            92,
+            234
+          ]
+        },
+        "geom": {
+          "w": 1.27,
+          "h": 1.27,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -2.54,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 89.46,
+            "y": 234,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 85.64999999999999,
+            "net": "PANEL_VCI_3V3"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "TP8",
+          "value": "PANEL_TE1",
+          "footprint": "TestPoint_1.2mm",
+          "x": 87.8,
+          "y": 58.8,
+          "angle": 0,
+          "nets": {
+            "1": "PANEL_TE1"
+          },
+          "symbol": "TP",
+          "section": "logic",
+          "dnp": false,
+          "feature": true,
+          "lcsc": "",
+          "mpn": "PANEL_TE1",
+          "reason": "Copper test point; excluded from assembly BOM/CPL, listed separately",
+          "uuid": "90ccdfdc-9455-518b-897a-b8de2397fc61",
+          "footprint_uuid": "7e48878e-143a-5081-ac75-5cf6a95fa0df",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            149,
+            234
+          ]
+        },
+        "geom": {
+          "w": 1.27,
+          "h": 1.27,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -2.54,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 146.46,
+            "y": 234,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 142.65,
+            "net": "PANEL_TE1"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "TP9",
+          "value": "PANEL_TE",
+          "footprint": "TestPoint_1.2mm",
+          "x": 87.8,
+          "y": 61.2,
+          "angle": 0,
+          "nets": {
+            "1": "PANEL_TE"
+          },
+          "symbol": "TP",
+          "section": "logic",
+          "dnp": false,
+          "feature": true,
+          "lcsc": "",
+          "mpn": "PANEL_TE",
+          "reason": "Copper test point; excluded from assembly BOM/CPL, listed separately",
+          "uuid": "2601ab99-63c1-5008-816a-3ae9798dc7fa",
+          "footprint_uuid": "7e80fe87-bfa4-564c-88c4-ec13b10b5131",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            206,
+            234
+          ]
+        },
+        "geom": {
+          "w": 1.27,
+          "h": 1.27,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -2.54,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 203.46,
+            "y": 234,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 199.65,
+            "net": "PANEL_TE"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "TP10",
+          "value": "PANEL_SWIRE",
+          "footprint": "TestPoint_1.2mm",
+          "x": 83.0,
+          "y": 65.2,
+          "angle": 0,
+          "nets": {
+            "1": "PANEL_SWIRE"
+          },
+          "symbol": "TP",
+          "section": "logic",
+          "dnp": false,
+          "feature": true,
+          "lcsc": "",
+          "mpn": "PANEL_SWIRE",
+          "reason": "Copper test point; excluded from assembly BOM/CPL, listed separately",
+          "uuid": "0d81368e-32d4-50ac-aca2-04a87fd7bbef",
+          "footprint_uuid": "67b6f579-e1bd-53c9-aea4-35aed303da74",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            263,
+            234
+          ]
+        },
+        "geom": {
+          "w": 1.27,
+          "h": 1.27,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -2.54,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 260.46,
+            "y": 234,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 256.65,
+            "net": "PANEL_SWIRE"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "TP11",
+          "value": "PANEL_RESET_1V8",
+          "footprint": "TestPoint_1.2mm",
+          "x": 87.8,
+          "y": 70.2,
+          "angle": 0,
+          "nets": {
+            "1": "PANEL_RESET_1V8"
+          },
+          "symbol": "TP",
+          "section": "logic",
+          "dnp": false,
+          "feature": true,
+          "lcsc": "",
+          "mpn": "PANEL_RESET_1V8",
+          "reason": "Copper test point; excluded from assembly BOM/CPL, listed separately",
+          "uuid": "52784421-d579-5181-b7f3-849d0fe3608c",
+          "footprint_uuid": "1aba62bc-e559-5643-ac05-46d75b865baf",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            320,
+            234
+          ]
+        },
+        "geom": {
+          "w": 1.27,
+          "h": 1.27,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -2.54,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 317.46,
+            "y": 234,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 313.65,
+            "net": "PANEL_RESET_1V8"
+          }
+        ]
+      },
+      {
+        "part": {
+          "ref": "TP12",
+          "value": "GND",
+          "footprint": "TestPoint_1.2mm",
+          "x": 74.3,
+          "y": 69.4,
+          "angle": 0,
+          "nets": {
+            "1": "GND"
+          },
+          "symbol": "TP",
+          "section": "logic",
+          "dnp": false,
+          "feature": true,
+          "lcsc": "",
+          "mpn": "GND",
+          "reason": "Copper test point; excluded from assembly BOM/CPL, listed separately",
+          "uuid": "4ec33383-f31f-5825-8c08-c414d9ccdafb",
+          "footprint_uuid": "96f89c56-24f0-52b2-90e4-f736c31210f4",
+          "library_class": "PENDING_CONFIRMATION",
+          "sch_xy": [
+            377,
+            234
+          ]
+        },
+        "geom": {
+          "w": 1.27,
+          "h": 1.27,
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "type": "passive",
+              "x": -2.54,
+              "y": 0,
+              "angle": 0,
+              "length": 2.54
+            }
+          ]
+        },
+        "pins": [
+          {
+            "num": "1",
+            "name": "1",
+            "type": "passive",
+            "x": 374.46,
+            "y": 234,
+            "angle": 0,
+            "length": 2.54,
+            "label_x": 370.65,
+            "net": "GND"
+          }
+        ]
+      }
+    ],
+    "flags": [
+      [
+        "LOGIC_LDO_IN",
+        166,
+        194
+      ]
+    ]
+  }
+}

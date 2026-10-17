@@ -1,0 +1,43 @@
+﻿Designator,Value,Footprint,MPN,LCSC,Library_class,DNP,Selection_reason
+J1,FH34SRJ-24S-0.5SH(50),Hirose_FH34SRJ_24S_0.5SH_50,FH34SRJ-24S-0.5SH(50),,PENDING_CONFIRMATION,False,24P host FFC; electrical numbering assumes verified identity harness; cable orientation not signed off
+J2,502598-4593,Molex_502598_4593_45P_Staggered,502598-4593,C5365339,PENDING_CONFIRMATION,False,45P staggered lands; replaces panel-referenced -4591 only after physical approval
+H1,MANUAL: 1x13 pass-through,Header_1x13_P2.54_PassThrough,MANUAL: 1x13 pass-through,,PENDING_CONFIRMATION,True,"Bottom mating to host, manual fit; exact Gerber XY; all other pads no electrical net"
+H2,MANUAL: 1x05 pass-through,Header_1x05_P2.54_PassThrough,MANUAL: 1x05 pass-through,,PENDING_CONFIRMATION,True,"Bottom mating to host, manual fit; do not bridge with J1 logic 3V3 on adapter"
+U1,TPS65631DPDR,TI_TPS65631_DPD_12_EP,TPS65631DPDR,,PENDING_CONFIRMATION,False,Required chip; 2.9-4.5 V operating input; defaults +4.6 / -4.0 V are not panel-approved
+U2,TLV76701DRVR,TI_TLV767_DRV_6_EP,TLV76701DRVR,,PENDING_CONFIRMATION,False,"16 V input rating, adjustable 0.8 V feedback, preregulates 5 V to 3.584 V; thermal review required"
+U3,TLV75518PDBVR,TI_DBV_SOT23_5,TLV75518PDBVR,,PENDING_CONFIRMATION,False,Fixed 1.8 V logic LDO supplied only from J1 11/12/14; enabled with input
+U4,SN74LVC1G17DBVR,TI_DBV_SOT23_5,SN74LVC1G17DBVR,,PENDING_CONFIRMATION,False,"Non-inverting Schmitt buffer at 1.8 V, accepts 3.3 V input and has Ioff; no direct 3.3 V RESX drive"
+L1,4.7uH XFL4020-472MEC,Coilcraft_XFL4020_472MEC,XFL4020-472MEC,,PENDING_CONFIRMATION,False,"4.7 uH +/-20%, DCR max 57.4 mOhm; saturation and temperature margins must be confirmed"
+L2,4.7uH XFL4020-472MEC,Coilcraft_XFL4020_472MEC,XFL4020-472MEC,,PENDING_CONFIRMATION,False,"Inverting topology: L2 goes from SWN to GND, NOT to VIN; same current-qualified candidate as L1"
+R1,0R 0603,R_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,Removable 0603 input current link for TPS65631
+R2,0R 0603,R_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,Removable 0603 input current link for 1.8 V LDO
+R3,34.8k 1%,R_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"Top feedback resistor, 0.8*(1+34.8/10)=3.584 V"
+R4,10k 1%,R_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,Bottom feedback resistor
+R5,10k 1%,R_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,Required 10k enable pull-down; bias defaults OFF
+R6,100k 1%,R_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,Default host-reset low without FFC
+R7,100k 1%,R_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,Default panel reset low; 18 uA load at 1.8 V
+R8,0R DNP,R_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,True,DO NOT FIT: optional SWIRE-to-CTRL link pending output direction/timing review
+R9,0R 0603 Kelvin,R_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,Kelvin sense isolation link: place star at C9 positive; route ELVDD_SENSE independently to FBS
+C1,10uF 10V X7R,C_0805,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C2,0.1uF 10V X7R,C_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C3,10uF 10V X7R,C_0805,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C4,0.1uF 10V X7R,C_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C5,10uF 10V X7R,C_0805,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C6,10uF 10V X7R,C_0805,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C7,0.1uF 10V X7R,C_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C8,0.1uF 10V X7R,C_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C9,10uF 10V X7R,C_0805,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C10,10uF 10V X7R,C_0805,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C11,10uF 10V X7R,C_0805,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C12,0.1uF 10V X7R,C_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C13,4.7uF 10V X7R,C_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C14,0.1uF 10V X7R,C_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C15,4.7uF 10V X7R,C_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C16,0.1uF 10V X7R,C_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C17,0.1uF 10V X7R,C_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C18,1uF 10V X7R,C_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C19,0.1uF 10V X7R,C_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C20,1uF 10V X7R,C_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C21,0.1uF 10V X7R,C_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C22,1uF 10V X7R,C_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"
+C23,1uF 10V X7R,C_0603,PROCUREMENT_PENDING,,PENDING_CONFIRMATION,False,"10 V minimum MLCC; verify effective capacitance versus DC bias, temperature and selected MPN"

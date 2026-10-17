@@ -1,0 +1,19 @@
+﻿Designator,Comment,X_mm,Y_mm,Reason
+TP1,VBUS_5V,2.0,14.0,No purchased component; excluded from BOM/CPL
+TP2,BIAS_IN_3V6,15.799999999999997,8.599999999999994,No purchased component; excluded from BOM/CPL
+TP3,ELVDD,2.0,18.0,No purchased component; excluded from BOM/CPL
+TP4,ELVSS,17.400000000000006,14.599999999999994,No purchased component; excluded from BOM/CPL
+TP5,VDDIO_1V8,37.8,18.200000000000003,No purchased component; excluded from BOM/CPL
+TP6,PANEL_VCI_3V3,37.8,14.599999999999994,No purchased component; excluded from BOM/CPL
+TP7,LCD_EN,15.0,7.0,No purchased component; excluded from BOM/CPL
+TP8,PANEL_TE1,37.8,23.200000000000003,No purchased component; excluded from BOM/CPL
+TP9,PANEL_TE,37.8,20.799999999999997,No purchased component; excluded from BOM/CPL
+TP10,PANEL_SWIRE,33.0,16.799999999999997,No purchased component; excluded from BOM/CPL
+TP11,PANEL_RESET_1V8,37.8,11.799999999999997,No purchased component; excluded from BOM/CPL
+TP12,GND,24.299999999999997,12.599999999999994,No purchased component; excluded from BOM/CPL
+MH1,M2 NPTH 2.2,2.75,35.25,No purchased component; excluded from BOM/CPL
+MH2,M2 NPTH 2.2,39.25,35.25,No purchased component; excluded from BOM/CPL
+MH3,M2 NPTH 2.2,2.75,2.75,No purchased component; excluded from BOM/CPL
+MH4,M2 NPTH 2.2,39.25,2.75,No purchased component; excluded from BOM/CPL
+FID1,FID 1mm / 2mm mask,6.700000000000003,35.6,No purchased component; excluded from BOM/CPL
+FID2,FID 1mm / 2mm mask,35.599999999999994,2.299999999999997,No purchased component; excluded from BOM/CPL

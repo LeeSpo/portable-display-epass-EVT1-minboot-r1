@@ -1,0 +1,479 @@
+{
+  "fabrication_released": false,
+  "validation_kind": "CUSTOM_STATIC_NOT_KICAD_ERC_DRC",
+  "pcb_sha256": "6a5da3c1ea622acc52ab39c68d1f8dce15e3e6c079eb78f9c6e667f8d1490abe",
+  "sexpression_balanced_files": 19,
+  "sexpression_caveat": "Balanced syntax only; native parser/schema/application opening NOT VERIFIED",
+  "native_erc": {
+    "status": "NOT_RUN",
+    "errors": null,
+    "waivers": []
+  },
+  "native_drc": {
+    "status": "NOT_RUN",
+    "errors": null,
+    "waivers": []
+  },
+  "kicad_cli_path": null,
+  "counts": {
+    "parts": 60,
+    "core_pads": 207,
+    "tracks": 2234,
+    "vias": 101,
+    "nets": 25
+  },
+  "dsi": {
+    "status": "FOUR_NETS_UNROUTED",
+    "W_mm": null,
+    "S_mm": null,
+    "impedance_ohm": null,
+    "actual_end_to_end_lengths_mm": null,
+    "target_ohm": 100,
+    "length_match_pass": false
+  },
+  "header_row_spacing_mm": 19.913,
+  "connectivity": [
+    {
+      "net": "BIAS_CT",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "U1:8",
+          "C12:1"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "BIAS_IN_3V6",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "U1:11",
+          "U1:12",
+          "L1:1",
+          "R1:2",
+          "C5:1",
+          "C6:1",
+          "C7:1",
+          "C8:1",
+          "TP2:1"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "DSI_CK_N",
+      "pad_component_count": 2,
+      "groups": [
+        [
+          "J1:5"
+        ],
+        [
+          "J2:40"
+        ]
+      ],
+      "expected_unrouted": true
+    },
+    {
+      "net": "DSI_CK_P",
+      "pad_component_count": 2,
+      "groups": [
+        [
+          "J1:6"
+        ],
+        [
+          "J2:39"
+        ]
+      ],
+      "expected_unrouted": true
+    },
+    {
+      "net": "DSI_D0_N",
+      "pad_component_count": 2,
+      "groups": [
+        [
+          "J1:2"
+        ],
+        [
+          "J2:36"
+        ]
+      ],
+      "expected_unrouted": true
+    },
+    {
+      "net": "DSI_D0_P",
+      "pad_component_count": 2,
+      "groups": [
+        [
+          "J1:3"
+        ],
+        [
+          "J2:35"
+        ]
+      ],
+      "expected_unrouted": true
+    },
+    {
+      "net": "ELVDD",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "J2:6",
+          "J2:7",
+          "U1:3",
+          "R9:2",
+          "C9:1",
+          "C22:1",
+          "TP3:1"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "ELVDD_SENSE",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "U1:4",
+          "R9:1"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "ELVSS",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "J2:3",
+          "J2:4",
+          "U1:9",
+          "C10:1",
+          "C11:1",
+          "C23:1",
+          "TP4:1"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "GND",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "J1:1",
+          "J1:4",
+          "J1:7",
+          "J1:10",
+          "J1:13",
+          "J1:15",
+          "J1:17",
+          "J1:19",
+          "J1:23",
+          "J1:MP1",
+          "J1:MP2",
+          "J2:1",
+          "J2:2",
+          "J2:5",
+          "J2:8",
+          "J2:10",
+          "J2:12",
+          "J2:17",
+          "J2:30",
+          "J2:31",
+          "J2:32",
+          "J2:33",
+          "J2:34",
+          "J2:37",
+          "J2:38",
+          "J2:41",
+          "J2:42",
+          "J2:43",
+          "J2:44",
+          "J2:45",
+          "J2:MP1",
+          "J2:MP2",
+          "H1:1",
+          "H1:12",
+          "H2:1",
+          "U1:2",
+          "U1:5",
+          "U1:6",
+          "U1:13",
+          "U2:3",
+          "U2:5",
+          "U2:7",
+          "U3:2",
+          "U4:3",
+          "L2:2",
+          "R4:2",
+          "R5:2",
+          "R6:2",
+          "R7:2",
+          "C1:2",
+          "C2:2",
+          "C3:2",
+          "C4:2",
+          "C5:2",
+          "C6:2",
+          "C7:2",
+          "C8:2",
+          "C9:2",
+          "C10:2",
+          "C11:2",
+          "C12:2",
+          "C13:2",
+          "C14:2",
+          "C15:2",
+          "C16:2",
+          "C17:2",
+          "C18:2",
+          "C19:2",
+          "C20:2",
+          "C21:2",
+          "C22:2",
+          "C23:2",
+          "TP12:1"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "HOST_3V3_LOGIC",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "J1:11",
+          "J1:12",
+          "J1:14",
+          "R2:1"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "HOST_RST_3V3",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "J1:18",
+          "U4:2",
+          "R6:1"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "LCD_EN",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "U1:7",
+          "R5:1",
+          "R8:2",
+          "TP7:1"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "LDO_FB",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "U2:2",
+          "R3:2",
+          "R4:1"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "LOGIC_LDO_IN",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "U3:1",
+          "U3:3",
+          "R2:2",
+          "C13:1",
+          "C14:1"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "PANEL_RESET_1V8",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "J2:16",
+          "U4:4",
+          "R7:1",
+          "TP11:1"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "PANEL_SWIRE",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "J2:14",
+          "R8:1",
+          "TP10:1"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "PANEL_TE",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "J2:15",
+          "TP9:1"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "PANEL_TE1",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "J2:13",
+          "TP8:1"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "PANEL_VCI_3V3",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "J2:9",
+          "H2:3",
+          "C18:1",
+          "C19:1",
+          "TP6:1"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "PRE_3V584",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "U2:1",
+          "R1:1",
+          "R3:1",
+          "C3:1",
+          "C4:1"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "SWN",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "U1:10",
+          "L2:1"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "SWP",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "U1:1",
+          "L1:2"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "VBUS_5V",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "H1:13",
+          "U2:4",
+          "U2:6",
+          "C1:1",
+          "C2:1",
+          "TP1:1"
+        ]
+      ],
+      "expected_unrouted": false
+    },
+    {
+      "net": "VDDIO_1V8",
+      "pad_component_count": 1,
+      "groups": [
+        [
+          "J2:11",
+          "U3:5",
+          "U4:5",
+          "C15:1",
+          "C16:1",
+          "C17:1",
+          "C20:1",
+          "C21:1",
+          "TP5:1"
+        ]
+      ],
+      "expected_unrouted": false
+    }
+  ],
+  "unexpected_disconnected_nets": [],
+  "assembly": {
+    "bom_cpl_parity": true,
+    "top_fitted": 39,
+    "dnp": [
+      "H1",
+      "H2",
+      "R8"
+    ],
+    "jlc_previewer_status": "NOT_RUN",
+    "library_class_all_verified": false
+  },
+  "cam": {
+    "four_copper_layers": true,
+    "outline_closed_paths": 1,
+    "units": "mm",
+    "origin_xy_pcb_mm": [
+      50,
+      82
+    ],
+    "gerber_zip_crc": "PASS",
+    "exporter": "CUSTOM_NOT_KICAD"
+  },
+  "static_geometry": {
+    "note": "Static geometry only. NOT KiCad DRC; zone fill/thermal relief/manufacturer rules are not validated.",
+    "body_collisions": [],
+    "header_clearance": [],
+    "hole_clearance": [],
+    "copper_clearance": [],
+    "via_to_pad": [],
+    "via_in_pad": [],
+    "min_track_width": 0.15
+  },
+  "unresolved_gates": [
+    "Native KiCad 8 open/zone refill/ERC/DRC",
+    "Official JLC04101H-3313 calculator W/S",
+    "Four DSI routes and length/clearance tuning",
+    "Physical FFC continuity and screen -4591/-4593 compatibility",
+    "Panel-approved default bias and MIPI power sequencing",
+    "Procurement MPN/LCSC/basic-library and assembly rotation",
+    "Power-loop/thermal/current review and sample tests"
+  ]
+}

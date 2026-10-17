@@ -1,0 +1,5 @@
+﻿Net,J1_pin,J2_pin,Status,W_mm,S_mm,End_to_end_length_mm,PN_skew_limit_mm,Pair_to_pair_limit_mm
+DSI_D0_P,3,35,UNROUTED / NOT COMPLIANT,,,,0.15,1.0
+DSI_D0_N,2,36,UNROUTED / NOT COMPLIANT,,,,0.15,1.0
+DSI_CK_P,6,39,UNROUTED / NOT COMPLIANT,,,,0.15,1.0
+DSI_CK_N,5,40,UNROUTED / NOT COMPLIANT,,,,0.15,1.0

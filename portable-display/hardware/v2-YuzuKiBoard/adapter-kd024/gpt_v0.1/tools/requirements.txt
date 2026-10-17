@@ -1,0 +1,10 @@
+# Auxiliary CAD/geometry review tooling; NOT a KiCad substitute.
+numpy
+Pillow
+shapely>=2.1
+reportlab
+PyMuPDF
+svgwrite
+CairoSVG
+matplotlib
+cadquery>=2.5

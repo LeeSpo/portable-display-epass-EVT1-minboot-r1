@@ -1,0 +1,488 @@
+[
+  {
+    "net": "SWP",
+    "from": "U1:1",
+    "to": "L1:2",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "SWN",
+    "from": "U1:10",
+    "to": "L2:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "ELVDD_SENSE",
+    "from": "U1:4",
+    "to": "R9:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "LDO_FB",
+    "from": "U2:2",
+    "to": "R3:2",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "LDO_FB",
+    "from": "R3:2",
+    "to": "R4:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "BIAS_CT",
+    "from": "U1:8",
+    "to": "C12:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "ELVDD",
+    "from": "J2:6",
+    "to": "J2:7",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "ELVDD",
+    "from": "J2:6",
+    "to": "C22:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "ELVDD",
+    "from": "C22:1",
+    "to": "U1:3",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "ELVDD",
+    "from": "U1:3",
+    "to": "C9:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "ELVDD",
+    "from": "C9:1",
+    "to": "R9:2",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "ELVDD",
+    "from": "C9:1",
+    "to": "TP3:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "ELVSS",
+    "from": "J2:3",
+    "to": "J2:4",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "ELVSS",
+    "from": "J2:4",
+    "to": "C23:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "ELVSS",
+    "from": "J2:4",
+    "to": "C11:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "ELVSS",
+    "from": "C11:1",
+    "to": "TP4:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "ELVSS",
+    "from": "C11:1",
+    "to": "C10:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "ELVSS",
+    "from": "C10:1",
+    "to": "U1:9",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "BIAS_IN_3V6",
+    "from": "U1:11",
+    "to": "U1:12",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "BIAS_IN_3V6",
+    "from": "U1:12",
+    "to": "C7:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "BIAS_IN_3V6",
+    "from": "C7:1",
+    "to": "C5:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "BIAS_IN_3V6",
+    "from": "C5:1",
+    "to": "C6:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "BIAS_IN_3V6",
+    "from": "C6:1",
+    "to": "C8:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "BIAS_IN_3V6",
+    "from": "U1:12",
+    "to": "L1:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "BIAS_IN_3V6",
+    "from": "C8:1",
+    "to": "TP2:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "BIAS_IN_3V6",
+    "from": "TP2:1",
+    "to": "R1:2",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "PRE_3V584",
+    "from": "U2:1",
+    "to": "C3:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "PRE_3V584",
+    "from": "U2:1",
+    "to": "C4:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "PRE_3V584",
+    "from": "C3:1",
+    "to": "R3:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "PRE_3V584",
+    "from": "U2:1",
+    "to": "R1:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "VBUS_5V",
+    "from": "H1:13",
+    "to": "TP1:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "VBUS_5V",
+    "from": "TP1:1",
+    "to": "U2:6",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "VBUS_5V",
+    "from": "U2:6",
+    "to": "C2:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "VBUS_5V",
+    "from": "U2:6",
+    "to": "U2:4",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "VBUS_5V",
+    "from": "U2:4",
+    "to": "C1:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "LOGIC_LDO_IN",
+    "from": "U3:1",
+    "to": "C14:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "LOGIC_LDO_IN",
+    "from": "U3:1",
+    "to": "U3:3",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "LOGIC_LDO_IN",
+    "from": "U3:3",
+    "to": "R2:2",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "LOGIC_LDO_IN",
+    "from": "R2:2",
+    "to": "C13:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "VDDIO_1V8",
+    "from": "J2:11",
+    "to": "C21:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "VDDIO_1V8",
+    "from": "C21:1",
+    "to": "C20:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "VDDIO_1V8",
+    "from": "C21:1",
+    "to": "U3:5",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "VDDIO_1V8",
+    "from": "U3:5",
+    "to": "C15:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "VDDIO_1V8",
+    "from": "C15:1",
+    "to": "C16:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "VDDIO_1V8",
+    "from": "C16:1",
+    "to": "TP5:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "VDDIO_1V8",
+    "from": "C16:1",
+    "to": "C17:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "VDDIO_1V8",
+    "from": "C17:1",
+    "to": "U4:5",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "HOST_3V3_LOGIC",
+    "from": "J1:11",
+    "to": "J1:12",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "HOST_3V3_LOGIC",
+    "from": "J1:12",
+    "to": "J1:14",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "HOST_3V3_LOGIC",
+    "from": "J1:11",
+    "to": "R2:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "PANEL_VCI_3V3",
+    "from": "J2:9",
+    "to": "C19:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "PANEL_VCI_3V3",
+    "from": "C19:1",
+    "to": "C18:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "PANEL_VCI_3V3",
+    "from": "C19:1",
+    "to": "TP6:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "PANEL_VCI_3V3",
+    "from": "TP6:1",
+    "to": "H2:3",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.25
+  },
+  {
+    "net": "LCD_EN",
+    "from": "U1:7",
+    "to": "R5:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "LCD_EN",
+    "from": "R5:1",
+    "to": "TP7:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "LCD_EN",
+    "from": "TP7:1",
+    "to": "R8:2",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "HOST_RST_3V3",
+    "from": "J1:18",
+    "to": "R6:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "HOST_RST_3V3",
+    "from": "R6:1",
+    "to": "U4:2",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "PANEL_RESET_1V8",
+    "from": "J2:16",
+    "to": "U4:4",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "PANEL_RESET_1V8",
+    "from": "U4:4",
+    "to": "R7:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "PANEL_RESET_1V8",
+    "from": "R7:1",
+    "to": "TP11:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "PANEL_TE1",
+    "from": "J2:13",
+    "to": "TP8:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "PANEL_TE",
+    "from": "J2:15",
+    "to": "TP9:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "PANEL_SWIRE",
+    "from": "J2:14",
+    "to": "TP10:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "PANEL_SWIRE",
+    "from": "TP10:1",
+    "to": "R8:1",
+    "status": "ROUTED_CANDIDATE",
+    "width_mm": 0.15
+  },
+  {
+    "net": "DSI_D0_P",
+    "status": "NOT_ROUTED_CALCULATOR_HOLD",
+    "actual_copper_length_mm": 0.0,
+    "end_to_end_length_mm": null
+  },
+  {
+    "net": "DSI_D0_N",
+    "status": "NOT_ROUTED_CALCULATOR_HOLD",
+    "actual_copper_length_mm": 0.0,
+    "end_to_end_length_mm": null
+  },
+  {
+    "net": "DSI_CK_P",
+    "status": "NOT_ROUTED_CALCULATOR_HOLD",
+    "actual_copper_length_mm": 0.0,
+    "end_to_end_length_mm": null
+  },
+  {
+    "net": "DSI_CK_N",
+    "status": "NOT_ROUTED_CALCULATOR_HOLD",
+    "actual_copper_length_mm": 0.0,
+    "end_to_end_length_mm": null
+  }
+]

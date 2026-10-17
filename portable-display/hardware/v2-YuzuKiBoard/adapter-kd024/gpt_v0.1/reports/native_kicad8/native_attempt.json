@@ -1,0 +1,8 @@
+{
+  "fabrication_released": false,
+  "native_erc": "NOT_RUN",
+  "native_drc": "NOT_RUN",
+  "zone_refill": "NOT_RUN",
+  "note": "Review evidence only. DSI still unrouted; no automatic release.",
+  "reason": "kicad-cli not found on PATH; native checks were NOT run."
+}

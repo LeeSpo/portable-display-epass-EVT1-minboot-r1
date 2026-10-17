@@ -1,0 +1,82 @@
+{
+  "status": "ENGINEERING_REVIEW_ONLY_DO_NOT_FABRICATE",
+  "native_kicad_erc_drc_run": false,
+  "fabrication_released": false,
+  "pcb_sha256": "6a5da3c1ea622acc52ab39c68d1f8dce15e3e6c079eb78f9c6e667f8d1490abe",
+  "exporter": "tools/export_review.py (custom, not kicad-cli)",
+  "source_pcb": "kicad/adapter_v0.1.kicad_pcb",
+  "origin_pcb_mm": [
+    50,
+    82
+  ],
+  "CAM_X": "pcb_x - 50",
+  "CAM_Y": "82 - pcb_y",
+  "units": "mm",
+  "smt_fitted_count": 39,
+  "dnp_count": 3,
+  "copper_feature_count": 18,
+  "files": [
+    {
+      "file": "adapter_v0.1_F_Cu.GTL",
+      "layer": "F.Cu",
+      "regions": 15492
+    },
+    {
+      "file": "adapter_v0.1_In1_Cu.G1",
+      "layer": "In1.Cu",
+      "regions": 6157
+    },
+    {
+      "file": "adapter_v0.1_In2_Cu.G2",
+      "layer": "In2.Cu",
+      "regions": 9766
+    },
+    {
+      "file": "adapter_v0.1_B_Cu.GBL",
+      "layer": "B.Cu",
+      "regions": 6357
+    },
+    {
+      "file": "adapter_v0.1_F_Mask.GTS",
+      "layer": "F.Mask",
+      "regions": 207
+    },
+    {
+      "file": "adapter_v0.1_B_Mask.GBS",
+      "layer": "B.Mask",
+      "regions": 22
+    },
+    {
+      "file": "adapter_v0.1_F_Paste.GTP",
+      "layer": "F.Paste",
+      "regions": 173
+    },
+    {
+      "file": "adapter_v0.1_F_SilkS.GTO",
+      "layer": "F.SilkS",
+      "regions": 58
+    },
+    {
+      "file": "adapter_v0.1_B_SilkS.GBO",
+      "layer": "B.SilkS",
+      "regions": 0
+    },
+    {
+      "file": "adapter_v0.1_Edge_Cuts.GKO",
+      "layer": "Edge.Cuts",
+      "closed_paths": 1
+    },
+    {
+      "file": "adapter_v0.1_PTH.drl",
+      "plated": true,
+      "holes": 119,
+      "units": "mm"
+    },
+    {
+      "file": "adapter_v0.1_NPTH.drl",
+      "plated": false,
+      "holes": 4,
+      "units": "mm"
+    }
+  ]
+}

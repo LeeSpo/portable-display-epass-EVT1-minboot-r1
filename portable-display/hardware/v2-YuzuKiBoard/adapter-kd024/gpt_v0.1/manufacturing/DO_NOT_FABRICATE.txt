@@ -1,0 +1,4 @@
+ENGINEERING REVIEW ONLY. FOUR DSI NETS HAVE NO COPPER ROUTES.
+Specified JLC impedance result unavailable; native KiCad ERC/DRC NOT RUN.
+Do not upload this archive for manufacture or assembly. See DESIGN_NOTES.md.
+All included data is from the board SHA-256 recorded in CAM_MANIFEST.json.
