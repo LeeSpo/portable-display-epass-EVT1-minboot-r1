@@ -1,0 +1,3 @@
+(fp_lib_table
+ (lib (name "Sameat") (type "KiCad") (uri "${KIPRJMOD}/sameat.pretty") (options "") (descr "Project-local custom footprints; RTC-8 corrected against Micro Crystal datasheet"))
+)

@@ -1,0 +1,10 @@
+[
+  {
+    "mutation": "U1.36 -> VSYS",
+    "rejected": true
+  },
+  {
+    "mutation": "U2.14 -> 1V8",
+    "rejected": true
+  }
+]

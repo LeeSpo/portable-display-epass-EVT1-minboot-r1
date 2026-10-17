@@ -1,0 +1,58 @@
+{
+  "client_review_date": "2026-10-05",
+  "design_revision_date": "2026-10-04",
+  "board_sha256": "16cfcd73cd398fd632e1a334c4252daaab57e94e08e5e7c57404926beec00bd7",
+  "before_board_sha256": "c60d34a61d91977091526055a69a3e2fe428a5c76689d51b27c738f2bd9dcb34",
+  "kicad_version": "10.0.6",
+  "project_rules_changed": false,
+  "erc_violations": 0,
+  "drc_violations": 0,
+  "drc_unconnected_items": 0,
+  "drc_schematic_parity": 0,
+  "files_sha256": {
+    "ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pcb": "16cfcd73cd398fd632e1a334c4252daaab57e94e08e5e7c57404926beec00bd7",
+    "ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pro": "9f90c2af5a13b3d944e1d2a9065df396c58ad52d29852e59a70e89a9a0a6603b",
+    "ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_sch": "041b50ebda508ea5dbf477f4643b200dd482856ddbd80ce46f0d07abe54b88cb",
+    "01_power.kicad_sch": "aaeb8fc62cee768c988b6ed19b494ddc5575826448db62791598ec72b3a11bcb",
+    "02_soc_v851s.kicad_sch": "8b69ad10781b9afe286dee9aca117b3b822066b24290bfa4891611cf0a78b001",
+    "03_sensors.kicad_sch": "b1ef2fca652e4e89be3e5bdc40892532497808e99d6a183f6fac6629570439d3",
+    "04_interfaces.kicad_sch": "b92ebcd4979dc52db41a1172ed669bc00c6a962b98792707ee54fcb869e6a3f4",
+    "sameat.kicad_sym": "1cc1e402ab7dc1b6df4c17eae390bb1e231323b76b37862fe7e6871a139213b7",
+    "sameat.pretty/SN74LVC2G17_DBV6.kicad_mod": "17148f8027eb016ea5632bb4caebd4f622222e76565d226cef897b5cc157851d",
+    "power_requirements.json": "46e53ea338ea0c7c3007c738d6ad3cb4787bbf83542095fa953f547b412cfb5a",
+    "tools/build_candidate_schematic.py": "01cd1dc8b91f3b80177f3d9b0a53dd82b481d20ac2bd7d6091a6487ea2926e42",
+    "tools/check_wake_domain.py": "7b7b51eda8619f0760a38ae7376327f2ebe33d0dc87d11b733cba2c2eb79c3d9",
+    "tools/test_wake_domain.py": "67461f6aa8cd9fd78b02acf3037c7e61071903ba25d20df33d5a765d8c97682e"
+  },
+  "reports_sha256": {
+    "change_audit.json": "30fc4f535a3a686563a8d03be61e6f58bd064f74f5940871e5eb6130b1369869",
+    "drc.json": "5b38f61bb9572b1cbaea266caaf562d3dc2a6c9fe1750069419e0301c5207cdd",
+    "erc.json": "612b8fd92d40b8366567af226bff9c6b53cbe48aac5eaa78d1a0aa26a465df8e",
+    "negative_checks.json": "36a07fdd5c4e6b9ae69fcfdf5ed5b204b12deb37ee9a3aed5d11e5ddc6a1030f",
+    "netlist.xml": "b12131275db083eee44a34f4aa843880794f92204c0bda2ccecd943c48d3687a",
+    "power_audit.json": "c75d305e40f258fafc55369c378dcd776390ebe0708ad49b0f6c89fda1761146",
+    "usb_audit.json": "85a94c65934e31812c6075c192b49614efe1a7ad0e3fdcacb1813f0ced714111",
+    "via_in_pad_audit.json": "2e50668e3d8f86998d7ba1318a475fc633bf47d7d1de8d94e05eb2d9c4d4b6c9",
+    "wake_domain_audit.json": "8832e320c76dbd06da63715d5d16da2b039e78e95119ea4c6cc45761e390e6a3"
+  },
+  "sources": [
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf",
+      "document": "SCES381N; DBV0006A 4214840/G 08/2024",
+      "download_sha256": "624dbe55679d2fed4123b0d7708cd0d295efcc78de395e71a0caf5cd13cbc216"
+    },
+    {
+      "url": "https://jlcpcb.com/partdetail/TexasInstruments-SN74LVC2G17DBVR/C10429",
+      "mpn": "SN74LVC2G17DBVR",
+      "manufacturer": "Texas Instruments",
+      "lcsc": "C10429"
+    }
+  ],
+  "native_commands": [
+    "kicad-cli sch erc --format json --severity-all --exit-code-violations -o erc.json ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_sch",
+    "kicad-cli sch export netlist --format kicadxml -o netlist.xml ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_sch",
+    "kicad-cli pcb drc --format json --severity-all --schematic-parity --all-track-errors --refill-zones --save-board --exit-code-violations -o drc.json ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pcb"
+  ],
+  "hardware_verified": false,
+  "fabrication_released": false
+}

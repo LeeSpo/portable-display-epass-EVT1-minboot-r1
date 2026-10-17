@@ -152,7 +152,7 @@ class Router:
         if not (EDGE + VIA_D / 2 <= y <= H - EDGE - VIA_D / 2):
             return False
         for vx, vy in self.via_xy:
-            if math.hypot(x - vx, y - vy) < 0.85:
+            if math.hypot(x - vx, y - vy) < 0.73:
                 return False
         geom = Point((x, y)).buffer(VIA_D / 2, quad_segs=16)
         hole = Point((x, y)).buffer(VIA_DRILL / 2, quad_segs=16)

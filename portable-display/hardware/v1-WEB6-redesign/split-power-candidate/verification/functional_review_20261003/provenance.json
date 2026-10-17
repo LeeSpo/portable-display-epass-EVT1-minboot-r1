@@ -1,0 +1,57 @@
+{
+  "review_date": "2026-10-03",
+  "timezone": "Asia/Shanghai",
+  "git_head": "54ef488e95b3db740191706c83eb134664398ebf",
+  "kicad_version": "10.0.6",
+  "design_file_hashes": {
+    "ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pcb": "c60d34a61d91977091526055a69a3e2fe428a5c76689d51b27c738f2bd9dcb34",
+    "ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pro": "9f90c2af5a13b3d944e1d2a9065df396c58ad52d29852e59a70e89a9a0a6603b",
+    "ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_sch": "323ff6d3c5c6a091c7e7d2b96fc3228c0807800437f04ce0f7a209a940f1a6b0",
+    "01_power.kicad_sch": "7c5e72a96428062c68d69b0d12cbeb1c8392993526a24bae0c0a8a390e609277",
+    "02_soc_v851s.kicad_sch": "4fffc77500915e6335933a9a6f3ed5bbd090ea9ea37a4751c26ddbed6e325ed3",
+    "03_sensors.kicad_sch": "bce9b996fe75db15eec9b734d249f1ef5f2001d06a4e4e3d0c45a575488fda0d",
+    "04_interfaces.kicad_sch": "3ee53de46fc80991c0faa8fc5c9e314b9ffaa68f97bc0f0713dae53ff0989d57",
+    "power_requirements.json": "7ff1f89f2d05f933e764ba1d5f00ae9154eb3428129c7f9fead5a6f622bdbe7a",
+    "sameat.kicad_sym": "2a407010e43183fdfd8521981bd448e8f84cf05689fc595d4351250706b90b68"
+  },
+  "native_checks": {
+    "drc_refill_zones": true,
+    "drc_save_board": false,
+    "drc_schematic_parity": true,
+    "drc_all_track_errors": true,
+    "severity_all": true
+  },
+  "checks": [
+    "Native schematic export kicadxml",
+    "Native ERC",
+    "Native DRC with in-memory zone refill",
+    "check_power_contract.py",
+    "check_usb_routing.py",
+    "All non-NC saved copper pad connectivity",
+    "Workbook pinmux cross-check",
+    "Manufacturer manual review and off-state DC counterexample"
+  ],
+  "external_sources_downloaded_for_review": [
+    {
+      "url": "https://bbs.aw-ol.com/assets/uploads/files/1664112156052-c55b9458-9847-4731-873e-c98d352589ea-v851s-amp-v851se_datasheet_v0.1.pdf",
+      "sha256": "586bac6f437194cf1dd3c8c8bd8bcc72f2b76e6e7cb74cd418ea7461d8186738"
+    },
+    {
+      "url": "https://bbs.aw-ol.com/assets/uploads/files/1663052776026-7acd717f-af1c-47d5-8177-89b930ec2085-v851s_per2_qfn88_axp2102_v12_20220705.pdf",
+      "sha256": "0267decc4fc82bb98af8233fce843c5527c39a73157b95142b611f06b1110a60"
+    },
+    {
+      "url": "https://www.ti.com/lit/gpn/sn74lvc1g123",
+      "sha256": "7248ef0ff62af4d2da172bb2900f0f1f136a6ae90109a6485228e01269fa1c1d"
+    },
+    {
+      "url": "https://www.microcrystal.com/fileadmin/Media/Products/RTC/App.Manual/RV-3028-C7_App-Manual.pdf",
+      "sha256": "146f8af2b28c162a84b1d9395a51a363ac239f5ef8b9162122f6ca25773160b9"
+    }
+  ],
+  "design_files_changed": false,
+  "hardware_verified": false,
+  "firmware_verified": false,
+  "fabrication_released": false,
+  "review": "REVIEW_CN.md"
+}

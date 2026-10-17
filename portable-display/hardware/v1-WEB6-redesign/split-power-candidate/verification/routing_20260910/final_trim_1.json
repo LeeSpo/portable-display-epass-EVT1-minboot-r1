@@ -1,0 +1,85 @@
+{
+  "centered": [],
+  "removed": [
+    {
+      "uuid": "6d052aae-eccb-4622-8df9-e5529437243e",
+      "net": "WAKE_REQ_N",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "9c0fdcbe-6440-4e7a-a9f7-7bb3886687d0",
+      "net": "WAKE_REQ_N",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "a4d992de-6c85-5ace-a8a3-3a5464da5307",
+      "net": "DRAM_1V5",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "3bf363df-79fb-5a05-8b41-4d014f47f9af",
+      "net": "LCD_3V3",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "ba972a70-b86f-540d-977e-bc0bc4fa159d",
+      "net": "VSYS",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "f91e96b6-bd8d-548c-92b9-78a3dc8b9a9d",
+      "net": "VSYS",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "f3127181-b284-58e1-b3c1-075c2ff716ce",
+      "net": "USB_CC1",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "32896dba-14b0-5ecb-bbdf-7fe9bdec1c77",
+      "net": "USB_CC2",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "b2eed1c7-dab5-567f-b725-5a902cc69068",
+      "net": "USB_CC2",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "b99f22a0-ffdd-55ab-8782-2328050c833a",
+      "net": "USB_CC2",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "ba46bf7c-7e1c-518c-b3d9-8df9bf713e06",
+      "net": "USB_CC2",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "d18ecff5-9ba9-5ba9-8376-6342918bcc44",
+      "net": "USB_CC2",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "a7278273-8100-46f1-8b7f-5776c64564e9",
+      "net": "BOOT0",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "46a7582a-f00a-5daa-998e-fe6814b92e2a",
+      "net": "LCD_EN",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "6c12e456-2856-556f-bcb0-987767a4b92f",
+      "net": "I2C0_SDA",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "80be5a59-67ef-4b03-93ba-b5abdca6e878",
+      "net": "I2C0_SDA",
+      "reason": "track_dangling"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "pads": [
+      "J4.30",
+      "J4.31",
+      "J4.32",
+      "J4.33",
+      "J4.34",
+      "J4.37",
+      "J4.38"
+    ],
+    "ok": true,
+    "via": [
+      18.1,
+      40.45
+    ]
+  },
+  {
+    "pads": [
+      "D7.2",
+      "D6.2"
+    ],
+    "ok": true,
+    "via": [
+      27.6,
+      33.6
+    ]
+  },
+  {
+    "ok": false,
+    "reason": "no path",
+    "visited": 927,
+    "reachable_via": 0,
+    "pads": [
+      "J4.1",
+      "J4.2"
+    ]
+  },
+  {
+    "pads": [
+      "C14.2",
+      "D9.2"
+    ],
+    "ok": true,
+    "via": [
+      25.35,
+      33.4
+    ]
+  },
+  {
+    "ok": false,
+    "reason": "no path",
+    "visited": 180,
+    "reachable_via": 0,
+    "pads": [
+      "J4.17"
+    ]
+  },
+  {
+    "ok": false,
+    "reason": "no path",
+    "visited": 701,
+    "reachable_via": 0,
+    "pads": [
+      "D10.2"
+    ]
+  }
+]

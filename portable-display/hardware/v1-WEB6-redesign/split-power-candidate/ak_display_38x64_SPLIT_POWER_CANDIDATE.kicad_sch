@@ -1,0 +1,197 @@
+(kicad_sch
+	(version 20250114)
+	(generator "sameat-evt1-r1")
+	(generator_version "r1")
+	(uuid "b7613259-1701-5a92-a5a3-2c5d87fd6070")
+	(paper "A4")
+	(title_block
+		(title "38x64 split-power candidate - connectivity schematic")
+		(date "2026-10-05")
+		(rev "FEL1")
+		(company "Sameat")
+		(comment 1 "Power configuration incomplete: C3036461 factory profile not confirmed")
+		(comment 2 "EVT design: not physically validated")
+	)
+	(lib_symbols)
+	(sheet
+		(at 25 35)
+		(size 55 35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width .1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "3a9c699a-b2d8-56bb-bfc4-8024f6aaa3a4")
+		(property "Sheetname" "POWER"
+			(at 25 34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "01_power.kicad_sch"
+			(at 25 71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 100 35)
+		(size 55 35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width .1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "d78b573f-d2db-5b8f-9afa-82bc3cda0686")
+		(property "Sheetname" "SOC"
+			(at 100 34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "02_soc_v851s.kicad_sch"
+			(at 100 71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25 95)
+		(size 55 35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width .1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "51072dd9-1bb1-5c78-ad53-b3e9d0a07bc6")
+		(property "Sheetname" "SENSORS"
+			(at 25 94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "03_sensors.kicad_sch"
+			(at 25 131 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 100 95)
+		(size 55 35)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width .1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "7309f07d-a051-57ea-bb97-60dcbb9d92b6")
+		(property "Sheetname" "INTERFACES"
+			(at 100 94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "04_interfaces.kicad_sch"
+			(at 100 131 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070"
+					(page "5")
+				)
+			)
+		)
+	)
+	(text "PCB connectivity reconstructed from the current candidate.\nPower targets are requirements, NOT measured/default outputs.\nRead POWER_REVIEW_CN.md before ordering PCBA.\nTF default ON: PH12 low or Hi-Z = ON; high = OFF.\nDisplay RESET = PA8; TE = PA9; both share the 1V8 domain.\nWake timer: approx 3 s nominal; measure 2.2-3.8 s.\nUSB routed as a pair; see USB_ROUTING_REPAIR_CN.md.\nUSB impedance / MIPI / display power still require validation."
+		(exclude_from_sim no)
+		(at 25 150 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a8eb6925-4225-5561-976b-bf9dfdeb8dbf")
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

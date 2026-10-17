@@ -1,0 +1,10 @@
+[
+  {
+    "ok": false,
+    "reason": "no path",
+    "visited": 2320,
+    "reachable_via": 64,
+    "net": "SD_CMD",
+    "seconds": 1.51
+  }
+]

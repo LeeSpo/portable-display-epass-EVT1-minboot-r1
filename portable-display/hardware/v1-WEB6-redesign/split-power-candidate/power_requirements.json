@@ -1,0 +1,651 @@
+{
+  "schema_version": 1,
+  "scope": "Static power wiring and procurement requirements, not verified OTP or measurements",
+  "platform": "JLCPCB/LCSC",
+  "part": "AXP2101",
+  "part_number": "C3036461",
+  "factory_configuration_verified": false,
+  "expected_pins": {
+    "U1": {
+      "2": "VREF",
+      "3": "GND",
+      "4": "CORE_0V93_PMIC",
+      "5": "LX_CORE",
+      "6": "VSYS",
+      "7": "VSYS",
+      "8": "LX_DRAM",
+      "9": "DRAM_1V5_PMIC",
+      "13": "3V3_PMIC",
+      "17": "3V3_PMIC",
+      "18": "1V8_PMIC",
+      "21": "3V3_PMIC",
+      "22": "LX_3V3",
+      "23": "VSYS",
+      "24": "VSYS",
+      "25": "NC",
+      "26": "NC",
+      "27": "PMIC_BACKUP",
+      "28": "RTC_3V3",
+      "29": "NC",
+      "30": "PWRON_N",
+      "31": "BAT_NTC",
+      "32": "NC",
+      "33": "VBAT",
+      "34": "VSYS",
+      "35": "NC",
+      "36": "VMID",
+      "37": "VBUS",
+      "38": "PMIC_IRQ_N",
+      "39": "PMIC_SDA",
+      "40": "PMIC_SCL",
+      "41": "GND"
+    },
+    "U2": {
+      "5": "3V3_B",
+      "13": "CORE_0V93",
+      "14": "SOC_LDO_1V8",
+      "17": "CORE_0V93",
+      "22": "3V3",
+      "33": "CORE_0V93",
+      "34": "DRAM_1V5",
+      "35": "CORE_0V93",
+      "36": "DRAM_1V5",
+      "37": "1V8",
+      "44": "3V3",
+      "47": "3V3",
+      "48": "SOC_AVCC",
+      "50": "VRA1",
+      "51": "GND",
+      "54": "CORE_0V93",
+      "55": "3V3",
+      "62": "1V8",
+      "75": "CORE_0V93",
+      "78": "3V3_B",
+      "79": "1V8",
+      "88": "CORE_0V93",
+      "89": "GND",
+      "40": "SD_PWR_EN",
+      "2": "NC",
+      "3": "NC",
+      "65": "LCD_TE",
+      "66": "LCD_RST",
+      "45": "WAKE_PULSE_N",
+      "76": "USB_DP",
+      "77": "USB_DM",
+      "24": "RTC_INT_SOC_N",
+      "30": "ACCEL_INT_SOC_N",
+      "56": "FEL_N",
+      "58": "BOOT1",
+      "59": "BOOT0"
+    },
+    "L1": {
+      "1": "LX_3V3",
+      "2": "3V3_PMIC"
+    },
+    "L2": {
+      "1": "LX_CORE",
+      "2": "CORE_0V93_PMIC"
+    },
+    "L3": {
+      "1": "LX_DRAM",
+      "2": "DRAM_1V5_PMIC"
+    },
+    "C38": {
+      "1": "VMID",
+      "2": "GND"
+    },
+    "C34": {
+      "1": "SOC_LDO_1V8",
+      "2": "GND"
+    },
+    "C37": {
+      "1": "SOC_LDO_1V8",
+      "2": "GND"
+    },
+    "C35": {
+      "1": "SOC_AVCC",
+      "2": "GND"
+    },
+    "C10": {
+      "1": "1V8_PMIC",
+      "2": "GND"
+    },
+    "C33": {
+      "1": "RTC_3V3",
+      "2": "GND"
+    },
+    "J2": {
+      "1": "VBAT",
+      "2": "BAT_NTC",
+      "3": "GND"
+    },
+    "R20": {
+      "1": "GND",
+      "2": "SD_PWR_GATE"
+    },
+    "R21": {
+      "1": "SD_PWR_EN",
+      "2": "SD_PWR_GATE"
+    },
+    "Q3": {
+      "1": "SD_PWR_GATE",
+      "2": "3V3_B",
+      "3": "SD_3V3"
+    },
+    "J4": {
+      "11": "LCD_1V8",
+      "15": "LCD_TE",
+      "16": "LCD_RST"
+    },
+    "R29": {
+      "1": "1V8",
+      "2": "LCD_1V8"
+    },
+    "R32": {
+      "1": "LCD_RST",
+      "2": "GND"
+    },
+    "U6": {
+      "1": "WAKE_REQ_N",
+      "2": "RTC_3V3",
+      "3": "RTC_3V3",
+      "4": "GND",
+      "5": "WAKE_PULSE",
+      "6": "WAKE_CEXT",
+      "7": "WAKE_REXT",
+      "8": "RTC_3V3"
+    },
+    "R12": {
+      "1": "RTC_3V3",
+      "2": "WAKE_REXT"
+    },
+    "C23": {
+      "1": "WAKE_REXT",
+      "2": "WAKE_CEXT"
+    },
+    "Q1": {
+      "1": "WAKE_PULSE",
+      "2": "GND",
+      "3": "PWRON_N"
+    },
+    "Q2": {
+      "1": "WAKE_PULSE",
+      "2": "GND",
+      "3": "WAKE_PULSE_N"
+    },
+    "U9": {
+      "1": "USB_DM",
+      "2": "GND",
+      "3": "USB_DP",
+      "4": "USB_DP",
+      "5": "VBUS",
+      "6": "USB_DM"
+    },
+    "J1": {
+      "A6": "USB_DP",
+      "B6": "USB_DP",
+      "A7": "USB_DM",
+      "B7": "USB_DM"
+    },
+    "U11": {
+      "1": "RTC_INT_N",
+      "2": "GND",
+      "3": "ACCEL_INT_N",
+      "4": "ACCEL_INT_SOC_N",
+      "5": "3V3",
+      "6": "RTC_INT_SOC_N"
+    },
+    "C52": {
+      "1": "3V3",
+      "2": "GND"
+    },
+    "R17": {
+      "1": "RTC_3V3",
+      "2": "RTC_INT_N"
+    },
+    "R18": {
+      "1": "RTC_3V3",
+      "2": "ACCEL_INT_N"
+    },
+    "R11": {
+      "1": "RTC_3V3",
+      "2": "WAKE_REQ_N"
+    },
+    "U4": {
+      "2": "RTC_3V3",
+      "9": "RTC_3V3",
+      "10": "RTC_3V3",
+      "12": "ACCEL_INT_N"
+    },
+    "U5": {
+      "2": "RTC_INT_N",
+      "7": "RTC_3V3"
+    },
+    "D2": {
+      "1": "RTC_INT_N",
+      "2": "WAKE_REQ_N"
+    },
+    "D3": {
+      "1": "ACCEL_INT_N",
+      "2": "WAKE_REQ_N"
+    },
+    "SW6": {
+      "1": "FEL_KEY_N",
+      "2": "FEL_KEY_N",
+      "3": "GND"
+    },
+    "J3": {
+      "1": "GND",
+      "7": "FEL_KEY_N"
+    },
+    "R10": {
+      "1": "3V3",
+      "2": "BOOT0"
+    },
+    "R28": {
+      "1": "3V3",
+      "2": "BOOT1"
+    },
+    "R33": {
+      "1": "FEL_KEY_N",
+      "2": "FEL_N"
+    },
+    "R34": {
+      "1": "3V3",
+      "2": "FEL_N"
+    },
+    "U12": {
+      "1": "SD_DET",
+      "2": "SD_CMD",
+      "3": "GND",
+      "4": "SD_D3",
+      "5": "SD_D2",
+      "6": "SD_D2",
+      "7": "SD_D3",
+      "8": "GND",
+      "9": "SD_CMD",
+      "10": "SD_DET"
+    },
+    "U13": {
+      "2": "SD_D1",
+      "3": "GND",
+      "4": "SD_D0",
+      "5": "SD_CLK",
+      "6": "SD_CLK",
+      "7": "SD_D0",
+      "8": "GND",
+      "9": "SD_D1"
+    },
+    "C57": {
+      "1": "GND",
+      "2": "3V3"
+    },
+    "U10": {
+      "11": "3V3",
+      "12": "3V3",
+      "7": "LCD_EN"
+    },
+    "L5": {
+      "1": "3V3"
+    },
+    "R36": {
+      "1": "CORE_0V93",
+      "2": "CORE_0V93_PMIC"
+    },
+    "R37": {
+      "1": "DRAM_1V5_PMIC",
+      "2": "DRAM_1V5"
+    },
+    "R38": {
+      "1": "3V3_PMIC",
+      "2": "3V3_B"
+    },
+    "R39": {
+      "1": "3V3_PMIC",
+      "2": "3V3"
+    },
+    "R40": {
+      "1": "1V8_PMIC",
+      "2": "1V8"
+    }
+  },
+  "rail_requirements": [
+    {
+      "net": "3V3",
+      "regulator": "DCDC1",
+      "target_v": 3.3,
+      "enabled_before_cpu_boot_required": true,
+      "voltage_register": "0x82",
+      "mask": "0x1f",
+      "target_code": "0x12",
+      "observed_factory_value": null
+    },
+    {
+      "net": "CORE_0V93",
+      "regulator": "DCDC3",
+      "target_v": 0.93,
+      "enabled_before_cpu_boot_required": true,
+      "voltage_register": "0x84",
+      "mask": "0x7f",
+      "target_code": "0x2b",
+      "observed_factory_value": null
+    },
+    {
+      "net": "DRAM_1V5",
+      "regulator": "DCDC4",
+      "target_v": 1.5,
+      "enabled_before_cpu_boot_required": true,
+      "voltage_register": "0x85",
+      "mask": "0x7f",
+      "target_code": "0x55",
+      "observed_factory_value": null
+    },
+    {
+      "net": "1V8",
+      "regulator": "ALDO1",
+      "target_v": 1.8,
+      "enabled_before_cpu_boot_required": true,
+      "voltage_register": "0x92",
+      "mask": "0x1f",
+      "target_code": "0x0d",
+      "observed_factory_value": null
+    }
+  ],
+  "rtc_requirement": {
+    "net": "RTC_3V3",
+    "target_v": 3.3,
+    "enabled_during_pmic_off_required": true,
+    "observed_factory_value": null
+  },
+  "unused_dcdc_default_disabled": [
+    "DCDC2",
+    "DCDC5"
+  ],
+  "sequence_requirements": [
+    "DCDC1 3V3 starts first",
+    "Core ramp starts at least 1 ms after internal LDOA/PLL stable, conservative reading of V851S section 2.3.5",
+    "Internal reset timing >=8 ms relative to core as shown in Figure 2-2; not an external PH0 reset pin"
+  ],
+  "evidence_document": "POWER_REVIEW_CN.md",
+  "expected_values": {
+    "R20": "10k",
+    "R21": "100",
+    "Q3": "AO3401A",
+    "R29": "0R",
+    "R32": "10k",
+    "R12": "910k",
+    "C23": "3.3u",
+    "U6": "SN74LVC1G123DCTR",
+    "R11": "10k",
+    "R17": "10k",
+    "R18": "10k",
+    "U11": "SN74LVC2G17DBVR",
+    "C52": "100n",
+    "R10": "10k",
+    "R28": "10k",
+    "R33": "1k",
+    "R34": "10k",
+    "R35": "10k",
+    "C53": "1u",
+    "C54": "100n"
+  },
+  "tf_control_requirement": {
+    "gpio": "U2 PH12 / pin 40 / SD_PWR_EN",
+    "high_impedance": "ON when 3V3 is valid",
+    "low": "ON",
+    "high": "OFF",
+    "hardware_verified": false,
+    "evidence_document": "TF_POWER_REPAIR_CN.md"
+  },
+  "required_fitted": [
+    "Q3",
+    "R20",
+    "R21",
+    "R29",
+    "R32",
+    "R12",
+    "C23",
+    "U6",
+    "Q1",
+    "Q2",
+    "R11",
+    "R17",
+    "R18",
+    "D2",
+    "D3",
+    "U11",
+    "C52",
+    "R10",
+    "R28",
+    "R33",
+    "R34",
+    "SW6",
+    "J3",
+    "R35",
+    "C53",
+    "C54",
+    "J2"
+  ],
+  "display_io_requirement": {
+    "reset_gpio": "PA8",
+    "reset_pin": "U2.66",
+    "reset_active_level": "low",
+    "reset_default": "low via R32 10k to GND",
+    "te_gpio": "PA9 / PA-EINT9",
+    "te_pin": "U2.65",
+    "common_supply_net": "1V8",
+    "panel_feed": "R29 populated 0R to LCD_1V8",
+    "required_operating_range_v": [
+      1.7,
+      1.95
+    ],
+    "firmware_pin_migration_required": true,
+    "hardware_verified": false,
+    "evidence_document": "DISPLAY_IO_REPAIR_CN.md"
+  },
+  "expected_component_properties": {
+    "R12": {
+      "MPN": "AECR0402F910KK9",
+      "LCSC": "C352384",
+      "Footprint": "Sameat:0402"
+    },
+    "C23": {
+      "MPN": "TCC0805X7R335K250FT",
+      "LCSC": "C7393948",
+      "Footprint": "Sameat:C_0805_2012Metric"
+    },
+    "U11": {
+      "MPN": "SN74LVC2G17DBVR",
+      "LCSC": "C10429",
+      "Footprint": "Sameat:SN74LVC2G17_DBV6"
+    },
+    "R33": {
+      "MPN": "0402WGF1001TCE",
+      "LCSC": "C11702",
+      "Footprint": "Sameat:0402"
+    },
+    "R34": {
+      "MPN": "0402WGF1002TCE",
+      "LCSC": "C25744",
+      "Footprint": "Sameat:0402"
+    },
+    "R35": {
+      "MPN": "0402WGF1002TCE",
+      "LCSC": "C25744",
+      "Footprint": "Sameat:0402"
+    },
+    "C53": {
+      "MPN": "CL05A105KA5NQNC",
+      "LCSC": "C52923",
+      "Footprint": "Sameat:0402"
+    },
+    "C54": {
+      "MPN": "CL05B104KO5NNNC",
+      "LCSC": "C1525",
+      "Footprint": "Sameat:0402"
+    },
+    "J2": {
+      "MPN": "ZX-SH1.0-3PWT",
+      "LCSC": "C7430445",
+      "Footprint": "Sameat:SH1.0_3P_RA"
+    },
+    "D13": {
+      "MPN": "ESDLC5V0LB",
+      "LCSC": "C20168172",
+      "Footprint": "Sameat:DFN1006-2"
+    },
+    "D14": {
+      "MPN": "ESDLC5V0LB",
+      "LCSC": "C20168172",
+      "Footprint": "Sameat:DFN1006-2"
+    },
+    "U12": {
+      "MPN": "TPD4E05U06DQAR",
+      "LCSC": "C138714",
+      "Footprint": "Sameat:TPD4E05U06_DQA"
+    },
+    "U13": {
+      "MPN": "TPD4E05U06DQAR",
+      "LCSC": "C138714",
+      "Footprint": "Sameat:TPD4E05U06_DQA"
+    },
+    "J5": {
+      "MPN": "XKTF-0803-0",
+      "LCSC": "C381083",
+      "Footprint": "Sameat:XKTF-0803-0"
+    },
+    "C34": {
+      "MPN": "CL05A225MQ5NSNC",
+      "LCSC": "C12530",
+      "Footprint": "Sameat:0402"
+    },
+    "C57": {
+      "MPN": "CL05B104KO5NNNC",
+      "LCSC": "C1525",
+      "Footprint": "Sameat:0402"
+    },
+    "C59": {
+      "MPN": "CL05B104KO5NNNC",
+      "LCSC": "C1525",
+      "Footprint": "Sameat:0402"
+    },
+    "C46": {
+      "MPN": "CL05A106MQ5NUNC",
+      "LCSC": "C15525",
+      "Footprint": "Sameat:0402"
+    },
+    "C47": {
+      "MPN": "CL05A106MQ5NUNC",
+      "LCSC": "C15525",
+      "Footprint": "Sameat:0402"
+    },
+    "R36": {
+      "MPN": "0402WGF0000TCE",
+      "LCSC": "C17168",
+      "Footprint": "Sameat:0402"
+    },
+    "R37": {
+      "MPN": "0402WGF0000TCE",
+      "LCSC": "C17168",
+      "Footprint": "Sameat:0402"
+    },
+    "R38": {
+      "MPN": "0402WGF0000TCE",
+      "LCSC": "C17168",
+      "Footprint": "Sameat:0402"
+    },
+    "R39": {
+      "MPN": "0402WGF0000TCE",
+      "LCSC": "C17168",
+      "Footprint": "Sameat:0402"
+    },
+    "R40": {
+      "MPN": "0402WGF0000TCE",
+      "LCSC": "C17168",
+      "Footprint": "Sameat:0402"
+    },
+    "C60": {
+      "MPN": "CL05B104KO5NNNC",
+      "LCSC": "C1525",
+      "Footprint": "Sameat:0402"
+    },
+    "C62": {
+      "MPN": "CL05B104KO5NNNC",
+      "LCSC": "C1525",
+      "Footprint": "Sameat:0402"
+    }
+  },
+  "wake_pulse_requirement": {
+    "resistance_ohm": 910000,
+    "resistance_tolerance": 0.01,
+    "capacitance_f": 3.3e-06,
+    "capacitance_tolerance": 0.1,
+    "nominal_k_assumption": 1.0,
+    "nominal_pulse_s": 3.003,
+    "pmic_onlevel_options_s": [
+      0.128,
+      0.512,
+      1.0,
+      2.0
+    ],
+    "pmic_minimum_offlevel_s": 4.0,
+    "measured_acceptance_window_s": [
+      2.2,
+      3.8
+    ],
+    "pmic_pin_mode_required": "PWRON, not customized EN",
+    "rtc_supply_required_v": [
+      3.0,
+      3.6
+    ],
+    "trigger_policy": "Single falling edge; use latched active-low interrupts and prevent repeated edges until pulse ends",
+    "worst_case_timing_guaranteed": false,
+    "hardware_verified": false,
+    "evidence_document": "WAKE_PULSE_REPAIR_CN.md"
+  },
+  "wake_domain_requirement": {
+    "always_on_supply": "RTC_3V3",
+    "switched_supply": "3V3",
+    "buffer": "TI SN74LVC2G17DBVR (DBV6); partial power-down Ioff; inputs tolerate voltage at VCC=0",
+    "soc_inputs": {
+      "PE7": "RTC_INT_SOC_N",
+      "PE6": "ACCEL_INT_SOC_N"
+    },
+    "wake_sources": {
+      "RV3028_INT": "RTC_INT_N",
+      "LIS2DW12_INT1": "ACCEL_INT_N"
+    },
+    "source_pullups_ohm": 10000,
+    "buffer_i_off_max_a": 1e-05,
+    "buffer_input_leakage_max_a": 5e-06,
+    "source_configuration_required": "active-low latched; LIS2DW12 open-drain; clear stale events and require WAKE_REQ_N high before shutdown",
+    "mask_soc_interrupts_during_supply_ramp": true,
+    "hardware_verified": false,
+    "evidence_document": "WAKE_DOMAIN_REPAIR_CN.md"
+  },
+  "fel_recovery_requirement": {
+    "cpu_pin": "U2.56 / PC1 / SPI0-CS0",
+    "key_net": "FEL_KEY_N",
+    "cpu_net": "FEL_N",
+    "series_resistance_ohm": 1000,
+    "pullup_resistance_ohm": 10000,
+    "resistance_tolerance": 0.01,
+    "supply": "switched 3V3 / VCC-PC",
+    "default_boot_select": "11; PC3=1 / PC2=1",
+    "assertion": "Hold SW6 or pull J3.7 LOW before cold power-on; release after USB enumeration",
+    "fixture": "Open-drain LOW or release, no independent pull-up; share J3.1 ground",
+    "firmware": "Reserve PC1 for FEL; do not configure as an output or SPI0 CS",
+    "brom_flow": "Mandatory upgrade: UART handshake then USB after timeout",
+    "hardware_verified": false,
+    "evidence_document": "FEL_REPAIR_CN.md"
+  },
+  "lcd_en_default_requirement": {
+    "net": "LCD_EN",
+    "pulldown": "R35 10k to GND",
+    "r31": "0R LCD_SWIRE<->LCD_EN bridge, DNP (not a pulldown)",
+    "default": "U8 OFF / U10 CTRL low while PD21 is Hi-Z",
+    "sizing": "10uA worst-case GPIO leakage -> <=0.1V",
+    "hardware_verified": false,
+    "evidence_document": "PREFLIGHT_DECISIONS_CN.md"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kicad_version": "10.0.6",
+  "board_sha256": "05af2af6138012e6b749530d8bcedb3d7fa88d8564eebb4ffb727f2124159fbb",
+  "before_sha256": "4e20633abbfaa8e60ab0ce2a67993ccdac4fafc891b56ac3ff77a26b16965893",
+  "erc_options": [
+    "--severity-all",
+    "--format json"
+  ],
+  "project_sha256": "9f90c2af5a13b3d944e1d2a9065df396c58ad52d29852e59a70e89a9a0a6603b",
+  "schematic_sha256": {
+    "01_power.kicad_sch": "70965dc4e505c7d1b9f9916567d016e8dea96146846728fbcabb8a5b1da8eac2",
+    "02_soc_v851s.kicad_sch": "ef198bef7cf2b49653bc30dacdb343ad743d8694de9d0f2c0316f2990aba8ddb",
+    "03_sensors.kicad_sch": "f4d3e988c0b0a23c407926c20a0339bd084b793c3d14ce01cecd700a2134fe69",
+    "04_interfaces.kicad_sch": "0328923d80b667b6b6922d696d9ebdf0f98bff3af6b585b1c1ccf467f2c5a323",
+    "ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_sch": "c6802c8987ca3af1b234228ea2345512c84fe313b797c90b0e8fe40e916383ba"
+  },
+  "fabrication_released": false,
+  "refill_and_save_options": [
+    "--refill-zones",
+    "--save-board",
+    "--schematic-parity",
+    "--severity-all",
+    "--format json"
+  ],
+  "final_drc_options": [
+    "--schematic-parity",
+    "--severity-all",
+    "--format json"
+  ],
+  "note": "Zones were refilled and saved once. Final DRC verified the saved board after shortening the schematic revision label."
+}

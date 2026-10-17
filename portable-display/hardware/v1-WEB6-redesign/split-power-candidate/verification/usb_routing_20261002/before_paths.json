@@ -1,0 +1,59 @@
+{
+  "USB_DP": {
+    "total_planar_copper_mm": 43.527725890956106,
+    "vias": 0,
+    "layers": [
+      "F.Cu"
+    ],
+    "paths": {
+      "J1.A6": {
+        "planar_mm": 43.4277258909561,
+        "via_transitions": 0,
+        "with_nominal_board_thickness_mm": 43.4277258909561
+      },
+      "J1.B6": {
+        "planar_mm": 40.66772589095609,
+        "via_transitions": 0,
+        "with_nominal_board_thickness_mm": 40.66772589095609
+      },
+      "U9.1": {
+        "planar_mm": 34.522725890956096,
+        "via_transitions": 0,
+        "with_nominal_board_thickness_mm": 34.522725890956096
+      }
+    }
+  },
+  "USB_DM": {
+    "total_planar_copper_mm": 45.65443188759647,
+    "vias": 0,
+    "layers": [
+      "F.Cu"
+    ],
+    "paths": {
+      "J1.A7": {
+        "planar_mm": 44.534431887596476,
+        "via_transitions": 0,
+        "with_nominal_board_thickness_mm": 44.534431887596476
+      },
+      "J1.B7": {
+        "planar_mm": 43.77396282536641,
+        "via_transitions": 0,
+        "with_nominal_board_thickness_mm": 43.77396282536641
+      },
+      "U9.3": {
+        "planar_mm": 37.48294731452728,
+        "via_transitions": 0,
+        "with_nominal_board_thickness_mm": 37.48294731452728
+      }
+    }
+  },
+  "nominal_board_thickness_mm": 1.0,
+  "orientation_skew_mm": {
+    "A": 1.106705996640379,
+    "B": 3.106236934410319
+  },
+  "trunk_coupling_fraction_within_0_270mm": {
+    "USB_DP": 0.009264620729588882,
+    "USB_DM": 0.0096
+  }
+}

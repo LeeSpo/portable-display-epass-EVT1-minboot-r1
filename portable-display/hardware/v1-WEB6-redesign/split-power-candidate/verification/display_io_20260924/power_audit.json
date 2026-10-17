@@ -1,0 +1,31 @@
+{
+  "static_checks_passed": true,
+  "board_sha256": "3675f6d3802411b48f3dcaef5d8873ba77279e64ff1c9458de9d3306261c34f8",
+  "electrical_components": 116,
+  "unique_numbered_pads": 491,
+  "power_pins_checked": 95,
+  "component_values_checked": 116,
+  "independent_value_requirements": {
+    "R20": "10k",
+    "R21": "100",
+    "Q3": "AO3401A",
+    "R29": "0R",
+    "R32": "10k"
+  },
+  "required_fitted": [
+    "Q3",
+    "R20",
+    "R21",
+    "R29",
+    "R32"
+  ],
+  "native_findings": {
+    "erc.json": 0,
+    "drc.json": 0
+  },
+  "problems": [],
+  "factory_configuration_verified": false,
+  "cold_start_verified": false,
+  "fabrication_released": false,
+  "remaining_blocker": "C3036461 factory voltage/enable/sequence not specified by available platform information; no physical measurements"
+}

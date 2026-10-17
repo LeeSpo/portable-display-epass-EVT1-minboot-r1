@@ -1,0 +1,20 @@
+{
+  "centered": [],
+  "removed": [
+    {
+      "uuid": "968e8dee-98a9-541a-a730-8476ff7614ee",
+      "net": "CORE_0V93",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "f5622a62-9171-5425-9ea4-fe5fca4f4b04",
+      "net": "CORE_0V93",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "37ccc137-3c0c-5e23-b15e-81a2ad7f2983",
+      "net": "CHGLED_N",
+      "reason": "track_dangling"
+    }
+  ]
+}

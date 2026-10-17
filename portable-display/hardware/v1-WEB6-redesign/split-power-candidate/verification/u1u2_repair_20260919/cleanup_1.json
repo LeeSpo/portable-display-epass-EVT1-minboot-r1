@@ -1,0 +1,80 @@
+{
+  "centered": [],
+  "removed": [
+    {
+      "uuid": "91859cc3-4ee1-5e03-add8-69af67ae4333",
+      "net": "DRAM_1V5",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "c2a4b679-45e1-5211-be22-650ea4ea1dce",
+      "net": "DRAM_1V5",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "14033dd4-afb9-57e6-880a-63b785818275",
+      "net": "CORE_0V93",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "162990ba-3fc8-5082-ae51-b898e2c41a52",
+      "net": "CORE_0V93",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "c4eeff7b-42fa-52db-b24a-aa95237e5ec7",
+      "net": "CORE_0V93",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "512f233b-22b7-532e-81fa-aee3a006ef9b",
+      "net": "1V8",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "fbd00898-db44-5496-a5e9-db564dea11dd",
+      "net": "3V3",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "83b33413-3db4-58e8-b021-cab957d3f06f",
+      "net": "3V3",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "ab04916b-72a9-5878-b5f3-f27a5d6bff7f",
+      "net": "SD_DET",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "5d720007-1cfa-556d-903c-80ab1036f698",
+      "net": "SD_PWR_EN",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "761bb47c-02b5-5048-99db-e288689170b1",
+      "net": "SD_PWR_EN",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "427f561e-aff4-5200-b269-59251336d9d1",
+      "net": "BOOT0",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "b192367a-86ae-56ef-b276-344a7adf4cfd",
+      "net": "SD_D2",
+      "reason": "via_dangling"
+    },
+    {
+      "uuid": "c7f4063d-74b5-5ada-b2fc-39eea7d9aed7",
+      "net": "CHGLED_N",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "95f3b5d3-e819-5f54-b970-c91aa4030950",
+      "net": "LCD_RST",
+      "reason": "track_dangling"
+    }
+  ]
+}

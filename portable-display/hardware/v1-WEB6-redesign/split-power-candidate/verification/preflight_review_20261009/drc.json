@@ -1,0 +1,314 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-09T21:33:22",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [
+        {
+            "description": "Pad net (FEL_KEY_N) doesn't match net given by schematic (BOOT0)",
+            "items": [
+                {
+                    "description": "PTH pad 7 [FEL_KEY_N] of J3",
+                    "pos": {
+                        "x": 26.175,
+                        "y": 17.5
+                    },
+                    "uuid": "f5bec5e9-4024-505c-8985-9c07c26f5ad9"
+                }
+            ],
+            "severity": "error",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (FEL_KEY_N) doesn't match net given by schematic (BOOT0)",
+            "items": [
+                {
+                    "description": "Pad 1 [FEL_KEY_N] of SW6 on F.Cu",
+                    "pos": {
+                        "x": 1.25,
+                        "y": 56.2
+                    },
+                    "uuid": "a4ee2f60-3bd2-5c70-a7c3-f4ca68249ddd"
+                }
+            ],
+            "severity": "error",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (FEL_KEY_N) doesn't match net given by schematic (BOOT0)",
+            "items": [
+                {
+                    "description": "Pad 2 [FEL_KEY_N] of SW6 on F.Cu",
+                    "pos": {
+                        "x": 3.75,
+                        "y": 56.2
+                    },
+                    "uuid": "b1da7313-8da1-5b34-a3f0-3e3f5a804434"
+                }
+            ],
+            "severity": "error",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Pad net (FEL_N) doesn't match net given by schematic (unconnected-(U2-PC1_SPI0_CS-Pad56))",
+            "items": [
+                {
+                    "description": "Pad 56 [FEL_N] of U2 on F.Cu",
+                    "pos": {
+                        "x": 13.6,
+                        "y": 28.175
+                    },
+                    "uuid": "9b77a396-8a0b-55f6-a609-a6a834b85944"
+                }
+            ],
+            "severity": "error",
+            "type": "net_conflict"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint R33",
+                    "pos": {
+                        "x": 7.4,
+                        "y": 28.85
+                    },
+                    "uuid": "02acea65-5593-5839-a0f4-153a9a36a26c"
+                }
+            ],
+            "severity": "error",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Extra footprint",
+            "items": [
+                {
+                    "description": "Footprint R34",
+                    "pos": {
+                        "x": 7.4,
+                        "y": 27.6
+                    },
+                    "uuid": "bf9a6b3f-e9a2-511f-b5dc-3a4960f0b0f7"
+                }
+            ],
+            "severity": "error",
+            "type": "extra_footprint"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '1.27mm debug pads; pin 7 FEL_KEY_N is open-drain recovery input via R33 to PC1', Schematic: '1.27mm production/debug pads')",
+            "items": [
+                {
+                    "description": "Footprint J3",
+                    "pos": {
+                        "x": 23.0,
+                        "y": 17.5
+                    },
+                    "uuid": "4de80c6e-a03b-5864-8cda-3475f5de9479"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: 'PC2 BOOT0 pull-up; independent of FEL key; default BOOT_SEL=11', Schematic: '')",
+            "items": [
+                {
+                    "description": "Footprint R10",
+                    "pos": {
+                        "x": 6.5,
+                        "y": 25.0
+                    },
+                    "uuid": "ed445e90-ea34-5d9d-869a-a0568d55abc7"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: 'Hold before cold power-on for BROM FEL via R33 and PC1 / U2.56', Schematic: 'Recessed recovery switch; straps PC2 low')",
+            "items": [
+                {
+                    "description": "Footprint SW6",
+                    "pos": {
+                        "x": 2.5,
+                        "y": 54.0
+                    },
+                    "uuid": "9d9b4498-3116-54a4-a830-87069889df3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        }
+    ],
+    "source": "ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [3V3] of R34 on F.Cu",
+                    "pos": {
+                        "x": 6.9,
+                        "y": 27.6
+                    },
+                    "uuid": "62f41120-75b9-5184-b809-31e8b7101228"
+                },
+                {
+                    "description": "Track [3V3] on F.Cu, length 1.5556 mm",
+                    "pos": {
+                        "x": 4.9,
+                        "y": 26.1
+                    },
+                    "uuid": "8c6bb83e-b768-41d7-bc2a-a515504600ac"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [FEL_KEY_N] of R33 on F.Cu",
+                    "pos": {
+                        "x": 6.9,
+                        "y": 28.85
+                    },
+                    "uuid": "91fe8f33-5b79-53af-abae-8b8374ac8728"
+                },
+                {
+                    "description": "Track [FEL_KEY_N] on B.Cu, length 5.7983 mm",
+                    "pos": {
+                        "x": 13.5,
+                        "y": 24.9
+                    },
+                    "uuid": "a7002c3b-7e54-5b8e-b65c-bc668bfbe9b5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Track [FEL_KEY_N] on B.Cu, length 5.7983 mm",
+                    "pos": {
+                        "x": 13.5,
+                        "y": 24.9
+                    },
+                    "uuid": "a7002c3b-7e54-5b8e-b65c-bc668bfbe9b5"
+                },
+                {
+                    "description": "Track [FEL_KEY_N] on F.Cu, length 5.5154 mm",
+                    "pos": {
+                        "x": 6.65,
+                        "y": 33.7
+                    },
+                    "uuid": "6f98287a-6d94-5eb3-966d-c356459f99a6"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [FEL_N] of R34 on F.Cu",
+                    "pos": {
+                        "x": 7.9,
+                        "y": 27.6
+                    },
+                    "uuid": "0430df27-45b2-5050-adea-7f327e98c243"
+                },
+                {
+                    "description": "Pad 2 [FEL_N] of R33 on F.Cu",
+                    "pos": {
+                        "x": 7.9,
+                        "y": 28.85
+                    },
+                    "uuid": "40142efe-d57f-5f55-a425-e4333345ec36"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [FEL_N] of R34 on F.Cu",
+                    "pos": {
+                        "x": 7.9,
+                        "y": 27.6
+                    },
+                    "uuid": "0430df27-45b2-5050-adea-7f327e98c243"
+                },
+                {
+                    "description": "Track [FEL_N] on F.Cu, length 0.7229 mm",
+                    "pos": {
+                        "x": 13.6,
+                        "y": 28.175
+                    },
+                    "uuid": "fc7939dc-e86d-5af9-bafd-fe9cf32426f7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [FEL_KEY_N] on F.Cu, length 5.5154 mm",
+                    "pos": {
+                        "x": 6.65,
+                        "y": 33.7
+                    },
+                    "uuid": "6f98287a-6d94-5eb3-966d-c356459f99a6"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [FEL_KEY_N] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 9.4,
+                        "y": 29.0
+                    },
+                    "uuid": "e14ef0cc-6ab9-5bf8-9761-f1dd86568dc1"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "Via [FEL_N] on F.Cu - B.Cu",
+                    "pos": {
+                        "x": 14.32,
+                        "y": 28.24
+                    },
+                    "uuid": "02da1dfc-fe84-5c4e-996e-19d18ba13d9e"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        }
+    ]
+}

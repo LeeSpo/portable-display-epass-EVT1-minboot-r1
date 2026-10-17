@@ -1,0 +1,41 @@
+{
+  "status": "ROUTED_CANDIDATE_NOT_FAB_READY",
+  "board_mm": [
+    38.0,
+    64.0
+  ],
+  "footprints": 119,
+  "all_front": true,
+  "pad_net_map_matches": true,
+  "track_segments": 3069,
+  "vias": 232,
+  "board_sha256": "60ef897e2e19890fc18e63a858ae8af77d4c7d65d246b18f715be107863620bc",
+  "via_preset_mm": {
+    "diameter": 0.6,
+    "drill": 0.3
+  },
+  "native_kicad_drc_verified_for_this_file": false,
+  "native_drc": null,
+  "courtyard_intersections": [],
+  "courtyard_gaps_below_0p3": [],
+  "different_net_pad_intersections": [],
+  "different_net_pad_gaps_below_0p127": [],
+  "copper_edge_violations": [],
+  "component_reservation_intersections": [],
+  "minimum_courtyard_gap_mm": 0.302076,
+  "minimum_different_net_pad_gap_mm": 0.15,
+  "ground_zones_unfilled": 0,
+  "screw_head_copper_keepouts_provisional_diameter_mm": 5,
+  "verification_basis": "Saved PCB. Courtyards conservatively enclosed by rectangles; oval/rounded pads enclosed by rectangles. Screw-head D5 regions are provisional, not manufacturer dimensions.",
+  "limitations": [
+    "Geometry checks do not establish electrical completion; consult the matching native DRC report",
+    "No synchronized candidate schematic/ERC verification",
+    "0.60/0.30 mm via fanout remains constrained",
+    "HS_IMPEDANCE_TBD and POWER_PROVISIONAL are not solved impedance or ampacity",
+    "No timing/thermal validation",
+    "No FPC fold, card insertion, USB reach, or 3D collision sign-off",
+    "Manufacturer footprint checks are outside this geometry script; see the candidate FOOTPRINT_REVIEW_CN.md for the seven-IC audit",
+    "Minimum gap is courtyard-to-courtyard, NOT lead pitch or via pitch",
+    "Panel supply working point remains unconfirmed"
+  ]
+}

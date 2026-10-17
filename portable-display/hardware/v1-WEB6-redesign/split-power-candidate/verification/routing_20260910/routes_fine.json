@@ -1,0 +1,58 @@
+[
+  {
+    "ok": false,
+    "reason": "no path",
+    "visited": 8355,
+    "reachable_via": 36,
+    "net": "SD_DET",
+    "seconds": 4.52
+  },
+  {
+    "ok": false,
+    "reason": "no path",
+    "visited": 1225,
+    "reachable_via": 0,
+    "net": "SD_D1",
+    "seconds": 4.54
+  },
+  {
+    "ok": false,
+    "reason": "no path",
+    "visited": 8279,
+    "reachable_via": 14,
+    "net": "SD_D2",
+    "seconds": 4.56
+  },
+  {
+    "ok": false,
+    "reason": "no path",
+    "visited": 153,
+    "reachable_via": 0,
+    "net": "SD_CMD",
+    "seconds": 4.55
+  },
+  {
+    "ok": false,
+    "reason": "no path",
+    "visited": 48051,
+    "reachable_via": 5298,
+    "net": "LCD_TE",
+    "seconds": 4.73
+  },
+  {
+    "ok": false,
+    "reason": "no path",
+    "visited": 380391,
+    "reachable_via": 86422,
+    "net": "LCD_RST",
+    "seconds": 6.09
+  },
+  {
+    "ok": false,
+    "reason": "no path",
+    "visited": 115,
+    "reachable_via": 0,
+    "net": "CORE_0V93",
+    "seconds": 4.69
+  }
+]

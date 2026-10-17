@@ -124,20 +124,13 @@ def qfn_pads(count: int, body: float, pitch: float, ep_number: str, ep: float) -
 
 
 def lga12_pads() -> list[Pad]:
-    # LIS2DW12 2.0 x 2.0 mm LGA-12: three pads per side, 0.5 mm pitch.
-    side, pitch, body = 3, 0.5, 2.0
-    span = (side - 1) * pitch
-    edge = body / 2 + 0.15
-    pads: list[Pad] = []
-    for i in range(side):
-        pads.append(Pad(str(i + 1), -edge, -span / 2 + i * pitch, 0.40, 0.22))
-    for i in range(side):
-        pads.append(Pad(str(side + i + 1), -span / 2 + i * pitch, edge, 0.22, 0.40))
-    for i in range(side):
-        pads.append(Pad(str(2 * side + i + 1), edge, span / 2 - i * pitch, 0.40, 0.22))
-    for i in range(side):
-        pads.append(Pad(str(3 * side + i + 1), span / 2 - i * pitch, -edge, 0.22, 0.40))
-    return pads
+    # LIS2DW12 DS11811 Rev9 pp.4,56: TOP view, 4-2-4-2 arrangement.
+    # TN0018: 0.275x0.25 package terminal + 0.1mm in each dimension.
+    coords = [(-.7625,-.75),(-.7625,-.25),(-.7625,.25),(-.7625,.75),
+              (-.25,.7625),(.25,.7625),(.7625,.75),(.7625,.25),
+              (.7625,-.25),(.7625,-.75),(.25,-.7625),(-.25,-.7625)]
+    return [Pad(str(i),x,y,*((.35,.375) if i in [5,6,11,12] else (.375,.35)))
+            for i,(x,y) in enumerate(coords,1)]
 
 
 def usb4105_pads() -> list[Pad]:
@@ -244,7 +237,10 @@ def add(devs: list[Device], ref: str, value: str, fp: str, sheet: str, x: float,
         elif fp == "WSON-12":
             d.pads = dual_pads(12, 2.9, 0.45, (0.70, 0.25)) + [Pad("13", 0, 0, 1.21, 2.02, "rect")]
         elif fp == "LGA-12": d.pads = lga12_pads()
-        elif fp == "RTC-8": d.pads = dual_pads(8, 3.4, .5, (.65,.28))
+        elif fp == "RTC-8":
+            # RV-3028-C7 datasheet v1.3 pp.1-2: PCB top view, pin 1 lower left.
+            d.pads = [Pad(str(i+1), -1.35+.9*i, .6, .5, .8, "rect") for i in range(4)]
+            d.pads += [Pad(str(8-i), -1.35+.9*i, -.6, .5, .8, "rect") for i in range(4)]
         elif fp == "QFN40": d.pads = qfn_pads(40, 5.0, .4, "41", 3.1)
         elif fp == "QFN88": d.pads = qfn_pads(88, 9.0, .35, "89", 5.2)
         elif fp == "FPC20": d.pads = row_pads(20, .5, 1.2)

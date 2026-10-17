@@ -1,0 +1,40 @@
+{
+  "main_backup_sha256": "ab69f13ad7f6dff53e0f39d885e1bd2c449658e385b0224ab556764222fbf5ab",
+  "preserved_positions": [
+    {
+      "ref": "L2",
+      "work_before": [
+        "30.85",
+        "52"
+      ],
+      "main_preserved": [
+        "30.35",
+        "52"
+      ]
+    },
+    {
+      "ref": "C6",
+      "work_before": [
+        "34.3",
+        "52"
+      ],
+      "main_preserved": [
+        "33.8",
+        "52"
+      ]
+    },
+    {
+      "ref": "C7",
+      "work_before": [
+        "34.3",
+        "53.5"
+      ],
+      "main_preserved": [
+        "33.8",
+        "53.5"
+      ]
+    }
+  ],
+  "preserved_track_locks": [],
+  "routing_resolution": "Use newly completed routing while retaining current main placement of L2/C6/C7; original main retained in full backup."
+}

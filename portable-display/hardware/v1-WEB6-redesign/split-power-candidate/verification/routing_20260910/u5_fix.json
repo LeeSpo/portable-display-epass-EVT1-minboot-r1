@@ -1,0 +1,87 @@
+{
+  "source": "https://www.microcrystal.com/fileadmin/Media/Products/RTC/Datasheet/RV-3028-C7.pdf",
+  "source_pages": [
+    1,
+    2
+  ],
+  "component": "U5",
+  "unchanged_pin_nets": {
+    "1": "unconnected-(U5-CLKOUT-Pad1)",
+    "2": "RTC_INT_N",
+    "3": "I2C0_SCL",
+    "4": "I2C0_SDA",
+    "8": "RTC_EVI",
+    "7": "RTC_3V3",
+    "6": "RTC_VBACKUP",
+    "5": "GND"
+  },
+  "local_pad_centres_mm": {
+    "1": [
+      -1.35,
+      0.6
+    ],
+    "2": [
+      -0.45000000000000007,
+      0.6
+    ],
+    "3": [
+      0.44999999999999996,
+      0.6
+    ],
+    "4": [
+      1.35,
+      0.6
+    ],
+    "8": [
+      -1.35,
+      -0.6
+    ],
+    "7": [
+      -0.45000000000000007,
+      -0.6
+    ],
+    "6": [
+      0.44999999999999996,
+      -0.6
+    ],
+    "5": [
+      1.35,
+      -0.6
+    ]
+  },
+  "pad_size_mm": [
+    0.5,
+    0.8
+  ],
+  "pitch_mm": 0.9,
+  "row_centres_mm": 1.2,
+  "removed_copper": [
+    "00ae5a1d-62d4-4929-bec6-b80c547aa145",
+    "128f83f9-3b67-43f6-a128-0725f0c50689",
+    "16a01ba8-2b4d-474d-8a8d-b801dbd5e9b2",
+    "2b367b37-ffb6-497f-82fc-f63ec304a0ec",
+    "3e812235-8e6e-4844-b079-c7b81b6dd6d1",
+    "405caebc-635a-4b27-b596-9e00e0ef6ed5",
+    "443b1715-a3b3-4c97-9b06-18479a388c20",
+    "469f5b8d-570e-40b6-bc4a-4b9df7a02029",
+    "47c87afd-c335-4d72-934b-2ae438404aa7",
+    "4d69b5de-ff06-4b4a-8820-a438b270402e",
+    "58fe996e-ed85-4119-9b62-0d2d34598da8",
+    "70d1ac90-516c-4c68-9ca3-5afa5d475218",
+    "76816e8f-d07e-48c1-99a2-62ed208ef622",
+    "77c998be-a1dd-4d78-9596-b3f8a8df7925",
+    "78c46257-817d-4651-b115-ce48532ef3f2",
+    "9dd3c812-2c76-4c5e-9893-9f8d2cb7a299",
+    "9e59afdf-cc48-4137-b6c0-684ea5407426",
+    "9e942eb8-9747-4001-aa42-6501202456b6",
+    "a7b76c8f-0992-47b8-88ed-6beec8307b94",
+    "a9849aba-2113-4798-b895-a3cf6bd344e1",
+    "d6d1ce82-876f-403a-a295-3e2f6aa775fc",
+    "e047f455-4f5c-4cff-8e22-bd22d0277441",
+    "eb0b9fca-c573-47d1-b6a8-7a5ff9ef3c3a",
+    "ec5cf18c-2c6e-4484-bf27-5f2afbd859d9",
+    "f15ebfee-d598-4075-8827-9cb3127e0588",
+    "f7e87531-7c21-4e19-a955-3df4b6aae73f",
+    "fc5fb333-4484-4b61-b558-2643b493b693"
+  ]
+}

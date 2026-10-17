@@ -1,0 +1,59 @@
+[
+  {
+    "check": "power_audit",
+    "command": [
+      "/tmp/portable-display-preflight-20261009/venv/bin/python",
+      "/tmp/portable-display-preflight-20261009/source/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/tools/check_power_contract.py",
+      "--output",
+      "/Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/verification/preflight_review_20261009/power_audit.json",
+      "--reports",
+      "/Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/verification/preflight_review_20261009"
+    ],
+    "cwd": "/tmp/portable-display-preflight-20261009/source/portable-display/hardware/v1-WEB6-redesign/split-power-candidate",
+    "exit_code": 1
+  },
+  {
+    "check": "usb_audit",
+    "command": [
+      "/tmp/portable-display-preflight-20261009/venv/bin/python",
+      "/tmp/portable-display-preflight-20261009/source/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/tools/check_usb_routing.py",
+      "--output",
+      "/Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/verification/preflight_review_20261009/usb_audit.json"
+    ],
+    "cwd": "/tmp/portable-display-preflight-20261009/source/portable-display/hardware/v1-WEB6-redesign/split-power-candidate",
+    "exit_code": 0
+  },
+  {
+    "check": "wake_audit",
+    "command": [
+      "/tmp/portable-display-preflight-20261009/venv/bin/python",
+      "/tmp/portable-display-preflight-20261009/source/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/tools/check_wake_domain.py",
+      "--output",
+      "/Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/verification/preflight_review_20261009/wake_audit.json"
+    ],
+    "cwd": "/tmp/portable-display-preflight-20261009/source/portable-display/hardware/v1-WEB6-redesign/split-power-candidate",
+    "exit_code": 0
+  },
+  {
+    "check": "wake_faults",
+    "command": [
+      "/tmp/portable-display-preflight-20261009/venv/bin/python",
+      "/tmp/portable-display-preflight-20261009/source/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/tools/test_wake_domain.py",
+      "--output",
+      "/Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/verification/preflight_review_20261009/wake_faults.json"
+    ],
+    "cwd": "/tmp/portable-display-preflight-20261009/source/portable-display/hardware/v1-WEB6-redesign/split-power-candidate",
+    "exit_code": 0
+  },
+  {
+    "check": "fel_audit",
+    "command": [
+      "/tmp/portable-display-preflight-20261009/venv/bin/python",
+      "/tmp/portable-display-preflight-20261009/source/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/tools/check_fel_recovery.py",
+      "--output",
+      "/Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/portable-display/hardware/v1-WEB6-redesign/split-power-candidate/verification/preflight_review_20261009/fel_audit.json"
+    ],
+    "cwd": "/tmp/portable-display-preflight-20261009/source/portable-display/hardware/v1-WEB6-redesign/split-power-candidate",
+    "exit_code": 0
+  }
+]

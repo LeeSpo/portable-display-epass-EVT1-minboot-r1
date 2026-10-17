@@ -1,0 +1,35 @@
+{
+  "centered": [],
+  "removed": [
+    {
+      "uuid": "7df8d2f0-473c-45d9-a365-db5b081c6269",
+      "net": "DRAM_1V5",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "b4daeb7e-fcd9-5795-90a6-195f4eb45837",
+      "net": "VSYS",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "b0c0cd60-fafb-549f-9ac9-1da9a9e92818",
+      "net": "USB_CC1",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "4aebf4b5-1d86-50e9-9cf2-96423c70d5f1",
+      "net": "USB_CC2",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "7e69da61-7189-5ac1-a06f-e5e517f82437",
+      "net": "USB_CC2",
+      "reason": "track_dangling"
+    },
+    {
+      "uuid": "576874c3-a9e7-56dd-8442-0a10a4cebf13",
+      "net": "LCD_EN",
+      "reason": "track_dangling"
+    }
+  ]
+}

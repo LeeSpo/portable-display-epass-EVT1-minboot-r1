@@ -1,0 +1,39 @@
+{
+  "static_checks_passed": true,
+  "board_sha256": "cce686ff4e1186734cccfce7ad76df52b05b58b2ef48f08e1bb0b1f51b88189a",
+  "electrical_components": 116,
+  "unique_numbered_pads": 491,
+  "power_pins_checked": 114,
+  "component_values_checked": 116,
+  "independent_value_requirements": {
+    "R20": "10k",
+    "R21": "100",
+    "Q3": "AO3401A",
+    "R29": "0R",
+    "R32": "10k",
+    "R12": "910k",
+    "C23": "3.3u",
+    "U6": "SN74LVC1G123DCTR"
+  },
+  "required_fitted": [
+    "Q3",
+    "R20",
+    "R21",
+    "R29",
+    "R32",
+    "R12",
+    "C23",
+    "U6",
+    "Q1",
+    "Q2"
+  ],
+  "native_findings": {
+    "erc.json": 0,
+    "drc.json": 0
+  },
+  "problems": [],
+  "factory_configuration_verified": false,
+  "cold_start_verified": false,
+  "fabrication_released": false,
+  "remaining_blocker": "C3036461 factory voltage/enable/sequence not specified by available platform information; no physical measurements"
+}

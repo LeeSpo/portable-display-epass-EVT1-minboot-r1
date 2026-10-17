@@ -1,0 +1,91 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-11T11:31:44",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "work.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [USB_CC2] on F.Cu, length 3.2000 mm",
+                    "pos": {
+                        "x": 25.4,
+                        "y": 62.4
+                    },
+                    "uuid": "9c357cfe-d855-504f-ae68-4f6fa3eccaca"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [USB_CC2] on B.Cu, length 1.3000 mm",
+                    "pos": {
+                        "x": 17.4,
+                        "y": 47.2
+                    },
+                    "uuid": "0f8ef7a4-354f-59f5-9d77-a188b9cbb6c9"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [USB_CC2] on B.Cu, length 0.1000 mm",
+                    "pos": {
+                        "x": 26.9,
+                        "y": 60.9
+                    },
+                    "uuid": "58c531f6-6a34-5cf2-8514-8f3e04c731dc"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [LCD_EN] on B.Cu, length 11.4367 mm",
+                    "pos": {
+                        "x": 4.2648,
+                        "y": 40.9717
+                    },
+                    "uuid": "14735005-4960-4f76-b865-d2a869c6f1b7"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        },
+        {
+            "description": "Track has unconnected end",
+            "items": [
+                {
+                    "description": "Track [LCD_EN] on B.Cu, length 0.9000 mm",
+                    "pos": {
+                        "x": 8.0,
+                        "y": 36.3
+                    },
+                    "uuid": "42e458f2-27d9-500d-89e7-8e73e6dbab65"
+                }
+            ],
+            "severity": "warning",
+            "type": "track_dangling"
+        }
+    ]
+}
