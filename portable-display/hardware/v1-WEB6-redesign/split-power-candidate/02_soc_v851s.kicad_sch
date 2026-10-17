@@ -6,13 +6,117 @@
 	(paper "A2")
 	(title_block
 		(title "02 V851s / Boot / Storage")
-		(date "2026-10-04")
-		(rev "WAKE2")
+		(date "2026-10-05")
+		(rev "FEL1")
 		(company "Sameat")
 		(comment 1 "Current PCB pin nets; C3036461 factory configuration NOT verified")
 		(comment 2 "NOT physically validated; review before fabrication")
 	)
 	(lib_symbols
+		(symbol "Sameat:R33_1k"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "1k"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Sameat:0402"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C11702.html"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1% series resistor for PC1 FEL key and debug input; limits accidental output contention"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R33_1k_0_1"
+				(rectangle
+					(start -12.7 -5.080)
+					(end 12.7 5.080)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "R33_1k_1_1"
+				(pin passive line
+					(at -15.24 0.000 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0.000 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Sameat:C17_100n"
 			(pin_names
 				(offset 0.8)
@@ -429,6 +533,110 @@
 				)
 			)
 		)
+		(symbol "Sameat:R35_10k"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "10k"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Sameat:0402"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "LCD_EN default-off pulldown: holds U8 ON / U10 CTRL low while PD21 is Hi-Z; 10k sized for 10uA GPIO leakage (<=0.1V)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R35_10k_0_1"
+				(rectangle
+					(start -12.7 -5.080)
+					(end 12.7 5.080)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "R35_10k_1_1"
+				(pin passive line
+					(at -15.24 0.000 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0.000 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Sameat:C13_18p"
 			(pin_names
 				(offset 0.8)
@@ -472,7 +680,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "0402CG180J500NT"
 				(at 0 0 0)
 				(effects
 					(font
@@ -784,7 +992,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "1.27mm production/debug pads"
+			(property "Description" "1.27mm debug pads; pin 7 FEL_KEY_N is open-drain recovery input via R33 to PC1"
 				(at 0 0 0)
 				(effects
 					(font
@@ -918,7 +1126,7 @@
 				(pin passive line
 					(at 15.24 1.270 180)
 					(length 2.54)
-					(name "FEL_PC2"
+					(name "FEL_KEY_N"
 						(effects
 							(font
 								(size .8 .8)
@@ -996,7 +1204,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "24MHz 10ppm 3225"
+			(property "Description" "XXDBBCNANF-24MHZ"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1084,6 +1292,110 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Sameat:R38_0R"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "0R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Sameat:0402"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Bring-up isolation link; fit after rail check"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R38_0R_0_1"
+				(rectangle
+					(start -12.7 -5.080)
+					(end 12.7 5.080)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "R38_0R_1_1"
+				(pin passive line
+					(at -15.24 0.000 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0.000 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size .8 .8)
@@ -1197,6 +1509,110 @@
 				)
 			)
 		)
+		(symbol "Sameat:R36_0R"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "0R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Sameat:0402"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Bring-up isolation link; fit after rail check"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R36_0R_0_1"
+				(rectangle
+					(start -12.7 -5.080)
+					(end 12.7 5.080)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "R36_0R_1_1"
+				(pin passive line
+					(at -15.24 0.000 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0.000 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Sameat:C14_100n"
 			(pin_names
 				(offset 0.8)
@@ -1240,7 +1656,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0402 100n X7R"
+			(property "Description" "CL05B104KO5NNNC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2357,7 +2773,7 @@
 						)
 					)
 				)
-				(pin output line
+				(pin bidirectional line
 					(at 15.24 -29.210 180)
 					(length 2.54)
 					(name "PC1_SPI0_CS"
@@ -3014,7 +3430,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Recessed recovery switch; straps PC2 low"
+			(property "Description" "Hold before cold power-on for BROM FEL via R33 and PC1 / U2.56"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3040,7 +3456,7 @@
 				(pin passive line
 					(at -15.24 -1.270 0)
 					(length 2.54)
-					(name "FEL_PC2"
+					(name "FEL_KEY_N"
 						(effects
 							(font
 								(size .8 .8)
@@ -3058,7 +3474,7 @@
 				(pin passive line
 					(at -15.24 1.270 0)
 					(length 2.54)
-					(name "FEL_PC2"
+					(name "FEL_KEY_N"
 						(effects
 							(font
 								(size .8 .8)
@@ -3301,6 +3717,110 @@
 				)
 			)
 		)
+		(symbol "Sameat:R34_10k"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "10k"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Sameat:0402"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1% pull-up to switched VCC-PC domain; PC1 FEL released HIGH"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R34_10k_0_1"
+				(rectangle
+					(start -12.7 -5.080)
+					(end 12.7 5.080)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "R34_10k_1_1"
+				(pin passive line
+					(at -15.24 0.000 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0.000 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Sameat:C12_18p"
 			(pin_names
 				(offset 0.8)
@@ -3344,7 +3864,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "0402CG180J500NT"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3448,7 +3968,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "CL05B104KO5NNNC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3613,6 +4133,214 @@
 				)
 			)
 		)
+		(symbol "Sameat:R40_0R"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "0R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Sameat:0402"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Bring-up isolation link; fit after rail check"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R40_0R_0_1"
+				(rectangle
+					(start -12.7 -5.080)
+					(end 12.7 5.080)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "R40_0R_1_1"
+				(pin passive line
+					(at -15.24 0.000 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0.000 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Sameat:R37_0R"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "0R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Sameat:0402"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Bring-up isolation link; fit after rail check"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R37_0R_0_1"
+				(rectangle
+					(start -12.7 -5.080)
+					(end 12.7 5.080)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "R37_0R_1_1"
+				(pin passive line
+					(at -15.24 0.000 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0.000 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Sameat:R10_10k"
 			(pin_names
 				(offset 0.8)
@@ -3656,7 +4384,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "PC2 BOOT0 pull-up; independent of FEL key; default BOOT_SEL=11"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3679,6 +4407,110 @@
 				)
 			)
 			(symbol "R10_10k_1_1"
+				(pin passive line
+					(at -15.24 0.000 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0.000 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Sameat:R39_0R"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "0R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Sameat:0402"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Bring-up isolation link; fit after rail check"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R39_0R_0_1"
+				(rectangle
+					(start -12.7 -5.080)
+					(end 12.7 5.080)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "R39_0R_1_1"
 				(pin passive line
 					(at -15.24 0.000 0)
 					(length 2.54)
@@ -3742,7 +4574,7 @@
 					(hide yes)
 				)
 			)
-			(property "Footprint" "Sameat:0603"
+			(property "Footprint" "Sameat:0402"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3760,7 +4592,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "V851SX internal LDOA output bypass"
+			(property "Description" "CL05A225MQ5NSNC"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3888,15 +4720,15 @@
 		)
 	)
 	(symbol
-		(lib_id "Sameat:C17_100n")
+		(lib_id "Sameat:R33_1k")
 		(at 195.580 76.200 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b7856b5f-8647-5a20-a927-3f483f511c90")
-		(property "Reference" "C17"
+		(uuid "f9324eb4-2ba6-567a-ade4-30f7bc02911f")
+		(property "Reference" "R33"
 			(at 195.580 67.120 0)
 			(effects
 				(font
@@ -3904,7 +4736,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "1k"
 			(at 195.580 69.120 0)
 			(effects
 				(font
@@ -3921,8 +4753,115 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C11702.html"
 			(at 195.580 76.200 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0402WGF1001TCE"
+			(at 195.580 76.200 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 195.580 76.200 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1% series resistor for PC1 FEL key and debug input; limits accidental output contention"
+			(at 195.580 76.200 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "085230fb-6324-5433-bd47-94d4f0306c05")
+		)
+		(pin "2"
+			(uuid "4f185968-2f78-5e01-995c-f21ae32aa8e7")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
+					(reference "R33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "FEL_KEY_N"
+		(shape passive)
+		(at 180.340 76.200 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "4f34c3ac-cc9e-54ee-a342-566b6dadfdb1")
+	)
+	(global_label "FEL_N"
+		(shape passive)
+		(at 210.820 76.200 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "8c47472f-633c-5e6f-8bfc-367df614c045")
+	)
+	(symbol
+		(lib_id "Sameat:C17_100n")
+		(at 327.660 76.200 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b7856b5f-8647-5a20-a927-3f483f511c90")
+		(property "Reference" "C17"
+			(at 327.660 67.120 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 327.660 69.120 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 327.660 76.200 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 327.660 76.200 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3931,7 +4870,7 @@
 			)
 		)
 		(property "MPN" "0402 100n X7R"
-			(at 195.580 76.200 0)
+			(at 327.660 76.200 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3940,7 +4879,7 @@
 			)
 		)
 		(property "LCSC" "C1525"
-			(at 195.580 76.200 0)
+			(at 327.660 76.200 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3949,7 +4888,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 195.580 76.200 0)
+			(at 327.660 76.200 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3974,7 +4913,7 @@
 	)
 	(global_label "1V8"
 		(shape passive)
-		(at 180.340 76.200 180)
+		(at 312.420 76.200 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -3985,7 +4924,7 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 210.820 76.200 0)
+		(at 342.900 76.200 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -3996,7 +4935,7 @@
 	)
 	(symbol
 		(lib_id "Sameat:C35_2.2u")
-		(at 327.660 76.200 0)
+		(at 459.740 76.200 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4004,7 +4943,7 @@
 		(dnp no)
 		(uuid "d2dca9c9-6c6a-5f26-94c0-8d4c2d0a9958")
 		(property "Reference" "C35"
-			(at 327.660 67.120 0)
+			(at 459.740 67.120 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4012,7 +4951,7 @@
 			)
 		)
 		(property "Value" "2.2u"
-			(at 327.660 69.120 0)
+			(at 459.740 69.120 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4020,7 +4959,7 @@
 			)
 		)
 		(property "Footprint" "Sameat:0603"
-			(at 327.660 76.200 0)
+			(at 459.740 76.200 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4029,7 +4968,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 327.660 76.200 0)
+			(at 459.740 76.200 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4037,8 +4976,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
-			(at 327.660 76.200 0)
+		(property "MPN" "CL10A225KO8NNNC"
+			(at 459.740 76.200 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4046,8 +4985,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
-			(at 327.660 76.200 0)
+		(property "LCSC" "C23630"
+			(at 459.740 76.200 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4056,7 +4995,7 @@
 			)
 		)
 		(property "Description" "V851SX internal analog LDO output bypass"
-			(at 327.660 76.200 0)
+			(at 459.740 76.200 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4081,7 +5020,7 @@
 	)
 	(global_label "SOC_AVCC"
 		(shape passive)
-		(at 312.420 76.200 180)
+		(at 444.500 76.200 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -4092,7 +5031,7 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 342.900 76.200 0)
+		(at 474.980 76.200 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -4103,7 +5042,7 @@
 	)
 	(symbol
 		(lib_id "Sameat:C16_100n")
-		(at 459.740 76.200 0)
+		(at 195.580 105.410 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4111,113 +5050,6 @@
 		(dnp no)
 		(uuid "280c19d3-e1be-5be6-b391-366e977b2cda")
 		(property "Reference" "C16"
-			(at 459.740 67.120 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 459.740 69.120 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 459.740 76.200 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 459.740 76.200 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "0402 100n X7R"
-			(at 459.740 76.200 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1525"
-			(at 459.740 76.200 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 459.740 76.200 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a19f7df1-5916-5978-88bb-001171ba1d4f")
-		)
-		(pin "2"
-			(uuid "cd0cf2c7-f2a8-5ea8-a6e3-330ee8fe0092")
-		)
-		(instances
-			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
-				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
-					(reference "C16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "1V8"
-		(shape passive)
-		(at 444.500 76.200 180)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify right)
-		)
-		(uuid "7612ed44-0287-5aac-8b16-c2826140a267")
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 474.980 76.200 0)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify left)
-		)
-		(uuid "843cd93c-0b0e-587e-bb43-b2f65455b0fa")
-	)
-	(symbol
-		(lib_id "Sameat:C36_470n")
-		(at 195.580 105.410 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "eead2af3-6ad0-5295-af1a-5b840e32cfad")
-		(property "Reference" "C36"
 			(at 195.580 96.330 0)
 			(effects
 				(font
@@ -4225,7 +5057,7 @@
 				)
 			)
 		)
-		(property "Value" "470n"
+		(property "Value" "100n"
 			(at 195.580 98.330 0)
 			(effects
 				(font
@@ -4251,7 +5083,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402 100n X7R"
 			(at 195.580 105.410 0)
 			(effects
 				(font
@@ -4260,7 +5092,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1525"
 			(at 195.580 105.410 0)
 			(effects
 				(font
@@ -4269,7 +5101,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "V851SX analog reference bypass"
+		(property "Description" ""
 			(at 195.580 105.410 0)
 			(effects
 				(font
@@ -4279,21 +5111,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "01a3dee3-5ed7-5f25-9c2e-20a154d64ecb")
+			(uuid "a19f7df1-5916-5978-88bb-001171ba1d4f")
 		)
 		(pin "2"
-			(uuid "24fb3a2b-9a08-5a1f-aa83-2789aac29afb")
+			(uuid "cd0cf2c7-f2a8-5ea8-a6e3-330ee8fe0092")
 		)
 		(instances
 			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
 				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
-					(reference "C36")
+					(reference "C16")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(global_label "VRA1"
+	(global_label "1V8"
 		(shape passive)
 		(at 180.340 105.410 180)
 		(effects
@@ -4302,7 +5134,7 @@
 			)
 			(justify right)
 		)
-		(uuid "df65b51c-49a9-5aef-aaf7-d37d37845847")
+		(uuid "7612ed44-0287-5aac-8b16-c2826140a267")
 	)
 	(global_label "GND"
 		(shape passive)
@@ -4313,18 +5145,18 @@
 			)
 			(justify left)
 		)
-		(uuid "a7f3d9d3-ef47-5953-ad75-5335a36ced42")
+		(uuid "843cd93c-0b0e-587e-bb43-b2f65455b0fa")
 	)
 	(symbol
-		(lib_id "Sameat:C13_18p")
+		(lib_id "Sameat:C36_470n")
 		(at 327.660 105.410 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f538874d-7190-5a62-9bfe-6518928a4a13")
-		(property "Reference" "C13"
+		(uuid "eead2af3-6ad0-5295-af1a-5b840e32cfad")
+		(property "Reference" "C36"
 			(at 327.660 96.330 0)
 			(effects
 				(font
@@ -4332,7 +5164,7 @@
 				)
 			)
 		)
-		(property "Value" "18p"
+		(property "Value" "470n"
 			(at 327.660 98.330 0)
 			(effects
 				(font
@@ -4358,7 +5190,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL05A474KP5NNNC"
 			(at 327.660 105.410 0)
 			(effects
 				(font
@@ -4367,7 +5199,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C47339"
 			(at 327.660 105.410 0)
 			(effects
 				(font
@@ -4376,7 +5208,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "V851SX analog reference bypass"
 			(at 327.660 105.410 0)
 			(effects
 				(font
@@ -4386,21 +5218,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "6ece5f80-a937-5146-a457-0054fefd4c01")
+			(uuid "01a3dee3-5ed7-5f25-9c2e-20a154d64ecb")
 		)
 		(pin "2"
-			(uuid "f7be073a-1f46-5bb4-b5ee-5f4eddb176e5")
+			(uuid "24fb3a2b-9a08-5a1f-aa83-2789aac29afb")
 		)
 		(instances
 			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
 				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
-					(reference "C13")
+					(reference "C36")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(global_label "XOUT"
+	(global_label "VRA1"
 		(shape passive)
 		(at 312.420 105.410 180)
 		(effects
@@ -4409,7 +5241,7 @@
 			)
 			(justify right)
 		)
-		(uuid "605ea4cf-d696-51a0-b30a-bd07bb5f1dae")
+		(uuid "df65b51c-49a9-5aef-aaf7-d37d37845847")
 	)
 	(global_label "GND"
 		(shape passive)
@@ -4420,18 +5252,18 @@
 			)
 			(justify left)
 		)
-		(uuid "18b70809-9d33-58f9-9ce5-3f60cd22a310")
+		(uuid "a7f3d9d3-ef47-5953-ad75-5335a36ced42")
 	)
 	(symbol
-		(lib_id "Sameat:C15_100n")
+		(lib_id "Sameat:R35_10k")
 		(at 459.740 105.410 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e22cfeb0-3faf-5b69-ab2f-23f067538afe")
-		(property "Reference" "C15"
+		(uuid "de15cae8-05a7-550b-ab43-8650299f4fe9")
+		(property "Reference" "R35"
 			(at 459.740 96.330 0)
 			(effects
 				(font
@@ -4439,7 +5271,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "10k"
 			(at 459.740 98.330 0)
 			(effects
 				(font
@@ -4456,7 +5288,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
 			(at 459.740 105.410 0)
 			(effects
 				(font
@@ -4465,7 +5297,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0402 100n X7R"
+		(property "MPN" "0402WGF1002TCE"
 			(at 459.740 105.410 0)
 			(effects
 				(font
@@ -4474,7 +5306,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1525"
+		(property "LCSC" "C25744"
 			(at 459.740 105.410 0)
 			(effects
 				(font
@@ -4483,7 +5315,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LCD_EN default-off pulldown: holds U8 ON / U10 CTRL low while PD21 is Hi-Z; 10k sized for 10uA GPIO leakage (<=0.1V)"
 			(at 459.740 105.410 0)
 			(effects
 				(font
@@ -4493,21 +5325,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "7617e4e4-10a9-5d29-beaa-485b53e5073b")
+			(uuid "cb7ddf77-54cf-5f87-9d64-c5278471f4e5")
 		)
 		(pin "2"
-			(uuid "e9fb219f-3047-5b66-9d61-9893adcc83cb")
+			(uuid "ab0c0d93-7671-5cca-a6e6-458bbdb4aff3")
 		)
 		(instances
 			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
 				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
-					(reference "C15")
+					(reference "R35")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(global_label "3V3"
+	(global_label "LCD_EN"
 		(shape passive)
 		(at 444.500 105.410 180)
 		(effects
@@ -4516,7 +5348,7 @@
 			)
 			(justify right)
 		)
-		(uuid "af38138b-2700-57a1-8f73-9cbc43399a95")
+		(uuid "da3169fa-8c34-5e2f-8e84-a8dd44bcdff8")
 	)
 	(global_label "GND"
 		(shape passive)
@@ -4527,18 +5359,18 @@
 			)
 			(justify left)
 		)
-		(uuid "c0b02625-04e0-59e4-a37e-22c95abe4ee8")
+		(uuid "f04ab42a-2a3f-50a5-a854-5c4d1c789fc3")
 	)
 	(symbol
-		(lib_id "Sameat:C20_100n")
+		(lib_id "Sameat:C13_18p")
 		(at 195.580 134.620 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ceb8134f-d900-563c-9c69-e8bfb56ed60e")
-		(property "Reference" "C20"
+		(uuid "f538874d-7190-5a62-9bfe-6518928a4a13")
+		(property "Reference" "C13"
 			(at 195.580 125.540 0)
 			(effects
 				(font
@@ -4546,7 +5378,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "18p"
 			(at 195.580 127.540 0)
 			(effects
 				(font
@@ -4572,7 +5404,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0402 100n X7R"
+		(property "MPN" "0402CG180J500NT"
 			(at 195.580 134.620 0)
 			(effects
 				(font
@@ -4581,7 +5413,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1525"
+		(property "LCSC" "C1549"
 			(at 195.580 134.620 0)
 			(effects
 				(font
@@ -4592,6 +5424,220 @@
 		)
 		(property "Description" ""
 			(at 195.580 134.620 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ece5f80-a937-5146-a457-0054fefd4c01")
+		)
+		(pin "2"
+			(uuid "f7be073a-1f46-5bb4-b5ee-5f4eddb176e5")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "XOUT"
+		(shape passive)
+		(at 180.340 134.620 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "605ea4cf-d696-51a0-b30a-bd07bb5f1dae")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 210.820 134.620 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "18b70809-9d33-58f9-9ce5-3f60cd22a310")
+	)
+	(symbol
+		(lib_id "Sameat:C15_100n")
+		(at 327.660 134.620 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e22cfeb0-3faf-5b69-ab2f-23f067538afe")
+		(property "Reference" "C15"
+			(at 327.660 125.540 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 327.660 127.540 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 327.660 134.620 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 327.660 134.620 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0402 100n X7R"
+			(at 327.660 134.620 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 327.660 134.620 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 327.660 134.620 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7617e4e4-10a9-5d29-beaa-485b53e5073b")
+		)
+		(pin "2"
+			(uuid "e9fb219f-3047-5b66-9d61-9893adcc83cb")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "3V3"
+		(shape passive)
+		(at 312.420 134.620 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "af38138b-2700-57a1-8f73-9cbc43399a95")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 342.900 134.620 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "c0b02625-04e0-59e4-a37e-22c95abe4ee8")
+	)
+	(symbol
+		(lib_id "Sameat:C20_100n")
+		(at 459.740 134.620 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ceb8134f-d900-563c-9c69-e8bfb56ed60e")
+		(property "Reference" "C20"
+			(at 459.740 125.540 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 459.740 127.540 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 459.740 134.620 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 459.740 134.620 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0402 100n X7R"
+			(at 459.740 134.620 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 459.740 134.620 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 459.740 134.620 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4616,7 +5662,7 @@
 	)
 	(global_label "CORE_0V93"
 		(shape passive)
-		(at 180.340 134.620 180)
+		(at 444.500 134.620 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -4627,7 +5673,7 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 210.820 134.620 0)
+		(at 474.980 134.620 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -4697,7 +5743,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1.27mm production/debug pads"
+		(property "Description" "1.27mm debug pads; pin 7 FEL_KEY_N is open-drain recovery input via R33 to PC1"
 			(at 195.580 46.990 0)
 			(effects
 				(font
@@ -4805,7 +5851,7 @@
 		)
 		(uuid "9ff7b4ce-9821-5eb8-a054-ac6c24894954")
 	)
-	(global_label "BOOT0"
+	(global_label "FEL_KEY_N"
 		(shape passive)
 		(at 210.820 45.720 0)
 		(effects
@@ -4870,7 +5916,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "24MHz 10ppm 3225"
+		(property "MPN" "XXDBBCNANF-24MHZ"
 			(at 327.660 46.990 0)
 			(effects
 				(font
@@ -4879,7 +5925,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C16197264"
 			(at 327.660 46.990 0)
 			(effects
 				(font
@@ -4963,24 +6009,24 @@
 		(uuid "01e11f6c-eaba-5708-b53f-852298ec73af")
 	)
 	(symbol
-		(lib_id "Sameat:R28_10k")
-		(at 327.660 134.620 0)
+		(lib_id "Sameat:R38_0R")
+		(at 195.580 163.830 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "05597177-fe99-576f-a0b2-f29f6071abb3")
-		(property "Reference" "R28"
-			(at 327.660 125.540 0)
+		(uuid "7eb1d19c-a455-5d51-96e5-16fa05d035a6")
+		(property "Reference" "R38"
+			(at 195.580 154.750 0)
 			(effects
 				(font
 					(size 1 1)
 				)
 			)
 		)
-		(property "Value" "10k"
-			(at 327.660 127.540 0)
+		(property "Value" "0R"
+			(at 195.580 156.750 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4988,7 +6034,114 @@
 			)
 		)
 		(property "Footprint" "Sameat:0402"
-			(at 327.660 134.620 0)
+			(at 195.580 163.830 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 195.580 163.830 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0402WGF0000TCE"
+			(at 195.580 163.830 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17168"
+			(at 195.580 163.830 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bring-up isolation link; fit after rail check"
+			(at 195.580 163.830 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f4da0774-63cb-5c5e-afaa-f01113852492")
+		)
+		(pin "2"
+			(uuid "a61efdc5-ee68-5726-ab1f-61f4c429af40")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
+					(reference "R38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "3V3_PMIC"
+		(shape passive)
+		(at 180.340 163.830 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "84b1f4e9-db38-5a80-aec6-1463b2280aca")
+	)
+	(global_label "3V3_B"
+		(shape passive)
+		(at 210.820 163.830 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "a1735a09-d855-5bdb-a7cf-06d11fc5c91f")
+	)
+	(symbol
+		(lib_id "Sameat:R28_10k")
+		(at 327.660 163.830 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "05597177-fe99-576f-a0b2-f29f6071abb3")
+		(property "Reference" "R28"
+			(at 327.660 154.750 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 327.660 156.750 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 327.660 163.830 0)
 			(effects
 				(font
 					(size 1 1)
@@ -4997,7 +6150,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 327.660 134.620 0)
+			(at 327.660 163.830 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5005,8 +6158,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
-			(at 327.660 134.620 0)
+		(property "MPN" "0402WGF1002TCE"
+			(at 327.660 163.830 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5014,8 +6167,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
-			(at 327.660 134.620 0)
+		(property "LCSC" "C25744"
+			(at 327.660 163.830 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5024,7 +6177,7 @@
 			)
 		)
 		(property "Description" "PC3 BOOT1 pull-up; BOOT_SEL=11 TF first"
-			(at 327.660 134.620 0)
+			(at 327.660 163.830 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5049,7 +6202,7 @@
 	)
 	(global_label "3V3"
 		(shape passive)
-		(at 312.420 134.620 180)
+		(at 312.420 163.830 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -5060,7 +6213,7 @@
 	)
 	(global_label "BOOT1"
 		(shape passive)
-		(at 342.900 134.620 0)
+		(at 342.900 163.830 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -5070,24 +6223,24 @@
 		(uuid "20cac3bb-b282-5533-8a74-50b003ef15d6")
 	)
 	(symbol
-		(lib_id "Sameat:C14_100n")
-		(at 459.740 134.620 0)
+		(lib_id "Sameat:R36_0R")
+		(at 459.740 163.830 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c9296c05-b96b-5922-b53c-fe9da55af819")
-		(property "Reference" "C14"
-			(at 459.740 125.540 0)
+		(uuid "5ad8aa30-d2a9-535f-911d-ffdb658806fe")
+		(property "Reference" "R36"
+			(at 459.740 154.750 0)
 			(effects
 				(font
 					(size 1 1)
 				)
 			)
 		)
-		(property "Value" "100n"
-			(at 459.740 127.540 0)
+		(property "Value" "0R"
+			(at 459.740 156.750 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5095,7 +6248,114 @@
 			)
 		)
 		(property "Footprint" "Sameat:0402"
-			(at 459.740 134.620 0)
+			(at 459.740 163.830 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 459.740 163.830 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0402WGF0000TCE"
+			(at 459.740 163.830 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17168"
+			(at 459.740 163.830 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bring-up isolation link; fit after rail check"
+			(at 459.740 163.830 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "66d0ce40-4bb1-5817-9bf8-1e503c4c2e6d")
+		)
+		(pin "2"
+			(uuid "eb447e1e-ad0a-5acc-9e83-6993a96bde42")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
+					(reference "R36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "CORE_0V93"
+		(shape passive)
+		(at 444.500 163.830 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "a70d9e3a-6336-5619-9ed3-e9773762d4ac")
+	)
+	(global_label "CORE_0V93_PMIC"
+		(shape passive)
+		(at 474.980 163.830 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "9cee13b8-2b46-589b-bf0f-33338c5a7b49")
+	)
+	(symbol
+		(lib_id "Sameat:C14_100n")
+		(at 63.500 180.340 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c9296c05-b96b-5922-b53c-fe9da55af819")
+		(property "Reference" "C14"
+			(at 63.500 171.260 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 63.500 173.260 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 63.500 180.340 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5104,7 +6364,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 459.740 134.620 0)
+			(at 63.500 180.340 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5112,8 +6372,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0402 100n X7R"
-			(at 459.740 134.620 0)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 63.500 180.340 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5122,7 +6382,7 @@
 			)
 		)
 		(property "LCSC" "C1525"
-			(at 459.740 134.620 0)
+			(at 63.500 180.340 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5131,7 +6391,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 459.740 134.620 0)
+			(at 63.500 180.340 0)
 			(effects
 				(font
 					(size 1 1)
@@ -5154,9 +6414,9 @@
 			)
 		)
 	)
-	(global_label "3V3"
+	(global_label "GND"
 		(shape passive)
-		(at 444.500 134.620 180)
+		(at 48.260 180.340 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -5165,9 +6425,9 @@
 		)
 		(uuid "b956f73b-b249-5c93-8a09-678096e863af")
 	)
-	(global_label "GND"
+	(global_label "3V3_B"
 		(shape passive)
-		(at 474.980 134.620 0)
+		(at 78.740 180.340 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -5545,7 +6805,7 @@
 		)
 		(uuid "07d84442-18cf-5b2c-87af-9a2340335064")
 	)
-	(global_label "3V3"
+	(global_label "3V3_B"
 		(shape passive)
 		(at 48.260 144.780 180)
 		(effects
@@ -6036,9 +7296,16 @@
 		)
 		(uuid "ab1ada0c-0298-5312-b9b7-d0876757f1b9")
 	)
-	(no_connect
-		(at 78.740 128.270)
-		(uuid "0bed6c14-a496-5b2c-8ec6-09b4fdc26bf5")
+	(global_label "FEL_N"
+		(shape passive)
+		(at 78.740 128.270 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "4924a657-11c2-5b86-9642-26d86e0d43a7")
 	)
 	(no_connect
 		(at 78.740 125.730)
@@ -6180,7 +7447,7 @@
 		)
 		(uuid "107b79b7-adcd-5b0d-9988-c0bbef5c69d9")
 	)
-	(global_label "3V3"
+	(global_label "3V3_B"
 		(shape passive)
 		(at 78.740 72.390 0)
 		(effects
@@ -6345,7 +7612,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Recessed recovery switch; straps PC2 low"
+		(property "Description" "Hold before cold power-on for BROM FEL via R33 and PC1 / U2.56"
 			(at 459.740 46.990 0)
 			(effects
 				(font
@@ -6372,7 +7639,7 @@
 			)
 		)
 	)
-	(global_label "BOOT0"
+	(global_label "FEL_KEY_N"
 		(shape passive)
 		(at 444.500 48.260 180)
 		(effects
@@ -6383,7 +7650,7 @@
 		)
 		(uuid "80f1ed4a-2c95-5b7f-bb2d-221d661c348f")
 	)
-	(global_label "BOOT0"
+	(global_label "FEL_KEY_N"
 		(shape passive)
 		(at 444.500 45.720 180)
 		(effects
@@ -6407,7 +7674,7 @@
 	)
 	(symbol
 		(lib_id "Sameat:C18_100n")
-		(at 195.580 163.830 0)
+		(at 195.580 193.040 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6415,434 +7682,6 @@
 		(dnp no)
 		(uuid "2474549c-de75-56ef-b982-e3e025139f1e")
 		(property "Reference" "C18"
-			(at 195.580 154.750 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 195.580 156.750 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 195.580 163.830 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 195.580 163.830 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "0402 100n X7R"
-			(at 195.580 163.830 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1525"
-			(at 195.580 163.830 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 195.580 163.830 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8a04756d-1f33-56c2-8281-69460449416c")
-		)
-		(pin "2"
-			(uuid "5aaf0992-a554-541c-9c1b-d1cb5fb695c9")
-		)
-		(instances
-			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
-				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
-					(reference "C18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "CORE_0V93"
-		(shape passive)
-		(at 180.340 163.830 180)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify right)
-		)
-		(uuid "08a65a48-c721-5662-9aaa-16d435d3b0ab")
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 210.820 163.830 0)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify left)
-		)
-		(uuid "af1c318b-aaf0-588e-98c9-de378d103295")
-	)
-	(symbol
-		(lib_id "Sameat:C21_100n")
-		(at 327.660 163.830 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5eff8b6a-54d7-5deb-bf48-6b3afcd06d99")
-		(property "Reference" "C21"
-			(at 327.660 154.750 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 327.660 156.750 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 327.660 163.830 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 327.660 163.830 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "0402 100n X7R"
-			(at 327.660 163.830 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1525"
-			(at 327.660 163.830 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 327.660 163.830 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6920094d-4383-5494-bb7d-55795b661860")
-		)
-		(pin "2"
-			(uuid "55e2069a-0c34-5426-ba79-b4cc87c5b03b")
-		)
-		(instances
-			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
-				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
-					(reference "C21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "DRAM_1V5"
-		(shape passive)
-		(at 312.420 163.830 180)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify right)
-		)
-		(uuid "2265111c-85a1-5a59-87d4-bf67efe334bb")
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 342.900 163.830 0)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify left)
-		)
-		(uuid "972c671a-53c5-571b-9fd9-1b3727cf5d2f")
-	)
-	(symbol
-		(lib_id "Sameat:C12_18p")
-		(at 459.740 163.830 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bf5ec001-cb6a-5194-9bb4-43f6f563c16a")
-		(property "Reference" "C12"
-			(at 459.740 154.750 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "18p"
-			(at 459.740 156.750 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 459.740 163.830 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 459.740 163.830 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 459.740 163.830 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 459.740 163.830 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 459.740 163.830 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f5a6d376-1c62-5189-98ec-49ed007ee879")
-		)
-		(pin "2"
-			(uuid "65433e9c-3632-5a77-b920-b1c2c9d9ff5d")
-		)
-		(instances
-			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
-				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
-					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "XIN"
-		(shape passive)
-		(at 444.500 163.830 180)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify right)
-		)
-		(uuid "9bcbe932-e8d5-5a20-95c5-7d67dd704b9c")
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 474.980 163.830 0)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify left)
-		)
-		(uuid "d3f4776e-1607-51cf-b924-2a97846aaeb3")
-	)
-	(symbol
-		(lib_id "Sameat:C37_100n")
-		(at 63.500 180.340 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6d573c43-90e5-514c-84d2-fb18f23b91fd")
-		(property "Reference" "C37"
-			(at 63.500 171.260 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 63.500 173.260 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 63.500 180.340 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.500 180.340 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" ""
-			(at 63.500 180.340 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" ""
-			(at 63.500 180.340 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 63.500 180.340 0)
-			(effects
-				(font
-					(size 1 1)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a58e44b1-c322-5599-896e-adeae48ea586")
-		)
-		(pin "2"
-			(uuid "11962a50-6c46-5b51-904e-0f0f58b8cb1d")
-		)
-		(instances
-			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
-				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
-					(reference "C37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(global_label "SOC_LDO_1V8"
-		(shape passive)
-		(at 48.260 180.340 180)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify right)
-		)
-		(uuid "c830f4e6-dac8-507d-81c7-520eaec28ab4")
-	)
-	(global_label "GND"
-		(shape passive)
-		(at 78.740 180.340 0)
-		(effects
-			(font
-				(size .8 .8)
-			)
-			(justify left)
-		)
-		(uuid "95b045d7-bd83-5950-9ef6-48c156da2744")
-	)
-	(symbol
-		(lib_id "Sameat:C19_100n")
-		(at 195.580 193.040 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dab495ad-1eb5-5b50-b7d2-cf6bda727479")
-		(property "Reference" "C19"
 			(at 195.580 183.960 0)
 			(effects
 				(font
@@ -6904,15 +7743,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "3624431c-57fb-563e-aeae-b6f85a711d1b")
+			(uuid "8a04756d-1f33-56c2-8281-69460449416c")
 		)
 		(pin "2"
-			(uuid "ac161cb8-644f-520d-aec8-9c1ce08d8a3f")
+			(uuid "5aaf0992-a554-541c-9c1b-d1cb5fb695c9")
 		)
 		(instances
 			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
 				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
-					(reference "C19")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -6927,7 +7766,7 @@
 			)
 			(justify right)
 		)
-		(uuid "6d040832-dc8e-59d1-9084-be2bb251d2b8")
+		(uuid "08a65a48-c721-5662-9aaa-16d435d3b0ab")
 	)
 	(global_label "GND"
 		(shape passive)
@@ -6938,18 +7777,18 @@
 			)
 			(justify left)
 		)
-		(uuid "fa441513-743d-543c-ac50-462fa5f9dbbf")
+		(uuid "af1c318b-aaf0-588e-98c9-de378d103295")
 	)
 	(symbol
-		(lib_id "Sameat:R10_10k")
+		(lib_id "Sameat:C21_100n")
 		(at 327.660 193.040 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "14c24a79-5970-5e41-883c-ce27c277abb1")
-		(property "Reference" "R10"
+		(uuid "5eff8b6a-54d7-5deb-bf48-6b3afcd06d99")
+		(property "Reference" "C21"
 			(at 327.660 183.960 0)
 			(effects
 				(font
@@ -6957,7 +7796,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "100n"
 			(at 327.660 185.960 0)
 			(effects
 				(font
@@ -6983,7 +7822,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0402 100n X7R"
 			(at 327.660 193.040 0)
 			(effects
 				(font
@@ -6992,7 +7831,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1525"
 			(at 327.660 193.040 0)
 			(effects
 				(font
@@ -7003,6 +7842,755 @@
 		)
 		(property "Description" ""
 			(at 327.660 193.040 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6920094d-4383-5494-bb7d-55795b661860")
+		)
+		(pin "2"
+			(uuid "55e2069a-0c34-5426-ba79-b4cc87c5b03b")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "DRAM_1V5"
+		(shape passive)
+		(at 312.420 193.040 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "2265111c-85a1-5a59-87d4-bf67efe334bb")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 342.900 193.040 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "972c671a-53c5-571b-9fd9-1b3727cf5d2f")
+	)
+	(symbol
+		(lib_id "Sameat:R34_10k")
+		(at 459.740 193.040 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "261a96d0-a535-5e46-8c9c-69afb00e9b2d")
+		(property "Reference" "R34"
+			(at 459.740 183.960 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 459.740 185.960 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 459.740 193.040 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 459.740 193.040 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0402WGF1002TCE"
+			(at 459.740 193.040 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 459.740 193.040 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1% pull-up to switched VCC-PC domain; PC1 FEL released HIGH"
+			(at 459.740 193.040 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19186c5c-20b6-58d2-a491-aeddc8ec48df")
+		)
+		(pin "2"
+			(uuid "8f17e0fa-5614-5f19-a584-7e387fc439c8")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
+					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "3V3"
+		(shape passive)
+		(at 444.500 193.040 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "b87aa501-5426-5855-b02b-c3ad200bb5f9")
+	)
+	(global_label "FEL_N"
+		(shape passive)
+		(at 474.980 193.040 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "269f3cd5-8503-584e-9a1d-cf8f6d8b9261")
+	)
+	(symbol
+		(lib_id "Sameat:C12_18p")
+		(at 63.500 209.550 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bf5ec001-cb6a-5194-9bb4-43f6f563c16a")
+		(property "Reference" "C12"
+			(at 63.500 200.470 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "18p"
+			(at 63.500 202.470 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 63.500 209.550 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.500 209.550 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0402CG180J500NT"
+			(at 63.500 209.550 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1549"
+			(at 63.500 209.550 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 63.500 209.550 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f5a6d376-1c62-5189-98ec-49ed007ee879")
+		)
+		(pin "2"
+			(uuid "65433e9c-3632-5a77-b920-b1c2c9d9ff5d")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "XIN"
+		(shape passive)
+		(at 48.260 209.550 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "9bcbe932-e8d5-5a20-95c5-7d67dd704b9c")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 78.740 209.550 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "d3f4776e-1607-51cf-b924-2a97846aaeb3")
+	)
+	(symbol
+		(lib_id "Sameat:C37_100n")
+		(at 195.580 222.250 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6d573c43-90e5-514c-84d2-fb18f23b91fd")
+		(property "Reference" "C37"
+			(at 195.580 213.170 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 195.580 215.170 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 195.580 222.250 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.580 222.250 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 195.580 222.250 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 195.580 222.250 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 195.580 222.250 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a58e44b1-c322-5599-896e-adeae48ea586")
+		)
+		(pin "2"
+			(uuid "11962a50-6c46-5b51-904e-0f0f58b8cb1d")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
+					(reference "C37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "SOC_LDO_1V8"
+		(shape passive)
+		(at 180.340 222.250 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "c830f4e6-dac8-507d-81c7-520eaec28ab4")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 210.820 222.250 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "95b045d7-bd83-5950-9ef6-48c156da2744")
+	)
+	(symbol
+		(lib_id "Sameat:C19_100n")
+		(at 327.660 222.250 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dab495ad-1eb5-5b50-b7d2-cf6bda727479")
+		(property "Reference" "C19"
+			(at 327.660 213.170 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 327.660 215.170 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 327.660 222.250 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 327.660 222.250 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0402 100n X7R"
+			(at 327.660 222.250 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 327.660 222.250 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 327.660 222.250 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3624431c-57fb-563e-aeae-b6f85a711d1b")
+		)
+		(pin "2"
+			(uuid "ac161cb8-644f-520d-aec8-9c1ce08d8a3f")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "CORE_0V93"
+		(shape passive)
+		(at 312.420 222.250 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "6d040832-dc8e-59d1-9084-be2bb251d2b8")
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 342.900 222.250 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "fa441513-743d-543c-ac50-462fa5f9dbbf")
+	)
+	(symbol
+		(lib_id "Sameat:R40_0R")
+		(at 459.740 222.250 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f73ffd12-3c94-5db2-a3cb-a023b59e5345")
+		(property "Reference" "R40"
+			(at 459.740 213.170 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 459.740 215.170 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 459.740 222.250 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 459.740 222.250 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0402WGF0000TCE"
+			(at 459.740 222.250 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17168"
+			(at 459.740 222.250 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bring-up isolation link; fit after rail check"
+			(at 459.740 222.250 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "867ab864-39de-516d-b46a-388d1e8bb8db")
+		)
+		(pin "2"
+			(uuid "ec49a315-c468-5f37-a5c3-b2a7dc2ea7e8")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "1V8_PMIC"
+		(shape passive)
+		(at 444.500 222.250 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "5339a2be-5dc7-58af-b72b-dda147ad9b23")
+	)
+	(global_label "1V8"
+		(shape passive)
+		(at 474.980 222.250 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "fd539014-3148-5bb2-9a02-07020fa2ac63")
+	)
+	(symbol
+		(lib_id "Sameat:R37_0R")
+		(at 63.500 238.760 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e5fee0c6-e054-5e95-8213-2329866715c0")
+		(property "Reference" "R37"
+			(at 63.500 229.680 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 63.500 231.680 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 63.500 238.760 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 63.500 238.760 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0402WGF0000TCE"
+			(at 63.500 238.760 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17168"
+			(at 63.500 238.760 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bring-up isolation link; fit after rail check"
+			(at 63.500 238.760 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b9a7942d-5993-51d7-9772-8abedf6884a7")
+		)
+		(pin "2"
+			(uuid "abced3ef-0e0f-55cc-ad76-f0cadd4a18a2")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
+					(reference "R37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "DRAM_1V5_PMIC"
+		(shape passive)
+		(at 48.260 238.760 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "5f873855-bc2d-51f1-a4e6-974dcfcddea8")
+	)
+	(global_label "DRAM_1V5"
+		(shape passive)
+		(at 78.740 238.760 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "04d946dd-f318-5eb7-b319-4345b9c24023")
+	)
+	(symbol
+		(lib_id "Sameat:R10_10k")
+		(at 195.580 251.460 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "14c24a79-5970-5e41-883c-ce27c277abb1")
+		(property "Reference" "R10"
+			(at 195.580 242.380 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 195.580 244.380 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 195.580 251.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.580 251.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0402WGF1002TCE"
+			(at 195.580 251.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 195.580 251.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "PC2 BOOT0 pull-up; independent of FEL key; default BOOT_SEL=11"
+			(at 195.580 251.460 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7027,7 +8615,7 @@
 	)
 	(global_label "3V3"
 		(shape passive)
-		(at 312.420 193.040 180)
+		(at 180.340 251.460 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -7038,7 +8626,7 @@
 	)
 	(global_label "BOOT0"
 		(shape passive)
-		(at 342.900 193.040 0)
+		(at 210.820 251.460 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -7048,8 +8636,115 @@
 		(uuid "01abd4ab-6526-5f7f-8998-5bfe656246d0")
 	)
 	(symbol
+		(lib_id "Sameat:R39_0R")
+		(at 327.660 251.460 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c4dfcd1b-d574-531c-b2db-22f1c7007d1d")
+		(property "Reference" "R39"
+			(at 327.660 242.380 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 327.660 244.380 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 327.660 251.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 327.660 251.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "0402WGF0000TCE"
+			(at 327.660 251.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17168"
+			(at 327.660 251.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bring-up isolation link; fit after rail check"
+			(at 327.660 251.460 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "def430b0-f6c3-5880-bb4c-e6f7895bf5f0")
+		)
+		(pin "2"
+			(uuid "a45f5763-9b2d-572a-bb0b-2d8bf09e1250")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/d78b573f-d2db-5b8f-9afa-82bc3cda0686"
+					(reference "R39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "3V3_PMIC"
+		(shape passive)
+		(at 312.420 251.460 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "2d2a33ec-5bbe-5b35-93c2-7f9e20bcab50")
+	)
+	(global_label "3V3"
+		(shape passive)
+		(at 342.900 251.460 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "f6b775f6-85a1-52b8-8baa-57192036ab92")
+	)
+	(symbol
 		(lib_id "Sameat:C34_2.2u")
-		(at 459.740 193.040 0)
+		(at 459.740 251.460 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7057,7 +8752,7 @@
 		(dnp no)
 		(uuid "b75744bc-9e03-5690-b95c-2b7ae68addef")
 		(property "Reference" "C34"
-			(at 459.740 183.960 0)
+			(at 459.740 242.380 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7065,15 +8760,15 @@
 			)
 		)
 		(property "Value" "2.2u"
-			(at 459.740 185.960 0)
+			(at 459.740 244.380 0)
 			(effects
 				(font
 					(size 1 1)
 				)
 			)
 		)
-		(property "Footprint" "Sameat:0603"
-			(at 459.740 193.040 0)
+		(property "Footprint" "Sameat:0402"
+			(at 459.740 251.460 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7082,7 +8777,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 459.740 193.040 0)
+			(at 459.740 251.460 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7090,8 +8785,8 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
-			(at 459.740 193.040 0)
+		(property "MPN" "CL05A225MQ5NSNC"
+			(at 459.740 251.460 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7099,8 +8794,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
-			(at 459.740 193.040 0)
+		(property "LCSC" "C12530"
+			(at 459.740 251.460 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7108,8 +8803,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "V851SX internal LDOA output bypass"
-			(at 459.740 193.040 0)
+		(property "Description" ""
+			(at 459.740 251.460 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7134,7 +8829,7 @@
 	)
 	(global_label "SOC_LDO_1V8"
 		(shape passive)
-		(at 444.500 193.040 180)
+		(at 444.500 251.460 180)
 		(effects
 			(font
 				(size .8 .8)
@@ -7145,7 +8840,7 @@
 	)
 	(global_label "GND"
 		(shape passive)
-		(at 474.980 193.040 0)
+		(at 474.980 251.460 0)
 		(effects
 			(font
 				(size .8 .8)
@@ -7155,6 +8850,16 @@
 		(uuid "5041d732-61c0-5a47-8c8a-2c689c646b75")
 	)
 	(embedded_fonts no)
+	(text "RECOVERY: hold SW6 before cold power-on. SW6 / J3.7 -> R33 1k -> PC1 / U2.56 (FEL_N).\nR34 10k pulls FEL_N to switched 3V3. BOOT_SEL[1:0] remains 11 on PC3 / PC2.\nJ3.7: open-drain LOW or release only. BROM tries UART upgrade before USB. See FEL_REPAIR_CN.md."
+		(at 38.1 358.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2cb3185c-309c-56bb-9c63-42a22dd71197")
+	)
 	(text "DISPLAY GPIO: PA8 (U2.66) -> LCD_RST; PA9 / EINT9 (U2.65) <- LCD_TE. Both use 1V8.\nR32 10k holds reset LOW at boot. R29 must remain fitted 0R; VDDIO must share the PA supply.\nUpdate firmware pin assignments; PD19 / PD20 are now unconnected. See DISPLAY_IO_REPAIR_CN.md."
 		(at 38.1 370.84 0)
 		(effects

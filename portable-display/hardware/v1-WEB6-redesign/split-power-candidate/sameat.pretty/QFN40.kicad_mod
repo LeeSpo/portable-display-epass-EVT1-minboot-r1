@@ -512,4 +512,5 @@
 		(roundrect_rratio .05)
 		(uuid "ddf9fb07-f100-4df0-89d5-3cb46f075376")
 	)
+(fp_circle (center -2.912 -2.184) (end -2.837 -2.184) (stroke (width 0.15) (type default)) (fill yes) (layer "F.SilkS") (uuid "88ecac97-b563-4329-b76c-dc631c7f5930"))
 )

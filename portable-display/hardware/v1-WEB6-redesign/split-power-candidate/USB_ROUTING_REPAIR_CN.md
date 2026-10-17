@@ -35,3 +35,10 @@ B7 路径的平面铜长单独为 40.4964 mm，加上两次 1.0 mm 过孔得到 
 - 实板需分别验证 Type-C 正反插的枚举、480 Mb/s 模式、持续传输与插拔；系统 ESD、连接器装配和参考地/电源噪声也需验收。PMIC C3036461 默认配置与冷启动、MIPI 差分、显示电源和其他未完成项仍见 [OPEN_ISSUES_CN.md](OPEN_ISSUES_CN.md)。
 
 原生报告、独立检查、变化审计和哈希记录均在 `verification/usb_routing_20261002/`。`tools/check_usb_routing.py` 可复跑；检查通过不表示 `impedance_verified`、`hardware_verified` 或 `fabrication_released`。
+
+## 2026-10-15 更新：阻抗几何
+
+- 叠层定为 JLC04101H-3313：L1→L2 是 0.0994 mm 的 3313 半固化片，εr 4.1。
+- U2 到 U9 这一段重布成 0.127/0.140 mm 的耦合线对，中心距 0.267 mm。按 IPC-2141 公式计算并用 JLC 数据校准后约 89 Ω。
+- `tools/check_usb_routing.py` 的中心距窗口相应改成 0.262–0.287 mm，门槛仍是 ≥90%。
+- 计算过程见 PREFLIGHT_DECISIONS_CN.md。

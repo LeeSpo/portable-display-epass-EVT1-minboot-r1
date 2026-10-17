@@ -44,7 +44,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 1u X5R"
+		(property "Description" "CL10A105KB8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -148,7 +148,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 22u X5R"
+		(property "Description" "CL10A226MQ8NRNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -252,7 +252,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 22u X5R"
+		(property "Description" "CL10A226MQ8NRNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -417,110 +417,6 @@
 			)
 		)
 	)
-	(symbol "D13_PESD4V0"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PESD4V0"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PESD4V0Y1BBSF"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D13_PESD4V0_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D13_PESD4V0_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
 	(symbol "C4_22u"
 		(pin_names
 			(offset 0.8)
@@ -564,7 +460,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 22u X5R"
+		(property "Description" "CL10A226MQ8NRNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -668,7 +564,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 22u X5R"
+		(property "Description" "CL10A226MP8NUNE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -858,7 +754,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Sameat:BAT3"
+		(property "Footprint" "Sameat:SH1.0_3P_RA"
 			(at 0 0 0)
 			(effects
 				(font
@@ -876,7 +772,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "S3B-PH-SM4-TB(LF)(SN)"
+		(property "Description" "1S battery: pin1 VBAT, pin2 NTC, pin3 GND; JST-SH compatible 1.0 mm, 1 A/contact; check battery plug pinout"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1206,7 +1102,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 22u X5R"
+		(property "Description" "CL10A226MQ8NRNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1738,7 +1634,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 22u X5R"
+		(property "Description" "CL10A226MQ8NRNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1761,110 +1657,6 @@
 			)
 		)
 		(symbol "C6_22u_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "D14_PESD4V0"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PESD4V0"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PESD4V0Y1BBSF"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D14_PESD4V0_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D14_PESD4V0_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -1946,7 +1738,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1uH 2A shielded"
+		(property "Description" "WPN201610H1R0MT"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2050,7 +1842,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 1u X5R"
+		(property "Description" "CL10A105KB8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2154,7 +1946,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1uH 2A shielded"
+		(property "Description" "WPN201610H1R0MT"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2258,7 +2050,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 22u X5R"
+		(property "Description" "CL10A226MP8NUNE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2385,6 +2177,110 @@
 			)
 		)
 		(symbol "R3_4.7k_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "D13_ESDLC5V0LB"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "ESDLC5V0LB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:DFN1006-2"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "ESDLC5V0LB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D13_ESDLC5V0LB_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "D13_ESDLC5V0LB_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -2588,7 +2484,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1uH 2A shielded"
+		(property "Description" "WPN201610H1R0MT"
 			(at 0 0 0)
 			(effects
 				(font
@@ -2796,7 +2692,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 Green LED"
+		(property "Description" "KT-0603G"
 			(at 0 0 0)
 			(effects
 				(font
@@ -3004,7 +2900,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 1u X5R"
+		(property "Description" "CL10A105KB8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4298,7 +4194,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 2.2u X5R"
+		(property "Description" "CL10A225KO8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4402,7 +4298,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 22u X5R"
+		(property "Description" "CL10A226MQ8NRNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4610,7 +4506,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 10u X5R"
+		(property "Description" "CL10A106KP8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4633,6 +4529,110 @@
 			)
 		)
 		(symbol "C32_10u_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "D14_ESDLC5V0LB"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "ESDLC5V0LB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:DFN1006-2"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "ESDLC5V0LB"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D14_ESDLC5V0LB_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "D14_ESDLC5V0LB_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -4730,6 +4730,110 @@
 					(effects
 						(font
 							(size 1 1)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "R33_1k"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "1k"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C11702.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1% series resistor for PC1 FEL key and debug input; limits accidental output contention"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R33_1k_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R33_1k_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
 						)
 					)
 				)
@@ -5152,6 +5256,110 @@
 			)
 		)
 	)
+	(symbol "R35_10k"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "LCD_EN default-off pulldown: holds U8 ON / U10 CTRL low while PD21 is Hi-Z; 10k sized for 10uA GPIO leakage (<=0.1V)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R35_10k_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R35_10k_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "C13_18p"
 		(pin_names
 			(offset 0.8)
@@ -5195,7 +5403,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402CG180J500NT"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5507,7 +5715,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1.27mm production/debug pads"
+		(property "Description" "1.27mm debug pads; pin 7 FEL_KEY_N is open-drain recovery input via R33 to PC1"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5641,7 +5849,7 @@
 			(pin passive line
 				(at 15.24 1.270 180)
 				(length 2.54)
-				(name "FEL_PC2"
+				(name "FEL_KEY_N"
 					(effects
 						(font
 							(size .8 .8)
@@ -5719,7 +5927,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "24MHz 10ppm 3225"
+		(property "Description" "XXDBBCNANF-24MHZ"
 			(at 0 0 0)
 			(effects
 				(font
@@ -5807,6 +6015,110 @@
 					)
 				)
 				(number "4"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "R38_0R"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bring-up isolation link; fit after rail check"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R38_0R_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R38_0R_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size .8 .8)
@@ -5920,6 +6232,110 @@
 			)
 		)
 	)
+	(symbol "R36_0R"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bring-up isolation link; fit after rail check"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R36_0R_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R36_0R_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "C14_100n"
 		(pin_names
 			(offset 0.8)
@@ -5963,7 +6379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0402 100n X7R"
+		(property "Description" "CL05B104KO5NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7080,7 +7496,7 @@
 					)
 				)
 			)
-			(pin output line
+			(pin bidirectional line
 				(at 15.24 -29.210 180)
 				(length 2.54)
 				(name "PC1_SPI0_CS"
@@ -7737,7 +8153,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Recessed recovery switch; straps PC2 low"
+		(property "Description" "Hold before cold power-on for BROM FEL via R33 and PC1 / U2.56"
 			(at 0 0 0)
 			(effects
 				(font
@@ -7763,7 +8179,7 @@
 			(pin passive line
 				(at -15.24 -1.270 0)
 				(length 2.54)
-				(name "FEL_PC2"
+				(name "FEL_KEY_N"
 					(effects
 						(font
 							(size .8 .8)
@@ -7781,7 +8197,7 @@
 			(pin passive line
 				(at -15.24 1.270 0)
 				(length 2.54)
-				(name "FEL_PC2"
+				(name "FEL_KEY_N"
 					(effects
 						(font
 							(size .8 .8)
@@ -8024,6 +8440,110 @@
 			)
 		)
 	)
+	(symbol "R34_10k"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1% pull-up to switched VCC-PC domain; PC1 FEL released HIGH"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R34_10k_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R34_10k_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "C12_18p"
 		(pin_names
 			(offset 0.8)
@@ -8067,7 +8587,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402CG180J500NT"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8171,7 +8691,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CL05B104KO5NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8336,6 +8856,214 @@
 			)
 		)
 	)
+	(symbol "R40_0R"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bring-up isolation link; fit after rail check"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R40_0R_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R40_0R_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "R37_0R"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bring-up isolation link; fit after rail check"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R37_0R_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R37_0R_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "R10_10k"
 		(pin_names
 			(offset 0.8)
@@ -8379,7 +9107,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "PC2 BOOT0 pull-up; independent of FEL key; default BOOT_SEL=11"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8402,6 +9130,110 @@
 			)
 		)
 		(symbol "R10_10k_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "R39_0R"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25744.html"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bring-up isolation link; fit after rail check"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R39_0R_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R39_0R_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -8465,7 +9297,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Sameat:0603"
+		(property "Footprint" "Sameat:0402"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8483,7 +9315,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "V851SX internal LDOA output bypass"
+		(property "Description" "CL05A225MQ5NSNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8587,7 +9419,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "BAT54W"
 			(at 0 0 0)
 			(effects
 				(font
@@ -8691,7 +9523,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF1002TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9111,7 +9943,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF4701TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9134,6 +9966,110 @@
 			)
 		)
 		(symbol "R15_4.7k_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C53_1u"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "1u"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "U8 TPS22918 VIN bulk 1uF (datasheet: CIN >= 1uF close to VIN)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C53_1u_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C53_1u_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -9502,6 +10438,110 @@
 			)
 		)
 	)
+	(symbol "C52_100n"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "100n"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "U11 switched-3V3 local decoupling"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C52_100n_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C52_100n_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "U4_LIS2DW12TR"
 		(pin_names
 			(offset 0.8)
@@ -9786,6 +10826,110 @@
 			)
 		)
 	)
+	(symbol "C54_100n"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "100n"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "U8 TPS22918 VIN HF decoupling 100nF"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C54_100n_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C54_100n_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "D2_BAT54"
 		(pin_names
 			(offset 0.8)
@@ -9829,7 +10973,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "BAT54W"
 			(at 0 0 0)
 			(effects
 				(font
@@ -9933,7 +11077,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF1002TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10249,7 +11393,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF1002TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10353,7 +11497,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF1002TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10683,7 +11827,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF4701TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -10706,214 +11850,6 @@
 			)
 		)
 		(symbol "R16_4.7k_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "R12_910k"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "R"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "910k"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/RESI-AECR0402F910KK9/C352384"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Wake timer: 910k 1% 0402; with C23 3.3u approx 3s, measure 2.2-3.8s"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "R12_910k_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "R12_910k_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "R17_10k"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "R"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "10k"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "R17_10k_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "R17_10k_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -11128,7 +12064,215 @@
 			)
 		)
 	)
-	(symbol "C52_100n"
+	(symbol "R12_910k"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "910k"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/RESI-AECR0402F910KK9/C352384"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Wake timer: 910k 1% 0402; with C23 3.3u approx 3s, measure 2.2-3.8s"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R12_910k_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R12_910k_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "R17_10k"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "R"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "10k"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0402WGF1002TCE"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "R17_10k_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "R17_10k_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C62_100n"
 		(pin_names
 			(offset 0.8)
 		)
@@ -11171,7 +12315,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "U11 switched-3V3 local decoupling"
+		(property "Description" "CL05B104KO5NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11180,7 +12324,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "C52_100n_0_1"
+		(symbol "C62_100n_0_1"
 			(rectangle
 				(start -12.7 -5.080)
 				(end 12.7 5.080)
@@ -11193,7 +12337,839 @@
 				)
 			)
 		)
-		(symbol "C52_100n_1_1"
+		(symbol "C62_100n_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C55_100n"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "100n"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CL05B104KO5NNNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C55_100n_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C55_100n_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C58_100n"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "100n"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CL05B104KO5NNNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C58_100n_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C58_100n_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C63_100n"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "100n"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CL05B104KO5NNNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C63_100n_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C63_100n_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C59_100n"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "100n"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CL05B104KO5NNNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C59_100n_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C59_100n_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C56_100n"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "100n"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CL05B104KO5NNNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C56_100n_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C56_100n_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C61_100n"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "100n"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CL05B104KO5NNNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C61_100n_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C61_100n_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C57_100n"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "100n"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CL05B104KO5NNNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C57_100n_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C57_100n_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C60_100n"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "100n"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CL05B104KO5NNNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C60_100n_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C60_100n_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -11275,7 +13251,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF2201TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11402,110 +13378,6 @@
 			)
 		)
 		(symbol "C42_1u_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "D7_PESD4V0"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PESD4V0"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PESD4V0Y1BBSF"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D7_PESD4V0_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D7_PESD4V0_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -11752,14 +13624,14 @@
 			)
 		)
 	)
-	(symbol "D12_PESD4V0"
+	(symbol "J5_MicroSD"
 		(pin_names
 			(offset 0.8)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "D"
+		(property "Reference" "J"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11768,7 +13640,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "PESD4V0"
+		(property "Value" "MicroSD"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11777,7 +13649,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Sameat:0402"
+		(property "Footprint" "Sameat:XKTF-0803-0"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11795,7 +13667,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "PESD4V0Y1BBSF"
+		(property "Description" "microSD push-push, pin 9 = card detect to shell/GND; card overhangs right edge"
 			(at 0 0 0)
 			(effects
 				(font
@@ -11804,10 +13676,10 @@
 				(hide yes)
 			)
 		)
-		(symbol "D12_PESD4V0_0_1"
+		(symbol "J5_MicroSD_0_1"
 			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
+				(start -12.7 -8.890)
+				(end 12.7 8.890)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -11817,11 +13689,11 @@
 				)
 			)
 		)
-		(symbol "D12_PESD4V0_1_1"
+		(symbol "J5_MicroSD_1_1"
 			(pin passive line
-				(at -15.24 0.000 0)
+				(at -15.24 -7.620 0)
 				(length 2.54)
-				(name "1"
+				(name "DAT2"
 					(effects
 						(font
 							(size .8 .8)
@@ -11837,9 +13709,9 @@
 				)
 			)
 			(pin passive line
-				(at 15.24 0.000 180)
+				(at -15.24 -5.080 0)
 				(length 2.54)
-				(name "2"
+				(name "CD_DAT3"
 					(effects
 						(font
 							(size .8 .8)
@@ -11847,6 +13719,204 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 -2.540 0)
+				(length 2.54)
+				(name "CMD"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 2.540 0)
+				(length 2.54)
+				(name "CLK"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 5.080 0)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 7.620 0)
+				(length 2.54)
+				(name "DAT0"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 -6.350 180)
+				(length 2.54)
+				(name "DAT1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 -3.810 180)
+				(length 2.54)
+				(name "DET"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 -1.270 180)
+				(length 2.54)
+				(name "SHIELD"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 1.270 180)
+				(length 2.54)
+				(name "SHIELD"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 3.810 180)
+				(length 2.54)
+				(name "SHIELD"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 6.350 180)
+				(length 2.54)
+				(name "SHIELD"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "13"
 					(effects
 						(font
 							(size .8 .8)
@@ -12003,7 +14073,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF2202TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -12055,6 +14125,254 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "U13_TPD4E05U06DQAR"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "TPD4E05U06DQAR"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:TPD4E05U06_DQA"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4-ch 0.5pF flow-through ESD for microSD lines"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "U13_TPD4E05U06DQAR_0_1"
+			(rectangle
+				(start -12.7 -6.350)
+				(end 12.7 6.350)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "U13_TPD4E05U06DQAR_1_1"
+			(pin passive line
+				(at -15.24 -5.080 0)
+				(length 2.54)
+				(name "IO1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 -2.540 0)
+				(length 2.54)
+				(name "IO2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 2.540 0)
+				(length 2.54)
+				(name "IO3"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 5.080 0)
+				(length 2.54)
+				(name "IO4"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 -5.080 180)
+				(length 2.54)
+				(name "NC_FT4"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 -2.540 180)
+				(length 2.54)
+				(name "NC_FT3"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 2.540 180)
+				(length 2.54)
+				(name "NC_FT2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 5.080 180)
+				(length 2.54)
+				(name "NC_FT1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "10"
 					(effects
 						(font
 							(size .8 .8)
@@ -12229,7 +14547,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF1000TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -12412,110 +14730,6 @@
 			)
 		)
 	)
-	(symbol "C46_10u"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "C"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "10u"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0603"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "EL VIN"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "C46_10u_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "C46_10u_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
 	(symbol "R26_100k"
 		(pin_names
 			(offset 0.8)
@@ -12559,7 +14773,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF1003TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -12837,110 +15051,6 @@
 					)
 				)
 				(number "3"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "D6_PESD4V0"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PESD4V0"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PESD4V0Y1BBSF"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D6_PESD4V0_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D6_PESD4V0_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
 					(effects
 						(font
 							(size .8 .8)
@@ -13305,7 +15415,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CL10A475KO8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -13513,7 +15623,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0603 Blue LED"
+		(property "Description" "KT-0603B"
 			(at 0 0 0)
 			(effects
 				(font
@@ -13843,7 +15953,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CL05B103KB5NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -13947,7 +16057,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Molex 502598-4593; verify -4591 module FPC compatibility; MIPI 1-lane; EL± from U10"
+		(property "Description" "Molex 502598-4593 (LCSC C5365339): 45P 0.3mm BackFlip dual-contact, direct replacement of KD024-recommended 502598-4591 (obsolete); MIPI 1-lane; EL± from U10"
 			(at 0 0 0)
 			(effects
 				(font
@@ -14994,6 +17104,254 @@
 			)
 		)
 	)
+	(symbol "U12_TPD4E05U06DQAR"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "TPD4E05U06DQAR"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:TPD4E05U06_DQA"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "4-ch 0.5pF flow-through ESD for microSD lines"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "U12_TPD4E05U06DQAR_0_1"
+			(rectangle
+				(start -12.7 -6.350)
+				(end 12.7 6.350)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "U12_TPD4E05U06DQAR_1_1"
+			(pin passive line
+				(at -15.24 -5.080 0)
+				(length 2.54)
+				(name "IO1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 -2.540 0)
+				(length 2.54)
+				(name "IO2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 2.540 0)
+				(length 2.54)
+				(name "IO3"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -15.24 5.080 0)
+				(length 2.54)
+				(name "IO4"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 -5.080 180)
+				(length 2.54)
+				(name "NC_FT4"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 -2.540 180)
+				(length 2.54)
+				(name "NC_FT3"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 2.540 180)
+				(length 2.54)
+				(name "NC_FT2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 5.080 180)
+				(length 2.54)
+				(name "NC_FT1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "SW2_DOWN"
 		(pin_names
 			(offset 0.8)
@@ -15461,7 +17819,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF1003TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15565,7 +17923,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CL10A106KP8NNNC"
 			(at 0 0 0)
 			(effects
 				(font
@@ -15617,620 +17975,6 @@
 					)
 				)
 				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "C47_10u"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "C"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "10u"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0603"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "EL VIN"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "C47_10u_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "C47_10u_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "D11_PESD4V0"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PESD4V0"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PESD4V0Y1BBSF"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D11_PESD4V0_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D11_PESD4V0_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "D8_PESD4V0"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PESD4V0"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PESD4V0Y1BBSF"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D8_PESD4V0_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D8_PESD4V0_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "J5_MicroSD"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "J"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "MicroSD"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:MICROSD"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "MUP-M617-2"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "J5_MicroSD_0_1"
-			(rectangle
-				(start -12.7 -8.890)
-				(end 12.7 8.890)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "J5_MicroSD_1_1"
-			(pin passive line
-				(at -15.24 -7.620 0)
-				(length 2.54)
-				(name "DAT2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -15.24 -5.080 0)
-				(length 2.54)
-				(name "DAT3"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -15.24 -2.540 0)
-				(length 2.54)
-				(name "CMD"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "VDD"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -15.24 2.540 0)
-				(length 2.54)
-				(name "CLK"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -15.24 5.080 0)
-				(length 2.54)
-				(name "VSS"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -15.24 7.620 0)
-				(length 2.54)
-				(name "DAT0"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 -6.350 180)
-				(length 2.54)
-				(name "DAT1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 -3.810 180)
-				(length 2.54)
-				(name "CD"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 -1.270 180)
-				(length 2.54)
-				(name "SH"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 1.270 180)
-				(length 2.54)
-				(name "SH"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 3.810 180)
-				(length 2.54)
-				(name "SH"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 6.350 180)
-				(length 2.54)
-				(name "SH"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "13"
 					(effects
 						(font
 							(size .8 .8)
@@ -16387,7 +18131,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF1002TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -16491,7 +18235,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF0000TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -16656,110 +18400,6 @@
 			)
 		)
 	)
-	(symbol "D10_PESD4V0"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PESD4V0"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PESD4V0Y1BBSF"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D10_PESD4V0_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D10_PESD4V0_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
 	(symbol "R25_47k"
 		(pin_names
 			(offset 0.8)
@@ -16803,7 +18443,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0402WGF4702TCE"
 			(at 0 0 0)
 			(effects
 				(font
@@ -16826,110 +18466,6 @@
 			)
 		)
 		(symbol "R25_47k_1_1"
-			(pin passive line
-				(at -15.24 0.000 0)
-				(length 2.54)
-				(name "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 15.24 0.000 180)
-				(length 2.54)
-				(name "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size .8 .8)
-						)
-					)
-				)
-			)
-		)
-	)
-	(symbol "D9_PESD4V0"
-		(pin_names
-			(offset 0.8)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "D"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PESD4V0"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Sameat:0402"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "PESD4V0Y1BBSF"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.0 1.0)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "D9_PESD4V0_0_1"
-			(rectangle
-				(start -12.7 -5.080)
-				(end 12.7 5.080)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "D9_PESD4V0_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -17034,6 +18570,214 @@
 			)
 		)
 		(symbol "C49_10u_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C47_10u"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "10u"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CL05A106MQ5NUNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C47_10u_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C47_10u_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C46_10u"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "10u"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CL05A106MQ5NUNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C46_10u_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C46_10u_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)

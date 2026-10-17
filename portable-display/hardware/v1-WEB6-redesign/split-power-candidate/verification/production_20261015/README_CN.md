@@ -1,0 +1,29 @@
+# JLC 生产包（2026-10-15）——**还没有放行生产**
+
+- **来源：** 提交 `cae2016`（fix/preflight-blockers）。主 PCB 文件 SHA-256：`0409c89016cf30fdbe9049a122eb806341be229a87bc2f33c1adee9fbf4404a1`。这里的全部文件都是从这一个提交导出的。
+- **当前状态：**
+  - `fabrication_released = false`。
+  - 还没关闭的阻塞项见 ../../OPEN_ISSUES_CN.md：电源 OTP 冷启动配置还没确认，屏幕的机械和 FPC 也还没确认。
+  - 这个包只用来报价和 JLC 预览检查。
+- **文件：**
+  - `gerber_jlc.zip` / `gerber/`：
+    - F.Cu、In1.Cu、In2.Cu、B.Cu 四层铜
+    - F/B 阻焊、F/B 钢网、F/B 丝印（已减去阻焊开窗）
+    - Edge.Cuts
+    - PTH.drl、NPTH.drl（Excellon，单位 mm），加上钻孔图
+    - gbrjob（里面有叠层信息）
+  - `BOM_JLC.csv`：54 行，130 颗。每一颗都有 LCSC 料号。
+  - `CPL_JLC.csv`：130 颗，双面（T 面 117 颗 / B 面 13 颗）。
+  - `checks/`：导出时的检查结果，DRC、ERC、未连接、一致性全部为 0，power_contract/fel_recovery/usb_routing/wake_domain 全部通过。
+- **不在 BOM/CPL 里的器件：**
+  - R31：DNP。
+  - J3：调试弹针测试焊盘，不贴装。
+  - H1–H4：安装孔。
+- **R36–R40（0 Ω 隔离电阻）：** 在 BOM 里照常贴装。按 ../../BRINGUP_CN.md，调试时可以拆掉做分段上电。
+- **PCB 下单参数**（详见 ../../ORDERING_GUIDE_CN.md）：
+  - 4 层，1.0 mm，阻抗控制叠层 **JLC04101H-3313**，ENIG。
+  - 过孔 0.60/0.30 mm，**全部做 Epoxy Filled & Capped（POFV）**。
+  - 阻抗备注：USB 90 Ω 差分 w0.127/s0.14，MIPI 100 Ω 差分 w0.10/s0.15，都在 L1 层、以 L2 为参考。
+  - 双面贴片，选标准型 PCBA（U1/U2 是 QFN，要做 X-Ray）。
+- **JLC 预览时要检查：** 按 ORDERING_GUIDE 的方向检查表，逐个确认 1 脚和极性。CPL 里的旋转角是 KiCad 原值，JLC 预览时可能需要手动修正个别器件的方向。
+- 这一版替换了 d49a636 导出的旧包，新增了 B 面 3V3_B 去耦电容 C55/C63。BOM 和 CPL 的位号逐一核对一致。

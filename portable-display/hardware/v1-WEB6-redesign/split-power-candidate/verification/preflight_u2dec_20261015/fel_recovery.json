@@ -1,0 +1,38 @@
+{
+  "static_checks_passed": true,
+  "errors": [],
+  "board_sha256": "1cd940726cc79808ac26705728ca8608780e85b0a183f428b5f65ab4a93efa87",
+  "physical_cpu_pin": "U2.56 / PC1 / SPI0-CS0",
+  "default_boot_sel": "11 (PC3/PC2); independent of recovery key",
+  "dc_assumptions": {
+    "resistor_tolerance": 0.01,
+    "internal_pullup_min_ohm": 12000,
+    "contact_max_ohm": 10,
+    "pressed_source_leakage_a": 1e-05,
+    "released_total_sink_leakage_a": 2e-05,
+    "fixture": "open-drain LOW or release; no external pull-up"
+  },
+  "dc_corners": [
+    {
+      "vdd_v": 2.97,
+      "pressed_max_v": 0.4786494069633976,
+      "vil_max_v": 0.891,
+      "low_margin_v": 0.41235059303660243,
+      "released_min_v": 2.7680000000000002,
+      "vih_min_v": 2.079,
+      "high_margin_v": 0.6890000000000001
+    },
+    {
+      "vdd_v": 3.63,
+      "pressed_max_v": 0.5831080219359775,
+      "vil_max_v": 1.089,
+      "low_margin_v": 0.5058919780640224,
+      "released_min_v": 3.428,
+      "vih_min_v": 2.541,
+      "high_margin_v": 0.887
+    }
+  ],
+  "accidental_gpio_high_key_current_upper_bound_a": 0.0036666666666666666,
+  "hardware_verified": false,
+  "brom_enumeration_verified": false
+}

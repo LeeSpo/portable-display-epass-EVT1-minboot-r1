@@ -151,4 +151,5 @@
 		(fill solid)
 		(layer "F.Fab")
 	)
+(fp_circle (center -1.885 -1.557) (end -1.81 -1.557) (stroke (width 0.15) (type default)) (fill yes) (layer "F.SilkS") (uuid "a0811fe7-4c51-4e49-bf75-59c6ee8e6224"))
 )

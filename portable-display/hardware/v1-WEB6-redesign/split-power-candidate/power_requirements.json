@@ -9,16 +9,16 @@
     "U1": {
       "2": "VREF",
       "3": "GND",
-      "4": "CORE_0V93",
+      "4": "CORE_0V93_PMIC",
       "5": "LX_CORE",
       "6": "VSYS",
       "7": "VSYS",
       "8": "LX_DRAM",
-      "9": "DRAM_1V5",
-      "13": "3V3",
-      "17": "3V3",
-      "18": "1V8",
-      "21": "3V3",
+      "9": "DRAM_1V5_PMIC",
+      "13": "3V3_PMIC",
+      "17": "3V3_PMIC",
+      "18": "1V8_PMIC",
+      "21": "3V3_PMIC",
       "22": "LX_3V3",
       "23": "VSYS",
       "24": "VSYS",
@@ -41,7 +41,7 @@
       "41": "GND"
     },
     "U2": {
-      "5": "3V3",
+      "5": "3V3_B",
       "13": "CORE_0V93",
       "14": "SOC_LDO_1V8",
       "17": "CORE_0V93",
@@ -60,7 +60,7 @@
       "55": "3V3",
       "62": "1V8",
       "75": "CORE_0V93",
-      "78": "3V3",
+      "78": "3V3_B",
       "79": "1V8",
       "88": "CORE_0V93",
       "89": "GND",
@@ -80,15 +80,15 @@
     },
     "L1": {
       "1": "LX_3V3",
-      "2": "3V3"
+      "2": "3V3_PMIC"
     },
     "L2": {
       "1": "LX_CORE",
-      "2": "CORE_0V93"
+      "2": "CORE_0V93_PMIC"
     },
     "L3": {
       "1": "LX_DRAM",
-      "2": "DRAM_1V5"
+      "2": "DRAM_1V5_PMIC"
     },
     "C38": {
       "1": "VMID",
@@ -107,7 +107,7 @@
       "2": "GND"
     },
     "C10": {
-      "1": "1V8",
+      "1": "1V8_PMIC",
       "2": "GND"
     },
     "C33": {
@@ -129,7 +129,7 @@
     },
     "Q3": {
       "1": "SD_PWR_GATE",
-      "2": "3V3",
+      "2": "3V3_B",
       "3": "SD_3V3"
     },
     "J4": {
@@ -253,6 +253,60 @@
     "R34": {
       "1": "3V3",
       "2": "FEL_N"
+    },
+    "U12": {
+      "1": "SD_DET",
+      "2": "SD_CMD",
+      "3": "GND",
+      "4": "SD_D3",
+      "5": "SD_D2",
+      "6": "SD_D2",
+      "7": "SD_D3",
+      "8": "GND",
+      "9": "SD_CMD",
+      "10": "SD_DET"
+    },
+    "U13": {
+      "2": "SD_D1",
+      "3": "GND",
+      "4": "SD_D0",
+      "5": "SD_CLK",
+      "6": "SD_CLK",
+      "7": "SD_D0",
+      "8": "GND",
+      "9": "SD_D1"
+    },
+    "C57": {
+      "1": "GND",
+      "2": "3V3"
+    },
+    "U10": {
+      "11": "3V3",
+      "12": "3V3",
+      "7": "LCD_EN"
+    },
+    "L5": {
+      "1": "3V3"
+    },
+    "R36": {
+      "1": "CORE_0V93",
+      "2": "CORE_0V93_PMIC"
+    },
+    "R37": {
+      "1": "DRAM_1V5_PMIC",
+      "2": "DRAM_1V5"
+    },
+    "R38": {
+      "1": "3V3_PMIC",
+      "2": "3V3_B"
+    },
+    "R39": {
+      "1": "3V3_PMIC",
+      "2": "3V3"
+    },
+    "R40": {
+      "1": "1V8_PMIC",
+      "2": "1V8"
     }
   },
   "rail_requirements": [
@@ -330,7 +384,10 @@
     "R10": "10k",
     "R28": "10k",
     "R33": "1k",
-    "R34": "10k"
+    "R34": "10k",
+    "R35": "10k",
+    "C53": "1u",
+    "C54": "100n"
   },
   "tf_control_requirement": {
     "gpio": "U2 PH12 / pin 40 / SD_PWR_EN",
@@ -363,7 +420,11 @@
     "R33",
     "R34",
     "SW6",
-    "J3"
+    "J3",
+    "R35",
+    "C53",
+    "C54",
+    "J2"
   ],
   "display_io_requirement": {
     "reset_gpio": "PA8",
@@ -406,6 +467,111 @@
     "R34": {
       "MPN": "0402WGF1002TCE",
       "LCSC": "C25744",
+      "Footprint": "Sameat:0402"
+    },
+    "R35": {
+      "MPN": "0402WGF1002TCE",
+      "LCSC": "C25744",
+      "Footprint": "Sameat:0402"
+    },
+    "C53": {
+      "MPN": "CL05A105KA5NQNC",
+      "LCSC": "C52923",
+      "Footprint": "Sameat:0402"
+    },
+    "C54": {
+      "MPN": "CL05B104KO5NNNC",
+      "LCSC": "C1525",
+      "Footprint": "Sameat:0402"
+    },
+    "J2": {
+      "MPN": "ZX-SH1.0-3PWT",
+      "LCSC": "C7430445",
+      "Footprint": "Sameat:SH1.0_3P_RA"
+    },
+    "D13": {
+      "MPN": "ESDLC5V0LB",
+      "LCSC": "C20168172",
+      "Footprint": "Sameat:DFN1006-2"
+    },
+    "D14": {
+      "MPN": "ESDLC5V0LB",
+      "LCSC": "C20168172",
+      "Footprint": "Sameat:DFN1006-2"
+    },
+    "U12": {
+      "MPN": "TPD4E05U06DQAR",
+      "LCSC": "C138714",
+      "Footprint": "Sameat:TPD4E05U06_DQA"
+    },
+    "U13": {
+      "MPN": "TPD4E05U06DQAR",
+      "LCSC": "C138714",
+      "Footprint": "Sameat:TPD4E05U06_DQA"
+    },
+    "J5": {
+      "MPN": "XKTF-0803-0",
+      "LCSC": "C381083",
+      "Footprint": "Sameat:XKTF-0803-0"
+    },
+    "C34": {
+      "MPN": "CL05A225MQ5NSNC",
+      "LCSC": "C12530",
+      "Footprint": "Sameat:0402"
+    },
+    "C57": {
+      "MPN": "CL05B104KO5NNNC",
+      "LCSC": "C1525",
+      "Footprint": "Sameat:0402"
+    },
+    "C59": {
+      "MPN": "CL05B104KO5NNNC",
+      "LCSC": "C1525",
+      "Footprint": "Sameat:0402"
+    },
+    "C46": {
+      "MPN": "CL05A106MQ5NUNC",
+      "LCSC": "C15525",
+      "Footprint": "Sameat:0402"
+    },
+    "C47": {
+      "MPN": "CL05A106MQ5NUNC",
+      "LCSC": "C15525",
+      "Footprint": "Sameat:0402"
+    },
+    "R36": {
+      "MPN": "0402WGF0000TCE",
+      "LCSC": "C17168",
+      "Footprint": "Sameat:0402"
+    },
+    "R37": {
+      "MPN": "0402WGF0000TCE",
+      "LCSC": "C17168",
+      "Footprint": "Sameat:0402"
+    },
+    "R38": {
+      "MPN": "0402WGF0000TCE",
+      "LCSC": "C17168",
+      "Footprint": "Sameat:0402"
+    },
+    "R39": {
+      "MPN": "0402WGF0000TCE",
+      "LCSC": "C17168",
+      "Footprint": "Sameat:0402"
+    },
+    "R40": {
+      "MPN": "0402WGF0000TCE",
+      "LCSC": "C17168",
+      "Footprint": "Sameat:0402"
+    },
+    "C60": {
+      "MPN": "CL05B104KO5NNNC",
+      "LCSC": "C1525",
+      "Footprint": "Sameat:0402"
+    },
+    "C62": {
+      "MPN": "CL05B104KO5NNNC",
+      "LCSC": "C1525",
       "Footprint": "Sameat:0402"
     }
   },
@@ -472,5 +638,14 @@
     "brom_flow": "Mandatory upgrade: UART handshake then USB after timeout",
     "hardware_verified": false,
     "evidence_document": "FEL_REPAIR_CN.md"
+  },
+  "lcd_en_default_requirement": {
+    "net": "LCD_EN",
+    "pulldown": "R35 10k to GND",
+    "r31": "0R LCD_SWIRE<->LCD_EN bridge, DNP (not a pulldown)",
+    "default": "U8 OFF / U10 CTRL low while PD21 is Hi-Z",
+    "sizing": "10uA worst-case GPIO leakage -> <=0.1V",
+    "hardware_verified": false,
+    "evidence_document": "PREFLIGHT_DECISIONS_CN.md"
   }
 }
