@@ -1,0 +1,34 @@
+{
+  "all_faults_rejected": true,
+  "cases": [
+    {
+      "case": "Missing CPL component",
+      "rejected_as_expected": true,
+      "problems": [
+        "BOM/CPL/PCB sets differ: BOM-only ['Y1']; CPL-only []; PCB-only ['Y1']"
+      ]
+    },
+    {
+      "case": "Duplicate CPL designator",
+      "rejected_as_expected": true,
+      "problems": [
+        "Duplicate BOM or CPL designator"
+      ]
+    },
+    {
+      "case": "Missing LCSC part number",
+      "rejected_as_expected": true,
+      "problems": [
+        "Missing BOM LCSC part number"
+      ]
+    },
+    {
+      "case": "Production evidence from another PCB",
+      "rejected_as_expected": true,
+      "problems": [
+        "Production package wake_domain does not match this source board"
+      ]
+    }
+  ],
+  "isolated_copy": true
+}
