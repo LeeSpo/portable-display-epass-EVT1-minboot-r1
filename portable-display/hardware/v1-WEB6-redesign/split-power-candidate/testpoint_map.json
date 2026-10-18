@@ -1,0 +1,132 @@
+[
+  {
+    "reference": "TP1",
+    "net": "CORE_0V93",
+    "position": [
+      19.4,
+      46.7
+    ],
+    "source_via": [
+      20.2,
+      46.7
+    ],
+    "sheet": "soc"
+  },
+  {
+    "reference": "TP2",
+    "net": "DRAM_1V5",
+    "position": [
+      29.55,
+      44.9
+    ],
+    "source_via": [
+      30.35,
+      44.9
+    ],
+    "sheet": "soc"
+  },
+  {
+    "reference": "TP3",
+    "net": "1V8",
+    "position": [
+      12.834,
+      23.516
+    ],
+    "source_via": [
+      13.4,
+      22.95
+    ],
+    "sheet": "soc"
+  },
+  {
+    "reference": "TP4",
+    "net": "RTC_3V3",
+    "position": [
+      34.75,
+      12.4
+    ],
+    "source_via": [
+      34.75,
+      13.2
+    ],
+    "sheet": "sensors"
+  },
+  {
+    "reference": "TP5",
+    "net": "VSYS",
+    "position": [
+      19.9,
+      50.7
+    ],
+    "source_via": [
+      20.7,
+      50.7
+    ],
+    "sheet": "power"
+  },
+  {
+    "reference": "TP6",
+    "net": "ELVDD",
+    "position": [
+      6.9,
+      41.1
+    ],
+    "source_via": [
+      7.7,
+      41.1
+    ],
+    "sheet": "interfaces"
+  },
+  {
+    "reference": "TP7",
+    "net": "ELVSS",
+    "position": [
+      9.2,
+      43.1
+    ],
+    "source_via": [
+      10.0,
+      43.1
+    ],
+    "sheet": "interfaces"
+  },
+  {
+    "reference": "TP8",
+    "net": "PMIC_SCL",
+    "position": [
+      14.734,
+      19.366
+    ],
+    "source_via": [
+      15.3,
+      18.8
+    ],
+    "sheet": "power"
+  },
+  {
+    "reference": "TP9",
+    "net": "PMIC_SDA",
+    "position": [
+      6.5,
+      17.7
+    ],
+    "source_via": [
+      7.3,
+      17.7
+    ],
+    "sheet": "power"
+  },
+  {
+    "reference": "TP10",
+    "net": "GND",
+    "position": [
+      4.491,
+      47.142
+    ],
+    "source_via": [
+      5.291,
+      47.1419
+    ],
+    "sheet": "soc"
+  }
+]

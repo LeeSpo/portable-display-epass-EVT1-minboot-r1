@@ -15,7 +15,7 @@ import kicad_sexpr as s
 
 STEM = 'ak_display_38x64_SPLIT_POWER_CANDIDATE'
 EXTRA_SUPPLY_NETS = ('3V3_PMIC', '3V3_B', 'CORE_0V93_PMIC', 'DRAM_1V5_PMIC', '1V8')
-DATE = '2026-10-05'
+DATE = '2026-10-18'
 original_pin_type = g.pin_type
 
 
@@ -60,7 +60,7 @@ def main():
     records['R32'].sheet = 'interfaces'
     records['C52'] = copy.deepcopy(records['C26'])
     records['C52'].ref = 'C52'
-    for ref in ['C53', 'C54', 'C55', 'C56', 'C57', 'C58', 'C59', 'C60', 'C61', 'C62', 'C63']:
+    for ref in ['C53', 'C54', 'C55', 'C56', 'C57', 'C58', 'C59', 'C60', 'C61', 'C62', 'C63', 'C64']:
         records[ref] = copy.deepcopy(records['C26'])
         records[ref].ref = ref
     for ref in ['R33', 'R34', 'R35', 'R36', 'R37', 'R38', 'R39', 'R40']:
@@ -84,6 +84,15 @@ def main():
         props = s.props(fp)
         ref = props['Reference']
         numbered = [p for p in s.children(fp, 'pad') if p[1]]
+        if ref.startswith('TP') and str(fp[1]) == 'Sameat:TestPoint_Pad_D1.0mm':
+            net = str(s.val(s.children(fp, 'pad')[0], 'net'))
+            test_sheets = {'CORE_0V93': 'soc', 'DRAM_1V5': 'soc', '1V8': 'soc',
+                           'RTC_3V3': 'sensors', 'VSYS': 'power', 'ELVDD': 'interfaces',
+                           'ELVSS': 'interfaces', 'PMIC_SCL': 'power', 'PMIC_SDA': 'power',
+                           'GND': 'soc'}
+            records[ref] = g.Device(ref, net, 'TestPoint_Pad_D1.0mm',
+                                    test_sheets[net], 0, 0, {'1': ('TEST', net)},
+                                    note='Bare probe pad; no purchased or assembled part')
         if ref not in records:
             assert not numbered, f'No pin-name definition for {ref}'
             continue  # Four mechanical, unnumbered holes; no electrical symbol.
@@ -127,6 +136,13 @@ def main():
                 extra.append(f'(global_label "{net}" (shape passive) (at {x} {y} 0) (effects (font (size 1 1)) (justify left)) (uuid "{g.uid(ref + "-label")}"))')
             text = text.replace('\t(embedded_fonts no)', '\n'.join(extra) + '\n\t(embedded_fonts no)', 1)
         tree = s.loads(text)
+        # Native testpoints remain on-board/netlisted but are never BOM parts.
+        for symbol in s.children(tree, 'symbol'):
+            if s.props(symbol).get('Reference', '').startswith('TP'):
+                s.setval(symbol, 'in_bom', 'no')
+        for symbol in s.children(s.child(tree, 'lib_symbols'), 'symbol'):
+            if str(symbol[1]).startswith('Sameat:TP'):
+                s.setval(symbol, 'in_bom', 'no')
         selected = [d for d in devices if d.sheet == sheet]
         # Variable-height column packing prevents USB and SoC symbols overlapping.
         tops = [35.56] * 4

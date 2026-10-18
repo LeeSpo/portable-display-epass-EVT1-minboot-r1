@@ -4671,6 +4671,264 @@
 			)
 		)
 	)
+	(symbol "TP8_PMIC_SCL"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(property "Reference" "T"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PMIC_SCL"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:TestPoint_Pad_D1.0mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bare probe pad; no purchased or assembled part"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TP8_PMIC_SCL_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "TP8_PMIC_SCL_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "TEST"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "TP5_VSYS"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(property "Reference" "T"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VSYS"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:TestPoint_Pad_D1.0mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bare probe pad; no purchased or assembled part"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TP5_VSYS_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "TP5_VSYS_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "TEST"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "TP9_PMIC_SDA"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(property "Reference" "T"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PMIC_SDA"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:TestPoint_Pad_D1.0mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bare probe pad; no purchased or assembled part"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TP9_PMIC_SDA_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "TP9_PMIC_SDA_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "TEST"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "SUPPLY_SOURCE"
 		(power)
 		(pin_names
@@ -9168,6 +9426,350 @@
 			)
 		)
 	)
+	(symbol "TP1_CORE_0V93"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(property "Reference" "T"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "CORE_0V93"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:TestPoint_Pad_D1.0mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bare probe pad; no purchased or assembled part"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TP1_CORE_0V93_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "TP1_CORE_0V93_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "TEST"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "TP2_DRAM_1V5"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(property "Reference" "T"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "DRAM_1V5"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:TestPoint_Pad_D1.0mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bare probe pad; no purchased or assembled part"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TP2_DRAM_1V5_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "TP2_DRAM_1V5_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "TEST"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "TP3_1V8"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(property "Reference" "T"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "1V8"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:TestPoint_Pad_D1.0mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bare probe pad; no purchased or assembled part"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TP3_1V8_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "TP3_1V8_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "TEST"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "TP10_GND"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(property "Reference" "T"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:TestPoint_Pad_D1.0mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bare probe pad; no purchased or assembled part"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TP10_GND_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "TP10_GND_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "TEST"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "R39_0R"
 		(pin_names
 			(offset 0.8)
@@ -13104,6 +13706,92 @@
 			)
 		)
 	)
+	(symbol "TP4_RTC_3V3"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(property "Reference" "T"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "RTC_3V3"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:TestPoint_Pad_D1.0mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bare probe pad; no purchased or assembled part"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TP4_RTC_3V3_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "TP4_RTC_3V3_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "TEST"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "C60_100n"
 		(pin_names
 			(offset 0.8)
@@ -13170,6 +13858,110 @@
 			)
 		)
 		(symbol "C60_100n_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 0.000 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "C64_100n"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "100n"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CL05B104KO5NNNC"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "C64_100n_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "C64_100n_1_1"
 			(pin passive line
 				(at -15.24 0.000 0)
 				(length 2.54)
@@ -18608,6 +19400,92 @@
 			)
 		)
 	)
+	(symbol "TP6_ELVDD"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(property "Reference" "T"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "ELVDD"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:TestPoint_Pad_D1.0mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bare probe pad; no purchased or assembled part"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TP6_ELVDD_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "TP6_ELVDD_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "TEST"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "C47_10u"
 		(pin_names
 			(offset 0.8)
@@ -18807,6 +19685,92 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "TP7_ELVSS"
+		(pin_names
+			(offset 0.8)
+		)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(property "Reference" "T"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "ELVSS"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Sameat:TestPoint_Pad_D1.0mm"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bare probe pad; no purchased or assembled part"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.0 1.0)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "TP7_ELVSS_0_1"
+			(rectangle
+				(start -12.7 -5.080)
+				(end 12.7 5.080)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "TP7_ELVSS_1_1"
+			(pin passive line
+				(at -15.24 0.000 0)
+				(length 2.54)
+				(name "TEST"
+					(effects
+						(font
+							(size .8 .8)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size .8 .8)

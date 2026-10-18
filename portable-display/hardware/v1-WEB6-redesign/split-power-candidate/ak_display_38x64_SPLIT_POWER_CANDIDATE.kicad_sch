@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "38x64 split-power candidate - connectivity schematic")
-		(date "2026-10-05")
+		(date "2026-10-18")
 		(rev "FEL1")
 		(company "Sameat")
 		(comment 1 "Power configuration incomplete: C3036461 factory profile not confirmed")

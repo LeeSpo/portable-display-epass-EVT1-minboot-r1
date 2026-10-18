@@ -6,7 +6,7 @@
 	(paper "A2")
 	(title_block
 		(title "04 Display / SD / Buttons")
-		(date "2026-10-05")
+		(date "2026-10-18")
 		(rev "FEL1")
 		(company "Sameat")
 		(comment 1 "Current PCB pin nets; C3036461 factory configuration NOT verified")
@@ -5413,6 +5413,92 @@
 				)
 			)
 		)
+		(symbol "Sameat:TP6_ELVDD"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "T"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "ELVDD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Sameat:TestPoint_Pad_D1.0mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Bare probe pad; no purchased or assembled part"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TP6_ELVDD_0_1"
+				(rectangle
+					(start -12.7 -5.080)
+					(end 12.7 5.080)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TP6_ELVDD_1_1"
+				(pin passive line
+					(at -15.24 0.000 0)
+					(length 2.54)
+					(name "TEST"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Sameat:C47_10u"
 			(pin_names
 				(offset 0.8)
@@ -5612,6 +5698,92 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Sameat:TP7_ELVSS"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "T"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "ELVSS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Sameat:TestPoint_Pad_D1.0mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Bare probe pad; no purchased or assembled part"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TP7_ELVSS_0_1"
+				(rectangle
+					(start -12.7 -5.080)
+					(end 12.7 5.080)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TP7_ELVSS_1_1"
+				(pin passive line
+					(at -15.24 0.000 0)
+					(length 2.54)
+					(name "TEST"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size .8 .8)
@@ -10709,6 +10881,99 @@
 		(uuid "e146e9ee-64eb-5939-8056-cb93784c096e")
 	)
 	(symbol
+		(lib_id "Sameat:TP6_ELVDD")
+		(at 63.500 299.720 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "6b52924d-af91-50a7-a223-8d2944f287f4")
+		(property "Reference" "TP6"
+			(at 63.500 290.640 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "ELVDD"
+			(at 63.500 292.640 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:TestPoint_Pad_D1.0mm"
+			(at 63.500 299.720 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.500 299.720 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 63.500 299.720 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 63.500 299.720 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bare probe pad; no purchased or assembled part"
+			(at 63.500 299.720 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ff7c4b4-dc7b-56a9-bca2-ae97d1958ad9")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/7309f07d-a051-57ea-bb97-60dcbb9d92b6"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "ELVDD"
+		(shape passive)
+		(at 48.260 299.720 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "2f9c3eb8-a48d-5edf-a40b-904ae08ca521")
+	)
+	(symbol
 		(lib_id "Sameat:C47_10u")
 		(at 195.580 281.940 0)
 		(unit 1)
@@ -10921,6 +11186,99 @@
 			(justify left)
 		)
 		(uuid "c8749984-1301-5dea-ab98-3ade8787b7e8")
+	)
+	(symbol
+		(lib_id "Sameat:TP7_ELVSS")
+		(at 459.740 304.800 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "4af2de71-6194-5b93-9ad2-edc1762ce8e1")
+		(property "Reference" "TP7"
+			(at 459.740 295.720 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "ELVSS"
+			(at 459.740 297.720 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:TestPoint_Pad_D1.0mm"
+			(at 459.740 304.800 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 459.740 304.800 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 459.740 304.800 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 459.740 304.800 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bare probe pad; no purchased or assembled part"
+			(at 459.740 304.800 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b156504f-70f6-57d0-ab04-c330d51a3fce")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/7309f07d-a051-57ea-bb97-60dcbb9d92b6"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "ELVSS"
+		(shape passive)
+		(at 444.500 304.800 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "a9c2aa1d-0b0f-58d7-95b6-5198e277b752")
 	)
 	(embedded_fonts no)
 	(text "USB ESD: U9 I/O2 pins 3/4 = DP; I/O1 pins 1/6 = DM. USB polarity at U2/J1 is unchanged.\nMain pair on F.Cu; the duplicated Type-C B7 contact uses a short B.Cu branch.\n90-ohm impedance and both-orientation HS/ESD tests remain pending. See USB_ROUTING_REPAIR_CN.md."

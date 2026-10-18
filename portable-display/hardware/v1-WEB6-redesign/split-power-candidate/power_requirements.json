@@ -307,6 +307,10 @@
     "R40": {
       "1": "1V8_PMIC",
       "2": "1V8"
+    },
+    "C64": {
+      "1": "GND",
+      "2": "3V3"
     }
   },
   "rail_requirements": [
@@ -387,7 +391,8 @@
     "R34": "10k",
     "R35": "10k",
     "C53": "1u",
-    "C54": "100n"
+    "C54": "100n",
+    "C64": "100n"
   },
   "tf_control_requirement": {
     "gpio": "U2 PH12 / pin 40 / SD_PWR_EN",
@@ -424,7 +429,8 @@
     "R35",
     "C53",
     "C54",
-    "J2"
+    "J2",
+    "C64"
   ],
   "display_io_requirement": {
     "reset_gpio": "PA8",
@@ -570,6 +576,11 @@
       "Footprint": "Sameat:0402"
     },
     "C62": {
+      "MPN": "CL05B104KO5NNNC",
+      "LCSC": "C1525",
+      "Footprint": "Sameat:0402"
+    },
+    "C64": {
       "MPN": "CL05B104KO5NNNC",
       "LCSC": "C1525",
       "Footprint": "Sameat:0402"

@@ -1,0 +1,171 @@
+{
+  "all_cases_passed": true,
+  "cases": [
+    {
+      "case": "Baseline with excluded testpoint and nonzero aux origin",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "case": "Equivalent angle",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "case": "Wrong CPL coordinate",
+      "passed": true,
+      "problems": [
+        "CPL C1 coordinates differ from PCB"
+      ]
+    },
+    {
+      "case": "Wrong CPL side",
+      "passed": true,
+      "problems": [
+        "CPL U1 layer differs from PCB"
+      ]
+    },
+    {
+      "case": "Wrong CPL rotation",
+      "passed": true,
+      "problems": [
+        "CPL U1 rotation differs from PCB"
+      ]
+    },
+    {
+      "case": "Non-finite CPL coordinate",
+      "passed": true,
+      "problems": [
+        "Invalid CPL C1 coordinates or rotation"
+      ]
+    },
+    {
+      "case": "Wrong BOM LCSC",
+      "passed": true,
+      "problems": [
+        "BOM C1 Value/Footprint/LCSC differs from PCB: ('100n', '0402', 'C999999') != ('100n', '0402', 'C1525')",
+        "BOM C2 Value/Footprint/LCSC differs from PCB: ('100n', '0402', 'C999999') != ('100n', '0402', 'C1525')"
+      ]
+    },
+    {
+      "case": "Missing BOM LCSC",
+      "passed": true,
+      "problems": [
+        "Missing BOM LCSC part number",
+        "BOM C1 Value/Footprint/LCSC differs from PCB: ('100n', '0402', '') != ('100n', '0402', 'C1525')",
+        "BOM C2 Value/Footprint/LCSC differs from PCB: ('100n', '0402', '') != ('100n', '0402', 'C1525')"
+      ]
+    },
+    {
+      "case": "Wrong BOM quantity",
+      "passed": true,
+      "problems": [
+        "BOM quantity differs from designator count"
+      ]
+    },
+    {
+      "case": "Invalid BOM quantity",
+      "passed": true,
+      "problems": [
+        "Invalid BOM quantity"
+      ]
+    },
+    {
+      "case": "Wrong BOM footprint",
+      "passed": true,
+      "problems": [
+        "BOM C1 Value/Footprint/LCSC differs from PCB: ('100n', '0603', 'C1525') != ('100n', '0402', 'C1525')",
+        "BOM C2 Value/Footprint/LCSC differs from PCB: ('100n', '0603', 'C1525') != ('100n', '0402', 'C1525')"
+      ]
+    },
+    {
+      "case": "Mixed BOM grouping",
+      "passed": true,
+      "problems": [
+        "BOM C2 Value/Footprint/LCSC differs from PCB: ('100n', '0402', 'C1525') != ('1u', '0402', 'C1525')"
+      ]
+    },
+    {
+      "case": "Duplicate designator",
+      "passed": true,
+      "problems": [
+        "Duplicate BOM or CPL designator"
+      ]
+    },
+    {
+      "case": "Missing placement",
+      "passed": true,
+      "problems": [
+        "BOM/CPL/PCB sets differ: BOM-only ['U1']; CPL-only []; PCB-only ['U1']"
+      ]
+    },
+    {
+      "case": "Stale source hash",
+      "passed": true,
+      "problems": [
+        "Production package power_contract does not match this source board"
+      ]
+    },
+    {
+      "case": "Failed source check",
+      "passed": true,
+      "problems": [
+        "Production package power_contract does not match this source board"
+      ]
+    },
+    {
+      "case": "Duplicate PCB designator",
+      "passed": true,
+      "problems": [
+        "Duplicate PCB designator C1"
+      ]
+    },
+    {
+      "case": "Testpoint excluded only from BOM",
+      "passed": true,
+      "problems": [
+        "PCB TP1 must be excluded from both BOM and position files, or neither"
+      ]
+    },
+    {
+      "case": "Testpoint excluded only from positions",
+      "passed": true,
+      "problems": [
+        "PCB TP1 must be excluded from both BOM and position files, or neither"
+      ]
+    },
+    {
+      "case": "Excluded testpoint erroneously placed",
+      "passed": true,
+      "problems": [
+        "BOM/CPL/PCB sets differ: BOM-only []; CPL-only ['TP1']; PCB-only []"
+      ]
+    },
+    {
+      "case": "Missing BOM CSV header",
+      "passed": true,
+      "problems": [
+        "BOM_JLC.csv: missing or duplicate required CSV headers"
+      ]
+    },
+    {
+      "case": "Short CPL CSV row",
+      "passed": true,
+      "problems": [
+        "CPL_JLC.csv: CSV row has missing or extra cells"
+      ]
+    },
+    {
+      "case": "Discovery with 0 retained packages",
+      "passed": true
+    },
+    {
+      "case": "Discovery with 1 retained packages",
+      "passed": true
+    },
+    {
+      "case": "Discovery with 2 retained packages",
+      "passed": true
+    }
+  ]
+}

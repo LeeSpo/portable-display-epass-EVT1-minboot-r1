@@ -11,7 +11,7 @@ This repository contains portable-display hardware designs and Python validation
 
 ## Build, Test, and Development Commands
 
-Use KiCad 10; the current verification uses 10.0.6 and the retained production package reports 10.0.7. Keep project-local libraries available through `${KIPRJMOD}`.
+Use KiCad 10; the current verification and retained production preview use 10.0.6. Keep project-local libraries available through `${KIPRJMOD}`.
 
 From `portable-display/hardware/v1-WEB6-redesign/split-power-candidate/`:
 
@@ -22,7 +22,7 @@ python3 tools/check_wake_domain.py --output /tmp/wake-audit.json
 python3 tools/test_wake_domain.py --output /tmp/wake-faults.json
 ```
 
-The full runner requires a new or empty output directory, uses an isolated project copy, and checks native ERC/DRC/parity, power/FEL/USB/wake contracts, six injected faults and production BOM/CPL correspondence. Set `KICAD_CLI` or pass `--kicad-cli` when needed. DRC acceptance requires `--refill-zones`; saved-fill diagnostics are retained separately. Never use `--save-board` on maintained sources as part of verification.
+The full runner requires a new or empty output directory, uses an isolated project copy, and checks native ERC/DRC/parity, power/FEL/USB/wake contracts, six wake faults, 25 package-integrity cases and production BOM/CPL fields and placements. The default requires exactly one retained `production_*` directory; use `--package PATH` to select explicitly. Set `KICAD_CLI` or pass `--kicad-cli` when needed. DRC acceptance requires `--refill-zones`; saved-fill diagnostics are retained separately. Never use `--save-board` on maintained sources as part of verification.
 
 ## Coding Style & Naming Conventions
 

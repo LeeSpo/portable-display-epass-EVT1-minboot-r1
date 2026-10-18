@@ -6,7 +6,7 @@
 	(paper "A2")
 	(title_block
 		(title "03 Always-on Sensors / Wake")
-		(date "2026-10-05")
+		(date "2026-10-18")
 		(rev "FEL1")
 		(company "Sameat")
 		(comment 1 "Current PCB pin nets; C3036461 factory configuration NOT verified")
@@ -3741,6 +3741,92 @@
 				)
 			)
 		)
+		(symbol "Sameat:TP4_RTC_3V3"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "T"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "RTC_3V3"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Sameat:TestPoint_Pad_D1.0mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Bare probe pad; no purchased or assembled part"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TP4_RTC_3V3_0_1"
+				(rectangle
+					(start -12.7 -5.080)
+					(end 12.7 5.080)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "TP4_RTC_3V3_1_1"
+				(pin passive line
+					(at -15.24 0.000 0)
+					(length 2.54)
+					(name "TEST"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Sameat:C60_100n"
 			(pin_names
 				(offset 0.8)
@@ -3807,6 +3893,110 @@
 				)
 			)
 			(symbol "C60_100n_1_1"
+				(pin passive line
+					(at -15.24 0.000 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0.000 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size .8 .8)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Sameat:C64_100n"
+			(pin_names
+				(offset 0.8)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "100n"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Sameat:0402"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "CL05B104KO5NNNC"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.0 1.0)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C64_100n_0_1"
+				(rectangle
+					(start -12.7 -5.080)
+					(end 12.7 5.080)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "C64_100n_1_1"
 				(pin passive line
 					(at -15.24 0.000 0)
 					(length 2.54)
@@ -7593,6 +7783,99 @@
 		(uuid "54eaf05a-dca4-5521-8d55-e705bc32b66a")
 	)
 	(symbol
+		(lib_id "Sameat:TP4_RTC_3V3")
+		(at 327.660 280.670 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "6a562fbb-d7aa-5a0f-a599-f12abf88d3d4")
+		(property "Reference" "TP4"
+			(at 327.660 271.590 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "RTC_3V3"
+			(at 327.660 273.590 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:TestPoint_Pad_D1.0mm"
+			(at 327.660 280.670 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 327.660 280.670 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 327.660 280.670 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 327.660 280.670 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bare probe pad; no purchased or assembled part"
+			(at 327.660 280.670 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eff68931-ba9a-5897-9fe1-931c98968989")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/51072dd9-1bb1-5c78-ad53-b3e9d0a07bc6"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "RTC_3V3"
+		(shape passive)
+		(at 312.420 280.670 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "1b49f65f-5ac5-5749-9d52-ae3acce8af58")
+	)
+	(symbol
 		(lib_id "Sameat:C60_100n")
 		(at 63.500 256.540 0)
 		(unit 1)
@@ -7698,6 +7981,113 @@
 			(justify left)
 		)
 		(uuid "1298cdc1-a03d-55bd-8754-f5732b5c3fce")
+	)
+	(symbol
+		(lib_id "Sameat:C64_100n")
+		(at 195.580 280.670 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "914c0048-d66f-51e4-97e4-88fe4dc4f039")
+		(property "Reference" "C64"
+			(at 195.580 271.590 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 195.580 273.590 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" "Sameat:0402"
+			(at 195.580 280.670 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 195.580 280.670 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL05B104KO5NNNC"
+			(at 195.580 280.670 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
+			(at 195.580 280.670 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 195.580 280.670 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e2af6f2d-be21-5fd8-b6f1-aecf9c70de62")
+		)
+		(pin "2"
+			(uuid "e3591d7b-987a-5212-85e7-b759b897c698")
+		)
+		(instances
+			(project "ak_display_38x64_SPLIT_POWER_CANDIDATE"
+				(path "/b7613259-1701-5a92-a5a3-2c5d87fd6070/51072dd9-1bb1-5c78-ad53-b3e9d0a07bc6"
+					(reference "C64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape passive)
+		(at 180.340 280.670 180)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify right)
+		)
+		(uuid "79dab7da-145c-58fc-9f6b-2413d426818c")
+	)
+	(global_label "3V3"
+		(shape passive)
+		(at 210.820 280.670 0)
+		(effects
+			(font
+				(size .8 .8)
+			)
+			(justify left)
+		)
+		(uuid "185646fe-d6b8-5b41-9e21-f71eafb10cd7")
 	)
 	(embedded_fonts no)
 	(text "WAKE DOMAINS: R17/R18 pull up to RTC_3V3. U11 SN74LVC2G17 isolates both IRQs from U2.\nU11/C52 use switched 3V3. RTC_INT_SOC_N -> PE7; ACCEL_INT_SOC_N -> PE6; polarity unchanged.\nRequire latched active-low IRQs and AON supply retention. See WAKE_DOMAIN_REPAIR_CN.md."

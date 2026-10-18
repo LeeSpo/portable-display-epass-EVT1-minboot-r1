@@ -1,0 +1,206 @@
+{
+  "board_sha256": "514d29a0e2d06c731260da512aed54bfc88a098491cf9f4e367444c9fee9d8cc",
+  "source_hashes": {
+    "01_power.kicad_sch": "1e3e3f059904dc2612fd99182e5a7364d227a430b4c3ea05cc647b2cda7eb07e",
+    "02_soc_v851s.kicad_sch": "2ed984ec24551ad1dbd15fb2f4aed4ced24a7e5786f2ba5ef3b3445be679604a",
+    "03_sensors.kicad_sch": "323266b5af40a908940e0da8e012cb4ce2f219cf031def773321742b5771522d",
+    "04_interfaces.kicad_sch": "f508d4dd2cde810ba5d9d0f5e91a7420862ebad60504e12ca1cf5479cf3d96c6",
+    "ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pcb": "514d29a0e2d06c731260da512aed54bfc88a098491cf9f4e367444c9fee9d8cc",
+    "ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pro": "9f90c2af5a13b3d944e1d2a9065df396c58ad52d29852e59a70e89a9a0a6603b",
+    "ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_sch": "287029a12f450c1a851e932ad18d397b1cd6b616eb421ab262e8c7b9df95ed2c",
+    "fp-lib-table": "cda8f3172e069428ea33de803acc19c5563076b1964d077944c364df9815cb67",
+    "power_requirements.json": "c55b28a4e0ab42b9cafc340ebad60d7cf0c1e3ed46df7fc1ebf77120ece9bf2d",
+    "requirements.txt": "c2654e29ae295df9d78188074327a9a1f7d4e45cc07aa08e483005b339d78fd2",
+    "sameat.kicad_sym": "3d3a219fa5c68f94aef668f482b16408f3b12d93903ca244a393d6d97f8dcadd",
+    "sameat.pretty/0402.kicad_mod": "d41b45af6430341aca489ff2c72aaaa69340893b4409558ccb67e3f3552bed75",
+    "sameat.pretty/0603.kicad_mod": "4a7b096348d7cdbb247714fcc08d67b68a5496888bc16a8e9a96c5f8a8f7610a",
+    "sameat.pretty/BAT3.kicad_mod": "880311fbcde2211e8ab7fce3bc974d76f7a544c27f1205127f0298e41c3c0bf2",
+    "sameat.pretty/C_0805_2012Metric.kicad_mod": "e305d7881cdd3559733867b508e1f81c0da0cf8f4598945f8452c4cf1b4eebe5",
+    "sameat.pretty/DFN1006-2.kicad_mod": "b6d17a7bfeead4030605e621161eef8d2887bf7b58fb26c3e222aa6a557ff092",
+    "sameat.pretty/D_SOD123.kicad_mod": "9f0df500b424bdd1455f6dafa528b2334106e70bf5293604b2a4eb50342ea3a1",
+    "sameat.pretty/FPC20.kicad_mod": "419b617b70e9a569a6081e515e1216567ab3cd5f92fd6b1dd5df0f2fb0c77ebf",
+    "sameat.pretty/FPC45.kicad_mod": "755ca8935000b7b58dfcda13f6b2bef292d23ce0104ac67573e245b23f02ff48",
+    "sameat.pretty/HDR8.kicad_mod": "49fef315d00ec751eb9f461464406a02aec41ba98c72e20a4e0e3584fe5f1a97",
+    "sameat.pretty/IND_2x2.kicad_mod": "9b837b1b2edbc8f1650fa40ced8c89418fb2d490fd65f6c0a49fefc1e21dd012",
+    "sameat.pretty/LED0603.kicad_mod": "da0932a25993d9dd3fc1ce926d5b0a952114b05e3ca92631856669ca76bed595",
+    "sameat.pretty/LGA-12.kicad_mod": "da819fd9a9484a41e101048a934047c89c340f69b57239bcdf6cb31c6c2d453a",
+    "sameat.pretty/MICROSD.kicad_mod": "b2babb193245a809858baf96698ef8fe1e61ff99e50bb9e42b5503565f0263bd",
+    "sameat.pretty/QFN40.kicad_mod": "ffbe98cdeb22500d497a8abe3b7b6108b003ac390bf263fcba00c833f3a239b7",
+    "sameat.pretty/QFN88.kicad_mod": "0925b6635fb2939d25d522d1e026bcf3a6e80264a8e43d17dfd1dc16238333b6",
+    "sameat.pretty/RTC-8.kicad_mod": "d978ada4abba4f0d1bc471534c29a4c436c294237b62ae4aa8894d9969093c2c",
+    "sameat.pretty/SC70-5.kicad_mod": "8aad286c73700dddb62d35b412427573001fe57ef199fb4dbd30d6c92515ada4",
+    "sameat.pretty/SH1.0_3P_RA.kicad_mod": "40b783ca89a6bdf2b09f9b276e93e34a305c96a1e3bdbebbb755f7f82944368b",
+    "sameat.pretty/SN74LVC1G123_DCT8.kicad_mod": "f63cf7e8e95cccab356f85202469ebcaa868f641830d875c719b249c8dda5660",
+    "sameat.pretty/SN74LVC2G17_DBV6.kicad_mod": "5b695ae52c3458b084416a76f6f71d07ae145ac254cb9ff9a75422917555e314",
+    "sameat.pretty/SOT23-3.kicad_mod": "e5c80a3394b2743c133670f85cae07c0a7a3f172f3a79c863e22f791e7eaa244",
+    "sameat.pretty/SOT23-5.kicad_mod": "3ddd8fb26f4666646805556d91fd25806b20f1c5a0481a44ecbde61e329ce670",
+    "sameat.pretty/SOT23-6.kicad_mod": "3ccc00f2235d4d973c96425f5aa1656f626c38dc7a101ca25b96d5f999bcf07d",
+    "sameat.pretty/SSOP-8.kicad_mod": "2f58cd6bf5a95cd5c84312065d535112aef3740224d67701d64b3ec4c61b2d26",
+    "sameat.pretty/SW_SIDE.kicad_mod": "07e216b720c2ef7c45ba4a5c972b0b2bb82d03342e7c4ec753b2dd21823fa0fb",
+    "sameat.pretty/TPD4E05U06_DQA.kicad_mod": "b35e66afdf3de1da3c2eac8cc3d1878e8e411c86e901e9759e6efafcb4a89b0b",
+    "sameat.pretty/TPS22918_DBV6.kicad_mod": "4daa6c819b1f991b093d92dce3b0dd8f17a4d5e8a8828b6587da7d40419c1791",
+    "sameat.pretty/TestPoint_Pad_D1.0mm.kicad_mod": "5db6be3477bc89840ec5e446efaaece3d3103ab4c67780e4060464d94f84e552",
+    "sameat.pretty/USB4105.kicad_mod": "3821f445924c6a40242567f978d08793ddc8bc70648c88ed2e68c93863e09885",
+    "sameat.pretty/USBLC6-2SC6_SOT23-6.kicad_mod": "8a4639efaae8ac9f552cd49bc8c715e37c919ee4d91a3a0897693edb4528fade",
+    "sameat.pretty/WSON-12.kicad_mod": "451274d7c58f00c65342932ae09d3b31e47eebb0e60bc2a0fcbd251e4645585d",
+    "sameat.pretty/WSON-8.kicad_mod": "7e4286578c07973b40f1ad2b84642d5e25d76b86d04a82a933f3d4828688a55f",
+    "sameat.pretty/XKTF-0803-0.kicad_mod": "a0bc4a5da59eacf743bbda18294cca89631fccdcb364fddf7a31343f0f048d2f",
+    "sameat.pretty/XTAL4.kicad_mod": "b964781701fe304e7a85d3c9e57d5a6f75cbc143e435ffcba95f751299d0a648",
+    "sym-lib-table": "e7dc958bb79b36e3fd445fdc452e7bf5c7b26d345d729f39c0e5efe562194f91",
+    "tools/build_candidate_schematic.py": "53209e078b3f45bbb0a93878af5c13b688b95706b2311efeb72cc741b70f51d1",
+    "tools/check_fel_recovery.py": "bd4faa4aacbe4a2d6b8a9b522945f3d3725ad56b09947536cce6d59edae6d229",
+    "tools/check_power_contract.py": "c3a0b3978718fdc51a7290e06df3b35e06f22de5f09e82fcf64f7eecbee043f0",
+    "tools/check_usb_routing.py": "11e2afdbac5eb63f4e06a58534b3916063b4119b5b06989afc62e79056dee6c1",
+    "tools/check_wake_domain.py": "5368df34294117f34db861a1ac843c478a84f7a12e4d7eea0a1733e9a0cdeae2",
+    "tools/finish_power_routes.py": "5129e7fc0988155c9d776258ae12000c6b4e865aad7798dda7dacb7395de03fd",
+    "tools/geometry_audit.py": "7573a076e8414b336e2c5e894cd853a33a6337cb73b792b612cdb04a5e5b5ee0",
+    "tools/kicad_sexpr.py": "2c31ef378d36def9deb3576d0b9e295d0a514b1e9f39a3de1c7254c80fbb2845",
+    "tools/plane_connectivity.py": "4f7c0718a95e4bdb41b6aeedaad0846506d7faa28f31df95fde56d3546d0672a",
+    "tools/route_board.py": "3b37411e7dcb2f13549ba4d8e75f58fdf33936d412151a8a708b8953c4370515",
+    "tools/schematic_support.py": "e23068ee08e1fb2b32119fe5075e53ba28cd52bfdbdc654cb57bef5f5d0c8ef7",
+    "tools/test_package_integrity.py": "e9b857192d98d0a816ea65c9a97269cc86cb56a5299bbd671bc79f710afe0014",
+    "tools/test_wake_domain.py": "67461f6aa8cd9fd78b02acf3037c7e61071903ba25d20df33d5a765d8c97682e",
+    "tools/verify_candidate.py": "51cde4e0bfa030d2c3a29fd81d11f10b78a30b35716dc780620c230cf4b0011c"
+  },
+  "kicad_version": "10.0.6",
+  "commands": [
+    {
+      "name": "erc",
+      "argv": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--exit-code-violations",
+        "-o",
+        "<project>/verification/production_20261018/checks/erc.json",
+        "<project>/ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_sch"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "netlist",
+      "argv": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "-o",
+        "<project>/verification/production_20261018/checks/netlist.xml",
+        "<project>/ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_sch"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "power_contract",
+      "argv": [
+        "/Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/.venv/bin/python",
+        "<project>/tools/check_power_contract.py",
+        "--output",
+        "<project>/verification/production_20261018/checks/power_contract.json",
+        "--reports",
+        "<project>/verification/production_20261018/checks"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "fel_recovery",
+      "argv": [
+        "/Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/.venv/bin/python",
+        "<project>/tools/check_fel_recovery.py",
+        "--output",
+        "<project>/verification/production_20261018/checks/fel_recovery.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "usb_routing",
+      "argv": [
+        "/Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/.venv/bin/python",
+        "<project>/tools/check_usb_routing.py",
+        "--output",
+        "<project>/verification/production_20261018/checks/usb_routing.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "wake_domain",
+      "argv": [
+        "/Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/.venv/bin/python",
+        "<project>/tools/check_wake_domain.py",
+        "--output",
+        "<project>/verification/production_20261018/checks/wake_domain.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "gerbers",
+      "argv": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "pcb",
+        "export",
+        "gerbers",
+        "--layers",
+        "F.Cu,In1.Cu,In2.Cu,B.Cu,F.Paste,B.Paste,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts",
+        "--subtract-soldermask",
+        "-o",
+        "<project>/verification/production_20261018/gerber/",
+        "<project>/ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pcb"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "drill",
+      "argv": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "pcb",
+        "export",
+        "drill",
+        "--format",
+        "excellon",
+        "--excellon-units",
+        "mm",
+        "--excellon-separate-th",
+        "--generate-map",
+        "--map-format",
+        "gerberx2",
+        "-o",
+        "<project>/verification/production_20261018/gerber/",
+        "<project>/ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pcb"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "source_files_modified": false,
+  "fabrication_released": false,
+  "hardware_verified": false,
+  "fitted_components": 131,
+  "bom_rows": 54,
+  "sides": {
+    "F.Cu": 117,
+    "B.Cu": 14
+  },
+  "preview": {
+    "layers": {
+      "front": [
+        "F.Mask",
+        "F.Fab",
+        "F.SilkS",
+        "Edge.Cuts"
+      ],
+      "bottom": [
+        "B.Mask",
+        "B.Fab",
+        "B.SilkS",
+        "Edge.Cuts"
+      ]
+    },
+    "bottom_mirrored": true,
+    "svg_generated_with": "kicad-cli pcb export svg --mode-single --fit-page-to-board --exclude-drawing-sheet",
+    "png_rendered_with": "sharp, density 500, width 900, white background"
+  }
+}

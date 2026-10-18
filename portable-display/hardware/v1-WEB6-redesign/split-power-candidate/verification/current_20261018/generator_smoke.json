@@ -1,0 +1,160 @@
+{
+  "date_utc": "2026-10-18T06:22:27.811117+00:00",
+  "board_sha256": "514d29a0e2d06c731260da512aed54bfc88a098491cf9f4e367444c9fee9d8cc",
+  "isolated_copy": true,
+  "source_files_modified": false,
+  "checks_passed": true,
+  "fabrication_released": false,
+  "commands": [
+    {
+      "name": "build",
+      "argv": [
+        "/Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/.venv/bin/python",
+        "<isolated-project>/tools/build_candidate_schematic.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "erc",
+      "argv": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--exit-code-violations",
+        "-o",
+        "<isolated-reports>/erc.json",
+        "<isolated-project>/ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_sch"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "netlist",
+      "argv": [
+        "/Applications/KiCad/KiCad.app/Contents/MacOS/kicad-cli",
+        "sch",
+        "export",
+        "netlist",
+        "--format",
+        "kicadxml",
+        "-o",
+        "<isolated-reports>/netlist.xml",
+        "<isolated-project>/ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_sch"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "power_contract",
+      "argv": [
+        "/Users/spotible/Documents/Git/portable-display-epass-EVT1-minboot-r1/.venv/bin/python",
+        "<isolated-project>/tools/check_power_contract.py",
+        "--board",
+        "<isolated-project>/ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_pcb",
+        "--reports",
+        "<isolated-reports>",
+        "--output",
+        "<reports>/generator_power_contract.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "drc_reused_from": "drc.json",
+  "drc_reused_sha256": "6688dc842d1cefae18e4ff1073eb2ead8cb9e60005235c702d8a4c122a887258",
+  "generator_stdout": "Generated 143 electrical symbols; PCB unchanged.",
+  "electrical_symbols": 143,
+  "native_findings": {
+    "erc.json": 0,
+    "drc.json": 0
+  },
+  "unique_numbered_pads": 555,
+  "power_pins_checked": 204,
+  "generated_source_hashes": {
+    "01_power.kicad_sch": "1e3e3f059904dc2612fd99182e5a7364d227a430b4c3ea05cc647b2cda7eb07e",
+    "02_soc_v851s.kicad_sch": "2ed984ec24551ad1dbd15fb2f4aed4ced24a7e5786f2ba5ef3b3445be679604a",
+    "03_sensors.kicad_sch": "899703768ae7806dd9bc2c7d99e38c1ebb7621d2f6d23052a73ef83d8cea1b3f",
+    "04_interfaces.kicad_sch": "f508d4dd2cde810ba5d9d0f5e91a7420862ebad60504e12ca1cf5479cf3d96c6",
+    "ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_sch": "287029a12f450c1a851e932ad18d397b1cd6b616eb421ab262e8c7b9df95ed2c",
+    "sameat.kicad_sym": "5c85307a8dd31dc9618f2f0d70cecf45043355a7ccfafdfbce2aab8e45700d9b"
+  },
+  "regenerated_sources_match_maintained": {
+    "01_power.kicad_sch": true,
+    "02_soc_v851s.kicad_sch": true,
+    "03_sensors.kicad_sch": false,
+    "04_interfaces.kicad_sch": true,
+    "ak_display_38x64_SPLIT_POWER_CANDIDATE.kicad_sch": true,
+    "sameat.kicad_sym": false
+  },
+  "regeneration_differences": {
+    "03_sensors.kicad_sch": {
+      "same_library_definitions": true,
+      "same_library_ids": true,
+      "moved_symbols": [
+        {
+          "reference": "C57",
+          "maintained_at": [
+            "459.740",
+            "251.460",
+            "0"
+          ],
+          "generated_at": [
+            "63.500",
+            "256.540",
+            "0"
+          ],
+          "properties_unchanged": true
+        },
+        {
+          "reference": "C60",
+          "maintained_at": [
+            "63.500",
+            "256.540",
+            "0"
+          ],
+          "generated_at": [
+            "195.580",
+            "280.670",
+            "0"
+          ],
+          "properties_unchanged": true
+        },
+        {
+          "reference": "C61",
+          "maintained_at": [
+            "327.660",
+            "251.460",
+            "0"
+          ],
+          "generated_at": [
+            "459.740",
+            "251.460",
+            "0"
+          ],
+          "properties_unchanged": true
+        },
+        {
+          "reference": "C64",
+          "maintained_at": [
+            "195.580",
+            "280.670",
+            "0"
+          ],
+          "generated_at": [
+            "327.660",
+            "251.460",
+            "0"
+          ],
+          "properties_unchanged": true
+        }
+      ],
+      "placement_and_library_order_only": true,
+      "electrical_and_bom_dnp_attributes_unchanged": true
+    },
+    "sameat.kicad_sym": {
+      "same_library_definitions": true,
+      "library_order_only": true,
+      "metadata_unchanged": true
+    }
+  }
+}
